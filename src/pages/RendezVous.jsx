@@ -18,7 +18,6 @@ const RendezVous = () => {
     setStatus("loading");
 
     if (form.current && date) {
-      // Injecte la date dans un champ caché
       const hiddenDateInput = document.createElement("input");
       hiddenDateInput.type = "hidden";
       hiddenDateInput.name = "date";
@@ -40,7 +39,7 @@ const RendezVous = () => {
         setDate(null);
       })
       .catch((err) => {
-        console.error("EmailJS error:", err); // 🔍 pour déboguer dans la console
+        console.error("EmailJS error:", err);
         setStatus("error");
       });
   };
@@ -57,7 +56,7 @@ const RendezVous = () => {
       </motion.h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* Image animée à gauche */}
+        {/* Image */}
         <motion.div
           className="hidden md:block"
           initial={{ opacity: 0, x: -50 }}
@@ -65,13 +64,13 @@ const RendezVous = () => {
           transition={{ duration: 1 }}
         >
           <img
-            src={imgrv} // <— place ton image ici
+            src={imgrv}
             alt="Illustration rendez-vous"
             className="w-full rounded-xl shadow-lg object-cover"
           />
         </motion.div>
 
-        {/* Formulaire animé à droite */}
+        {/* Formulaire */}
         <motion.form
           ref={form}
           onSubmit={handleSubmit}
@@ -86,8 +85,8 @@ const RendezVous = () => {
               <input
                 type="text"
                 name="nom"
-                className="border p-3 rounded focus:ring-2 focus:ring-[#ad9d64]"
                 required
+                className="border p-3 rounded focus:ring-2 focus:ring-[#ad9d64]"
               />
             </div>
             <div className="flex flex-col">
@@ -95,8 +94,8 @@ const RendezVous = () => {
               <input
                 type="text"
                 name="prenom"
-                className="border p-3 rounded focus:ring-2 focus:ring-[#ad9d64]"
                 required
+                className="border p-3 rounded focus:ring-2 focus:ring-[#ad9d64]"
               />
             </div>
           </div>
@@ -106,8 +105,8 @@ const RendezVous = () => {
             <input
               type="tel"
               name="telephone"
-              className="border p-3 rounded focus:ring-2 focus:ring-[#ad9d64]"
               required
+              className="border p-3 rounded focus:ring-2 focus:ring-[#ad9d64]"
             />
           </div>
 
@@ -116,8 +115,8 @@ const RendezVous = () => {
             <input
               type="email"
               name="email"
-              className="border p-3 rounded focus:ring-2 focus:ring-[#ad9d64]"
               required
+              className="border p-3 rounded focus:ring-2 focus:ring-[#ad9d64]"
             />
           </div>
 
@@ -130,9 +129,9 @@ const RendezVous = () => {
               dateFormat="dd/MM/yyyy"
               placeholderText="Choisissez une date"
               locale={fr}
-              className="border p-3 rounded focus:ring-2 focus:ring-[#ad9d64]"
               minDate={new Date()}
               required
+              className="border p-3 rounded focus:ring-2 focus:ring-[#ad9d64]"
             />
           </div>
 
@@ -140,25 +139,113 @@ const RendezVous = () => {
             <label className="text-sm text-gray-600 mb-1">Type de soin</label>
             <select
               name="soin"
-              className="border p-3 rounded focus:ring-2 focus:ring-[#ad9d64]"
               required
+              className="border p-3 rounded focus:ring-2 focus:ring-[#ad9d64]"
             >
               <option value="">Sélectionner</option>
-              <option value="Esthétique dentaire">Esthétique dentaire</option>
-              <option value="Parodontologie">Parodontologie</option>
-              <option value="Implantologie">Implantologie</option>
-              <option value="Endodontie">Endodontie</option>
-              <option value="Facettes dentaires">Facettes dentaires</option>
-              <option value="Orthodontie">Orthodontie</option>
-              <option value="Greffe osseuse">Greffe osseuse</option>
-              <option value="Blanchiment dentaire">Blanchiment dentaire</option>
+              <option>Esthétique dentaire</option>
+              <option>Parodontologie</option>
+              <option>Implantologie</option>
+              <option>Endodontie</option>
+              <option>Facettes dentaires</option>
+              <option>Orthodontie</option>
+              <option>Greffe osseuse</option>
+              <option>Blanchiment dentaire</option>
             </select>
+          </div>
+
+          {/* Contact préféré */}
+          <div>
+            <label className="text-sm text-gray-600 mb-1 block">
+              Contact préféré
+            </label>
+            <div className="flex gap-6">
+              <label className="flex items-center gap-2">
+                <input type="radio" name="contact" value="courriel" required />
+                Par courriel
+              </label>
+              <label className="flex items-center gap-2">
+                <input type="radio" name="contact" value="téléphone" />
+                Par téléphone
+              </label>
+            </div>
+          </div>
+
+          {/* Raisons & disponibilités */}
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <label className="text-sm text-gray-600 mb-1 block">
+                Raison du rendez-vous :
+              </label>
+              <div className="space-y-2 text-sm text-gray-700">
+                <label className="flex gap-2">
+                  <input type="checkbox" name="motif" value="nouveau patient" />
+                  Nouveau patient
+                </label>
+                <label className="flex gap-2">
+                  <input type="checkbox" name="motif" value="déjà patient" />
+                  Déjà patient
+                </label>
+                <label className="flex gap-2">
+                  <input type="checkbox" name="motif" value="modifier" />
+                  Modifier un rendez-vous
+                </label>
+                <label className="flex gap-2">
+                  <input type="checkbox" name="motif" value="enfant" />
+                  Rendez-vous pour mon enfant
+                </label>
+                <label className="flex gap-2">
+                  <input type="checkbox" name="motif" value="urgence" />
+                  Urgence dentaire
+                </label>
+              </div>
+            </div>
+
+            <div>
+              <label className="text-sm text-gray-600 mb-1 block">
+                Vos disponibilités :
+              </label>
+              <div className="grid grid-cols-2 gap-2 text-sm text-gray-700">
+                {["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"].flatMap(
+                  (jour) => [
+                    <label key={`${jour} AM`} className="flex gap-2">
+                      <input
+                        type="checkbox"
+                        name="disponibilite"
+                        value={`${jour} AM`}
+                      />
+                      {jour} AM
+                    </label>,
+                    <label key={`${jour} PM`} className="flex gap-2">
+                      <input
+                        type="checkbox"
+                        name="disponibilite"
+                        value={`${jour} PM`}
+                      />
+                      {jour} PM
+                    </label>,
+                  ]
+                )}
+              </div>
+            </div>
+          </div>
+
+          {/* Message */}
+          <div>
+            <label className="text-sm text-gray-600 mb-1">
+              Message ou précisions
+            </label>
+            <textarea
+              name="message"
+              rows="4"
+              className="w-full border rounded p-3 focus:ring-2 focus:ring-[#ad9d64]"
+            ></textarea>
           </div>
 
           <button
             type="submit"
             disabled={status === "loading"}
-            className="bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold hover:scale-105 transition-transform disabled:opacity-50"
+            className="bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold hover:scale-105 transition disabled:opacity-50"
           >
             {status === "loading" ? "Envoi..." : "Envoyer"}
           </button>

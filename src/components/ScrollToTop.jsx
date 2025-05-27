@@ -2,14 +2,16 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 const ScrollToTop = () => {
-  const { pathname } = useLocation();
+  const location = useLocation();
 
   useEffect(() => {
-    // Scroller en haut dès que l’URL change
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  }, [pathname]);
+    // Petit délai pour s'assurer que le DOM est rendu
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, 100);
+  }, [location.pathname, location.hash]);
 
-  return null; // Pas de rendu
+  return null;
 };
 
 export default ScrollToTop;

@@ -1,36 +1,36 @@
 import React from "react";
 import StaffCard from "../components/StaffCard";
 
+// Importation des images
+import staff1 from "../assets/staff1.png";
+import staff2 from "../assets/staff2.png";
+import staff3 from "../assets/staff3.png";
+import staff4 from "../assets/staff4.png";
+
 const personnel = [
   {
     nom: "Dr. Aïssatou Ndiaye",
     poste: "Chirurgienne-dentiste spécialisée en esthétique",
     bio: "Passionnée par le sourire de ses patients, elle cumule 10 ans d'expérience en esthétique dentaire.",
-    photo: "/assets/staff1.jpg",
+    photo: staff1,
   },
   {
     nom: "Dr. Mamadou Sy",
     poste: "Implantologue",
     bio: "Expert en chirurgie implantaire, il assure des soins de haute précision avec douceur.",
-    photo: "/assets/staff2.jpg",
+    photo: staff2,
   },
   {
     nom: "Dr. Khadija Ba",
     poste: "Orthodontiste",
     bio: "Elle accompagne enfants et adultes pour un alignement parfait des dents.",
-    photo: "/assets/staff3.jpg",
+    photo: staff3,
   },
   {
     nom: "Fatou Diop",
     poste: "Assistante dentaire",
     bio: "Souriante et organisée, elle garantit un accueil chaleureux pour tous les patients.",
-    photo: "/assets/staff4.jpg",
-  },
-  {
-    nom: "Dr. Boubacar Fall",
-    poste: "Parodontologue & Fondateur",
-    bio: "Fondateur de la clinique DABIA, il veille à l’excellence médicale et humaine.",
-    photo: "/assets/staff5.jpg",
+    photo: staff4,
   },
 ];
 

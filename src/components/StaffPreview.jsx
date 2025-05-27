@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import sao from "../assets/sao.png";
 
 const StaffPreview = () => {
   return (
@@ -11,44 +12,44 @@ const StaffPreview = () => {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        Notre Équipe
+        Notre Equipe
       </motion.h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
-        {[1, 2, 3].map((i, index) => (
-          <motion.div
-            key={i}
-            className="bg-white shadow-lg rounded-lg p-4 text-center cursor-pointer"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            whileHover={{
-              scale: 1.05,
-              boxShadow: "0 10px 25px rgba(0,0,0,0.2)",
-            }}
-            transition={{
-              duration: 0.4,
-              ease: "easeOut",
-              delay: index * 0.1,
-              type: "spring",
-              stiffness: 100,
-            }}
-            viewport={{ once: true }}
-          >
-            <img
-              src={`/assets/staff${i}.jpg`}
-              alt={`Membre ${i}`}
-              className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-            />
-            <h4 className="font-semibold text-[#bb2988]">Dr Nom {i}</h4>
-            <p className="text-sm text-gray-500">Chirurgien dentiste</p>
-          </motion.div>
-        ))}
+      <div className="flex justify-center mb-6">
+        <motion.div
+          className="bg-white shadow-lg rounded-lg p-6 text-center cursor-pointer w-full max-w-md"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          whileHover={{
+            scale: 1.05,
+            boxShadow: "0 10px 25px rgba(0,0,0,0.2)",
+          }}
+          transition={{
+            duration: 0.4,
+            ease: "easeOut",
+            type: "spring",
+            stiffness: 100,
+          }}
+          viewport={{ once: true }}
+        >
+          <img
+            src={sao}
+            alt="Dr Nom"
+            className="w-[40%]  rounded-full mx-auto mb-4 object-cover"
+          />
+          <h4 className="text-lg font-semibold text-[#bb2988]">
+            Dr Fatoumata SAO
+          </h4>
+          <p className="text-sm text-gray-500">
+            Fondatrice de la clinique DABIA
+          </p>
+        </motion.div>
       </div>
 
       <div className="text-center">
         <Link
           to="/personnel"
-          className="bg-[#bb2988] text-white px-6 py-3  rounded-full font-semibold hover:scale-105 transition-transform"
+          className="bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold hover:scale-105 transition-transform"
         >
           Voir tout le personnel
         </Link>

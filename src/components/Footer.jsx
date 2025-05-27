@@ -34,10 +34,11 @@ const Footer = () => {
         <div>
           <h4 className="font-semibold mb-2">Contact</h4>
           <p className="flex items-center gap-2">
-            <MdPhone className="w-5 h-5" /> +221 XX XXX XX XX
+            <MdPhone className="w-5 h-5" /> +221 77 703 93 93
+            <MdPhone className="w-5 h-5" /> +221 33 868 47 04
           </p>
           <p className="flex items-center gap-2">
-            <MdEmail className="w-5 h-5" /> contact@dabia.sn
+            <MdEmail className="w-5 h-5" /> cliniquedentairedabia@gmail.com
           </p>
         </div>
       </div>

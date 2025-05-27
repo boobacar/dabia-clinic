@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import avantApresImages from "../assets/avantApresImages";
 
 const BeforeAfterGallery = () => {
   return (
@@ -12,11 +13,11 @@ const BeforeAfterGallery = () => {
         Résultats Avant-Après
       </motion.h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-        {[1, 2, 3, 4, 5, 6].map((index) => (
+        {avantApresImages.map((image, index) => (
           <motion.img
             key={index}
-            src={`/assets/avant-apres${index}.jpg`}
-            alt={`Transformation ${index}`}
+            src={image}
+            alt={`Transformation ${index + 1}`}
             className="w-full h-60 object-cover rounded-lg shadow hover:scale-105 transition-transform duration-300"
             whileInView={{ opacity: 1, scale: 1 }}
             initial={{ opacity: 0, scale: 0.95 }}
