@@ -17,7 +17,7 @@ const customTailwind = tailwindPlugin.withOptions(() => ({
 }));
 
 export default defineConfig({
-  base: "/dabia-clinic/", // Remplace ici
+  base: "/", // Remplace ici
   plugins: [react()],
   css: {
     postcss: {
