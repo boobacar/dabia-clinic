@@ -2,13 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 
 // Import des logos
-import logoIpres from "../assets/assurances/ipres.jpeg";
 import logoSunu from "../assets/assurances/sunu.jpg";
-import logoNsia from "../assets/assurances/nsia.jpeg";
 import logoAxa from "../assets/assurances/axa.png";
-import logoSaar from "../assets/assurances/saar.jpeg";
-import logoAskia from "../assets/assurances/askia.jpg";
-import logoMutuelle from "../assets/assurances/mutuelle.jpg";
 import logoSonam from "../assets/assurances/sonam.jpg";
 import logoPrevoyance from "../assets/assurances/prevoyance.jpg";
 import logoMsh from "../assets/assurances/msh.png";
@@ -37,17 +32,12 @@ import logoAgetip from "../assets/assurances/agetip.jpeg";
 import logoMutuelleCapVert from "../assets/assurances/mutuelle_cap_vert.png";
 import logoPhosphateThies from "../assets/assurances/phosphate_thies.jpeg";
 import logoExpressSante from "../assets/assurances/express_sante.jpeg";
-import logoAllianz from "../assets/assurances/allianz.png";
+import logoDgid from "../assets/assurances/dgid.png";
 
 // Liste des assurances avec leur logo
 const assurances = [
-  { nom: "IPRES", logo: logoIpres },
   { nom: "Sunu Assurances", logo: logoSunu },
-  { nom: "NSIA", logo: logoNsia },
   { nom: "AXA", logo: logoAxa },
-  { nom: "SAAR", logo: logoSaar },
-  { nom: "ASKIA", logo: logoAskia },
-  { nom: "Mutuelle de Santé", logo: logoMutuelle },
   { nom: "Sonam", logo: logoSonam },
   { nom: "Prévoyance Assurance", logo: logoPrevoyance },
   { nom: "MSH International", logo: logoMsh },
@@ -55,8 +45,8 @@ const assurances = [
   { nom: "Ascoma", logo: logoAscoma },
   { nom: "Wafa Assurances", logo: logoWafa },
   { nom: "Amsa", logo: logoAmsa },
-  { nom: "Sanlam", logo: logoSanlam },
-  { nom: "Allianz", logo: logoAllianz },
+  { nom: "Sanlam|Allianz", logo: logoSanlam },
+  { nom: "Ma-Dgid (IPM impots et domaines)", logo: logoDgid },
   { nom: "Finafrica", logo: logoFinafrica },
   { nom: "WILLIS TOWERS WATSON", logo: logoWillis },
   { nom: "GGA", logo: logoGga },

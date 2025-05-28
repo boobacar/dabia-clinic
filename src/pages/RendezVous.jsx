@@ -251,11 +251,11 @@ const RendezVous = () => {
               Nos horaires :
             </p>
             <ul className="text-sm text-red-600 space-y-1">
-              <li>Lundi – 09:00–18:00</li>
-              <li>Mardi – 09:00–18:00</li>
-              <li>Mercredi – 09:00–18:00</li>
-              <li>Jeudi – 09:00–18:00</li>
-              <li>Vendredi – 09:00–13:00, 15:00–18:00</li>
+              <li>Lundi – 09:00–16:30</li>
+              <li>Mardi – 09:00–16:30</li>
+              <li>Mercredi – 09:00–16:30</li>
+              <li>Jeudi – 09:00–16:30</li>
+              <li>Vendredi – 09:00–13:00, 15:00–16:30</li>
               <li>Samedi – 09:00–14:00</li>
               <li>Dimanche – Fermé</li>
             </ul>
