@@ -56,7 +56,6 @@ const RendezVous = () => {
       </motion.h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* Image */}
         <motion.div
           className="hidden md:block"
           initial={{ opacity: 0, x: -50 }}
@@ -70,7 +69,6 @@ const RendezVous = () => {
           />
         </motion.div>
 
-        {/* Formulaire */}
         <motion.form
           ref={form}
           onSubmit={handleSubmit}
@@ -136,6 +134,21 @@ const RendezVous = () => {
           </div>
 
           <div className="flex flex-col">
+            <label className="text-sm text-gray-600 mb-1">
+              Êtes-vous assuré(e) ?
+            </label>
+            <select
+              name="assurance"
+              className="border p-3 rounded focus:ring-2 focus:ring-[#ad9d64]"
+              required
+            >
+              <option value="">Sélectionner</option>
+              <option value="oui">Oui</option>
+              <option value="non">Non</option>
+            </select>
+          </div>
+
+          <div className="flex flex-col">
             <label className="text-sm text-gray-600 mb-1">Type de soin</label>
             <select
               name="soin"
@@ -154,7 +167,6 @@ const RendezVous = () => {
             </select>
           </div>
 
-          {/* Contact préféré */}
           <div>
             <label className="text-sm text-gray-600 mb-1 block">
               Contact préféré
@@ -171,7 +183,6 @@ const RendezVous = () => {
             </div>
           </div>
 
-          {/* Raisons & disponibilités */}
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <label className="text-sm text-gray-600 mb-1 block">
@@ -206,31 +217,50 @@ const RendezVous = () => {
                 Vos disponibilités :
               </label>
               <div className="grid grid-cols-2 gap-2 text-sm text-gray-700">
-                {["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"].flatMap(
-                  (jour) => [
-                    <label key={`${jour} AM`} className="flex gap-2">
-                      <input
-                        type="checkbox"
-                        name="disponibilite"
-                        value={`${jour} AM`}
-                      />
-                      {jour} AM
-                    </label>,
-                    <label key={`${jour} PM`} className="flex gap-2">
-                      <input
-                        type="checkbox"
-                        name="disponibilite"
-                        value={`${jour} PM`}
-                      />
-                      {jour} PM
-                    </label>,
-                  ]
-                )}
+                {[
+                  "Lundi",
+                  "Mardi",
+                  "Mercredi",
+                  "Jeudi",
+                  "Vendredi",
+                  "Samedi",
+                ].flatMap((jour) => [
+                  <label key={`${jour} AM`} className="flex gap-2">
+                    <input
+                      type="checkbox"
+                      name="disponibilite"
+                      value={`${jour} AM`}
+                    />
+                    {jour} AM
+                  </label>,
+                  <label key={`${jour} PM`} className="flex gap-2">
+                    <input
+                      type="checkbox"
+                      name="disponibilite"
+                      value={`${jour} PM`}
+                    />
+                    {jour} PM
+                  </label>,
+                ])}
               </div>
             </div>
           </div>
 
-          {/* Message */}
+          <div className="bg-red-50 border border-red-300 p-4 rounded">
+            <p className="text-sm text-red-700 font-semibold mb-2">
+              Nos horaires :
+            </p>
+            <ul className="text-sm text-red-600 space-y-1">
+              <li>Lundi – 09:00–18:00</li>
+              <li>Mardi – 09:00–18:00</li>
+              <li>Mercredi – 09:00–18:00</li>
+              <li>Jeudi – 09:00–18:00</li>
+              <li>Vendredi – 09:00–13:00, 15:00–18:00</li>
+              <li>Samedi – 09:00–14:00</li>
+              <li>Dimanche – Fermé</li>
+            </ul>
+          </div>
+
           <div>
             <label className="text-sm text-gray-600 mb-1">
               Message ou précisions

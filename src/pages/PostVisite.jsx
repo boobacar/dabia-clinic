@@ -55,7 +55,7 @@ const PostVisite = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        Conseils Post-Visite
+        Conseils après visite (Post-opération)
       </motion.h2>
 
       <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">

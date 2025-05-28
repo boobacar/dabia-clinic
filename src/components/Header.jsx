@@ -27,7 +27,7 @@ const Header = () => {
   const infosLinks = [
     { name: "Assurances", path: "/infos/assurances" },
     {
-      name: "Conseils apres visite (Post-operation)",
+      name: "Conseils après visite (Post-opération)",
       path: "/infos/post-visite",
     },
     { name: "Espace Enfants", path: "/infos/enfants" },
