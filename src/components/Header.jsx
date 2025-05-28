@@ -26,8 +26,11 @@ const Header = () => {
 
   const infosLinks = [
     { name: "Assurances", path: "/infos/assurances" },
-    { name: "Soins post-visite", path: "/infos/post-visite" },
-    { name: "Zone enfants", path: "/infos/enfants" },
+    {
+      name: "Conseils apres visite (Post-operation)",
+      path: "/infos/post-visite",
+    },
+    { name: "Espace Enfants", path: "/infos/enfants" },
     { name: "Technologie", path: "/infos/technologie" }, // ➕ ajouté
   ];
 

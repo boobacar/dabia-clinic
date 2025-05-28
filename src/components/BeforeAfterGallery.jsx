@@ -18,7 +18,7 @@ const BeforeAfterGallery = () => {
             key={index}
             src={image}
             alt={`Transformation ${index + 1}`}
-            className="w-full h-60 object-cover rounded-lg shadow hover:scale-105 transition-transform duration-300"
+            className="w-full h-100 object-cover rounded-lg shadow hover:scale-105 transition-transform duration-300"
             whileInView={{ opacity: 1, scale: 1 }}
             initial={{ opacity: 0, scale: 0.95 }}
             transition={{ delay: index * 0.1, duration: 0.4 }}

@@ -60,8 +60,8 @@ const PostVisite = () => {
 
       <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
         Ces recommandations vous permettent de bien récupérer après vos soins
-        dentaires à la clinique DABIA. En cas de doute, n’hésitez pas à nous
-        contacter.
+        dentaires à la Clinique Dentaire Dabia. En cas de doute, n’hésitez pas à
+        nous contacter.
       </p>
 
       <div className="space-y-10">

@@ -48,13 +48,13 @@ const Technologie = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        Notre Technologie
+        Nos Technologies
       </motion.h2>
 
       <p className="text-center text-gray-700 max-w-3xl mx-auto mb-12">
-        À la clinique DABIA, nous utilisons des équipements de pointe pour
-        garantir des soins de qualité, confortables, rapides et précis. Voici
-        quelques-unes de nos technologies.
+        À la Clinique Dentaire Dabia, nous utilisons des équipements de pointe
+        pour garantir des soins de qualité, confortables, rapides et précis.
+        Voici quelques-unes de nos technologies.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

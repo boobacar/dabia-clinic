@@ -59,9 +59,9 @@ const ZoneEnfants = () => {
       </motion.h2>
 
       <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
-        À la Clinique DABIA, nous mettons tout en œuvre pour que les enfants se
-        sentent à l’aise et en confiance lors de leurs visites. Voici quelques
-        informations utiles pour les parents.
+        À la Clinique Dentaire Dabia, nous mettons tout en œuvre pour que les
+        enfants se sentent à l’aise et en confiance lors de leurs visites. Voici
+        quelques informations utiles pour les parents.
       </p>
 
       <div className="space-y-10">

@@ -1,50 +1,56 @@
+import React from "react";
 import { motion } from "framer-motion";
 
+// Import des logos
+import logoCnam from "../assets/assurances/cnam.png";
+import logoIpres from "../assets/assurances/ipres.png";
+import logoSunu from "../assets/assurances/sunu.png";
+import logoNsia from "../assets/assurances/nsia.png";
+import logoAxa from "../assets/assurances/axa.png";
+import logoSaar from "../assets/assurances/saar.png";
+import logoAskia from "../assets/assurances/askia.png";
+import logoMutuelle from "../assets/assurances/mutuelle.png";
+
+// Liste des assurances avec leur logo
 const assurances = [
-  "NSIA Assurances",
-  "SONAM Assurances",
-  "ASKIA Assurances",
-  "WAFA Assurance",
-  "AMS Assurances",
-  "SAAR Assurances",
-  "CNART Assurances",
-  "Jubilee Assurances",
+  { nom: "CNAM", logo: logoCnam },
+  { nom: "IPRES", logo: logoIpres },
+  { nom: "Sunu Assurances", logo: logoSunu },
+  { nom: "NSIA", logo: logoNsia },
+  { nom: "AXA", logo: logoAxa },
+  { nom: "SAAR", logo: logoSaar },
+  { nom: "ASKIA", logo: logoAskia },
+  { nom: "Mutuelle de Santé", logo: logoMutuelle },
 ];
 
 const Assurances = () => {
   return (
     <section className="py-16 px-4 max-w-6xl mx-auto mt-20">
       <motion.h2
-        className="text-4xl font-bold text-center text-[#ad9d64] mb-6"
-        initial={{ opacity: 0, y: -20 }}
+        className="text-4xl font-bold text-center text-[#ad9d64] mb-12"
+        initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.7 }}
       >
         Nos Partenaires Assurances
       </motion.h2>
 
-      <motion.p
-        className="text-center text-gray-700 max-w-2xl mx-auto mb-12"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.2 }}
-      >
-        La Clinique Dentaire DABIA collabore avec plusieurs compagnies
-        d’assurances reconnues au Sénégal pour vous permettre de bénéficier de
-        soins dentaires de qualité, pris en charge ou remboursés selon votre
-        couverture.
-      </motion.p>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {assurances.map((name, i) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {assurances.map((item, i) => (
           <motion.div
             key={i}
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            className="flex items-center gap-4 bg-white shadow-md rounded-xl p-4 hover:scale-105 transition-transform duration-300"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.1, duration: 0.4 }}
-            className="bg-white shadow-md rounded-lg p-6 text-center border border-gray-100 hover:shadow-lg hover:border-[#ad9d64] transition"
+            viewport={{ once: true }}
           >
-            <h3 className="text-[#bb2988] font-semibold text-lg">{name}</h3>
+            <img
+              src={item.logo}
+              alt={item.nom}
+              className="w-16 h-16 object-contain rounded-md"
+            />
+            <h3 className="text-md font-semibold text-[#bb2988]">{item.nom}</h3>
           </motion.div>
         ))}
       </div>

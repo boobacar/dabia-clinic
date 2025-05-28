@@ -41,7 +41,7 @@ const StaffPreview = () => {
             Dr Fatoumata SAO
           </h4>
           <p className="text-sm text-gray-500">
-            Fondatrice de la clinique DABIA
+            Fondatrice de la Clinique Dentaire Dabia
           </p>
         </motion.div>
       </div>
