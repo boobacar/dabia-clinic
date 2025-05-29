@@ -34,7 +34,6 @@ import logoPhosphateThies from "../assets/assurances/phosphate_thies.jpeg";
 import logoExpressSante from "../assets/assurances/express_sante.jpeg";
 import logoDgid from "../assets/assurances/dgid.png";
 
-// Liste des assurances avec leur logo
 const assurances = [
   { nom: "Sunu Assurances", logo: logoSunu },
   { nom: "AXA", logo: logoAxa },
