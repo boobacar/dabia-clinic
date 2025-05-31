@@ -1,5 +1,12 @@
 import { useState } from "react";
-import { FaFacebookF, FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTiktok,
+  FaWhatsapp,
+  FaLinkedinIn,
+  FaLinkedin,
+} from "react-icons/fa";
 import { MdLocationPin, MdEmail, MdPhone } from "react-icons/md";
 import { AnimatePresence } from "framer-motion";
 import DevInfoModal from "./DevInfoModal";
@@ -13,7 +20,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="flex gap-2 items-center">
           <img
-            className="w-[20%] sm:w-[30%] rounded-full"
+            className="w-[20%] sm:w-[30%] rounded-full hover:animate-spin"
             src={logo}
             alt="logo"
           />
@@ -45,7 +52,7 @@ const Footer = () => {
 
       <div className="flex justify-center gap-6 mt-8">
         <a
-          href="https://www.tiktok.com/@dabia"
+          href="https://www.tiktok.com/@cliniquedentairedabia5"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-[#ad9d64] transition"
@@ -53,7 +60,7 @@ const Footer = () => {
           <FaTiktok className="w-6 h-6" />
         </a>
         <a
-          href="https://www.instagram.com/dabia"
+          href="https://www.instagram.com/clinique_dentaire_dabia/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-[#ad9d64] transition"
@@ -61,7 +68,7 @@ const Footer = () => {
           <FaInstagram className="w-6 h-6" />
         </a>
         <a
-          href="https://www.facebook.com/dabia"
+          href="https://www.facebook.com/cliniquedentairedabia/?locale=fr_FR"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-[#ad9d64] transition"
@@ -69,7 +76,15 @@ const Footer = () => {
           <FaFacebookF className="w-6 h-6" />
         </a>
         <a
-          href="https://wa.me/221XXXXXXXXX"
+          href="https://sn.linkedin.com/company/clinique-dentaire-dabia"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-[#ad9d64] transition"
+        >
+          <FaLinkedinIn className="w-6 h-6" />
+        </a>
+        <a
+          href="https://wa.me/221777039393"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-[#ad9d64] transition"

@@ -6,6 +6,7 @@ import staff1 from "../assets/staff1.png";
 import staff2 from "../assets/staff2.png";
 import staff3 from "../assets/staff3.png";
 import staff4 from "../assets/staff4.png";
+import { Link } from "react-router-dom";
 
 const personnel = [
   {
@@ -40,6 +41,15 @@ const Personnel = () => {
       <h2 className="text-4xl font-bold text-center mb-10 text-[#ad9d64]">
         Notre Équipe
       </h2>
+      <div className="flex justify-center mb-10">
+        <Link
+          to="/rendez-vous"
+          className="animate-bounce inline-block bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold transition transform hover:scale-105"
+        >
+          Prendre un rendez-vous
+        </Link>
+      </div>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {personnel.map((membre, index) => (
           <StaffCard

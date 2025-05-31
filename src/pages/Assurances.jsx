@@ -33,6 +33,7 @@ import logoMutuelleCapVert from "../assets/assurances/mutuelle_cap_vert.png";
 import logoPhosphateThies from "../assets/assurances/phosphate_thies.jpeg";
 import logoExpressSante from "../assets/assurances/express_sante.jpeg";
 import logoDgid from "../assets/assurances/dgid.png";
+import { Link } from "react-router-dom";
 
 const assurances = [
   { nom: "Sunu Assurances", logo: logoSunu },
@@ -79,6 +80,15 @@ const Assurances = () => {
       >
         Nos Partenaires Assurances
       </motion.h2>
+
+      <div className="flex justify-center mb-10">
+        <Link
+          to="/rendez-vous"
+          className="animate-bounce inline-block bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold transition transform hover:scale-105"
+        >
+          Prendre un rendez-vous
+        </Link>
+      </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {assurances.map((item, i) => (

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const sections = [
   {
@@ -63,6 +64,15 @@ const ZoneEnfants = () => {
         enfants se sentent à l’aise et en confiance lors de leurs visites. Voici
         quelques informations utiles pour les parents.
       </p>
+
+      <div className="flex justify-center mb-10">
+        <Link
+          to="/rendez-vous"
+          className="animate-bounce inline-block bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold transition transform hover:scale-105"
+        >
+          Prendre un rendez-vous
+        </Link>
+      </div>
 
       <div className="space-y-10">
         {sections.map((sec, i) => (

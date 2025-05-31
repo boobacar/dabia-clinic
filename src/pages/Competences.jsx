@@ -7,6 +7,15 @@ const Competences = () => {
       <h2 className="text-3xl text-[#ad9d64] font-bold text-center mb-8">
         Nos Compétences
       </h2>
+      <div className="flex justify-center mb-10">
+        <Link
+          to="/rendez-vous"
+          className="animate-bounce inline-block bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold transition transform hover:scale-105"
+        >
+          Prendre un rendez-vous
+        </Link>
+      </div>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {competences.map((item, index) => (
           <Link

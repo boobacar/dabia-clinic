@@ -6,12 +6,13 @@ import radioPan from "../assets/technologie/tech-radio.jpeg";
 import teleradio from "../assets/technologie/tech-teleradio.jpg";
 import camera from "../assets/technologie/tech-camera.jpg";
 import cbct from "../assets/technologie/tech-cbct.jpeg";
-import laser from "../assets/technologie/tech-laser.jpg";
-import scanner from "../assets/technologie/tech-scanner.jpg";
+import laser from "../assets/technologie/tech-laser.jpeg";
+import scanner from "../assets/technologie/tech-scanner.jpeg";
 import aspiration from "../assets/technologie/tech-aspiration.jpg";
 import autoclave from "../assets/technologie/tech-autoclave.jpg";
 import ia from "../assets/technologie/tech-ia.jpg";
 import led from "../assets/technologie/tech-led.png";
+import { Link } from "react-router-dom";
 
 /* === CONTENU === */
 const technologies = [
@@ -36,8 +37,7 @@ const technologies = [
     description:
       "Visualisation HD en temps réel de l'intérieur de la bouche sur écran.",
     image: camera,
-    details:
-      "Micro-caméra haute résolution indolore : elle capture des images détaillées des dents, gencives et muqueuses, même dans les zones difficiles d’accès. Idéal pour expliquer les soins et détecter précocement caries ou fissures.",
+    details: `Il s’agit d’une micro-caméra haute résolution, miniature et indolore, qui capture des images précises de l’intérieur de votre bouche. Elle nous permet de visualiser chaque détail de vos dents, gencives et muqueuses, même dans les zones difficiles d’accès.`,
   },
   {
     titre: "Cone Beam CT (CBCT)",
@@ -59,39 +59,55 @@ Dans quels cas l’utilisons-nous ?
     description:
       "Traitements des tissus mous quasi indolores et sans saignement.",
     image: laser,
-    details:
-      "Le laser diode permet des chirurgies gingivales précises, une réduction bactérienne et une cicatrisation accélérée, avec moins d’anesthésie et de bruit pour le patient.",
+    details: `Une Révolution de Précision et de Confort à la Clinique Dentaire DABIA
+
+À la clinique DABIA, nous allions expertise et technologies de pointe pour transformer votre expérience dentaire. Le laser dentaire incarne cette philosophie : une solution innovante, douce et ultra-précise pour des soins adaptés à vos besoins. 
+Précision inégalée, confort optimal, guérison accélérée, sécurité et sérénité seront au rendez-vous avec vos traitements au laser dentaire.`,
   },
   {
     titre: "Scanner intra-oral 3D",
     description: "Empreintes numériques et prothèses sur mesure sans pâte.",
     image: scanner,
-    details:
-      "Caméra 3D haute définition qui numérise votre bouche en quelques minutes, sans alginate. Utilisé pour planification d’implants, couronnes, facettes, gouttières orthodontiques et suivi d’usure.",
+    details: `Grâce à une petite caméra haute définition, nous capturons en quelques minutes une image 3D ultra-précise de votre bouche. Sans pâte désagréable, sans gouttière, et sans rayonnement.
+
+Cet outil est utilisé pour : 
+- Planification d’implant
+- ⁠Couronnes, bridges et facettes
+- ⁠Orthodontie (Invisalign, gouttières)
+- ⁠Suivi de l’usure dentaire ou des greffes gingivales`,
   },
   {
     titre: "Aspiration chirurgicale",
     description:
       "Système haute puissance pour un champ opératoire propre et sécurisé.",
     image: aspiration,
-    details:
-      "Évacuation instantanée de salive, débris et aérosols ; meilleure visibilité pour le praticien et réduction du risque de contamination croisée.",
+    details: `Pendant vos soins dentaires, l’aspiration chirurgicale élimine en temps réel :  
+- Les résidus de salive, de sang ou de tissus,  
+- Les liquides d’irrigation (eau utilisée lors des interventions),  
+- Les aérosols (fines particules en suspension dans l’air). 
+Pour un confort optimisé, une sécurité renforcée et une visibilité parfaite.`,
   },
   {
     titre: "Autoclaves modernes (classe B)",
     description:
       "Stérilisation conforme aux normes européennes pour instruments impeccables.",
     image: autoclave,
-    details:
-      "Cycle sous vide fractionné ; traçabilité électronique et impression des cycles ; sécurité maximale pour chaque patient.",
+    details: `l’excellence en stérilisation à la Clinique Dentaire DABIA 
+
+À la clinique dentaire DABIA, votre santé est notre priorité absolue. C’est pourquoi nous utilisons un autoclave moderne de Classe B l’équipement de stérilisation le plus avancé et le plus fiable du marché pour garantir une hygiène irréprochable de tous nos instruments dentaires.
+
+L’autoclave Classe B répond aux normes européennes les plus strictes (EN 13060) et s’impose comme la référence dans les cabinets dentaires exigeants.`,
   },
   {
     titre: "Intelligence artificielle (IA)",
     description:
       "Aide au diagnostic radiologique et planification de traitements complexes.",
     image: ia,
-    details:
-      "Algorithmes d’IA pour analyser les radiographies, dépister les lésions précoces et simuler des résultats esthétiques, améliorant précision et communication patient.",
+    details: `Votre alliée pour des soins dentaires de précision
+
+Chez la Clinique Dentaire DABIA, nous combinons l’expertise humaine et l’innovation technologique pour vous offrir des soins d’excellence. Mais qu’est-ce que l’IA concrètement ?  
+
+L’Intelligence Artificielle est une technologie qui permet à nos systèmes d’analyser des données dentaires avec une précision inédite. Comme un assistant ultra-performant, elle aide nos dentistes à repérer des détails subtils sur vos radios, à anticiper vos besoins, et à personnaliser chaque traitement.`,
   },
   {
     titre: "Blanchiment par lampe LED",
@@ -121,7 +137,7 @@ const TechnologieModal = ({ tech, onClose }) => (
         >
           <button
             onClick={onClose}
-            className="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl font-bold"
+            className="absolute top-0 right-2 text-gray-500 hover:text-gray-700 text-xl font-bold"
           >
             ×
           </button>
@@ -169,6 +185,15 @@ const Technologie = () => {
         pour garantir des soins de qualité, confortables, rapides et précis.
         Cliquez sur une technologie pour en savoir plus.
       </p>
+
+      <div className="flex justify-center mb-10">
+        <Link
+          to="/rendez-vous"
+          className="animate-bounce inline-block bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold transition transform hover:scale-105"
+        >
+          Prendre un rendez-vous
+        </Link>
+      </div>
 
       {/* Grille */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
