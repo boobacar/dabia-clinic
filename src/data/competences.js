@@ -1,4 +1,4 @@
-import esthetique from "../assets/competence.webp";
+import esthetique from "../assets/esthetique.jpeg";
 import parodontologie from "../assets/parodontologie.png";
 import implantologie from "../assets/implantologie.png";
 import endodontie from "../assets/endodontie.png";

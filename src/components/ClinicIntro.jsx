@@ -23,7 +23,7 @@ const ClinicIntro = () => {
         <motion.img
           src={apropos}
           alt="À propos de la clinique"
-          className="hidden sm:block sm:w-[80%] rounded-lg shadow-md"
+          className="hidden sm:block sm:w-[300px] rounded-lg shadow-md"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
