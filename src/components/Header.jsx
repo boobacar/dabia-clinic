@@ -78,12 +78,12 @@ const Header = () => {
                   Infos <ChevronDown className="w-4 h-4" />
                 </button>
                 {dropdownOpen && (
-                  <div className="absolute top-full left-0 mt-2 bg-white border rounded shadow-md z-10 w-48 py-2">
+                  <div className="absolute top-full left-0 mt-2 bg-white border rounded shadow-md z-10 w-48 ">
                     {infosLinks.map((sub, j) => (
                       <Link
                         to={sub.path}
                         key={j}
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#bb2988] hover:text-white"
                         onClick={() => setDropdownOpen(false)}
                       >
                         {sub.name}

@@ -45,6 +45,82 @@ const sections = [
       "Ces traitements sont simples et efficaces pour maintenir une bonne santé bucco-dentaire.",
     ],
   },
+  // Ajouts demandés par l'utilisateur
+  {
+    titre: "Se brosser les dents deux fois par jour",
+    contenu: [
+      "Utiliser une brosse à dents adaptée à l'âge avec des poils souples.",
+      "Brosser matin et soir, pendant 2 minutes, avec une dentifrice au fluor.",
+      "Ne pas oublier de brosser toutes les surfaces : devant, derrière et dessus les dents.",
+    ],
+  },
+  {
+    titre: "Utiliser du fil dentaire",
+    contenu: [
+      "Dès que deux dents se touchent, il est important de passer le fil dentaire (avec l'aide d’un adulte).",
+      "Cela permet d’éliminer la plaque entre les dents.",
+    ],
+  },
+  {
+    titre: "Limiter les sucreries et boissons sucrées",
+    contenu: [
+      "Éviter les bonbons, sodas, jus de fruits sucrés, surtout en dehors des repas.",
+      "Préférer des fruits frais ou des snacks sains comme les carottes, les noix (si âge approprié).",
+    ],
+  },
+  {
+    titre: "Boire de l’eau, surtout après avoir mangé",
+    contenu: [
+      "L’eau aide à rincer la bouche et à neutraliser l’acidité.",
+      "Favorise la production de salive, qui protège les dents.",
+    ],
+  },
+  {
+    titre: "Ne pas grignoter toute la journée",
+    contenu: [
+      "Le grignotage répété augmente le risque de caries, car les dents sont constamment exposées aux acides produits par les bactéries.",
+    ],
+  },
+  {
+    titre: "Porter un protège-dents pour le sport",
+    contenu: [
+      "En cas de sports à risque (football, judo, vélo), porter un protège-dents pour éviter les traumatismes dentaires.",
+    ],
+  },
+  {
+    titre: "Aller chez le dentiste tous les 6 à 12 mois",
+    contenu: [
+      "Pour un contrôle régulier, détecter les caries précoces, vérifier la croissance des dents.",
+    ],
+  },
+  {
+    titre: "Surveiller et aider au brossage jusqu’à 6-8 ans",
+    contenu: [
+      "Superviser ou assister le brossage, car les enfants n’ont pas toujours la motricité fine suffisante.",
+      "Montrer le bon geste, éventuellement utiliser un sablier ou minuterie.",
+    ],
+  },
+  {
+    titre: "Choisir un dentifrice adapté",
+    contenu: [
+      "Pour les enfants de moins de 6 ans : dentifrice avec 1000 ppm de fluor (à confirmer avec le dentiste).",
+      "Utiliser une petite quantité (taille d’un grain de riz jusqu’à 3 ans, un petit pois après).",
+    ],
+  },
+  {
+    titre: "Éviter de transmettre les bactéries",
+    contenu: [
+      "Ne pas lécher la tétine ou partager les couverts avec l’enfant.",
+      "Cela limite la transmission des bactéries responsables de caries.",
+    ],
+  },
+  {
+    titre: "Vérifier la croissance des dents",
+    contenu: [
+      "Suivre le développement des dents définitives.",
+      "Être attentif aux signes de malposition ou besoin d’orthodontie.",
+    ],
+  },
 ];
 
 const ZoneEnfants = () => {
