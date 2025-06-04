@@ -33,25 +33,29 @@ import logoMutuelleCapVert from "../assets/assurances/mutuelle_cap_vert.png";
 import logoPhosphateThies from "../assets/assurances/phosphate_thies.jpeg";
 import logoExpressSante from "../assets/assurances/express_sante.jpeg";
 import logoDgid from "../assets/assurances/dgid.png";
+import logoIpm from "../assets/assurances/ipm.jpeg";
 import { Link } from "react-router-dom";
 
 const assurances = [
-  { nom: "Sunu Assurances", logo: logoSunu },
   { nom: "AXA", logo: logoAxa },
   { nom: "Sonam", logo: logoSonam },
-  { nom: "Prévoyance Assurance", logo: logoPrevoyance },
+  { nom: "Amsa", logo: logoAmsa },
   { nom: "MSH International", logo: logoMsh },
   { nom: "OLEA", logo: logoOlea },
+  { nom: "Ipm Sonatel", logo: logoIpmSonatel },
   { nom: "Ascoma", logo: logoAscoma },
+  { nom: "Sunu Assurances", logo: logoSunu },
+  { nom: "Prévoyance Assurance", logo: logoPrevoyance },
   { nom: "Wafa Assurances", logo: logoWafa },
-  { nom: "Amsa", logo: logoAmsa },
   { nom: "Sanlam|Allianz", logo: logoSanlam },
   { nom: "Ma-Dgid (IPM impots et domaines)", logo: logoDgid },
   { nom: "Finafrica", logo: logoFinafrica },
   { nom: "WILLIS TOWERS WATSON", logo: logoWillis },
   { nom: "GGA", logo: logoGga },
+  { nom: "Ipm Fadiou", logo: logoIpm },
+  { nom: "Ipm Sura", logo: logoIpm },
+  { nom: "Ipm des Professions Libérales", logo: logoIpm },
   { nom: "Afiyah", logo: logoAfiyah },
-  { nom: "Ipm Sonatel", logo: logoIpmSonatel },
   { nom: "Ipm Eiffage", logo: logoIpmEiffage },
   { nom: "Ipm Bis (banque islamique)", logo: logoIpmBis },
   { nom: "Ipm Sagfa", logo: logoIpmSagfa },
@@ -61,7 +65,6 @@ const assurances = [
   { nom: "SYPAOA", logo: logoSypaoa },
   { nom: "TRANSVIE", logo: logoTransvie },
   { nom: "Ipm Senelec", logo: logoIpmSenelec },
-  { nom: "Ipm Sura", logo: logoIpmSura },
   { nom: "SUSU", logo: logoSusu },
   { nom: "AGETIP", logo: logoAgetip },
   { nom: "Mutuelle Hôtelière du Cap-Vert", logo: logoMutuelleCapVert },
