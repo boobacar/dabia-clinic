@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import sao from "../assets/sao.png";
+import sao from "../assets/sao.jpeg";
 
 const StaffPreview = () => {
   return (
@@ -17,7 +17,7 @@ const StaffPreview = () => {
 
       <div className="flex justify-center mb-6">
         <motion.div
-          className="bg-white shadow-lg rounded-lg p-6 text-center cursor-pointer w-full max-w-md"
+          className="bg-white shadow-lg rounded-lg p-6 text-center max-h-[100vh] max-w-[80vw] lg:max-w-[30vw]"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           whileHover={{
@@ -34,14 +34,25 @@ const StaffPreview = () => {
         >
           <img
             src={sao}
-            alt="Dr Nom"
-            className="w-[40%]  rounded-full mx-auto mb-4 object-cover"
+            alt="Dr Sao"
+            className=" h-[25vh] rounded-full mx-auto mb-4 object-cover"
           />
           <h4 className="text-lg font-semibold text-[#bb2988]">
-            Dr Fatoumata SAO
+            Dr FATOUMATA SAO
           </h4>
-          <p className="text-sm text-gray-500">
-            Fondatrice de la Clinique Dentaire Dabia
+          <p className="text-sm text-gray-500 mb-3">
+            Fondatrice et chirurgienne-dentiste en chef
+          </p>
+          <p className="text-sm text-black text-justify">
+            Passionnée par l'excellence et le bien-être de ses patients, la Dr
+            SAO est la fondatrice et l’âme de la clinique dentaire DABIA. Forte
+            de plusieurs années d'expérience, elle s'est spécialisée dans des
+            domaines de pointe tels que l’implantologie, l’orthodontie,
+            l’endodontie et la dentisterie esthétique. Grâce à une approche
+            humaine et à une expertise technique reconnue, elle propose des
+            traitements sur mesure alliant précision, confort et esthétisme. Sa
+            vision : redonner le sourire en toute confiance, avec un souci
+            constant d’innovation et de qualité.
           </p>
         </motion.div>
       </div>

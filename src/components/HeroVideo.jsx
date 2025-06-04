@@ -25,7 +25,7 @@ const HeroVideo = () => {
           transition={{ delay: 0.3 }}
           className="text-[#ad9d64] text-xl md:text-3xl mb-2"
         >
-          Bienvenue dans notre clinique dentaire
+          Bienvenue à la Clinique Dentaire
         </motion.h2>
         <motion.h1
           initial={{ opacity: 0, y: 10 }}
@@ -35,6 +35,9 @@ const HeroVideo = () => {
         >
           Dabia
         </motion.h1>
+        <motion.p className="border p-2 text-[#ad9d64] max-w-60 text-sm mb-10 sm:max-w-100">
+          Des soins avancés, un accueil chaleureux, un sourire radieux.
+        </motion.p>
         <Link
           to="/rendez-vous"
           className="bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold hover:scale-110 hover:brightness-110 transition-transform duration-300"
