@@ -21,7 +21,6 @@ export default function BeforeAfterGallery() {
         {avantApresImages.map((pair, idx) => (
           <ReactCompareSlider
             key={idx}
-            onlyHandleDraggable
             className={`
               rounded-lg shadow-md
               overflow-hidden
