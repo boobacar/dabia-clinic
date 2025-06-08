@@ -113,7 +113,6 @@ const RendezVous = () => {
             <input
               type="email"
               name="email"
-              required
               className="border p-3 rounded focus:ring-2 focus:ring-[#ad9d64]"
             />
           </div>
@@ -133,6 +132,21 @@ const RendezVous = () => {
             />
           </div>
 
+          <div className="bg-red-50 border border-red-300 p-4 rounded">
+            <p className="text-sm text-red-700 font-semibold mb-2">
+              Nos horaires :
+            </p>
+            <ul className="text-sm text-red-600 space-y-1">
+              <li>Lundi – 09:00–16:30</li>
+              <li>Mardi – 09:00–16:30</li>
+              <li>Mercredi – 09:00–16:30</li>
+              <li>Jeudi – 09:00–16:30</li>
+              <li>Vendredi – 09:00–13:00, 15:00–16:30</li>
+              <li>Samedi – 09:00–14:00</li>
+              <li>Dimanche – Fermé</li>
+            </ul>
+          </div>
+
           <div className="flex flex-col">
             <label className="text-sm text-gray-600 mb-1">
               Êtes-vous assuré(e) ?
@@ -140,7 +154,6 @@ const RendezVous = () => {
             <select
               name="assurance"
               className="border p-3 rounded focus:ring-2 focus:ring-[#ad9d64]"
-              required
             >
               <option value="">Sélectionner</option>
               <option value="oui">Oui</option>
@@ -152,10 +165,10 @@ const RendezVous = () => {
             <label className="text-sm text-gray-600 mb-1">Type de soin</label>
             <select
               name="soin"
-              required
               className="border p-3 rounded focus:ring-2 focus:ring-[#ad9d64]"
             >
               <option value="">Sélectionner</option>
+              <option>Consultation</option>
               <option>Esthétique dentaire</option>
               <option>Parodontologie</option>
               <option>Implantologie</option>
@@ -173,7 +186,7 @@ const RendezVous = () => {
             </label>
             <div className="flex gap-6">
               <label className="flex items-center gap-2">
-                <input type="radio" name="contact" value="courriel" required />
+                <input type="radio" name="contact" value="courriel" />
                 Par courriel
               </label>
               <label className="flex items-center gap-2">
@@ -183,7 +196,7 @@ const RendezVous = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="">
             <div>
               <label className="text-sm text-gray-600 mb-1 block">
                 Raison du rendez-vous :
@@ -211,54 +224,6 @@ const RendezVous = () => {
                 </label>
               </div>
             </div>
-
-            <div>
-              <label className="text-sm text-gray-600 mb-1 block">
-                Vos disponibilités :
-              </label>
-              <div className="grid grid-cols-2 gap-2 text-sm text-gray-700">
-                {[
-                  "Lundi",
-                  "Mardi",
-                  "Mercredi",
-                  "Jeudi",
-                  "Vendredi",
-                  "Samedi",
-                ].flatMap((jour) => [
-                  <label key={`${jour} AM`} className="flex gap-2">
-                    <input
-                      type="checkbox"
-                      name="disponibilite"
-                      value={`${jour} AM`}
-                    />
-                    {jour} AM
-                  </label>,
-                  <label key={`${jour} PM`} className="flex gap-2">
-                    <input
-                      type="checkbox"
-                      name="disponibilite"
-                      value={`${jour} PM`}
-                    />
-                    {jour} PM
-                  </label>,
-                ])}
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-red-50 border border-red-300 p-4 rounded">
-            <p className="text-sm text-red-700 font-semibold mb-2">
-              Nos horaires :
-            </p>
-            <ul className="text-sm text-red-600 space-y-1">
-              <li>Lundi – 09:00–16:30</li>
-              <li>Mardi – 09:00–16:30</li>
-              <li>Mercredi – 09:00–16:30</li>
-              <li>Jeudi – 09:00–16:30</li>
-              <li>Vendredi – 09:00–13:00, 15:00–16:30</li>
-              <li>Samedi – 09:00–14:00</li>
-              <li>Dimanche – Fermé</li>
-            </ul>
           </div>
 
           <div>

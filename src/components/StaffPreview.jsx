@@ -44,9 +44,9 @@ const StaffPreview = () => {
             Fondatrice et chirurgienne-dentiste en chef
           </p>
           <p className="text-sm text-black text-justify">
-            Passionnée par l'excellence et le bien-être de ses patients, le Dr
-            SAO est la fondatrice et l’âme de la clinique dentaire DABIA. Forte
-            de plusieurs années d'expérience, elle s'est spécialisée dans des
+            Passionnée par l'excellence et le bien-être de ses patients, Dr SAO
+            est la fondatrice et l’âme de la clinique dentaire DABIA. Forte de
+            plusieurs années d'expérience, elle s'est spécialisée dans des
             domaines de pointe tels que l’implantologie, l’orthodontie,
             l’endodontie et la dentisterie esthétique. Grâce à une approche
             humaine et à une expertise technique reconnue, elle propose des
