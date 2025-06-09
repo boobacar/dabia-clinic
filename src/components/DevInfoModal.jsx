@@ -43,7 +43,7 @@ const DevInfoModal = ({ onClose }) => {
           </div>
           <div className="flex items-center justify-center gap-2">
             <FaEnvelope className="text-[#ad9d64]" />
-            <span>boubsfal@gmail.com</span>
+            <span>fallcontech@gmail.com</span>
           </div>
         </div>
 

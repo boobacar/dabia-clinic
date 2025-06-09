@@ -102,6 +102,12 @@ const Header = () => {
               </Link>
             )
           )}
+          <Link
+            to="/rendez-vous"
+            className="inline-block bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold transition transform hover:scale-105"
+          >
+            Rendez-Vous
+          </Link>
         </nav>
 
         {/* Mobile button */}
@@ -143,6 +149,12 @@ const Header = () => {
               </Link>
             )
           )}
+          <Link
+            to="/rendez-vous"
+            className="inline-block bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold transition transform hover:scale-105"
+          >
+            Prendre un rendez-vous
+          </Link>
         </div>
       )}
     </header>
