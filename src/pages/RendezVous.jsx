@@ -79,7 +79,7 @@ const RendezVous = () => {
         >
           <div className="grid md:grid-cols-2 gap-4">
             <div className="flex flex-col">
-              <label className="text-sm text-gray-600 mb-1">Nom</label>
+              <label className="text-sm text-gray-600 mb-1">Nom*</label>
               <input
                 type="text"
                 name="nom"
@@ -88,7 +88,7 @@ const RendezVous = () => {
               />
             </div>
             <div className="flex flex-col">
-              <label className="text-sm text-gray-600 mb-1">Prénom</label>
+              <label className="text-sm text-gray-600 mb-1">Prénom*</label>
               <input
                 type="text"
                 name="prenom"
@@ -99,7 +99,7 @@ const RendezVous = () => {
           </div>
 
           <div className="flex flex-col">
-            <label className="text-sm text-gray-600 mb-1">Téléphone</label>
+            <label className="text-sm text-gray-600 mb-1">Téléphone*</label>
             <input
               type="tel"
               name="telephone"
@@ -118,7 +118,9 @@ const RendezVous = () => {
           </div>
 
           <div className="flex flex-col">
-            <label className="text-sm text-gray-600 mb-1">Date souhaitée</label>
+            <label className="text-sm text-gray-600 mb-1">
+              Date souhaitée*
+            </label>
             <DatePicker
               selected={date}
               onChange={(selectedDate) => setDate(selectedDate)}
