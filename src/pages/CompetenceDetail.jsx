@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useParams, Link } from "react-router-dom";
 import esthetique from "../assets/competences/esthetique.webp";
 import parodontologie from "../assets/competences/parodontologie.webp";
@@ -9,6 +10,9 @@ import greffe from "../assets/competences/Greffe-osseuse.webp";
 import blanchiment from "../assets/competences/Blanchiment-dentaire.webp";
 import pedodontie from "../assets/competences/Pedodontie.webp";
 
+// ------------------------------------------------------------
+//  Compétence detail data
+// ------------------------------------------------------------
 const competencesData = {
   "esthétique-dentaire": {
     titre: "Esthétique dentaire",
@@ -66,43 +70,100 @@ const competencesData = {
   },
 };
 
+// ------------------------------------------------------------
+// Animation variants
+// ------------------------------------------------------------
+const pageVariants = {
+  initial: { opacity: 0, y: 20 },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, when: "beforeChildren" },
+  },
+  exit: { opacity: 0, y: -20, transition: { duration: 0.3 } },
+};
+
+const staggerContainer = {
+  animate: {
+    transition: { staggerChildren: 0.15 },
+  },
+};
+
+const childVariant = {
+  initial: { opacity: 0, y: 20, scale: 0.95 },
+  animate: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5 } },
+};
+
+// ------------------------------------------------------------
+// Component
+// ------------------------------------------------------------
 const CompetenceDetail = () => {
   const { slug } = useParams();
   const competence = competencesData[slug];
 
   if (!competence) {
     return (
-      <div className="text-center py-20 mt-20">
+      <motion.div
+        className="text-center py-20 mt-20"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+      >
         <h2 className="text-3xl font-bold text-red-500 mb-4">
           Compétence introuvable
         </h2>
         <Link to="/" className="text-[#bb2988] underline">
           Retour à l'accueil
         </Link>
-      </div>
+      </motion.div>
     );
   }
 
   return (
-    <section className="py-16 px-4 max-w-4xl mx-auto mt-20">
-      <h1 className="text-4xl font-bold text-center text-[#ad9d64] mb-8">
+    <motion.section
+      className="py-16 px-4 max-w-4xl mx-auto mt-20"
+      variants={pageVariants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+    >
+      <motion.h1
+        className="text-4xl font-bold text-center text-[#ad9d64] mb-8"
+        variants={childVariant}
+      >
         {competence.titre}
-      </h1>
-      <img
-        src={competence.image}
-        alt={competence.titre}
-        className="w-[60%] object-cover rounded mb-6 mx-auto"
-      />
-      <p className="text-lg text-gray-700 mb-8">{competence.description}</p>
-      <div className="text-center">
-        <Link
-          to="/rendez-vous"
-          className="bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold hover:scale-105 transition"
+      </motion.h1>
+
+      {/* Container for image + paragraph & CTA */}
+      <motion.div variants={staggerContainer}>
+        <motion.img
+          src={competence.image}
+          alt={competence.titre}
+          className="w-[60%] object-cover rounded mb-6 mx-auto shadow-lg"
+          variants={childVariant}
+          whileHover={{ scale: 1.03 }}
+          transition={{ type: "spring", stiffness: 200, damping: 20 }}
+        />
+
+        <motion.p
+          className="text-lg text-gray-700 mb-8 leading-relaxed"
+          variants={childVariant}
         >
-          Prendre un rendez-vous
-        </Link>
-      </div>
-    </section>
+          {competence.description}
+        </motion.p>
+
+        <motion.div className="text-center" variants={childVariant}>
+          <Link
+            to="/rendez-vous"
+            className="bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold hover:scale-105 focus:scale-105 active:scale-95 inline-block"
+            as={motion.a}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Prendre un rendez-vous
+          </Link>
+        </motion.div>
+      </motion.div>
+    </motion.section>
   );
 };
 
