@@ -2,10 +2,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
-import temoin1 from "../assets/temoin1.png";
-import temoin2 from "../assets/temoin2.png";
-import temoin3 from "../assets/temoin3.png";
-import temoin4 from "../assets/temoin4.png";
+import temoin1 from "../assets/temoin1.webp";
+import temoin2 from "../assets/temoin2.webp";
+import temoin3 from "../assets/temoin3.webp";
+import temoin4 from "../assets/temoin4.webp";
 
 const testimonials = [
   {

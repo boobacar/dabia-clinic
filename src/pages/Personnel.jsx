@@ -2,10 +2,10 @@ import React from "react";
 import StaffCard from "../components/StaffCard";
 
 // Importation des images
-import staff1 from "../assets/staff1.png";
-import staff2 from "../assets/staff2.png";
-import staff3 from "../assets/staff3.png";
-import staff4 from "../assets/staff4.png";
+import staff1 from "../assets/staff1.webp";
+import staff2 from "../assets/staff2.webp";
+import staff3 from "../assets/staff3.webp";
+import staff4 from "../assets/staff4.webp";
 import { Link } from "react-router-dom";
 
 const personnel = [

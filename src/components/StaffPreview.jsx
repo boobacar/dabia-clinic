@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import sao from "../assets/sao.jpeg";
+import sao from "../assets/sao.webp";
 
 const StaffPreview = () => {
   return (
@@ -21,7 +21,7 @@ const StaffPreview = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           whileHover={{
-            scale: 1.05,
+            scale: 1.01,
             boxShadow: "0 10px 25px rgba(0,0,0,0.2)",
           }}
           transition={{

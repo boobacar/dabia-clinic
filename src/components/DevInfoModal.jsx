@@ -7,7 +7,7 @@ import {
   FaEnvelope,
   FaWhatsapp,
 } from "react-icons/fa";
-import maphoto from "../assets/moi.jpg";
+import maphoto from "../assets/moi.webp";
 
 const DevInfoModal = ({ onClose }) => {
   return (

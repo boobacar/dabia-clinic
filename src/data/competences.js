@@ -1,12 +1,12 @@
-import esthetique from "../assets/competences/esthetique.jpeg";
-import parodontologie from "../assets/competences/parodontologie.jpeg";
-import implantologie from "../assets/competences/Implantologie.jpeg";
-import endodontie from "../assets/competences/Endodontie.jpeg";
-import facette from "../assets/competences/Facettes-dentaires.jpeg";
-import orthodontie from "../assets/competences/Orthodontie.jpeg";
-import greffe from "../assets/competences/Greffe-osseuse.jpeg";
-import blanchiment from "../assets/competences/Blanchiment-dentaire.jpeg";
-import pedodontie from "../assets/competences/Pedodontie.jpeg";
+import esthetique from "../assets/competences/esthetique.webp";
+import parodontologie from "../assets/competences/parodontologie.webp";
+import implantologie from "../assets/competences/Implantologie.webp";
+import endodontie from "../assets/competences/Endodontie.webp";
+import facette from "../assets/competences/Facettes-dentaires.webp";
+import orthodontie from "../assets/competences/Orthodontie.webp";
+import greffe from "../assets/competences/Greffe-osseuse.webp";
+import blanchiment from "../assets/competences/Blanchiment-dentaire.webp";
+import pedodontie from "../assets/competences/Pedodontie.webp";
 
 const competences = [
   {

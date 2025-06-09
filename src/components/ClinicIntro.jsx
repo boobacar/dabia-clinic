@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import apropos from "../assets/apropos.png";
+import apropos from "../assets/apropos.webp";
 
 const ClinicIntro = () => {
   return (

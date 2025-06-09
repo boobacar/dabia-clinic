@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import DatePicker from "react-datepicker";
 import fr from "date-fns/locale/fr";
 import "react-datepicker/dist/react-datepicker.css";
-import imgrv from "../assets/rendezvous-dabia.png";
+import imgrv from "../assets/rendezvous-dabia.webp";
 
 const RendezVous = () => {
   const form = useRef();

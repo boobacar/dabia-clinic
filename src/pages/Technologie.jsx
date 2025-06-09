@@ -2,16 +2,16 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 /* === IMAGES (mets tes vraies images dans src/assets/technologie) === */
-import radioPan from "../assets/technologie/tech-radio.jpeg";
-import teleradio from "../assets/technologie/tech-teleradio.jpg";
-import camera from "../assets/technologie/tech-camera.jpg";
-import cbct from "../assets/technologie/tech-cbct.jpeg";
-import laser from "../assets/technologie/tech-laser.jpeg";
-import scanner from "../assets/technologie/tech-scanner.jpeg";
-import aspiration from "../assets/technologie/tech-aspiration.jpg";
-import autoclave from "../assets/technologie/tech-autoclave.jpg";
-import ia from "../assets/technologie/tech-ia.jpg";
-import led from "../assets/technologie/tech-led.png";
+import radioPan from "../assets/technologie/tech-radio.webp";
+import teleradio from "../assets/technologie/tech-teleradio.webp";
+import camera from "../assets/technologie/tech-camera.webp";
+import cbct from "../assets/technologie/tech-cbct.webp";
+import laser from "../assets/technologie/tech-laser.webp";
+import scanner from "../assets/technologie/tech-scanner.webp";
+import aspiration from "../assets/technologie/tech-aspiration.webp";
+import autoclave from "../assets/technologie/tech-autoclave.webp";
+import ia from "../assets/technologie/tech-ia.webp";
+import led from "../assets/technologie/tech-led.webp";
 import { Link } from "react-router-dom";
 
 /* === CONTENU === */
@@ -205,7 +205,7 @@ const Technologie = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.1, duration: 0.6 }}
             viewport={{ once: true }}
-            className="bg-white cursor-pointer rounded-xl shadow-md overflow-hidden hover:shadow-lg transition text-left"
+            className="bg-white grow-5 cursor-pointer rounded-xl shadow-md overflow-hidden hover:shadow-lg transition text-left"
           >
             <img
               src={tech.image}
