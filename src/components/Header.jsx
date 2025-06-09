@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
-import logo from "../assets/logo.webp";
+import logo from "../assets/logo.jpg";
 
 const Header = () => {
   const [open, setOpen] = useState(false);

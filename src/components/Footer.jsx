@@ -10,7 +10,7 @@ import {
 import { MdLocationPin, MdEmail, MdPhone } from "react-icons/md";
 import { AnimatePresence } from "framer-motion";
 import DevInfoModal from "./DevInfoModal";
-import logo from "../assets/logo.webp";
+import logo from "../assets/logo.jpg";
 
 const Footer = () => {
   const [showModal, setShowModal] = useState(false);
