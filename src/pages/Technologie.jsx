@@ -205,7 +205,7 @@ const Technologie = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.1, duration: 0.6 }}
             viewport={{ once: true }}
-            className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition text-left"
+            className="bg-white cursor-pointer rounded-xl shadow-md overflow-hidden hover:shadow-lg transition text-left"
           >
             <img
               src={tech.image}
