@@ -112,7 +112,7 @@ const Header = () => {
 
         {/* Mobile button */}
         <div className="md:hidden">
-          <button onClick={() => setOpen(!open)} className="text-gray-800">
+          <button onClick={() => setOpen(!open)} className="text-white">
             {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
