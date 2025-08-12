@@ -17,7 +17,9 @@ const StaffCard = ({ photo, nom, poste, bio }) => {
       />
       <h3 className="text-lg font-bold text-[#ad9d64]">{nom}</h3>
       <p className="text-sm text-gray-600 italic">{poste}</p>
-      <p className="text-sm text-gray-700 mt-2">{bio}</p>
+      <p className="whitespace-pre-line text-left text-sm text-gray-700 mt-2">
+        {bio}
+      </p>
     </motion.div>
   );
 };

@@ -6,6 +6,9 @@ import DatePicker from "react-datepicker";
 import fr from "date-fns/locale/fr";
 import "react-datepicker/dist/react-datepicker.css";
 import imgrv from "../assets/rendezvous-dabia.webp";
+import { addDays, startOfDay } from "date-fns";
+
+const minSelectableDate = addDays(startOfDay(new Date()), 2);
 
 const RendezVous = () => {
   const form = useRef();
@@ -128,7 +131,7 @@ const RendezVous = () => {
               dateFormat="dd/MM/yyyy"
               placeholderText="Choisissez une date"
               locale={fr}
-              minDate={new Date()}
+              minDate={minSelectableDate}
               required
               className="border p-3 rounded focus:ring-2 focus:ring-[#ad9d64]"
             />

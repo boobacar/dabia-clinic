@@ -19,8 +19,6 @@ const Header = () => {
   const navLinks = [
     { name: "Accueil", path: "/" },
     { name: "Infos", isDropdown: true },
-    { name: "Compétences", path: "/all-competences" },
-    { name: "Équipe", path: "/personnel" },
     { name: "Nous Rejoindre", path: "/rejoindre" }, // 🔁 remplacé
   ];
 

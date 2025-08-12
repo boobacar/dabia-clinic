@@ -28,15 +28,18 @@ export default function BeforeAfterGallery() {
   return (
     <section className="py-12 px-4 max-w-full mx-auto">
       {/* Heading animation */}
-      <motion.h2
-        className="text-3xl text-[#ad9d64] font-bold text-center mb-8"
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.6 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-      >
-        Glissez pour comparer
-      </motion.h2>
+      <div className="flex flex-col items-center mb-8">
+        <motion.h2
+          className="text-3xl text-[#ad9d64] font-bold text-center"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.6 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          Résultats Avant/Après
+        </motion.h2>
+        <p>Glissez pour comparer</p>
+      </div>
 
       {/* Grid animation with staggered children */}
       <motion.div

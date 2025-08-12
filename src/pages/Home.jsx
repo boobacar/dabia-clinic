@@ -6,6 +6,7 @@ import CompetencesGrid from "../components/CompetencesGrid";
 import StaffPreview from "../components/StaffPreview";
 import TestimonialsCarousel from "../components/TestimonialsCarousel";
 import GoogleMapSection from "../components/GoogleMapSection";
+import Personnel from "./Personnel";
 
 const Home = () => {
   return (
@@ -13,8 +14,8 @@ const Home = () => {
       <HeroVideo />
       <BeforeAfterGallery />
       <ClinicIntro />
+      <Personnel />
       <CompetencesGrid />
-      <StaffPreview />
       <TestimonialsCarousel />
       <GoogleMapSection />
     </div>

@@ -2,55 +2,49 @@ import React from "react";
 import StaffCard from "../components/StaffCard";
 
 // Importation des images
-import staff1 from "../assets/staff1.webp";
-import staff2 from "../assets/staff2.webp";
-import staff3 from "../assets/staff3.webp";
-import staff4 from "../assets/staff4.webp";
+import admin from "../assets/admin.jpeg";
+import assistanteDent from "../assets/assistanteDent.jpeg";
+import assistante from "../assets/assistante.jpeg";
+import sao from "../assets/sao.webp";
 import { Link } from "react-router-dom";
 
 const personnel = [
   {
-    nom: "Dr. Aïssatou Ndiaye",
-    poste: "Chirurgienne-dentiste spécialisée en esthétique",
-    bio: "Passionnée par le sourire de ses patients, elle cumule 10 ans d'expérience en esthétique dentaire.",
-    photo: staff1,
+    nom: "Dr Fatoumata SAO",
+    poste: "Fondatrice et chirurgienne-dentiste en chef",
+    bio: "Passionnée par l'excellence et le bien-être de ses patients, Dr SAO est la fondatrice et l’âme de la clinique dentaire DABIA. Forte de plusieurs années d'expérience, elle s'est spécialisée dans des domaines de pointe tels que l’implantologie, l’orthodontie, l’endodontie et la dentisterie esthétique. Grâce à une approche humaine et à une expertise technique reconnue, elle propose des traitements sur mesure alliant précision, confort et esthétisme. Sa vision : redonner le sourire en toute confiance, avec un souci constant d’innovation et de qualité.",
+    photo: sao,
   },
   {
-    nom: "Dr. Mamadou Sy",
-    poste: "Implantologue",
-    bio: "Expert en chirurgie implantaire, il assure des soins de haute précision avec douceur.",
-    photo: staff2,
+    nom: "Moustapha FALL",
+    poste: "Office Manager – Administrateur de la clinique dentaire DABIA",
+    bio: `Il veille au bon fonctionnement global de la clinique, en supervisant à la fois l’équipe administrative et l’organisation des services. Grâce à son sens aigu de la gestion et son engagement constant envers la qualité des soins, il s’assure que chaque patient bénéficie d’une expérience fluide, accueillante et professionnelle. 
+    
+  Pilier de notre structure, Moustapha coordonne les opérations quotidiennes, gère les ressources humaines et veille à l’amélioration continue des processus internes, dans le respect des standards les plus élevés.`,
+    photo: admin,
   },
   {
-    nom: "Dr. Khadija Ba",
-    poste: "Orthodontiste",
-    bio: "Elle accompagne enfants et adultes pour un alignement parfait des dents.",
-    photo: staff3,
-  },
-  {
-    nom: "Fatou Diop",
+    nom: "Fatou WADE",
     poste: "Assistante dentaire",
-    bio: "Souriante et organisée, elle garantit un accueil chaleureux pour tous les patients.",
-    photo: staff4,
+    bio: "Fatou Wade accompagne nos praticiens au quotidien pour garantir des soins de qualité dans un environnement serein et sécurisé. Attentive, organisée et toujours à l’écoute, elle prépare le matériel, assiste le dentiste en salle de soins et veille à la stérilisation rigoureuse des instruments.\n\nSon sens du détail et son empathie contribuent à mettre les patients en confiance, tout en assurant un soutien essentiel à l’ensemble de l’équipe médicale.",
+    photo: assistanteDent,
+  },
+  {
+    nom: "Mame Ndiaye SY",
+    poste: "Responsable du secrétariat dentaire",
+    bio: "Avec professionnalisme et bienveillance, Mame Ndiaye Sy assure la gestion quotidienne du secrétariat de notre clinique dentaire. Elle est votre premier point de contact, que ce soit pour la prise de rendez-vous, la gestion des dossiers ou le suivi administratif. Forte d’une solide expérience dans le domaine médico-administratif, elle veille à ce que chaque patient soit accueilli avec courtoisie et efficacité.\n\nMame joue un rôle central dans le bon fonctionnement de notre clinique, en facilitant la communication entre les patients et l’équipe soignante, tout en garantissant une organisation fluide et rigoureuse.",
+    photo: assistante,
   },
 ];
 
 const Personnel = () => {
   return (
-    <section className="py-16 px-4 max-w-7xl mx-auto mt-20">
+    <section className="py-16 px-4 max-w-7xl mx-auto mt-5">
       <h2 className="text-4xl font-bold text-center mb-10 text-[#ad9d64]">
         Notre Équipe
       </h2>
-      <div className="flex justify-center mb-10">
-        <Link
-          to="/rendez-vous"
-          className="animate-bounce inline-block bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold transition transform hover:scale-105"
-        >
-          Prendre un rendez-vous
-        </Link>
-      </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
         {personnel.map((membre, index) => (
           <StaffCard
             key={index}

@@ -53,7 +53,7 @@ const ClinicIntro = () => {
           </p>
           <Link
             to="/rendez-vous"
-            className="inline-block bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold transition transform hover:scale-105"
+            className="animate-bounce inline-block bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold transition transform hover:scale-105"
           >
             Prendre un rendez-vous
           </Link>
