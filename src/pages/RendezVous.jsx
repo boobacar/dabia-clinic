@@ -133,8 +133,13 @@ const RendezVous = () => {
               locale={fr}
               minDate={minSelectableDate}
               required
-              className="border p-3 rounded focus:ring-2 focus:ring-[#ad9d64]"
+              className="border p-3 rounded focus:ring-2 focus:ring-[#ad9d64] mb-1"
             />
+            <p className="text-xs text-gray-600">
+              Consultation d’urgence Pour toute urgence dentaire, merci de nous
+              contacter au +221 77 703 93 93. Nous sommes également joignables
+              sur WhatsApp via ce même numéro.
+            </p>
           </div>
 
           <div className="bg-red-50 border border-red-300 p-4 rounded">
@@ -167,7 +172,7 @@ const RendezVous = () => {
           </div>
 
           <div className="flex flex-col">
-            <label className="text-sm text-gray-600 mb-1">Type de soin</label>
+            <label className="text-sm text-gray-600 mb-1">Types de soins</label>
             <select
               name="soin"
               className="border p-3 rounded focus:ring-2 focus:ring-[#ad9d64]"
