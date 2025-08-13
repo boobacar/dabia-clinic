@@ -136,9 +136,11 @@ const RendezVous = () => {
               className="border p-3 rounded focus:ring-2 focus:ring-[#ad9d64] mb-1"
             />
             <p className="text-xs text-gray-600">
-              Consultation d’urgence Pour toute urgence dentaire, merci de nous
-              contacter au +221 77 703 93 93. Nous sommes également joignables
-              sur WhatsApp via ce même numéro.
+              <span className="font-bold">Consultation d’urgence</span>
+              <br />
+              Pour toute urgence dentaire, merci de nous contacter au +221 77
+              703 93 93. Nous sommes également joignables sur WhatsApp via ce
+              même numéro.
             </p>
           </div>
 
