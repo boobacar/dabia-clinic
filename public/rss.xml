@@ -1,64 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
-  <channel>
-    <title>Clinique Dentaire DABIA – Blog</title>
-    <link>https://www.cliniquedentairedabia.com/blog</link>
-    <description>Conseils dentaires à Dakar</description>
-    <item>
-      <title><![CDATA[Urgence dentaire à Dakar : que faire immédiatement?]]></title>
-      <link>https://www.cliniquedentairedabia.com/blog/urgence-dentaire-dakar-que-faire</link>
-      <guid>https://www.cliniquedentairedabia.com/blog/urgence-dentaire-dakar-que-faire</guid>
-      <pubDate>Tue, 05 Aug 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[Douleur aiguë, dent cassée, abcès… Les bons réflexes avant d’arriver à la clinique DABIA.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Blanchiment des dents à Dakar : méthodes, prix et conseils]]></title>
-      <link>https://www.cliniquedentairedabia.com/blog/blanchiment-dents-prix-conseils-dakar</link>
-      <guid>https://www.cliniquedentairedabia.com/blog/blanchiment-dents-prix-conseils-dakar</guid>
-      <pubDate>Sun, 20 Jul 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[Tout savoir sur les lampes LED, gouttières à domicile, et l’entretien de votre sourire.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Implant dentaire à Dakar : étapes, durée et coût – Guide complet]]></title>
-      <link>https://www.cliniquedentairedabia.com/blog/combien-coute-implant-dentaire-dakar-guide</link>
-      <guid>https://www.cliniquedentairedabia.com/blog/combien-coute-implant-dentaire-dakar-guide</guid>
-      <pubDate>Tue, 01 Jul 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[De l’extraction à la couronne, votre parcours implant pas à pas.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Orthodontie à Dakar : aligneurs transparents ou brackets ?]]></title>
-      <link>https://www.cliniquedentairedabia.com/blog/orthodontie-adulte-enfant-dakar-aligneurs-brackets</link>
-      <guid>https://www.cliniquedentairedabia.com/blog/orthodontie-adulte-enfant-dakar-aligneurs-brackets</guid>
-      <pubDate>Sat, 14 Jun 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[Choisir la meilleure option pour l’enfant, l’ado ou l’adulte.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Saignement des gencives : faut-il faire un détartrage en profondeur ?]]></title>
-      <link>https://www.cliniquedentairedabia.com/blog/detartrage-profondeur-gingivite-saignement-conseils</link>
-      <guid>https://www.cliniquedentairedabia.com/blog/detartrage-profondeur-gingivite-saignement-conseils</guid>
-      <pubDate>Fri, 30 May 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[Quand une simple prophylaxie ne suffit plus.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Mal de dents la nuit : causes fréquentes et que faire]]></title>
-      <link>https://www.cliniquedentairedabia.com/blog/mal-de-dents-la-nuit-causes-et-que-faire</link>
-      <guid>https://www.cliniquedentairedabia.com/blog/mal-de-dents-la-nuit-causes-et-que-faire</guid>
-      <pubDate>Sat, 10 May 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[Pulpites, bruxisme, carie profonde… le point sur les solutions.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Préparer son enfant à sa première visite chez le dentiste]]></title>
-      <link>https://www.cliniquedentairedabia.com/blog/preparer-enfant-premiere-visite-dentiste-dakar</link>
-      <guid>https://www.cliniquedentairedabia.com/blog/preparer-enfant-premiere-visite-dentiste-dakar</guid>
-      <pubDate>Sat, 26 Apr 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[Astuces douces pour une expérience positive à la clinique.]]></description>
-    </item>
-    <item>
-      <title><![CDATA[Combien coûte un dentiste à Dakar ? Le guide des prix]]></title>
-      <link>https://www.cliniquedentairedabia.com/blog/guide-prix-dentiste-dakar-consultation-soins</link>
-      <guid>https://www.cliniquedentairedabia.com/blog/guide-prix-dentiste-dakar-consultation-soins</guid>
-      <pubDate>Tue, 01 Apr 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[Consultation, détartrage, composite, extraction… fourchettes indicatives.]]></description>
-    </item>
-  </channel>
+<channel>
+  <title>Clinique Dentaire DABIA – Blog</title>
+  <link>https://www.cliniquedentairedabia.com/blog</link>
+  <description>Conseils dentaires, urgences, esthétique, technologies – Dakar</description>
+  <language>fr-sn</language>
+  <item>
+  <title><![CDATA[Mauvaise haleine (halitose) : causes, bilan et traitements efficaces]]></title>
+  <link>https://www.cliniquedentairedabia.com/blog/halitose-mauvaise-haleine-causes-bilan-traitements-dakar</link>
+  <guid isPermaLink="true">https://www.cliniquedentairedabia.com/blog/halitose-mauvaise-haleine-causes-bilan-traitements-dakar</guid>
+  <pubDate>Mon, 20 Oct 2025 00:00:00 GMT</pubDate>
+  <description><![CDATA[D’où vient l’odeur ? Langue, gencives, dents, nez-gorge… Les solutions qui fonctionnent vraiment et le parcours à la Clinique DABIA.]]></description>
+</item>
+<item>
+  <title><![CDATA[Détartrage vs AirFlow : quelles différences et quand choisir l’un ou l’autre ?]]></title>
+  <link>https://www.cliniquedentairedabia.com/blog/detartrage-vs-airflow-difference-prophylaxie-dakar</link>
+  <guid isPermaLink="true">https://www.cliniquedentairedabia.com/blog/detartrage-vs-airflow-difference-prophylaxie-dakar</guid>
+  <pubDate>Mon, 06 Oct 2025 00:00:00 GMT</pubDate>
+  <description><![CDATA[Plaque, tartre, taches : comprendre le rôle du détartrage ultrasonique et du jet de poudre AirFlow pour une hygiène optimale.]]></description>
+</item>
+<item>
+  <title><![CDATA[Facettes dentaires à Dakar : indications, étapes, matériaux et prix]]></title>
+  <link>https://www.cliniquedentairedabia.com/blog/facettes-dentaires-dakar-indications-etapes-prix</link>
+  <guid isPermaLink="true">https://www.cliniquedentairedabia.com/blog/facettes-dentaires-dakar-indications-etapes-prix</guid>
+  <pubDate>Mon, 22 Sep 2025 00:00:00 GMT</pubDate>
+  <description><![CDATA[Corriger couleur, forme, alignement léger : ce qu’il faut savoir sur les facettes céramiques/composites à la Clinique DABIA.]]></description>
+</item>
+<item>
+  <title><![CDATA[Dévitalisation (traitement canalaire) : étapes, douleur, suites – Dakar]]></title>
+  <link>https://www.cliniquedentairedabia.com/blog/traitement-canalaire-devitalisation-etapes-douleur-dakar</link>
+  <guid isPermaLink="true">https://www.cliniquedentairedabia.com/blog/traitement-canalaire-devitalisation-etapes-douleur-dakar</guid>
+  <pubDate>Mon, 08 Sep 2025 00:00:00 GMT</pubDate>
+  <description><![CDATA[Pourquoi dévitaliser une dent ? Étapes du traitement canalaire, douleur, antibiotiques, couronne après traitement à la Clinique DABIA.]]></description>
+</item>
+<item>
+  <title><![CDATA[Urgence dentaire à Dakar : que faire immédiatement ?]]></title>
+  <link>https://www.cliniquedentairedabia.com/blog/urgence-dentaire-dakar-que-faire</link>
+  <guid isPermaLink="true">https://www.cliniquedentairedabia.com/blog/urgence-dentaire-dakar-que-faire</guid>
+  <pubDate>Tue, 05 Aug 2025 00:00:00 GMT</pubDate>
+  <description><![CDATA[Douleur aiguë, dent cassée, abcès… Les bons réflexes avant d’arriver à la Clinique DABIA et comment se déroule la prise en charge.]]></description>
+</item>
+<item>
+  <title><![CDATA[Blanchiment des dents à Dakar : méthodes, indications, prix et conseils]]></title>
+  <link>https://www.cliniquedentairedabia.com/blog/blanchiment-dents-prix-conseils-dakar</link>
+  <guid isPermaLink="true">https://www.cliniquedentairedabia.com/blog/blanchiment-dents-prix-conseils-dakar</guid>
+  <pubDate>Sun, 20 Jul 2025 00:00:00 GMT</pubDate>
+  <description><![CDATA[Cabinet vs domicile, contre-indications, déroulé, entretien du résultat et fourchettes de prix indicatives.]]></description>
+</item>
+<item>
+  <title><![CDATA[Implant dentaire à Dakar : étapes, durée, confort et coût — Guide complet]]></title>
+  <link>https://www.cliniquedentairedabia.com/blog/combien-coute-implant-dentaire-dakar-guide</link>
+  <guid isPermaLink="true">https://www.cliniquedentairedabia.com/blog/combien-coute-implant-dentaire-dakar-guide</guid>
+  <pubDate>Tue, 01 Jul 2025 00:00:00 GMT</pubDate>
+  <description><![CDATA[Du bilan 3D à la couronne, explications claires sur la pose d’implant, la cicatrisation, les alternatives et les budgets.]]></description>
+</item>
+<item>
+  <title><![CDATA[Orthodontie à Dakar : aligneurs transparents ou brackets — comment choisir ?]]></title>
+  <link>https://www.cliniquedentairedabia.com/blog/orthodontie-adulte-enfant-dakar-aligneurs-brackets</link>
+  <guid isPermaLink="true">https://www.cliniquedentairedabia.com/blog/orthodontie-adulte-enfant-dakar-aligneurs-brackets</guid>
+  <pubDate>Sat, 14 Jun 2025 00:00:00 GMT</pubDate>
+  <description><![CDATA[Indications, différences pratiques, durée du traitement et hygiène — pour l’enfant, l’ado et l’adulte.]]></description>
+</item>
+<item>
+  <title><![CDATA[Saignement des gencives : simple gingivite ou besoin d’un détartrage en profondeur ?]]></title>
+  <link>https://www.cliniquedentairedabia.com/blog/detartrage-profondeur-gingivite-saignement-conseils</link>
+  <guid isPermaLink="true">https://www.cliniquedentairedabia.com/blog/detartrage-profondeur-gingivite-saignement-conseils</guid>
+  <pubDate>Fri, 30 May 2025 00:00:00 GMT</pubDate>
+  <description><![CDATA[Signes d’alerte, différence entre détartrage simple et surfaçage radiculaire, habitudes d’hygiène qui changent tout.]]></description>
+</item>
+<item>
+  <title><![CDATA[Mal de dents la nuit : causes fréquentes et que faire jusqu’au rendez-vous]]></title>
+  <link>https://www.cliniquedentairedabia.com/blog/mal-de-dents-la-nuit-causes-et-que-faire</link>
+  <guid isPermaLink="true">https://www.cliniquedentairedabia.com/blog/mal-de-dents-la-nuit-causes-et-que-faire</guid>
+  <pubDate>Sat, 10 May 2025 00:00:00 GMT</pubDate>
+  <description><![CDATA[Pulpites, carie profonde, bruxisme, hypersensibilités — gestes utiles, ce qu’il faut éviter et quand consulter.]]></description>
+</item>
+<item>
+  <title><![CDATA[Première visite chez le dentiste : comment préparer son enfant sereinement]]></title>
+  <link>https://www.cliniquedentairedabia.com/blog/preparer-enfant-premiere-visite-dentiste-dakar</link>
+  <guid isPermaLink="true">https://www.cliniquedentairedabia.com/blog/preparer-enfant-premiere-visite-dentiste-dakar</guid>
+  <pubDate>Sat, 26 Apr 2025 00:00:00 GMT</pubDate>
+  <description><![CDATA[Âge idéal, astuces concrètes, déroulé à la clinique et prévention des caries chez l’enfant.]]></description>
+</item>
+<item>
+  <title><![CDATA[Combien coûte un dentiste à Dakar ? Le guide des prix (indications générales)]]></title>
+  <link>https://www.cliniquedentairedabia.com/blog/guide-prix-dentiste-dakar-consultation-soins</link>
+  <guid isPermaLink="true">https://www.cliniquedentairedabia.com/blog/guide-prix-dentiste-dakar-consultation-soins</guid>
+  <pubDate>Tue, 01 Apr 2025 00:00:00 GMT</pubDate>
+  <description><![CDATA[De la consultation au détartrage, composite, extraction et soins esthétiques : à quoi s’attendre et ce qui fait varier les tarifs.]]></description>
+</item>
+</channel>
 </rss>
