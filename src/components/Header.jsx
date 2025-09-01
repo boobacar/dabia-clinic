@@ -19,7 +19,8 @@ const Header = () => {
   const navLinks = [
     { name: "Accueil", path: "/" },
     { name: "Infos", isDropdown: true },
-    { name: "Nous Rejoindre", path: "/rejoindre" }, // 🔁 remplacé
+    { name: "Blog", path: "/blog" }, // 👈 nouveau lien Blog
+    { name: "Nous Rejoindre", path: "/rejoindre" },
   ];
 
   const infosLinks = [

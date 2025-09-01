@@ -1,75 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://cliniquedentairedabia.com/</loc>
-    <lastmod>2025-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.cliniquedentairedabia.com/</loc>
+    <lastmod>2025-09-01T18:16:42.953Z</lastmod>
   </url>
   <url>
-    <loc>https://cliniquedentairedabia.com/rendez-vous</loc>
-    <lastmod>2025-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.cliniquedentairedabia.com/rendez-vous</loc>
+    <lastmod>2025-09-01T18:16:42.953Z</lastmod>
   </url>
   <url>
-    <loc>https://cliniquedentairedabia.com/personnel</loc>
-    <lastmod>2025-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.cliniquedentairedabia.com/all-competences</loc>
+    <lastmod>2025-09-01T18:16:42.953Z</lastmod>
   </url>
   <url>
-    <loc>https://cliniquedentairedabia.com/all-competences</loc>
-    <lastmod>2025-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.cliniquedentairedabia.com/infos/technologie</loc>
+    <lastmod>2025-09-01T18:16:42.953Z</lastmod>
   </url>
   <url>
-    <loc>https://cliniquedentairedabia.com/competences/esthetique-dentaire</loc>
-    <lastmod>2025-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.cliniquedentairedabia.com/infos/post-visite</loc>
+    <lastmod>2025-09-01T18:16:42.953Z</lastmod>
   </url>
   <url>
-    <loc>https://cliniquedentairedabia.com/competences/parodontologie</loc>
-    <lastmod>2025-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.cliniquedentairedabia.com/infos/enfants</loc>
+    <lastmod>2025-09-01T18:16:42.953Z</lastmod>
   </url>
   <url>
-    <loc>https://cliniquedentairedabia.com/competences/implantologie</loc>
-    <lastmod>2025-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.cliniquedentairedabia.com/personnel</loc>
+    <lastmod>2025-09-01T18:16:42.953Z</lastmod>
   </url>
   <url>
-    <loc>https://cliniquedentairedabia.com/competences/endodontie</loc>
-    <lastmod>2025-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.cliniquedentairedabia.com/blog</loc>
+    <lastmod>2025-09-01T18:16:42.953Z</lastmod>
   </url>
   <url>
-    <loc>https://cliniquedentairedabia.com/competences/facettes-dentaires</loc>
-    <lastmod>2025-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.cliniquedentairedabia.com/blog/urgence-dentaire-dakar-que-faire</loc>
+    <lastmod>2025-08-05T00:00:00.000Z</lastmod>
   </url>
   <url>
-    <loc>https://cliniquedentairedabia.com/competences/orthodontie</loc>
-    <lastmod>2025-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.cliniquedentairedabia.com/blog/blanchiment-dents-prix-conseils-dakar</loc>
+    <lastmod>2025-07-20T00:00:00.000Z</lastmod>
   </url>
   <url>
-    <loc>https://cliniquedentairedabia.com/competences/greffe-osseuse</loc>
-    <lastmod>2025-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.cliniquedentairedabia.com/blog/combien-coute-implant-dentaire-dakar-guide</loc>
+    <lastmod>2025-07-01T00:00:00.000Z</lastmod>
   </url>
   <url>
-    <loc>https://cliniquedentairedabia.com/competences/blanchiment-dentaire</loc>
-    <lastmod>2025-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.cliniquedentairedabia.com/blog/orthodontie-adulte-enfant-dakar-aligneurs-brackets</loc>
+    <lastmod>2025-06-14T00:00:00.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/detartrage-profondeur-gingivite-saignement-conseils</loc>
+    <lastmod>2025-05-30T00:00:00.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/mal-de-dents-la-nuit-causes-et-que-faire</loc>
+    <lastmod>2025-05-10T00:00:00.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/preparer-enfant-premiere-visite-dentiste-dakar</loc>
+    <lastmod>2025-04-26T00:00:00.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/guide-prix-dentiste-dakar-consultation-soins</loc>
+    <lastmod>2025-04-01T00:00:00.000Z</lastmod>
   </url>
 </urlset>

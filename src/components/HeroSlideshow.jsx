@@ -3,6 +3,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { Link } from "react-router-dom";
 import heroImages from "../assets/heroImages";
+import SplitText from "./SplitText";
 
 const SLIDE_MS = 3000; // 5000 ms = 5 s par image
 const FADE_S = 1.5; // durée du fondu en secondes
@@ -11,6 +12,10 @@ const HeroVideo = () => {
   const [index, setIndex] = useState(0);
   const shouldReduceMotion = useReducedMotion();
   const timerRef = useRef(null);
+
+  const handleAnimationComplete = () => {
+    console.log("All letters have animated!");
+  };
 
   // Préchargement des images
   useEffect(() => {
@@ -75,14 +80,29 @@ const HeroVideo = () => {
           Bienvenue à la Clinique Dentaire
         </motion.h2>
 
-        <motion.h1
+        {/* <motion.h1
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.35 }}
           className="text-[#ad9d64] font-bold text-5xl md:text-7xl mb-6"
         >
           Dabia
-        </motion.h1>
+        </motion.h1> */}
+
+        <SplitText
+          text="DABIA"
+          className="text-[#ad9d64] font-bold text-5xl md:text-7xl mb-6"
+          delay={100}
+          duration={0.6}
+          ease="power3.out"
+          splitType="chars"
+          from={{ opacity: 0, y: 40 }}
+          to={{ opacity: 1, y: 0 }}
+          threshold={0.1}
+          rootMargin="-100px"
+          textAlign="center"
+          onLetterAnimationComplete={handleAnimationComplete}
+        />
 
         <motion.p
           initial={{ opacity: 0, y: 8 }}

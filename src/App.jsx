@@ -1,4 +1,5 @@
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+// src/App.jsx
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import RendezVous from "./pages/RendezVous";
 import Personnel from "./pages/Personnel";
@@ -12,14 +13,18 @@ import PostVisite from "./pages/PostVisite";
 import ZoneEnfants from "./pages/ZoneEnfants";
 import Rejoindre from "./pages/Rejoindre";
 import Technologie from "./pages/Technologie";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 
 const App = () => {
   return (
-    <Router>
+    <>
       <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/rendez-vous" element={<RendezVous />} />
         <Route path="/personnel" element={<Personnel />} />
         <Route path="/competences/:slug" element={<CompetenceDetail />} />
@@ -31,7 +36,7 @@ const App = () => {
         <Route path="/infos/technologie" element={<Technologie />} />
       </Routes>
       <Footer />
-    </Router>
+    </>
   );
 };
 

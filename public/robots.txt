@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cliniquedentairedabia.com/sitemap.xml
+Sitemap: https://www.cliniquedentairedabia.com/sitemap.xml
