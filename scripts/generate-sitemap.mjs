@@ -1,89 +1,94 @@
-import fs from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
+// scripts/generate-sitemap.mjs
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
+import { resolve } from "node:path";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const SITE = "https://www.cliniquedentairedabia.com";
+const OUT_DIR = resolve(process.cwd(), "public");
+if (!existsSync(OUT_DIR)) mkdirSync(OUT_DIR, { recursive: true });
 
-// Adjust if your project structure differs
-const ROOT = path.resolve(__dirname, "..");
-const PUBLIC = path.join(ROOT, "public");
-const SRC = path.join(ROOT, "src");
-
-// Dynamically import posts
-const { POSTS } = await import(path.join(SRC, "data", "posts.js"));
-
-const BASE_URL = "https://www.cliniquedentairedabia.com";
-
+// 1) Routes statiques (ajoute/retire selon ton site)
 const staticRoutes = [
   "/",
+  "/blog",
   "/rendez-vous",
   "/all-competences",
   "/infos/technologie",
   "/infos/post-visite",
   "/infos/enfants",
   "/personnel",
-  "/blog",
+  "/rejoindre",
 ];
 
-function iso(d) {
-  return new Date(d).toISOString();
-}
+// 2) Articles du blog depuis le JSON (sans import d’images)
+const postsMetaPath = resolve(process.cwd(), "src/data/posts.meta.json");
+const posts = JSON.parse(readFileSync(postsMetaPath, "utf8"));
 
-function makeSitemap() {
-  const urls = [
-    ...staticRoutes.map((loc) => ({
-      loc: `${BASE_URL}${loc}`,
-      lastmod: iso(Date.now()),
-    })),
-    ...POSTS.map((p) => ({
-      loc: `${BASE_URL}/blog/${p.slug}`,
-      lastmod: iso(p.date),
-    })),
-  ];
+// URLs finales (statics + posts)
+const urls = [
+  ...staticRoutes.map((p) => ({
+    loc: `${SITE}${p}`,
+    lastmod: new Date().toISOString().slice(0, 10),
+  })),
+  ...posts.map((p) => ({
+    loc: `${SITE}/blog/${p.slug}`,
+    lastmod: p.date || new Date().toISOString().slice(0, 10),
+  })),
+];
 
-  const body = urls
+// ===== SITEMAP =====
+const sitemap =
+  `<?xml version="1.0" encoding="UTF-8"?>\n` +
+  `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+  urls
     .map(
-      (u) =>
-        `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${u.lastmod}</lastmod>\n  </url>`
+      (u) => `  <url>
+    <loc>${u.loc}</loc>
+    <lastmod>${u.lastmod}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>${u.loc.includes("/blog/") ? "0.80" : "0.95"}</priority>
+  </url>`
     )
-    .join("\n");
+    .join("\n") +
+  `\n</urlset>\n`;
 
-  return (
-    `<?xml version="1.0" encoding="UTF-8"?>\n` +
-    `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>\n`
-  );
-}
+writeFileSync(resolve(OUT_DIR, "sitemap.xml"), sitemap, "utf8");
 
-function makeRss() {
-  const items = POSTS.map(
-    (p) =>
-      `    <item>\n      <title><![CDATA[${
-        p.title
-      }]]></title>\n      <link>${BASE_URL}/blog/${
-        p.slug
-      }</link>\n      <guid>${BASE_URL}/blog/${
-        p.slug
-      }</guid>\n      <pubDate>${new Date(
-        p.date
-      ).toUTCString()}</pubDate>\n      <description><![CDATA[${
-        p.description
-      }]]></description>\n    </item>`
-  ).join("\n");
+// ===== RSS =====
+const rssItems = posts
+  .sort((a, b) => (a.date < b.date ? 1 : -1))
+  .map((p) => {
+    const pub = new Date(p.date).toUTCString();
+    return `<item>
+  <title><![CDATA[${p.title}]]></title>
+  <link>${SITE}/blog/${p.slug}</link>
+  <guid isPermaLink="true">${SITE}/blog/${p.slug}</guid>
+  <pubDate>${pub}</pubDate>
+  <description><![CDATA[${p.description}]]></description>
+</item>`;
+  })
+  .join("\n");
 
-  return (
-    `<?xml version="1.0" encoding="UTF-8"?>\n` +
-    `<rss version="2.0">\n  <channel>\n    <title>Clinique Dentaire DABIA – Blog</title>\n    <link>${BASE_URL}/blog</link>\n    <description>Conseils dentaires à Dakar</description>\n${items}\n  </channel>\n</rss>`
-  );
-}
+const rss =
+  `<?xml version="1.0" encoding="UTF-8"?>\n` +
+  `<rss version="2.0">\n` +
+  `<channel>
+  <title>Clinique Dentaire DABIA – Blog</title>
+  <link>${SITE}/blog</link>
+  <description>Conseils dentaires, urgences, esthétique, technologies – Dakar</description>
+  <language>fr-sn</language>
+  ${rssItems}
+</channel>
+</rss>\n`;
 
-function makeRobots() {
-  return `User-agent: *\nAllow: /\n\nSitemap: ${BASE_URL}/sitemap.xml\n`;
-}
+writeFileSync(resolve(OUT_DIR, "rss.xml"), rss, "utf8");
 
-fs.mkdirSync(PUBLIC, { recursive: true });
-fs.writeFileSync(path.join(PUBLIC, "sitemap.xml"), makeSitemap());
-fs.writeFileSync(path.join(PUBLIC, "rss.xml"), makeRss());
-fs.writeFileSync(path.join(PUBLIC, "robots.txt"), makeRobots());
+// ===== robots.txt =====
+const robots = `User-agent: *
+Allow: /
 
-console.log("Generated sitemap.xml, rss.xml, robots.txt in /public");
+Sitemap: ${SITE}/sitemap.xml
+`;
+
+writeFileSync(resolve(OUT_DIR, "robots.txt"), robots, "utf8");
+
+console.log("✅ Generated sitemap.xml, rss.xml, robots.txt in /public");
