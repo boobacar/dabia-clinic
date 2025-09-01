@@ -134,7 +134,7 @@ export default function BlogPost() {
             <img
               src={post.cover}
               alt={post.title}
-              className="w-full h-64 object-cover rounded-xl mt-6"
+              className="w-full h-150 object-cover rounded-xl mt-6"
             />
           </header>
 

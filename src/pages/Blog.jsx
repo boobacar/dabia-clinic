@@ -95,7 +95,7 @@ export default function Blog() {
                   <img
                     src={p.cover}
                     alt={p.title}
-                    className="w-full h-44 object-cover"
+                    className="w-full h-65 object-cover"
                     loading="lazy"
                   />
                 </Link>

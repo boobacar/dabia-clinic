@@ -8,9 +8,13 @@ import blanchimentCover from "../assets/technologie/tech-led.webp";
 import implantCover from "../assets/blog/implant.jpg";
 import orthodontieCover from "../assets/blog/orthodontie.jpg";
 import gingiviteCover from "../assets/blog/gingivite.jpg";
-import nuitCover from "../assets/temoin2.webp";
+import nuitCover from "../assets/blog/malnuit.webp";
 import enfantCover from "../assets/blog/enfant.jpg";
-import prixCover from "../assets/temoin2.webp";
+import prixCover from "../assets/blog/prix.jpg";
+import endoCover from "../assets/blog/canal.webp"; // Traitement canalaire
+import facettesCover from "../assets/blog/facette.webp"; // Facettes dentaires
+import airflowCover from "../assets/blog/Airflow.jpg"; // Détartrage vs AirFlow
+import halitoseCover from "../assets/blog/halitose.jpg"; // Mauvaise haleine
 
 export const AUTHORS = {
   sao: {
@@ -403,5 +407,166 @@ Tabac, diabète non équilibré, stress, hygiène insuffisante, bagues non netto
 **Existe-t-il des alternatives moins coûteuses ?** Parfois : **bridge**, **prothèse amovible**, temporisations.
 
 > Pour un devis précis après examen : [/rendez-vous](/rendez-vous).`,
+  },
+
+  {
+    slug: "traitement-canalaire-devitalisation-etapes-douleur-dakar",
+    title:
+      "Dévitalisation (traitement canalaire) : étapes, douleur, suites – Dakar",
+    description:
+      "Pourquoi dévitaliser une dent ? Étapes du traitement canalaire, douleur, antibiotiques, couronne après traitement à la Clinique DABIA.",
+    date: "2025-07-08",
+    category: "Urgences",
+    tags: ["traitement canalaire", "douleur dentaire", "dentiste dakar"],
+    author: AUTHORS.sao,
+    cover: endoCover,
+    readingMinutes: 13,
+    content: `Le **traitement canalaire** vise à nettoyer et désinfecter les **canaux** d’une dent dont la pulpe est infectée/inflammée (carie profonde, fracture, choc). Objectif : **soulager**, **prévenir** la réinfection et **conserver** la dent.
+
+## Quand faut-il dévitaliser ?
+- Douleur **pulsatile**, réveils nocturnes
+- Sensibilités au chaud/froid qui persistent
+- **Abcès**, fistule, gonflement
+- Fracture/carie profonde atteignant la pulpe
+
+## Étapes du traitement à la Clinique DABIA
+1. **Diagnostic** : examen + imagerie (rétro-alvéolaire/CBCT).  
+2. **Anesthésie locale** et isolement par **digue**.  
+3. **Accès** aux canaux, **mise en forme** mécanique/ultrasons.  
+4. **Irrigation** désinfectante activée.  
+5. **Obturation** tridimensionnelle à chaud (gutta percha).  
+6. **Étanchéité coronaire** (inlay-core/composite) et **couronne** si nécessaire.
+
+## Douleur et suites
+- Pendant : procédure **indolore** sous anesthésie.  
+- Après : **sensibilité** 24–72h contrôlée par antalgiques.  
+- **Antibiotiques** seulement si tableau infectieux systémique.
+
+## Faut-il une couronne après ?
+Souvent oui sur les molaires/premolaires fragilisées pour **empêcher la fracture** et garantir l’étanchéité.
+
+## Échecs et retraitements
+Une lésion persistante, un canal supplémentaire, une fuite coronaires peuvent nécessiter un **retraitement**.
+
+### FAQ
+**Combien de séances ?** 1 à 2 selon l’infection.  
+**Peut-on travailler après ?** Oui, sauf cas particuliers.  
+**Et si je suis enceinte ?** On adapte l’imagerie et les médications.
+
+> Prenez rendez-vous : [/rendez-vous](/rendez-vous) • Voir nos équipements : [/infos/technologie](/infos/technologie).`,
+  },
+  {
+    slug: "facettes-dentaires-dakar-indications-etapes-prix",
+    title:
+      "Facettes dentaires à Dakar : indications, étapes, matériaux et prix",
+    description:
+      "Corriger couleur, forme, alignement léger : ce qu’il faut savoir sur les facettes céramiques/composites à la Clinique DABIA.",
+    date: "2025-01-22",
+    category: "Esthétique",
+    tags: ["facettes", "esthétique", "clinique dentaire dakar"],
+    author: AUTHORS.sao,
+    cover: facettesCover,
+    readingMinutes: 14,
+    content: `Les **facettes dentaires** corrigent couleur, **forme** et légers **désalignements** visibles du sourire. Elles préservent la biologie si l’indication est respectée.
+
+## Pour qui ?
+- Teinte non corrigeable au blanchiment
+- Dents **usées**, **fendillées**, diastèmes
+- Harmonisation du **smile design**
+
+## Matériaux
+- **Composite** : direct/indirect, coût plus doux, retouches faciles, longévité moindre.  
+- **Céramique** (lithium-disilicate/zircone stratifiée) : **esthétique** et stabilité supérieures.
+
+## Étapes du traitement
+1. **Photographies, empreintes/scan**, simulation (mock-up).  
+2. **Préparation minimale** (ou no-prep selon cas).  
+3. **Empreinte/scan** pour le laboratoire.  
+4. **Pose**/collage adhésif sous champ isolé.  
+5. **Ajustements** et conseils d’entretien.
+
+## Entretien et longévité
+- Hygiène soigneuse, gouttière de **bruxisme** si besoin.  
+- Éviter ouvrir des emballages avec les dents (!).
+
+## Prix : de quoi dépend le devis ?
+Nombre de facettes, matériau, complexité occlusale/gingivale. **Devis personnalisé** après bilan, souvent précédé d’un **blanchiment**.
+
+### FAQ
+**Facettes ou orthodontie/aligneurs ?** Selon l’axe/déplacements souhaités.  
+**Durée de vie ?** Plusieurs années si hygiène et occlusion stables.  
+**Réversible ?** Pas toujours (préparation).
+
+> Découvrez l’esthétique dentaire : [/all-competences](/all-competences) • RDV : [/rendez-vous](/rendez-vous).`,
+  },
+  {
+    slug: "detartrage-vs-airflow-difference-prophylaxie-dakar",
+    title:
+      "Détartrage vs AirFlow : quelles différences et quand choisir l’un ou l’autre ?",
+    description:
+      "Plaque, tartre, taches : comprendre le rôle du détartrage ultrasonique et du jet de poudre AirFlow pour une hygiène optimale.",
+    date: "2025-04-06",
+    category: "Prévention",
+    tags: ["détartrage", "hygiène", "prévention"],
+    author: AUTHORS.sao,
+    cover: airflowCover,
+    readingMinutes: 12,
+    content: `**Détartrage** et **AirFlow** sont complémentaires pour maintenir des gencives saines et une surface dentaire propre.
+
+## Détartrage ultrasonique
+- Casse le **tartre** supra/sous-gingival.  
+- Permet le **surfaçage** en cas de poches parodontales.  
+- Ressenti : vibration + irrigation.
+
+## AirFlow (jet poudre + eau)
+- Élimine **biofilm** et **taches** (café, thé, tabac).  
+- **Moins abrasif** sur l’émail quand bien utilisé.  
+- Idéal en **entretien** entre deux détartrages.
+
+## Notre protocole
+1. **Bilan** parodontal (indices, sondage).  
+2. **Séquence personnalisée** : AirFlow → ultrason/hand-scaler selon besoin.  
+3. **Polissage**, instruction d’hygiène, contrôle périodique (6–12 mois).
+
+### FAQ
+**AirFlow remplace le détartrage ?** Non, il **complète**.  
+**Après bagues/aligneurs ?** Oui, utile pour **zones difficiles**.  
+**Puis-je le faire enceinte ?** Oui, protocole adapté.
+
+> Conseils post-visite : [/infos/post-visite](/infos/post-visite) • RDV : [/rendez-vous](/rendez-vous).`,
+  },
+  {
+    slug: "halitose-mauvaise-haleine-causes-bilan-traitements-dakar",
+    title:
+      "Mauvaise haleine (halitose) : causes, bilan et traitements efficaces",
+    description:
+      "D’où vient l’odeur ? Langue, gencives, dents, nez-gorge… Les solutions qui fonctionnent vraiment et le parcours à la Clinique DABIA.",
+    date: "2025-02-20",
+    category: "Conseils",
+    tags: ["halitose", "mauvaise haleine", "prévention"],
+    author: AUTHORS.sao,
+    cover: halitoseCover,
+    readingMinutes: 11,
+    content: `La **mauvaise haleine** est le plus souvent d’origine **bucco-dentaire** (langue chargée, gingivite, caries). Parfois, la cause est **ORL** ou digestive.
+
+## Causes fréquentes
+- **Langue** : enduit riche en composés sulfurés volatils.  
+- **Gencives** : inflammation, poches parodontales.  
+- **Carie**, restauration infiltrée, **stagnation alimentaire**.  
+- **Xérostomie** (bouche sèche), tabac, certains médicaments.
+
+## Le parcours à DABIA
+1. **Anamnèse** + examen dentaire/parodontal.  
+2. **Dépistage** des causes (langue, saignements, caries).  
+3. **Plan** : hygiénisation, traitement parodontal, soin des lésions.  
+4. **Conseils** : gratte-langue, hydratation, xylitol, bains de bouche en cure.  
+5. **Orientation ORL/Gastro** si suspicion extra-orale.
+
+### FAQ
+**Dentifrices miracle ?** Méfiance : privilégier **hygiène** + traitement des causes.  
+**Bain de bouche permanent ?** Non : **cures** courtes pour éviter l’**altération du microbiote**.  
+**Je jeûne souvent :** hydrate-toi bien, xylitol, contrôle régulier.
+
+> Pour un bilan : [/rendez-vous](/rendez-vous) • Voir prévention : “Détartrage vs AirFlow”.`,
   },
 ];
