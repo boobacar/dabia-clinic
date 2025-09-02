@@ -1,18 +1,3 @@
 {
-  "cleanUrls": true,
-  "rewrites": [
-    { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
-    { "source": "/robots.txt", "destination": "/robots.txt" },
-    { "source": "/rss.xml", "destination": "/rss.xml" },
-
-    // ⚠️ Ne PAS réécrire les fichiers statiques (images, js, css, etc.)
-    { "source": "/assets/(.*)", "destination": "/assets/$1" },
-    {
-      "source": "/(.*\\.(?:js|css|map|json|txt|xml|png|jpg|jpeg|webp|gif|svg|ico|mp4|webm))",
-      "destination": "/$1"
-    },
-
-    // ✅ Fallback SPA : toutes les autres routes vont vers index.html
-    { "source": "/(.*)", "destination": "/" }
-  ]
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
