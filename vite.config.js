@@ -17,8 +17,8 @@ const customTailwind = tailwindPlugin.withOptions(() => ({
 }));
 
 export default defineConfig({
-  base: "/", // Remplace ici
   plugins: [react()],
+  base: "/", // Remplace ici
   css: {
     postcss: {
       plugins: [
