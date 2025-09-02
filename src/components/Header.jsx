@@ -58,7 +58,7 @@ const Header = () => {
           <img
             className="w-10 object-contain rounded-full"
             src={logo}
-            alt="logo"
+            alt="Dentiste Dakar - Clinique dentaire DABIA"
           />
           <span className="hidden sm:inline">Clinique Dentaire DABIA</span>
         </Link>

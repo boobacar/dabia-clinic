@@ -22,7 +22,7 @@ const Footer = () => {
           <img
             className="w-[20%] sm:w-[30%] rounded-full hover:animate-spin"
             src={logo}
-            alt="logo"
+            alt="Dentiste Dakar - Clinique dentaire DABIA"
           />
           <div>
             <h4 className="font-bold text-xl mb-2 text-[#ad9d64]">Dabia</h4>

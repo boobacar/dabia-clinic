@@ -22,7 +22,7 @@ const ClinicIntro = () => {
         {/* ✅ Image animée sur desktop */}
         <motion.img
           src={apropos}
-          alt="À propos de la clinique"
+          alt="Dentiste Dakar - Clinique dentaire DABIA"
           className="hidden sm:block sm:w-[300px] rounded-lg shadow-md"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}

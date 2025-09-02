@@ -50,7 +50,7 @@ const HeroVideo = () => {
         <motion.img
           key={currentSrc}
           src={currentSrc}
-          alt=""
+          alt="Dentiste Dakar - Clinique dentaire DABIA"
           aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover will-change-[opacity]"
           initial={{ opacity: 0 }}

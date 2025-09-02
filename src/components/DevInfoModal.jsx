@@ -29,7 +29,7 @@ const DevInfoModal = ({ onClose }) => {
         {/* Photo + nom */}
         <img
           src={maphoto}
-          alt="Boubacar Fall"
+          alt="Dentiste Dakar - Clinique dentaire DABIA"
           className="w-24 h-24 rounded-full mx-auto object-cover mb-4"
         />
         <h3 className="text-xl font-bold text-[#ad9d64]">Boubacar Fall</h3>

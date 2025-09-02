@@ -67,7 +67,7 @@ const RendezVous = () => {
         >
           <img
             src={imgrv}
-            alt="Illustration rendez-vous"
+            alt="Dentiste Dakar - Clinique dentaire DABIA"
             className="w-full rounded-xl shadow-lg object-cover"
           />
         </motion.div>

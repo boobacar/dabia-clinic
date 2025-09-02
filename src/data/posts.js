@@ -15,6 +15,20 @@ import endoCover from "../assets/blog/canal.webp"; // Traitement canalaire
 import facettesCover from "../assets/blog/facette.webp"; // Facettes dentaires
 import airflowCover from "../assets/blog/Airflow.jpg"; // Détartrage vs AirFlow
 import halitoseCover from "../assets/blog/halitose.jpg"; // Mauvaise haleine
+import carieCover from "../assets/blog/carie.jpg";
+import sagesseCover from "../assets/blog/sagesse.jpg";
+import protheseCover from "../assets/blog/prothese.jpeg";
+import urgenceNuitCover from "../assets/blog/urgence-nuit.jpeg";
+import blanchimentVsFacettesCover from "../assets/blog/facette-blanchiment.webp";
+import grossesseCover from "../assets/blog/grossesse.jpeg";
+import fluorCover from "../assets/blog/fluor.jpeg";
+import sedationCover from "../assets/blog/sedation.jpg";
+import invisalignCover from "../assets/blog/invisalign.jpg";
+import bridgeImplantCover from "../assets/blog/bridge-vs-implant.jpeg";
+import onlayCover from "../assets/blog/onlay.jpg";
+import cbctCover from "../assets/technologie/tech-cbct.webp";
+import traumaEnfantCover from "../assets/blog/trauma-enfant.webp";
+import diabeteCover from "../assets/blog/diabete.jpg";
 
 export const AUTHORS = {
   sao: {
@@ -568,5 +582,602 @@ Nombre de facettes, matériau, complexité occlusale/gingivale. **Devis personna
 **Je jeûne souvent :** hydrate-toi bien, xylitol, contrôle régulier.
 
 > Pour un bilan : [/rendez-vous](/rendez-vous) • Voir prévention : “Détartrage vs AirFlow”.`,
+  },
+  {
+    slug: "carie-dentaire-symptomes-traitement-prevention-dakar",
+    title: "Carie dentaire : symptômes, traitement et prévention à Dakar",
+    description:
+      "Reconnaître une carie tôt, éviter la douleur et protéger ses dents grâce aux soins de la Clinique DABIA.",
+    date: "2025-11-05",
+    category: "Prévention",
+    tags: [
+      "carie dentaire",
+      "traitement carie",
+      "prévention",
+      "dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: carieCover,
+    readingMinutes: 12,
+    content: `La **carie** est une maladie infectieuse de la dent, favorisée par la **plaque** et les **sucres**. Plus elle est traitée tôt, plus le soin est **simple**, **indolore** et **durable**.
+
+## Reconnaître une carie tôt
+- **Tache** blanche ou brune qui s’élargit  
+- **Sensibilité** au froid/sucré qui **persiste** après l’arrêt du stimulus  
+- **Mauvais goût** ou **haleine** anormale  
+- **Aliment qui se coince** dans une cavité
+
+> L’absence de douleur **ne veut pas dire** absence de carie. Beaucoup de lésions sont **silencieuses**.
+
+## Prise en charge à la Clinique DABIA
+1. **Bilan** et radiographies ciblées.  
+2. **Anesthésie locale** si nécessaire.  
+3. **Nettoyage** de la lésion et **restauration** (composite esthétique).  
+4. **Contrôle** de l’occlusion et polissage.
+
+## Carie profonde : que se passe-t-il ?
+Si la carie touche la **pulpe**, il faut parfois un **traitement canalaire** (dévitalisation) pour sauver la dent, puis une **protection coronaires** (inlay/onlay/couronne).
+
+## Prévention efficace
+- **Brossage** 2–3×/jour fluoré, **brossettes**/fil le soir  
+- Réduire les **boissons sucrées** et le **grignotage**  
+- **Détartrage** et contrôle **tous les 6–12 mois**  
+- **Scellement des sillons** chez l’enfant si risque élevé
+
+### FAQ
+**La carie se soigne sans fraise ?** Pour les **micro-lésions**, des techniques de **réminéralisation** ou infiltration existent.  
+**Grossesse ?** Bilan et soins possibles avec précautions.  
+**Douleur la nuit ?** Consultez rapidement : [/rendez-vous](/rendez-vous).`,
+  },
+
+  {
+    slug: "dent-de-sagesse-douleur-extraction-dakar",
+    title: "Douleur des dents de sagesse : quand faut-il extraire ?",
+    description:
+      "Tout savoir sur la douleur, les infections et l’extraction des dents de sagesse à la Clinique DABIA.",
+    date: "2025-11-12",
+    category: "Urgences",
+    tags: [
+      "dent de sagesse",
+      "extraction",
+      "urgence dentaire",
+      "dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: sagesseCover,
+    readingMinutes: 11,
+    content: `Les **dents de sagesse** manquent parfois de place et s’inclinent, provoquant **douleur**, **infections** (péricoronarites) et **dommages** aux dents voisines.
+
+## Symptômes fréquents
+- Douleur au **fond de la bouche** (souvent en bas)  
+- **Gencive gonflée**, parfois **mauvais goût**  
+- Difficulté à **ouvrir** la bouche, irradiation vers l’oreille
+
+## Consultation et examens
+- **Panoramique** ou **CBCT** pour position, nerfs et sinus.  
+- Décision : **surveillance**, **désinfection** locale, ou **extraction**.
+
+## Extraction : comment ça se passe ?
+1. **Anesthésie locale**, parfois sédation légère.  
+2. **Dégagement** de la dent incluse, **section** si besoin.  
+3. **Sutures** résorbables, consignes post-op (froid, repos, hygiène).
+
+## Suites normales
+- **Œdème** 48–72 h, **sensibilité** maîtrisée par antalgiques.  
+- Éviter tabac, paille et bains de bouche agressifs les 24 premières heures.
+
+### FAQ
+**Toutes les enlever ?** Non : décision **au cas par cas**.  
+**Nerf du bas** ? Le CBCT aide à prévenir les risques.  
+**Travail le lendemain ?** Selon la difficulté chirurg., prévoyez 1–2 jours.
+
+> Besoin d’un avis ? [/rendez-vous](/rendez-vous) • Technologie : [/infos/technologie](/infos/technologie).`,
+  },
+
+  {
+    slug: "prothese-dentaire-complete-partielle-ou-sur-implant-dakar",
+    title: "Prothèse dentaire à Dakar : complète, partielle ou sur implant ?",
+    description:
+      "Les solutions modernes pour retrouver fonction et esthétique : quelle prothèse pour quel cas ?",
+    date: "2025-11-19",
+    category: "Conseils",
+    tags: [
+      "prothèse dentaire",
+      "dentier",
+      "implant dentaire",
+      "dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: protheseCover,
+    readingMinutes: 13,
+    content: `Perte de dents ? Les prothèses **modernes** permettent de restaurer **mastication**, **phonation** et **esthétique**. Le choix dépend du **nombre de dents manquantes**, du **volume osseux** et du **budget**.
+
+## Les grandes familles
+- **Partielle amovible** : clipsée, économie et facilité d’entretien.  
+- **Complète amovible** : lorsque toutes les dents manquent.  
+- **Fixe sur dents** : bridges collés ou conventionnels.  
+- **Fixe sur implants** : confort et stabilité supérieurs.
+
+## Parcours à DABIA
+1. **Bilan global** (gencives, os, occlusion, attentes).  
+2. **Plan** personnalisé : temporaires → définitives.  
+3. **Essayages** esthétiques/occlusaux, **validation** finale.  
+4. **Maintenance** et contrôles réguliers.
+
+## Prothèse sur implant : pour qui ?
+Besoin de **stabilité** et d’**esthétique** ; conditions osseuses évaluées par **CBCT**. Possibilité d’arcade complète fixée (All-on-X) selon indications.
+
+### FAQ
+**On s’y habitue ?** Quelques jours/semaines, coaching et ajustements.  
+**Manger avec une complète ?** Oui, en progressif, mastication bilatérale.  
+**Budget ?** Devis détaillé après bilan, étapes possibles.
+
+> Discutez des options : [/rendez-vous](/rendez-vous) • Voir implantologie : “Implant dentaire – Guide”.`,
+  },
+
+  {
+    slug: "urgence-dentaire-nuit-weekend-dakar",
+    title: "Urgence dentaire la nuit ou le week-end à Dakar : que faire ?",
+    description:
+      "Gestes qui soulagent, erreurs à éviter et comment organiser une prise en charge rapide.",
+    date: "2025-11-26",
+    category: "Urgences",
+    tags: ["urgence dentaire", "nuit", "week-end", "dentiste dakar"],
+    author: AUTHORS.sao,
+    cover: urgenceNuitCover,
+    readingMinutes: 9,
+    content: `Une **douleur aiguë** ou une **dent cassée** la nuit/le week-end nécessite des **gestes simples** pour **stabiliser** la situation jusqu’à la consultation.
+
+## Ce qui soulage vraiment
+- **Paracétamol** selon notice (éviter aspirine si saignement).  
+- **Froid** externe 20 min on/off.  
+- **Tête surélevée** pour réduire la pression.  
+- **Rinçage eau tiède salée** si suppuration qui draine.
+
+## À éviter absolument
+- **Chaleur locale**, alcool, tabac  
+- Automédication **antibiotique** sans examen  
+- **Bains de bouche** agressifs prolongés
+
+## Cas fréquents
+- **Pulpite** (douleur pulsatile) → analgésie + RDV rapide  
+- **Abcès** (gonflement + fièvre) → consultation **prioritaire**  
+- **Traumatisme** → conserver fragment/dent dans **lait** et venir vite
+
+### FAQ
+**Peut-on m’endormir ?** Anesthésie locale + sédation possible selon cas.  
+**Je suis enceinte** : protocoles adaptés, signalez-le.  
+**Rayons X la nuit ?** Selon urgence, un cliché ciblé suffit souvent.
+
+> Prenez rendez-vous : [/rendez-vous](/rendez-vous) • Conseils post-visite : [/infos/post-visite](/infos/post-visite).`,
+  },
+
+  {
+    slug: "blanchiment-vs-facettes-esthetique-dents-dakar",
+    title:
+      "Blanchiment ou facettes : quelle solution esthétique choisir à Dakar ?",
+    description:
+      "Comparatif clair entre éclaircissement de la teinte et relooking du sourire par facettes.",
+    date: "2025-12-03",
+    category: "Esthétique",
+    tags: ["blanchiment", "facettes", "esthétique", "clinique dentaire dakar"],
+    author: AUTHORS.sao,
+    cover: blanchimentVsFacettesCover,
+    readingMinutes: 11,
+    content: `Pour **éclaircir** la teinte, on pense au **blanchiment** ; pour corriger **forme**, **alignement léger** et **teinte réfractaire**, on envisage des **facettes**. Les deux solutions peuvent être **complémentaires**.
+
+## Blanchiment : quand et comment ?
+- Idéal si **teinte uniforme** à éclaircir  
+- Cabinet (rapide) ou gouttières (progressif)  
+- **Ne modifie pas** la forme/alignement  
+- Entretien : retouches légères si besoin
+
+## Facettes : pour quel résultat ?
+- Corrige **couleur**, **forme**, **proportions**, petits **alignements**  
+- Composite (direct/indirect) vs **céramique** (esthétique durable)  
+- Préparation **minimale** ou no-prep selon cas
+
+## Choisir intelligemment
+- **Cas simple** : blanchiment seul  
+- **Usure/diastèmes/alignement** : facettes (parfois après blanchiment)  
+- **Budget & longévité** : discutés au devis personnalisé
+
+### FAQ
+**Les facettes blanchissent-elles ?** Non, elles gardent leur teinte.  
+**Blanchiment sur dents sensibles ?** Protocole doux + dentifrice désensibilisant.  
+**Réversible ?** Les facettes ne le sont pas toujours.
+
+> Esthétique dentaire : [/all-competences](/all-competences) • RDV : [/rendez-vous](/rendez-vous).`,
+  },
+  {
+    slug: "grossesse-et-dents-soins-conseils-dakar",
+    title: "Grossesse et santé des dents : soins et conseils à Dakar",
+    description:
+      "Quels soins dentaires pendant la grossesse ? Traitements possibles, précautions, prévention des gingivites et érosion acide liées aux nausées.",
+    date: "2025-12-12",
+    category: "Conseils",
+    tags: ["grossesse et dents", "gingivite grossesse", "dentiste dakar"],
+    author: AUTHORS.sao,
+    cover: grossesseCover,
+    readingMinutes: 15,
+    content: `La grossesse est une période unique qui s’accompagne de nombreux changements hormonaux et physiologiques. Ces bouleversements touchent aussi la **santé bucco-dentaire** et nécessitent une attention particulière.
+
+## Pourquoi les dents changent-elles pendant la grossesse ?
+Les hormones (progestérone et œstrogènes) modifient la réaction des gencives face à la plaque dentaire. Résultat : un risque accru de **gingivite gravidique** (inflammation des gencives chez 60 à 70 % des femmes enceintes).
+
+### Les problèmes fréquents
+- **Gencives qui saignent** au brossage.
+- **Mauvaise haleine** liée à l’inflammation.
+- **Érosion acide** à cause des nausées et vomissements répétés.
+- **Caries** favorisées par les grignotages sucrés ou acides.
+
+## Soins dentaires possibles pendant la grossesse
+Contrairement aux idées reçues, la grande majorité des soins dentaires sont **sans danger** pour la maman et le bébé :
+- **Consultation de contrôle** chaque trimestre.
+- **Détartrage** et soins conservateurs : recommandés pour limiter infections et inflammations.
+- **Radiographies** : possibles uniquement en cas d’urgence, avec protections adaptées.
+- **Antalgiques et antibiotiques** : certains sont compatibles avec la grossesse (toujours prescrits par le praticien).
+
+## Conseils pratiques pour les futures mamans
+- Brossez vos dents **2 à 3 fois/jour** avec un dentifrice fluoré.
+- Utilisez le **fil dentaire** pour limiter les gingivites.
+- Après les nausées, rincez la bouche avec de l’eau bicarbonatée plutôt que de brosser directement.
+- Limitez les collations sucrées ou acides.
+- Consultez dès l’apparition d’une douleur ou d’un saignement inhabituel.
+
+## Foire aux questions
+**Puis-je me faire arracher une dent enceinte ?** Oui, si l’infection menace la santé de la maman.  
+**Puis-je blanchir mes dents ?** Non, les traitements esthétiques sont reportés après l’accouchement.  
+**Que faire si je ressens une douleur forte la nuit ?** Contactez immédiatement la **Clinique DABIA** : [/rendez-vous](/rendez-vous).
+
+> Une bonne santé bucco-dentaire contribue au bien-être de la maman et du bébé. À Dakar, la Clinique DABIA accompagne les femmes enceintes avec douceur et sécurité.`,
+  },
+  {
+    slug: "fluoration-vernis-fluore-enfant-adulte-dakar",
+    title:
+      "Vernis fluoré et fluoration : protéger les dents des enfants et adultes",
+    description:
+      "Indications, efficacité, fréquence et sécurité des vernis fluorés en cabinet et au quotidien.",
+    date: "2025-12-26",
+    category: "Pédiatrie",
+    tags: ["vernis fluoré", "prévention caries", "enfant dakar"],
+    author: AUTHORS.sao,
+    cover: fluorCover,
+    readingMinutes: 14,
+    content: `Le **fluor** est l’un des moyens les plus efficaces pour renforcer l’émail et lutter contre les caries. À la Clinique DABIA, nous proposons des **applications de vernis fluoré** pour les enfants comme pour les adultes à risque.
+
+## Pourquoi le fluor est-il essentiel ?
+Le fluor a deux actions majeures :
+- Il **renforce** l’émail en le rendant plus résistant aux attaques acides.
+- Il aide à **réparer** les lésions débutantes avant qu’elles n’évoluent en carie.
+
+## Quand utiliser le vernis fluoré ?
+- Chez l’enfant dès l’apparition des premières molaires.
+- En cas de risque carieux élevé (grignotage, boissons sucrées, hygiène insuffisante).
+- Pour les adultes présentant une **sécheresse buccale** ou porteurs d’appareils orthodontiques.
+- Après certains traitements (parodontite, radiothérapie tête/cou).
+
+## Comment se déroule l’application ?
+1. Séchage de la dent.
+2. Application du vernis fluoré avec un pinceau.
+3. Recommandation de ne pas manger/boire pendant 2 heures.
+
+## Est-ce sûr ?
+Oui. Les produits sont faiblement dosés, adaptés à l’âge et validés par l’OMS. Le risque de toxicité est **quasi nul** dans le cadre d’une utilisation professionnelle.
+
+## Prévention à la maison
+- Dentifrice fluoré 2 à 3 fois par jour.
+- Éviter les bains de bouche fluorés répétés sans indication.
+- Consulter tous les 6 mois pour évaluer le besoin d’une réapplication.
+
+### FAQ
+**Est-ce douloureux ?** Non, l’application est rapide et indolore.  
+**Combien de fois par an ?** Tous les 3 à 6 mois selon le risque carieux.  
+**Est-ce que ça remplace le brossage ?** Non, c’est un complément.
+
+> À Dakar, la Clinique DABIA accompagne les familles pour protéger le sourire de leurs enfants et adultes grâce au **fluor**.`,
+  },
+  {
+    slug: "sedation-dentaire-peur-du-dentiste-dakar",
+    title: "Peur du dentiste : quelles options de sédation à Dakar ?",
+    description:
+      "Du MEOPA à la sédation légère : comment soigner sereinement les patients anxieux, adultes et enfants.",
+    date: "2026-01-02",
+    category: "Conseils",
+    tags: ["peur du dentiste", "sédation dentaire", "dentiste dakar"],
+    author: AUTHORS.sao,
+    cover: sedationCover,
+    readingMinutes: 15,
+    content: `La **peur du dentiste** touche environ 1 patient sur 3. Elle entraîne souvent des retards de soins, aggravant les problèmes dentaires. À Dakar, la Clinique DABIA met en place des solutions de **sédation douce et sécurisée** pour soigner tous les patients, y compris les plus anxieux.
+
+## Quelles techniques de sédation existent ?
+1. **Anesthésie locale** classique, quasi indolore grâce aux aiguilles fines et gels anesthésiants.  
+2. **MEOPA (gaz hilarant)** : mélange d’oxygène et protoxyde d’azote, respiré par un masque. Effet rapide, anxiété diminuée.  
+3. **Sédation orale** : comprimés prescrits avant le rendez-vous (adultes uniquement).  
+4. **Sédation intraveineuse** (cas complexes) : réalisée en collaboration avec un anesthésiste.
+
+## Pour qui est-ce indiqué ?
+- Les enfants très anxieux ou agités.
+- Les adultes phobiques.
+- Les patients devant subir des soins longs (implants, extractions multiples).
+- Les personnes avec un réflexe nauséeux important.
+
+## Avantages de la sédation
+- Réduit le stress et la douleur perçue.
+- Permet de réaliser plusieurs soins en une seule séance.
+- Améliore la coopération chez les enfants.
+
+## Sécurité
+Toutes ces méthodes sont encadrées par des protocoles médicaux stricts. Les doses sont ajustées en fonction de l’âge, du poids et de l’état de santé du patient.
+
+### FAQ
+**Vais-je dormir complètement ?** Non, la sédation n’est pas une anesthésie générale. Vous restez conscient mais détendu.  
+**Y a-t-il des effets secondaires ?** Très rares, parfois une légère somnolence passagère.  
+**Puis-je rentrer seul après une sédation ?** Après MEOPA, oui. Après une sédation orale ou IV, il faut être accompagné.
+
+> La peur du dentiste ne doit plus être un frein. La Clinique DABIA à Dakar vous propose des solutions adaptées pour vous soigner en toute confiance.`,
+  },
+  {
+    slug: "invisalign-aligneurs-prix-duree-entretien-dakar",
+    title:
+      "Aligneurs transparents (type Invisalign) : prix, durée et entretien à Dakar",
+    description:
+      "Qui est éligible ? Combien de temps ? Coût indicatif, hygiène, cas simples vs complexes et contention après traitement.",
+    date: "2026-01-09",
+    category: "Orthodontie",
+    tags: ["Invisalign Dakar", "aligneurs transparents", "orthodontie adulte"],
+    author: AUTHORS.sao,
+    cover: invisalignCover,
+    readingMinutes: 16,
+    content: `Les **aligneurs transparents**, comme Invisalign, représentent une révolution en orthodontie. Ils permettent de corriger l’alignement des dents de manière discrète et confortable. À Dakar, de plus en plus d’adultes et d’adolescents optent pour cette solution.
+
+## Comment fonctionnent les aligneurs ?
+- Série de gouttières transparentes fabriquées sur mesure.
+- Chaque aligneur déplace progressivement les dents.
+- À changer toutes les 1 à 2 semaines.
+
+## Indications
+- Dents qui se chevauchent.
+- Espaces entre les dents (diastèmes).
+- Rechutes après un ancien traitement orthodontique.
+- Cas esthétiques modérés.
+
+## Avantages
+- Discrétion : quasi invisibles.
+- Confort : pas de brackets qui blessent.
+- Hygiène facile : retrait pour le brossage et les repas.
+- Suivi numérique : simulation avant/après.
+
+## Contraintes
+- Discipline stricte : port 20–22h par jour.
+- Prix supérieur aux traitements classiques.
+- Non adaptés aux cas très complexes (chirurgie parfois nécessaire).
+
+## Déroulement du traitement
+1. Scanner 3D et photos.
+2. Planification numérique du mouvement dentaire.
+3. Fabrication des gouttières.
+4. Suivi toutes les 6–8 semaines.
+5. Contention finale obligatoire.
+
+## Prix et durée
+- Durée moyenne : 6 à 18 mois.
+- Prix : dépend du nombre de gouttières et de la complexité.
+
+### FAQ
+**Est-ce douloureux ?** Une gêne temporaire 2–3 jours après chaque changement.  
+**Puis-je manger avec ?** Non, il faut les retirer.  
+**Résultats durables ?** Oui, avec contention (fil ou gouttière de nuit).
+
+> La Clinique DABIA propose des traitements par aligneurs avec un suivi personnalisé à Dakar.`,
+  },
+  {
+    slug: "bridge-ou-implant-que-choisir-dakar",
+    title: "Bridge ou implant : que choisir pour remplacer une dent ?",
+    description:
+      "Comparatif clair : durée, coût, préservation de l’os et des dents voisines, entretien et indications.",
+    date: "2026-01-16",
+    category: "Implantologie",
+    tags: ["bridge vs implant", "remplacement dent", "implant dentaire dakar"],
+    author: AUTHORS.sao,
+    cover: bridgeImplantCover,
+    readingMinutes: 15,
+    content: `Lorsqu’une dent est perdue, deux options principales existent pour la remplacer : le **bridge** ou l’**implant**. Le choix dépend de la situation clinique, de l’âge et du budget.
+
+## Le bridge
+- Repose sur les dents voisines, taillées pour servir de piliers.
+- Indiqué quand ces dents sont déjà abîmées ou couronnées.
+- Réalisation rapide (2–3 séances).
+- Moins coûteux qu’un implant.
+
+## Les inconvénients du bridge
+- Nécessite de réduire des dents parfois saines.
+- Ne préserve pas l’os (qui se résorbe sous l’édentement).
+- Durée de vie moyenne : 10 à 15 ans.
+
+## L’implant
+- Racine artificielle en titane intégrée dans l’os.
+- Préserve les dents voisines et l’os.
+- Durée de vie supérieure (20+ ans si bonne hygiène).
+- Indiqué pour une solution durable.
+
+## Comparatif rapide
+- **Durée** : bridge = rapide, implant = plus long (cicatrisation osseuse).  
+- **Esthétique** : implant plus naturel.  
+- **Entretien** : implant = brossage + fil spécifique.  
+- **Prix** : implant généralement plus cher, mais durable.
+
+### FAQ
+**Un bridge peut-il être remplacé par un implant plus tard ?** Oui.  
+**Implant et diabète ?** Possible si équilibre glycémique.  
+**Douleur ?** Pose indolore, cicatrisation maîtrisée.
+
+> La Clinique DABIA à Dakar accompagne les patients pour choisir la solution la plus adaptée : bridge ou implant.`,
+  },
+  {
+    slug: "couronne-ou-onlay-difference-prix-dakar",
+    title: "Couronne ou onlay : quelles différences et quand les poser ?",
+    description:
+      "Restaurations indirectes : indications, matériaux, étapes au cabinet et ordre de prix.",
+    date: "2026-01-23",
+    category: "Conseils",
+    tags: ["couronne dentaire", "onlay", "prix dents dakar"],
+    author: AUTHORS.sao,
+    cover: onlayCover,
+    readingMinutes: 14,
+    content: `Lorsque la dent est abîmée, plusieurs solutions existent. Les plus connues sont la **couronne** et l’**onlay**. Ces restaurations indirectes offrent résistance et esthétique.
+
+## L’onlay
+- Recouvre partiellement la dent.
+- Conserve plus de structure dentaire saine.
+- Réalisé en composite ou en céramique.
+- Indiqué pour les caries ou fractures moyennes.
+
+## La couronne
+- Recouvre la totalité de la dent.
+- Indiquée sur dents dévitalisées ou très fragiles.
+- Réalisée en céramique, métal-céramique ou zircone.
+- Protège la dent sur le long terme.
+
+## Étapes communes
+1. Préparation de la dent.
+2. Empreinte ou scan numérique.
+3. Réalisation au laboratoire.
+4. Pose provisoire, puis définitive.
+
+## Prix et durabilité
+- Onlay : coût moyen inférieur, durée 8–12 ans.
+- Couronne : plus cher, mais durée 15–20 ans.
+- Dans tous les cas : entretien rigoureux indispensable.
+
+### FAQ
+**Quelle est la différence esthétique ?** Les deux sont invisibles en céramique.  
+**Est-ce douloureux ?** Non, anesthésie locale.  
+**Peut-on refaire une couronne ?** Oui, mais il faut parfois retraiter la dent.
+
+> À Dakar, la Clinique DABIA propose couronnes et onlays sur mesure, associant solidité et esthétique.`,
+  },
+  {
+    slug: "cbct-radio-3d-dentaire-a-quoi-sert-dakar",
+    title: "CBCT (radio 3D) en dentaire : à quoi ça sert ?",
+    description:
+      "Implants, endodontie, dents incluses : bénéfices, dose, indications et sécurité de l’imagerie 3D.",
+    date: "2026-01-30",
+    category: "Technologie",
+    tags: ["CBCT Dakar", "radio 3D dentaire", "technologie cabinet"],
+    author: AUTHORS.sao,
+    cover: cbctCover,
+    readingMinutes: 13,
+    content: `La **CBCT (Cone Beam Computed Tomography)** est une technologie de radiographie 3D dédiée à la dentisterie. Elle fournit des images précises, avec une irradiation plus faible qu’un scanner médical classique.
+
+## Indications principales
+- **Implantologie** : planification des implants avec précision millimétrique.
+- **Endodontie** : détection de canaux accessoires, fractures radiculaires.
+- **Chirurgie** : dents de sagesse incluses, kystes, lésions osseuses.
+- **Orthodontie** : étude des bases osseuses et éruption des dents.
+
+## Avantages
+- Image tridimensionnelle.
+- Mesures précises de l’os.
+- Diagnostic plus fiable.
+- Faible irradiation (par rapport au scanner).
+
+## Déroulement de l’examen
+1. Installation assise ou debout.
+2. Rotation de l’appareil autour de la tête (20 sec).
+3. Analyse des images par le dentiste.
+
+## Sécurité
+- Dose réduite, adaptée aux enfants si nécessaire.
+- Pas d’injection, pas d’examen invasif.
+
+### FAQ
+**Est-ce douloureux ?** Non, examen indolore et rapide.  
+**Est-ce remboursé ?** Dépend des indications médicales.  
+**Puis-je le faire enceinte ?** Déconseillé sauf urgence.
+
+> La Clinique DABIA à Dakar est équipée d’un **CBCT dernière génération** pour des diagnostics et plans de traitement de haute précision.`,
+  },
+  {
+    slug: "urgence-traumatisme-dentaire-enfant-dakar",
+    title: "Traumatisme dentaire chez l’enfant : que faire immédiatement ?",
+    description:
+      "Chute, dent cassée ou expulsée : gestes d’urgence, conservation du fragment et prise en charge en cabinet.",
+    date: "2026-02-06",
+    category: "Pédiatrie",
+    tags: ["traumatisme dentaire enfant", "urgence dentaire", "dentiste dakar"],
+    author: AUTHORS.sao,
+    cover: traumaEnfantCover,
+    readingMinutes: 14,
+    content: `Les enfants sont particulièrement exposés aux **traumatismes dentaires** lors des jeux, du sport ou des chutes. Savoir réagir vite permet souvent de sauver la dent.
+
+## Types de traumatismes
+- **Fracture de la couronne** (dent cassée).
+- **Luxation** (dent déplacée).
+- **Avulsion** (dent complètement sortie).
+- **Traumatisme des dents de lait** (choc fréquent chez les 2–5 ans).
+
+## Gestes d’urgence
+- Conserver le fragment ou la dent dans du **lait** ou du sérum physiologique.
+- Ne pas brosser ni frotter la racine.
+- Consulter dans les 30–60 minutes.
+- En cas de saignement, appliquer une compresse propre.
+
+## Prise en charge en cabinet
+- Radiographie pour évaluer les racines.
+- Collage du fragment ou reconstitution avec résine.
+- Réimplantation possible d’une dent définitive expulsée.
+- Suivi régulier pendant plusieurs mois.
+
+## Cas particulier des dents de lait
+- On ne réimplante jamais une dent de lait.
+- Surveillance pour éviter de léser la dent définitive sous-jacente.
+
+### FAQ
+**Est-ce douloureux ?** Oui, mais une prise en charge rapide limite la douleur.  
+**Que faire la nuit ou le week-end ?** Contacter immédiatement un service d’urgence dentaire.  
+**Peut-on sauver une dent expulsée ?** Oui, si elle est réimplantée rapidement.
+
+> À Dakar, la Clinique DABIA reçoit les enfants en urgence pour tout traumatisme dentaire.`,
+  },
+  {
+    slug: "diabete-et-sante-buccale-risques-prevention-dakar",
+    title: "Diabète et santé bucco-dentaire : risques et prévention",
+    description:
+      "Lien parodonte–diabète, cicatrisation, infections : protocole de prévention et suivi en cabinet.",
+    date: "2026-02-13",
+    category: "Prévention",
+    tags: ["diabète et dents", "parodontite diabétique", "prévention dakar"],
+    author: AUTHORS.sao,
+    cover: diabeteCover,
+    readingMinutes: 15,
+    content: `Le **diabète** affecte la santé générale mais aussi la santé bucco-dentaire. Les patients diabétiques présentent un risque accru de maladies parodontales et de complications post-opératoires.
+
+## Quels risques pour les dents ?
+- **Parodontite** plus fréquente et plus sévère.
+- **Retard de cicatrisation** après extraction ou chirurgie.
+- **Sécheresse buccale** favorisant les caries et mycoses.
+- Risque accru d’**infections**.
+
+## Pourquoi ?
+Un diabète mal équilibré fragilise le système immunitaire et diminue la capacité de défense face aux bactéries buccales.
+
+## Prévention recommandée
+- Contrôle glycémique strict.
+- Consultation dentaire tous les 6 mois.
+- Hygiène rigoureuse (brossage + fil).
+- Nettoyage professionnel régulier.
+
+## Soins adaptés à la Clinique DABIA
+- Protocoles spécifiques pour limiter les risques infectieux.
+- Prescription d’antibiotiques si nécessaire.
+- Surveillance rapprochée après les extractions et implants.
+
+### FAQ
+**Puis-je avoir un implant avec un diabète ?** Oui, si le diabète est bien équilibré.  
+**Dois-je prévenir mon dentiste ?** Absolument, pour adapter les soins.  
+**Quels signes doivent alerter ?** Gencives qui saignent, dents qui bougent, mauvaise haleine persistante.
+
+> La Clinique DABIA accompagne les patients diabétiques à Dakar pour préserver leur sourire et leur santé globale.`,
   },
 ];

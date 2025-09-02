@@ -34,7 +34,7 @@ const StaffPreview = () => {
         >
           <img
             src={sao}
-            alt="Dr Sao"
+            alt="Dentiste Dakar - Clinique dentaire DABIA"
             className=" h-[25vh] rounded-full mx-auto mb-4 object-cover"
           />
           <h4 className="text-lg font-semibold text-[#bb2988]">

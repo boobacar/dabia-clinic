@@ -94,5 +94,144 @@
     "date": "2025-10-20",
     "category": "Conseils",
     "tags": ["halitose", "mauvaise haleine", "prévention"]
+  },
+  {
+    "slug": "carie-dentaire-symptomes-traitement-prevention-dakar",
+    "title": "Carie dentaire : symptômes, traitement et prévention à Dakar",
+    "description": "Reconnaître une carie tôt, éviter la douleur et protéger ses dents grâce aux soins de la Clinique DABIA.",
+    "date": "2025-11-05",
+    "category": "Prévention",
+    "tags": [
+      "carie dentaire",
+      "traitement carie",
+      "prévention",
+      "dentiste dakar"
+    ]
+  },
+  {
+    "slug": "dent-de-sagesse-douleur-extraction-dakar",
+    "title": "Douleur des dents de sagesse : quand faut-il extraire ?",
+    "description": "Douleur, infections (péricoronarites) et extraction : ce qu’il faut savoir à Dakar.",
+    "date": "2025-11-12",
+    "category": "Urgences",
+    "tags": [
+      "dent de sagesse",
+      "extraction",
+      "urgence dentaire",
+      "dentiste dakar"
+    ]
+  },
+  {
+    "slug": "prothese-dentaire-complete-partielle-ou-sur-implant-dakar",
+    "title": "Prothèse dentaire à Dakar : complète, partielle ou sur implant ?",
+    "description": "Les solutions modernes pour retrouver fonction et esthétique : quelle prothèse pour quel cas ?",
+    "date": "2025-11-19",
+    "category": "Conseils",
+    "tags": [
+      "prothèse dentaire",
+      "dentier",
+      "implant dentaire",
+      "dentiste dakar"
+    ]
+  },
+  {
+    "slug": "urgence-dentaire-nuit-weekend-dakar",
+    "title": "Urgence dentaire la nuit ou le week-end à Dakar : que faire ?",
+    "description": "Gestes qui soulagent, erreurs à éviter et comment organiser une prise en charge rapide.",
+    "date": "2025-11-26",
+    "category": "Urgences",
+    "tags": ["urgence dentaire", "nuit", "week-end", "dentiste dakar"]
+  },
+  {
+    "slug": "blanchiment-vs-facettes-esthetique-dents-dakar",
+    "title": "Blanchiment ou facettes : quelle solution esthétique choisir à Dakar ?",
+    "description": "Comparatif clair entre éclaircissement de la teinte et relooking du sourire par facettes.",
+    "date": "2025-12-03",
+    "category": "Esthétique",
+    "tags": ["blanchiment", "facettes", "esthétique", "clinique dentaire dakar"]
+  },
+  {
+    "slug": "grossesse-et-dents-soins-conseils-dakar",
+    "title": "Grossesse et santé des dents : soins et conseils à Dakar",
+    "description": "Quels soins dentaires pendant la grossesse ? Traitements possibles, précautions, prévention des gingivites et nausées acides.",
+    "date": "2025-12-12",
+    "category": "Conseils",
+    "tags": ["grossesse et dents", "gingivite grossesse", "dentiste dakar"]
+  },
+  {
+    "slug": "recession-gingivale-causes-soins-greffe-dakar",
+    "title": "Récession gingivale : causes, traitements et greffe de gencive à Dakar",
+    "description": "Brossage traumatique, bruxisme, parodontite : comprendre la récession et les solutions (greffe conjonctive, collagénique).",
+    "date": "2025-12-19",
+    "category": "Prévention",
+    "tags": ["récession gingivale", "greffe gencive", "parodontologie dakar"]
+  },
+  {
+    "slug": "fluoration-vernis-fluore-enfant-adulte-dakar",
+    "title": "Vernis fluoré et fluoration : protéger les dents des enfants et adultes",
+    "description": "Indications, efficacité, fréquence et sécurité des vernis fluorés en cabinet et au quotidien.",
+    "date": "2025-12-26",
+    "category": "Pédiatrie",
+    "tags": ["vernis fluoré", "prévention caries", "enfant dakar"]
+  },
+  {
+    "slug": "sedation-dentaire-peur-du-dentiste-dakar",
+    "title": "Peur du dentiste : quelles options de sédation à Dakar ?",
+    "description": "Du MEOPA à la sédation légère : comment soigner sereinement les patients anxieux, adultes et enfants.",
+    "date": "2026-01-02",
+    "category": "Conseils",
+    "tags": ["peur du dentiste", "sédation dentaire", "dentiste dakar"]
+  },
+  {
+    "slug": "invisalign-aligneurs-prix-duree-entretien-dakar",
+    "title": "Aligneurs transparents (type Invisalign) : prix, durée et entretien à Dakar",
+    "description": "Qui est éligible ? Combien de temps ? Coût indicatif, hygiène, cas simples vs complexes et contention après traitement.",
+    "date": "2026-01-09",
+    "category": "Orthodontie",
+    "tags": ["Invisalign Dakar", "aligneurs transparents", "orthodontie adulte"]
+  },
+  {
+    "slug": "bridge-ou-implant-que-choisir-dakar",
+    "title": "Bridge ou implant : que choisir pour remplacer une dent ?",
+    "description": "Comparatif clair : durée, coût, préservation de l’os et des dents voisines, entretien et indications.",
+    "date": "2026-01-16",
+    "category": "Implantologie",
+    "tags": ["bridge vs implant", "remplacement dent", "implant dentaire dakar"]
+  },
+  {
+    "slug": "couronne-ou-onlay-difference-prix-dakar",
+    "title": "Couronne ou onlay : quelles différences et quand les poser ?",
+    "description": "Restaurations indirectes : indications, matériaux, étapes au cabinet et ordre de prix.",
+    "date": "2026-01-23",
+    "category": "Conseils",
+    "tags": ["couronne dentaire", "onlay", "prix dents dakar"]
+  },
+  {
+    "slug": "cbct-radio-3d-dentaire-a-quoi-sert-dakar",
+    "title": "CBCT (radio 3D) en dentaire : à quoi ça sert ?",
+    "description": "Implants, endodontie, dents incluses : bénéfices, dose, indications et sécurité de l’imagerie 3D.",
+    "date": "2026-01-30",
+    "category": "Technologie",
+    "tags": ["CBCT Dakar", "radio 3D dentaire", "technologie cabinet"]
+  },
+  {
+    "slug": "urgence-traumatisme-dentaire-enfant-dakar",
+    "title": "Traumatisme dentaire chez l’enfant : que faire immédiatement ?",
+    "description": "Chute, dent cassée ou expulsée : gestes d’urgence, conservation du fragment et prise en charge en cabinet.",
+    "date": "2026-02-06",
+    "category": "Pédiatrie",
+    "tags": [
+      "traumatisme dentaire enfant",
+      "urgence dentaire",
+      "dentiste dakar"
+    ]
+  },
+  {
+    "slug": "diabete-et-sante-buccale-risques-prevention-dakar",
+    "title": "Diabète et santé bucco-dentaire : risques et prévention",
+    "description": "Lien parodonte–diabète, cicatrisation, infections : protocole de prévention et suivi en cabinet.",
+    "date": "2026-02-13",
+    "category": "Prévention",
+    "tags": ["diabète et dents", "parodontite diabétique", "prévention dakar"]
   }
 ]
