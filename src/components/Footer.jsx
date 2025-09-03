@@ -11,6 +11,7 @@ import { MdLocationPin, MdEmail, MdPhone } from "react-icons/md";
 import { AnimatePresence } from "framer-motion";
 import DevInfoModal from "./DevInfoModal";
 import logo from "../assets/logo.jpg";
+import BlogLinksCompact from "./BlogLinksCompact";
 
 const Footer = () => {
   const [showModal, setShowModal] = useState(false);
@@ -91,6 +92,10 @@ const Footer = () => {
         >
           <FaWhatsapp className="w-6 h-6" />
         </a>
+      </div>
+
+      <div className="md:col-span-1">
+        <BlogLinksCompact count={8} />
       </div>
 
       <div className="text-center mt-6 text-sm text-gray-400">
