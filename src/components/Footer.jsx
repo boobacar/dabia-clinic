@@ -56,7 +56,7 @@ const Footer = () => {
           href="https://www.tiktok.com/@cliniquedentairedabia5"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-[#ad9d64] transition"
+          className="hover:text-black transition"
         >
           <FaTiktok className="w-6 h-6" />
         </a>
@@ -64,7 +64,7 @@ const Footer = () => {
           href="https://www.instagram.com/clinique_dentaire_dabia/"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-[#ad9d64] transition"
+          className="hover:text-[#c24f21] transition"
         >
           <FaInstagram className="w-6 h-6" />
         </a>
@@ -72,7 +72,7 @@ const Footer = () => {
           href="https://www.facebook.com/cliniquedentairedabia/?locale=fr_FR"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-[#ad9d64] transition"
+          className="hover:text-[#252ea1] transition"
         >
           <FaFacebookF className="w-6 h-6" />
         </a>
@@ -80,7 +80,7 @@ const Footer = () => {
           href="https://sn.linkedin.com/company/clinique-dentaire-dabia"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-[#ad9d64] transition"
+          className="hover:text-[#4f84c2] transition"
         >
           <FaLinkedinIn className="w-6 h-6" />
         </a>
@@ -88,7 +88,7 @@ const Footer = () => {
           href="https://wa.me/221777039393"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-[#ad9d64] transition"
+          className="hover:text-[#408a4c] transition"
         >
           <FaWhatsapp className="w-6 h-6" />
         </a>
@@ -101,7 +101,7 @@ const Footer = () => {
       <div className="text-center mt-6 text-sm text-gray-400">
         &copy; {new Date().getFullYear()} Dabia. Tous droits réservés.
       </div>
-      <div className="flex text-gray-400 items-center justify-center">
+      <div className="flex text-gray-400 items-center justify-center text-sm">
         Designed by{" "}
         <button
           onClick={() => setShowModal(true)}

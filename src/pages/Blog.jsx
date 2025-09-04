@@ -35,7 +35,7 @@ export default function Blog() {
   const pageItems = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
   return (
-    <section className="py-20 px-4 max-w-7xl mx-auto mt-20">
+    <section className="py-10 px-4 max-w-7xl mx-auto mt-20">
       <Seo
         title="Blog dentaire à Dakar – Conseils, urgences, prix"
         description="Articles clairs et fiables par la Clinique Dentaire DABIA : urgences dentaires à Dakar, blanchiment, implants, orthodontie, prévention, enfants."
