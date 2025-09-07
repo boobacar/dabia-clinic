@@ -1,7 +1,7 @@
 // api/google-reviews.js
 export default async function handler(req, res) {
   try {
-    const API_KEY = process.env.GOOGLE_MAPS_API_KEY; // <-- côté serveur
+    const API_KEY = process.env.GOOGLE_MAPS_API_KEY;
     const PLACE_ID = process.env.GOOGLE_PLACE_ID;
     const MIN_RATING = Number(process.env.REVIEWS_MIN_RATING || 4);
 
@@ -31,6 +31,7 @@ export default async function handler(req, res) {
         status: data.status,
         message: data.error_message,
       });
+      // 502 pour remonter l'info côté front
       return res.status(502).json({
         error: "Places API error",
         status: data.status,
@@ -43,7 +44,7 @@ export default async function handler(req, res) {
         (rv) =>
           (rv.rating || 0) >= MIN_RATING && (rv.text || "").trim().length > 10
       )
-      .sort((a, b) => (b.time || 0) - (a.time || 0))
+      .sort((a, b) => (a.time || 0) - (b.time || 0))
       .reverse()
       .slice(0, 10)
       .map((rv) => ({
