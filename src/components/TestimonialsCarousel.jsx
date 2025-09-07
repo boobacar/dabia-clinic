@@ -75,8 +75,7 @@ const TestimonialsCarousel = () => {
 
       {placeInfo && (
         <p className="text-sm text-gray-600 mb-6">
-          {placeInfo.name} — Note {placeInfo.rating} / 5 ({placeInfo.total} avis
-          Google)
+          {placeInfo.name} — Note {placeInfo.rating} / 5 (avis Google)
         </p>
       )}
       {error && <p className="text-xs text-red-600 mb-4">{error}</p>}
