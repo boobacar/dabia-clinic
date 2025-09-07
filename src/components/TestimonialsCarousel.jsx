@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import ReviewCTA from "./ReviewCTA";
 
 import temoin1 from "../assets/temoin1.webp";
 import temoin2 from "../assets/temoin2.webp";
@@ -34,7 +35,7 @@ const TestimonialsCarousel = () => {
   return (
     <section className="py-16 bg-gray-100 text-center">
       <h2 className="text-3xl text-[#ad9d64] font-bold mb-8">Témoignages</h2>
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-2xl mx-auto mb-10">
         <Swiper
           modules={[Autoplay]}
           spaceBetween={30}
@@ -57,6 +58,7 @@ const TestimonialsCarousel = () => {
           ))}
         </Swiper>
       </div>
+      <ReviewCTA />
     </section>
   );
 };

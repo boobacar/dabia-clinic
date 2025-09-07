@@ -12,44 +12,15 @@ import { AnimatePresence } from "framer-motion";
 import DevInfoModal from "./DevInfoModal";
 import logo from "../assets/logo.jpg";
 import BlogLinksCompact from "./BlogLinksCompact";
+import NAP from "./NAP";
+import ReviewCTA from "./ReviewCTA";
 
 const Footer = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
     <footer className="bg-gray-800 text-white py-8 mt-12">
-      <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div className="flex gap-2 items-center">
-          <img
-            className="w-[20%] sm:w-[30%] rounded-full hover:animate-spin"
-            src={logo}
-            alt="Dentiste Dakar - Clinique dentaire DABIA"
-          />
-          <div>
-            <h4 className="font-bold text-xl mb-2 text-[#ad9d64]">Dabia</h4>
-            <p>Clinique dentaire à Dakar, Sénégal</p>
-          </div>
-        </div>
-
-        <div>
-          <h4 className="font-semibold mb-2 flex items-center gap-2">
-            <MdLocationPin className="w-5 h-5" /> Adresse
-          </h4>
-          <p>Sicap Foire, 2 voies Liberté 6</p>
-          <p>À 150m du Uno, Dakar, Sénégal</p>
-        </div>
-
-        <div>
-          <h4 className="font-semibold mb-2">Contact</h4>
-          <p className="flex items-center gap-2">
-            <MdPhone className="w-5 h-5" /> +221 77 703 93 93
-            <MdPhone className="w-5 h-5" /> +221 33 868 47 04
-          </p>
-          <p className="flex items-center gap-2">
-            <MdEmail className="w-5 h-5" /> cliniquedentairedabia@gmail.com
-          </p>
-        </div>
-      </div>
+      <NAP />
 
       <div className="flex justify-center gap-6 mt-8">
         <a

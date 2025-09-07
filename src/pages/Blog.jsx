@@ -159,7 +159,7 @@ export default function Blog() {
                 <button
                   key={c}
                   onClick={() => {
-                    setPage(1);
+                      setPage(1);
                     setCat(c === cat ? "" : c);
                   }}
                   className={`px-3 py-1 rounded-full border ${

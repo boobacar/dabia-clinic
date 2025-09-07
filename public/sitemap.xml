@@ -1,219 +1,282 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
   <url>
     <loc>https://www.cliniquedentairedabia.com/</loc>
-    <lastmod>2025-09-02</lastmod>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/a-propos</loc>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog</loc>
-    <lastmod>2025-09-02</lastmod>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/rendez-vous</loc>
-    <lastmod>2025-09-02</lastmod>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/all-competences</loc>
-    <lastmod>2025-09-02</lastmod>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/infos/technologie</loc>
-    <lastmod>2025-09-02</lastmod>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/infos/post-visite</loc>
-    <lastmod>2025-09-02</lastmod>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/infos/enfants</loc>
-    <lastmod>2025-09-02</lastmod>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.cliniquedentairedabia.com/personnel</loc>
-    <lastmod>2025-09-02</lastmod>
+    <loc>https://www.cliniquedentairedabia.com/infos/assurances</loc>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/rejoindre</loc>
-    <lastmod>2025-09-02</lastmod>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/competences/esthétique-dentaire</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/competences/parodontologie</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/competences/implantologie</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/competences/endodontie</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/competences/facettes-dentaires</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/competences/orthodontie</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/competences/greffe-osseuse</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/competences/blanchiment-dentaire</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/competences/pedodontie</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/urgence-dentaire-dakar-que-faire</loc>
     <lastmod>2025-08-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/blanchiment-dents-prix-conseils-dakar</loc>
     <lastmod>2025-07-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/combien-coute-implant-dentaire-dakar-guide</loc>
     <lastmod>2025-07-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/orthodontie-adulte-enfant-dakar-aligneurs-brackets</loc>
     <lastmod>2025-06-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/detartrage-profondeur-gingivite-saignement-conseils</loc>
     <lastmod>2025-05-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/preparer-enfant-premiere-visite-dentiste-dakar</loc>
     <lastmod>2025-04-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/mal-de-dents-la-nuit-causes-et-que-faire</loc>
     <lastmod>2025-05-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/guide-prix-dentiste-dakar-consultation-soins</loc>
     <lastmod>2025-04-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/traitement-canalaire-devitalisation-etapes-douleur-dakar</loc>
     <lastmod>2025-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/facettes-dentaires-dakar-indications-etapes-prix</loc>
     <lastmod>2025-09-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/detartrage-vs-airflow-difference-prophylaxie-dakar</loc>
     <lastmod>2025-10-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/halitose-mauvaise-haleine-causes-bilan-traitements-dakar</loc>
     <lastmod>2025-10-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/carie-dentaire-symptomes-traitement-prevention-dakar</loc>
     <lastmod>2025-11-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/dent-de-sagesse-douleur-extraction-dakar</loc>
     <lastmod>2025-11-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/prothese-dentaire-complete-partielle-ou-sur-implant-dakar</loc>
     <lastmod>2025-11-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/urgence-dentaire-nuit-weekend-dakar</loc>
     <lastmod>2025-11-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/blanchiment-vs-facettes-esthetique-dents-dakar</loc>
     <lastmod>2025-12-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/grossesse-et-dents-soins-conseils-dakar</loc>
     <lastmod>2025-12-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/recession-gingivale-causes-soins-greffe-dakar</loc>
     <lastmod>2025-12-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/fluoration-vernis-fluore-enfant-adulte-dakar</loc>
     <lastmod>2025-12-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/sedation-dentaire-peur-du-dentiste-dakar</loc>
     <lastmod>2026-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/invisalign-aligneurs-prix-duree-entretien-dakar</loc>
     <lastmod>2026-01-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/bridge-ou-implant-que-choisir-dakar</loc>
     <lastmod>2026-01-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/couronne-ou-onlay-difference-prix-dakar</loc>
     <lastmod>2026-01-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/cbct-radio-3d-dentaire-a-quoi-sert-dakar</loc>
     <lastmod>2026-01-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/urgence-traumatisme-dentaire-enfant-dakar</loc>
     <lastmod>2026-02-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.cliniquedentairedabia.com/blog/diabete-et-sante-buccale-risques-prevention-dakar</loc>
     <lastmod>2026-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

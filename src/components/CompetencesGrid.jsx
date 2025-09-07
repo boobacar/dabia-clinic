@@ -1,8 +1,6 @@
-// src/components/CompetencesGrid.jsx
-import { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import competences from "../data/competences";
-import CompetenceModal from "./CompetenceModal";
 
 const container = {
   hidden: {},
@@ -14,20 +12,28 @@ const card = {
 };
 
 export default function CompetencesGrid() {
-  const [open, setOpen] = useState(false);
-  const [selected, setSelected] = useState(null);
+  const origin =
+    typeof window !== "undefined"
+      ? window.location.origin
+      : "https://www.cliniquedentairedabia.com";
 
-  const openModal = (item) => {
-    setSelected(item);
-    setOpen(true);
-  };
-  const closeModal = () => {
-    setOpen(false);
-    setSelected(null);
+  // JSON-LD ItemList (ordre de la grille)
+  const itemList = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: competences.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `${origin}/competences/${item.slug}`,
+      name: item.titre,
+    })),
   };
 
   return (
-    <section className="py-16 px-4 max-w-6xl mx-auto">
+    <section
+      id="competences"
+      className="scroll-mt-24 py-16 px-4 max-w-6xl mx-auto"
+    >
       <motion.h2
         className="text-3xl text-[#ad9d64] font-bold text-center mb-8"
         initial={{ opacity: 0, y: -20 }}
@@ -46,33 +52,39 @@ export default function CompetencesGrid() {
         viewport={{ once: true }}
       >
         {competences.map((item, index) => (
-          <motion.button
-            key={index}
-            type="button"
-            variants={card}
-            onClick={() => openModal(item)}
-            className="text-left rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
-          >
-            <div className="relative block h-72 group">
-              <img
-                src={item.image}
-                alt={item.titre}
-                className="absolute w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition" />
-              <div className="absolute bottom-0 p-4 text-white">
-                <h3 className="text-lg font-bold">{item.titre}</h3>
-                <p className="text-sm">
-                  {(item.description || "").slice(0, 60)}…
-                </p>
+          <motion.div key={item.slug} variants={card}>
+            <Link
+              to={`/competences/${item.slug}`}
+              className="block rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
+              title={`${item.titre} à Dakar – en savoir plus`}
+              aria-label={`${item.titre} à Dakar – en savoir plus`}
+            >
+              <div className="relative h-72 group">
+                <img
+                  src={item.image}
+                  alt={`${item.titre} – Clinique Dentaire DABIA, Dakar`}
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition" />
+                <div className="absolute bottom-0 p-4 text-white">
+                  <h3 className="text-lg font-bold">{item.titre}</h3>
+                  <p className="text-sm">
+                    {(item.description || "").slice(0, 80)}…
+                  </p>
+                </div>
               </div>
-            </div>
-          </motion.button>
+            </Link>
+          </motion.div>
         ))}
       </motion.div>
 
-      <CompetenceModal open={open} item={selected} onClose={closeModal} />
+      {/* Données structurées de la liste */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }}
+      />
     </section>
   );
 }

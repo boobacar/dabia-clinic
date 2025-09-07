@@ -882,7 +882,7 @@ Oui. Les produits sont faiblement dosés, adaptés à l’âge et validés par l
     title: "Peur du dentiste : quelles options de sédation à Dakar ?",
     description:
       "Du MEOPA à la sédation légère : comment soigner sereinement les patients anxieux, adultes et enfants.",
-    date: "2026-01-02",
+    date: "2025-01-02",
     category: "Conseils",
     tags: ["peur du dentiste", "sédation dentaire", "dentiste dakar"],
     author: AUTHORS.sao,
@@ -923,7 +923,7 @@ Toutes ces méthodes sont encadrées par des protocoles médicaux stricts. Les d
       "Aligneurs transparents (type Invisalign) : prix, durée et entretien à Dakar",
     description:
       "Qui est éligible ? Combien de temps ? Coût indicatif, hygiène, cas simples vs complexes et contention après traitement.",
-    date: "2026-01-09",
+    date: "2025-01-09",
     category: "Orthodontie",
     tags: ["Invisalign Dakar", "aligneurs transparents", "orthodontie adulte"],
     author: AUTHORS.sao,
@@ -976,7 +976,7 @@ Toutes ces méthodes sont encadrées par des protocoles médicaux stricts. Les d
     title: "Bridge ou implant : que choisir pour remplacer une dent ?",
     description:
       "Comparatif clair : durée, coût, préservation de l’os et des dents voisines, entretien et indications.",
-    date: "2026-01-16",
+    date: "2025-01-16",
     category: "Implantologie",
     tags: ["bridge vs implant", "remplacement dent", "implant dentaire dakar"],
     author: AUTHORS.sao,
@@ -1019,7 +1019,7 @@ Toutes ces méthodes sont encadrées par des protocoles médicaux stricts. Les d
     title: "Couronne ou onlay : quelles différences et quand les poser ?",
     description:
       "Restaurations indirectes : indications, matériaux, étapes au cabinet et ordre de prix.",
-    date: "2026-01-23",
+    date: "2025-01-23",
     category: "Conseils",
     tags: ["couronne dentaire", "onlay", "prix dents dakar"],
     author: AUTHORS.sao,
@@ -1062,7 +1062,7 @@ Toutes ces méthodes sont encadrées par des protocoles médicaux stricts. Les d
     title: "CBCT (radio 3D) en dentaire : à quoi ça sert ?",
     description:
       "Implants, endodontie, dents incluses : bénéfices, dose, indications et sécurité de l’imagerie 3D.",
-    date: "2026-01-30",
+    date: "2025-01-30",
     category: "Technologie",
     tags: ["CBCT Dakar", "radio 3D dentaire", "technologie cabinet"],
     author: AUTHORS.sao,
@@ -1103,7 +1103,7 @@ Toutes ces méthodes sont encadrées par des protocoles médicaux stricts. Les d
     title: "Traumatisme dentaire chez l’enfant : que faire immédiatement ?",
     description:
       "Chute, dent cassée ou expulsée : gestes d’urgence, conservation du fragment et prise en charge en cabinet.",
-    date: "2026-02-06",
+    date: "2025-02-06",
     category: "Pédiatrie",
     tags: ["traumatisme dentaire enfant", "urgence dentaire", "dentiste dakar"],
     author: AUTHORS.sao,
@@ -1145,7 +1145,7 @@ Toutes ces méthodes sont encadrées par des protocoles médicaux stricts. Les d
     title: "Diabète et santé bucco-dentaire : risques et prévention",
     description:
       "Lien parodonte–diabète, cicatrisation, infections : protocole de prévention et suivi en cabinet.",
-    date: "2026-02-13",
+    date: "2025-02-13",
     category: "Prévention",
     tags: ["diabète et dents", "parodontite diabétique", "prévention dakar"],
     author: AUTHORS.sao,

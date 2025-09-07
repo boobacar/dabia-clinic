@@ -42,7 +42,7 @@ const Home = () => {
             </h2>
             <Link
               to="/blog"
-              className="text-pink-600 hover:text-pink-700 font-medium"
+              className="text-pink-600 hover:text-[#bb2988] font-medium"
             >
               Voir le blog →
             </Link>
@@ -73,7 +73,7 @@ const Home = () => {
                     • {post.category}
                     {post.readingMinutes ? ` • ${post.readingMinutes} min` : ""}
                   </div>
-                  <h3 className="font-semibold text-lg leading-snug group-hover:text-pink-700">
+                  <h3 className="font-semibold text-lg leading-snug group-hover:text-[#bb2988]">
                     {post.title}
                   </h3>
                   {post.description && (
@@ -89,7 +89,7 @@ const Home = () => {
           <div className="text-center mt-10">
             <Link
               to="/blog"
-              className="inline-block px-6 py-3 rounded-full bg-pink-600 text-white font-semibold hover:bg-pink-700 transition"
+              className="inline-block px-6 py-3 rounded-full bg-[#bb2988] text-white font-semibold transition transform hover:scale-105"
             >
               Tous les articles du blog
             </Link>

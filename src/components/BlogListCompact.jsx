@@ -35,7 +35,7 @@ export default function BlogListCompact() {
         <div className="mt-6 text-center">
           <button
             onClick={() => setShowAll(!showAll)}
-            className="px-5 py-2 rounded-full bg-pink-600 text-white font-medium hover:bg-pink-700 transition"
+            className="px-5 py-2 rounded-full bg-[#bb2988] text-white font-medium transition transform hover:scale-105"
           >
             {showAll ? "Voir moins" : "Voir tous les liens"}
           </button>
