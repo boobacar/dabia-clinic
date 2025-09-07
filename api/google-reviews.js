@@ -1,12 +1,15 @@
 // api/google-reviews.js
 export default async function handler(req, res) {
   try {
-    // ⚠️ Sur une fonction serverless: utiliser process.env (pas import.meta.env)
-    const API_KEY = process.env.GOOGLE_MAPS_API_KEY;
+    const API_KEY = process.env.GOOGLE_MAPS_API_KEY; // <-- côté serveur
     const PLACE_ID = process.env.GOOGLE_PLACE_ID;
     const MIN_RATING = Number(process.env.REVIEWS_MIN_RATING || 4);
 
     if (!API_KEY || !PLACE_ID) {
+      console.error("[google-reviews] Missing env", {
+        hasKey: !!API_KEY,
+        hasPlace: !!PLACE_ID,
+      });
       return res
         .status(500)
         .json({ error: "Missing GOOGLE_MAPS_API_KEY or GOOGLE_PLACE_ID" });
@@ -24,10 +27,14 @@ export default async function handler(req, res) {
     const data = await r.json();
 
     if (data.status !== "OK") {
+      console.error("[google-reviews] Places API error:", {
+        status: data.status,
+        message: data.error_message,
+      });
       return res.status(502).json({
         error: "Places API error",
         status: data.status,
-        detail: data.error_message,
+        detail: data.error_message || null,
       });
     }
 
@@ -48,7 +55,6 @@ export default async function handler(req, res) {
         time: rv.time,
       }));
 
-    // Cache edge 12h
     res.setHeader(
       "Cache-Control",
       "s-maxage=43200, stale-while-revalidate=86400"
@@ -60,6 +66,7 @@ export default async function handler(req, res) {
       reviews,
     });
   } catch (e) {
+    console.error("[google-reviews] Unhandled error:", e);
     return res
       .status(500)
       .json({ error: "Unhandled error", detail: e?.message });
