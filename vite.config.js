@@ -17,6 +17,11 @@ const customTailwind = tailwindPlugin.withOptions(() => ({
 }));
 
 export default defineConfig({
+  server: {
+    proxy: {
+      "/api": "http://localhost:3000", // si tu lances un petit serveur pour l'API
+    },
+  },
   plugins: [react()],
   base: "/", // Remplace ici
   css: {
