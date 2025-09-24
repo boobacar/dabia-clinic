@@ -8,6 +8,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import maphoto from "../assets/moi.webp";
+import { FaWebAwesome } from "react-icons/fa6";
 
 const DevInfoModal = ({ onClose }) => {
   return (
@@ -43,7 +44,11 @@ const DevInfoModal = ({ onClose }) => {
           </div>
           <div className="flex items-center justify-center gap-2">
             <FaEnvelope className="text-[#ad9d64]" />
-            <span>fallcontech@gmail.com</span>
+            <span>info@fallcontech.com</span>
+          </div>
+          <div className="flex items-center justify-center gap-2">
+            <FaWebAwesome className="text-[#ad9d64]" />
+            <a href="https://www.fallcontech.com">www.fallcontech.com</a>
           </div>
         </div>
 

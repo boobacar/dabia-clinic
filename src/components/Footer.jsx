@@ -78,7 +78,7 @@ const Footer = () => {
           onClick={() => setShowModal(true)}
           className="font-bold animate-bounce text-[#ad9d64] ml-1 hover:underline"
         >
-          Boubacar FALL
+          Fallcon Tech
         </button>
       </div>
 
