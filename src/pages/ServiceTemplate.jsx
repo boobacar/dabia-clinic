@@ -1,6 +1,6 @@
 import React from "react";
-import Seo from "../../components/Seo";
-import NAP from "../../components/NAP";
+import Seo from "../components/Seo";
+import NAP from "../components/NAP";
 import { Link } from "react-router-dom";
 
 export default function ServiceTemplate({

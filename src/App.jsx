@@ -18,6 +18,10 @@ const PostVisite = lazy(() => import("./pages/PostVisite"));
 const ZoneEnfants = lazy(() => import("./pages/ZoneEnfants"));
 const Rejoindre = lazy(() => import("./pages/Rejoindre"));
 const Technologie = lazy(() => import("./pages/Technologie"));
+const APropos = lazy(() => import("./pages/APropos"));
+const Services = lazy(() => import("./pages/ServiceTemplate"));
+const LocaliteLiberte6 = lazy(() => import("./pages/LocaliteLiberte6"));
+const LocaliteParcelles = lazy(() => import("./pages/LocaliteParcelles"));
 
 const App = () => {
   return (
@@ -30,6 +34,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/apropos" element={<APropos />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/rendez-vous" element={<RendezVous />} />
           <Route path="/personnel" element={<Personnel />} />
@@ -40,6 +46,11 @@ const App = () => {
           <Route path="/infos/enfants" element={<ZoneEnfants />} />
           <Route path="/rejoindre" element={<Rejoindre />} />
           <Route path="/infos/technologie" element={<Technologie />} />
+          <Route path="/cabinet-dentaire-liberte-6" element={<LocaliteLiberte6 />} />
+          <Route
+            path="/clinique-dentaire-parcelles-assainies"
+            element={<LocaliteParcelles />}
+          />
         </Routes>
       </Suspense>
       <Footer />

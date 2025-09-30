@@ -3,9 +3,15 @@ import { Link } from "react-router-dom";
 import { POSTS } from "../data/posts";
 
 const sortByDateDesc = (a, b) => new Date(b.date) - new Date(a.date);
+const sortPinnedThenDate = (a, b) => {
+  const ap = a.pinned ? 1 : 0;
+  const bp = b.pinned ? 1 : 0;
+  if (ap !== bp) return bp - ap;
+  return sortByDateDesc(a, b);
+};
 
 export default function BlogLinksCompact({ count = 8 }) {
-  const items = [...POSTS].sort(sortByDateDesc).slice(0, count);
+  const items = [...POSTS].sort(sortPinnedThenDate).slice(0, count);
   return (
     <div className="p-5">
       <h4 className="text-base font-semibold mb-3">Dans le blog</h4>

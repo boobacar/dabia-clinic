@@ -61,6 +61,13 @@ export const TAGS = [
   "caries",
   "gingivite",
   "prix",
+  "tarif dentiste dakar",
+  "tarif implant dentaire dakar",
+  "détartrage dentaire dakar prix",
+  "cabinet dentaire dakar",
+  "liberté 6",
+  "parcelles assainies",
+  "dentiste dakar 24/24",
 ];
 
 export const POSTS = [
@@ -118,6 +125,118 @@ Voir nos équipements d’imagerie et de planification : [/infos/technologie](/i
 **Et si je suis enceinte ?** Signalez-le : on adapte imagerie et médication.
 
 *Ce contenu est informatif et ne remplace pas une consultation individuelle.*`,
+  },
+
+  {
+    slug: "tarif-implant-dentaire-dakar-facteurs-devis",
+    title:
+      "Tarif implant dentaire à Dakar : facteurs, étapes et devis personnalisé",
+    description:
+      "Ce qui fait varier le coût d’un implant à Dakar : imagerie 3D, greffe éventuelle, marque, couronne. Parcours type et demandes de devis.",
+    date: "2025-09-30",
+    category: "Implantologie",
+    pinned: true,
+    tags: ["tarif implant dentaire dakar", "implant dentaire", "prix"],
+    author: AUTHORS.sao,
+    cover: implantCover,
+    readingMinutes: 12,
+    content: `> Résumé — Le **prix d’un implant dentaire à Dakar** dépend du **diagnostic 3D**, des **biomatériaux**, de la **complexité** (greffe, chirurgie guidée) et du **type de couronne**. Un **devis clair** est toujours remis après examen.
+
+## Les postes qui composent un devis d’implant
+- **Bilan initial** : consultation, photos, empreintes/scan, **CBCT** si besoin pour mesurer volumes et trajets nerveux.  
+- **Planification** : choix dimensionnel, **guide chirurgical** si indiqué.  
+- **Chirurgie** : pose de l’implant (titane/zircone), vis de cicatrisation.  
+- **Temps prothétique** : pilier + **couronne** (céramique/zircone), ajustements.  
+- **Contrôles** : visites de suivi, maintenance.
+
+## Ce qui fait varier le tarif
+- **Complexité osseuse** : greffe (sinus lift, apposition, RPF) si volume insuffisant.  
+- **Nombre d’implants** et **localisation** (esthétique/secteur postérieur).  
+- **Marque d’implant** et **type de pilier**.  
+- **Matériaux de la couronne** : céramique stratifiée, zircone monolithique, etc.  
+- **Chirurgie guidée** pour plus de précision selon indications.
+
+## Parcours patient à DABIA
+1. **Entretien + examen clinique**  
+2. **CBCT** et planification numérique  
+3. **Pose** (anesthésie locale) — suites confort gérées  
+4. **Cicatrisation** 6–12 semaines selon biologie  
+5. **Couronne** sur pilier, réglages occlusaux  
+6. **Maintenance** : hygiène, contrôles
+
+### FAQ
+**C’est douloureux ?** Modéré, contrôlé par antalgiques.  
+**Fumeur(se) ?** Le sevrage améliore nettement la cicatrisation.  
+**Alternatives ?** Bridge, prothèse amovible — discutées au cas par cas.
+
+> Pour un chiffrage précis et transparent, prenez rendez-vous : [/rendez-vous](/rendez-vous).`,
+  },
+
+  {
+    slug: "detartrage-dentaire-dakar-prix-frequence-airflow",
+    title: "Détartrage dentaire à Dakar : prix, fréquence, AirFlow et résultats",
+    description:
+      "Pourquoi le détartrage est essentiel, quand privilégier l’AirFlow et de quoi dépend le tarif à Dakar.",
+    date: "2025-09-30",
+    category: "Prévention",
+    pinned: true,
+    tags: ["détartrage dentaire dakar prix", "prévention", "parodontologie"],
+    author: AUTHORS.sao,
+    cover: airflowCover,
+    readingMinutes: 10,
+    content: `Le **détartrage** élimine la plaque minéralisée responsable des **gingivites** et aide à prévenir la **parodontite**. À Dakar, le prix varie selon l’**état gingival**, la **durée** et la **technique** utilisée (ultrasons classiques, **AirFlow** pour la prophylaxie, ou **surfaçage** si inflammation profonde).
+
+## Comment se déroule un détartrage ?
+1. **Bilan gingival** (saignement, poches, mobilités)  
+2. **Détartrage aux ultrasons** + polissage  
+3. Selon indication, **AirFlow** pour éliminer les colorations  
+4. **Conseils d’hygiène** personnalisés (brosse, brossettes, bain de bouche)
+
+## AirFlow, pour qui ?
+Technique douce qui projette une poudre spécifique : idéale pour **taches** et **biofilm** supra-gingival, complémentaire des ultrasons.
+
+## De quoi dépend le prix ?
+- **Temps clinique** (durée, nombre de séances)  
+- **Diagnostic** : simple prophylaxie vs **surfaçage** si poches  
+- **Technologie** : utilisation de l’AirFlow  
+- **Suivi** : contrôles et rappel d’hygiène
+
+### À quelle fréquence ?
+Généralement **tous les 6 à 12 mois**, plus rapproché si **facteurs de risque** (tabac, diabète, antécédents parodontaux).
+
+> Besoin d’une évaluation et d’un devis ? Prenez rendez-vous : [/rendez-vous](/rendez-vous).`,
+  },
+
+  {
+    slug: "meilleur-dentiste-dakar-criteres-de-choix",
+    title: "Meilleur dentiste à Dakar ? Les critères pour bien choisir",
+    description:
+      "Comprendre les critères de qualité (écoute, diagnostic, technologie, hygiène, suivi) et poser les bonnes questions lors de la première visite.",
+    date: "2025-09-30",
+    category: "Conseils",
+    pinned: true,
+    tags: ["meilleur dentiste dakar", "cabinet dentaire dakar", "dentiste dakar"],
+    author: AUTHORS.sao,
+    cover: prixCover,
+    readingMinutes: 11,
+    content: `La notion de “**meilleur**” dentiste est **subjective**. En revanche, des **repères concrets** aident à choisir un cabinet qui vous convient à Dakar.
+
+## 7 critères utiles
+1. **Écoute et pédagogie** : le plan de traitement est expliqué, options et priorités sont posées.  
+2. **Diagnostic outillé** : imagerie adaptée (photos, radios, CBCT si nécessaire).  
+3. **Hygiène et traçabilité** : stérilisation et protocole visibles, rassurants.  
+4. **Compétences variées** : gestion des urgences, esthétique, implantologie, orthodontie ou réseau de spécialistes.  
+5. **Devis clair** : transparence des coûts, alternatives éventuelles.  
+6. **Suivi** : contrôles et maintenance programmés.  
+7. **Accès et horaires** : proximité (Liberté 6 / Parcelles / Sicap Foire) et créneaux adaptés.
+
+## Première visite : les bonnes questions
+- Quelles sont mes **priorités** à court terme ?  
+- Quelles **options** existent pour atteindre mon objectif ?  
+- Quels **délais** et **coûts** prévoir ?  
+- Quel **entretien** pour pérenniser le résultat ?
+
+> Découvrez notre page Liberté 6 : [/cabinet-dentaire-liberte-6](/cabinet-dentaire-liberte-6) • Prenez RDV : [/rendez-vous](/rendez-vous).`,
   },
 
   {

@@ -19,17 +19,16 @@ export default function APropos() {
   ];
 
   return (
-    <main className="pt-20 pb-14 px-4 max-w-5xl mx-auto">
+    <main className="mt-20 pt-20 pb-14 px-4 max-w-5xl mx-auto">
       <Seo
         title={title}
         description={description}
         blocks={schema}
         canonical="https://www.cliniquedentairedabia.com/a-propos"
       />
-      <h1 className="text-3xl font-extrabold mb-4">
-        Clinique Dentaire DABIA – À propos
+      <h1 className="text-3xl text-[#ad9d64] font-extrabold mb-4">
+        À propos de la Clinique Dentaire DABIA
       </h1>
-      <NAP compact />
 
       <section className="mt-8 grid md:grid-cols-3 gap-8">
         <div className="md:col-span-2">
@@ -85,9 +84,7 @@ export default function APropos() {
             loading="lazy"
           />
           <div className="text-sm text-gray-600">
-            <strong>Contact</strong>
             <br />
-            <NAP compact />
           </div>
         </aside>
       </section>
