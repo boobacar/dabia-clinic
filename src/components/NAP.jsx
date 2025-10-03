@@ -44,13 +44,6 @@ export default function NAP({ compact = false }) {
             <div className="mt-1 text-sm">
               <a className="underline" href="/cabinet-dentaire-liberte-6">
                 Cabinet dentaire Liberté 6
-              </a>{" "}
-              •
-              <a
-                className="underline ml-1"
-                href="/clinique-dentaire-parcelles-assainies"
-              >
-                Parcelles Assainies
               </a>
             </div>
           </span>
