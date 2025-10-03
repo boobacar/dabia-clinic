@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Seo from "../components/Seo";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 // Import des logos
 import logoSunu from "../assets/assurances/sunu.webp";
@@ -75,6 +77,16 @@ const assurances = [
 const Assurances = () => {
   return (
     <section className="py-16 px-4 max-w-6xl mx-auto mt-20">
+      <Seo
+        title="Partenaires assurances – Clinique Dentaire DABIA (Dakar)"
+        description="Liste des assurances partenaires de la Clinique Dentaire DABIA à Dakar. Remboursements, prise en charge et infos pratiques."
+        canonical="https://www.cliniquedentairedabia.com/infos/assurances"
+        url="https://www.cliniquedentairedabia.com/infos/assurances"
+      />
+
+      <Breadcrumbs
+        items={[{ label: "Accueil", href: "/" }, { label: "Assurances" }]}
+      />
       <motion.h2
         className="text-4xl font-bold text-center text-[#ad9d64] mb-12"
         initial={{ opacity: 0, y: -30 }}

@@ -1,4 +1,7 @@
 {
+  "redirects": [
+    { "source": "/services", "destination": "/all-competences", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/sitemap.xml", "destination": "/api/sitemap" },
     { "source": "/api/(.*)", "destination": "/api/$1" },

@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import Seo from "../components/Seo";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 const sections = [
   {
@@ -126,6 +128,16 @@ const sections = [
 const ZoneEnfants = () => {
   return (
     <section className="py-16 px-4 max-w-6xl mx-auto mt-20">
+      <Seo
+        title="Espace enfants – Conseils d’hygiène et prévention | DABIA"
+        description="Conseils pour la santé bucco-dentaire des enfants : brossage, prévention des caries, habitudes alimentaires, orthodontie. Clinique Dentaire DABIA (Dakar)."
+        canonical="https://www.cliniquedentairedabia.com/infos/enfants"
+        url="https://www.cliniquedentairedabia.com/infos/enfants"
+      />
+
+      <Breadcrumbs
+        items={[{ label: "Accueil", href: "/" }, { label: "Espace enfants" }]}
+      />
       <motion.h2
         className="text-4xl font-bold text-[#ad9d64] text-center mb-8"
         initial={{ opacity: 0, y: -20 }}

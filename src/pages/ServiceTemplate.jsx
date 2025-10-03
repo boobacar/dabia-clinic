@@ -1,5 +1,6 @@
 import React from "react";
 import Seo from "../components/Seo";
+import Breadcrumbs from "../components/Breadcrumbs";
 import NAP from "../components/NAP";
 import { Link } from "react-router-dom";
 
@@ -10,7 +11,7 @@ export default function ServiceTemplate({
   bullets = [],
   faq = [],
 }) {
-  const url = `https://www.cliniquedentairedabia.com/services/${slug}`;
+  const url = `https://www.cliniquedentairedabia.com${slug ? `/services/${slug}` : "/services"}`;
   const faqLD = faq.length
     ? [
         {
@@ -28,10 +29,17 @@ export default function ServiceTemplate({
   return (
     <main className="pt-20 pb-14 px-4 max-w-5xl mx-auto">
       <Seo
-        title={`${title} – Dakar`}
-        description={description}
+        title={`${title || "Nos services"} – Dakar`}
+        description={description || "Découvrez nos soins et services dentaires à Dakar : esthétique, orthodontie, implantologie, urgences et plus."}
         canonical={url}
-        blocks={faqLD}
+        jsonLd={faqLD}
+      />
+      <Breadcrumbs
+        items={[
+          { label: "Accueil", href: "/" },
+          { label: "Services", href: "/services" },
+          ...(title ? [{ label: title }] : []),
+        ]}
       />
       <h1 className="text-3xl font-extrabold mb-3">{title} à Dakar</h1>
       <NAP compact />

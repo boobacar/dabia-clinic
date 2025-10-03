@@ -1,6 +1,7 @@
 import React from "react";
 import Seo from "../components/Seo";
 import NAP from "../components/NAP";
+import Breadcrumbs from "../components/Breadcrumbs";
 import { Link } from "react-router-dom";
 import sao from "../assets/sao.webp";
 
@@ -23,9 +24,10 @@ export default function APropos() {
       <Seo
         title={title}
         description={description}
-        blocks={schema}
+        jsonLd={schema}
         canonical="https://www.cliniquedentairedabia.com/a-propos"
       />
+      <Breadcrumbs items={[{ label: "Accueil", href: "/" }, { label: "À propos" }]} />
       <h1 className="text-3xl text-[#ad9d64] font-extrabold mb-4">
         À propos de la Clinique Dentaire DABIA
       </h1>

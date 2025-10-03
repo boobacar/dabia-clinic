@@ -6,9 +6,9 @@ const defaultSite = {
   domain: "https://www.cliniquedentairedabia.com",
   logo: "/logo192.png",
   locale: "fr_SN",
-  phone: "+221-00-00-00-00",
+  phone: "+221777039393",
   address: {
-    streetAddress: "Sicap Foire Socabeg, à 150m des deux voies de Liberté VI",
+    streetAddress: "Sicap Foire, 2 voies Liberté 6 (à 150m du Uno)",
     addressLocality: "Dakar",
     addressRegion: "Dakar",
     postalCode: "",

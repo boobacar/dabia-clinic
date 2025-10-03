@@ -18,19 +18,19 @@ const Header = () => {
 
   const navLinks = [
     { name: "Accueil", path: "/" },
+    { name: "Compétences", path: "/all-competences" },
+    { name: "Urgence", path: "/urgence-dentaire-dakar" },
     { name: "Infos", isDropdown: true },
-    { name: "Blog", path: "/blog" }, // 👈 nouveau lien Blog
+    { name: "Blog", path: "/blog" },
     { name: "Nous Rejoindre", path: "/rejoindre" },
   ];
 
   const infosLinks = [
+    { name: "Dentiste à Dakar", path: "/dentiste-dakar" },
     { name: "Assurances", path: "/infos/assurances" },
-    {
-      name: "Conseils après visite (Post-opération)",
-      path: "/infos/post-visite",
-    },
+    { name: "Conseils après visite (Post-opération)", path: "/infos/post-visite" },
     { name: "Espace Enfants", path: "/infos/enfants" },
-    { name: "Technologie", path: "/infos/technologie" }, // ➕ ajouté
+    { name: "Technologie", path: "/infos/technologie" },
   ];
 
   const handleMouseEnter = () => {

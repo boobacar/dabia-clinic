@@ -14,29 +14,34 @@ const POSTS_META_PATH = join(ROOT, "src", "data", "posts.meta.json");
 
 const STATIC_ROUTES = [
   "/",
-  "/a-propos",
   "/blog",
   "/rendez-vous",
+  "/dentiste-dakar",
+  "/urgence-dentaire-dakar",
+  "/apropos",
+  "/personnel",
   "/all-competences",
-  "/infos/technologie",
+  "/infos/assurances",
   "/infos/post-visite",
   "/infos/enfants",
-  "/infos/assurances",
+  "/infos/technologie",
   "/rejoindre",
+  "/cabinet-dentaire-liberte-6",
+  "/clinique-dentaire-parcelles-assainies",
+  "/cabinet-dentaire-almadies",
+  "/cabinet-dentaire-mermoz",
+  "/cabinet-dentaire-point-e",
+  "/cabinet-dentaire-sacre-coeur",
+  "/cabinet-dentaire-yoff",
 ];
 
-// <<< AJOUTE ICI TES SLUGS DE COMPÉTENCES >>>
-const COMPETENCE_SLUGS = [
-  "esthétique-dentaire",
-  "parodontologie",
-  "implantologie",
-  "endodontie",
-  "facettes-dentaires",
-  "orthodontie",
-  "greffe-osseuse",
-  "blanchiment-dentaire",
-  "pedodontie",
-];
+const readFileSafe = async (p) => {
+  try {
+    return await readFile(p, "utf8");
+  } catch {
+    return "";
+  }
+};
 
 const iso = (d = new Date()) => new Date(d).toISOString().slice(0, 10);
 const abs = (p) => `${SITE_URL}${p.startsWith("/") ? p : `/${p}`}`;
@@ -82,15 +87,12 @@ async function build() {
     })
   );
 
-  // 2) Compétences
-  console.log(`🦷 Compétences ajoutées: ${COMPETENCE_SLUGS.length}`);
-  const competencesXml = COMPETENCE_SLUGS.map((slug) =>
-    urlNode({
-      loc: abs(`/competences/${slug}`),
-      lastmod: today,
-      changefreq: "monthly",
-      priority: "0.8",
-    })
+  // 2) Compétences (depuis src/data/competences.js)
+  const compSrc = await readFileSafe(join(ROOT, "src", "data", "competences.js"));
+  const compSlugs = Array.from(compSrc.matchAll(/slug:\s*"([^"]+)"/g)).map((m) => m[1]);
+  console.log(`🦷 Compétences ajoutées: ${compSlugs.length}`);
+  const competencesXml = compSlugs.map((slug) =>
+    urlNode({ loc: abs(`/competences/${slug}`), lastmod: today, changefreq: "monthly", priority: "0.8" })
   );
 
   // 3) Blog
@@ -103,12 +105,20 @@ async function build() {
     })
   );
 
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+  // 4) Technologies (depuis src/data/technologies.js)
+  const techSrc = await readFileSafe(join(ROOT, "src", "data", "technologies.js"));
+  const techSlugs = Array.from(techSrc.matchAll(/slug:\s*"([^"]+)"/g)).map((m) => m[1]);
+  console.log(`🛠️  Technologies ajoutées: ${techSlugs.length}`);
+  const techXml = techSlugs.map((slug) =>
+    urlNode({ loc: abs(`/infos/technologie/${slug}`), lastmod: today, changefreq: "monthly", priority: "0.6" })
+  );
+
+  const xml = `<?xml version=\"1.0\" encoding=\"UTF-8\"?>
 <urlset
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
 >
-${[...staticXml, ...competencesXml, ...blogXml].join("\n")}
+${[...staticXml, ...competencesXml, ...blogXml, ...techXml].join("\n")}
 </urlset>`;
 
   await writeFile(join(DIST_DIR, "sitemap.xml"), xml, "utf8");

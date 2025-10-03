@@ -174,6 +174,15 @@ export default function BlogPost() {
               Prendre rendez-vous
             </Link>
           </div>
+
+          <div className="mt-6 text-sm text-gray-700">
+            Voir aussi {" "}
+            <Link to="/all-competences" className="text-[#bb2988] underline">nos compétences</Link>
+            , {" "}
+            <Link to="/dentiste-dakar" className="text-[#bb2988] underline">Dentiste à Dakar</Link>
+            {" "}et {" "}
+            <Link to="/urgence-dentaire-dakar" className="text-[#bb2988] underline">Urgence dentaire</Link>.
+          </div>
         </article>
 
         <aside className="lg:col-span-4 space-y-6">

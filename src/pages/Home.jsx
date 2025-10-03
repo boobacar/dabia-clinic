@@ -49,6 +49,47 @@ const Home = () => {
       <HeroSlideshow />
       <BeforeAfterGallery />
       <ClinicIntro />
+      {/* Liens rapides – style pills aux couleurs du site */}
+      <section className="py-8">
+        <div className="max-w-7xl mx-auto px-4 flex flex-wrap items-center justify-center gap-3 text-sm">
+          <Link
+            to="/dentiste-dakar"
+            className="px-4 py-2 rounded-full bg-pink-50 text-[#bb2988] border border-pink-200 shadow-sm hover:bg-pink-100 hover:border-pink-300 transition"
+          >
+            Dentiste Dakar
+          </Link>
+          <Link
+            to="/urgence-dentaire-dakar"
+            className="px-4 py-2 rounded-full bg-pink-50 text-[#bb2988] border border-pink-200 shadow-sm hover:bg-pink-100 hover:border-pink-300 transition"
+          >
+            Urgence
+          </Link>
+          <Link
+            to="/all-competences"
+            className="px-4 py-2 rounded-full bg-pink-50 text-[#bb2988] border border-pink-200 shadow-sm hover:bg-pink-100 hover:border-pink-300 transition"
+          >
+            Compétences
+          </Link>
+          <Link
+            to="/infos/technologie"
+            className="px-4 py-2 rounded-full bg-pink-50 text-[#bb2988] border border-pink-200 shadow-sm hover:bg-pink-100 hover:border-pink-300 transition"
+          >
+            Technologie
+          </Link>
+          <Link
+            to="/infos/assurances"
+            className="px-4 py-2 rounded-full bg-pink-50 text-[#bb2988] border border-pink-200 shadow-sm hover:bg-pink-100 hover:border-pink-300 transition"
+          >
+            Assurances
+          </Link>
+          <Link
+            to="/cabinet-dentaire-liberte-6"
+            className="px-4 py-2 rounded-full bg-pink-50 text-[#bb2988] border border-pink-200 shadow-sm hover:bg-pink-100 hover:border-pink-300 transition"
+          >
+            Liberté 6
+          </Link>
+        </div>
+      </section>
       <StaffPreview />
       <CompetencesGrid />
 

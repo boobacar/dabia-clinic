@@ -6,6 +6,8 @@ import DatePicker from "react-datepicker";
 import fr from "date-fns/locale/fr";
 import "react-datepicker/dist/react-datepicker.css";
 import imgrv from "../assets/rendezvous-dabia.webp";
+import Seo from "../components/Seo";
+import Breadcrumbs from "../components/Breadcrumbs";
 import { addDays, startOfDay } from "date-fns";
 
 const minSelectableDate = addDays(startOfDay(new Date()), 2);
@@ -49,6 +51,16 @@ const RendezVous = () => {
 
   return (
     <section className="py-16 px-4 max-w-6xl mx-auto mt-20">
+      <Seo
+        title="Prendre rendez-vous – Clinique Dentaire DABIA (Dakar)"
+        description="Réservez votre consultation dentaire à Dakar en ligne en 1 minute : esthétique, urgence, orthodontie, implants. Clinique DABIA."
+        canonical="https://www.cliniquedentairedabia.com/rendez-vous"
+        url="https://www.cliniquedentairedabia.com/rendez-vous"
+      />
+
+      <Breadcrumbs
+        items={[{ label: "Accueil", href: "/" }, { label: "Rendez-vous" }]}
+      />
       <motion.h2
         className="text-4xl text-[#ad9d64] font-bold text-center mb-12"
         initial={{ opacity: 0, y: -30 }}

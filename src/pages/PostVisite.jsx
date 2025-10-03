@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import Seo from "../components/Seo";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 const PostVisite = () => {
   const sections = [
@@ -185,6 +187,16 @@ const PostVisite = () => {
 
   return (
     <section className="py-16 px-4 max-w-6xl mx-auto mt-20">
+      <Seo
+        title="Conseils post‑opération – Clinique Dentaire DABIA (Dakar)"
+        description="Recommandations après vos soins dentaires : extraction, chirurgie, implant, détartrage, orthodontie, prothèses."
+        canonical="https://www.cliniquedentairedabia.com/infos/post-visite"
+        url="https://www.cliniquedentairedabia.com/infos/post-visite"
+      />
+
+      <Breadcrumbs
+        items={[{ label: "Accueil", href: "/" }, { label: "Conseils post‑visite" }]}
+      />
       <motion.h2
         className="text-4xl font-bold text-[#ad9d64] text-center mb-8"
         initial={{ opacity: 0, y: -20 }}

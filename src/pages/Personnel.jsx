@@ -1,5 +1,7 @@
 import React from "react";
 import StaffCard from "../components/StaffCard";
+import Seo from "../components/Seo";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 // Importation des images
 import admin from "../assets/admin.jpeg";
@@ -40,6 +42,16 @@ const personnel = [
 const Personnel = () => {
   return (
     <section className="py-16 px-4 max-w-7xl mx-auto mt-5">
+      <Seo
+        title="Notre équipe – Clinique Dentaire DABIA (Dakar)"
+        description="Découvrez l’équipe de la Clinique Dentaire DABIA : chirurgiens-dentistes, assistantes et personnel administratif au service de votre sourire."
+        canonical="https://www.cliniquedentairedabia.com/personnel"
+        url="https://www.cliniquedentairedabia.com/personnel"
+      />
+
+      <Breadcrumbs
+        items={[{ label: "Accueil", href: "/" }, { label: "Notre équipe" }]}
+      />
       <h2 className="text-4xl font-bold text-center mb-10 text-[#ad9d64]">
         Notre Équipe
       </h2>

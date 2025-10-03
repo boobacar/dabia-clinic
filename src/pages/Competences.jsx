@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import competences from "../data/competences";
+import Seo from "../components/Seo";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 /**
  * Animated "Compétences" gallery
@@ -46,6 +48,25 @@ const MotionLink = motion(Link);
 export default function Competences() {
   return (
     <section className="mt-20 py-16 px-4 max-w-6xl mx-auto">
+      <p className="text-sm text-gray-600 mb-4">
+        Besoin d’un avis ? Consultez notre page {" "}
+        <Link className="text-[#bb2988] underline" to="/dentiste-dakar">Dentiste à Dakar</Link>
+        , ou {" "}
+        <Link className="text-[#bb2988] underline" to="/rendez-vous">prenez rendez‑vous</Link>
+        . Pour les tarifs, lisez {" "}
+        <Link className="text-[#bb2988] underline" to="/blog/guide-prix-dentiste-dakar-consultation-soins">notre guide prix</Link>
+        .
+      </p>
+      <Seo
+        title="Nos compétences – Clinique Dentaire DABIA (Dakar)"
+        description="Toutes nos compétences dentaires à Dakar : détartrage, implantologie, orthodontie, esthétique, endodontie et plus."
+        canonical="https://www.cliniquedentairedabia.com/all-competences"
+        url="https://www.cliniquedentairedabia.com/all-competences"
+      />
+
+      <Breadcrumbs
+        items={[{ label: "Accueil", href: "/" }, { label: "Nos compétences" }]}
+      />
       {/* Title */}
       <motion.h2
         className="text-3xl text-[#ad9d64] font-bold text-center mb-8"
@@ -109,6 +130,24 @@ export default function Competences() {
           </MotionLink>
         ))}
       </motion.div>
+
+      {/* Données structurées ItemList pour la page complète */}
+      {(() => {
+        const origin = typeof window !== "undefined" ? window.location.origin : "https://www.cliniquedentairedabia.com";
+        const itemList = {
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          itemListElement: competences.map((c, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            url: `${origin}/competences/${c.slug}`,
+            name: c.titre,
+          })),
+        };
+        return (
+          <script type="application/ld+json">{JSON.stringify(itemList)}</script>
+        );
+      })()}
     </section>
   );
 }
