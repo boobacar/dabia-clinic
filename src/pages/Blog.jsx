@@ -199,6 +199,7 @@ export default function Blog() {
             <ul className="space-y-2 text-sm">
               <li><Link to="/all-competences" className="hover:text-[#bb2988]">Nos compétences</Link></li>
               <li><Link to="/dentiste-dakar" className="hover:text-[#bb2988]">Dentiste à Dakar</Link></li>
+              <li><Link to="/cabinet-dentaire-dakar" className="hover:text-[#bb2988]">Cabinet dentaire Dakar</Link></li>
               <li><Link to="/urgence-dentaire-dakar" className="hover:text-[#bb2988]">Urgence dentaire</Link></li>
               <li><Link to="/rendez-vous" className="hover:text-[#bb2988]">Prendre rendez‑vous</Link></li>
             </ul>

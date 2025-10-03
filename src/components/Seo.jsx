@@ -3,6 +3,7 @@ import React from "react";
 
 const defaultSite = {
   name: "Clinique Dentaire DABIA",
+  siteLabel: "Clinique Dentaire DABIA - Dakar",
   domain: "https://www.cliniquedentairedabia.com",
   logo: "/logo192.png",
   locale: "fr_SN",
@@ -57,6 +58,7 @@ export default function Seo({
       <meta property="og:type" content={type} />
       <meta property="og:url" content={finalUrl} />
       <meta property="og:image" content={image} />
+      <meta property="og:site_name" content={defaultSite.siteLabel} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={finalTitle} />
       <meta name="twitter:description" content={finalDesc} />

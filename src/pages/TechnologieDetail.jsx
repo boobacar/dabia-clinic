@@ -2,6 +2,7 @@ import React, { useMemo } from "react";
 import { useParams, Link } from "react-router-dom";
 import Seo from "../components/Seo";
 import Breadcrumbs from "../components/Breadcrumbs";
+import { motion } from "framer-motion";
 import technologies from "../data/technologies";
 
 export default function TechnologieDetail() {
@@ -51,12 +52,14 @@ export default function TechnologieDetail() {
         ]}
       />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-[#ad9d64] mb-4">
+      <motion.h1 className="text-3xl md:text-4xl font-bold text-[#ad9d64] mb-2" initial={{ opacity:0, y:10 }} animate={{ opacity:1, y:0 }} transition={{ duration:0.4 }}>
         {tech.titre}
-      </h1>
-      <p className="text-gray-700 mb-6">{tech.description}</p>
+      </motion.h1>
+      <motion.p className="text-gray-700 mb-6" initial={{ opacity:0 }} animate={{ opacity:1 }} transition={{ delay:0.1, duration:0.4 }}>
+        {tech.description}
+      </motion.p>
 
-      <div className="p-6 rounded-xl border bg-white shadow-sm">
+      <motion.div className="p-6 rounded-xl border bg-white shadow-sm" initial={{ opacity:0, y:12 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true, amount:0.4 }} transition={{ duration:0.4 }}>
         {tech.image && (
           <img
             src={tech.image}
@@ -72,7 +75,7 @@ export default function TechnologieDetail() {
             <p className="whitespace-pre-line text-gray-800 leading-relaxed">{tech.details}</p>
           </div>
         )}
-      </div>
+      </motion.div>
 
       <div className="mt-8 flex flex-wrap gap-4">
         <Link

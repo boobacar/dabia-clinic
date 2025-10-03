@@ -25,11 +25,14 @@ const LocaliteLiberte6 = lazy(() => import("./pages/LocaliteLiberte6"));
 const LocaliteParcelles = lazy(() => import("./pages/LocaliteParcelles"));
 const UrgenceDentaire = lazy(() => import("./pages/UrgenceDentaire"));
 const DentisteDakar = lazy(() => import("./pages/DentisteDakar"));
+const CabinetDentaireDakar = lazy(() => import("./pages/CabinetDentaireDakar"));
 const LocaliteAlmadies = lazy(() => import("./pages/localites/Almadies"));
 const LocaliteMermoz = lazy(() => import("./pages/localites/Mermoz"));
 const LocalitePointE = lazy(() => import("./pages/localites/PointE"));
 const LocaliteSacreCoeur = lazy(() => import("./pages/localites/SacreCoeur"));
 const LocaliteYoff = lazy(() => import("./pages/localites/Yoff"));
+const LocaliteHlmGrandYoff = lazy(() => import("./pages/localites/HlmGrandYoff"));
+const LocaliteScatUrbam = lazy(() => import("./pages/localites/ScatUrbam"));
 
 const App = () => {
   return (
@@ -48,6 +51,7 @@ const App = () => {
           <Route path="/rendez-vous" element={<RendezVous />} />
           <Route path="/urgence-dentaire-dakar" element={<UrgenceDentaire />} />
           <Route path="/dentiste-dakar" element={<DentisteDakar />} />
+          <Route path="/cabinet-dentaire-dakar" element={<CabinetDentaireDakar />} />
           <Route path="/personnel" element={<Personnel />} />
           <Route path="/competences/:slug" element={<CompetenceDetail />} />
           <Route path="/all-competences" element={<Competences />} />
@@ -67,6 +71,8 @@ const App = () => {
           <Route path="/cabinet-dentaire-point-e" element={<LocalitePointE />} />
           <Route path="/cabinet-dentaire-sacre-coeur" element={<LocaliteSacreCoeur />} />
           <Route path="/cabinet-dentaire-yoff" element={<LocaliteYoff />} />
+          <Route path="/cabinet-dentaire-hlm-grand-yoff" element={<LocaliteHlmGrandYoff />} />
+          <Route path="/cabinet-dentaire-scat-urbam" element={<LocaliteScatUrbam />} />
         </Routes>
       </Suspense>
       <Footer />

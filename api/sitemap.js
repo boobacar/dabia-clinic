@@ -35,6 +35,7 @@ module.exports = (req, res) => {
     ["/blog", today, "weekly", "0.7"],
     ["/rendez-vous", today, "weekly", "0.7"],
     ["/dentiste-dakar", today, "weekly", "0.8"],
+    ["/cabinet-dentaire-dakar", today, "weekly", "0.8"],
     ["/urgence-dentaire-dakar", today, "weekly", "0.8"],
     ["/apropos", today, "monthly", "0.6"],
     ["/personnel", today, "monthly", "0.6"],
@@ -51,6 +52,8 @@ module.exports = (req, res) => {
     ["/cabinet-dentaire-point-e", today, "monthly", "0.7"],
     ["/cabinet-dentaire-sacre-coeur", today, "monthly", "0.7"],
     ["/cabinet-dentaire-yoff", today, "monthly", "0.7"],
+    ["/cabinet-dentaire-hlm-grand-yoff", today, "monthly", "0.7"],
+    ["/cabinet-dentaire-scat-urbam", today, "monthly", "0.7"],
   ];
 
   // Compétences dynamiques: lire src/data/competences.js

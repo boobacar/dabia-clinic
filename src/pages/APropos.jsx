@@ -15,7 +15,7 @@ export default function APropos() {
       "@type": "AboutPage",
       name: title,
       description: description,
-      url: "https://www.cliniquedentairedabia.com/a-propos",
+      url: "https://www.cliniquedentairedabia.com/apropos",
     },
   ];
 
@@ -25,7 +25,7 @@ export default function APropos() {
         title={title}
         description={description}
         jsonLd={schema}
-        canonical="https://www.cliniquedentairedabia.com/a-propos"
+        canonical="https://www.cliniquedentairedabia.com/apropos"
       />
       <Breadcrumbs items={[{ label: "Accueil", href: "/" }, { label: "À propos" }]} />
       <h1 className="text-3xl text-[#ad9d64] font-extrabold mb-4">

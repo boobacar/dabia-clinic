@@ -25,6 +25,7 @@ const Footer = () => {
       {/* Liens internes clés */}
       <div className="max-w-7xl mx-auto px-4 mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 text-sm">
         <a href="/dentiste-dakar" className="text-white/90 hover:text-white underline-offset-2 hover:underline">Dentiste à Dakar</a>
+        <a href="/cabinet-dentaire-dakar" className="text-white/90 hover:text-white underline-offset-2 hover:underline">Cabinet dentaire Dakar</a>
         <a href="/urgence-dentaire-dakar" className="text-white/90 hover:text-white underline-offset-2 hover:underline">Urgence dentaire</a>
         <a href="/all-competences" className="text-white/90 hover:text-white underline-offset-2 hover:underline">Nos compétences</a>
         <a href="/infos/technologie" className="text-white/90 hover:text-white underline-offset-2 hover:underline">Technologie</a>
@@ -37,6 +38,8 @@ const Footer = () => {
         <a href="/cabinet-dentaire-point-e" className="text-white/90 hover:text-white underline-offset-2 hover:underline">Point E</a>
         <a href="/cabinet-dentaire-sacre-coeur" className="text-white/90 hover:text-white underline-offset-2 hover:underline">Sacré‑Cœur</a>
         <a href="/cabinet-dentaire-yoff" className="text-white/90 hover:text-white underline-offset-2 hover:underline">Yoff</a>
+        <a href="/cabinet-dentaire-hlm-grand-yoff" className="text-white/90 hover:text-white underline-offset-2 hover:underline">HLM Grand Yoff</a>
+        <a href="/cabinet-dentaire-scat-urbam" className="text-white/90 hover:text-white underline-offset-2 hover:underline">Scat Urbam</a>
       </div>
 
       <div className="flex justify-center gap-6 mt-8">

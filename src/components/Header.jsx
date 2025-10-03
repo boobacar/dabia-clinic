@@ -26,9 +26,11 @@ const Header = () => {
   ];
 
   const infosLinks = [
-    { name: "Dentiste à Dakar", path: "/dentiste-dakar" },
     { name: "Assurances", path: "/infos/assurances" },
-    { name: "Conseils après visite (Post-opération)", path: "/infos/post-visite" },
+    {
+      name: "Conseils après visite (Post-opération)",
+      path: "/infos/post-visite",
+    },
     { name: "Espace Enfants", path: "/infos/enfants" },
     { name: "Technologie", path: "/infos/technologie" },
   ];

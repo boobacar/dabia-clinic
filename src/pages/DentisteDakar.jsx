@@ -12,6 +12,7 @@ import {
 } from "react-icons/fa";
 import Seo from "../components/Seo";
 import Breadcrumbs from "../components/Breadcrumbs";
+import { motion } from "framer-motion";
 // NAP non utilisé ici pour alléger le hero
 
 export default function DentisteDakar() {
@@ -56,9 +57,14 @@ export default function DentisteDakar() {
       />
 
       {/* HERO */}
-      <section className="rounded-3xl p-6 md:p-8 bg-gradient-to-br from-pink-50 via-white to-pink-50 border">
+      <motion.section
+        className="rounded-3xl p-6 md:p-8 bg-gradient-to-br from-pink-50 via-white to-pink-50 border"
+        initial={{ opacity: 0, y: 14 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.45, ease: "easeOut" }}
+      >
         <h1 className="text-3xl md:text-4xl text-[#ad9d64] font-extrabold">
-          Dentiste à Dakar
+          Dentiste à Dakar – Cabinet dentaire DABIA
         </h1>
         <p className="mt-2 text-gray-700 max-w-3xl">
           La Clinique Dentaire DABIA vous accueille à Sicap Foire (Liberté 6)
@@ -66,7 +72,13 @@ export default function DentisteDakar() {
           technique de pointe.
         </p>
         <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
-          <div className="flex items-start gap-3 bg-white rounded-xl p-3 border shadow-sm">
+          <motion.div
+            className="flex items-start gap-3 bg-white rounded-xl p-3 border shadow-sm"
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.35 }}
+          >
             <FaMapMarkerAlt className="w-5 h-5 text-[#bb2988] mt-0.5" />
             <div>
               Sicap Foire, 2 voies Liberté 6 (à 150m du Uno) — Dakar
@@ -83,24 +95,37 @@ export default function DentisteDakar() {
                 </Link>
               </div>
             </div>
-          </div>
-          <div className="flex items-center gap-3 bg-white rounded-xl p-3 border shadow-sm">
+          </motion.div>
+          <motion.div
+            className="flex items-center gap-3 bg-white rounded-xl p-3 border shadow-sm"
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.35, delay: 0.05 }}
+          >
             <FaPhoneAlt className="w-5 h-5 text-[#bb2988]" />
             <div className="flex flex-col">
               <a href="tel:+221777039393">+221 77 703 93 93</a>
               <a href="tel:+221338684704">+221 33 868 47 04</a>
             </div>
-          </div>
-          <div className="flex items-center gap-3 bg-white rounded-xl p-3 border shadow-sm">
+          </motion.div>
+          <motion.div
+            className="flex items-center gap-3 bg-white rounded-xl p-3 border shadow-sm"
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.35, delay: 0.1 }}
+          >
             <FaEnvelope className="w-5 h-5 text-[#bb2988]" />
             <a href="mailto:cliniquedentairedabia@gmail.com">
               cliniquedentairedabia@gmail.com
             </a>
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+        <motion.div className="contents" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.35 }}>
         <Link
           to="/competences/implantologie"
           className="group border rounded-xl p-5 bg-white shadow-sm hover:shadow-md hover:-translate-y-0.5 transition"
@@ -113,6 +138,8 @@ export default function DentisteDakar() {
             Remplacer une dent manquante
           </div>
         </Link>
+        </motion.div>
+        <motion.div className="contents" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.35, delay: 0.05 }}>
         <Link
           to="/competences/orthodontie"
           className="group border rounded-xl p-5 bg-white shadow-sm hover:shadow-md hover:-translate-y-0.5 transition"
@@ -123,6 +150,8 @@ export default function DentisteDakar() {
           </div>
           <div className="mt-1 text-sm text-gray-600">Aligneurs, brackets</div>
         </Link>
+        </motion.div>
+        <motion.div className="contents" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.35, delay: 0.1 }}>
         <Link
           to="/competences/facettes-dentaires"
           className="group border rounded-xl p-5 bg-white shadow-sm hover:shadow-md hover:-translate-y-0.5 transition"
@@ -135,6 +164,8 @@ export default function DentisteDakar() {
             Esthétique du sourire
           </div>
         </Link>
+        </motion.div>
+        <motion.div className="contents" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.35, delay: 0.15 }}>
         <Link
           to="/competences/blanchiment-dentaire"
           className="group border rounded-xl p-5 bg-white shadow-sm hover:shadow-md hover:-translate-y-0.5 transition"
@@ -147,6 +178,8 @@ export default function DentisteDakar() {
             Cabinet et gouttières
           </div>
         </Link>
+        </motion.div>
+        <motion.div className="contents" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.35, delay: 0.2 }}>
         <Link
           to="/competences/parodontologie"
           className="group border rounded-xl p-5 bg-white shadow-sm hover:shadow-md hover:-translate-y-0.5 transition"
@@ -157,6 +190,8 @@ export default function DentisteDakar() {
           </div>
           <div className="mt-1 text-sm text-gray-600">Santé des gencives</div>
         </Link>
+        </motion.div>
+        <motion.div className="contents" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.35, delay: 0.25 }}>
         <Link
           to="/urgence-dentaire-dakar"
           className="group border rounded-xl p-5 bg-white shadow-sm hover:shadow-md hover:-translate-y-0.5 transition"
@@ -169,6 +204,7 @@ export default function DentisteDakar() {
             Conseils et prise en charge rapide
           </div>
         </Link>
+        </motion.div>
       </div>
 
       <div className="mt-10">

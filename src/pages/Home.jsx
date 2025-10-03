@@ -59,6 +59,12 @@ const Home = () => {
             Dentiste Dakar
           </Link>
           <Link
+            to="/cabinet-dentaire-dakar"
+            className="px-4 py-2 rounded-full bg-pink-50 text-[#bb2988] border border-pink-200 shadow-sm hover:bg-pink-100 hover:border-pink-300 transition"
+          >
+            Cabinet dentaire
+          </Link>
+          <Link
             to="/urgence-dentaire-dakar"
             className="px-4 py-2 rounded-full bg-pink-50 text-[#bb2988] border border-pink-200 shadow-sm hover:bg-pink-100 hover:border-pink-300 transition"
           >

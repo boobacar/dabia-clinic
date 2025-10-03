@@ -13,6 +13,7 @@ import {
 import Seo from "../components/Seo";
 import Breadcrumbs from "../components/Breadcrumbs";
 import GoogleMapSection from "../components/GoogleMapSection";
+import { motion } from "framer-motion";
 
 export default function UrgenceDentaire() {
   const canonical =
@@ -92,7 +93,12 @@ export default function UrgenceDentaire() {
       />
 
       {/* HERO */}
-      <div className="rounded-3xl p-6 md:p-8 bg-gradient-to-br from-red-50 via-white to-orange-50 border">
+      <motion.div
+        className="rounded-3xl p-6 md:p-8 bg-gradient-to-br from-red-50 via-white to-orange-50 border"
+        initial={{ opacity: 0, y: 14 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.45, ease: "easeOut" }}
+      >
         <h1 className="text-3xl md:text-4xl font-extrabold text-[#ad9d64]">
           Urgence dentaire à Dakar
         </h1>
@@ -122,11 +128,11 @@ export default function UrgenceDentaire() {
             Prendre rendez‑vous
           </Link>
         </div>
-      </div>
+      </motion.div>
 
       {/* TRIAGE RAPIDE */}
       <section className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-5">
-        <div className="bg-white border rounded-xl p-5 shadow-sm">
+        <motion.div className="bg-white border rounded-xl p-5 shadow-sm" initial={{ opacity:0, y:10 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true, amount:0.5 }} transition={{ duration:0.35 }}>
           <div className="flex items-center gap-3 text-[#bb2988] font-semibold">
             <FaExclamationTriangle /> Douleur aiguë
           </div>
@@ -134,8 +140,8 @@ export default function UrgenceDentaire() {
             Paracétamol si compatible. Évitez aspirine/alcool chaud. Rincez eau
             tiède salée.
           </p>
-        </div>
-        <div className="bg-white border rounded-xl p-5 shadow-sm">
+        </motion.div>
+        <motion.div className="bg-white border rounded-xl p-5 shadow-sm" initial={{ opacity:0, y:10 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true, amount:0.5 }} transition={{ duration:0.35, delay:0.05 }}>
           <div className="flex items-center gap-3 text-[#bb2988] font-semibold">
             <FaTemperatureHigh /> Gonflement/fièvre
           </div>
@@ -143,8 +149,8 @@ export default function UrgenceDentaire() {
             Contact prioritaire. Si extension vers l’œil/le cou ou fièvre
             élevée : urgences hospitalières.
           </p>
-        </div>
-        <div className="bg-white border rounded-xl p-5 shadow-sm">
+        </motion.div>
+        <motion.div className="bg-white border rounded-xl p-5 shadow-sm" initial={{ opacity:0, y:10 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true, amount:0.5 }} transition={{ duration:0.35, delay:0.1 }}>
           <div className="flex items-center gap-3 text-[#bb2988] font-semibold">
             <FaBandAid /> Dent cassée/traumatisme
           </div>
@@ -152,7 +158,7 @@ export default function UrgenceDentaire() {
             Conservez le fragment, évitez de mastiquer dessus, compresse si
             saignement.
           </p>
-        </div>
+        </motion.div>
       </section>
 
       {/* CAS FREQUENTS */}
@@ -191,15 +197,19 @@ export default function UrgenceDentaire() {
               text: "Gonflement, parfois fièvre. Prise en charge prioritaire. Ne percez pas vous‑même.",
             },
           ].map((c, i) => (
-            <div
+            <motion.div
               key={i}
               className="bg-white border rounded-xl p-5 shadow-sm hover:shadow transition"
+              initial={{ opacity:0, y:12 }}
+              whileInView={{ opacity:1, y:0 }}
+              viewport={{ once:true, amount:0.4 }}
+              transition={{ duration:0.35, delay: i*0.05 }}
             >
               <div className="flex items-center gap-3 font-semibold">
                 {c.icon} {c.title}
               </div>
               <p className="mt-2 text-sm text-gray-700">{c.text}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </section>

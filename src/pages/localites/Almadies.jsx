@@ -1,6 +1,7 @@
 import React from "react";
 import Seo from "../../components/Seo";
 import Breadcrumbs from "../../components/Breadcrumbs";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import GoogleMapSection from "../../components/GoogleMapSection";
 
@@ -31,11 +32,11 @@ export default function LocaliteAlmadies() {
         jsonLd={jsonLd}
       />
       <Breadcrumbs items={[{ label: "Accueil", href: "/" }, { label: "Dentiste Almadies" }]} />
-      <h1 className="text-3xl md:text-4xl font-bold text-[#ad9d64]">Dentiste proche des Almadies</h1>
-      <p className="mt-3 text-gray-700">Cabinet moderne à quelques minutes des Almadies : urgences, prévention, esthétique, orthodontie, implantologie.</p>
+      <motion.h1 className="text-3xl md:text-4xl font-bold text-[#ad9d64]" initial={{ opacity:0, y:10 }} animate={{ opacity:1, y:0 }} transition={{ duration:0.4 }}>Dentiste proche des Almadies</motion.h1>
+      <motion.p className="mt-3 text-gray-700" initial={{ opacity:0 }} animate={{ opacity:1 }} transition={{ delay:0.1, duration:0.4 }}>Cabinet moderne à quelques minutes des Almadies : urgences, prévention, esthétique, orthodontie, implantologie.</motion.p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-        <div className="p-5 border rounded-xl bg-white">
+        <motion.div className="p-5 border rounded-xl bg-white" initial={{ opacity:0, y:10 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true, amount:0.4 }} transition={{ duration:0.35 }}>
           <h2 className="text-xl font-semibold mb-2">Accès & coordonnées</h2>
           <ul className="space-y-2 text-gray-700 text-sm">
             <li>Adresse : Sicap Foire, 2 voies Liberté 6 (à 150m du Uno)</li>
@@ -45,8 +46,8 @@ export default function LocaliteAlmadies() {
               <Link to="/rendez-vous" className="text-[#bb2988] underline">Prendre rendez-vous en ligne</Link>
             </li>
           </ul>
-        </div>
-        <div className="p-5 border rounded-xl bg-white">
+        </motion.div>
+        <motion.div className="p-5 border rounded-xl bg-white" initial={{ opacity:0, y:10 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true, amount:0.4 }} transition={{ duration:0.35, delay:0.05 }}>
           <h2 className="text-xl font-semibold mb-2">Soins proposés</h2>
           <ul className="list-disc pl-5 text-gray-700 text-sm space-y-1">
             <li>Consultation, bilan et plan de traitement</li>
@@ -55,7 +56,7 @@ export default function LocaliteAlmadies() {
             <li>Orthodontie (aligneurs, brackets)</li>
             <li>Implants et prothèses</li>
           </ul>
-        </div>
+        </motion.div>
       </div>
 
       <div className="mt-8">
