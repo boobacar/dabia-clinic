@@ -51,10 +51,7 @@ const ClinicIntro = () => {
             consultations de routine, des traitements spécialisés ou des
             interventions esthétiques. Votre sourire est notre priorité !
           </p>
-          <Link
-            to="/rendez-vous"
-            className="animate-bounce inline-block bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold transition transform hover:scale-105"
-          >
+          <Link to="/rendez-vous" className="btn-cta">
             Prendre un rendez-vous
           </Link>
         </motion.div>

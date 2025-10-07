@@ -4,6 +4,7 @@ import Breadcrumbs from "../../components/Breadcrumbs";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import GoogleMapSection from "../../components/GoogleMapSection";
+import Callout from "../../components/Callout";
 
 export default function LocaliteScatUrbam() {
   const url = "https://www.cliniquedentairedabia.com/cabinet-dentaire-scat-urbam";
@@ -66,6 +67,14 @@ export default function LocaliteScatUrbam() {
       <div className="mt-8">
         <GoogleMapSection />
       </div>
+
+      <Callout title="Informations utiles">
+        <ul className="list-disc pl-5">
+          <li>Devis remis après l’examen clinique.</li>
+          <li>Assurances: consultez la liste de nos partenaires.</li>
+          <li>Soins esthétiques: des photos avant/après peuvent être proposées.</li>
+        </ul>
+      </Callout>
     </section>
   );
 }

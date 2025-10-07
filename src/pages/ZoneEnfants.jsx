@@ -154,10 +154,7 @@ const ZoneEnfants = () => {
       </p>
 
       <div className="flex justify-center mb-10">
-        <Link
-          to="/rendez-vous"
-          className="animate-bounce inline-block bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold transition transform hover:scale-105"
-        >
+        <Link to="/rendez-vous" className="btn-cta">
           Prendre un rendez-vous
         </Link>
       </div>

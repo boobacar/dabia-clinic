@@ -24,22 +24,84 @@ const Footer = () => {
 
       {/* Liens internes clés */}
       <div className="max-w-7xl mx-auto px-4 mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 text-sm">
-        <a href="/dentiste-dakar" className="text-white/90 hover:text-white underline-offset-2 hover:underline">Dentiste à Dakar</a>
-        <a href="/cabinet-dentaire-dakar" className="text-white/90 hover:text-white underline-offset-2 hover:underline">Cabinet dentaire Dakar</a>
-        <a href="/urgence-dentaire-dakar" className="text-white/90 hover:text-white underline-offset-2 hover:underline">Urgence dentaire</a>
-        <a href="/all-competences" className="text-white/90 hover:text-white underline-offset-2 hover:underline">Nos compétences</a>
-        <a href="/infos/technologie" className="text-white/90 hover:text-white underline-offset-2 hover:underline">Technologie</a>
-        <a href="/infos/assurances" className="text-white/90 hover:text-white underline-offset-2 hover:underline">Assurances</a>
-        <a href="/blog" className="text-white/90 hover:text-white underline-offset-2 hover:underline">Blog</a>
-        <a href="/cabinet-dentaire-liberte-6" className="text-white/90 hover:text-white underline-offset-2 hover:underline">Liberté 6</a>
-        <a href="/clinique-dentaire-parcelles-assainies" className="text-white/90 hover:text-white underline-offset-2 hover:underline">Parcelles Assainies</a>
-        <a href="/cabinet-dentaire-almadies" className="text-white/90 hover:text-white underline-offset-2 hover:underline">Almadies</a>
-        <a href="/cabinet-dentaire-mermoz" className="text-white/90 hover:text-white underline-offset-2 hover:underline">Mermoz</a>
-        <a href="/cabinet-dentaire-point-e" className="text-white/90 hover:text-white underline-offset-2 hover:underline">Point E</a>
-        <a href="/cabinet-dentaire-sacre-coeur" className="text-white/90 hover:text-white underline-offset-2 hover:underline">Sacré‑Cœur</a>
-        <a href="/cabinet-dentaire-yoff" className="text-white/90 hover:text-white underline-offset-2 hover:underline">Yoff</a>
-        <a href="/cabinet-dentaire-hlm-grand-yoff" className="text-white/90 hover:text-white underline-offset-2 hover:underline">HLM Grand Yoff</a>
-        <a href="/cabinet-dentaire-scat-urbam" className="text-white/90 hover:text-white underline-offset-2 hover:underline">Scat Urbam</a>
+        <a
+          href="/dentiste-dakar"
+          className="text-white/90 hover:text-white underline-offset-2 hover:underline"
+        >
+          Dentiste à Dakar
+        </a>
+        <a
+          href="/cabinet-dentaire-dakar"
+          className="text-white/90 hover:text-white underline-offset-2 hover:underline"
+        >
+          Cabinet dentaire Dakar
+        </a>
+        <a
+          href="/urgence-dentaire-dakar"
+          className="text-white/90 hover:text-white underline-offset-2 hover:underline"
+        >
+          Urgence dentaire
+        </a>
+        <a
+          href="/all-competences"
+          className="text-white/90 hover:text-white underline-offset-2 hover:underline"
+        >
+          Nos compétences
+        </a>
+        <a
+          href="/infos/technologie"
+          className="text-white/90 hover:text-white underline-offset-2 hover:underline"
+        >
+          Technologie
+        </a>
+        <a
+          href="/infos/assurances"
+          className="text-white/90 hover:text-white underline-offset-2 hover:underline"
+        >
+          Assurances
+        </a>
+        <a
+          href="/blog"
+          className="text-white/90 hover:text-white underline-offset-2 hover:underline"
+        >
+          Blog
+        </a>
+        <a
+          href="/cabinet-dentaire-liberte-6"
+          className="text-white/90 hover:text-white underline-offset-2 hover:underline"
+        >
+          Liberté 6
+        </a>
+        <a
+          href="/clinique-dentaire-parcelles-assainies"
+          className="text-white/90 hover:text-white underline-offset-2 hover:underline"
+        >
+          Parcelles Assainies
+        </a>
+        <a
+          href="/cabinet-dentaire-sacre-coeur"
+          className="text-white/90 hover:text-white underline-offset-2 hover:underline"
+        >
+          Sacré‑Cœur
+        </a>
+        <a
+          href="/cabinet-dentaire-yoff"
+          className="text-white/90 hover:text-white underline-offset-2 hover:underline"
+        >
+          Yoff
+        </a>
+        <a
+          href="/cabinet-dentaire-hlm-grand-yoff"
+          className="text-white/90 hover:text-white underline-offset-2 hover:underline"
+        >
+          HLM Grand Yoff
+        </a>
+        <a
+          href="/cabinet-dentaire-patte-d-oie"
+          className="text-white/90 hover:text-white underline-offset-2 hover:underline"
+        >
+          Patte d’Oie
+        </a>
       </div>
 
       <div className="flex justify-center gap-6 mt-8">

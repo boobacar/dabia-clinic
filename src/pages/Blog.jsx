@@ -82,7 +82,7 @@ export default function Blog() {
                 setPage(1);
                 setCat(e.target.value);
               }}
-              className="border rounded-xl px-4 py-2"
+              className="select-cta"
             >
               <option value="">Toutes catégories</option>
               {CATEGORIES.map((c) => (
@@ -97,13 +97,14 @@ export default function Blog() {
             {pageItems.map((p) => (
               <article
                 key={p.slug}
-                className="bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition"
+                className="gradient-card glow-hover wow-tilt bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition"
               >
                 <Link to={`/blog/${p.slug}`}>
                   <img
                     src={p.cover}
                     alt={p.title}
-                    className="w-full h-65 object-cover"
+                    className="w-full h-65 object-cover rounded-t-xl"
+                    style={{ viewTransitionName: `post-cover-${p.slug}` }}
                     loading="lazy"
                   />
                 </Link>
@@ -139,7 +140,7 @@ export default function Blog() {
           {totalPages > 1 && (
             <div className="flex items-center gap-2 mt-8">
               <button
-                className="px-3 py-2 border rounded-lg disabled:opacity-40"
+                className="btn-cta btn-cta-sm disabled:opacity-40 disabled:pointer-events-none"
                 onClick={() => setPage((p) => Math.max(1, p - 1))}
                 disabled={page === 1}
               >
@@ -149,7 +150,7 @@ export default function Blog() {
                 Page {page} / {totalPages}
               </span>
               <button
-                className="px-3 py-2 border rounded-lg disabled:opacity-40"
+                className="btn-cta btn-cta-sm disabled:opacity-40 disabled:pointer-events-none"
                 onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
                 disabled={page === totalPages}
               >
@@ -170,10 +171,8 @@ export default function Blog() {
                       setPage(1);
                     setCat(c === cat ? "" : c);
                   }}
-                  className={`px-3 py-1 rounded-full border ${
-                    cat === c
-                      ? "bg-[#bb2988] text-white border-[#bb2988]"
-                      : "hover:bg-gray-50"
+                  className={`px-3 py-1 rounded-full ${
+                    cat === c ? "btn-cta btn-cta-sm" : "hover:bg-gray-50"
                   }`}
                 >
                   {c}
@@ -209,10 +208,7 @@ export default function Blog() {
             <p className="text-sm text-gray-600">
               Réservez votre consultation en ligne en 1 minute.
             </p>
-            <Link
-              to="/rendez-vous"
-              className="mt-3 inline-block bg-[#bb2988] text-white px-4 py-2 rounded-lg"
-            >
+            <Link to="/rendez-vous" className="mt-3 inline-block btn-cta btn-cta-sm">
               Prendre rendez-vous
             </Link>
           </div>

@@ -78,16 +78,10 @@ export default function TechnologieDetail() {
       </motion.div>
 
       <div className="mt-8 flex flex-wrap gap-4">
-        <Link
-          to="/infos/technologie"
-          className="inline-block px-5 py-3 rounded-full border hover:bg-gray-50"
-        >
+        <Link to="/infos/technologie" className="btn-cta btn-cta-sm">
           ← Retour aux technologies
         </Link>
-        <Link
-          to="/rendez-vous"
-          className="inline-block bg-[#bb2988] text-white px-5 py-3 rounded-full"
-        >
+        <Link to="/rendez-vous" className="btn-cta">
           Prendre rendez-vous
         </Link>
       </div>

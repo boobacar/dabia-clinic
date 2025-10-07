@@ -4,6 +4,7 @@ import Breadcrumbs from "../../components/Breadcrumbs";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import GoogleMapSection from "../../components/GoogleMapSection";
+import Callout from "../../components/Callout";
 
 export default function LocaliteHlmGrandYoff() {
   const url = "https://www.cliniquedentairedabia.com/cabinet-dentaire-hlm-grand-yoff";
@@ -66,6 +67,14 @@ export default function LocaliteHlmGrandYoff() {
       <div className="mt-8">
         <GoogleMapSection />
       </div>
+
+      <Callout title="Astuces pour venir">
+        <ul className="list-disc pl-5">
+          <li>Stationnement à proximité — arrivez un peu en avance.</li>
+          <li>Vos anciens examens (radios) nous aident à comparer.</li>
+          <li>Urgence: contactez‑nous pour organiser un passage prioritaire.</li>
+        </ul>
+      </Callout>
     </section>
   );
 }

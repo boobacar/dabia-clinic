@@ -25,6 +25,10 @@ export default function Seo({
   type = "website",
   jsonLd = [],
   canonical,
+  publishedTime,
+  modifiedTime,
+  locale = "fr_SN",
+  hrefLangs,
 }) {
   const finalTitle = title
     ? `${title} | ${defaultSite.name}`
@@ -58,12 +62,32 @@ export default function Seo({
       <meta property="og:type" content={type} />
       <meta property="og:url" content={finalUrl} />
       <meta property="og:image" content={image} />
+      <meta property="og:locale" content={locale} />
       <meta property="og:site_name" content={defaultSite.siteLabel} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={finalTitle} />
       <meta name="twitter:description" content={finalDesc} />
       <meta name="twitter:image" content={image} />
+      {type === "article" && publishedTime && (
+        <meta property="article:published_time" content={publishedTime} />
+      )}
+      {type === "article" && modifiedTime && (
+        <meta property="article:modified_time" content={modifiedTime} />
+      )}
       {canonical && <link rel="canonical" href={canonical} />}
+      {(() => {
+        const entries = hrefLangs || (
+          canonical
+            ? [
+                { lang: "fr-SN", href: canonical },
+                { lang: "x-default", href: canonical },
+              ]
+            : []
+        );
+        return entries.map((e, i) => (
+          <link key={`alt-${i}`} rel="alternate" hrefLang={e.lang} href={e.href} />
+        ));
+      })()}
       {blocks.map((b, i) => (
         <script key={i} type="application/ld+json">
           {JSON.stringify(b)}

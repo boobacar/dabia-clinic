@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import SkeletonImage from "./SkeletonImage";
 
 const StaffCard = ({ photo, nom, poste, bio }) => {
   return (
@@ -9,11 +10,14 @@ const StaffCard = ({ photo, nom, poste, bio }) => {
       viewport={{ once: true }}
       className="bg-white shadow-md rounded-xl p-6 text-center hover:scale-105 hover:shadow-xl transition-transform duration-300"
     >
-      <img
+      <SkeletonImage
         src={photo}
         alt={`Photo de ${nom}`}
-        className="w-32 h-32 object-cover rounded-full mx-auto mb-4 border-2 border-[#ad9d64]"
+        className="w-32 h-32 mx-auto mb-4"
+        imgClassName="object-cover rounded-full border-2 border-[#ad9d64]"
+        skeletonClassName="rounded-full"
         loading="lazy"
+        decoding="async"
       />
       <h3 className="text-lg font-bold text-[#ad9d64]">{nom}</h3>
       <p className="text-sm text-gray-600 italic">{poste}</p>

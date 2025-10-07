@@ -4,6 +4,7 @@ import Breadcrumbs from "../../components/Breadcrumbs";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import GoogleMapSection from "../../components/GoogleMapSection";
+import Callout from "../../components/Callout";
 
 export default function LocaliteMermoz() {
   const url = "https://www.cliniquedentairedabia.com/cabinet-dentaire-mermoz";
@@ -43,6 +44,14 @@ export default function LocaliteMermoz() {
       <div className="mt-8">
         <GoogleMapSection />
       </div>
+
+      <Callout title="Astuces pour venir">
+        <ul className="list-disc pl-5">
+          <li>Arrivez 5 minutes en avance pour le stationnement.</li>
+          <li>Munissez‑vous de vos radios/ordonnances si vous en avez.</li>
+          <li>Urgence: appelez pour organiser un passage prioritaire.</li>
+        </ul>
+      </Callout>
     </section>
   );
 }

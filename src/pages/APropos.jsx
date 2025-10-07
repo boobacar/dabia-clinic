@@ -69,10 +69,7 @@ export default function APropos() {
           </ul>
 
           <div className="mt-6">
-            <Link
-              to="/rendez-vous"
-              className="inline-flex px-5 py-3 rounded-full bg-[#bb2988] text-white hover:bg-[#a32678]"
-            >
+            <Link to="/rendez-vous" className="btn-cta">
               Prendre rendez-vous
             </Link>
           </div>

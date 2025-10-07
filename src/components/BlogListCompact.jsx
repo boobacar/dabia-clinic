@@ -72,10 +72,7 @@ export default function BlogListCompact() {
           transition={{ duration: 0.35, delay: 0.05 }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          <button
-            onClick={() => setShowAll(!showAll)}
-            className="px-5 py-2 rounded-full bg-[#bb2988] text-white font-medium transition transform hover:scale-105"
-          >
+          <button onClick={() => setShowAll(!showAll)} className="btn-cta btn-cta-sm">
             {showAll ? "Voir moins" : "Voir tous les liens"}
           </button>
         </motion.div>

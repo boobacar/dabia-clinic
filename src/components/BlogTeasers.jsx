@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { POSTS } from "../data/posts";
+import SkeletonImage from "./SkeletonImage";
 
 const sortByDateDesc = (a, b) => new Date(b.date) - new Date(a.date);
 
@@ -26,11 +27,13 @@ export default function BlogTeasers() {
               className="group bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden"
             >
               {post.cover && (
-                <img
+                <SkeletonImage
                   src={post.cover}
                   alt={post.title}
                   loading="lazy"
-                  className="w-full h-44 object-cover group-hover:opacity-95 transition"
+                  decoding="async"
+                  className="w-full h-44"
+                  imgClassName="object-cover group-hover:opacity-95 transition"
                 />
               )}
               <div className="p-4">

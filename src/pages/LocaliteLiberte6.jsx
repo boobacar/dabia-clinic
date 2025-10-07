@@ -1,7 +1,9 @@
 import React from "react";
+import ReactMarkdown from "react-markdown";
 import Seo from "../components/Seo";
 import Breadcrumbs from "../components/Breadcrumbs";
 import GoogleMapSection from "../components/GoogleMapSection";
+import Callout from "../components/Callout";
 import { Link } from "react-router-dom";
 
 export default function LocaliteLiberte6() {
@@ -48,12 +50,15 @@ export default function LocaliteLiberte6() {
       <h1 className="text-3xl md:text-4xl font-bold text-[#ad9d64]">
         Cabinet dentaire à Liberté 6 (Dakar)
       </h1>
-      <p className="mt-3 text-gray-700">
-        La Clinique Dentaire DABIA accueille les patient·es de **Liberté 6**,
-        **Sicap Foire**, **Yoff** et alentours. Notre équipe prend en charge les
-        soins du quotidien (prévention, détartrage, caries), l’**urgence dentaire**,
-        ainsi que l’**esthétique**, l’**orthodontie** et l’**implantologie**.
-      </p>
+      <ReactMarkdown
+        components={{
+          p: ({ node, ...props }) => (
+            <p className="mt-3 text-gray-700" {...props} />
+          ),
+        }}
+      >
+        {`La Clinique Dentaire DABIA accueille les patient·es de **Liberté 6**, **Sicap Foire**, **Yoff** et alentours. Notre équipe prend en charge les soins du quotidien (prévention, détartrage, caries), l’**urgence dentaire**, ainsi que l’**esthétique**, l’**orthodontie** et l’**implantologie**.`}
+      </ReactMarkdown>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
         <div className="p-5 border rounded-xl bg-white">
@@ -94,7 +99,14 @@ export default function LocaliteLiberte6() {
       </div>
 
       <GoogleMapSection />
+
+      <Callout title="Astuces pour venir">
+        <ul className="list-disc pl-5">
+          <li>Stationnement possible à proximité (prévoir un peu d’avance).</li>
+          <li>Apportez vos radios/ordonnances précédentes si disponibles.</li>
+          <li>En cas d’urgence, appelez avant votre venue pour un créneau prioritaire.</li>
+        </ul>
+      </Callout>
     </section>
   );
 }
-

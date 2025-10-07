@@ -14,6 +14,8 @@ import Seo from "../components/Seo";
 import Breadcrumbs from "../components/Breadcrumbs";
 import GoogleMapSection from "../components/GoogleMapSection";
 import { motion } from "framer-motion";
+import FAQ from "../components/FAQ";
+import Magnetic from "../components/Magnetic";
 
 export default function UrgenceDentaire() {
   const canonical =
@@ -107,26 +109,22 @@ export default function UrgenceDentaire() {
           orientons et vous recevons rapidement.
         </p>
         <div className="mt-5 flex flex-wrap gap-3">
-          <a
-            href="tel:+221777039393"
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-[#bb2988] text-white shadow hover:opacity-95"
-          >
+          <a href="tel:+221777039393" className="inline-flex items-center gap-2 btn-cta">
             <FaPhoneAlt /> Appeler la clinique
           </a>
           <a
             href="https://wa.me/221777039393"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-full border shadow-sm bg-white hover:bg-gray-50"
+            className="inline-flex items-center gap-2 btn-cta"
           >
             <FaWhatsapp className="text-green-600" /> WhatsApp
           </a>
-          <Link
-            to="/rendez-vous"
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-[#bb2988] text-white shadow"
-          >
-            Prendre rendez‑vous
-          </Link>
+          <Magnetic>
+            <Link to="/rendez-vous" className="ripple inline-flex items-center gap-2 btn-cta">
+              Prendre rendez‑vous
+            </Link>
+          </Magnetic>
         </div>
       </motion.div>
 
@@ -233,29 +231,23 @@ export default function UrgenceDentaire() {
 
       {/* CTA */}
       <div className="mt-8 flex flex-wrap gap-4">
-        <a
-          href="tel:+221777039393"
-          className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-[#bb2988] text-white shadow hover:opacity-95"
-        >
+        <a href="tel:+221777039393" className="inline-flex items-center gap-2 btn-cta">
           <FaPhoneAlt /> Appeler
         </a>
         <a
           href="https://wa.me/221777039393"
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center gap-2 px-5 py-3 rounded-full border bg-white shadow-sm hover:bg-gray-50"
+          className="inline-flex items-center gap-2 btn-cta"
         >
           <FaWhatsapp className="text-green-600" /> WhatsApp
         </a>
-        <Link
-          to="/rendez-vous"
-          className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-[#bb2988] text-white shadow"
-        >
+        <Link to="/rendez-vous" className="inline-flex items-center gap-2 btn-cta">
           Prendre rendez‑vous
         </Link>
         <Link
           to="/blog/urgence-dentaire-dakar-que-faire"
-          className="inline-flex items-center gap-2 px-5 py-3 rounded-full border bg-white shadow-sm hover:bg-gray-50"
+          className="inline-flex items-center gap-2 btn-cta"
         >
           Lire notre guide →
         </Link>
@@ -266,20 +258,23 @@ export default function UrgenceDentaire() {
         <GoogleMapSection />
       </div>
 
+      {/* FAQ – affiche visible, JSON-LD déjà injecté via Seo */}
+      <FAQ
+        className="mt-10"
+        asJsonLd={false}
+        items={[
+          { q: "Que faire en cas de rage de dent la nuit ?", a: "Évitez l’aspirine, prenez du paracétamol si compatible, rincez à l’eau tiède salée. Contactez la clinique dès l’ouverture." },
+          { q: "Dent cassée : est‑ce une urgence ?", a: "Oui si douleur, saignement ou nerf exposé. Conservez le fragment, évitez de mastiquer dessus et consultez rapidement." },
+          { q: "Quand aller à l’hôpital ?", a: "Traumatisme sévère, difficultés à respirer/avaler, fièvre élevée persistante, gonflement qui s’étend vers l’œil ou le cou." },
+        ]}
+      />
+
       {/* Sticky mobile actions */}
       <div className="fixed bottom-4 right-4 md:hidden flex flex-col gap-2 z-30">
-        <a
-          href="tel:+221777039393"
-          className="px-4 py-3 rounded-full bg-[#bb2988] text-white shadow"
-        >
+        <a href="tel:+221777039393" className="btn-cta">
           Appeler
         </a>
-        <Link
-          to="/rendez-vous"
-          className="px-4 py-3 rounded-full bg-[#ad9d64] text-white shadow"
-        >
-          RDV
-        </Link>
+        <Link to="/rendez-vous" className="btn-cta">RDV</Link>
       </div>
     </section>
   );

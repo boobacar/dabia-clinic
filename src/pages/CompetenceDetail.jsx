@@ -322,10 +322,7 @@ const CompetenceDetail = () => {
           Compétence introuvable
         </h1>
         <div className="mt-10">
-          <Link
-            to="/#competences"
-            className="inline-flex items-center px-5 py-3 rounded-full bg-[#bb2988] text-white hover:bg-[#a32678] transition"
-          >
+          <Link to="/#competences" className="btn-cta">
             ← Retour à nos compétences
           </Link>
         </div>
@@ -379,11 +376,7 @@ const CompetenceDetail = () => {
         </motion.p>
 
         <motion.div className="text-center" variants={childVariant}>
-          <Link
-            to="/rendez-vous"
-            className="bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold hover:scale-105 focus:scale-105 active:scale-95 inline-block"
-            aria-label="Prendre rendez-vous à la Clinique Dentaire DABIA"
-          >
+          <Link to="/rendez-vous" className="btn-cta" aria-label="Prendre rendez-vous à la Clinique Dentaire DABIA">
             Prendre un rendez-vous
           </Link>
         </motion.div>
@@ -466,11 +459,7 @@ const CompetenceDetail = () => {
               ))}
             </div>
             <div className="mt-6">
-              <Link
-                to="/blog"
-                className="bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold hover:scale-105 focus:scale-105 active:scale-95 inline-block"
-                aria-label="Voir tous les articles du blog"
-              >
+              <Link to="/blog" className="btn-cta" aria-label="Voir tous les articles du blog">
                 Voir tous les articles
               </Link>
             </div>

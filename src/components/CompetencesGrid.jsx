@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import competences from "../data/competences";
+import SkeletonImage from "./SkeletonImage";
 
 const container = {
   hidden: {},
@@ -55,15 +56,16 @@ export default function CompetencesGrid() {
           <motion.div key={item.slug} variants={card}>
             <Link
               to={`/competences/${item.slug}`}
-              className="block rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
+              className="gradient-card glow-hover wow-tilt block rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
               title={`${item.titre} à Dakar – en savoir plus`}
               aria-label={`${item.titre} à Dakar – en savoir plus`}
             >
               <div className="relative h-72 group">
-                <img
+                <SkeletonImage
                   src={item.image}
                   alt={`${item.titre} – Clinique Dentaire DABIA, Dakar`}
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="absolute inset-0 w-full h-full"
+                  imgClassName="object-cover group-hover:scale-110 transition-transform duration-500"
                   loading="lazy"
                   decoding="async"
                 />
@@ -79,6 +81,11 @@ export default function CompetencesGrid() {
           </motion.div>
         ))}
       </motion.div>
+      <div className="mt-12 text-center">
+        <Link to="/rendez-vous" className="btn-cta">
+          Prendre un rendez-vous
+        </Link>
+      </div>
 
       {/* Données structurées de la liste */}
       <script

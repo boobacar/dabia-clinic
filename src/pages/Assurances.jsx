@@ -37,6 +37,7 @@ import logoExpressSante from "../assets/assurances/express_sante.webp";
 import logoDgid from "../assets/assurances/dgid.webp";
 import logoIpm from "../assets/assurances/ipm.webp";
 import { Link } from "react-router-dom";
+import AssuranceMarquee from "../components/AssuranceMarquee";
 
 const assurances = [
   { nom: "AXA", logo: logoAxa },
@@ -77,6 +78,11 @@ const assurances = [
 const Assurances = () => {
   return (
     <section className="py-16 px-4 max-w-6xl mx-auto mt-20">
+      <AssuranceMarquee
+        className="mb-8"
+        logos={assurances.map((a) => a.logo).filter(Boolean)}
+        speed={50}
+      />
       <Seo
         title="Partenaires assurances – Clinique Dentaire DABIA (Dakar)"
         description="Liste des assurances partenaires de la Clinique Dentaire DABIA à Dakar. Remboursements, prise en charge et infos pratiques."
@@ -97,10 +103,7 @@ const Assurances = () => {
       </motion.h2>
 
       <div className="flex justify-center mb-10">
-        <Link
-          to="/rendez-vous"
-          className="animate-bounce inline-block bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold transition transform hover:scale-105"
-        >
+        <Link to="/rendez-vous" className="btn-cta">
           Prendre un rendez-vous
         </Link>
       </div>

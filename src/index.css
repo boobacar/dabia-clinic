@@ -4,3 +4,116 @@
   /* Sur mobile, on ne capte que le pan vertical : le slider ne bloquera pas le scroll */
   touch-action: pan-y;
 }
+/* Respect OS reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+body[data-reduce-motion="true"] *,
+html:has(body[data-reduce-motion="true"]) * {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* Gradient border + tilt hover for cards */
+.gradient-card { position: relative; border-radius: 14px; }
+.gradient-card::before {
+  content: ''; position: absolute; inset: 0; border-radius: inherit; padding: 1px;
+  background: linear-gradient(135deg,#ad9d64,#bb2988);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude; pointer-events:none;
+}
+.wow-tilt { transform-style: preserve-3d; transition: transform .25s ease, box-shadow .25s ease; }
+.wow-tilt:hover { transform: translateY(-2px) rotateX(1.2deg) rotateY(-1.2deg); }
+
+/* Ripple effect */
+.ripple { position: relative; overflow: hidden; }
+.ripple::after {
+  content:''; position:absolute; inset:0; background: radial-gradient(circle, rgba(255,255,255,.4) 10%, rgba(255,255,255,0) 60%);
+  transform: scale(0); opacity:0; transition: transform .4s ease, opacity .4s ease;
+}
+.ripple:active::after { transform: scale(3); opacity:1; }
+
+/* Callout styling for "À retenir" */
+.callout-title { position: relative; }
+.callout { background: #faf7ef; border-left: 4px solid #ad9d64; padding: 12px 14px; border-radius: 8px; }
+
+/* Glow hover (subtle) */
+.glow-hover { transition: box-shadow .25s ease, transform .25s ease; }
+.glow-hover:hover { box-shadow: 0 10px 24px rgba(173,157,100,.22), 0 6px 14px rgba(187,41,136,.18); }
+
+/* Premium CTA button: gold→pink gradient + inner shadow */
+.btn-cta {
+  --cta-from: #ad9d64; /* gold */
+  --cta-to: #bb2988;   /* pink */
+  position: relative;
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 0.75rem 1.25rem; border-radius: 9999px; font-weight: 600;
+  color: #fff; text-shadow: 0 1px 0 rgba(0,0,0,.18);
+  background: linear-gradient(135deg, var(--cta-from) 0%, var(--cta-to) 100%);
+  box-shadow: inset 0 2px 6px rgba(0,0,0,.18), 0 8px 22px rgba(187,41,136,.28);
+  border: none;
+  transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+}
+.btn-cta:hover { transform: translateY(-1px); filter: saturate(1.05);
+  box-shadow: inset 0 2px 6px rgba(0,0,0,.18), 0 12px 28px rgba(187,41,136,.34);
+}
+.btn-cta:active { transform: translateY(0); }
+.btn-cta:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(187,41,136,.35); }
+
+/* CTA size variants */
+.btn-cta-sm { padding: 0.5rem 0.875rem; font-weight: 600; font-size: 0.875rem; }
+.btn-cta-lg { padding: 0.875rem 1.5rem; font-weight: 700; font-size: 1rem; }
+
+/* CTA surface only (no padding) for icon buttons */
+.cta-surface { 
+  color: #fff; border-radius: 9999px;
+  background: linear-gradient(135deg, var(--cta-from, #ad9d64) 0%, var(--cta-to, #bb2988) 100%);
+  box-shadow: inset 0 2px 6px rgba(0,0,0,.18), 0 8px 22px rgba(187,41,136,.28);
+}
+
+/* Pretty select matching CTA style */
+.select-cta {
+  -webkit-appearance: none;
+  appearance: none;
+  background: linear-gradient(135deg, var(--cta-from, #ad9d64) 0%, var(--cta-to, #bb2988) 100%);
+  color: #fff;
+  padding: 0.5rem 2.25rem 0.5rem 0.875rem;
+  border-radius: 9999px;
+  border: none;
+  font-weight: 600;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,.18), 0 8px 22px rgba(187,41,136,.2);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 20 20'%3E%3Cpath d='M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem center;
+  background-size: 0.9rem;
+  transition: transform .2s ease, filter .2s ease, box-shadow .2s ease;
+}
+.select-cta:focus { outline: none; box-shadow: 0 0 0 3px rgba(187,41,136,.35); }
+.select-cta:hover { transform: translateY(-1px); filter: saturate(1.05); }
+
+/* Glassy button: subtle glass morphism for secondary CTAs */
+.btn-glassy {
+  position: relative; display: inline-flex; align-items: center; justify-content: center;
+  padding: 0.5rem 1rem; border-radius: 9999px; font-weight: 600;
+  color: #1f2937; /* gray-800 */
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px) saturate(140%);
+  border: 1px solid rgba(173,157,100,0.35);
+  box-shadow: 0 4px 16px rgba(173,157,100,.18);
+  transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+.btn-glassy:hover { transform: translateY(-1px); background: rgba(255,255,255,0.75); }
+.btn-glassy:active { transform: translateY(0); }
+.btn-glassy:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(173,157,100,.35); }
+
+/* Skeleton shimmer */
+@keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+.skeleton {
+  background: linear-gradient(90deg, rgba(0,0,0,0.06) 25%, rgba(0,0,0,0.1) 37%, rgba(0,0,0,0.06) 63%);
+  background-size: 400% 100%;
+  animation: shimmer 1.2s ease-in-out infinite;
+}
+
+/* Slow spin for logo loader */
+@keyframes spin { to { transform: rotate(360deg); } }
+.spin-slow { animation: spin 2.2s linear infinite; }

@@ -4,6 +4,7 @@ import Breadcrumbs from "../../components/Breadcrumbs";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import GoogleMapSection from "../../components/GoogleMapSection";
+import Callout from "../../components/Callout";
 
 export default function LocaliteAlmadies() {
   const url = "https://www.cliniquedentairedabia.com/cabinet-dentaire-almadies";
@@ -62,6 +63,14 @@ export default function LocaliteAlmadies() {
       <div className="mt-8">
         <GoogleMapSection />
       </div>
+
+      <Callout title="Astuces pour venir">
+        <ul className="list-disc pl-5">
+          <li>Stationnement à proximité — prévoyez quelques minutes d’avance.</li>
+          <li>Apportez vos radios/ordonnances si disponibles.</li>
+          <li>Urgence: appelez avant de venir pour un créneau prioritaire.</li>
+        </ul>
+      </Callout>
     </section>
   );
 }

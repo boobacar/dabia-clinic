@@ -54,6 +54,11 @@ module.exports = (req, res) => {
     ["/cabinet-dentaire-yoff", today, "monthly", "0.7"],
     ["/cabinet-dentaire-hlm-grand-yoff", today, "monthly", "0.7"],
     ["/cabinet-dentaire-scat-urbam", today, "monthly", "0.7"],
+    ["/cabinet-dentaire-ngor", today, "monthly", "0.7"],
+    ["/cabinet-dentaire-ouakam", today, "monthly", "0.7"],
+    ["/cabinet-dentaire-patte-d-oie", today, "monthly", "0.7"],
+    ["/cabinet-dentaire-fann", today, "monthly", "0.7"],
+    ["/cabinet-dentaire-plateau", today, "monthly", "0.7"],
   ];
 
   // Compétences dynamiques: lire src/data/competences.js

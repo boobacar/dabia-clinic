@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import logo from "../assets/logo.jpg";
+import Magnetic from "./Magnetic";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -46,10 +47,14 @@ const Header = () => {
     }, 200);
   };
 
+  const mobileIconClass = open || scrolled ? "text-white" : "text-[#bb2988]";
+
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-black/80 shadow-md" : "bg-transparent"
+        scrolled
+          ? "bg-black/70 backdrop-blur-md shadow-md"
+          : "bg-black/30 md:bg-transparent backdrop-blur-sm md:backdrop-blur-0"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
@@ -103,21 +108,27 @@ const Header = () => {
               </Link>
             )
           )}
-          <Link
-            to="/rendez-vous"
-            className="inline-block bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold transition transform hover:scale-105"
-          >
-            Rendez-Vous
-          </Link>
+          <Magnetic>
+            <Link
+              to="/rendez-vous"
+              className="ripple btn-cta"
+            >
+              Rendez‑Vous
+            </Link>
+          </Magnetic>
         </nav>
 
         {/* Mobile button */}
-        <div className="md:hidden text-white">
-          <button onClick={() => setOpen(!open)} className="text-white">
+        <div className="md:hidden">
+          <button
+            onClick={() => setOpen(!open)}
+            className={mobileIconClass}
+            aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
+          >
             {open ? (
-              <X className="w-6 h-6 text-white" />
+              <X className={`w-6 h-6 ${mobileIconClass}`} />
             ) : (
-              <Menu className="w-6 h-6 text-white" />
+              <Menu className={`w-6 h-6 ${mobileIconClass}`} />
             )}
           </button>
         </div>
@@ -154,11 +165,8 @@ const Header = () => {
               </Link>
             )
           )}
-          <Link
-            to="/rendez-vous"
-            className="inline-block bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold transition transform hover:scale-105"
-          >
-            Prendre un rendez-vous
+          <Link to="/rendez-vous" className="btn-cta">
+            Prendre un rendez‑vous
           </Link>
         </div>
       )}

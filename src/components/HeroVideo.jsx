@@ -38,10 +38,7 @@ const HeroVideo = () => {
         <motion.p className="border p-2 text-[#ad9d64] max-w-60 text-sm mb-10 sm:max-w-100">
           Des soins avancés, un accueil chaleureux, un sourire radieux.
         </motion.p>
-        <Link
-          to="/rendez-vous"
-          className="bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold hover:scale-110 hover:brightness-110 transition-transform duration-300"
-        >
+        <Link to="/rendez-vous" className="btn-cta">
           Prendre un rendez-vous
         </Link>
       </motion.div>

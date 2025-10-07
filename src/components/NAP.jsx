@@ -8,11 +8,11 @@ export default function NAP({ compact = false }) {
       <div
         itemScope
         itemType="https://schema.org/LocalBusiness"
-        className=" leading-relaxed max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8"
+        className=" leading-relaxed max-w-8xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 items-center"
       >
-        <div className="flex gap-2 items-center">
+        <div className="flex justify-center gap-2 items-center">
           <img
-            className="w-[20%] sm:w-[30%] rounded-full hover:animate-spin"
+            className="w-[20%] sm:w-[25%] rounded-full hover:animate-spin"
             src={logo}
             alt="Dentiste Dakar - Clinique dentaire DABIA"
           />
@@ -26,7 +26,7 @@ export default function NAP({ compact = false }) {
             <p>Clinique dentaire à Dakar, Sénégal</p>
           </div>
         </div>
-        <div>
+        <div className="flex justify-center">
           <span
             itemProp="address"
             itemScope
@@ -48,8 +48,11 @@ export default function NAP({ compact = false }) {
             </div>
           </span>
         </div>
-        <div>
-          <div className="flex gap-2">
+        <div className="mx-auto">
+          <h4 className="font-semibold mb-2 flex items-center gap-2">
+            Contact
+          </h4>
+          <div className="flex justify-center gap-2">
             <MdPhone className="w-5 h-5" />
             <a itemProp="telephone" href="tel:+221777039393">
               +221 77 703 93 93

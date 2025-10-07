@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Seo from "../components/Seo";
 import Breadcrumbs from "../components/Breadcrumbs";
 import { motion } from "framer-motion";
+import AggregateRating from "../components/AggregateRating";
+import FAQ from "../components/FAQ";
 
 export default function CabinetDentaireDakar() {
   const canonical = "https://www.cliniquedentairedabia.com/cabinet-dentaire-dakar";
@@ -70,12 +72,13 @@ export default function CabinetDentaireDakar() {
           confortables, précis et durables.
         </p>
         <div className="mt-4 flex flex-wrap gap-3 text-sm">
-          <Link to="/rendez-vous" className="inline-flex px-5 py-3 rounded-full bg-[#bb2988] text-white shadow hover:opacity-95">Prendre rendez‑vous</Link>
-          <Link to="/dentiste-dakar" className="inline-flex px-5 py-3 rounded-full border bg-white shadow-sm hover:bg-gray-50">Voir “Dentiste à Dakar”</Link>
+          <Link to="/rendez-vous" className="btn-cta">Prendre rendez‑vous</Link>
+          <Link to="/dentiste-dakar" className="btn-cta btn-cta-sm">Voir “Dentiste à Dakar”</Link>
         </div>
       </motion.div>
 
       <section className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="md:col-span-3"><AggregateRating /></div>
         <motion.div className="bg-white border rounded-xl p-5 shadow-sm" initial={{ opacity:0, y:10 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true, amount:0.5 }} transition={{ duration:0.35 }}>
           <h2 className="text-lg font-semibold text-[#ad9d64]">Technologies</h2>
           <p className="text-sm text-gray-700 mt-1">CBCT (radio 3D), scanner intra‑oral, laser, autoclave classe B.</p>
@@ -103,6 +106,16 @@ export default function CabinetDentaireDakar() {
           <li>Devis clairs, suivi et prévention</li>
         </ul>
       </motion.section>
+
+      <FAQ
+        className="mt-10"
+        items={[
+          { q: "Différence entre clinique et cabinet dentaire ?", a: "Dans la pratique, les deux termes désignent des structures de soins. DABIA propose une prise en charge complète avec un plateau technique moderne." },
+          { q: "Combien de temps dure un implant ?", a: "Très longue durée si hygiène et contrôles réguliers. Comparable à une dent naturelle entretenue." },
+          { q: "Les aligneurs fonctionnent‑ils pour les adultes ?", a: "Oui, selon le diagnostic. Ils sont discrets et confortables ; des cas complexes préféreront des bagues." },
+          { q: "Le blanchiment abîme‑t‑il l’émail ?", a: "Sous contrôle professionnel et produits homologués, non ; une sensibilité transitoire est possible." },
+        ]}
+      />
     </section>
   );
 }

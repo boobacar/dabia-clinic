@@ -4,6 +4,7 @@ import Breadcrumbs from "../../components/Breadcrumbs";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import GoogleMapSection from "../../components/GoogleMapSection";
+import Callout from "../../components/Callout";
 
 export default function LocaliteSacreCoeur() {
   const url = "https://www.cliniquedentairedabia.com/cabinet-dentaire-sacre-coeur";
@@ -43,6 +44,14 @@ export default function LocaliteSacreCoeur() {
       <div className="mt-8">
         <GoogleMapSection />
       </div>
+
+      <Callout title="Astuces pour la visite">
+        <ul className="list-disc pl-5">
+          <li>Stationnement: arrivez un peu en avance selon l’affluence.</li>
+          <li>Apportez vos radios/ordonnances si vous en avez.</li>
+          <li>Urgence: contactez‑nous pour accélérer la prise en charge.</li>
+        </ul>
+      </Callout>
     </section>
   );
 }

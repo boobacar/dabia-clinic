@@ -6,7 +6,7 @@ export const ShareButtons = ({ title, url }) => {
   return (
     <div className="flex flex-wrap items-center gap-3 text-sm">
       <a
-        className="px-3 py-2 rounded-full border hover:bg-gray-50"
+        className="btn-cta btn-cta-sm"
         href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`}
         target="_blank"
         rel="noreferrer"
@@ -14,7 +14,7 @@ export const ShareButtons = ({ title, url }) => {
         Partager Facebook
       </a>
       <a
-        className="px-3 py-2 rounded-full border hover:bg-gray-50"
+        className="btn-cta btn-cta-sm"
         href={`https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`}
         target="_blank"
         rel="noreferrer"
@@ -22,17 +22,14 @@ export const ShareButtons = ({ title, url }) => {
         Partager X/Twitter
       </a>
       <a
-        className="px-3 py-2 rounded-full border hover:bg-gray-50"
+        className="btn-cta btn-cta-sm"
         href={`https://wa.me/?text=${encodedTitle}%20${encodedUrl}`}
         target="_blank"
         rel="noreferrer"
       >
         WhatsApp
       </a>
-      <button
-        onClick={() => navigator.clipboard.writeText(url)}
-        className="px-3 py-2 rounded-full border hover:bg-gray-50"
-      >
+      <button onClick={() => navigator.clipboard.writeText(url)} className="btn-cta btn-cta-sm">
         Copier le lien
       </button>
     </div>

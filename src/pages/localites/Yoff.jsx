@@ -4,6 +4,7 @@ import Breadcrumbs from "../../components/Breadcrumbs";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import GoogleMapSection from "../../components/GoogleMapSection";
+import Callout from "../../components/Callout";
 
 export default function LocaliteYoff() {
   const url = "https://www.cliniquedentairedabia.com/cabinet-dentaire-yoff";
@@ -43,6 +44,14 @@ export default function LocaliteYoff() {
       <div className="mt-8">
         <GoogleMapSection />
       </div>
+
+      <Callout title="Informations pratiques">
+        <ul className="list-disc pl-5">
+          <li>Horaires: Lun–Ven 9h–18h, Sam 9h–14h.</li>
+          <li>Assurances: vérifiez votre prise en charge (page Assurances).</li>
+          <li>RDV en ligne en 1 minute — urgences: appelez.</li>
+        </ul>
+      </Callout>
     </section>
   );
 }

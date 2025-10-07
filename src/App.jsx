@@ -4,6 +4,12 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ScrollManager from "./components/ScrollManager";
+import RouteAnalytics from "./components/RouteAnalytics";
+import CookieConsent from "./components/CookieConsent";
+import ConversionTracker from "./components/ConversionTracker";
+import RoutesWithTransitions from "./components/RoutesWithTransitions";
+import ScrollTopButton from "./components/ScrollTopButton";
+import LoadingOverlay from "./components/LoadingOverlay";
 
 // lazy routes (code splitting)
 const Home = lazy(() => import("./pages/Home"));
@@ -33,47 +39,23 @@ const LocaliteSacreCoeur = lazy(() => import("./pages/localites/SacreCoeur"));
 const LocaliteYoff = lazy(() => import("./pages/localites/Yoff"));
 const LocaliteHlmGrandYoff = lazy(() => import("./pages/localites/HlmGrandYoff"));
 const LocaliteScatUrbam = lazy(() => import("./pages/localites/ScatUrbam"));
+const LocaliteNgor = lazy(() => import("./pages/localites/Ngor"));
+const LocaliteOuakam = lazy(() => import("./pages/localites/Ouakam"));
+const LocalitePatteDOie = lazy(() => import("./pages/localites/PatteDOie"));
+const LocaliteFann = lazy(() => import("./pages/localites/Fann"));
+const LocalitePlateau = lazy(() => import("./pages/localites/Plateau"));
 
 const App = () => {
   return (
     <>
       <ScrollManager />
+      <RouteAnalytics />
+      <ConversionTracker />
+      <CookieConsent />
       <Header />
-      <Suspense
-        fallback={<div className="pt-24 pb-24 text-center">Chargement…</div>}
-      >
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/apropos" element={<APropos />} />
-          {/* /services redirigé côté Vercel vers /all-competences */}
-          <Route path="/blog/:slug" element={<BlogPost />} />
-          <Route path="/rendez-vous" element={<RendezVous />} />
-          <Route path="/urgence-dentaire-dakar" element={<UrgenceDentaire />} />
-          <Route path="/dentiste-dakar" element={<DentisteDakar />} />
-          <Route path="/cabinet-dentaire-dakar" element={<CabinetDentaireDakar />} />
-          <Route path="/personnel" element={<Personnel />} />
-          <Route path="/competences/:slug" element={<CompetenceDetail />} />
-          <Route path="/all-competences" element={<Competences />} />
-          <Route path="/infos/assurances" element={<Assurances />} />
-          <Route path="/infos/post-visite" element={<PostVisite />} />
-          <Route path="/infos/enfants" element={<ZoneEnfants />} />
-          <Route path="/rejoindre" element={<Rejoindre />} />
-          <Route path="/infos/technologie" element={<Technologie />} />
-          <Route path="/infos/technologie/:slug" element={<TechnologieDetail />} />
-          <Route path="/cabinet-dentaire-liberte-6" element={<LocaliteLiberte6 />} />
-          <Route
-            path="/clinique-dentaire-parcelles-assainies"
-            element={<LocaliteParcelles />}
-          />
-          <Route path="/cabinet-dentaire-almadies" element={<LocaliteAlmadies />} />
-          <Route path="/cabinet-dentaire-mermoz" element={<LocaliteMermoz />} />
-          <Route path="/cabinet-dentaire-point-e" element={<LocalitePointE />} />
-          <Route path="/cabinet-dentaire-sacre-coeur" element={<LocaliteSacreCoeur />} />
-          <Route path="/cabinet-dentaire-yoff" element={<LocaliteYoff />} />
-          <Route path="/cabinet-dentaire-hlm-grand-yoff" element={<LocaliteHlmGrandYoff />} />
-          <Route path="/cabinet-dentaire-scat-urbam" element={<LocaliteScatUrbam />} />
-        </Routes>
+      <ScrollTopButton />
+      <Suspense fallback={<LoadingOverlay label="Chargement" /> }>
+        <RoutesWithTransitions />
       </Suspense>
       <Footer />
     </>

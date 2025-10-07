@@ -9,6 +9,9 @@ import imgrv from "../assets/rendezvous-dabia.webp";
 import Seo from "../components/Seo";
 import Breadcrumbs from "../components/Breadcrumbs";
 import { addDays, startOfDay } from "date-fns";
+import { sendEvent } from "../analytics/ga4";
+// confetti (chargé à la demande)
+let confetti; import("canvas-confetti").then(m => confetti = m.default).catch(()=>{});
 
 const minSelectableDate = addDays(startOfDay(new Date()), 2);
 
@@ -21,6 +24,7 @@ const RendezVous = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setStatus("loading");
+    try { sendEvent('form_rendez_vous_submit', { step: 'start' }); } catch {}
 
     if (form.current && date) {
       const hiddenDateInput = document.createElement("input");
@@ -42,10 +46,13 @@ const RendezVous = () => {
         setShowModal(true);
         form.current.reset();
         setDate(null);
+        try { sendEvent('form_rendez_vous_submit', { step: 'success' }); } catch {}
+        try { confetti && confetti({ particleCount: 90, spread: 60, origin: { y: 0.3 } }); } catch {}
       })
       .catch((err) => {
         console.error("EmailJS error:", err);
         setStatus("error");
+        try { sendEvent('form_rendez_vous_submit', { step: 'error' }); } catch {}
       });
   };
 
@@ -261,11 +268,7 @@ const RendezVous = () => {
             ></textarea>
           </div>
 
-          <button
-            type="submit"
-            disabled={status === "loading"}
-            className="bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold hover:scale-105 transition disabled:opacity-50"
-          >
+          <button type="submit" disabled={status === "loading"} className="btn-cta disabled:opacity-50">
             {status === "loading" ? "Envoi..." : "Envoyer"}
           </button>
 

@@ -96,10 +96,7 @@ const Rejoindre = () => {
           * Veuillez joindre votre CV manuellement dans le mail qui s'ouvrira.
         </p>
 
-        <button
-          type="submit"
-          className="bg-[#bb2988] text-white font-semibold px-6 py-3 rounded-full hover:scale-105 transition"
-        >
+        <button type="submit" className="btn-cta">
           Envoyer ma candidature
         </button>
       </form>

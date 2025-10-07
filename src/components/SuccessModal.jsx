@@ -14,10 +14,7 @@ const SuccessModal = ({ onClose }) => {
       <p className="text-gray-600 mb-4">
         Nous vous contacterons pour confirmer votre rendez-vous.
       </p>
-      <button
-        onClick={onClose}
-        className="bg-[#bb2988] text-white px-6 py-2 rounded-full hover:scale-105 transition"
-      >
+      <button onClick={onClose} className="btn-cta btn-cta-sm">
         Fermer
       </button>
     </motion.div>

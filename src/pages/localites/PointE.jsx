@@ -4,6 +4,7 @@ import Breadcrumbs from "../../components/Breadcrumbs";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import GoogleMapSection from "../../components/GoogleMapSection";
+import Callout from "../../components/Callout";
 
 export default function LocalitePointE() {
   const url = "https://www.cliniquedentairedabia.com/cabinet-dentaire-point-e";
@@ -43,6 +44,14 @@ export default function LocalitePointE() {
       <div className="mt-8">
         <GoogleMapSection />
       </div>
+
+      <Callout title="Informations utiles">
+        <ul className="list-disc pl-5">
+          <li>Devis clairs après examen et plan de traitement.</li>
+          <li>Assurances: collaboration avec de nombreux partenaires.</li>
+          <li>Photos avant/après possibles pour les soins esthétiques.</li>
+        </ul>
+      </Callout>
     </section>
   );
 }

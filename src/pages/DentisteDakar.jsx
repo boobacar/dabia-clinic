@@ -13,6 +13,8 @@ import {
 import Seo from "../components/Seo";
 import Breadcrumbs from "../components/Breadcrumbs";
 import { motion } from "framer-motion";
+import AggregateRating from "../components/AggregateRating";
+import FAQ from "../components/FAQ";
 // NAP non utilisé ici pour alléger le hero
 
 export default function DentisteDakar() {
@@ -125,6 +127,7 @@ export default function DentisteDakar() {
       </motion.section>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+        <div className="md:col-span-3"><AggregateRating /></div>
         <motion.div className="contents" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.35 }}>
         <Link
           to="/competences/implantologie"
@@ -208,13 +211,22 @@ export default function DentisteDakar() {
       </div>
 
       <div className="mt-10">
-        <Link
-          to="/rendez-vous"
-          className="inline-flex px-7 py-3 rounded-full text-white bg-[#bb2988] hover:opacity-95 shadow"
-        >
+        <Link to="/rendez-vous" className="btn-cta btn-cta-lg">
           Prendre rendez-vous
         </Link>
       </div>
+
+      {/* FAQ – Dentiste Dakar */}
+      <FAQ
+        className="mt-10"
+        items={[
+          { q: "Prenez‑vous les urgences dentaires ?", a: "Oui, nous organisons des créneaux prioritaires. En cas de gonflement/fièvre, contactez‑nous rapidement." },
+          { q: "Quels sont vos tarifs ?", a: "Un devis clair est remis après l’examen clinique et le plan de traitement. Nous expliquons les options et alternatives." },
+          { q: "Acceptez‑vous des assurances ?", a: "Oui, nous travaillons avec de nombreux partenaires. Consultez la page Assurances ou appelez‑nous pour confirmer la vôtre." },
+          { q: "Quelles technologies utilisez‑vous ?", a: "CBCT (radio 3D), scanner intra‑oral, laser, autoclaves Classe B, imagerie numérique — pour précision et confort." },
+          { q: "Comment prendre rendez‑vous ?", a: "En ligne en 1 minute via la page Rendez‑vous, par téléphone ou WhatsApp." },
+        ]}
+      />
     </main>
   );
 }

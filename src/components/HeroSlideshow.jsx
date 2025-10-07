@@ -52,12 +52,12 @@ const HeroVideo = () => {
           src={currentSrc}
           alt="Dentiste Dakar - Clinique dentaire DABIA"
           aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover will-change-[opacity]"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          className="absolute inset-0 w-full h-full object-cover will-change-[opacity,transform]"
+          initial={{ opacity: 0, scale: shouldReduceMotion ? 1 : 1.08 }}
+          animate={{ opacity: 1, scale: shouldReduceMotion ? 1 : 1.2 }}
           exit={{ opacity: shouldReduceMotion ? 1 : 0 }}
           transition={{
-            duration: shouldReduceMotion ? 0 : FADE_S,
+            duration: shouldReduceMotion ? 0 : SLIDE_MS/1000,
             ease: "easeOut",
           }}
         />
@@ -113,10 +113,7 @@ const HeroVideo = () => {
           Des soins avancés, un accueil chaleureux, un sourire radieux.
         </motion.p>
 
-        <Link
-          to="/rendez-vous"
-          className="bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold hover:scale-110 hover:brightness-110 transition-transform duration-300"
-        >
+        <Link to="/rendez-vous" className="btn-cta">
           Prendre un rendez-vous
         </Link>
       </motion.div>

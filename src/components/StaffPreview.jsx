@@ -68,10 +68,7 @@ const StaffPreview = () => {
         </motion.div>
       </motion.div>
       <div className="text-center">
-        <Link
-          to="/personnel"
-          className="bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold hover:scale-105 transition-transform"
-        >
+        <Link to="/personnel" className="btn-cta">
           Voir tout le personnel
         </Link>
       </div>

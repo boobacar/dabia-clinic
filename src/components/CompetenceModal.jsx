@@ -85,16 +85,10 @@ export default function CompetenceModal({ open, item, onClose }) {
             )}
 
             <div className="mt-6 flex gap-3">
-              <Link
-                to="/rendez-vous"
-                className="animate-bounce inline-block bg-[#bb2988] text-white px-6 py-3 rounded-full font-semibold transition transform hover:scale-105"
-              >
+              <Link to="/rendez-vous" className="btn-cta">
                 Prendre un RV
               </Link>
-              <button
-                onClick={onClose}
-                className="inline-block border px-5 py-2 rounded-full font-semibold hover:bg-gray-50"
-              >
+              <button onClick={onClose} className="btn-cta btn-cta-sm">
                 Fermer
               </button>
             </div>

@@ -36,6 +36,11 @@ const STATIC_ROUTES = [
   "/cabinet-dentaire-yoff",
   "/cabinet-dentaire-hlm-grand-yoff",
   "/cabinet-dentaire-scat-urbam",
+  "/cabinet-dentaire-ngor",
+  "/cabinet-dentaire-ouakam",
+  "/cabinet-dentaire-patte-d-oie",
+  "/cabinet-dentaire-fann",
+  "/cabinet-dentaire-plateau",
 ];
 
 const readFileSafe = async (p) => {
