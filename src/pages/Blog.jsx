@@ -66,7 +66,7 @@ export default function Blog() {
             prendre soin de votre sourire à Dakar.
           </p>
 
-          <div className="flex flex-wrap items-center gap-3 mb-8">
+          <div className="flex items-center gap-3 mb-8 flex-nowrap overflow-x-auto">
             <input
               value={search}
               onChange={(e) => {
@@ -74,7 +74,7 @@ export default function Blog() {
                 setSearch(e.target.value);
               }}
               placeholder="Rechercher : dentiste Dakar, urgence…"
-              className="w-full md:w-96 border rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#bb2988]"
+              className="input-cta flex-1 min-w-[220px]"
             />
             <select
               value={cat}
@@ -82,7 +82,7 @@ export default function Blog() {
                 setPage(1);
                 setCat(e.target.value);
               }}
-              className="select-cta"
+              className="select-cta shrink-0 min-w-[190px]"
             >
               <option value="">Toutes catégories</option>
               {CATEGORIES.map((c) => (
