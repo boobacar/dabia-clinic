@@ -8,6 +8,11 @@ const defaultSite = {
   logo: "/logo192.png",
   locale: "fr_SN",
   phone: "+221777039393",
+  sameAs: [
+    "https://www.facebook.com/cliniquedentairedabia/?locale=fr_FR",
+    "https://www.instagram.com/clinique_dentaire_dabia/",
+    "https://sn.linkedin.com/company/clinique-dentaire-dabia",
+  ],
   address: {
     streetAddress: "Sicap Foire, 2 voies Liberté 6 (à 150m du Uno)",
     addressLocality: "Dakar",
@@ -47,10 +52,23 @@ export default function Seo({
     telephone: defaultSite.phone,
     address: { "@type": "PostalAddress", ...defaultSite.address },
     openingHours: ["Mo-Fr 09:00-19:00", "Sa 09:00-13:00"],
-    sameAs: [],
+    sameAs: defaultSite.sameAs,
   };
 
-  const blocks = [orgJsonLd, ...jsonLd];
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: defaultSite.name,
+    alternateName: [
+      "DABIA",
+      "Clinique DABIA",
+      "Clinique Dentaire DABIA",
+      "Clinique Dentaire Dabia",
+    ],
+    url: defaultSite.domain,
+  };
+
+  const blocks = [websiteJsonLd, orgJsonLd, ...jsonLd];
 
   return (
     <>
@@ -63,7 +81,9 @@ export default function Seo({
       <meta property="og:url" content={finalUrl} />
       <meta property="og:image" content={image} />
       <meta property="og:locale" content={locale} />
-      <meta property="og:site_name" content={defaultSite.siteLabel} />
+      <meta property="og:site_name" content={defaultSite.name} />
+      <meta name="application-name" content={defaultSite.name} />
+      <meta name="apple-mobile-web-app-title" content={defaultSite.name} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={finalTitle} />
       <meta name="twitter:description" content={finalDesc} />
