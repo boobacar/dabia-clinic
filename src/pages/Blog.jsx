@@ -38,7 +38,10 @@ export default function Blog() {
   }, [search, cat]);
 
   const [page, setPage] = useState(1);
-  const sorted = useMemo(() => [...filtered].sort(sortPinnedThenDate), [filtered]);
+  const sorted = useMemo(
+    () => [...filtered].sort(sortPinnedThenDate),
+    [filtered]
+  );
   const totalPages = Math.max(1, Math.ceil(sorted.length / PAGE_SIZE));
   const pageItems = sorted.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
@@ -66,7 +69,7 @@ export default function Blog() {
             prendre soin de votre sourire à Dakar.
           </p>
 
-          <div className="flex items-center gap-3 mb-8 flex-nowrap overflow-x-auto">
+          <div className="flex items-center gap-3 mb-8 p-3 flex-nowrap overflow-x-auto">
             <input
               value={search}
               onChange={(e) => {
@@ -168,7 +171,7 @@ export default function Blog() {
                 <button
                   key={c}
                   onClick={() => {
-                      setPage(1);
+                    setPage(1);
                     setCat(c === cat ? "" : c);
                   }}
                   className={`px-3 py-1 rounded-full ${
@@ -196,11 +199,37 @@ export default function Blog() {
           <div className="p-5 rounded-xl border">
             <p className="font-semibold mb-2">Liens utiles</p>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/all-competences" className="hover:text-[#bb2988]">Nos compétences</Link></li>
-              <li><Link to="/dentiste-dakar" className="hover:text-[#bb2988]">Dentiste à Dakar</Link></li>
-              <li><Link to="/cabinet-dentaire-dakar" className="hover:text-[#bb2988]">Cabinet dentaire Dakar</Link></li>
-              <li><Link to="/urgence-dentaire-dakar" className="hover:text-[#bb2988]">Urgence dentaire</Link></li>
-              <li><Link to="/rendez-vous" className="hover:text-[#bb2988]">Prendre rendez‑vous</Link></li>
+              <li>
+                <Link to="/all-competences" className="hover:text-[#bb2988]">
+                  Nos compétences
+                </Link>
+              </li>
+              <li>
+                <Link to="/dentiste-dakar" className="hover:text-[#bb2988]">
+                  Dentiste à Dakar
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/cabinet-dentaire-dakar"
+                  className="hover:text-[#bb2988]"
+                >
+                  Cabinet dentaire Dakar
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/urgence-dentaire-dakar"
+                  className="hover:text-[#bb2988]"
+                >
+                  Urgence dentaire
+                </Link>
+              </li>
+              <li>
+                <Link to="/rendez-vous" className="hover:text-[#bb2988]">
+                  Prendre rendez‑vous
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="p-5 rounded-xl border bg-gradient-to-br from-white to-gray-50">
@@ -208,7 +237,10 @@ export default function Blog() {
             <p className="text-sm text-gray-600">
               Réservez votre consultation en ligne en 1 minute.
             </p>
-            <Link to="/rendez-vous" className="mt-3 inline-block btn-cta btn-cta-sm">
+            <Link
+              to="/rendez-vous"
+              className="mt-3 inline-block btn-cta btn-cta-sm"
+            >
               Prendre rendez-vous
             </Link>
           </div>
