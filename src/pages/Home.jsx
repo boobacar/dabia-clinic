@@ -18,7 +18,6 @@ import SkeletonImage from "../components/SkeletonImage";
 import SectionWave from "../components/SectionWave";
 import KeyMetrics from "../components/KeyMetrics";
 import AssuranceMarquee from "../components/AssuranceMarquee";
-import ReviewsChips from "../components/ReviewsChips";
 // Logos assurances (pour la home marquee)
 import logoSunu from "../assets/assurances/sunu.webp";
 import logoAxa from "../assets/assurances/axa.webp";
@@ -30,26 +29,14 @@ import logoAscoma from "../assets/assurances/ascoma.webp";
 import logoWafa from "../assets/assurances/wafa.webp";
 import logoAmsa from "../assets/assurances/amsa.webp";
 import logoSanlam from "../assets/assurances/sanlam.webp";
-import logoFinafrica from "../assets/assurances/finafrica.webp";
-import logoWillis from "../assets/assurances/willis.webp";
-import logoGga from "../assets/assurances/gga.webp";
-import logoAfiyah from "../assets/assurances/afiyah.webp";
 import logoIpmSonatel from "../assets/assurances/ipm_sonatel.webp";
 import logoIpmEiffage from "../assets/assurances/ipm_eiffage.webp";
 import logoIpmBis from "../assets/assurances/ipm_bis.webp";
-import logoIpmSagfa from "../assets/assurances/ipm_sagfa.webp";
 import logoIpmPoste from "../assets/assurances/ipm_poste.webp";
 import logoIpmCentif from "../assets/assurances/ipm_centif.webp";
 import logoIpmKingFahd from "../assets/assurances/ipm_kingfahd.webp";
-import logoSypaoa from "../assets/assurances/sypaoa.webp";
 import logoTransvie from "../assets/assurances/transvie.webp";
 import logoIpmSenelec from "../assets/assurances/ipm_senelec.webp";
-import logoIpmSura from "../assets/assurances/ipm_sura.webp";
-import logoSusu from "../assets/assurances/susu.webp";
-import logoAgetip from "../assets/assurances/agetip.webp";
-import logoMutuelleCapVert from "../assets/assurances/mutuelle_cap_vert.webp";
-import logoPhosphateThies from "../assets/assurances/phosphate_thies.webp";
-import logoExpressSante from "../assets/assurances/express_sante.webp";
 import logoDgid from "../assets/assurances/dgid.webp";
 
 // Utils: épinglés d'abord puis date décroissante
@@ -94,40 +81,22 @@ const Home = () => {
           <Link to="/dentiste-dakar" className="btn-cta btn-cta-sm">
             Dentiste Dakar
           </Link>
-          <Link
-            to="/cabinet-dentaire-dakar"
-            className="btn-cta btn-cta-sm"
-          >
+          <Link to="/cabinet-dentaire-dakar" className="btn-cta btn-cta-sm">
             Cabinet dentaire
           </Link>
-          <Link
-            to="/urgence-dentaire-dakar"
-            className="btn-cta btn-cta-sm"
-          >
+          <Link to="/urgence-dentaire-dakar" className="btn-cta btn-cta-sm">
             Urgence
           </Link>
-          <Link
-            to="/all-competences"
-            className="btn-cta btn-cta-sm"
-          >
+          <Link to="/all-competences" className="btn-cta btn-cta-sm">
             Compétences
           </Link>
-          <Link
-            to="/infos/technologie"
-            className="btn-cta btn-cta-sm"
-          >
+          <Link to="/infos/technologie" className="btn-cta btn-cta-sm">
             Technologie
           </Link>
-          <Link
-            to="/infos/assurances"
-            className="btn-cta btn-cta-sm"
-          >
+          <Link to="/infos/assurances" className="btn-cta btn-cta-sm">
             Assurances
           </Link>
-          <Link
-            to="/cabinet-dentaire-liberte-6"
-            className="btn-cta btn-cta-sm"
-          >
+          <Link to="/cabinet-dentaire-liberte-6" className="btn-cta btn-cta-sm">
             Liberté 6
           </Link>
         </div>
@@ -158,7 +127,6 @@ const Home = () => {
           logoTransvie,
         ]}
       />
-      <ReviewsChips />
       <CompetencesGrid />
 
       {/* =========================
