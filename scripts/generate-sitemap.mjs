@@ -43,6 +43,18 @@ const STATIC_ROUTES = [
   "/cabinet-dentaire-plateau",
 ];
 
+// Pages clés à recrawler souvent
+const IMPORTANT_ROUTES = new Set([
+  "/",
+  "/blog",
+  "/rendez-vous",
+  "/dentiste-dakar",
+  "/cabinet-dentaire-dakar",
+  "/urgence-dentaire-dakar",
+  "/all-competences",
+  "/infos/technologie",
+]);
+
 const readFileSafe = async (p) => {
   try {
     return await readFile(p, "utf8");
@@ -81,19 +93,21 @@ async function readPostsMeta() {
 async function build() {
   await ensureDist();
   const today = iso();
+  const AGGR_DAYS = Number(process.env.SITEMAP_AGGRESSIVE_DAYS || 90); // jours récents marqués comme lastmod=today
 
   const posts = await readPostsMeta();
   console.log(`📝 Posts trouvés: ${posts.length}`);
 
   // 1) Statiques
-  const staticXml = STATIC_ROUTES.map((path) =>
-    urlNode({
+  const staticXml = STATIC_ROUTES.map((path) => {
+    const isImportant = IMPORTANT_ROUTES.has(path);
+    return urlNode({
       loc: abs(path),
       lastmod: today,
-      changefreq: path === "/" ? "daily" : "weekly",
-      priority: path === "/" ? "1.0" : "0.6",
-    })
-  );
+      changefreq: isImportant ? "daily" : "weekly",
+      priority: isImportant ? "1.0" : "0.6",
+    });
+  });
 
   // 2) Compétences (depuis src/data/competences.js)
   const compSrc = await readFileSafe(join(ROOT, "src", "data", "competences.js"));
@@ -104,14 +118,19 @@ async function build() {
   );
 
   // 3) Blog
-  const blogXml = posts.map((p) =>
-    urlNode({
+  // Articles récents: lastmod=today pour accélérer le recrawl
+  const now = Date.now();
+  const msPerDay = 24 * 60 * 60 * 1000;
+  const blogXml = posts.map((p) => {
+    const d = p.date ? new Date(p.date) : new Date();
+    const isRecent = Math.abs(now - d.getTime()) <= AGGR_DAYS * msPerDay;
+    return urlNode({
       loc: abs(`/blog/${p.slug}`),
-      lastmod: iso(p.date || today),
-      changefreq: "monthly",
-      priority: "0.7",
-    })
-  );
+      lastmod: isRecent ? today : iso(p.date || today),
+      changefreq: isRecent ? "daily" : "monthly",
+      priority: isRecent ? "0.8" : "0.7",
+    });
+  });
 
   // 4) Technologies (depuis src/data/technologies.js)
   const techSrc = await readFileSafe(join(ROOT, "src", "data", "technologies.js"));
@@ -130,6 +149,15 @@ ${[...staticXml, ...competencesXml, ...blogXml, ...techXml].join("\n")}
 </urlset>`;
 
   await writeFile(join(DIST_DIR, "sitemap.xml"), xml, "utf8");
+  // Fichier pratique pour demande de recrawl manuel (Search Console)
+  const reindexList = [
+    ...STATIC_ROUTES.filter((p) => IMPORTANT_ROUTES.has(p)).map(abs),
+    ...posts
+      .sort((a, b) => new Date(b.date) - new Date(a.date))
+      .slice(0, 12)
+      .map((p) => abs(`/blog/${p.slug}`)),
+  ].join("\n");
+  await writeFile(join(DIST_DIR, "reindex-urls.txt"), reindexList, "utf8");
   await writeFile(
     join(DIST_DIR, "robots.txt"),
     `User-agent: *
@@ -140,7 +168,7 @@ Sitemap: ${abs("/sitemap.xml")}
     "utf8"
   );
 
-  console.log("✅ sitemap.xml et robots.txt générés dans dist/");
+  console.log("✅ sitemap.xml, robots.txt et reindex-urls.txt générés dans dist/");
 }
 
 build().catch((e) => {

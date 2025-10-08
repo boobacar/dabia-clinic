@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import HeroVideo from "../components/HeroVideo";
 import BeforeAfterGallery from "../components/BeforeAfterGallery";
 import ClinicIntro from "../components/ClinicIntro";
 import CompetencesGrid from "../components/CompetencesGrid";

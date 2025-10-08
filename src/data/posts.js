@@ -127,6 +127,58 @@ Voir nos équipements d’imagerie et de planification : [/infos/technologie](/i
 *Ce contenu est informatif et ne remplace pas une consultation individuelle.*`,
   },
 
+  // NOUVEAUX ARTICLES
+  {
+    slug: "scellants-sillons-enfants-dakar",
+    title: "Scellants des sillons chez l’enfant : quand et pourquoi ?",
+    description: "Prévenir les caries des molaires définitives avec les sealants : indications, déroulé et durée.",
+    date: "2025-10-07",
+    category: "Pédiatrie",
+    tags: ["scellants", "prévention caries", "enfant"],
+    author: AUTHORS.sao,
+    cover: enfantCover,
+    readingMinutes: 8,
+    content: `Les **scellants** (ou sealants) protègent les **sillons des molaires** de l’enfant. Ils forment une fine **barrière** contre la plaque et les sucres.\n\n## Quand les poser ?\n- À l’éruption des **molaires définitives** (vers 6–7 ans),\n- Chez les enfants à **risque carieux** élevé (taches, habitudes sucrées).\n\n## Déroulé rapide\nNettoyage – isolation – application du matériau – **photopolymérisation**. Indolore et réversible.\n\n> Couplé à une **hygiène fluorée** et des contrôles, c’est une des meilleures stratégies de **prévention**.`,
+  },
+
+  {
+    slug: "bruxisme-gouttiere-protection-dakar",
+    title: "Bruxisme : symptômes, causes et gouttière de protection",
+    description: "Serrage/grincement la nuit, douleurs musculaires, usure des dents : comment diagnostiquer et soulager.",
+    date: "2025-10-07",
+    category: "Prévention",
+    tags: ["bruxisme", "gouttière", "douleur nocturne"],
+    author: AUTHORS.sao,
+    cover: nuitCover,
+    readingMinutes: 9,
+    content: `Le **bruxisme** est un **serrement/grincement** involontaire, surtout la nuit. Il peut user l’**émail** et donner des **douleurs** musculaires.\n\n## Signes\nUsure dentaire, réveils douloureux, craquements temporo‑mandibulaires.\n\n## Solutions\n- **Gouttière** de protection sur‑mesure,\n- Gestion du **stress**, posture, kiné maxillo‑faciale,\n- Contrôles réguliers.`,
+  },
+
+  {
+    slug: "all-on-4-prothese-implants-dakar",
+    title: "All‑on‑4 / Prothèse complète sur implants : pour qui ?",
+    description: "Arcade complète fixée sur 4 implants : indications, étapes, confort et entretien.",
+    date: "2025-10-07",
+    category: "Implantologie",
+    tags: ["all-on-4", "prothèse sur implants", "edentement total"],
+    author: AUTHORS.sao,
+    cover: implantCover,
+    readingMinutes: 11,
+    content: `Le concept **All‑on‑4** permet de **fixer une prothèse complète** sur **4 implants** (parfois 6 selon les cas).\n\n## Indications\nÉdentement complet, volume osseux suffisant/optimisé (greffe possible).\n\n## Étapes\nBilan 3D – planification – chirurgie – prothèse provisoire – prothèse définitive.\n\n## Entretien\nHygiène rigoureuse, irrigateur, contrôles.`,
+  },
+
+  {
+    slug: "sensibilite-dentaire-causes-solutions-dakar",
+    title: "Sensibilité dentaire : causes et solutions efficaces",
+    description: "Dents sensibles au froid/chaud : causes fréquentes et traitements possibles.",
+    date: "2025-10-07",
+    category: "Prévention",
+    tags: ["sensibilité", "émail", "collet"],
+    author: AUTHORS.sao,
+    cover: fluorCover,
+    readingMinutes: 8,
+    content: `La **sensibilité** survient quand les tubules dentinaires sont **exposés** (collets, érosion, usure).\n\n## Causes\nBrossage abrasif, déchaussement, bruxisme, acides.\n\n## Solutions\nVernis désensibilisant, **dentifrices** spécifiques, **collets** traités, gouttière si bruxisme.`,
+  },
   {
     slug: "tarif-implant-dentaire-dakar-facteurs-devis",
     title:

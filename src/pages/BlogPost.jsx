@@ -11,6 +11,7 @@ import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import { slugify } from "../utils/slugify";
 import ReadingProgress from "../components/ReadingProgress";
+// Video embeds removed per request
 import Magnetic from "../components/Magnetic";
 
 function textFromChildren(children) {
@@ -316,6 +317,7 @@ export default function BlogPost() {
               className="w-full h-150 object-cover rounded-xl mt-6"
               style={{ viewTransitionName: `post-cover-${post.slug}` }}
             />
+            {/* vidéos retirées */}
           </header>
 
           {/* TOC mobile */}

@@ -1,18 +1,11 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import herovideo from "../assets/herovideo.mp4";
+// Video asset removed; fallback to gradient background
 
 const HeroVideo = () => {
   return (
-    <section className="relative h-screen bg-black overflow-hidden">
-      <video
-        className="absolute w-full h-full object-cover"
-        autoPlay
-        loop
-        muted
-        playsInline
-        src={herovideo}
-      />
+    <section className="relative h-screen overflow-hidden bg-gradient-to-br from-black via-gray-900 to-black">
+      {/* Fallback hero sans vidéo */}
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
