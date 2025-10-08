@@ -51,10 +51,10 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
         scrolled
-          ? "bg-black/70 backdrop-blur-md shadow-md"
-          : "bg-black/30 md:bg-transparent backdrop-blur-sm md:backdrop-blur-0"
+          ? "bg-black/80 backdrop-blur-md shadow-md"
+          : "bg-black/60 backdrop-blur-md shadow"
       }`}
     >
       {/* Top info bar */}
