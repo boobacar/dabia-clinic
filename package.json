@@ -11,7 +11,9 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "postbuild": "node scripts/generate-sitemap.mjs"
+    "postbuild": "node scripts/generate-sitemap.mjs",
+    "sitemap:dev": "SITE_URL=http://localhost:5173 node scripts/generate-sitemap.mjs",
+    "seo:check": "node scripts/seo-check.mjs"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

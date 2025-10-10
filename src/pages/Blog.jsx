@@ -1,6 +1,6 @@
 // src/pages/Blog.jsx
-import React, { useMemo, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import React, { useEffect, useMemo, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Seo from "../components/Seo";
 import Breadcrumbs from "../components/Breadcrumbs";
 import { POSTS, CATEGORIES, TAGS } from "../data/posts";
@@ -22,6 +22,8 @@ export default function Blog() {
   const q = useQuery();
   const [search, setSearch] = useState(q.get("q") || "");
   const [cat, setCat] = useState(q.get("cat") || "");
+  const [page, setPage] = useState(Number(q.get("page") || "1"));
+  const navigate = useNavigate();
 
   const filtered = useMemo(() => {
     return POSTS.filter((p) => {
@@ -37,7 +39,6 @@ export default function Blog() {
     });
   }, [search, cat]);
 
-  const [page, setPage] = useState(1);
   const sorted = useMemo(
     () => [...filtered].sort(sortPinnedThenDate),
     [filtered]
@@ -45,13 +46,24 @@ export default function Blog() {
   const totalPages = Math.max(1, Math.ceil(sorted.length / PAGE_SIZE));
   const pageItems = sorted.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
+  useEffect(() => {
+    const params = new URLSearchParams();
+    if (search) params.set("q", search);
+    if (cat) params.set("cat", cat);
+    if (page > 1) params.set("page", String(page));
+    const query = params.toString();
+    navigate({ pathname: "/blog", search: query ? `?${query}` : "" }, { replace: true });
+  }, [search, cat, page, navigate]);
+
   return (
     <section className="py-10 px-4 max-w-7xl mx-auto mt-20">
       <Seo
         title="Blog dentaire à Dakar – Conseils, urgences, prix"
         description="Articles clairs et fiables par la Clinique Dentaire DABIA : urgences dentaires à Dakar, blanchiment, implants, orthodontie, prévention, enfants."
-        url={`https://www.cliniquedentairedabia.com/blog`}
+        url={`https://www.cliniquedentairedabia.com/blog${page>1?`?page=${page}`:""}`}
         canonical={`https://www.cliniquedentairedabia.com/blog`}
+        prevUrl={page>1?`/blog?page=${page-1}`:undefined}
+        nextUrl={page<totalPages?`/blog?page=${page+1}`:undefined}
         type="website"
       />
 

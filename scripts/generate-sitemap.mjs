@@ -10,6 +10,8 @@ const SITE_URL =
 
 const ROOT = process.cwd();
 const DIST_DIR = join(ROOT, "dist");
+const PUBLIC_DIR = join(ROOT, "public");
+const PUBLIC_SITEMAPS_DIR = join(PUBLIC_DIR, "sitemaps");
 const POSTS_META_PATH = join(ROOT, "src", "data", "posts.meta.json");
 
 const STATIC_ROUTES = [
@@ -79,6 +81,11 @@ async function ensureDist() {
   if (!existsSync(DIST_DIR)) await mkdir(DIST_DIR, { recursive: true });
 }
 
+async function ensurePublic() {
+  if (!existsSync(PUBLIC_DIR)) await mkdir(PUBLIC_DIR, { recursive: true });
+  if (!existsSync(PUBLIC_SITEMAPS_DIR)) await mkdir(PUBLIC_SITEMAPS_DIR, { recursive: true });
+}
+
 async function readPostsMeta() {
   try {
     const raw = await readFile(POSTS_META_PATH, "utf8");
@@ -92,6 +99,7 @@ async function readPostsMeta() {
 
 async function build() {
   await ensureDist();
+  await ensurePublic();
   const today = iso();
   const AGGR_DAYS = Number(process.env.SITEMAP_AGGRESSIVE_DAYS || 90); // jours récents marqués comme lastmod=today
 
@@ -169,6 +177,30 @@ Sitemap: ${abs("/sitemap.xml")}
   );
 
   console.log("✅ sitemap.xml, robots.txt et reindex-urls.txt générés dans dist/");
+
+  // Generate public sitemap index + section files for local dev (Vite)
+  const indexXml = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <sitemap>\n    <loc>${SITE_URL}/sitemaps/sitemap-static.xml</loc>\n    <lastmod>${today}</lastmod>\n  </sitemap>\n  <sitemap>\n    <loc>${SITE_URL}/sitemaps/sitemap-competences.xml</loc>\n    <lastmod>${today}</lastmod>\n  </sitemap>\n  <sitemap>\n    <loc>${SITE_URL}/sitemaps/sitemap-blog.xml</loc>\n    <lastmod>${today}</lastmod>\n  </sitemap>\n  <sitemap>\n    <loc>${SITE_URL}/sitemaps/sitemap-technologies.xml</loc>\n    <lastmod>${today}</lastmod>\n  </sitemap>\n  <sitemap>\n    <loc>${SITE_URL}/sitemaps/sitemap-images.xml</loc>\n    <lastmod>${today}</lastmod>\n  </sitemap>\n</sitemapindex>`;
+  await writeFile(join(PUBLIC_DIR, "sitemap.xml"), indexXml, "utf8");
+  const wrap = (nodes) => `<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n${nodes.join("\n")}\n</urlset>`;
+  await writeFile(join(PUBLIC_SITEMAPS_DIR, "sitemap-static.xml"), wrap(staticXml), "utf8");
+  await writeFile(join(PUBLIC_SITEMAPS_DIR, "sitemap-competences.xml"), wrap(competencesXml), "utf8");
+  await writeFile(join(PUBLIC_SITEMAPS_DIR, "sitemap-blog.xml"), wrap(blogXml), "utf8");
+  await writeFile(join(PUBLIC_SITEMAPS_DIR, "sitemap-technologies.xml"), wrap(techXml), "utf8");
+  // Images sitemap
+  const postsJs = await readFile(join(ROOT, "src", "data", "posts.js"), "utf8").catch(() => "");
+  const imports = new Map();
+  for (const m of postsJs.matchAll(/import\s+(\w+)\s+from\s+"([^"]+)";/g)) imports.set(m[1], m[2]);
+  const imgNodes = [];
+  for (const m of postsJs.matchAll(/slug:\s*"([^"]+)"[\s\S]*?cover:\s*(\w+),/g)) {
+    const slug = m[1];
+    const varName = m[2];
+    const rel = imports.get(varName) || "/og-image.jpg";
+    const imgAbs = abs(rel);
+    imgNodes.push(`  <url>\n    <loc>${abs(`/blog/${slug}`)}</loc>\n    <image:image xmlns:image=\"http://www.google.com/schemas/sitemap-image/1.1\">\n      <image:loc>${imgAbs}</image:loc>\n    </image:image>\n  </url>`);
+  }
+  const wrapImg = (nodes) => `<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\" xmlns:image=\"http://www.google.com/schemas/sitemap-image/1.1\">\n${nodes.join("\n")}\n</urlset>`;
+  await writeFile(join(PUBLIC_SITEMAPS_DIR, "sitemap-images.xml"), wrapImg(imgNodes), "utf8");
+  console.log("✅ sitemap index + sections générés dans public/ pour le dev local");
 }
 
 build().catch((e) => {

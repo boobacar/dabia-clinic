@@ -34,6 +34,9 @@ export default function Seo({
   modifiedTime,
   locale = "fr_SN",
   hrefLangs,
+  robots = "index,follow",
+  prevUrl,
+  nextUrl,
 }) {
   const finalTitle = title
     ? `${title} | ${defaultSite.name}`
@@ -70,6 +73,14 @@ export default function Seo({
 
   const blocks = [websiteJsonLd, orgJsonLd, ...jsonLd];
 
+  const makeAbs = (u) => {
+    if (!u) return undefined;
+    if (/^https?:\/\//i.test(u)) return u;
+    const base = defaultSite.domain.replace(/\/$/, "");
+    const path = u.startsWith("/") ? u : `/${u}`;
+    return `${base}${path}`;
+  };
+
   return (
     <>
       {/* React 19: ces balises sont automatiquement intégrées dans <head> */}
@@ -95,6 +106,9 @@ export default function Seo({
         <meta property="article:modified_time" content={modifiedTime} />
       )}
       {canonical && <link rel="canonical" href={canonical} />}
+      {prevUrl && <link rel="prev" href={makeAbs(prevUrl)} />}
+      {nextUrl && <link rel="next" href={makeAbs(nextUrl)} />}
+      {robots && <meta name="robots" content={robots} />}
       {(() => {
         const entries = hrefLangs || (
           canonical

@@ -116,6 +116,26 @@ const Header = () => {
           </div>
         </div>
       </div>
+      {/* JSON-LD SiteNavigationElement */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SiteNavigationElement",
+            name: navLinks.filter((n) => !n.isDropdown).map((n) => n.name),
+            url: navLinks
+              .filter((n) => !n.isDropdown)
+              .map((n) => {
+                const base =
+                  typeof window !== "undefined" && window.location?.origin
+                    ? window.location.origin
+                    : "https://www.cliniquedentairedabia.com";
+                return `${base}${n.path}`;
+              }),
+          }),
+        }}
+      />
 
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         <Link

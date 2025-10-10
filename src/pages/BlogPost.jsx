@@ -1,5 +1,5 @@
 // src/pages/BlogPost.jsx
-import React, { useEffect, useMemo } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Seo from "../components/Seo";
 import Breadcrumbs from "../components/Breadcrumbs";
@@ -152,12 +152,27 @@ export default function BlogPost() {
     setTimeout(() => window.scrollTo({ top: y, behavior: "smooth" }), 0);
   }, [post?.slug]);
 
+  const [imgDims, setImgDims] = useState(null);
+  useEffect(() => {
+    try {
+      const img = new Image();
+      img.src = post.cover;
+      img.onload = () => setImgDims({ width: img.naturalWidth, height: img.naturalHeight });
+    } catch {}
+  }, [post.cover]);
+
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: post.title,
     description: post.description,
-    image: [post.cover],
+    image: [
+      {
+        "@type": "ImageObject",
+        url: post.cover,
+        ...(imgDims ? { width: imgDims.width, height: imgDims.height } : {}),
+      },
+    ],
     datePublished: post.date,
     dateModified: post.date,
     wordCount: Math.max(400, (post.content || "").split(/\s+/).length),
@@ -367,6 +382,26 @@ export default function BlogPost() {
                     >
                       {children}
                     </h4>
+                  );
+                },
+                a: ({ node, href = "", children, ...props }) => {
+                  const isExternal = /^https?:\/\//i.test(href);
+                  if (isExternal) {
+                    return (
+                      <a
+                        href={href}
+                        target="_blank"
+                        rel="noopener nofollow ugc"
+                        {...props}
+                      >
+                        {children}
+                      </a>
+                    );
+                  }
+                  return (
+                    <a href={href} {...props}>
+                      {children}
+                    </a>
                   );
                 },
               }}
