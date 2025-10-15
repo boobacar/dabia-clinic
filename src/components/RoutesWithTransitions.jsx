@@ -38,17 +38,21 @@ export default function RoutesWithTransitions() {
   const location = useLocation();
   const [displayLocation, setDisplayLocation] = useState(location);
 
+  // Only run a view transition when the PATHNAME changes.
+  // Ignore search/hash updates to avoid unnecessary remounts and input/click freezes.
   useEffect(() => {
+    if (location.pathname === displayLocation.pathname) return;
     if ('startViewTransition' in document) {
       // @ts-ignore
       document.startViewTransition(() => setDisplayLocation(location));
     } else {
       setDisplayLocation(location);
     }
-  }, [location]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location.pathname]);
 
   return (
-    <Routes location={displayLocation} key={displayLocation.key}>
+    <Routes location={displayLocation} key={displayLocation.pathname}>
       <Route path="/" element={<Home />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/apropos" element={<APropos />} />
