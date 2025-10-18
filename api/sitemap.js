@@ -18,7 +18,11 @@ function readFileSafe(p) {
 }
 
 module.exports = (req, res) => {
-  const host = (req.headers["x-forwarded-host"] || req.headers.host || "www.cliniquedentairedabia.com").replace(/\/$/, "");
+  const host = (
+    req.headers["x-forwarded-host"] ||
+    req.headers.host ||
+    "www.cliniquedentairedabia.com"
+  ).replace(/\/$/, "");
   const base = `https://${host}`;
   const today = new Date().toISOString().slice(0, 10);
 
@@ -56,30 +60,53 @@ module.exports = (req, res) => {
   ];
 
   // 2) Competences
-  const competencesSrc = readFileSafe(path.join(process.cwd(), "src", "data", "competences.js"));
-  const compSlugs = Array.from(competencesSrc.matchAll(/slug:\s*"([^"]+)"/g)).map((m) => m[1]);
+  const competencesSrc = readFileSafe(
+    path.join(process.cwd(), "src", "data", "competences.js")
+  );
+  const compSlugs = Array.from(
+    competencesSrc.matchAll(/slug:\s*"([^"]+)"/g)
+  ).map((m) => m[1]);
 
   // 3) Technologies
-  const techSrc = readFileSafe(path.join(process.cwd(), "src", "data", "technologies.js"));
-  const techSlugs = Array.from(techSrc.matchAll(/slug:\s*"([^"]+)"/g)).map((m) => m[1]);
-
-  // 4) Blog posts with covers for image:image
-  const postsJs = readFileSafe(path.join(process.cwd(), "src", "data", "posts.js"));
-  const importMap = new Map();
-  for (const m of postsJs.matchAll(/import\s+(\w+)\s+from\s+"([^"]+)";/g)) importMap.set(m[1], m[2]);
-  const posts = Array.from(postsJs.matchAll(/slug:\s*"([^"]+)"[\s\S]*?date:\s*"([0-9-]+)"[\s\S]*?cover:\s*(\w+),/g)).map(
-    (m) => ({ slug: m[1], date: m[2], coverVar: m[3] })
+  const techSrc = readFileSafe(
+    path.join(process.cwd(), "src", "data", "technologies.js")
+  );
+  const techSlugs = Array.from(techSrc.matchAll(/slug:\s*"([^"]+)"/g)).map(
+    (m) => m[1]
   );
 
+  // 4) Blog posts with covers for image:image
+  const postsJs = readFileSafe(
+    path.join(process.cwd(), "src", "data", "posts.js")
+  );
+  const importMap = new Map();
+  for (const m of postsJs.matchAll(/import\s+(\w+)\s+from\s+"([^"]+)";/g))
+    importMap.set(m[1], m[2]);
+  const posts = Array.from(
+    postsJs.matchAll(
+      /slug:\s*"([^"]+)"[\s\S]*?date:\s*"([0-9-]+)"[\s\S]*?cover:\s*(\w+),/g
+    )
+  ).map((m) => ({ slug: m[1], date: m[2], coverVar: m[3] }));
+
   const buf = [];
-  const pushUrl = (loc, lastmod = today, changefreq = "monthly", priority = "0.7", image) => {
+  const pushUrl = (
+    loc,
+    lastmod = today,
+    changefreq = "monthly",
+    priority = "0.7",
+    image
+  ) => {
     buf.push(
       `  <url>\n    <loc>${base}${loc}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>${changefreq}</changefreq>\n    <priority>${priority}</priority>${
         image
           ? `\n    <image:image>\n      <image:loc>${image.loc}</image:loc>${
-              image.title ? `\n      <image:title><![CDATA[${image.title}]]></image:title>` : ""
+              image.title
+                ? `\n      <image:title><![CDATA[${image.title}]]></image:title>`
+                : ""
             }${
-              image.caption ? `\n      <image:caption><![CDATA[${image.caption}]]></image:caption>` : ""
+              image.caption
+                ? `\n      <image:caption><![CDATA[${image.caption}]]></image:caption>`
+                : ""
             }\n    </image:image>`
           : ""
       }\n  </url>`
@@ -89,20 +116,28 @@ module.exports = (req, res) => {
   // Static
   STATIC.forEach(([p, cf, pr]) => pushUrl(p, today, cf, pr));
   // Competences
-  compSlugs.forEach((slug) => pushUrl(`/competences/${slug}`, today, "monthly", "0.8"));
+  compSlugs.forEach((slug) =>
+    pushUrl(`/competences/${slug}`, today, "monthly", "0.8")
+  );
   // Technologies
-  techSlugs.forEach((slug) => pushUrl(`/infos/technologie/${slug}`, today, "monthly", "0.6"));
+  techSlugs.forEach((slug) =>
+    pushUrl(`/infos/technologie/${slug}`, today, "monthly", "0.6")
+  );
   // Blog posts with image tag
   posts.forEach(({ slug, date, coverVar }) => {
-    const rel = importMap.get(coverVar) || "/og-image.jpg";
-    const imgAbs = rel.startsWith("http") ? rel : `${base}${rel.startsWith("/") ? rel : `/${rel}`}`;
+    const rel = importMap.get(coverVar) || "/og-image.webp";
+    const imgAbs = rel.startsWith("http")
+      ? rel
+      : `${base}${rel.startsWith("/") ? rel : `/${rel}`}`;
     pushUrl(`/blog/${slug}`, iso(date), "monthly", "0.7", {
       loc: imgAbs,
       caption: `Clinique Dentaire DABIA – ${slug}`,
     });
   });
 
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${buf.join("\n")}\n</urlset>`;
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${buf.join(
+    "\n"
+  )}\n</urlset>`;
 
   res.setHeader("Content-Type", "application/xml; charset=utf-8");
   res.status(200).send(xml);

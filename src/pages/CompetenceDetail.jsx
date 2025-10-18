@@ -245,7 +245,7 @@ const CompetenceDetail = () => {
     ? competence.image.startsWith("http")
       ? competence.image
       : `${origin}${competence.image}`
-    : `${origin}/og-image.jpg`;
+    : `${origin}/og-image.webp`;
   const url = `${origin}/competences/${slug}`;
 
   const jsonLdService = competence
@@ -376,7 +376,11 @@ const CompetenceDetail = () => {
         </motion.p>
 
         <motion.div className="text-center" variants={childVariant}>
-          <Link to="/rendez-vous" className="btn-cta" aria-label="Prendre rendez-vous à la Clinique Dentaire DABIA">
+          <Link
+            to="/rendez-vous"
+            className="btn-cta"
+            aria-label="Prendre rendez-vous à la Clinique Dentaire DABIA"
+          >
             Prendre un rendez-vous
           </Link>
         </motion.div>
@@ -459,7 +463,11 @@ const CompetenceDetail = () => {
               ))}
             </div>
             <div className="mt-6">
-              <Link to="/blog" className="btn-cta" aria-label="Voir tous les articles du blog">
+              <Link
+                to="/blog"
+                className="btn-cta"
+                aria-label="Voir tous les articles du blog"
+              >
                 Voir tous les articles
               </Link>
             </div>

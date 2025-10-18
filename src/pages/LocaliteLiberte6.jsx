@@ -7,19 +7,19 @@ import Callout from "../components/Callout";
 import { Link } from "react-router-dom";
 
 export default function LocaliteLiberte6() {
-  const url = "https://www.cliniquedentairedabia.com/cabinet-dentaire-liberte-6";
+  const url =
+    "https://www.cliniquedentairedabia.com/cabinet-dentaire-liberte-6";
   const jsonLd = [
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       name: "Clinique Dentaire DABIA – Liberté 6",
       url,
-      image: "/og-image.jpg",
+      image: "/og-image.webp",
       telephone: "+221777039393",
       address: {
         "@type": "PostalAddress",
-        streetAddress:
-          "Sicap Foire, 2 voies Liberté 6 (à 150m du Uno)",
+        streetAddress: "Sicap Foire, 2 voies Liberté 6 (à 150m du Uno)",
         addressLocality: "Dakar",
         addressCountry: "SN",
       },
@@ -67,7 +67,12 @@ export default function LocaliteLiberte6() {
             <li>
               Adresse : Sicap Foire, 2 voies Liberté 6 (à 150m du Uno), Dakar
             </li>
-            <li>Téléphone : <a href="tel:+221777039393" className="text-[#bb2988]">+221 77 703 93 93</a></li>
+            <li>
+              Téléphone :{" "}
+              <a href="tel:+221777039393" className="text-[#bb2988]">
+                +221 77 703 93 93
+              </a>
+            </li>
             <li>Horaires : Lun–Ven 9h–18h • Sam 9h–14h</li>
             <li>
               <Link to="/rendez-vous" className="text-[#bb2988] underline">
@@ -92,7 +97,10 @@ export default function LocaliteLiberte6() {
 
       <div className="mt-8 p-4 border rounded-lg bg-yellow-50 text-yellow-800 text-sm">
         Besoin d’une prise en charge rapide ? Consultez notre guide
-        <Link to="/blog/urgence-dentaire-dakar-que-faire" className="ml-1 underline text-[#bb2988]">
+        <Link
+          to="/blog/urgence-dentaire-dakar-que-faire"
+          className="ml-1 underline text-[#bb2988]"
+        >
           Urgence dentaire à Dakar
         </Link>
         , puis contactez-nous.
@@ -104,7 +112,10 @@ export default function LocaliteLiberte6() {
         <ul className="list-disc pl-5">
           <li>Stationnement possible à proximité (prévoir un peu d’avance).</li>
           <li>Apportez vos radios/ordonnances précédentes si disponibles.</li>
-          <li>En cas d’urgence, appelez avant votre venue pour un créneau prioritaire.</li>
+          <li>
+            En cas d’urgence, appelez avant votre venue pour un créneau
+            prioritaire.
+          </li>
         </ul>
       </Callout>
     </section>

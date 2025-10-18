@@ -15,13 +15,17 @@ export default function LocaliteParcelles() {
       "@type": "LocalBusiness",
       name: "Clinique Dentaire DABIA – Parcelles Assainies (proche)",
       url,
-      image: "/og-image.jpg",
+      image: "/og-image.webp",
       telephone: "+221777039393",
-      areaServed: ["Parcelles Assainies", "Liberté 6", "Sicap Foire", "Patte d'Oie"],
+      areaServed: [
+        "Parcelles Assainies",
+        "Liberté 6",
+        "Sicap Foire",
+        "Patte d'Oie",
+      ],
       address: {
         "@type": "PostalAddress",
-        streetAddress:
-          "Sicap Foire, 2 voies Liberté 6 (à 150m du Uno)",
+        streetAddress: "Sicap Foire, 2 voies Liberté 6 (à 150m du Uno)",
         addressLocality: "Dakar",
         addressCountry: "SN",
       },
@@ -63,7 +67,9 @@ export default function LocaliteParcelles() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
         <div className="p-5 border rounded-xl bg-white">
-          <h2 className="text-xl font-semibold mb-2">Pourquoi nous choisir ?</h2>
+          <h2 className="text-xl font-semibold mb-2">
+            Pourquoi nous choisir ?
+          </h2>
           <ul className="list-disc pl-5 text-gray-700 text-sm space-y-1">
             <li>Équipe attentive et pédagogie sur chaque traitement</li>
             <li>Imagerie moderne pour un diagnostic précis</li>
@@ -74,9 +80,7 @@ export default function LocaliteParcelles() {
         <div className="p-5 border rounded-xl bg-white">
           <h2 className="text-xl font-semibold mb-2">Informations pratiques</h2>
           <ul className="space-y-2 text-gray-700 text-sm">
-            <li>
-              Accès : Sicap Foire, 2 voies Liberté 6 (à 150m du Uno)
-            </li>
+            <li>Accès : Sicap Foire, 2 voies Liberté 6 (à 150m du Uno)</li>
             <li>
               <Link to="/rendez-vous" className="text-[#bb2988] underline">
                 Prendre rendez-vous en ligne
@@ -108,8 +112,14 @@ export default function LocaliteParcelles() {
       <Callout title="Informations utiles">
         <ul className="list-disc pl-5">
           <li>Tarifs détaillés après examen clinique et plan de traitement.</li>
-          <li>Nous travaillons avec de nombreuses assurances (voir la page dédiée).</li>
-          <li>Pour les soins esthétiques, des photos avant/après peuvent être réalisées.</li>
+          <li>
+            Nous travaillons avec de nombreuses assurances (voir la page
+            dédiée).
+          </li>
+          <li>
+            Pour les soins esthétiques, des photos avant/après peuvent être
+            réalisées.
+          </li>
         </ul>
       </Callout>
     </section>

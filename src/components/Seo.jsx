@@ -26,7 +26,7 @@ export default function Seo({
   title,
   description,
   url,
-  image = "/og-default.jpg",
+  image = "/og-image.webp",
   type = "website",
   jsonLd = [],
   canonical,
@@ -81,6 +81,8 @@ export default function Seo({
     return `${base}${path}`;
   };
 
+  // keep simple relative/absolute handling for links below
+
   return (
     <>
       {/* React 19: ces balises sont automatiquement intégrées dans <head> */}
@@ -108,18 +110,24 @@ export default function Seo({
       {canonical && <link rel="canonical" href={canonical} />}
       {prevUrl && <link rel="prev" href={makeAbs(prevUrl)} />}
       {nextUrl && <link rel="next" href={makeAbs(nextUrl)} />}
+      {/* RSS link retiré (retour configuration simple) */}
       {robots && <meta name="robots" content={robots} />}
       {(() => {
-        const entries = hrefLangs || (
-          canonical
+        const entries =
+          hrefLangs ||
+          (canonical
             ? [
                 { lang: "fr-SN", href: canonical },
                 { lang: "x-default", href: canonical },
               ]
-            : []
-        );
+            : []);
         return entries.map((e, i) => (
-          <link key={`alt-${i}`} rel="alternate" hrefLang={e.lang} href={e.href} />
+          <link
+            key={`alt-${i}`}
+            rel="alternate"
+            hrefLang={e.lang}
+            href={e.href}
+          />
         ));
       })()}
       {blocks.map((b, i) => (
