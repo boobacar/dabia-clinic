@@ -62,11 +62,11 @@ export default function Seo({
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: defaultSite.name,
+    // Garder uniquement des variantes proches pour éviter que Google choisisse un nom tronqué
     alternateName: [
-      "DABIA",
-      "Clinique DABIA",
       "Clinique Dentaire DABIA",
       "Clinique Dentaire Dabia",
+      "Clinique Dentaire DABIA - Dakar",
     ],
     url: defaultSite.domain,
   };

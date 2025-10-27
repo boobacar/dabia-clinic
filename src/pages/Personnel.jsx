@@ -4,9 +4,9 @@ import Seo from "../components/Seo";
 import Breadcrumbs from "../components/Breadcrumbs";
 
 // Importation des images
-import admin from "../assets/admin.jpeg";
-import assistanteDent from "../assets/assistanteDent.jpeg";
-import assistante from "../assets/assistante.jpeg";
+import admin from "../assets/admin.webp";
+import assistanteDent from "../assets/assistanteDent.webp";
+import assistante from "../assets/assistante.webp";
 import sao from "../assets/sao.webp";
 import { Link } from "react-router-dom";
 

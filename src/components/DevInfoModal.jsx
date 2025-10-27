@@ -1,14 +1,6 @@
 import { motion } from "framer-motion";
 import { X } from "lucide-react";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaPhone,
-  FaEnvelope,
-  FaWhatsapp,
-} from "react-icons/fa";
-import maphoto from "../assets/moi.webp";
-import { FaWebAwesome } from "react-icons/fa6";
+import { FaPhone, FaEnvelope, FaGlobe, FaCode } from "react-icons/fa";
 
 const DevInfoModal = ({ onClose }) => {
   return (
@@ -27,58 +19,39 @@ const DevInfoModal = ({ onClose }) => {
           <X />
         </button>
 
-        {/* Photo + nom */}
-        <img
-          src={maphoto}
-          alt="Dentiste Dakar - Clinique dentaire DABIA"
-          className="w-24 h-24 rounded-full mx-auto object-cover mb-4"
-        />
-        <h3 className="text-xl font-bold text-[#ad9d64]">Boubacar Fall</h3>
-        <p className="text-sm text-gray-600">Développeur Fullstack</p>
+        {/* Icône code au lieu de la photo */}
+        <div className="w-24 h-24 rounded-full mx-auto mb-4 bg-[#ad9d64]/10 flex items-center justify-center">
+          <FaCode className="text-[#ad9d64]" size={40} aria-label="Code" />
+        </div>
 
         {/* Contacts directs */}
         <div className="mt-4 space-y-2 text-sm text-gray-700">
           <div className="flex items-center justify-center gap-2">
             <FaPhone className="text-[#ad9d64]" />
-            <span>+221 77 626 00 20</span>
+            <a href="tel:+221776260020" className="hover:underline">
+              +221 77 626 00 20
+            </a>
           </div>
           <div className="flex items-center justify-center gap-2">
             <FaEnvelope className="text-[#ad9d64]" />
-            <span>info@fallcontech.com</span>
+            <a href="mailto:info@fallcontech.com" className="hover:underline">
+              info@fallcontech.com
+            </a>
           </div>
           <div className="flex items-center justify-center gap-2">
-            <FaWebAwesome className="text-[#ad9d64]" />
-            <a href="https://www.fallcontech.com">www.fallcontech.com</a>
+            <FaGlobe className="text-[#ad9d64]" />
+            <a
+              href="https://www.fallcontech.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              www.fallcontech.com
+            </a>
           </div>
         </div>
 
-        {/* Liens externes */}
-        <div className="flex justify-center gap-6 mt-5 text-[#ad9d64] text-xl">
-          <a
-            href="https://github.com/boobacar"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-black transition"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href="https://linkedin.com/in/boubsfal"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-black transition"
-          >
-            <FaLinkedin />
-          </a>
-          <a
-            href="https://wa.me/221776260020"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-green-600 transition"
-          >
-            <FaWhatsapp />
-          </a>
-        </div>
+        {/* Liens externes supprimés sur demande */}
       </div>
     </motion.div>
   );

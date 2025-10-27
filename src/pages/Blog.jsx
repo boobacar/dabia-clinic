@@ -46,6 +46,11 @@ export default function Blog() {
   const totalPages = Math.max(1, Math.ceil(sorted.length / PAGE_SIZE));
   const pageItems = sorted.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
+  // Scroll to top when changing page (e.g., Next/Previous)
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [page]);
+
   useEffect(() => {
     const params = new URLSearchParams();
     if (search) params.set("q", search);
@@ -114,14 +119,18 @@ export default function Blog() {
                 key={p.slug}
                 className="gradient-card glow-hover wow-tilt bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition"
               >
-                <Link to={`/blog/${p.slug}`}>
-                  <img
-                    src={p.cover}
-                    alt={p.title}
-                    className="w-full h-65 object-cover rounded-t-xl"
-                    style={{ viewTransitionName: `post-cover-${p.slug}` }}
-                    loading="lazy"
-                  />
+                <Link to={`/blog/${p.slug}`} className="block">
+                  <div style={{ aspectRatio: '16/9' }} className="w-full rounded-t-xl overflow-hidden">
+                    <img
+                      src={p.cover}
+                      alt={p.title}
+                      className="w-full h-full object-cover"
+                      style={{ viewTransitionName: `post-cover-${p.slug}` }}
+                      loading="lazy"
+                      decoding="async"
+                      sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"
+                    />
+                  </div>
                 </Link>
                 <div className="p-5">
                   <p className="text-xs text-gray-500">

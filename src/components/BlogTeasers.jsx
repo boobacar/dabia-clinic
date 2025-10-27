@@ -32,6 +32,7 @@ export default function BlogTeasers() {
                   alt={post.title}
                   loading="lazy"
                   decoding="async"
+                  sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"
                   className="w-full h-44"
                   imgClassName="object-cover group-hover:opacity-95 transition"
                 />

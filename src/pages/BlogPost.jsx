@@ -326,12 +326,22 @@ export default function BlogPost() {
                 <p className="text-xs text-gray-500">{post.author?.title}</p>
               </div>
             </div>
-            <img
-              src={post.cover}
-              alt={post.title}
-              className="w-full h-150 object-cover rounded-xl mt-6"
-              style={{ viewTransitionName: `post-cover-${post.slug}` }}
-            />
+            <div
+              className="w-full rounded-xl mt-6 overflow-hidden"
+              style={{ aspectRatio: imgDims ? `${imgDims.width}/${imgDims.height}` : '1200/630' }}
+            >
+              <img
+                src={post.cover}
+                alt={post.title}
+                width={imgDims?.width || 1200}
+                height={imgDims?.height || 630}
+                className="w-full h-full object-cover"
+                style={{ viewTransitionName: `post-cover-${post.slug}` }}
+                decoding="async"
+                fetchpriority="high"
+                sizes="100vw"
+              />
+            </div>
             {/* vidéos retirées */}
           </header>
 

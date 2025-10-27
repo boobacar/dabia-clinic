@@ -3,32 +3,32 @@
 import saoAvatar from "../assets/sao.webp";
 
 // Couvertures d’articles (tes fichiers)
-import urgenceCover from "../assets/blog/urgence.jpg";
+import urgenceCover from "../assets/blog/urgence.webp";
 import blanchimentCover from "../assets/technologie/tech-led.webp";
-import implantCover from "../assets/blog/implant.jpg";
-import orthodontieCover from "../assets/blog/orthodontie.jpg";
-import gingiviteCover from "../assets/blog/gingivite.jpg";
+import implantCover from "../assets/blog/implant.webp";
+import orthodontieCover from "../assets/blog/orthodontie.webp";
+import gingiviteCover from "../assets/blog/gingivite.webp";
 import nuitCover from "../assets/blog/malnuit.webp";
-import enfantCover from "../assets/blog/enfant.jpg";
-import prixCover from "../assets/blog/prix.jpg";
+import enfantCover from "../assets/blog/enfant.webp";
+import prixCover from "../assets/blog/prix.webp";
 import endoCover from "../assets/blog/canal.webp"; // Traitement canalaire
 import facettesCover from "../assets/blog/facette.webp"; // Facettes dentaires
-import airflowCover from "../assets/blog/Airflow.jpg"; // Détartrage vs AirFlow
-import halitoseCover from "../assets/blog/halitose.jpg"; // Mauvaise haleine
-import carieCover from "../assets/blog/carie.jpg";
-import sagesseCover from "../assets/blog/sagesse.jpg";
-import protheseCover from "../assets/blog/prothese.jpeg";
-import urgenceNuitCover from "../assets/blog/urgence-nuit.jpeg";
+import airflowCover from "../assets/blog/Airflow.webp"; // Détartrage vs AirFlow
+import halitoseCover from "../assets/blog/halitose.webp"; // Mauvaise haleine
+import carieCover from "../assets/blog/carie.webp";
+import sagesseCover from "../assets/blog/sagesse.webp";
+import protheseCover from "../assets/blog/prothese.webp";
+import urgenceNuitCover from "../assets/blog/urgence-nuit.webp";
 import blanchimentVsFacettesCover from "../assets/blog/facette-blanchiment.webp";
-import grossesseCover from "../assets/blog/grossesse.jpeg";
-import fluorCover from "../assets/blog/fluor.jpeg";
-import sedationCover from "../assets/blog/sedation.jpg";
-import invisalignCover from "../assets/blog/invisalign.jpg";
-import bridgeImplantCover from "../assets/blog/bridge-vs-implant.jpeg";
-import onlayCover from "../assets/blog/onlay.jpg";
+import grossesseCover from "../assets/blog/grossesse.webp";
+import fluorCover from "../assets/blog/fluor.webp";
+import sedationCover from "../assets/blog/sedation.webp";
+import invisalignCover from "../assets/blog/invisalign.webp";
+import bridgeImplantCover from "../assets/blog/bridge-vs-implant.webp";
+import onlayCover from "../assets/blog/onlay.webp";
 import cbctCover from "../assets/technologie/tech-cbct.webp";
 import traumaEnfantCover from "../assets/blog/trauma-enfant.webp";
-import diabeteCover from "../assets/blog/diabete.jpg";
+import diabeteCover from "../assets/blog/diabete.webp";
 
 export const AUTHORS = {
   sao: {

@@ -17,9 +17,9 @@ const HeroVideo = () => {
     console.log("All letters have animated!");
   };
 
-  // Préchargement des images
+  // Préchargement léger: première et suivante uniquement (réduit la concurrence réseau initiale)
   useEffect(() => {
-    heroImages.forEach((src) => {
+    [heroImages[0], heroImages[1]].filter(Boolean).forEach((src) => {
       const img = new Image();
       img.src = src;
     });
@@ -53,11 +53,14 @@ const HeroVideo = () => {
           alt="Dentiste Dakar - Clinique dentaire DABIA"
           aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover will-change-[opacity,transform]"
+          decoding="async"
+          fetchpriority={index === 0 ? "high" : "auto"}
+          sizes="100vw"
           initial={{ opacity: 0, scale: shouldReduceMotion ? 1 : 1.08 }}
           animate={{ opacity: 1, scale: shouldReduceMotion ? 1 : 1.2 }}
           exit={{ opacity: shouldReduceMotion ? 1 : 0 }}
           transition={{
-            duration: shouldReduceMotion ? 0 : SLIDE_MS/1000,
+            duration: shouldReduceMotion ? 0 : Math.min(1.2, SLIDE_MS/1000),
             ease: "easeOut",
           }}
         />
