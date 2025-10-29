@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { FAKE_GOOGLE_REVIEWS } from "../data/fakeGoogleReviews";
 
 export default function AggregateRating({
   as = "Dentist",
@@ -7,16 +8,14 @@ export default function AggregateRating({
 }) {
   const [data, setData] = useState(null);
   useEffect(() => {
-    let mounted = true;
-    fetch("/api/google-reviews").then(async (r) => {
-      try {
-        const j = await r.json();
-        if (mounted && j && j.rating && j.user_ratings_total) setData(j);
-      } catch {}
+    // Compute aggregate from local static reviews only
+    const reviews = FAKE_GOOGLE_REVIEWS.reviews || [];
+    const avg =
+      reviews.reduce((s, r) => s + (r.rating || 0), 0) / (reviews.length || 1);
+    setData({
+      rating: Number.isFinite(avg) ? Math.round(avg * 10) / 10 : 5,
+      user_ratings_total: reviews.length,
     });
-    return () => {
-      mounted = false;
-    };
   }, []);
 
   if (!data) return null;
@@ -46,4 +45,3 @@ export default function AggregateRating({
     </div>
   );
 }
-

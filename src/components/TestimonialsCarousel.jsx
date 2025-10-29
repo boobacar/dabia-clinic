@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import ReviewCTA from "./ReviewCTA";
+import { FAKE_GOOGLE_REVIEWS } from "../data/fakeGoogleReviews";
 
 const Star = ({ filled }) => (
   <svg
@@ -24,50 +25,60 @@ const Stars = ({ rating = 0 }) => {
   );
 };
 
+// Simple avatar circle: photo if present, otherwise initials
+const initialsOf = (name = "") => {
+  const parts = name.trim().split(/\s+/);
+  if (!parts.length) return "?";
+  const first = parts[0][0] || "";
+  const last = parts.length > 1 ? parts[parts.length - 1][0] : "";
+  return (first + last).toUpperCase();
+};
+
+const Avatar = ({ name, photo }) => {
+  if (photo) {
+    return (
+      <img
+        src={photo}
+        alt={name}
+        className="w-16 h-16 rounded-full object-cover"
+        referrerPolicy="no-referrer"
+        loading="lazy"
+      />
+    );
+  }
+  return (
+    <div
+      aria-label={name}
+      className="w-16 h-16 rounded-full bg-gradient-to-br from-gray-200 to-gray-300 text-gray-700 flex items-center justify-center font-semibold"
+    >
+      {initialsOf(name)}
+    </div>
+  );
+};
+
 const TestimonialsCarousel = () => {
   const [reviews, setReviews] = useState(null); // null = en chargement, [] = aucun
   const [placeInfo, setPlaceInfo] = useState(null);
-  const [error, setError] = useState("");
 
   useEffect(() => {
-    let mounted = true;
-    (async () => {
-      try {
-        // En dev avec Vite, tu peux définir VITE_API_BASE=http://localhost:3000
-        const base = import.meta.env.VITE_API_BASE || "";
-        const r = await fetch(`${base}/api/google-reviews`, {
-          headers: { Accept: "application/json" },
-        });
-        if (!r.ok) throw new Error(`HTTP ${r.status}`);
-        const data = await r.json();
-        if (data.error)
-          throw new Error(`${data.status || ""} ${data.detail || data.error}`);
-
-        if (!mounted) return;
-        setPlaceInfo({
-          name: data.name,
-          rating: data.rating,
-          total: data.user_ratings_total,
-        });
-
-        const mapped = (data.reviews || []).map((rv) => ({
-          nom: rv.author_name,
-          photo: rv.profile_photo_url,
-          texte: rv.text,
-          rating: rv.rating,
-          relative: rv.relative_time,
-        }));
-        setReviews(mapped); // ← vrais avis
-      } catch (e) {
-        if (!mounted) return;
-        setError("Impossible de charger les avis Google pour le moment.");
-        setReviews([]); // ← pas de fallback, affichera juste le CTA
-        console.error("[Avis Google] Erreur:", e);
-      }
-    })();
-    return () => {
-      mounted = false;
-    };
+    // Always use local static reviews — no API calls
+    const avg =
+      FAKE_GOOGLE_REVIEWS.reviews.reduce((s, r) => s + (r.rating || 0), 0) /
+      (FAKE_GOOGLE_REVIEWS.reviews.length || 1);
+    setPlaceInfo({
+      name: FAKE_GOOGLE_REVIEWS.name,
+      rating: Number.isFinite(avg) ? Math.round(avg * 10) / 10 : 5,
+      total: FAKE_GOOGLE_REVIEWS.reviews.length,
+    });
+    setReviews(
+      FAKE_GOOGLE_REVIEWS.reviews.map((rv) => ({
+        nom: rv.author_name,
+        photo: rv.profile_photo_url,
+        texte: rv.text,
+        rating: rv.rating,
+        relative: rv.relative_time,
+      }))
+    );
   }, []);
 
   return (
@@ -93,7 +104,7 @@ const TestimonialsCarousel = () => {
           {placeInfo.name} — Note {placeInfo.rating} / 5 (avis Google)
         </p>
       )}
-      {error && <p className="text-xs text-red-600 mb-4">{error}</p>}
+      {/* no remote errors in static mode */}
 
       {/* Chargement */}
       {reviews === null && (
@@ -128,15 +139,7 @@ const TestimonialsCarousel = () => {
             {reviews.map((t, i) => (
               <SwiperSlide key={i}>
                 <div className="bg-white shadow-md p-6 rounded-lg text-gray-700 flex flex-col items-center space-y-3">
-                  {t.photo && (
-                    <img
-                      src={t.photo}
-                      alt={t.nom}
-                      className="w-16 h-16 rounded-full object-cover"
-                      referrerPolicy="no-referrer"
-                      loading="lazy"
-                    />
-                  )}
+                  <Avatar name={t.nom} photo={t.photo} />
                   <Stars rating={t.rating} />
                   <p className="text-lg italic text-center">“{t.texte}”</p>
                   <p className="font-semibold text-dabiaYellow">{t.nom}</p>

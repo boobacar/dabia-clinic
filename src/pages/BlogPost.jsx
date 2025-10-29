@@ -338,7 +338,7 @@ export default function BlogPost() {
                 className="w-full h-full object-cover"
                 style={{ viewTransitionName: `post-cover-${post.slug}` }}
                 decoding="async"
-                fetchpriority="high"
+                fetchPriority="high"
                 sizes="100vw"
               />
             </div>

@@ -54,7 +54,7 @@ const HeroVideo = () => {
           aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover will-change-[opacity,transform]"
           decoding="async"
-          fetchpriority={index === 0 ? "high" : "auto"}
+          fetchPriority={index === 0 ? "high" : "auto"}
           sizes="100vw"
           initial={{ opacity: 0, scale: shouldReduceMotion ? 1 : 1.08 }}
           animate={{ opacity: 1, scale: shouldReduceMotion ? 1 : 1.2 }}
