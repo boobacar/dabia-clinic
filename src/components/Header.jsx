@@ -21,6 +21,7 @@ const Header = () => {
     { name: "Accueil", path: "/" },
     { name: "Compétences", path: "/all-competences" },
     { name: "Urgence", path: "/urgence-dentaire-dakar" },
+    { name: "Galerie", path: "/galerie" },
     { name: "Infos", isDropdown: true },
     { name: "Blog", path: "/blog" },
     { name: "Nous Rejoindre", path: "/rejoindre" },
@@ -79,7 +80,10 @@ const Header = () => {
                   </span>
                   <span className="flex items-center gap-1">
                     <Mail className="w-3.5 h-3.5" />
-                    <a href="mailto:cliniquedentairedabia@gmail.com" className="hover:underline">
+                    <a
+                      href="mailto:cliniquedentairedabia@gmail.com"
+                      className="hover:underline"
+                    >
                       cliniquedentairedabia@gmail.com
                     </a>
                   </span>
@@ -109,7 +113,10 @@ const Header = () => {
             </div>
             <div className="flex items-center gap-1">
               <Mail className="w-3.5 h-3.5" />
-              <a href="mailto:cliniquedentairedabia@gmail.com" className="hover:underline">
+              <a
+                href="mailto:cliniquedentairedabia@gmail.com"
+                className="hover:underline"
+              >
                 cliniquedentairedabia@gmail.com
               </a>
             </div>
@@ -164,12 +171,17 @@ const Header = () => {
                   Infos <ChevronDown className="w-4 h-4" />
                 </button>
                 {dropdownOpen && (
-                  <div className="absolute top-full left-0 mt-2 bg-white border rounded shadow-md z-10 w-48 ">
+                  <div
+                    className="absolute top-full left-0 mt-2 z-10 w-56 rounded-xl border shadow-lg bg-black/60 backdrop-blur-md"
+                    style={{
+                      WebkitBackdropFilter: "blur(12px) saturate(160%)",
+                    }}
+                  >
                     {infosLinks.map((sub, j) => (
                       <Link
                         to={sub.path}
                         key={j}
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#bb2988] hover:text-white"
+                        className="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-white rounded-xl"
                         onClick={() => setDropdownOpen(false)}
                       >
                         {sub.name}
@@ -189,10 +201,7 @@ const Header = () => {
             )
           )}
           <Magnetic>
-            <Link
-              to="/rendez-vous"
-              className="ripple btn-cta"
-            >
+            <Link to="/rendez-vous" className="ripple btn-cta">
               Rendez‑Vous
             </Link>
           </Magnetic>
@@ -216,7 +225,11 @@ const Header = () => {
 
       {/* Mobile nav */}
       {open && (
-        <div className="md:hidden bg-black/80 px-4 pb-4 shadow-sm">
+        <div
+          className={`md:hidden px-4 pb-4 shadow-sm backdrop-blur-md ${
+            scrolled ? "bg-black/30" : "bg-black/10"
+          }`}
+        >
           {navLinks.map((link, i) =>
             link.isDropdown ? (
               <div key={i} className="text-white">

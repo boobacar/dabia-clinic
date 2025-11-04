@@ -27,7 +27,7 @@ const Rejoindre = () => {
   };
 
   return (
-    <section className="py-20 px-4 max-w-6xl mx-auto mt-10">
+    <section className="py-50 px-4 max-w-6xl mx-auto">
       <motion.h2
         className="text-4xl font-bold text-center text-[#ad9d64] mb-4"
         initial={{ opacity: 0, y: -20 }}

@@ -23,7 +23,7 @@ const Footer = () => {
       <NAP />
 
       {/* Liens internes clés */}
-      <div className="max-w-7xl mx-auto px-4 mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 text-sm">
+      <div className="footer-links-condensed max-w-7xl mx-auto px-4 mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 text-sm text-center">
         <a
           href="/dentiste-dakar"
           className="text-white/90 hover:text-white underline-offset-2 hover:underline"

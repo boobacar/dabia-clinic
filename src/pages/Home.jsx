@@ -168,7 +168,7 @@ const Home = () => {
               <motion.div key={post.slug} variants={itemVariants}>
                 <Link
                   to={`/blog/${post.slug}`}
-                  className="group gradient-card glow-hover wow-tilt bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden"
+                  className="group gradient-card glow-hover wow-tilt bg-white rounded-xl shadow transition-transform duration-300 ease-out overflow-hidden transform hover:-translate-y-1 hover:scale-[1.01] hover:shadow-xl ring-1 ring-transparent hover:ring-[#ad9d64]/40"
                 >
                   {post.cover && (
                     <SkeletonImage
@@ -176,8 +176,8 @@ const Home = () => {
                       alt={post.title}
                       loading="lazy"
                       decoding="async"
-                      className="w-full h-48"
-                      imgClassName="object-cover group-hover:opacity-95 transition rounded-t-xl"
+                      className="w-full h-48 overflow-hidden"
+                      imgClassName="object-cover transition-transform duration-300 rounded-t-xl group-hover:opacity-95 group-hover:scale-[1.03]"
                       style={{ viewTransitionName: `post-cover-${post.slug}` }}
                     />
                   )}

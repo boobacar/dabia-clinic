@@ -114,10 +114,34 @@ html:has(body[data-reduce-motion="true"]) * {
 
 /* Glassy gold topbar */
 .topbar-glassy {
-  background: rgba(173,157,100,0.22); /* gold with transparency */
+  background: rgba(173,157,100,0.18); /* slightly softer */
   backdrop-filter: blur(10px) saturate(160%);
   -webkit-backdrop-filter: blur(10px) saturate(160%);
-  border-bottom: 1px solid rgba(173,157,100,0.45);
+  border-bottom: 1px solid rgba(173,157,100,0.26); /* softer border */
+}
+
+/* Site‑wide: soften generic Tailwind `border` when no explicit color is set */
+:root { --dabia-border-soft: rgba(173,157,100,0.22); }
+.border:not([class*="border-"]) { border-color: var(--dabia-border-soft) !important; }
+
+/* Soft card surfaces: blend into background across the site */
+.soft-card,
+.bg-white.border.rounded-xl,
+.bg-white.border.rounded-lg,
+.border.rounded-xl.bg-white,
+.border.rounded-lg.bg-white {
+  background-color: rgba(255,255,255,0.88) !important;
+  backdrop-filter: blur(8px) saturate(140%);
+  -webkit-backdrop-filter: blur(8px) saturate(140%);
+  border-color: var(--dabia-border-soft) !important;
+  box-shadow: 0 6px 18px rgba(173,157,100,.10);
+}
+
+/* Softer gray surfaces as well (TOC, notes…) */
+.bg-gray-50.border.rounded-xl,
+.border.rounded-xl.bg-gray-50 {
+  background-color: rgba(250, 247, 239, 0.75) !important; /* warm off‑white */
+  border-color: var(--dabia-border-soft) !important;
 }
 
 /* Global marquee utility (respects reduce-motion rules above) */
@@ -150,3 +174,19 @@ html:has(body[data-reduce-motion="true"]) * {
 /* Slow spin for logo loader */
 @keyframes spin { to { transform: rotate(360deg); } }
 .spin-slow { animation: spin 2.2s linear infinite; }
+
+/* Footer: show only the first 4 links */
+.footer-links-condensed > a:nth-child(n+5) { display: none; }
+
+/* Pulse ring for floating emergency button */
+.pulse-ring { position: relative; border-radius: 9999px; }
+.pulse-ring::after {
+  content: ""; position: absolute; inset: -6px; border-radius: inherit;
+  border: 2px solid rgba(173,157,100,0.7);
+  animation: dabia-pulse 1.8s ease-out infinite;
+}
+@keyframes dabia-pulse {
+  0%   { transform: scale(0.9); opacity: .65; }
+  70%  { transform: scale(1.35); opacity: 0; }
+  100% { transform: scale(1.45); opacity: 0; }
+}

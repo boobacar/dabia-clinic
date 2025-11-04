@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import {
   ReactCompareSlider,
   ReactCompareSliderImage,
@@ -71,6 +72,13 @@ export default function BeforeAfterGallery() {
           </motion.div>
         ))}
       </motion.div>
+
+      {/* CTA vers la galerie complète */}
+      <div className="text-center mt-8">
+        <Link to="/galerie" className="btn-cta">
+          Voir toute la galerie
+        </Link>
+      </div>
     </section>
   );
 }

@@ -41,7 +41,7 @@ const personnel = [
 
 const Personnel = () => {
   return (
-    <section className="py-16 px-4 max-w-7xl mx-auto mt-5">
+    <section className="py-35 px-4 max-w-7xl mx-auto mt-5">
       <Seo
         title="Notre équipe – Clinique Dentaire DABIA (Dakar)"
         description="Découvrez l’équipe de la Clinique Dentaire DABIA : chirurgiens-dentistes, assistantes et personnel administratif au service de votre sourire."

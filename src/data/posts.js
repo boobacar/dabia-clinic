@@ -435,6 +435,108 @@ Un **devis détaillé** vous est remis avant tout acte.
 > Parents : consultez aussi notre [/infos/enfants](/infos/enfants) • RDV : [/rendez-vous](/rendez-vous).`,
   },
 
+  // --- Nouveaux articles orientés "prix" ---
+  {
+    slug: "prix-couronne-dentaire-dakar-materiaux-devis",
+    title:
+      "Prix d’une couronne dentaire à Dakar : matériaux, étapes et devis",
+    description:
+      "Céramique, zircone, métal-céramique : ce qui influence le coût d’une couronne à Dakar, comment se déroule la pose et quand la préférer à un onlay.",
+    date: "2026-02-20",
+    category: "Conseils",
+    tags: [
+      "couronne dentaire",
+      "prix",
+      "prothèse dentaire",
+      "dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: onlayCover,
+    pinned: true,
+    readingMinutes: 13,
+    content: `La **couronne dentaire** protège une dent fragilisée (grosse carie, **dé-vitalisation**, fracture) ou améliore l’**esthétique**. Son **prix** dépend de plusieurs paramètres cliniques et techniques. Un **devis personnalisé** est remis après examen.
+
+## Quand poser une couronne ?
+- Dent **très reconstituée** ou fissurée  
+- Après **traitement canalaire** (protection contre la fracture)  
+- Correction **esthétique** (forme/teinte) quand l’option **facette** n’est pas indiquée
+
+## Matériaux et impact sur le coût
+- **Zircone monolithique** : très solide, esthétique correcte sur secteurs postérieurs.  
+- **Céramique stratifiée** (sur zircone ou métal) : rendu esthétique supérieur pour le **secteur antérieur**.  
+- **Métal‑céramique** : robuste, esthétique intermédiaire.  
+Le choix se fait selon la **position**, l’**occlusion**, le **sourire** et le budget.
+
+## Étapes clés au cabinet
+1. Bilan et **photos** (éventuel CBCT si contexte complexe)  
+2. Préparation de la dent + **empreinte/scan**  
+3. **Couronne provisoire** (protection esthétique et fonctionnelle)  
+4. Essai/ajustement de la **couronne définitive**, collage ou scellement
+
+## Ce qui fait varier le prix
+- Complexité clinique (attaque carieuse profonde, **inlay‑core**, gencive)  
+- **Matériau** et protocole de **laboratoire**  
+- Teinte et **stratification** esthétique  
+- Rendez‑vous d’essai/ajustements
+
+> Chez DABIA, nous expliquons les **options** et remettons un **devis clair** avec les matériaux proposés. Demandez une évaluation : [/rendez-vous](/rendez-vous).`,
+    faq: [
+      { q: "Couronne ou onlay : que choisir ?", a: "L’onlay renforce une dent encore largement préservée. La couronne s’impose lorsque la dent est très fragilisée (après dévitalisation, fractures, perte de substance importante)." },
+      { q: "Zircone ou céramique stratifiée ?", a: "La zircone monolithique privilégie la résistance (molaires). La céramique stratifiée apporte un rendu très naturel pour les dents visibles. Le choix dépend de la zone et des objectifs esthétiques." },
+      { q: "Combien de rendez‑vous ?", a: "Généralement deux à trois : préparation + empreinte/scan, puis essayage/pose. Une couronne provisoire protège la dent entre les séances." },
+      { q: "Quel ordre de prix ?", a: "Le tarif dépend du matériau, du travail de laboratoire et de la complexité clinique. Un devis précis est remis après l’examen clinique." }
+    ],
+  },
+  {
+    slug: "devitalisation-traitement-canalaire-prix-dakar",
+    title:
+      "Dévitalisation (traitement canalaire) à Dakar : déroulé, indications et prix",
+    description:
+      "Douleur, abcès, dent fissurée : quand dévitaliser ? Étapes, radios, durée et facteurs qui influencent le tarif à Dakar.",
+    date: "2026-02-27",
+    category: "Urgences",
+    tags: [
+      "traitement canalaire",
+      "dé-vitalisation",
+      "prix",
+      "douleur dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: endoCover,
+    pinned: true,
+    readingMinutes: 12,
+    content: `Le **traitement canalaire** (dé-vitalisation) consiste à **désinfecter** et **obturer** les canaux d’une dent dont le **nerf** est atteint (carie profonde, fissure, traumatisme). Il **soulage** la douleur et évite la propagation de l’infection.
+
+## Quand est-ce indiqué ?
+- **Douleur** pulsatile ou nocturne (pulpite)  
+- **Abcès** / fistule, sensibilité à la **mastication**  
+- Fracture/carie profonde exposant la pulpe  
+- Préparation prothétique (pilier de **couronne**)
+
+## Étapes du soin
+1. **Anesthésie** et isolement  
+2. Accès aux **canaux** puis mise en forme/désinfection  
+3. **Obturation** à chaud/froid selon protocole  
+4. **Reconstruction** (provisoire ou définitive)
+
+## Facteurs qui influencent le prix
+- Nombre de **canaux** (incisive ⟶ molaire)  
+- **Courbures**/calcifications, reprise d’un ancien traitement  
+- Nécessité d’un **inlay‑core** et d’une **couronne** de protection  
+- Imagerie **3D (CBCT)** et temps opératoire
+
+## Après la dévitalisation
+Une dent traitée canalaires est **plus fragile** : une **couronne** est souvent recommandée pour la protéger durablement.
+
+> Pour connaître le **budget exact** dans votre cas, un **examen clinique** est indispensable. Prenez rendez‑vous : [/rendez-vous](/rendez-vous).`,
+    faq: [
+      { q: "Est‑ce douloureux ?", a: "Non, l’acte se fait sous anesthésie locale. Une sensibilité passagère est possible et contrôlée par antalgiques." },
+      { q: "Combien de séances ?", a: "1 à 2 séances pour une dent antérieure, 1 à 3 pour une molaire selon le nombre de canaux et la complexité." },
+      { q: "Quel prix selon la dent ?", a: "Le coût dépend du nombre de canaux (incisive ⟶ molaire), de la reprise éventuelle d’un ancien traitement et du temps opératoire. Un devis est remis après examen." },
+      { q: "Faut‑il poser une couronne après ?", a: "Souvent oui : une dent dévitalisée est plus fragile. La couronne protège durablement contre la fracture." }
+    ],
+  },
+
   {
     slug: "detartrage-profondeur-gingivite-saignement-conseils",
     title:

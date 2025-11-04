@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Users, ShieldCheck, Cpu } from "lucide-react";
+import { Users, ShieldCheck, Cpu, Handshake } from "lucide-react";
 import { useInView, useReducedMotion } from "framer-motion";
 
 function useCountUp(target, duration = 1600, start = false) {
@@ -60,15 +60,16 @@ function MetricCard({ icon: Icon, label, target, suffix = "+" }) {
  */
 export default function KeyMetrics({ className = "" }) {
   const metrics = [
-    { icon: Users, label: "Patients soignés", target: 4500 },
+    { icon: Users, label: "Patients soignés", target: 6000 },
     { icon: ShieldCheck, label: "Années d’expérience", target: 10 },
     { icon: Cpu, label: "Technologies avancées", target: 10 },
+    { icon: Handshake, label: "Assurances partenaires", target: 20 },
   ];
 
   return (
     <section className={`py-10 ${className}`} aria-label="Chiffres clés">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {metrics.map((m, i) => (
             <MetricCard
               key={i}

@@ -43,6 +43,7 @@ const STATIC_ROUTES = [
   "/cabinet-dentaire-patte-d-oie",
   "/cabinet-dentaire-fann",
   "/cabinet-dentaire-plateau",
+  "/galerie",
 ];
 
 // Pages clés à recrawler souvent

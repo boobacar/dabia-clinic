@@ -9,6 +9,7 @@ import CookieConsent from "./components/CookieConsent";
 import ConversionTracker from "./components/ConversionTracker";
 import RoutesWithTransitions from "./components/RoutesWithTransitions";
 import ScrollTopButton from "./components/ScrollTopButton";
+import EmergencyCallButton from "./components/EmergencyCallButton";
 import LoadingOverlay from "./components/LoadingOverlay";
 
 // lazy routes (code splitting)
@@ -54,6 +55,7 @@ const App = () => {
       <CookieConsent />
       <Header />
       <ScrollTopButton />
+      <EmergencyCallButton />
       <Suspense fallback={<LoadingOverlay label="Chargement" /> }>
         <RoutesWithTransitions />
       </Suspense>

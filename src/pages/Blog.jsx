@@ -57,7 +57,10 @@ export default function Blog() {
     if (cat) params.set("cat", cat);
     if (page > 1) params.set("page", String(page));
     const query = params.toString();
-    navigate({ pathname: "/blog", search: query ? `?${query}` : "" }, { replace: true });
+    navigate(
+      { pathname: "/blog", search: query ? `?${query}` : "" },
+      { replace: true }
+    );
   }, [search, cat, page, navigate]);
 
   return (
@@ -65,10 +68,12 @@ export default function Blog() {
       <Seo
         title="Blog dentaire à Dakar – Conseils, urgences, prix"
         description="Articles clairs et fiables par la Clinique Dentaire DABIA : urgences dentaires à Dakar, blanchiment, implants, orthodontie, prévention, enfants."
-        url={`https://www.cliniquedentairedabia.com/blog${page>1?`?page=${page}`:""}`}
+        url={`https://www.cliniquedentairedabia.com/blog${
+          page > 1 ? `?page=${page}` : ""
+        }`}
         canonical={`https://www.cliniquedentairedabia.com/blog`}
-        prevUrl={page>1?`/blog?page=${page-1}`:undefined}
-        nextUrl={page<totalPages?`/blog?page=${page+1}`:undefined}
+        prevUrl={page > 1 ? `/blog?page=${page - 1}` : undefined}
+        nextUrl={page < totalPages ? `/blog?page=${page + 1}` : undefined}
         type="website"
       />
 
@@ -93,8 +98,8 @@ export default function Blog() {
                 setPage(1);
                 setSearch(e.target.value);
               }}
-              placeholder="Rechercher : dentiste Dakar, urgence…"
-              className="input-cta flex-1 min-w-[220px]"
+              placeholder="Rechercher"
+              className="input-cta flex-1 min-w-[150px]"
             />
             <select
               value={cat}
@@ -120,7 +125,10 @@ export default function Blog() {
                 className="gradient-card glow-hover wow-tilt bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition"
               >
                 <Link to={`/blog/${p.slug}`} className="block">
-                  <div style={{ aspectRatio: '16/9' }} className="w-full rounded-t-xl overflow-hidden">
+                  <div
+                    style={{ aspectRatio: "16/9" }}
+                    className="w-full rounded-t-xl overflow-hidden"
+                  >
                     <img
                       src={p.cover}
                       alt={p.title}

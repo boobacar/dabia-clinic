@@ -13,7 +13,7 @@ export default function ScrollTopButton() {
     <button
       aria-label="Remonter en haut"
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-      className="fixed bottom-5 right-5 z-40 cta-surface text-white shadow-lg w-10 h-10 flex items-center justify-center hover:scale-105 transition-transform"
+      className="fixed bottom-20 right-5 z-40 cta-surface text-white shadow-lg w-10 h-10 flex items-center justify-center hover:scale-105 transition-transform"
     >
       ↑
     </button>
