@@ -14,23 +14,17 @@
     "postbuild": "node scripts/generate-sitemap.mjs",
     "sitemap:dev": "SITE_URL=http://localhost:5173 node scripts/generate-sitemap.mjs",
     "seo:check": "node scripts/seo-check.mjs",
-    "images:convert:hero": "node scripts/convert-hero.mjs"
-    ,
-    "images:cleanup:hero": "node scripts/cleanup-hero-jpeg.mjs"
-    ,
-    "images:convert:blog": "node scripts/convert-blog.mjs"
-    ,
-    "images:cleanup:blog": "node scripts/cleanup-blog-jpeg.mjs"
-    ,
-    "images:convert:staff": "node scripts/convert-staff.mjs"
-    ,
+    "images:convert:hero": "node scripts/convert-hero.mjs",
+    "images:cleanup:hero": "node scripts/cleanup-hero-jpeg.mjs",
+    "images:convert:blog": "node scripts/convert-blog.mjs",
+    "images:cleanup:blog": "node scripts/cleanup-blog-jpeg.mjs",
+    "images:convert:staff": "node scripts/convert-staff.mjs",
     "images:cleanup:staff": "node scripts/cleanup-staff-jpeg.mjs"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@gsap/react": "^2.1.2",
     "@tailwindcss/vite": "^4.1.7",
-    "canvas-confetti": "^1.9.3",
     "date-fns": "^4.1.0",
     "framer-motion": "^12.12.1",
     "gsap": "^3.13.0",
@@ -63,8 +57,8 @@
     "gh-pages": "^6.3.0",
     "globals": "^16.0.0",
     "postcss": "^8.5.3",
+    "sharp": "^0.33.5",
     "tailwindcss": "^4.1.7",
-    "vite": "^6.3.5",
-    "sharp": "^0.33.5"
+    "vite": "^6.3.5"
   }
 }

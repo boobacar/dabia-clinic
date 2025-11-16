@@ -24,7 +24,8 @@ import {
   Split,
 } from "lucide-react";
 
-const clinicPhotos = [photoA, photoB, photoC, photoD, photoE, photoF];
+// Fallback par défaut si le dossier galerie est vide
+const defaultClinicPhotos = [photoA, photoB, photoC, photoD, photoE, photoF];
 
 function Lightbox({ images, index, onClose, onPrev, onNext }) {
   const src = images[index];
@@ -73,7 +74,20 @@ export default function Galerie() {
   const canonical = "https://www.cliniquedentairedabia.com/galerie";
   const [tab, setTab] = useState("aa"); // aa = avant/après, photos = clinique
   const [lb, setLb] = useState({ open: false, index: 0 });
-  const images = useMemo(() => clinicPhotos, []);
+  // Charge automatiquement toutes les images présentes dans src/assets/galerie
+  const galleryImages = useMemo(() => {
+    const modules = import.meta.glob(
+      "../assets/galerie/*.{png,jpg,jpeg,webp,avif}",
+      { as: "url", eager: true }
+    );
+    const urls = Object.entries(modules)
+      .sort(([a], [b]) =>
+        a.localeCompare(b, "fr", { numeric: true, sensitivity: "base" })
+      )
+      .map(([, url]) => url);
+    return urls.length > 0 ? urls : defaultClinicPhotos;
+  }, []);
+  const images = galleryImages;
   const openAt = (i) => setLb({ open: true, index: i });
   const closeLb = () => setLb({ open: false, index: 0 });
   const prevLb = () =>
@@ -130,7 +144,7 @@ export default function Galerie() {
             }`}
           >
             Photos de la clinique{" "}
-            <span className="opacity-80">({clinicPhotos.length})</span>
+            <span className="opacity-80">({images.length})</span>
           </button>
         </div>
       </div>
@@ -186,7 +200,7 @@ export default function Galerie() {
             Photos de la clinique
           </h2>
           <div className="grid gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {clinicPhotos.map((src, i) => (
+            {images.map((src, i) => (
               <motion.button
                 key={`ph-${i}`}
                 onClick={() => openAt(i)}

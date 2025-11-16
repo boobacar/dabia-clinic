@@ -61,12 +61,13 @@ export default function Seo({
   const websiteJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: defaultSite.name,
-    // Garder uniquement des variantes proches pour éviter que Google choisisse un nom tronqué
+    // Utiliser le libellé complet (avec Dakar) comme nom de site principal
+    name: defaultSite.siteLabel,
+    // Garder uniquement des variantes proches
     alternateName: [
       "Clinique Dentaire DABIA",
       "Clinique Dentaire Dabia",
-      "Clinique Dentaire DABIA - Dakar",
+      "Clinique Dentaire DABIA Dakar",
     ],
     url: defaultSite.domain,
   };
@@ -94,9 +95,12 @@ export default function Seo({
       <meta property="og:url" content={finalUrl} />
       <meta property="og:image" content={image} />
       <meta property="og:locale" content={locale} />
-      <meta property="og:site_name" content={defaultSite.name} />
-      <meta name="application-name" content={defaultSite.name} />
-      <meta name="apple-mobile-web-app-title" content={defaultSite.name} />
+      <meta property="og:site_name" content={defaultSite.siteLabel} />
+      <meta name="application-name" content={defaultSite.siteLabel} />
+      <meta
+        name="apple-mobile-web-app-title"
+        content={defaultSite.siteLabel}
+      />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={finalTitle} />
       <meta name="twitter:description" content={finalDesc} />
