@@ -176,8 +176,10 @@ export default function CabinetDentaireDakar() {
         </ul>
       </motion.section>
 
+      {/* FAQ visible, données FAQPage déjà fournies dans jsonLd via Seo */}
       <FAQ
         className="mt-10"
+        asJsonLd={false}
         items={[
           {
             q: "Différence entre clinique et cabinet dentaire ?",

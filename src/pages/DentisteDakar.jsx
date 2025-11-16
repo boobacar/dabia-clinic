@@ -19,6 +19,30 @@ import FAQ from "../components/FAQ";
 
 export default function DentisteDakar() {
   const canonical = "https://www.cliniquedentairedabia.com/dentiste-dakar";
+  // Questions affichées sur la page (réutilisées pour le JSON-LD FAQ)
+  const faqItems = [
+    {
+      q: "Prenez‑vous les urgences dentaires ?",
+      a: "Oui, nous organisons des créneaux prioritaires. En cas de gonflement/fièvre, contactez‑nous rapidement.",
+    },
+    {
+      q: "Quels sont vos tarifs ?",
+      a: "Un devis clair est remis après l’examen clinique et le plan de traitement. Nous expliquons les options et alternatives.",
+    },
+    {
+      q: "Acceptez‑vous des assurances ?",
+      a: "Oui, nous travaillons avec de nombreux partenaires. Consultez la page Assurances ou appelez‑nous pour confirmer la vôtre.",
+    },
+    {
+      q: "Quelles technologies utilisez‑vous ?",
+      a: "CBCT (radio 3D), scanner intra‑oral, laser, autoclaves Classe B, imagerie numérique — pour précision et confort.",
+    },
+    {
+      q: "Comment prendre rendez‑vous ?",
+      a: "En ligne en 1 minute via la page Rendez‑vous, par téléphone ou WhatsApp.",
+    },
+  ];
+
   const faqLD = [
     {
       "@context": "https://schema.org",
@@ -32,14 +56,12 @@ export default function DentisteDakar() {
             text: "Lun–Ven 9h–18h, Sam 9h–14h. En cas d’urgence, contactez‑nous par téléphone.",
           },
         },
-        {
+        // On ajoute aussi les questions affichées dans le bloc FAQ
+        ...faqItems.map((f) => ({
           "@type": "Question",
-          name: "Prenez‑vous les assurances ?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Oui, nous travaillons avec de nombreux partenaires (AXA, Sonam, etc.). Voir la page Assurances ou appelez‑nous.",
-          },
-        },
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
       ],
     },
   ];
@@ -216,16 +238,11 @@ export default function DentisteDakar() {
         </Link>
       </div>
 
-      {/* FAQ – Dentiste Dakar */}
+      {/* FAQ – Dentiste Dakar (JSON-LD déjà injecté via Seo) */}
       <FAQ
         className="mt-10"
-        items={[
-          { q: "Prenez‑vous les urgences dentaires ?", a: "Oui, nous organisons des créneaux prioritaires. En cas de gonflement/fièvre, contactez‑nous rapidement." },
-          { q: "Quels sont vos tarifs ?", a: "Un devis clair est remis après l’examen clinique et le plan de traitement. Nous expliquons les options et alternatives." },
-          { q: "Acceptez‑vous des assurances ?", a: "Oui, nous travaillons avec de nombreux partenaires. Consultez la page Assurances ou appelez‑nous pour confirmer la vôtre." },
-          { q: "Quelles technologies utilisez‑vous ?", a: "CBCT (radio 3D), scanner intra‑oral, laser, autoclaves Classe B, imagerie numérique — pour précision et confort." },
-          { q: "Comment prendre rendez‑vous ?", a: "En ligne en 1 minute via la page Rendez‑vous, par téléphone ou WhatsApp." },
-        ]}
+        asJsonLd={false}
+        items={faqItems}
       />
     </main>
   );
