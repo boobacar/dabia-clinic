@@ -61,6 +61,9 @@ export const TAGS = [
   "caries",
   "gingivite",
   "prix",
+  "prix appareil dentaire dakar",
+  "prix prothese dentaire dakar",
+  "prix urgence dentaire dakar",
   "tarif dentiste dakar",
   "tarif implant dentaire dakar",
   "détartrage dentaire dakar prix",
@@ -535,6 +538,183 @@ Une dent traitée canalaires est **plus fragile** : une **couronne** est souvent
       { q: "Quel prix selon la dent ?", a: "Le coût dépend du nombre de canaux (incisive ⟶ molaire), de la reprise éventuelle d’un ancien traitement et du temps opératoire. Un devis est remis après examen." },
       { q: "Faut‑il poser une couronne après ?", a: "Souvent oui : une dent dévitalisée est plus fragile. La couronne protège durablement contre la fracture." }
     ],
+  },
+
+  {
+    slug: "prix-appareil-dentaire-orthodontie-dakar-enfant-adulte",
+    title:
+      "Prix d’un appareil dentaire à Dakar : enfant, ado, adulte — ce qui fait varier le devis",
+    description:
+      "Aligneurs transparents, bagues métalliques ou esthétiques : explications claires sur les facteurs de prix en orthodontie à Dakar et le déroulé du traitement.",
+    date: "2026-03-06",
+    category: "Orthodontie",
+    tags: [
+      "prix appareil dentaire dakar",
+      "orthodontie",
+      "Invisalign Dakar",
+      "bagues dentaires",
+    ],
+    author: AUTHORS.sao,
+    cover: orthodontieCover,
+    pinned: true,
+    readingMinutes: 13,
+    content: `Un **appareil dentaire** permet de réaligner les dents, d’améliorer l’occlusion et parfois de préparer d’autres traitements (implants, prothèses, esthétique). À Dakar, le **prix** dépend du **type d’appareil**, de la **durée** du traitement et de la **complexité** du cas. Le montant exact ne peut être fixé qu’après un **bilan orthodontique** complet.
+
+## Quand envisager un traitement orthodontique ?
+- Chevauchement, dents tournées ou espacées  
+- Occlusion modifiée (surplomb, béance, décalage des mâchoires)  
+- Préparation à un implant ou une prothèse  
+- Motif esthétique avec impact fonctionnel (mastication, phonation)
+
+Chez l’enfant et l’ado, l’orthodontie participe au bon **développement** des arcades. Chez l’adulte, elle vise souvent une **amélioration fonctionnelle** et esthétique, parfois en lien avec des douleurs ou une usure dentaire.
+
+## Types d’appareils et impact sur le budget
+### Bagues (brackets) métalliques ou esthétiques
+- Très **polyvalentes** pour les cas complexes.  
+- Versions **métalliques** : robustes, visibles.  
+- Versions **esthétiques** (céramique, saphir) : plus discrètes mais plus exigeantes en entretien.  
+> Le prix varie selon le **matériau** et la **durée** de traitement.
+
+### Aligneurs transparents
+- Gouttières successives, presque **invisibles**.  
+- Exigent un port ~**22 h/jour** et des changements réguliers.  
+- Confort et hygiène facilités (on retire pour manger et se brosser).  
+> Le devis dépend du **nombre de gouttières** nécessaires, du suivi et du niveau de complexité.
+
+## Déroulé d’un traitement à la Clinique DABIA
+1. **Bilan orthodontique complet** : photos, empreintes/scan, radios (CBCT ou panoramique selon besoin).  
+2. **Plan de traitement** expliqué (objectifs, durée, options techniques).  
+3. Mise en place de l’appareil (bagues ou aligneurs) et **contrôles réguliers**.  
+4. Phase de **contention** (fils collés/gouttières) pour stabiliser le résultat.
+
+## Ce qui fait varier le prix d’un appareil dentaire
+- **Durée** du traitement (6 à 24 mois ou plus)  
+- **Type d’appareil** (aligneurs, bagues métal, céramique)  
+- Port éventuel d’**auxiliaires** (mini-vis, élastiques, expansion)  
+- Nombre et **fréquence** des rendez-vous de contrôle  
+
+> Le devis prend en compte l’ensemble du **parcours orthodontique** (bilan, appareillage, suivis, contention). Un **devis détaillé** vous est remis avant toute décision.
+
+### FAQ
+**Peut-on donner un prix sans voir le patient ?** Non, le tarif dépend du **diagnostic** et des objectifs.  
+**Les traitements adultes sont-ils plus chers ?** Ils sont souvent plus longs et nécessitent des matériaux plus esthétiques, ce qui peut influencer le devis.  
+**Les aligneurs sont-ils toujours plus chers ?** Pas forcément : tout dépend du **nombre de gouttières** et de la complexité du cas.  
+
+> Pour discuter des options (aligneurs ou bagues) et obtenir un devis personnalisé : [/rendez-vous](/rendez-vous).`,
+  },
+
+  {
+    slug: "prix-urgence-dentaire-dakar-jour-nuit",
+    title:
+      "Prix d’une urgence dentaire à Dakar : consultation, actes et nuit",
+    description:
+      "Douleur aiguë, abcès, traumatisme : ce qui influence le tarif d’une urgence dentaire à Dakar, en journée ou la nuit.",
+    date: "2026-03-13",
+    category: "Urgences",
+    tags: [
+      "prix urgence dentaire dakar",
+      "urgence dentaire",
+      "dentiste dakar 24/24",
+    ],
+    author: AUTHORS.sao,
+    cover: urgenceNuitCover,
+    pinned: true,
+    readingMinutes: 11,
+    content: `Une **urgence dentaire** doit d’abord être **soulagée** et sécurisée sur le plan médical. Le **prix** varie selon la **nature du problème** (pulpite, abcès, traumatisme) et les **gestes réalisés** lors de la consultation. À la Clinique DABIA, un **devis** est expliqué avant chaque acte.
+
+## Qu’est-ce qu’une vraie urgence dentaire ?
+- Douleur **aiguë**, réveils nocturnes  
+- **Gonflement** de la joue ou du cou, fièvre  
+- Traumatisme : dent cassée, déplacée ou expulsée  
+- Saignement qui ne s’arrête pas  
+- Douleur après extraction ou chirurgie, non contrôlée
+
+Dans ces situations, le but est de **soulager**, **stopper l’infection** et éviter les complications.
+
+## Consultation d’urgence : que se passe-t-il ?
+1. **Examen clinique ciblé** + imagerie (radio, parfois CBCT).  
+2. Mise en place de **mesures antalgiques** et/ou antibiotiques si indiqué.  
+3. Geste de **soulagement** : ouverture de la dent, incision-drainage, réalignement ou suture, ajustement d’une prothèse, etc.  
+4. Proposition d’un **plan de traitement** pour finaliser (ex. traitement canalaire, extraction, couronne…).
+
+## De quoi dépend le prix d’une urgence ?
+- Type de **geste** réalisé (simple consultation vs acte technique)  
+- Durée de la séance et **matériel** utilisé (anesthésie, sutures, imagerie 3D…)  
+- Complexité : dent déjà traitée, infection étendue, traumatisme important  
+- Horaires : intervention **en journée** ou en mode **hors horaires** / nuit selon l’organisation du cabinet
+
+> L’objectif est de **stabiliser** la situation le plus vite possible, puis d’organiser les soins définitifs avec un budget maîtrisé.
+
+### Urgence et soins ultérieurs
+La consultation d’urgence couvre les **gestes immédiats**. Les traitements complets (traitement canalaire, couronne, implant, etc.) font l’objet d’un **devis séparé** détaillant les options.
+
+### FAQ
+**Puis-je demander uniquement à être soulagé ?** Oui, la priorité est de calmer la douleur et de sécuriser la situation ; la suite est planifiée ensuite.  
+**Les urgences de nuit sont-elles plus chères ?** Les interventions en **dehors des horaires habituels** peuvent impliquer des honoraires spécifiques ; ils sont expliqués avant l’acte.  
+**Puis-je payer en plusieurs fois ?** Selon les cas, une organisation est possible : n’hésitez pas à en parler lors du devis.
+
+> En cas de douleur aiguë ou de doute, contactez la clinique au plus vite et prenez rendez-vous : [/rendez-vous](/rendez-vous).`,
+  },
+
+  {
+    slug: "prix-prothese-dentaire-dakar-partielle-complete",
+    title:
+      "Prix d’une prothèse dentaire à Dakar : partielle, complète, sur implants",
+    description:
+      "Prothèse amovible, bridge, prothèse complète ou sur implants : types, indications et facteurs qui influencent le coût à Dakar.",
+    date: "2026-03-20",
+    category: "Conseils",
+    tags: [
+      "prothèse dentaire",
+      "prix prothese dentaire dakar",
+      "dentier complet",
+    ],
+    author: AUTHORS.sao,
+    cover: protheseCover,
+    pinned: true,
+    readingMinutes: 13,
+    content: `Les **prothèses dentaires** remplacent une ou plusieurs dents manquantes pour retrouver **fonction** (mastication, phonation) et **esthétique**. Entre prothèse amovible, bridge ou prothèse sur implants, le **prix** dépend du type de solution, des matériaux et du contexte clinique.
+
+## Les grands types de prothèses
+### Prothèse amovible partielle
+- Remplace plusieurs dents manquantes sur une arcade.  
+- S’enlève pour le nettoyage.  
+- Option souvent plus **accessible** financièrement, mais nécessite une adaptation.
+
+### Prothèse complète (dentier)
+- Quand toutes les dents d’une arcade sont absentes.  
+- Peut être **stabilisée** par des implants (attachements).  
+- Demande un suivi et des ajustements (réajustage, rebasage).
+
+### Bridge sur dents naturelles
+- Appuyé sur les dents voisines préparées.  
+- Solution **fixe**, esthétique et confortable.  
+- Nécessite de **préparer** (tailler) les dents piliers.
+
+### Prothèse sur implants
+- Implique la pose de **racines artificielles** (implants) puis une prothèse fixée ou clipsée.  
+- Confort et stabilité supérieurs, préservation de l’os.  
+- Investissement plus important, planifié sur plusieurs mois.
+
+## Facteurs qui influencent le prix
+- Nombre de **dents à remplacer** et type de prothèse  
+- Choix des **matériaux** (résine, métal, céramique, zircone)  
+- Travail du **laboratoire de prothèse** (stratification, personnalisation)  
+- Besoin éventuel d’**implants**, de greffes ou d’autres soins préalables  
+- Nombre de rendez-vous d’essai et d’ajustement
+
+## Comment se déroule la prise en charge à DABIA ?
+1. **Bilan** complet (radio, examen clinique, photos).  
+2. Discussion des **options** : prothèse amovible, bridge, implants… avec avantages/inconvénients.  
+3. **Devis détaillé** incluant les différentes solutions possibles quand cela est indiqué.  
+4. Essais, ajustements, conseils d’entretien et **suivi**.
+
+### FAQ
+**La prothèse amovible est-elle forcément provisoire ?** Non, elle peut être une solution durable, avec des contrôles réguliers.  
+**La prothèse sur implants est-elle toujours possible ?** Elle dépend du **volume osseux**, de l’état général et des attentes du patient ; un bilan 3D est souvent nécessaire.  
+**Les prix sont-ils remboursés par les assurances ?** Selon les contrats ; un devis vous permet d’interroger votre assurance ou votre mutuelle.
+
+> Pour discuter des différentes options prothétiques et recevoir un devis personnalisé, prenez rendez-vous : [/rendez-vous](/rendez-vous).`,
   },
 
   {
