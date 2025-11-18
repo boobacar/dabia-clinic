@@ -13,6 +13,12 @@
     </image:image>
   </url>
   <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/dentiste-enfants-senegal-premiere-visite-prevention</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/enfant.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.cliniquedentairedabia.com/blog/bruxisme-gouttiere-protection-dakar</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
       <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/malnuit.webp</image:loc>
@@ -226,6 +232,24 @@
     <loc>https://www.cliniquedentairedabia.com/blog/diabete-et-sante-buccale-risques-prevention-dakar</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
       <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/diabete.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/assurance-dentaire-mutuelle-ipm-senegal</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/prix.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/attaya-cafe-kola-effets-sur-les-dents</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/halitose.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/erreurs-quotidiennes-qui-abiment-les-dents</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/carie.webp</image:loc>
     </image:image>
   </url>
 </urlset>

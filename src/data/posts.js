@@ -71,6 +71,13 @@ export const TAGS = [
   "liberté 6",
   "parcelles assainies",
   "dentiste dakar 24/24",
+  "dentiste pour enfant dakar",
+  "dentiste pediatrique dakar",
+  "assurance dentaire senegal",
+  "mutuelle dentaire dakar",
+  "ipm dentaire dakar",
+  "attaya dents",
+  "taches dents cafe",
 ];
 
 export const POSTS = [
@@ -142,6 +149,87 @@ Voir nos équipements d’imagerie et de planification : [/infos/technologie](/i
     cover: enfantCover,
     readingMinutes: 8,
     content: `Les **scellants** (ou sealants) protègent les **sillons des molaires** de l’enfant. Ils forment une fine **barrière** contre la plaque et les sucres.\n\n## Quand les poser ?\n- À l’éruption des **molaires définitives** (vers 6–7 ans),\n- Chez les enfants à **risque carieux** élevé (taches, habitudes sucrées).\n\n## Déroulé rapide\nNettoyage – isolation – application du matériau – **photopolymérisation**. Indolore et réversible.\n\n> Couplé à une **hygiène fluorée** et des contrôles, c’est une des meilleures stratégies de **prévention**.`,
+  },
+
+  {
+    slug: "dentiste-enfants-senegal-premiere-visite-prevention",
+    title:
+      "Dentiste pour enfants au Sénégal : première visite, caries, prévention et conseils pour les parents",
+    description:
+      "À quel âge consulter, comment se déroule une première visite dentaire pour enfant à Dakar et comment prévenir les caries au quotidien.",
+    date: "2025-10-10",
+    category: "Pédiatrie",
+    tags: [
+      "dentiste pour enfant dakar",
+      "dentiste pediatrique dakar",
+      "caries enfant",
+      "prevention dentaire enfant",
+    ],
+    author: AUTHORS.sao,
+    cover: enfantCover,
+    readingMinutes: 12,
+    pinned: true,
+    content: `Un **dentiste pour enfants** (pédodontiste ou chirurgien‑dentiste formé à la pédiatrie) accompagne les familles dès les premières dents de lait. À Dakar et dans tout le Sénégal, une prise en charge précoce permet d’**éviter les grosses caries**, la peur du dentiste et les urgences douloureuses.
+
+## À quel âge emmener son enfant chez le dentiste ?
+- **Dès 1 an** si possible, ou à l’éruption des premières molaires de lait.  
+- Au plus tard vers **2–3 ans**, même sans douleur, pour un **bilan de prévention**.  
+- Ensuite, un contrôle tous les **6 à 12 mois** selon le risque carieux.
+
+> Plus l’enfant découvre tôt le **cabinet dentaire** dans un contexte calme, moins il associe le dentiste à la douleur.
+
+## Comment se passe une première visite à la Clinique DABIA ?
+1. **Accueil rassurant** : explication simple de ce qui va se passer, sans termes anxiogènes.  
+2. **Examen bucco‑dentaire** : dents de lait, gencives, frein de langue, habitudes (sucette, pouce).  
+3. **Conseils personnalisés** aux parents : brossage, alimentation, rythme des visites.  
+4. Si nécessaire, **radios ciblées** pour vérifier les contacts entre molaires ou une carie débutante.  
+
+L’objectif est d’installer une **relation de confiance** : l’enfant repart avec des gestes simples à appliquer à la maison.
+
+## Prévenir les caries chez l’enfant au Sénégal
+- **Brossage 2×/jour** avec un **dentifrice fluoré adapté à l’âge**.  
+- Éviter le grignotage sucré (bonbons, biscuits, boissons sucrées, attaya répété).  
+- Limiter le biberon ou la tétine sucrée la nuit.  
+- Faire contrôler les **molaires définitives** dès leur éruption (vers 6–7 ans) et envisager des **scellants de sillons** si besoin.  
+- Surveiller la respiration buccale, les ronflements ou le **serrage de dents** chez l’enfant.
+
+## Quand consulter en urgence pour un enfant ?
+- Douleur qui réveille la nuit ou empêche de manger.  
+- Dent cassée après chute ou choc (gardez le fragment dans du **lait** ou du sérum).  
+- Gencive gonflée, fièvre, mauvaise haleine persistante.  
+- Chute sur les dents de devant avec changement de couleur ou mobilité.
+
+Dans ces situations, contactez rapidement un **dentiste pédiatrique à Dakar** pour éviter la propagation de l’infection et sauver la dent quand c’est possible.
+
+## Questions fréquentes des parents
+**Et si mon enfant a peur du dentiste ?**  
+Parlez‑lui de la visite comme d’un **contrôle de routine**, sans insister sur la douleur. À la clinique, nous prenons le temps de l’apprivoiser et d’expliquer avec des mots simples.
+
+**Les dents de lait, est‑ce vraiment important ?**  
+Oui : elles servent à **manger**, à **parler** et à garder la place des futures dents définitives. Une carie de dent de lait peut faire très mal et infecter la dent permanente.
+
+**Peut‑on faire du fluor au Sénégal ?**  
+Oui, sous contrôle du dentiste : vernis fluorés, conseils sur le dentifrice et la fréquence d’utilisation.
+
+> Pour une première visite en douceur chez un **dentiste pour enfants à Dakar**, prenez rendez‑vous en ligne : [/rendez-vous](/rendez-vous) • Découvrez aussi nos conseils dédiés : [/infos/enfants](/infos/enfants).`,
+    faq: [
+      {
+        q: "À partir de quel âge un enfant doit-il voir un dentiste ?",
+        a: "Idéalement dès 1 an ou à l’apparition des premières molaires de lait, puis au plus tard vers 2–3 ans pour un bilan de prévention.",
+      },
+      {
+        q: "Faut-il soigner une dent de lait qui ne fait pas mal ?",
+        a: "Oui, les dents de lait servent à manger, parler et garder la place des futures dents définitives. Une carie non traitée peut s’infecter et toucher la dent permanente.",
+      },
+      {
+        q: "Comment rassurer un enfant qui a peur du dentiste ?",
+        a: "Parlez d’une visite de contrôle plutôt que de piqûre ou de douleur, évitez de transmettre votre propre peur et laissez l’équipe expliquer avec des mots simples adaptés à son âge.",
+      },
+      {
+        q: "Les soins dentaires sont-ils dangereux pour les enfants ?",
+        a: "Les soins sont adaptés au poids, à l’âge et à l’état général de l’enfant. Les produits et doses sont sécurisés, avec des précautions particulières en cas de maladie chronique.",
+      },
+    ],
   },
 
   {
@@ -1632,5 +1720,175 @@ Un diabète mal équilibré fragilise le système immunitaire et diminue la capa
 **Quels signes doivent alerter ?** Gencives qui saignent, dents qui bougent, mauvaise haleine persistante.
 
 > La Clinique DABIA accompagne les patients diabétiques à Dakar pour préserver leur sourire et leur santé globale.`,
+  },
+
+  {
+    slug: "assurance-dentaire-mutuelle-ipm-senegal",
+    title:
+      "Assurance dentaire au Sénégal : mutuelle, IPM et prise en charge chez le dentiste",
+    description:
+      "Comment fonctionnent les mutuelles, IPM et assurances santé pour les soins dentaires au Sénégal, et comment préparer sa visite à la Clinique DABIA.",
+    date: "2026-04-05",
+    category: "Conseils",
+    tags: [
+      "assurance dentaire senegal",
+      "mutuelle dentaire dakar",
+      "ipm dentaire dakar",
+      "prix dentiste senegal",
+    ],
+    author: AUTHORS.sao,
+    cover: prixCover,
+    readingMinutes: 13,
+    pinned: true,
+    content: `Au Sénégal, de nombreux patients sont couverts par une **IPM**, une **mutuelle** ou une **assurance privée**. Comprendre comment fonctionne la **prise en charge dentaire** permet d’anticiper son budget et d’éviter les mauvaises surprises.
+
+## IPM, mutuelle, assurance : quelles différences ?
+- **IPM** (Institution de Prévoyance Maladie) : rattachée à un employeur (SENELEC, SONATEL, EIFFAGE, etc.).  
+- **Mutuelle** : structure qui regroupe plusieurs adhérents (fonctionnaires, entreprises, professions libérales…).  
+- **Assurance santé privée** : contrat individuel ou collectif, souvent avec un plafond annuel.
+
+Chaque organisme applique ses propres **taux de remboursement** et plafonds pour les soins dentaires.
+
+## Quels soins dentaires sont le plus souvent pris en charge ?
+- **Consultations** et **détartrage** de prévention.  
+- **Soins conservateurs** : caries, dévitalisations.  
+- Certaines **prothèses** (couronnes, prothèses amovibles) et actes d’**implantologie** selon les contrats.  
+- Les **urgences dentaires** (douleur aiguë, abcès) avec devis lorsque des soins complémentaires sont nécessaires.
+
+> Les actes esthétiques purs (blanchiment, facettes) sont rarement remboursés ; ils sont expliqués séparément.
+
+## Comment se passe la prise en charge à la Clinique DABIA ?
+1. **Consultation** et examen clinique.  
+2. Élaboration d’un **plan de traitement** détaillé.  
+3. Remise d’un **devis** avec les informations utiles pour votre organisme.  
+4. Selon le contrat : **tiers payant** partiel/total ou remboursement après règlement.
+
+Nous travaillons avec de nombreuses **IPM et assurances** (Sunu, AXA, Sonam, Sanlam, etc.) présentées sur notre page dédiée : [/infos/assurances](/infos/assurances).
+
+## Conseils pratiques avant de venir
+- Apportez votre **carte IPM/mutuelle** à jour.  
+- Renseignez-vous sur votre **plafond annuel dentaire**.  
+- Demandez si une **entente préalable** est nécessaire pour les prothèses ou implants.  
+- Gardez les **factures** et devis signés pour le remboursement.
+
+## FAQ rapide
+**Peut-on connaître le montant remboursé avant les soins ?**  
+Souvent oui : votre organisme peut donner une estimation sur la base du devis.
+
+**Les implants sont-ils remboursés ?**  
+Cela dépend des contrats. Certains remboursent une partie, d’autres pas du tout.
+
+**Puis-je être soigné si ma carte n’est pas à jour ?**  
+Oui, mais les soins seront facturés directement au patient, avec possibilité de remboursement ultérieur si votre organisme l’accepte.
+
+> Pour toute question sur la prise en charge, contactez la Clinique DABIA ou présentez votre carte d’assurance à l’accueil avant la consultation.`,
+  },
+
+  {
+    slug: "attaya-cafe-kola-effets-sur-les-dents",
+    title:
+      "Attaya, café, kola : quels effets sur vos dents et votre sourire ?",
+    description:
+      "Taches sur les dents, caries, mauvaise haleine : point complet sur l’attaya, le café, la kola et les bons réflexes à Dakar.",
+    date: "2026-04-12",
+    category: "Prévention",
+    tags: [
+      "attaya dents",
+      "taches dents cafe",
+      "mauvaise haleine",
+      "prevention dentaire senegal",
+    ],
+    author: AUTHORS.sao,
+    cover: halitoseCover,
+    readingMinutes: 12,
+    pinned: true,
+    content: `Au Sénégal, l’**attaya**, le **café** et la **kola** font partie du quotidien. Ces habitudes conviviales ont toutefois un **impact réel** sur les dents, les gencives et l’haleine.
+
+## Taches et coloration des dents
+- L’**attaya** (thé vert très infusé) contient des **tanins** qui se fixent sur l’émail.  
+- Le **café** et certaines boissons foncées accentuent ces taches.  
+- La **kola** colore parfois la muqueuse et laisse des dépôts.
+
+Résultat : un sourire plus **jaune** ou **taché**, surtout si le brossage est insuffisant ou irrégulier.
+
+## Caries et gencives : quel risque ?
+- Attaya souvent préparé **très sucré** ⟶ risque de **caries** élevé si pris plusieurs fois par jour.  
+- Sucre + acides = terrain favorable pour les **bactéries** responsables de la plaque.  
+- Consommation tardive (le soir, après le brossage) ⟶ attaques prolongées sur l’émail.
+
+## Comment limiter les conséquences sans tout arrêter ?
+- Réduire le **sucre** ajouté (goûter progressivement moins sucré).  
+- Boire de l’**eau** après l’attaya ou le café pour rincer la bouche.  
+- Éviter d’enchaîner plusieurs verres sucrés sur la journée.  
+- Maintenir un **brossage 2–3×/jour** avec un dentifrice fluoré.
+
+## Détartrage, AirFlow et blanchiment
+Un **détartrage régulier** associé à un **AirFlow** permet d’enlever les colorations superficielles liées à l’attaya, au café et à la kola.  
+Si la teinte reste foncée, un **blanchiment dentaire** peut être envisagé après un bilan.
+
+## FAQ rapide
+**Dois-je arrêter complètement l’attaya ?**  
+Non, mais il est préférable de le consommer moins sucré et d’intensifier l’hygiène et les contrôles.
+
+**Le citron dans le thé “nettoie” les dents ?**  
+Non, l’acidité du citron fragilise l’émail s’il est utilisé trop souvent ; il faut éviter de garder la boisson en bouche.
+
+**Un simple dentifrice “blancheur” suffit-il ?**  
+Il peut aider pour les petites taches, mais ne remplace ni le détartrage, ni l’AirFlow, ni un éventuel blanchiment professionnel.
+
+> La Clinique DABIA à Dakar vous conseille pour garder un sourire lumineux tout en profitant de vos habitudes locales.`,
+  },
+
+  {
+    slug: "erreurs-quotidiennes-qui-abiment-les-dents",
+    title:
+      "Les 7 erreurs du quotidien qui abîment vos dents (et comment les éviter)",
+    description:
+      "Brossage trop fort, grignotages, automédication : les erreurs les plus fréquentes au Sénégal et les solutions simples pour protéger vos dents.",
+    date: "2026-04-19",
+    category: "Prévention",
+    tags: [
+      "erreurs brossage dents",
+      "dents abimees",
+      "douleur dentaire",
+      "prevention dentaire senegal",
+    ],
+    author: AUTHORS.sao,
+    cover: carieCover,
+    readingMinutes: 11,
+    pinned: true,
+    content: `Beaucoup de patients consultent pour des dents abîmées alors qu’ils ont l’impression de “bien faire”. Certaines **mauvaises habitudes** sont pourtant très fréquentes – et faciles à corriger.
+
+## Erreur 1 : se brosser trop fort
+Un brossage **agressif** avec une brosse dure peut user l’émail et abîmer les gencives.
+- Préférer une **brosse souple**.  
+- Effectuer des **mouvements doux** de la gencive vers la dent.
+
+## Erreur 2 : grignoter sucré toute la journée
+Biscuits, jus, bonbons, attaya très sucré… Chaque prise relance l’**attaque acide** sur les dents.
+- Limiter le **nombre de prises sucrées**.  
+- Boire de l’eau et se brosser les dents après les repas principaux.
+
+## Erreur 3 : utiliser des remèdes maison agressifs
+Citron pur, bicarbonate, charbon abrasif : ils peuvent **décaper** l’émail et rendre les dents sensibles.
+- Toujours demander **l’avis du dentiste** avant un “truc de grand-mère”.
+
+## Erreur 4 : ignorer les saignements des gencives
+Des gencives qui saignent sont **anormales**.
+- Consulter pour un **bilan parodontal** et envisager un détartrage ou un surfaçage.
+
+## Erreur 5 : repousser les contrôles
+Attendre d’avoir “trop mal” conduit souvent à des soins plus lourds (dé-vitalisations, extractions, prothèses).
+- Prévoir une visite tous les **6 à 12 mois**.
+
+## Erreur 6 : fumer sans contrôle dentaire
+Le **tabac** masque le saignement, favorise parodontite, taches et mauvaise haleine.
+- Un suivi régulier permet de limiter les risques et de dépister tôt.
+
+## Erreur 7 : s’automédiquer avec des antibiotiques
+Les antibiotiques sans prescription peuvent masquer les symptômes sans traiter la cause.
+- Seul un examen permet de poser le **bon diagnostic** et le bon traitement.
+
+> En corrigeant ces habitudes et en consultant régulièrement, vous protégez durablement vos dents et vos gencives. La Clinique DABIA à Dakar vous accompagne avec des conseils personnalisés.`,
   },
 ];
