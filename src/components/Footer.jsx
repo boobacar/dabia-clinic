@@ -19,7 +19,7 @@ const Footer = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <footer className="bg-gray-800 text-white py-8 mt-12">
+    <footer className="bg-gray-800 text-white py-8">
       <NAP />
 
       {/* Liens internes clés */}

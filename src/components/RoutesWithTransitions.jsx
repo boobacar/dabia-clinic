@@ -34,6 +34,7 @@ const LocalitePatteDOie = lazy(() => import("../pages/localites/PatteDOie"));
 const LocaliteFann = lazy(() => import("../pages/localites/Fann"));
 const LocalitePlateau = lazy(() => import("../pages/localites/Plateau"));
 const Galerie = lazy(() => import("../pages/Galerie"));
+const NotFound = lazy(() => import("../pages/NotFound"));
 
 export default function RoutesWithTransitions() {
   const location = useLocation();
@@ -86,6 +87,7 @@ export default function RoutesWithTransitions() {
       <Route path="/cabinet-dentaire-fann" element={<LocaliteFann />} />
       <Route path="/cabinet-dentaire-plateau" element={<LocalitePlateau />} />
       <Route path="/galerie" element={<Galerie />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }

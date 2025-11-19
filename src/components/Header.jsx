@@ -181,7 +181,7 @@ const Header = () => {
                       <Link
                         to={sub.path}
                         key={j}
-                        className="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-white rounded-xl"
+                        className="block px-4 py-2 text-sm text-white/90 rounded-xl transition-colors duration-150 hover:bg-[#bb2988]/80 hover:text-white"
                         onClick={() => setDropdownOpen(false)}
                       >
                         {sub.name}
