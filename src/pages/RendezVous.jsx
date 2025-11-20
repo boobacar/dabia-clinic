@@ -61,6 +61,13 @@ const RendezVous = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Validation supplémentaire : interdire toute date avant J+2
+    if (!date || date < minSelectableDate) {
+      setStatus("error");
+      return;
+    }
+
     setStatus("loading");
     try {
       sendEvent("form_rendez_vous_submit", { step: "start" });
@@ -221,9 +228,11 @@ const RendezVous = () => {
                     placeholderText="Choisissez une date"
                     locale={fr}
                     minDate={minSelectableDate}
+                    filterDate={(d) => !d || d >= minSelectableDate}
                     required
                     calendarClassName="dabia-datepicker"
                     className="border border-[#e7dcbc] rounded-full px-4 py-3 text-sm bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64] mb-1"
+                    onChangeRaw={(event) => event.preventDefault()}
                   />
                 )}
               </div>
