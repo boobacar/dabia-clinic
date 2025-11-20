@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import SuccessModal from "../components/SuccessModal";
 import { AnimatePresence, motion } from "framer-motion";
@@ -8,7 +8,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import imgrv from "../assets/rendezvous-dabia.webp";
 import Seo from "../components/Seo";
 import Breadcrumbs from "../components/Breadcrumbs";
-import { addDays, startOfDay } from "date-fns";
+import { addDays, startOfDay, format } from "date-fns";
 import { sendEvent } from "../analytics/ga4";
 import FancySelect from "../components/FancySelect";
 // confetti (chargé à la demande)
@@ -41,6 +41,16 @@ const RendezVous = () => {
   const [status, setStatus] = useState("idle");
   const [showModal, setShowModal] = useState(false);
   const [date, setDate] = useState(null);
+   const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const mm = window.matchMedia("(max-width: 767px)");
+    const update = () => setIsMobile(mm.matches);
+    update();
+    mm.addEventListener("change", update);
+    return () => mm.removeEventListener("change", update);
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -49,7 +59,7 @@ const RendezVous = () => {
       sendEvent("form_rendez_vous_submit", { step: "start" });
     } catch {}
 
-    if (form.current && date) {
+    if (form.current && date && !isMobile) {
       const hiddenDateInput = document.createElement("input");
       hiddenDateInput.type = "hidden";
       hiddenDateInput.name = "date";
@@ -181,18 +191,33 @@ const RendezVous = () => {
                 <label className="text-sm text-gray-600 mb-1">
                   Date souhaitée*
                 </label>
-                <DatePicker
-                  selected={date}
-                  onChange={(selectedDate) => setDate(selectedDate)}
-                  name="date"
-                  dateFormat="dd/MM/yyyy"
-                  placeholderText="Choisissez une date"
-                  locale={fr}
-                  minDate={minSelectableDate}
-                  required
-                  calendarClassName="dabia-datepicker"
-                  className="border border-[#e7dcbc] rounded-full px-4 py-3 text-sm bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64] mb-1"
-                />
+                {isMobile ? (
+                  <input
+                    type="date"
+                    name="date"
+                    required
+                    min={format(minSelectableDate, "yyyy-MM-dd")}
+                    className="border border-[#e7dcbc] rounded-full px-4 py-3 text-sm bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64] mb-1"
+                    onChange={(e) =>
+                      setDate(
+                        e.target.value ? new Date(e.target.value) : null
+                      )
+                    }
+                  />
+                ) : (
+                  <DatePicker
+                    selected={date}
+                    onChange={(selectedDate) => setDate(selectedDate)}
+                    name="date"
+                    dateFormat="dd/MM/yyyy"
+                    placeholderText="Choisissez une date"
+                    locale={fr}
+                    minDate={minSelectableDate}
+                    required
+                    calendarClassName="dabia-datepicker"
+                    className="border border-[#e7dcbc] rounded-full px-4 py-3 text-sm bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64] mb-1"
+                  />
+                )}
               </div>
 
               {/* Nos horaires juste sous la date sur mobile */}
@@ -202,35 +227,79 @@ const RendezVous = () => {
                 <label className="text-sm text-gray-600 mb-1">
                   Êtes-vous assuré(e) ?
                 </label>
-                <FancySelect
-                  name="assurance"
-                  placeholder="Sélectionner"
-                  options={[
-                    { value: "oui", label: "Oui" },
-                    { value: "non", label: "Non" },
-                  ]}
-                />
+                {isMobile ? (
+                  <select
+                    name="assurance"
+                    className="border border-[#e7dcbc] rounded-full px-4 py-3 text-sm bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
+                  >
+                    <option value="">Sélectionner</option>
+                    <option value="oui">Oui</option>
+                    <option value="non">Non</option>
+                  </select>
+                ) : (
+                  <FancySelect
+                    name="assurance"
+                    placeholder="Sélectionner"
+                    options={[
+                      { value: "oui", label: "Oui" },
+                      { value: "non", label: "Non" },
+                    ]}
+                  />
+                )}
               </div>
 
               <div className="flex flex-col">
                 <label className="text-sm text-gray-600 mb-1">
                   Types de soins
                 </label>
-                <FancySelect
-                  name="soin"
-                  placeholder="Sélectionner"
-                  options={[
-                    { value: "Consultation", label: "Consultation" },
-                    { value: "Esthétique dentaire", label: "Esthétique dentaire" },
-                    { value: "Parodontologie", label: "Parodontologie" },
-                    { value: "Implantologie", label: "Implantologie" },
-                    { value: "Endodontie", label: "Endodontie" },
-                    { value: "Facettes dentaires", label: "Facettes dentaires" },
-                    { value: "Orthodontie", label: "Orthodontie" },
-                    { value: "Greffe osseuse", label: "Greffe osseuse" },
-                    { value: "Blanchiment dentaire", label: "Blanchiment dentaire" },
-                  ]}
-                />
+                {isMobile ? (
+                  <select
+                    name="soin"
+                    className="border border-[#e7dcbc] rounded-full px-4 py-3 text-sm bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
+                  >
+                    <option value="">Sélectionner</option>
+                    <option value="Consultation">Consultation</option>
+                    <option value="Esthétique dentaire">
+                      Esthétique dentaire
+                    </option>
+                    <option value="Parodontologie">Parodontologie</option>
+                    <option value="Implantologie">Implantologie</option>
+                    <option value="Endodontie">Endodontie</option>
+                    <option value="Facettes dentaires">
+                      Facettes dentaires
+                    </option>
+                    <option value="Orthodontie">Orthodontie</option>
+                    <option value="Greffe osseuse">Greffe osseuse</option>
+                    <option value="Blanchiment dentaire">
+                      Blanchiment dentaire
+                    </option>
+                  </select>
+                ) : (
+                  <FancySelect
+                    name="soin"
+                    placeholder="Sélectionner"
+                    options={[
+                      { value: "Consultation", label: "Consultation" },
+                      {
+                        value: "Esthétique dentaire",
+                        label: "Esthétique dentaire",
+                      },
+                      { value: "Parodontologie", label: "Parodontologie" },
+                      { value: "Implantologie", label: "Implantologie" },
+                      { value: "Endodontie", label: "Endodontie" },
+                      {
+                        value: "Facettes dentaires",
+                        label: "Facettes dentaires",
+                      },
+                      { value: "Orthodontie", label: "Orthodontie" },
+                      { value: "Greffe osseuse", label: "Greffe osseuse" },
+                      {
+                        value: "Blanchiment dentaire",
+                        label: "Blanchiment dentaire",
+                      },
+                    ]}
+                  />
+                )}
               </div>
 
               <div>
