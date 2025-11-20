@@ -41,7 +41,7 @@ const RendezVous = () => {
   const [status, setStatus] = useState("idle");
   const [showModal, setShowModal] = useState(false);
   const [date, setDate] = useState(null);
-   const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -51,6 +51,13 @@ const RendezVous = () => {
     mm.addEventListener("change", update);
     return () => mm.removeEventListener("change", update);
   }, []);
+
+  // Sur mobile, on pré-sélectionne automatiquement la date à J+2
+  useEffect(() => {
+    if (isMobile && !date) {
+      setDate(minSelectableDate);
+    }
+  }, [isMobile, date]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -197,6 +204,7 @@ const RendezVous = () => {
                     name="date"
                     required
                     min={format(minSelectableDate, "yyyy-MM-dd")}
+                    value={date ? format(date, "yyyy-MM-dd") : ""}
                     className="border border-[#e7dcbc] rounded-full px-4 py-3 text-sm bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64] mb-1"
                     onChange={(e) =>
                       setDate(
