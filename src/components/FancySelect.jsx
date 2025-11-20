@@ -35,7 +35,7 @@ export default function FancySelect({
       <input type="hidden" name={name} value={value} />
       <button
         type="button"
-        className="select-cta w-full text-sm flex items-center justify-between"
+        className="select-cta w-full flex items-center justify-between"
         onClick={() => setOpen((prev) => !prev)}
         aria-haspopup="listbox"
         aria-expanded={open}

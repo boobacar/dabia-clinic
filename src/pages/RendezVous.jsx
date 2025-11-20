@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import SuccessModal from "../components/SuccessModal";
 import { AnimatePresence, motion } from "framer-motion";
@@ -11,6 +11,7 @@ import Breadcrumbs from "../components/Breadcrumbs";
 import { addDays, startOfDay, format } from "date-fns";
 import { sendEvent } from "../analytics/ga4";
 import FancySelect from "../components/FancySelect";
+
 // confetti (chargé à la demande)
 let confetti;
 import("canvas-confetti")
@@ -18,7 +19,7 @@ import("canvas-confetti")
   .catch(() => {});
 
 const minSelectableDate = addDays(startOfDay(new Date()), 2);
-const minDateISO = format(minSelectableDate, "yyyy-MM-dd");
+const availableFromLabel = format(minSelectableDate, "dd MMMM", { locale: fr });
 
 const HorairesCard = ({ className = "" }) => (
   <div
@@ -41,24 +42,7 @@ const RendezVous = () => {
   const form = useRef();
   const [status, setStatus] = useState("idle");
   const [showModal, setShowModal] = useState(false);
-  const [date, setDate] = useState(null);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    const mm = window.matchMedia("(max-width: 767px)");
-    const update = () => setIsMobile(mm.matches);
-    update();
-    mm.addEventListener("change", update);
-    return () => mm.removeEventListener("change", update);
-  }, []);
-
-  // Sur mobile, on pré-sélectionne automatiquement la date à J+2
-  useEffect(() => {
-    if (isMobile && !date) {
-      setDate(minSelectableDate);
-    }
-  }, [isMobile, date]);
+  const [date, setDate] = useState(minSelectableDate);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -69,18 +53,21 @@ const RendezVous = () => {
       return;
     }
 
+    if (form.current && date) {
+      let hiddenDateInput = form.current.querySelector('input[name="date"]');
+      if (!hiddenDateInput) {
+        hiddenDateInput = document.createElement("input");
+        hiddenDateInput.type = "hidden";
+        hiddenDateInput.name = "date";
+        form.current.appendChild(hiddenDateInput);
+      }
+      hiddenDateInput.value = format(date, "dd/MM/yyyy");
+    }
+
     setStatus("loading");
     try {
       sendEvent("form_rendez_vous_submit", { step: "start" });
     } catch {}
-
-    if (form.current && date && !isMobile) {
-      const hiddenDateInput = document.createElement("input");
-      hiddenDateInput.type = "hidden";
-      hiddenDateInput.name = "date";
-      hiddenDateInput.value = date.toLocaleDateString("fr-FR");
-      form.current.appendChild(hiddenDateInput);
-    }
 
     emailjs
       .sendForm(
@@ -93,7 +80,7 @@ const RendezVous = () => {
         setStatus("success");
         setShowModal(true);
         form.current.reset();
-        setDate(null);
+        setDate(minSelectableDate);
         try {
           sendEvent("form_rendez_vous_submit", { step: "success" });
         } catch {}
@@ -162,6 +149,7 @@ const RendezVous = () => {
               <p className="text-xs text-red-500 text-right">
                 Les champs marqués d&apos;une * sont obligatoires.
               </p>
+
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="flex flex-col">
                   <label className="text-sm text-gray-600 mb-1">Nom*</label>
@@ -169,7 +157,7 @@ const RendezVous = () => {
                     type="text"
                     name="nom"
                     required
-                    className="border border-[#e7dcbc] rounded-full px-4 py-3 text-sm bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
+                    className="border border-[#e7dcbc] rounded-full px-4 py-3 text-base bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
                   />
                 </div>
                 <div className="flex flex-col">
@@ -178,7 +166,7 @@ const RendezVous = () => {
                     type="text"
                     name="prenom"
                     required
-                    className="border border-[#e7dcbc] rounded-full px-4 py-3 text-sm bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
+                    className="border border-[#e7dcbc] rounded-full px-4 py-3 text-base bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
                   />
                 </div>
               </div>
@@ -189,7 +177,7 @@ const RendezVous = () => {
                   type="tel"
                   name="telephone"
                   required
-                  className="border border-[#e7dcbc] rounded-full px-4 py-3 text-sm bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
+                  className="border border-[#e7dcbc] rounded-full px-4 py-3 text-base bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
                 />
               </div>
 
@@ -198,7 +186,7 @@ const RendezVous = () => {
                 <input
                   type="email"
                   name="email"
-                  className="border border-[#e7dcbc] rounded-full px-4 py-3 text-sm bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
+                  className="border border-[#e7dcbc] rounded-full px-4 py-3 text-base bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
                 />
               </div>
 
@@ -206,44 +194,26 @@ const RendezVous = () => {
                 <label className="text-sm text-gray-600 mb-1">
                   Date souhaitée*
                 </label>
-                {isMobile ? (
-                  <input
-                    type="date"
-                    name="date"
-                    required
-                    min={minDateISO}
-                    value={date ? format(date, "yyyy-MM-dd") : ""}
-                    className="border border-[#e7dcbc] rounded-full px-4 py-3 text-sm bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64] mb-1"
-                    onChange={(e) => {
-                      const v = e.target.value;
-                      if (!v) {
-                        setDate(null);
-                        return;
-                      }
-                      // Empêche de garder une date antérieure à J+2
-                      if (v < minDateISO) {
-                        setDate(minSelectableDate);
-                      } else {
-                        setDate(new Date(v));
-                      }
-                    }}
-                  />
-                ) : (
-                  <DatePicker
-                    selected={date}
-                    onChange={(selectedDate) => setDate(selectedDate)}
-                    name="date"
-                    dateFormat="dd/MM/yyyy"
-                    placeholderText="Choisissez une date"
-                    locale={fr}
-                    minDate={minSelectableDate}
-                    filterDate={(d) => !d || d >= minSelectableDate}
-                    required
-                    calendarClassName="dabia-datepicker"
-                    className="border border-[#e7dcbc] rounded-full px-4 py-3 text-sm bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64] mb-1"
-                    onChangeRaw={(event) => event.preventDefault()}
-                  />
-                )}
+                <DatePicker
+                  selected={date}
+                  onChange={(selectedDate) => setDate(selectedDate)}
+                  name="date_display"
+                  dateFormat="dd/MM/yyyy"
+                  placeholderText="Choisissez une date"
+                  locale={fr}
+                  minDate={minSelectableDate}
+                  filterDate={(d) => !d || d >= minSelectableDate}
+                  required
+                  calendarClassName="dabia-datepicker"
+                  className="border border-[#e7dcbc] rounded-full px-4 py-3 text-base bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64] mb-1"
+                  onChangeRaw={(event) => event.preventDefault()}
+                />
+                <p className="mt-1 text-xs text-gray-500">
+                  Dates de rendez-vous en ligne disponibles à partir du{" "}
+                  <span className="font-semibold">{availableFromLabel}</span>.{" "}
+                  Pour une demande plus rapide ou une urgence, merci de nous
+                  contacter par téléphone.
+                </p>
               </div>
 
               {/* Nos horaires juste sous la date sur mobile */}
@@ -253,79 +223,35 @@ const RendezVous = () => {
                 <label className="text-sm text-gray-600 mb-1">
                   Êtes-vous assuré(e) ?
                 </label>
-                {isMobile ? (
-                  <select
-                    name="assurance"
-                    className="border border-[#e7dcbc] rounded-full px-4 py-3 text-sm bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
-                  >
-                    <option value="">Sélectionner</option>
-                    <option value="oui">Oui</option>
-                    <option value="non">Non</option>
-                  </select>
-                ) : (
-                  <FancySelect
-                    name="assurance"
-                    placeholder="Sélectionner"
-                    options={[
-                      { value: "oui", label: "Oui" },
-                      { value: "non", label: "Non" },
-                    ]}
-                  />
-                )}
+                <FancySelect
+                  name="assurance"
+                  placeholder="Sélectionner"
+                  options={[
+                    { value: "oui", label: "Oui" },
+                    { value: "non", label: "Non" },
+                  ]}
+                />
               </div>
 
               <div className="flex flex-col">
                 <label className="text-sm text-gray-600 mb-1">
                   Types de soins
                 </label>
-                {isMobile ? (
-                  <select
-                    name="soin"
-                    className="border border-[#e7dcbc] rounded-full px-4 py-3 text-sm bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
-                  >
-                    <option value="">Sélectionner</option>
-                    <option value="Consultation">Consultation</option>
-                    <option value="Esthétique dentaire">
-                      Esthétique dentaire
-                    </option>
-                    <option value="Parodontologie">Parodontologie</option>
-                    <option value="Implantologie">Implantologie</option>
-                    <option value="Endodontie">Endodontie</option>
-                    <option value="Facettes dentaires">
-                      Facettes dentaires
-                    </option>
-                    <option value="Orthodontie">Orthodontie</option>
-                    <option value="Greffe osseuse">Greffe osseuse</option>
-                    <option value="Blanchiment dentaire">
-                      Blanchiment dentaire
-                    </option>
-                  </select>
-                ) : (
-                  <FancySelect
-                    name="soin"
-                    placeholder="Sélectionner"
-                    options={[
-                      { value: "Consultation", label: "Consultation" },
-                      {
-                        value: "Esthétique dentaire",
-                        label: "Esthétique dentaire",
-                      },
-                      { value: "Parodontologie", label: "Parodontologie" },
-                      { value: "Implantologie", label: "Implantologie" },
-                      { value: "Endodontie", label: "Endodontie" },
-                      {
-                        value: "Facettes dentaires",
-                        label: "Facettes dentaires",
-                      },
-                      { value: "Orthodontie", label: "Orthodontie" },
-                      { value: "Greffe osseuse", label: "Greffe osseuse" },
-                      {
-                        value: "Blanchiment dentaire",
-                        label: "Blanchiment dentaire",
-                      },
-                    ]}
-                  />
-                )}
+                <FancySelect
+                  name="soin"
+                  placeholder="Sélectionner"
+                  options={[
+                    { value: "Consultation", label: "Consultation" },
+                    { value: "Esthétique dentaire", label: "Esthétique dentaire" },
+                    { value: "Parodontologie", label: "Parodontologie" },
+                    { value: "Implantologie", label: "Implantologie" },
+                    { value: "Endodontie", label: "Endodontie" },
+                    { value: "Facettes dentaires", label: "Facettes dentaires" },
+                    { value: "Orthodontie", label: "Orthodontie" },
+                    { value: "Greffe osseuse", label: "Greffe osseuse" },
+                    { value: "Blanchiment dentaire", label: "Blanchiment dentaire" },
+                  ]}
+                />
               </div>
 
               <div>
@@ -344,41 +270,39 @@ const RendezVous = () => {
                 </div>
               </div>
 
-              <div className="">
-                <div>
-                  <label className="text-sm text-gray-600 mb-1 block">
-                    Raison du rendez-vous :
+              <div>
+                <label className="text-sm text-gray-600 mb-1 block">
+                  Raison du rendez-vous :
+                </label>
+                <div className="space-y-2 text-sm text-gray-700">
+                  <label className="flex gap-2">
+                    <input
+                      type="checkbox"
+                      name="motif"
+                      value="nouveau patient"
+                    />
+                    Nouveau patient
                   </label>
-                  <div className="space-y-2 text-sm text-gray-700">
-                    <label className="flex gap-2">
-                      <input
-                        type="checkbox"
-                        name="motif"
-                        value="nouveau patient"
-                      />
-                      Nouveau patient
-                    </label>
-                    <label className="flex gap-2">
-                      <input
-                        type="checkbox"
-                        name="motif"
-                        value="déjà patient"
-                      />
-                      Déjà patient
-                    </label>
-                    <label className="flex gap-2">
-                      <input type="checkbox" name="motif" value="modifier" />
-                      Modifier un rendez-vous
-                    </label>
-                    <label className="flex gap-2">
-                      <input type="checkbox" name="motif" value="enfant" />
-                      Rendez-vous pour mon enfant
-                    </label>
-                    <label className="flex gap-2">
-                      <input type="checkbox" name="motif" value="urgence" />
-                      Urgence dentaire
-                    </label>
-                  </div>
+                  <label className="flex gap-2">
+                    <input
+                      type="checkbox"
+                      name="motif"
+                      value="déjà patient"
+                    />
+                    Déjà patient
+                  </label>
+                  <label className="flex gap-2">
+                    <input type="checkbox" name="motif" value="modifier" />
+                    Modifier un rendez-vous
+                  </label>
+                  <label className="flex gap-2">
+                    <input type="checkbox" name="motif" value="enfant" />
+                    Rendez-vous pour mon enfant
+                  </label>
+                  <label className="flex gap-2">
+                    <input type="checkbox" name="motif" value="urgence" />
+                    Urgence dentaire
+                  </label>
                 </div>
               </div>
 
@@ -389,7 +313,7 @@ const RendezVous = () => {
                 <textarea
                   name="message"
                   rows="4"
-                  className="w-full border border-[#e7dcbc] rounded-2xl px-4 py-3 text-sm bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
+                  className="w-full border border-[#e7dcbc] rounded-2xl px-4 py-3 text-base bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
                 ></textarea>
               </div>
 
@@ -403,7 +327,8 @@ const RendezVous = () => {
 
               {status === "error" && (
                 <p className="text-red-600 font-semibold text-center mt-2">
-                  Une erreur est survenue. Veuillez réessayer.
+                  Une erreur est survenue. Veuillez vérifier la date souhaitée
+                  et réessayer.
                 </p>
               )}
             </motion.form>
@@ -435,9 +360,7 @@ const RendezVous = () => {
                 </p>
               </div>
 
-              <div className="rounded-2xl bg-white/90 border border-[#e7dcbc] p-5 shadow-sm">
-                <HorairesCard className="hidden lg:block" />
-              </div>
+              <HorairesCard className="hidden lg:block" />
             </motion.div>
           </div>
         </motion.div>
