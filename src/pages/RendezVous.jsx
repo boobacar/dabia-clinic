@@ -18,6 +18,7 @@ import("canvas-confetti")
   .catch(() => {});
 
 const minSelectableDate = addDays(startOfDay(new Date()), 2);
+const minDateISO = format(minSelectableDate, "yyyy-MM-dd");
 
 const HorairesCard = ({ className = "" }) => (
   <div
@@ -210,14 +211,22 @@ const RendezVous = () => {
                     type="date"
                     name="date"
                     required
-                    min={format(minSelectableDate, "yyyy-MM-dd")}
+                    min={minDateISO}
                     value={date ? format(date, "yyyy-MM-dd") : ""}
                     className="border border-[#e7dcbc] rounded-full px-4 py-3 text-sm bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64] mb-1"
-                    onChange={(e) =>
-                      setDate(
-                        e.target.value ? new Date(e.target.value) : null
-                      )
-                    }
+                    onChange={(e) => {
+                      const v = e.target.value;
+                      if (!v) {
+                        setDate(null);
+                        return;
+                      }
+                      // Empêche de garder une date antérieure à J+2
+                      if (v < minDateISO) {
+                        setDate(minSelectableDate);
+                      } else {
+                        setDate(new Date(v));
+                      }
+                    }}
                   />
                 ) : (
                   <DatePicker
