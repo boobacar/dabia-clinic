@@ -56,7 +56,7 @@ const App = () => {
       <Header />
       <ScrollTopButton />
       <EmergencyCallButton />
-      <Suspense fallback={<LoadingOverlay label="Chargement" /> }>
+      <Suspense fallback={<LoadingOverlay fullScreen label="Chargement" /> }>
         <RoutesWithTransitions />
       </Suspense>
       <Footer />

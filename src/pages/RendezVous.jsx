@@ -109,7 +109,16 @@ const RendezVous = () => {
 
       {/* Fond photo + overlay dégradé */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-        <img src={imgrv} alt="" className="w-full h-full object-cover" />
+        <img
+          src={imgrv}
+          alt="Clinique Dentaire DABIA - salle de soins"
+          className="w-full h-full object-cover"
+          width={1920}
+          height={1080}
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/90 opacity-80" />
       </div>
 
