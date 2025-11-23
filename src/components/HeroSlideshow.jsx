@@ -1,4 +1,4 @@
-// src/components/HeroVideo.jsx
+// src/components/HeroSlideshow.jsx
 import { useEffect, useMemo, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -8,7 +8,7 @@ import SplitText from "./SplitText";
 const SLIDE_MS = 3000; // 5000 ms = 5 s par image
 const FADE_S = 1.5; // durée du fondu en secondes
 
-const HeroVideo = () => {
+const HeroSlideshow = () => {
   const [index, setIndex] = useState(0);
   const shouldReduceMotion = useReducedMotion();
   const timerRef = useRef(null);
@@ -119,4 +119,4 @@ const HeroVideo = () => {
   );
 };
 
-export default HeroVideo;
+export default HeroSlideshow;

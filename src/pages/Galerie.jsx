@@ -78,7 +78,7 @@ export default function Galerie() {
   const galleryImages = useMemo(() => {
     const modules = import.meta.glob(
       "../assets/galerie/*.{png,jpg,jpeg,webp,avif}",
-      { as: "url", eager: true }
+      { query: "?url", import: "default", eager: true }
     );
     const urls = Object.entries(modules)
       .sort(([a], [b]) =>

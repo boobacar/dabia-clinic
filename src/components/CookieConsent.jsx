@@ -1,28 +1,25 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
+import { sendEvent } from "../analytics/ga4";
 
-const LS_KEY = 'dabia_consent_v1';
+const LS_KEY = "dabia_consent_v1";
 
 const defaultState = {
-  // core
   analytics: false,
   ads: false,
 };
 
 function applyConsent(state) {
-  if (typeof window === 'undefined' || !window.gtag) return;
+  if (typeof window === "undefined" || !window.gtag) return;
   window.__analytics_allowed = !!state.analytics;
-  window.gtag('consent', 'update', {
-    analytics_storage: state.analytics ? 'granted' : 'denied',
-    ad_storage: state.ads ? 'granted' : 'denied',
-    ad_user_data: state.ads ? 'granted' : 'denied',
-    ad_personalization: state.ads ? 'granted' : 'denied',
-    // keep essential storage working
-    functionality_storage: 'granted',
-    security_storage: 'granted',
+  window.gtag("consent", "update", {
+    analytics_storage: state.analytics ? "granted" : "denied",
+    ad_storage: state.ads ? "granted" : "denied",
+    ad_user_data: state.ads ? "granted" : "denied",
+    ad_personalization: state.ads ? "granted" : "denied",
+    functionality_storage: "granted",
+    security_storage: "granted",
   });
 }
-
-import { sendEvent } from '../analytics/ga4';
 
 export default function CookieConsent() {
   const [open, setOpen] = useState(false);
@@ -35,7 +32,6 @@ export default function CookieConsent() {
       if (raw) {
         const p = JSON.parse(raw);
         setPrefs({ ...defaultState, ...p });
-        // apply stored consent on load
         if (window.gtag) applyConsent({ ...defaultState, ...p });
         window.__analytics_allowed = !!p.analytics;
         setOpen(false);
@@ -50,33 +46,34 @@ export default function CookieConsent() {
   if (!open) return null;
 
   return (
-    <div className="fixed bottom-4 right-4 z-50">
-      <div className="w-[min(360px,90vw)] rounded-xl border bg-white/95 backdrop-blur p-3 shadow-lg">
-        <p className="text-[13px] text-gray-800">
-          Nous utilisons des cookies pour améliorer votre expérience (mesure
-          d’audience, fonctionnalités essentielles). Vous pouvez accepter ou
-          refuser. Vous pourrez modifier votre choix à tout moment.
+    <div
+      className="pointer-events-none fixed inset-x-0 bottom-4 md:bottom-6 z-[60] px-3 md:px-6 flex justify-start"
+      style={{ paddingBottom: "max(1rem, env(safe-area-inset-bottom))" }}
+    >
+      <div className="pointer-events-auto w-full max-w-[430px] rounded-2xl border border-gray-200/70 bg-white shadow-xl shadow-gray-900/10 backdrop-blur p-4">
+        <p className="text-[13px] leading-5 text-gray-800">
+          Nous utilisons des cookies essentiels et de mesure d’audience pour
+          améliorer votre expérience. Vous pouvez accepter, refuser ou choisir
+          vos préférences.
         </p>
+
         {showManage && (
-          <div className="mt-2 text-[13px]">
+          <div className="mt-3 rounded-lg bg-gray-50 p-3 text-[13px]">
             <label className="flex items-center gap-2">
-              <input
-                type="checkbox"
-                checked
-                readOnly
-                disabled
-              />
+              <input type="checkbox" checked readOnly disabled />
               Fonctionnels (toujours actifs)
             </label>
-            <label className="flex items-center gap-2 mt-1">
+            <label className="mt-2 flex items-center gap-2">
               <input
                 type="checkbox"
                 checked={prefs.analytics}
-                onChange={(e) => setPrefs((p) => ({ ...p, analytics: e.target.checked }))}
+                onChange={(e) =>
+                  setPrefs((p) => ({ ...p, analytics: e.target.checked }))
+                }
               />
               Mesure d’audience (GA4)
             </label>
-            <label className="flex items-center gap-2 mt-1">
+            <label className="mt-2 flex items-center gap-2">
               <input
                 type="checkbox"
                 checked={prefs.ads}
@@ -86,12 +83,13 @@ export default function CookieConsent() {
             </label>
           </div>
         )}
-        <div className="mt-2 flex flex-wrap gap-2">
+
+        <div className="mt-3 flex flex-wrap gap-2">
           <button
             className="btn-cta btn-cta-sm text-[13px]"
             onClick={() => setShowManage((s) => !s)}
           >
-            {showManage ? 'Fermer' : 'Paramètres'}
+            {showManage ? "Fermer" : "Paramètres"}
           </button>
           <button
             className="btn-cta btn-cta-sm text-[13px]"
@@ -99,7 +97,9 @@ export default function CookieConsent() {
               const state = { ...defaultState, analytics: false, ads: false };
               localStorage.setItem(LS_KEY, JSON.stringify(state));
               applyConsent(state);
-              try { sendEvent('consent_update', { action: 'reject_all' }); } catch {}
+              try {
+                sendEvent("consent_update", { action: "reject_all" });
+              } catch {}
               setOpen(false);
             }}
           >
@@ -111,7 +111,9 @@ export default function CookieConsent() {
               const state = { analytics: true, ads: true };
               localStorage.setItem(LS_KEY, JSON.stringify(state));
               applyConsent(state);
-              try { sendEvent('consent_update', { action: 'accept_all' }); } catch {}
+              try {
+                sendEvent("consent_update", { action: "accept_all" });
+              } catch {}
               setOpen(false);
             }}
           >

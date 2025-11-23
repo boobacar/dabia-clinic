@@ -1,19 +1,28 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import BeforeAfterGallery from "../components/BeforeAfterGallery";
-import ClinicIntro from "../components/ClinicIntro";
-import CompetencesGrid from "../components/CompetencesGrid";
-import StaffPreview from "../components/StaffPreview";
 import HeroSlideshow from "../components/HeroSlideshow";
+import SkeletonImage from "../components/SkeletonImage";
+// Sections chargées en lazy pour alléger le bundle initial
+const BeforeAfterGallery = React.lazy(() =>
+  import("../components/BeforeAfterGallery")
+);
+const ClinicIntro = React.lazy(() => import("../components/ClinicIntro"));
+const CompetencesGrid = React.lazy(() =>
+  import("../components/CompetencesGrid")
+);
+const StaffPreview = React.lazy(() => import("../components/StaffPreview"));
+const BlogListCompact = React.lazy(() =>
+  import("../components/BlogListCompact")
+);
+const SectionWave = React.lazy(() => import("../components/SectionWave"));
+const KeyMetrics = React.lazy(() => import("../components/KeyMetrics"));
+const AssuranceMarquee = React.lazy(() =>
+  import("../components/AssuranceMarquee")
+);
 
 // 👉 On importe la source des articles
 import { POSTS } from "../data/posts";
-import BlogListCompact from "../components/BlogListCompact";
-import SkeletonImage from "../components/SkeletonImage";
-import SectionWave from "../components/SectionWave";
-import KeyMetrics from "../components/KeyMetrics";
-import AssuranceMarquee from "../components/AssuranceMarquee";
 // Logos assurances (pour la home marquee)
 import logoSunu from "../assets/assurances/sunu.webp";
 import logoAxa from "../assets/assurances/axa.webp";
@@ -54,9 +63,32 @@ const sortPinnedThenDate = (a, b) => {
 };
 
 const Home = () => {
-  const postsSorted = [...POSTS].sort(sortPinnedThenDate);
-  const latest = postsSorted.slice(0, 6); // vitrine
-  const allPosts = postsSorted; // liste complète
+  const postsSorted = useMemo(() => [...POSTS].sort(sortPinnedThenDate), []);
+  const latest = useMemo(() => postsSorted.slice(0, 6), [postsSorted]);
+  const assuranceLogos = useMemo(
+    () => [
+      logoAxa,
+      logoSonam,
+      logoSunu,
+      logoPrevoyance,
+      logoWafa,
+      logoSanlam,
+      logoOlea,
+      logoMsh,
+      logoAscoma,
+      logoAmsa,
+      logoIpmSenelec,
+      logoIpmPoste,
+      logoIpmSonatel,
+      logoIpmBis,
+      logoIpmEiffage,
+      logoIpmKingFahd,
+      logoDgid,
+      logoIpmCentif,
+      logoTransvie,
+    ],
+    []
+  );
 
   // Framer Motion variants
   const gridVariants = {
@@ -75,10 +107,14 @@ const Home = () => {
   return (
     <div className="bg-white text-gray-800">
       <HeroSlideshow />
-      <BeforeAfterGallery />
-      <ClinicIntro />
-      <KeyMetrics />
-      <SectionWave />
+      <Suspense fallback={<div className="py-12" aria-hidden="true" />}>
+        <BeforeAfterGallery />
+      </Suspense>
+      <Suspense fallback={<div className="py-8" aria-hidden="true" />}>
+        <ClinicIntro />
+        <KeyMetrics />
+        <SectionWave />
+      </Suspense>
       {/* Liens rapides – style pills aux couleurs du site */}
       <section className="py-8">
         <div className="max-w-7xl mx-auto px-4 flex flex-wrap items-center justify-center gap-3 text-sm">
@@ -105,33 +141,15 @@ const Home = () => {
           </Link>
         </div>
       </section>
-      <StaffPreview />
-      <AssuranceMarquee
-        className="py-6"
-        speed={45}
-        logos={[
-          logoAxa,
-          logoSonam,
-          logoSunu,
-          logoPrevoyance,
-          logoWafa,
-          logoSanlam,
-          logoOlea,
-          logoMsh,
-          logoAscoma,
-          logoAmsa,
-          logoIpmSenelec,
-          logoIpmPoste,
-          logoIpmSonatel,
-          logoIpmBis,
-          logoIpmEiffage,
-          logoIpmKingFahd,
-          logoDgid,
-          logoIpmCentif,
-          logoTransvie,
-        ]}
-      />
-      <CompetencesGrid />
+      <Suspense fallback={<div className="py-10" aria-hidden="true" />}>
+        <StaffPreview />
+        <AssuranceMarquee
+          className="py-6"
+          speed={45}
+          logos={assuranceLogos}
+        />
+        <CompetencesGrid />
+      </Suspense>
 
       {/* =========================
           Derniers articles (grille)
@@ -229,7 +247,9 @@ const Home = () => {
       {/* ===================================
           Tous nos articles (liste de liens)
          =================================== */}
-      <BlogListCompact />
+      <Suspense fallback={<div className="py-8" aria-hidden="true" />}>
+        <BlogListCompact />
+      </Suspense>
       <Suspense fallback={<div className="py-12" aria-hidden="true" />}>
         <TestimonialsCarousel />
         <GoogleMapSection />
