@@ -1,13 +1,10 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import BeforeAfterGallery from "../components/BeforeAfterGallery";
 import ClinicIntro from "../components/ClinicIntro";
 import CompetencesGrid from "../components/CompetencesGrid";
 import StaffPreview from "../components/StaffPreview";
-import TestimonialsCarousel from "../components/TestimonialsCarousel";
-import GoogleMapSection from "../components/GoogleMapSection";
-import Personnel from "./Personnel";
 import HeroSlideshow from "../components/HeroSlideshow";
 
 // 👉 On importe la source des articles
@@ -37,6 +34,14 @@ import logoIpmKingFahd from "../assets/assurances/ipm_kingfahd.webp";
 import logoTransvie from "../assets/assurances/transvie.webp";
 import logoIpmSenelec from "../assets/assurances/ipm_senelec.webp";
 import logoDgid from "../assets/assurances/dgid.webp";
+
+// Lazy-loaded sections (chargées en chunk séparé)
+const TestimonialsCarousel = React.lazy(() =>
+  import("../components/TestimonialsCarousel")
+);
+const GoogleMapSection = React.lazy(() =>
+  import("../components/GoogleMapSection")
+);
 
 // Utils: épinglés d'abord puis date décroissante
 const sortByDateDesc = (a, b) =>
@@ -225,8 +230,10 @@ const Home = () => {
           Tous nos articles (liste de liens)
          =================================== */}
       <BlogListCompact />
-      <TestimonialsCarousel />
-      <GoogleMapSection />
+      <Suspense fallback={<div className="py-12" aria-hidden="true" />}>
+        <TestimonialsCarousel />
+        <GoogleMapSection />
+      </Suspense>
     </div>
   );
 };

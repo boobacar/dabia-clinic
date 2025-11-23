@@ -13,10 +13,6 @@ const HeroVideo = () => {
   const shouldReduceMotion = useReducedMotion();
   const timerRef = useRef(null);
 
-  const handleAnimationComplete = () => {
-    console.log("All letters have animated!");
-  };
-
   // Préchargement léger: première et suivante uniquement (réduit la concurrence réseau initiale)
   useEffect(() => {
     [heroImages[0], heroImages[1]].filter(Boolean).forEach((src) => {
@@ -104,7 +100,6 @@ const HeroVideo = () => {
           threshold={0.1}
           rootMargin="-100px"
           textAlign="center"
-          onLetterAnimationComplete={handleAnimationComplete}
         />
 
         <motion.p
