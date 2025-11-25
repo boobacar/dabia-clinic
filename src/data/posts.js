@@ -82,11 +82,167 @@ export const TAGS = [
 
 export const POSTS = [
   {
+    slug: "ramadan-jeune-soins-dentaires-dakar",
+    title:
+      "Ramadan et soins dentaires à Dakar : haleine, douleur, quand consulter",
+    description:
+      "Jeûne, haleine, douleurs nocturnes : ce qui est compatible avec le jeûne et comment planifier les soins en soirée.",
+    date: "2025-11-25",
+    category: "Prévention",
+    tags: ["ramadan", "jeûne", "haleine", "dentiste dakar"],
+    author: AUTHORS.sao,
+    cover: halitoseCover,
+    pinned: true,
+    readingMinutes: 10,
+    content: `> En jeûne, priorisez les **soins urgents** (douleur, abcès, trauma). Pour les soins programmés, privilégiez les **rendez-vous après la rupture** du jeûne ou tôt le matin pour rester à l’aise.
+
+## Ce qui ne rompt pas le jeûne
+- **Examen clinique** et conseil préventif.  
+- **Détartrage** doux (sans ingestion).  
+- **Anesthésie locale** (piqûre).  
+- **Radio** (CBCT/panoramique) si nécessaire.  
+> Si vous craignez d’avaler de l’eau ou du gel, planifiez après l’iftar.
+
+## Douleurs et médicaments
+- **Paracétamol** : attendre l’iftar/suhoor pour le prendre.  
+- **Antibiotiques** : respectez les horaires fixés par le dentiste (souvent après iftar + suhoor).  
+- Éviter **anti-inflammatoires** en automédication (risque gastrique).
+
+## Haleine et bouche sèche pendant le jeûne
+- Brosse **douce** + pâte fluorée au suhoor et avant l’iftar.  
+- **Gratte-langue** doux le matin.  
+- Boire suffisamment la nuit, limiter **attaya/café** très sucrés.  
+- Si port d’**aligneurs/gouttières** : bien rincer et nettoyer au suhoor/iftar.
+
+## Quand consulter en urgence pendant le Ramadan
+- **Douleur pulsatile** qui empêche de dormir.  
+- **Gonflement** ou fièvre.  
+- **Traumatisme** (dent cassée/expulsée).  
+> En cas de doute, appelez la Clinique DABIA : une prise en charge rapide évite la rupture du jeûne à cause d’une aggravation.`,
+  },
+
+  {
+    slug: "tourisme-dentaire-dakar-planifier-sejour",
+    title: "Tourisme dentaire à Dakar : organiser ses soins en 7–10 jours",
+    description:
+      "Checklist pour patients de la diaspora : devis avant de voyager, étapes implant/facette et rythme des rendez-vous.",
+    date: "2025-11-01",
+    category: "Conseils",
+    tags: [
+      "tourisme dentaire senegal",
+      "devis dentaire dakar",
+      "implant dentaire",
+      "facettes",
+    ],
+    author: AUTHORS.sao,
+    cover: prixCover,
+    pinned: true,
+    readingMinutes: 11,
+    content: `Beaucoup de patients de la **diaspora** planifient leurs soins à Dakar. Avec une bonne préparation, il est possible de concentrer les étapes sur **7–10 jours** (hors cicatrisations implantaires).
+
+## Avant de voyager
+- Demandez un **appel vidéo** ou un pré-devis si vous avez déjà des radios.  
+- Préparez vos **ordonnances** et antécédents (allergies, traitements).  
+- Bloquez un **créneau large** les premiers jours pour le bilan + imagerie 3D.
+
+## Exemple de planning
+- **Jour 1** : bilan complet + photos + radios/CBCT + plan de traitement.  
+- **Jour 2–3** : soins prioritaires (caries, détartrage, urgences).  
+- **Jour 4–6** : étapes prothétiques/esthétiques (empreintes, provisoires).  
+- **Jour 7–10** : ajustements, pose provisoire/définitive selon l’acte.  
+> Pour les **implants**, la pose peut se faire pendant le séjour, la prothèse définitive nécessite un retour après cicatrisation.
+
+## Budget et prise en charge
+- Un **devis clair** vous est remis avant chaque étape.  
+- Les **assurances/IPM** peuvent couvrir certaines parties : apportez vos documents.  
+- Possibilité d’étaler certaines phases (urgence → provisoire, puis définitif au prochain séjour).
+
+## Astuces pratiques
+- Prévoir un **jour tampon** si vous êtes serré en timing.  
+- Éviter les aliments **très épicés** juste après les soins.  
+- Utiliser une **brosse souple** de voyage + bain de bouche doux si indiqué.`,
+  },
+
+  {
+    slug: "carie-biberon-enfant-senegal-prevention",
+    title:
+      "Carie du biberon au Sénégal : signes, prévention et soins précoces",
+    description:
+      "Biberon sucré, attaya ou jus chez les tout-petits : comment éviter la carie précoce et quand consulter un dentiste pédiatrique.",
+    date: "2025-10-01",
+    category: "Pédiatrie",
+    tags: ["carie biberon", "dentiste pediatrique dakar", "prévention", "enfant"],
+    author: AUTHORS.sao,
+    cover: enfantCover,
+    pinned: true,
+    readingMinutes: 9,
+    content: `La **carie du biberon** apparaît très tôt, surtout avec les biberons **sucrés** (lait concentré, jus, attaya) pris la nuit.
+
+## Signes d’alerte
+- Taches **brunes/blanches** sur les incisives de lait.  
+- **Haleine** anormale, irritabilité au biberon.  
+- Aliments qui se coincent, douleur au froid.
+
+## Prévenir à la maison
+- Pas de **biberon sucré** la nuit ; privilégier **eau** ou lait non sucré.  
+- Nettoyer les **gencives** avec une compresse humide après les repas, puis brosse souple dès la première dent.  
+- Dentifrice **fluoré** dès que l’enfant sait cracher (dose pois chiche).  
+- Limiter les **grignotages** sucrés (biscuits, jus, attaya répété).
+
+## À la clinique DABIA
+- Bilan pédiatrique **dès 1 an** ou apparition des premières dents.  
+- **Vernis fluoré** et conseils personnalisés.  
+- Soins précoces pour éviter la propagation aux molaires définitives.
+
+> Une carie de lait non soignée peut toucher la **dent définitive** en dessous. Consultez tôt pour éviter la douleur et les extractions.`,
+  },
+
+  {
+    slug: "blanchiment-maison-risques-dents-senegal",
+    title:
+      "Charbon, citron, poudre de brique : les risques du blanchiment maison au Sénégal",
+    description:
+      "Produits maison ou réseaux sociaux : ce que ça fait vraiment sur l’émail, comment éclaircir sans abîmer vos dents à Dakar.",
+    date: "2025-10-08",
+    category: "Esthétique",
+    tags: [
+      "blanchiment des dents",
+      "charbon dents",
+      "citron dents",
+      "dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: blanchimentCover,
+    pinned: true,
+    readingMinutes: 10,
+    content: `Certaines recettes virales (charbon, citron, poudre de brique, bicarbonate pur) **abrasent** ou **acidifient** l’émail. Résultat : dents plus sensibles, gencives irritées, teinte qui jaunit à long terme.
+
+## Pourquoi c’est risqué ?
+- **Citron/vinaigre** : attaques acides répétées ⟶ émail fragilisé.  
+- **Poudre de brique/charbon** : abrasifs qui creusent des **micro-rayures**.  
+- **Bicarbonate pur** : abrasivité élevée, gencives irritées.
+
+## Comment éclaircir sans danger ?
+- **Bilan** pour vérifier caries/fissures avant tout éclaircissement.  
+- **Détartrage + AirFlow** pour enlever les taches (attaya, café, kola).  
+- **Blanchiment médical** encadré, gels dosés + protections gingivales.  
+- Entretien : brossage doux, retouches légères avec gouttières si indiqué.
+
+## Bons réflexes à Dakar
+- Ne pas mélanger **recettes maison** sans avis pro.  
+- Privilégier des **dentifrices peu abrasifs** (RDA contrôlé).  
+- Espacer café/attaya ou rincer à l’eau ensuite.  
+- Prendre rendez-vous si **sensibilité** ou taches persistantes.
+
+> Le vrai “sourire blanc” se construit avec une **émail sain**, des soins adaptés et un entretien régulier, pas avec des recettes agressives.`,
+  },
+
+  {
     slug: "urgence-dentaire-dakar-que-faire",
     title: "Urgence dentaire à Dakar : que faire immédiatement ?",
     description:
       "Douleur aiguë, dent cassée, abcès… Les bons réflexes avant d’arriver à la Clinique DABIA et comment se déroule la prise en charge.",
-    date: "2025-08-05",
+    date: "2025-09-26",
     category: "Urgences",
     tags: ["urgence dentaire", "dentiste dakar", "douleur dentaire"],
     author: AUTHORS.sao,
@@ -142,7 +298,7 @@ Voir nos équipements d’imagerie et de planification : [/infos/technologie](/i
     slug: "scellants-sillons-enfants-dakar",
     title: "Scellants des sillons chez l’enfant : quand et pourquoi ?",
     description: "Prévenir les caries des molaires définitives avec les sealants : indications, déroulé et durée.",
-    date: "2025-10-07",
+    date: "2025-09-23",
     category: "Pédiatrie",
     tags: ["scellants", "prévention caries", "enfant"],
     author: AUTHORS.sao,
@@ -157,7 +313,7 @@ Voir nos équipements d’imagerie et de planification : [/infos/technologie](/i
       "Dentiste pour enfants au Sénégal : première visite, caries, prévention et conseils pour les parents",
     description:
       "À quel âge consulter, comment se déroule une première visite dentaire pour enfant à Dakar et comment prévenir les caries au quotidien.",
-    date: "2025-10-10",
+    date: "2025-09-20",
     category: "Pédiatrie",
     tags: [
       "dentiste pour enfant dakar",
@@ -236,7 +392,7 @@ Oui, sous contrôle du dentiste : vernis fluorés, conseils sur le dentifrice et
     slug: "bruxisme-gouttiere-protection-dakar",
     title: "Bruxisme : symptômes, causes et gouttière de protection",
     description: "Serrage/grincement la nuit, douleurs musculaires, usure des dents : comment diagnostiquer et soulager.",
-    date: "2025-10-07",
+    date: "2025-09-17",
     category: "Prévention",
     tags: ["bruxisme", "gouttière", "douleur nocturne"],
     author: AUTHORS.sao,
@@ -249,7 +405,7 @@ Oui, sous contrôle du dentiste : vernis fluorés, conseils sur le dentifrice et
     slug: "all-on-4-prothese-implants-dakar",
     title: "All‑on‑4 / Prothèse complète sur implants : pour qui ?",
     description: "Arcade complète fixée sur 4 implants : indications, étapes, confort et entretien.",
-    date: "2025-10-07",
+    date: "2025-09-14",
     category: "Implantologie",
     tags: ["all-on-4", "prothèse sur implants", "edentement total"],
     author: AUTHORS.sao,
@@ -262,7 +418,7 @@ Oui, sous contrôle du dentiste : vernis fluorés, conseils sur le dentifrice et
     slug: "sensibilite-dentaire-causes-solutions-dakar",
     title: "Sensibilité dentaire : causes et solutions efficaces",
     description: "Dents sensibles au froid/chaud : causes fréquentes et traitements possibles.",
-    date: "2025-10-07",
+    date: "2025-09-11",
     category: "Prévention",
     tags: ["sensibilité", "émail", "collet"],
     author: AUTHORS.sao,
@@ -276,7 +432,7 @@ Oui, sous contrôle du dentiste : vernis fluorés, conseils sur le dentifrice et
       "Tarif implant dentaire à Dakar : facteurs, étapes et devis personnalisé",
     description:
       "Ce qui fait varier le coût d’un implant à Dakar : imagerie 3D, greffe éventuelle, marque, couronne. Parcours type et demandes de devis.",
-    date: "2025-09-30",
+    date: "2025-09-08",
     category: "Implantologie",
     pinned: true,
     tags: ["tarif implant dentaire dakar", "implant dentaire", "prix"],
@@ -320,7 +476,7 @@ Oui, sous contrôle du dentiste : vernis fluorés, conseils sur le dentifrice et
     title: "Détartrage dentaire à Dakar : prix, fréquence, AirFlow et résultats",
     description:
       "Pourquoi le détartrage est essentiel, quand privilégier l’AirFlow et de quoi dépend le tarif à Dakar.",
-    date: "2025-09-30",
+    date: "2025-09-05",
     category: "Prévention",
     pinned: true,
     tags: ["détartrage dentaire dakar prix", "prévention", "parodontologie"],
@@ -355,7 +511,7 @@ Généralement **tous les 6 à 12 mois**, plus rapproché si **facteurs de risqu
     title: "Meilleur dentiste à Dakar ? Les critères pour bien choisir",
     description:
       "Comprendre les critères de qualité (écoute, diagnostic, technologie, hygiène, suivi) et poser les bonnes questions lors de la première visite.",
-    date: "2025-09-30",
+    date: "2025-09-02",
     category: "Conseils",
     pinned: true,
     tags: ["meilleur dentiste dakar", "cabinet dentaire dakar", "dentiste dakar"],
@@ -388,7 +544,7 @@ Généralement **tous les 6 à 12 mois**, plus rapproché si **facteurs de risqu
       "Blanchiment des dents à Dakar : méthodes, indications, prix et conseils",
     description:
       "Cabinet vs domicile, contre-indications, déroulé, entretien du résultat et fourchettes de prix indicatives.",
-    date: "2025-07-20",
+    date: "2025-08-30",
     category: "Esthétique",
     tags: ["blanchiment des dents", "prix", "clinique dentaire dakar"],
     author: AUTHORS.sao,
@@ -444,7 +600,7 @@ Les tarifs dépendent de la **méthode**, de la **sensibilité** et des **object
       "Implant dentaire à Dakar : étapes, durée, confort et coût — Guide complet",
     description:
       "Du bilan 3D à la couronne, explications claires sur la pose d’implant, la cicatrisation, les alternatives et les budgets.",
-    date: "2025-07-01",
+    date: "2025-08-27",
     category: "Implantologie",
     tags: ["implant dentaire", "prix", "dentiste dakar"],
     author: AUTHORS.sao,
@@ -491,7 +647,7 @@ Un **devis détaillé** vous est remis avant tout acte.
       "Orthodontie à Dakar : aligneurs transparents ou brackets — comment choisir ?",
     description:
       "Indications, différences pratiques, durée du traitement et hygiène — pour l’enfant, l’ado et l’adulte.",
-    date: "2025-06-14",
+    date: "2025-08-24",
     category: "Orthodontie",
     tags: ["orthodontie", "aligneurs", "dentiste dakar"],
     author: AUTHORS.sao,
@@ -533,7 +689,7 @@ Un **devis détaillé** vous est remis avant tout acte.
       "Prix d’une couronne dentaire à Dakar : matériaux, étapes et devis",
     description:
       "Céramique, zircone, métal-céramique : ce qui influence le coût d’une couronne à Dakar, comment se déroule la pose et quand la préférer à un onlay.",
-    date: "2026-02-20",
+    date: "2025-08-21",
     category: "Conseils",
     tags: [
       "couronne dentaire",
@@ -584,7 +740,7 @@ Le choix se fait selon la **position**, l’**occlusion**, le **sourire** et le 
       "Dévitalisation (traitement canalaire) à Dakar : déroulé, indications et prix",
     description:
       "Douleur, abcès, dent fissurée : quand dévitaliser ? Étapes, radios, durée et facteurs qui influencent le tarif à Dakar.",
-    date: "2026-02-27",
+    date: "2025-08-18",
     category: "Urgences",
     tags: [
       "traitement canalaire",
@@ -634,7 +790,7 @@ Une dent traitée canalaires est **plus fragile** : une **couronne** est souvent
       "Prix d’un appareil dentaire à Dakar : enfant, ado, adulte — ce qui fait varier le devis",
     description:
       "Aligneurs transparents, bagues métalliques ou esthétiques : explications claires sur les facteurs de prix en orthodontie à Dakar et le déroulé du traitement.",
-    date: "2026-03-06",
+    date: "2025-08-15",
     category: "Orthodontie",
     tags: [
       "prix appareil dentaire dakar",
@@ -697,7 +853,7 @@ Chez l’enfant et l’ado, l’orthodontie participe au bon **développement** 
       "Prix d’une urgence dentaire à Dakar : consultation, actes et nuit",
     description:
       "Douleur aiguë, abcès, traumatisme : ce qui influence le tarif d’une urgence dentaire à Dakar, en journée ou la nuit.",
-    date: "2026-03-13",
+    date: "2025-08-12",
     category: "Urgences",
     tags: [
       "prix urgence dentaire dakar",
@@ -750,7 +906,7 @@ La consultation d’urgence couvre les **gestes immédiats**. Les traitements co
       "Prix d’une prothèse dentaire à Dakar : partielle, complète, sur implants",
     description:
       "Prothèse amovible, bridge, prothèse complète ou sur implants : types, indications et facteurs qui influencent le coût à Dakar.",
-    date: "2026-03-20",
+    date: "2025-08-09",
     category: "Conseils",
     tags: [
       "prothèse dentaire",
@@ -811,7 +967,7 @@ La consultation d’urgence couvre les **gestes immédiats**. Les traitements co
       "Saignement des gencives : simple gingivite ou besoin d’un détartrage en profondeur ?",
     description:
       "Signes d’alerte, différence entre détartrage simple et surfaçage radiculaire, habitudes d’hygiène qui changent tout.",
-    date: "2025-05-30",
+    date: "2025-08-06",
     category: "Prévention",
     tags: ["gingivite", "détartrage", "douleur dentaire"],
     author: AUTHORS.sao,
@@ -849,7 +1005,7 @@ Tabac, diabète non équilibré, stress, hygiène insuffisante, bagues non netto
       "Première visite chez le dentiste : comment préparer son enfant sereinement",
     description:
       "Âge idéal, astuces concrètes, déroulé à la clinique et prévention des caries chez l’enfant.",
-    date: "2025-04-26",
+    date: "2025-08-03",
     category: "Pédiatrie",
     tags: ["enfant", "première visite", "prévention"],
     author: AUTHORS.sao,
@@ -890,7 +1046,7 @@ Tabac, diabète non équilibré, stress, hygiène insuffisante, bagues non netto
       "Mal de dents la nuit : causes fréquentes et que faire jusqu’au rendez-vous",
     description:
       "Pulpites, carie profonde, bruxisme, hypersensibilités — gestes utiles, ce qu’il faut éviter et quand consulter.",
-    date: "2025-05-10",
+    date: "2025-07-31",
     category: "Urgences",
     tags: ["douleur dentaire", "urgence dentaire", "caries"],
     author: AUTHORS.sao,
@@ -928,7 +1084,7 @@ Tabac, diabète non équilibré, stress, hygiène insuffisante, bagues non netto
       "Combien coûte un dentiste à Dakar ? Le guide des prix (indications générales)",
     description:
       "De la consultation au détartrage, composite, extraction et soins esthétiques : à quoi s’attendre et ce qui fait varier les tarifs.",
-    date: "2025-04-01",
+    date: "2025-07-28",
     category: "Conseils",
     tags: ["prix", "dentiste dakar", "clinique dentaire dakar"],
     author: AUTHORS.sao,
@@ -970,7 +1126,7 @@ Tabac, diabète non équilibré, stress, hygiène insuffisante, bagues non netto
       "Dévitalisation (traitement canalaire) : étapes, douleur, suites – Dakar",
     description:
       "Pourquoi dévitaliser une dent ? Étapes du traitement canalaire, douleur, antibiotiques, couronne après traitement à la Clinique DABIA.",
-    date: "2025-07-08",
+    date: "2025-07-25",
     category: "Urgences",
     tags: ["traitement canalaire", "douleur dentaire", "dentiste dakar"],
     author: AUTHORS.sao,
@@ -1016,7 +1172,7 @@ Une lésion persistante, un canal supplémentaire, une fuite coronaires peuvent 
       "Facettes dentaires à Dakar : indications, étapes, matériaux et prix",
     description:
       "Corriger couleur, forme, alignement léger : ce qu’il faut savoir sur les facettes céramiques/composites à la Clinique DABIA.",
-    date: "2025-01-22",
+    date: "2025-07-22",
     category: "Esthétique",
     tags: ["facettes", "esthétique", "clinique dentaire dakar"],
     author: AUTHORS.sao,
@@ -1060,7 +1216,7 @@ Nombre de facettes, matériau, complexité occlusale/gingivale. **Devis personna
       "Détartrage vs AirFlow : quelles différences et quand choisir l’un ou l’autre ?",
     description:
       "Plaque, tartre, taches : comprendre le rôle du détartrage ultrasonique et du jet de poudre AirFlow pour une hygiène optimale.",
-    date: "2025-04-06",
+    date: "2025-07-19",
     category: "Prévention",
     tags: ["détartrage", "hygiène", "prévention"],
     author: AUTHORS.sao,
@@ -1096,7 +1252,7 @@ Nombre de facettes, matériau, complexité occlusale/gingivale. **Devis personna
       "Mauvaise haleine (halitose) : causes, bilan et traitements efficaces",
     description:
       "D’où vient l’odeur ? Langue, gencives, dents, nez-gorge… Les solutions qui fonctionnent vraiment et le parcours à la Clinique DABIA.",
-    date: "2025-02-20",
+    date: "2025-07-16",
     category: "Conseils",
     tags: ["halitose", "mauvaise haleine", "prévention"],
     author: AUTHORS.sao,
@@ -1129,7 +1285,7 @@ Nombre de facettes, matériau, complexité occlusale/gingivale. **Devis personna
     title: "Carie dentaire : symptômes, traitement et prévention à Dakar",
     description:
       "Reconnaître une carie tôt, éviter la douleur et protéger ses dents grâce aux soins de la Clinique DABIA.",
-    date: "2025-11-05",
+    date: "2025-07-13",
     category: "Prévention",
     tags: [
       "carie dentaire",
@@ -1176,7 +1332,7 @@ Si la carie touche la **pulpe**, il faut parfois un **traitement canalaire** (d�
     title: "Douleur des dents de sagesse : quand faut-il extraire ?",
     description:
       "Tout savoir sur la douleur, les infections et l’extraction des dents de sagesse à la Clinique DABIA.",
-    date: "2025-11-12",
+    date: "2025-07-10",
     category: "Urgences",
     tags: [
       "dent de sagesse",
@@ -1220,7 +1376,7 @@ Si la carie touche la **pulpe**, il faut parfois un **traitement canalaire** (d�
     title: "Prothèse dentaire à Dakar : complète, partielle ou sur implant ?",
     description:
       "Les solutions modernes pour retrouver fonction et esthétique : quelle prothèse pour quel cas ?",
-    date: "2025-11-19",
+    date: "2025-07-07",
     category: "Conseils",
     tags: [
       "prothèse dentaire",
@@ -1261,7 +1417,7 @@ Besoin de **stabilité** et d’**esthétique** ; conditions osseuses évaluées
     title: "Urgence dentaire la nuit ou le week-end à Dakar : que faire ?",
     description:
       "Gestes qui soulagent, erreurs à éviter et comment organiser une prise en charge rapide.",
-    date: "2025-11-26",
+    date: "2025-07-04",
     category: "Urgences",
     tags: ["urgence dentaire", "nuit", "week-end", "dentiste dakar"],
     author: AUTHORS.sao,
@@ -1299,7 +1455,7 @@ Besoin de **stabilité** et d’**esthétique** ; conditions osseuses évaluées
       "Blanchiment ou facettes : quelle solution esthétique choisir à Dakar ?",
     description:
       "Comparatif clair entre éclaircissement de la teinte et relooking du sourire par facettes.",
-    date: "2025-12-03",
+    date: "2025-07-01",
     category: "Esthétique",
     tags: ["blanchiment", "facettes", "esthétique", "clinique dentaire dakar"],
     author: AUTHORS.sao,
@@ -1335,7 +1491,7 @@ Besoin de **stabilité** et d’**esthétique** ; conditions osseuses évaluées
     title: "Grossesse et santé des dents : soins et conseils à Dakar",
     description:
       "Quels soins dentaires pendant la grossesse ? Traitements possibles, précautions, prévention des gingivites et érosion acide liées aux nausées.",
-    date: "2025-12-12",
+    date: "2025-06-28",
     category: "Conseils",
     tags: ["grossesse et dents", "gingivite grossesse", "dentiste dakar"],
     author: AUTHORS.sao,
@@ -1379,7 +1535,7 @@ Contrairement aux idées reçues, la grande majorité des soins dentaires sont *
       "Vernis fluoré et fluoration : protéger les dents des enfants et adultes",
     description:
       "Indications, efficacité, fréquence et sécurité des vernis fluorés en cabinet et au quotidien.",
-    date: "2025-12-26",
+    date: "2025-06-25",
     category: "Pédiatrie",
     tags: ["vernis fluoré", "prévention caries", "enfant dakar"],
     author: AUTHORS.sao,
@@ -1423,7 +1579,7 @@ Oui. Les produits sont faiblement dosés, adaptés à l’âge et validés par l
     title: "Peur du dentiste : quelles options de sédation à Dakar ?",
     description:
       "Du MEOPA à la sédation légère : comment soigner sereinement les patients anxieux, adultes et enfants.",
-    date: "2025-01-02",
+    date: "2025-06-22",
     category: "Conseils",
     tags: ["peur du dentiste", "sédation dentaire", "dentiste dakar"],
     author: AUTHORS.sao,
@@ -1464,7 +1620,7 @@ Toutes ces méthodes sont encadrées par des protocoles médicaux stricts. Les d
       "Aligneurs transparents (type Invisalign) : prix, durée et entretien à Dakar",
     description:
       "Qui est éligible ? Combien de temps ? Coût indicatif, hygiène, cas simples vs complexes et contention après traitement.",
-    date: "2025-01-09",
+    date: "2025-06-19",
     category: "Orthodontie",
     tags: ["Invisalign Dakar", "aligneurs transparents", "orthodontie adulte"],
     author: AUTHORS.sao,
@@ -1517,7 +1673,7 @@ Toutes ces méthodes sont encadrées par des protocoles médicaux stricts. Les d
     title: "Bridge ou implant : que choisir pour remplacer une dent ?",
     description:
       "Comparatif clair : durée, coût, préservation de l’os et des dents voisines, entretien et indications.",
-    date: "2025-01-16",
+    date: "2025-06-16",
     category: "Implantologie",
     tags: ["bridge vs implant", "remplacement dent", "implant dentaire dakar"],
     author: AUTHORS.sao,
@@ -1560,7 +1716,7 @@ Toutes ces méthodes sont encadrées par des protocoles médicaux stricts. Les d
     title: "Couronne ou onlay : quelles différences et quand les poser ?",
     description:
       "Restaurations indirectes : indications, matériaux, étapes au cabinet et ordre de prix.",
-    date: "2025-01-23",
+    date: "2025-06-13",
     category: "Conseils",
     tags: ["couronne dentaire", "onlay", "prix dents dakar"],
     author: AUTHORS.sao,
@@ -1603,7 +1759,7 @@ Toutes ces méthodes sont encadrées par des protocoles médicaux stricts. Les d
     title: "CBCT (radio 3D) en dentaire : à quoi ça sert ?",
     description:
       "Implants, endodontie, dents incluses : bénéfices, dose, indications et sécurité de l’imagerie 3D.",
-    date: "2025-01-30",
+    date: "2025-06-10",
     category: "Technologie",
     tags: ["CBCT Dakar", "radio 3D dentaire", "technologie cabinet"],
     author: AUTHORS.sao,
@@ -1644,7 +1800,7 @@ Toutes ces méthodes sont encadrées par des protocoles médicaux stricts. Les d
     title: "Traumatisme dentaire chez l’enfant : que faire immédiatement ?",
     description:
       "Chute, dent cassée ou expulsée : gestes d’urgence, conservation du fragment et prise en charge en cabinet.",
-    date: "2025-02-06",
+    date: "2025-06-07",
     category: "Pédiatrie",
     tags: ["traumatisme dentaire enfant", "urgence dentaire", "dentiste dakar"],
     author: AUTHORS.sao,
@@ -1686,7 +1842,7 @@ Toutes ces méthodes sont encadrées par des protocoles médicaux stricts. Les d
     title: "Diabète et santé bucco-dentaire : risques et prévention",
     description:
       "Lien parodonte–diabète, cicatrisation, infections : protocole de prévention et suivi en cabinet.",
-    date: "2025-02-13",
+    date: "2025-06-04",
     category: "Prévention",
     tags: ["diabète et dents", "parodontite diabétique", "prévention dakar"],
     author: AUTHORS.sao,
@@ -1728,7 +1884,7 @@ Un diabète mal équilibré fragilise le système immunitaire et diminue la capa
       "Assurance dentaire au Sénégal : mutuelle, IPM et prise en charge chez le dentiste",
     description:
       "Comment fonctionnent les mutuelles, IPM et assurances santé pour les soins dentaires au Sénégal, et comment préparer sa visite à la Clinique DABIA.",
-    date: "2026-04-05",
+    date: "2025-06-01",
     category: "Conseils",
     tags: [
       "assurance dentaire senegal",
@@ -1790,7 +1946,7 @@ Oui, mais les soins seront facturés directement au patient, avec possibilité d
       "Attaya, café, kola : quels effets sur vos dents et votre sourire ?",
     description:
       "Taches sur les dents, caries, mauvaise haleine : point complet sur l’attaya, le café, la kola et les bons réflexes à Dakar.",
-    date: "2026-04-12",
+    date: "2025-05-29",
     category: "Prévention",
     tags: [
       "attaya dents",
@@ -1845,7 +2001,7 @@ Il peut aider pour les petites taches, mais ne remplace ni le détartrage, ni l�
       "Les 7 erreurs du quotidien qui abîment vos dents (et comment les éviter)",
     description:
       "Brossage trop fort, grignotages, automédication : les erreurs les plus fréquentes au Sénégal et les solutions simples pour protéger vos dents.",
-    date: "2026-04-19",
+    date: "2025-05-26",
     category: "Prévention",
     tags: [
       "erreurs brossage dents",
