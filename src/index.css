@@ -1,4 +1,12 @@
 @import "tailwindcss";
+
+/* Stop tiny horizontal drifts on mobile */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+#root { overflow-x: hidden; }
+
 /* Empêche la capture des gestes horizontaux, tout en autorisant le scroll vertical */
 .before-after-wrapper {
   /* Sur mobile, on ne capte que le pan vertical : le slider ne bloquera pas le scroll */

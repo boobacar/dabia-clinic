@@ -56,7 +56,7 @@ const HeroSlideshow = () => {
           animate={{ opacity: 1, scale: shouldReduceMotion ? 1 : 1.2 }}
           exit={{ opacity: shouldReduceMotion ? 1 : 0 }}
           transition={{
-            duration: shouldReduceMotion ? 0 : Math.min(1.2, SLIDE_MS/1000),
+            duration: shouldReduceMotion ? 0 : Math.min(1.2, SLIDE_MS / 1000),
             ease: "easeOut",
           }}
         />
@@ -111,10 +111,35 @@ const HeroSlideshow = () => {
           Des soins avancés, un accueil chaleureux, un sourire radieux.
         </motion.p>
 
-        <Link to="/rendez-vous" className="btn-cta">
-          Prendre un rendez-vous
-        </Link>
+        <div className="flex flex-col items-center gap-6">
+          <Link to="/rendez-vous" className="btn-cta">
+            Prendre un rendez-vous
+          </Link>
+        </div>
       </motion.div>
+
+      <div className="pointer-events-none absolute inset-x-0 bottom-12 sm:bottom-12 md:bottom-14 flex flex-col items-center gap-3">
+        <motion.div
+          aria-hidden="true"
+          initial={{ opacity: 0, y: -8 }}
+          animate={{ opacity: 0.95, y: [0, 42, 0] }}
+          transition={{ duration: 2.3, repeat: Infinity, ease: "easeInOut" }}
+          className="relative flex h-16 w-16 items-center justify-center rounded-full border-2 border-[#ad9d64]/70 bg-gradient-to-b from-white/15 to-white/0 text-[#f2e7b2] shadow-[0_18px_60px_-20px_rgba(0,0,0,0.95)] ring-1 ring-white/30 backdrop-blur-[4px]"
+        >
+          <span className="sr-only">Faites défiler pour découvrir</span>
+          <svg
+            className="h-7 w-7 drop-shadow-[0_0_14px_rgba(173,157,100,0.8)]"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M6 10l6 6 6-6" />
+          </svg>
+        </motion.div>
+      </div>
     </section>
   );
 };
