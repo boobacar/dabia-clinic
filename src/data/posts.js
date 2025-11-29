@@ -241,17 +241,17 @@ export const POSTS = [
     slug: "urgence-dentaire-dakar-que-faire",
     title: "Urgence dentaire à Dakar : que faire immédiatement ?",
     description:
-      "Douleur aiguë, dent cassée, abcès… Les bons réflexes avant d’arriver à la Clinique DABIA et comment se déroule la prise en charge.",
+      "Douleur aiguë, dent cassée, abcès… Les bons réflexes avant d’arriver à la Clinique Dentaire DABIA à Dakar et comment se déroule la prise en charge.",
     date: "2025-09-26",
     category: "Urgences",
     tags: ["urgence dentaire", "dentiste dakar", "douleur dentaire"],
     author: AUTHORS.sao,
     cover: urgenceCover,
     readingMinutes: 11,
-    content: `> **Résumé rapide** — En cas de douleur aiguë, gonflement ou traumatisme : prenez du **paracétamol** (pas d’aspirine si saignement), appliquez du **froid** sur la joue 20 min on/20 min off, **rincez** à l’eau tiède salée si suppuration, **gardez** tout fragment de dent dans du sérum ou du lait, et **appelez-nous** pour une prise en charge rapide : [/rendez-vous](/rendez-vous).
+    content: `> **Résumé rapide – urgence dentaire à Dakar** — En cas de douleur aiguë, gonflement ou traumatisme : prenez du **paracétamol** (pas d’aspirine si saignement), appliquez du **froid** sur la joue 20 min on/20 min off, **rincez** à l’eau tiède salée si suppuration, **gardez** tout fragment de dent dans du sérum ou du lait, et **appelez la Clinique Dentaire DABIA à Dakar** pour une prise en charge rapide : [/rendez-vous](/rendez-vous).
 
 ## Quand faut-il consulter en urgence ?
-Certains signes ne doivent pas attendre :
+Certains signes ne doivent pas attendre, quel que soit le **dentiste à Dakar** ou la **clinique dentaire** que vous consultez :
 - **Douleur nocturne** ou pulsatile qui empêche de dormir  
 - **Gonflement** de la joue ou du cou  
 - **Fièvre**, mauvais goût en bouche (éventuelle suppuration)  
@@ -510,7 +510,7 @@ Généralement **tous les 6 à 12 mois**, plus rapproché si **facteurs de risqu
     slug: "meilleur-dentiste-dakar-criteres-de-choix",
     title: "Meilleur dentiste à Dakar ? Les critères pour bien choisir",
     description:
-      "Comprendre les critères de qualité (écoute, diagnostic, technologie, hygiène, suivi) et poser les bonnes questions lors de la première visite.",
+      "Comprendre les critères de qualité (écoute, diagnostic, technologie, hygiène, suivi) pour choisir un dentiste ou une clinique dentaire à Dakar, et poser les bonnes questions lors de la première visite.",
     date: "2025-09-02",
     category: "Conseils",
     pinned: true,
@@ -518,7 +518,7 @@ Généralement **tous les 6 à 12 mois**, plus rapproché si **facteurs de risqu
     author: AUTHORS.sao,
     cover: prixCover,
     readingMinutes: 11,
-    content: `La notion de “**meilleur**” dentiste est **subjective**. En revanche, des **repères concrets** aident à choisir un cabinet qui vous convient à Dakar.
+    content: `La notion de “**meilleur**” dentiste est **subjective**. En revanche, des **repères concrets** aident à choisir un cabinet ou une **clinique dentaire à Dakar** qui vous convient.
 
 ## 7 critères utiles
 1. **Écoute et pédagogie** : le plan de traitement est expliqué, options et priorités sont posées.  
@@ -534,6 +534,16 @@ Généralement **tous les 6 à 12 mois**, plus rapproché si **facteurs de risqu
 - Quelles **options** existent pour atteindre mon objectif ?  
 - Quels **délais** et **coûts** prévoir ?  
 - Quel **entretien** pour pérenniser le résultat ?
+
+### FAQ – dentiste et clinique dentaire à Dakar
+**Quel est le meilleur dentiste à Dakar ?**  
+Il n’existe pas de “meilleur” dentiste universel, mais des **professionnels sérieux** qui s’appuient sur un diagnostic complet, des explications claires et des équipements modernes. L’important est de trouver un cabinet ou une **clinique dentaire à Dakar** où vous vous sentez écouté et en confiance.
+
+**Comment choisir une clinique dentaire à Dakar ?**  
+Comparez l’**expérience de l’équipe**, la **technologie** (radio 3D, scanner intra‑oral, protocole de stérilisation), la **qualité de l’accueil**, la clarté des **devis** et les possibilités de **suivi**. Visiter les lieux et poser des questions lors de la première consultation est souvent très utile.
+
+**La Clinique Dentaire DABIA accepte‑t‑elle de nouveaux patients ?**  
+Oui. Située à **Liberté 6 / Sicap Foire**, la Clinique Dentaire DABIA est une **clinique dentaire à Dakar** qui accueille de nouveaux patients pour des bilans, urgences, soins courants et plans de traitement complets.
 
 > Découvrez notre page Liberté 6 : [/cabinet-dentaire-liberte-6](/cabinet-dentaire-liberte-6) • Prenez RDV : [/rendez-vous](/rendez-vous).`,
   },
@@ -1083,14 +1093,16 @@ Tabac, diabète non équilibré, stress, hygiène insuffisante, bagues non netto
     title:
       "Combien coûte un dentiste à Dakar ? Le guide des prix (indications générales)",
     description:
-      "De la consultation au détartrage, composite, extraction et soins esthétiques : à quoi s’attendre et ce qui fait varier les tarifs.",
+      "De la consultation au détartrage, composite, extraction et soins esthétiques : à quoi s’attendre chez un dentiste à Dakar et ce qui fait varier les tarifs en clinique dentaire.",
     date: "2025-07-28",
     category: "Conseils",
     tags: ["prix", "dentiste dakar", "clinique dentaire dakar"],
     author: AUTHORS.sao,
     cover: prixCover,
     readingMinutes: 12,
-    content: `> **Transparence** — Les prix dépendent du **diagnostic**, de la **complexité** et des **matériaux**. Un **devis personnalisé** vous est remis avant tout acte.
+    content: `> **Transparence** — Les prix d’un **dentiste à Dakar** dépendent du **diagnostic**, de la **complexité** et des **matériaux**. Dans notre **clinique dentaire à Dakar** (Clinique Dentaire DABIA), un **devis personnalisé** vous est remis avant tout acte.
+
+## Dentiste à Dakar : comprendre les prix en clinique dentaire
 
 ## Ce qui influence un tarif
 - **Temps clinique** (durée, nombre de séances)  
@@ -1116,6 +1128,12 @@ Tabac, diabète non équilibré, stress, hygiène insuffisante, bagues non netto
 **Les assurances couvrent-elles ?** Selon contrat et plafonds.  
 **Puis-je avoir plusieurs devis ?** Oui, nous expliquons chaque option.  
 **Existe-t-il des alternatives moins coûteuses ?** Parfois : **bridge**, **prothèse amovible**, temporisations.
+
+**Quel type de dentiste à Dakar choisir pour optimiser le budget ?**  
+Pour certains actes simples, un cabinet de **proximité** peut suffire ; pour des traitements plus complexes (implantologie, orthodontie, réhabilitation complète), une **clinique dentaire à Dakar** bien équipée (imagerie 3D, scanner intra‑oral, stérilisation structurée) permet souvent un plan plus précis et mieux structuré.
+
+**La Clinique Dentaire DABIA est‑elle une clinique dentaire à Dakar orientée transparence sur les prix ?**  
+Oui, nous détaillons le **plan de traitement**, les **options** possibles et remettons un **devis clair** avant les soins. L’objectif est que chaque patient comprenne ce qu’il paie et pourquoi.
 
 > Pour un devis précis après examen : [/rendez-vous](/rendez-vous).`,
   },
@@ -1171,14 +1189,14 @@ Une lésion persistante, un canal supplémentaire, une fuite coronaires peuvent 
     title:
       "Facettes dentaires à Dakar : indications, étapes, matériaux et prix",
     description:
-      "Corriger couleur, forme, alignement léger : ce qu’il faut savoir sur les facettes céramiques/composites à la Clinique DABIA.",
+      "Corriger couleur, forme, alignement léger : ce qu’il faut savoir sur les facettes céramiques/composites à la Clinique Dentaire DABIA à Dakar.",
     date: "2025-07-22",
     category: "Esthétique",
     tags: ["facettes", "esthétique", "clinique dentaire dakar"],
     author: AUTHORS.sao,
     cover: facettesCover,
     readingMinutes: 14,
-    content: `Les **facettes dentaires** corrigent couleur, **forme** et légers **désalignements** visibles du sourire. Elles préservent la biologie si l’indication est respectée.
+    content: `Les **facettes dentaires** corrigent couleur, **forme** et légers **désalignements** visibles du sourire. À Dakar, dans une **clinique dentaire** comme la Clinique Dentaire DABIA, elles préservent la biologie si l’indication est respectée.
 
 ## Pour qui ?
 - Teinte non corrigeable au blanchiment
@@ -1375,7 +1393,7 @@ Si la carie touche la **pulpe**, il faut parfois un **traitement canalaire** (d�
     slug: "prothese-dentaire-complete-partielle-ou-sur-implant-dakar",
     title: "Prothèse dentaire à Dakar : complète, partielle ou sur implant ?",
     description:
-      "Les solutions modernes pour retrouver fonction et esthétique : quelle prothèse pour quel cas ?",
+      "Les solutions modernes pour retrouver fonction et esthétique à Dakar : quelle prothèse pour quel cas et pour quel budget en clinique dentaire ?",
     date: "2025-07-07",
     category: "Conseils",
     tags: [
@@ -1387,7 +1405,7 @@ Si la carie touche la **pulpe**, il faut parfois un **traitement canalaire** (d�
     author: AUTHORS.sao,
     cover: protheseCover,
     readingMinutes: 13,
-    content: `Perte de dents ? Les prothèses **modernes** permettent de restaurer **mastication**, **phonation** et **esthétique**. Le choix dépend du **nombre de dents manquantes**, du **volume osseux** et du **budget**.
+    content: `Perte de dents ? Les prothèses **modernes** permettent de restaurer **mastication**, **phonation** et **esthétique**. À Dakar, une **clinique dentaire** comme la Clinique Dentaire DABIA vous aide à choisir la solution adaptée selon le **nombre de dents manquantes**, le **volume osseux** et le **budget**.
 
 ## Les grandes familles
 - **Partielle amovible** : clipsée, économie et facilité d’entretien.  
@@ -1454,14 +1472,14 @@ Besoin de **stabilité** et d’**esthétique** ; conditions osseuses évaluées
     title:
       "Blanchiment ou facettes : quelle solution esthétique choisir à Dakar ?",
     description:
-      "Comparatif clair entre éclaircissement de la teinte et relooking du sourire par facettes.",
+      "Comparatif clair entre éclaircissement de la teinte et relooking du sourire par facettes dans une clinique dentaire à Dakar.",
     date: "2025-07-01",
     category: "Esthétique",
     tags: ["blanchiment", "facettes", "esthétique", "clinique dentaire dakar"],
     author: AUTHORS.sao,
     cover: blanchimentVsFacettesCover,
     readingMinutes: 11,
-    content: `Pour **éclaircir** la teinte, on pense au **blanchiment** ; pour corriger **forme**, **alignement léger** et **teinte réfractaire**, on envisage des **facettes**. Les deux solutions peuvent être **complémentaires**.
+    content: `Pour **éclaircir** la teinte, on pense au **blanchiment** ; pour corriger **forme**, **alignement léger** et **teinte réfractaire**, on envisage des **facettes**. Dans une **clinique dentaire à Dakar** comme DABIA, les deux solutions peuvent être **complémentaires**.
 
 ## Blanchiment : quand et comment ?
 - Idéal si **teinte uniforme** à éclaircir  

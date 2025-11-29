@@ -117,28 +117,37 @@ const Home = () => {
       </Suspense>
       {/* Liens rapides – style pills aux couleurs du site */}
       <section className="py-8">
-        <div className="max-w-7xl mx-auto px-4 flex flex-wrap items-center justify-center gap-3 text-sm">
-          <Link to="/dentiste-dakar" className="btn-cta btn-cta-sm">
-            Dentiste Dakar
-          </Link>
-          <Link to="/cabinet-dentaire-dakar" className="btn-cta btn-cta-sm">
-            Cabinet dentaire
-          </Link>
-          <Link to="/urgence-dentaire-dakar" className="btn-cta btn-cta-sm">
-            Urgence
-          </Link>
-          <Link to="/all-competences" className="btn-cta btn-cta-sm">
-            Compétences
-          </Link>
-          <Link to="/infos/technologie" className="btn-cta btn-cta-sm">
-            Technologie
-          </Link>
-          <Link to="/infos/assurances" className="btn-cta btn-cta-sm">
-            Assurances
-          </Link>
-          <Link to="/cabinet-dentaire-liberte-6" className="btn-cta btn-cta-sm">
-            Liberté 6
-          </Link>
+        <div className="max-w-7xl mx-auto px-4">
+          <p className="text-center text-sm text-gray-600 mb-3">
+            Vous cherchez un dentiste à Dakar ou une clinique dentaire moderne ?
+            Accédez directement à nos pages clés :
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-3 text-sm">
+            <Link to="/dentiste-dakar" className="btn-cta btn-cta-sm">
+              Dentiste Dakar
+            </Link>
+            <Link to="/cabinet-dentaire-dakar" className="btn-cta btn-cta-sm">
+              Cabinet dentaire
+            </Link>
+            <Link to="/urgence-dentaire-dakar" className="btn-cta btn-cta-sm">
+              Urgence
+            </Link>
+            <Link to="/all-competences" className="btn-cta btn-cta-sm">
+              Compétences
+            </Link>
+            <Link to="/infos/technologie" className="btn-cta btn-cta-sm">
+              Technologie
+            </Link>
+            <Link to="/infos/assurances" className="btn-cta btn-cta-sm">
+              Assurances
+            </Link>
+            <Link
+              to="/cabinet-dentaire-liberte-6"
+              className="btn-cta btn-cta-sm"
+            >
+              Liberté 6
+            </Link>
+          </div>
         </div>
       </section>
       <Suspense fallback={<div className="py-10" aria-hidden="true" />}>

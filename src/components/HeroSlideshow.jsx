@@ -74,7 +74,7 @@ const HeroSlideshow = () => {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="text-[#ad9d64] text-xl md:text-3xl mb-2"
+          className="text-[#ad9d64] text-2xl md:text-3xl mb-2"
         >
           Bienvenue à la Clinique Dentaire
         </motion.h2>
@@ -90,7 +90,7 @@ const HeroSlideshow = () => {
 
         <SplitText
           text="DABIA"
-          className="text-[#ad9d64] font-bold text-5xl md:text-7xl mb-6"
+          className="text-[#ad9d64] font-bold text-7xl md:text-7xl mb-6"
           delay={100}
           duration={0.6}
           ease="power3.out"
@@ -100,15 +100,18 @@ const HeroSlideshow = () => {
           threshold={0.1}
           rootMargin="-100px"
           textAlign="center"
+          tag="h1"
         />
 
         <motion.p
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
-          className="border border-[#ad9d64]/40 p-2 text-[#ad9d64] max-w-60 text-sm mb-10 sm:max-w-100 rounded"
+          className="border-2 border-[#ad9d64]/40 p-2 text-[#ad9d64] max-w-60 text-md text-justify mb-10 sm:max-w-100 rounded-lg"
         >
-          Des soins avancés, un accueil chaleureux, un sourire radieux.
+          Clinique dentaire moderne à Dakar : implants, orthodontie, urgences et
+          esthétique du sourire, avec un accueil chaleureux et un plateau
+          technique de pointe.
         </motion.p>
 
         <div className="flex flex-col items-center gap-6">
@@ -118,7 +121,7 @@ const HeroSlideshow = () => {
         </div>
       </motion.div>
 
-      <div className="pointer-events-none absolute inset-x-0 bottom-12 sm:bottom-12 md:bottom-14 flex flex-col items-center gap-3">
+      <div className="pointer-events-none absolute inset-x-0 bottom-40 sm:bottom-40 md:bottom-40 flex flex-col items-center gap-3">
         <motion.div
           aria-hidden="true"
           initial={{ opacity: 0, y: -8 }}

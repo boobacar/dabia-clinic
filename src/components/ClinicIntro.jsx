@@ -39,17 +39,17 @@ const ClinicIntro = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl text-[#ad9d64] font-bold mb-4">
-            À propos de la Clinique Dentaire DABIA
+            À propos de la Clinique Dentaire DABIA à Dakar
           </h2>
           <p className="text-lg mb-6 text-gray-700">
-            Située au cœur de Dakar, à la Sicap Foire Socabeg à 150m des deux
-            voies de Liberté VI, notre clinique dentaire vous accueille dans un
-            cadre moderne, chaleureux et professionnel. Nous mettons un point
+            Clinique dentaire à Dakar, située à la Sicap Foire Socabeg à 150m
+            des deux voies de Liberté VI, DABIA vous accueille dans un cadre
+            moderne, chaleureux et professionnel. Nous mettons un point
             d'honneur à offrir des soins de qualité, adaptés aux besoins de
-            chaque patient. Notre équipe expérimentée et attentionnée vous
-            accompagne avec écoute et bienveillance, que ce soit pour des
-            consultations de routine, des traitements spécialisés ou des
-            interventions esthétiques. Votre sourire est notre priorité !
+            chaque patient. Notre équipe de dentistes à Dakar vous accompagne
+            avec écoute et bienveillance, que ce soit pour des consultations de
+            routine, des traitements spécialisés ou des interventions
+            esthétiques. Votre sourire est notre priorité !
           </p>
           <Link to="/rendez-vous" className="btn-cta">
             Prendre un rendez-vous

@@ -45,6 +45,12 @@ export default function CompetencesGrid() {
         Nos Compétences
       </motion.h2>
 
+      <p className="max-w-3xl mx-auto text-center text-sm text-gray-600 mb-6">
+        Dans notre clinique dentaire à Dakar, nous proposons une large gamme de
+        soins : prévention, implants, orthodontie, prothèses, traitement des
+        gencives et esthétique du sourire, pour adultes et enfants.
+      </p>
+
       <motion.div
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
         variants={container}

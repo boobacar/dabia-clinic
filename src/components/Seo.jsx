@@ -44,7 +44,7 @@ export default function Seo({
   const finalUrl = url || defaultSite.domain;
   const finalDesc =
     description ||
-    "Soins dentaires de qualité à Dakar : implants, orthodontie, urgences, esthétique. Prenez rendez-vous à la Clinique Dentaire DABIA.";
+    "Dentiste à Dakar : clinique dentaire moderne pour implants, orthodontie, urgences et esthétique. Prenez rendez-vous à la Clinique Dentaire DABIA.";
 
   const orgJsonLd = {
     "@context": "https://schema.org",
@@ -55,6 +55,7 @@ export default function Seo({
     telephone: defaultSite.phone,
     address: { "@type": "PostalAddress", ...defaultSite.address },
     openingHours: ["Mo-Fr 09:00-19:00", "Sa 09:00-13:00"],
+    areaServed: ["Dakar", "Liberté 6", "Sicap Foire", "Parcelles Assainies"],
     sameAs: defaultSite.sameAs,
   };
 

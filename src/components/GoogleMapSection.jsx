@@ -16,7 +16,7 @@ const GoogleMapSection = () => {
         transition={{ duration: 0.4, delay: 0.05 }}
         viewport={{ once: true, amount: 0.5 }}
       >
-        Nous trouver
+        Trouver la clinique dentaire DABIA à Dakar
       </motion.h2>
       <motion.div
         className="w-full h-96 max-w-6xl mx-auto"
