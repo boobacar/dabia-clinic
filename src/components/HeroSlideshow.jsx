@@ -121,7 +121,7 @@ const HeroSlideshow = () => {
         </div>
       </motion.div>
 
-      <div className="pointer-events-none absolute inset-x-0 bottom-40 sm:bottom-40 md:bottom-40 flex flex-col items-center gap-3">
+      <div className="pointer-events-none absolute inset-x-0 bottom-15 sm:bottom-40 md:bottom-40 flex flex-col items-center gap-3">
         <motion.div
           aria-hidden="true"
           initial={{ opacity: 0, y: -8 }}
