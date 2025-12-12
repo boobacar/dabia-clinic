@@ -193,8 +193,8 @@
   {
     "slug": "recession-gingivale-causes-soins-greffe-dakar",
     "title": "Récession gingivale : causes, traitements et greffe de gencive à Dakar",
-    "description": "Brossage traumatique, bruxisme, parodontite : comprendre la récession et les solutions (greffe conjonctive, collagénique).",
-    "date": "2025-12-19",
+    "description": "Brossage trop appuyé, parodontite ou piercing : comment stopper une récession et quand envisager une greffe conjonctive à Dakar.",
+    "date": "2025-12-24",
     "category": "Prévention",
     "tags": ["récession gingivale", "greffe gencive", "parodontologie dakar"]
   },
@@ -307,5 +307,37 @@
     "date": "2026-03-20",
     "category": "Conseils",
     "tags": ["prothèse dentaire", "prix prothese dentaire dakar", "dentier complet"]
+  },
+  {
+    "slug": "parodontite-dakar-surfacage-plan-traitement",
+    "title": "Parodontite à Dakar : symptômes, surfaçage et plan de traitement",
+    "description": "Saignement, mauvaise haleine, mobilité : protocole de traitement parodontal et surfaçage radiculaire à la Clinique DABIA.",
+    "date": "2025-12-03",
+    "category": "Prévention",
+    "tags": [
+      "parodontite dakar",
+      "surfaçage radiculaire",
+      "gencives qui saignent"
+    ]
+  },
+  {
+    "slug": "ronflement-apnee-gouttiere-mandibulaire-dakar",
+    "title": "Ronflement et apnée légère : la gouttière mandibulaire à Dakar",
+    "description": "Orthèse d’avancée mandibulaire (OAM), parcours sommeil et conseils pour réduire le ronflement dans une clinique dentaire à Dakar.",
+    "date": "2025-12-10",
+    "category": "Conseils",
+    "tags": ["ronflement", "apnée du sommeil", "orthèse d'avancée mandibulaire"]
+  },
+  {
+    "slug": "orthodontie-interceptive-enfant-dakar-appareils",
+    "title": "Orthodontie interceptive : quand poser un appareil chez l’enfant à Dakar ?",
+    "description": "Âge idéal, appareils d’expansion, habitudes à corriger et rôle des parents pour guider la croissance des mâchoires.",
+    "date": "2025-12-17",
+    "category": "Pédiatrie",
+    "tags": [
+      "orthodontie enfant dakar",
+      "appareil interceptif",
+      "dentiste pediatrique dakar"
+    ]
   }
 ]

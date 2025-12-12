@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/parodontite-dakar-surfacage-plan-traitement</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/gingivite.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/ronflement-apnee-gouttiere-mandibulaire-dakar</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/malnuit.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/orthodontie-interceptive-enfant-dakar-appareils</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/enfant.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/recession-gingivale-causes-soins-greffe-dakar</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/fluor.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/ramadan-jeune-soins-dentaires-dakar</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/halitose.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/tourisme-dentaire-dakar-planifier-sejour</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/prix.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/carie-biberon-enfant-senegal-prevention</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/enfant.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/blanchiment-maison-risques-dents-senegal</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/technologie/tech-led.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.cliniquedentairedabia.com/blog/urgence-dentaire-dakar-que-faire</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
       <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/urgence.webp</image:loc>

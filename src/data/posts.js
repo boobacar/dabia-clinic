@@ -82,6 +82,216 @@ export const TAGS = [
 
 export const POSTS = [
   {
+    slug: "parodontite-dakar-surfacage-plan-traitement",
+    title: "Parodontite à Dakar : symptômes, surfaçage et plan de traitement",
+    description:
+      "Saignement, mauvaise haleine, mobilité dentaire : comment diagnostiquer et traiter une parodontite avec un surfaçage radiculaire à Dakar.",
+    date: "2025-12-03",
+    category: "Prévention",
+    tags: [
+      "parodontite dakar",
+      "surfaçage radiculaire",
+      "gencives qui saignent",
+    ],
+    author: AUTHORS.sao,
+    cover: gingiviteCover,
+    pinned: true,
+    readingMinutes: 14,
+    content: `Les **gencives qui saignent**, une **mauvaise haleine** persistante ou des dents qui s’allongent sont souvent les premiers signes d’une **parodontite**. À Dakar, une prise en charge précoce évite la perte osseuse et la mobilité des dents.
+
+## Signes d’alerte à surveiller
+- Saignement au brossage ou au fil dentaire, gencives gonflées.
+- Sensation de dents qui bougent ou d’espaces qui apparaissent.
+- Goût métallique, haleine désagréable malgré un brossage correct.
+- Rétraction gingivale et racines sensibles au froid.
+
+## Bilan parodontal complet
+- Entretien médical (tabac, diabète, grossesse) et photos intra-orales.
+- **Sondage** des poches autour de chaque dent pour mesurer la profondeur.
+- Radiographies 2D ou **CBCT** ciblé pour évaluer la perte osseuse.
+- Analyse occlusale/bruxisme pour identifier les facteurs mécaniques.
+
+## Phases du traitement parodontal
+1. **Phase initiale** : motivation à l’hygiène, choix des brosses/brossettes, détartrage complet.
+2. **Surfaçage radiculaire** quadrant par quadrant sous anesthésie locale pour éliminer plaque, tartre et toxines. Antibiothérapie locale ou systémique si nécessaire.
+3. **Phase correctrice** : micro-chirurgie ou greffe gingivale lorsque les pertes sont importantes, ajustements occlusaux, éventuelle gouttière de bruxisme.
+4. **Maintenance** : contrôles tous les 3 à 4 mois pour stabiliser les résultats, réévaluation des poches.
+
+## Prix et prise en charge
+- Le devis dépend du nombre de séances de surfaçage, des greffes et du suivi radiologique.
+- Les **IPM** ou **mutuelles dentaires à Dakar** remboursent parfois une partie du traitement parodontal sur présentation d’un devis.
+- Un **plan écrit** est remis pour anticiper le budget et organiser les rendez-vous.
+
+> Une parodontite stabilisée permet de garder ses dents longtemps. Dès les premiers saignements, prenez rendez-vous avec la Clinique DABIA pour un bilan complet.`,
+    faq: [
+      {
+        q: "Le surfaçage radiculaire est-il douloureux ?",
+        a: "Il se déroule sous anesthésie locale, comme un soin classique. Après la séance, une légère sensibilité peut durer 24 à 48 h et se gère avec du paracétamol.",
+      },
+      {
+        q: "La parodontite peut-elle revenir ?",
+        a: "Oui si l’hygiène, le tabac ou certaines maladies ne sont pas maîtrisés. Des contrôles réguliers (3–4 mois) sont indispensables pour garder des gencives stables.",
+      },
+    ],
+  },
+
+  {
+    slug: "ronflement-apnee-gouttiere-mandibulaire-dakar",
+    title: "Ronflement et apnée légère : la gouttière mandibulaire à Dakar",
+    description:
+      "Orthèse d’avancée mandibulaire (OAM), bilan sommeil, prix indicatifs et entretien à la Clinique DABIA.",
+    date: "2025-12-10",
+    category: "Conseils",
+    tags: [
+      "ronflement",
+      "apnée du sommeil",
+      "orthèse d'avancée mandibulaire",
+    ],
+    author: AUTHORS.sao,
+    cover: nuitCover,
+    readingMinutes: 12,
+    content: `Le **ronflement** régulier n’est pas seulement gênant : il peut révéler une **apnée du sommeil légère**. À Dakar, l’orthèse d’avancée mandibulaire (OAM) fabriquée par un dentiste du sommeil libère les voies respiratoires sans appareil encombrant.
+
+## Ronflement simple ou apnée ?
+- Ronflement simple : bruit sans pauses respiratoires, fatigue modérée.
+- **SAS léger** : pauses de respiration (apnées), somnolence diurne, maux de tête au réveil.
+- Facteurs aggravants : surpoids, alcool tardif, obstruction nasale, mâchoire reculée.
+
+## Parcours de soins à la Clinique DABIA
+1. **Entretien** et examen de l’occlusion pour vérifier la faisabilité de l’OAM.
+2. Orientation vers un **ORL** ou un médecin du sommeil pour une polygraphie/polysomnographie si besoin.
+3. Scanner intra-oral, empreintes et enregistrement de la protrusion mandibulaire.
+4. Livraison de la gouttière, réglages progressifs et contrôles réguliers.
+
+## Comment fonctionne l’orthèse mandibulaire ?
+- Deux gouttières relient les arcades et avancent légèrement la mâchoire inférieure.
+- Cette avance augmente le volume pharyngé et limite les vibrations responsables du ronflement.
+- Portée uniquement la nuit, elle reste discrète et durable.
+
+## Conseils d’hygiène du sommeil
+- Dormir sur le côté, limiter alcool/tabac en soirée.
+- Traiter allergie ou nez bouché, garder un poids stable.
+- Faire vérifier l’usure de l’orthèse, surtout en cas de bruxisme.
+
+> Si vous cherchez une **gouttière anti-ronflement à Dakar**, prenez rendez-vous : un diagnostic précis détermine si l’OAM est la bonne solution.`,
+    faq: [
+      {
+        q: "Une orthèse remplace-t-elle le CPAP ?",
+        a: "Elle est indiquée pour les ronflements isolés ou les apnées légères à modérées. Pour un syndrome sévère, la pression positive (CPAP) reste le traitement de référence.",
+      },
+      {
+        q: "Combien de temps dure une OAM ?",
+        a: "Avec un entretien correct et des contrôles annuels, une orthèse mandibulaire dure en moyenne 3 à 5 ans avant d’être renouvelée.",
+      },
+    ],
+  },
+
+  {
+    slug: "orthodontie-interceptive-enfant-dakar-appareils",
+    title:
+      "Orthodontie interceptive : quand poser un appareil chez l’enfant à Dakar ?",
+    description:
+      "Âge idéal, appareils d’expansion, habitudes à corriger et déroulé du traitement pour les enfants de 6 à 10 ans.",
+    date: "2025-12-17",
+    category: "Pédiatrie",
+    tags: [
+      "orthodontie enfant dakar",
+      "appareil interceptif",
+      "dentiste pediatrique dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: enfantCover,
+    readingMinutes: 13,
+    content: `Entre **6 et 10 ans**, la croissance faciale est malléable : c’est la période idéale pour une **orthodontie interceptive**. À Dakar, elle corrige les mâchoires étroites, les suctions digitales ou les décalages osseux avant qu’ils ne se figent.
+
+## Quand consulter ?
+- Respiration buccale, ronflements, lèvres qui ne se ferment pas.
+- Succion du pouce/tétine persistante.
+- Dents très en avant ou en arrière.
+- Manque de place évident dès l’éruption des incisives permanentes.
+- Troubles fonctionnels (déglutition infantile, interposition de la langue).
+
+## Appareils interceptifs possibles
+- **Plaques amovibles** avec vérin d’expansion pour élargir le palais.
+- **Quad-Helix / disjoncteur** collé pour corriger une arcade trop étroite.
+- **Masque facial** ou traction inversée pour stimuler la croissance maxillaire.
+- **Pistes fonctionnelles** et gouttières myofonctionnelles pour rééduquer respiration et posture linguale.
+
+## Déroulé à la Clinique DABIA
+1. Bilan orthodontique complet (photos, empreinte numérique, téléradiographie).
+2. Plan individualisé expliqué aux parents avec durée estimée et devis.
+3. Séances d’activation et de contrôle toutes les 4 à 8 semaines.
+4. Phase de contention légère ou relais avec un traitement multi-bagues/aligneurs à l’adolescence si nécessaire.
+
+## Rôle des parents
+- Aider au port quotidien de l’appareil et au carnet de suivi.
+- Surveiller l’hygiène : brossage + tablette révélatrice si besoin.
+- Coordonner orthophonie/ORL lorsque des troubles fonctionnels sont identifiés.
+
+> Plus l’orthodontie interceptive commence tôt, moins elle nécessite des extractions ou un traitement lourd plus tard. Contactez notre équipe pédiatrique à **Liberté 6**.`,
+    faq: [
+      {
+        q: "Un appareil interceptif fait-il mal ?",
+        a: "L’enfant ressent parfois une légère pression les premiers jours, mais l’inconfort disparaît vite. Les activations sont progressives pour rester confortables.",
+      },
+      {
+        q: "Quelle est la durée d’un traitement interceptif ?",
+        a: "Selon l’objectif (expansion, correction d’une habitude), il dure 6 à 18 mois, suivis d’un contrôle régulier jusqu’à l’éruption complète des dents définitives.",
+      },
+    ],
+  },
+
+  {
+    slug: "recession-gingivale-causes-soins-greffe-dakar",
+    title:
+      "Récession gingivale : causes, traitements et greffe de gencive à Dakar",
+    description:
+      "Brossage trop appuyé, parodontite ou piercings : comment stopper une récession gingivale et quand envisager une greffe conjonctive à Dakar.",
+    date: "2025-12-24",
+    category: "Prévention",
+    tags: ["récession gingivale", "greffe gencive", "parodontologie dakar"],
+    author: AUTHORS.sao,
+    cover: fluorCover,
+    readingMinutes: 11,
+    content: `Une **récession gingivale** correspond à une gencive qui recule et laisse apparaître la racine. Outre l’aspect esthétique, elle expose aux sensibilités et augmente le risque de carie cervicale. À Dakar, nous combinons diagnostic précis et techniques de greffe pour restaurer le tissu perdu.
+
+## Quelles sont les causes ?
+- Brossage trop appuyé ou brosse dure.
+- Maladies parodontales non stabilisées.
+- Bruxisme, occlusion traumatique ou mouvement orthodontique mal contrôlé.
+- Piercing labial, frein trop court, biotype gingival fragile.
+
+## Bilan nécessaire
+- Mesure millimétrique de la récession (classification de Miller ou Cairo).
+- Analyse des habitudes d’hygiène, du type de brosse et du geste.
+- Radios pour vérifier la hauteur osseuse.
+- Observation des freins et de la quantité de gencive kératinisée.
+
+## Traitements possibles
+1. **Correction des causes** : brosse souple, technique de Bass, gouttière si bruxisme.
+2. **Traitement parodontal** si inflammation (détartrage + surfaçage).
+3. **Greffe gingivale** (conjonctif, épithélio-conjonctif ou matrices collagéniques) associée à un lambeau de translation coronale pour recouvrir la racine.
+4. **Composites cervicaux** pour protéger la racine si la greffe n’est pas indiquée.
+
+## Prévention des récidives
+- Coaching d’hygiène personnalisé, brosse électrique avec capteur de pression.
+- Contrôles tous les 6 mois pour surveiller la stabilité.
+- Ajustements orthodontiques/occlusaux lorsque les dents subissent une surcharge.
+
+> Vous remarquez des dents plus longues ou sensibles ? Prenez rendez-vous pour discuter des options de **greffe gingivale à Dakar**.`,
+    faq: [
+      {
+        q: "Une greffe gingivale est-elle obligatoire ?",
+        a: "Non. Si la récession est légère et asymptomatique, un changement d’habitudes peut suffire. On propose une greffe quand la racine est exposée ou que la gencive kératinisée manque.",
+      },
+      {
+        q: "La greffe gingivale est-elle prise en charge ?",
+        a: "Certaines mutuelles ou assurances dentaires remboursent partiellement l’acte après devis. Un document détaillé est remis pour toute demande auprès de l’IPM.",
+      },
+    ],
+  },
+
+  {
     slug: "ramadan-jeune-soins-dentaires-dakar",
     title:
       "Ramadan et soins dentaires à Dakar : haleine, douleur, quand consulter",
