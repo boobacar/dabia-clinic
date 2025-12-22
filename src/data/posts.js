@@ -82,6 +82,292 @@ export const TAGS = [
 
 export const POSTS = [
   {
+    slug: "dentiste-dakar-liberte-6-parcelles-sicap-foire",
+    title:
+      "Dentiste à Dakar (Liberté 6, Parcelles, Sicap Foire) : horaires, urgences, équipements",
+    description:
+      "Trouver un cabinet dentaire à Liberté 6, Parcelles Assainies ou Sicap Foire : urgences, implants, blanchiment, orthodontie et pédiatrie à la Clinique DABIA.",
+    date: "2026-01-18",
+    category: "Conseils",
+    tags: [
+      "dentiste dakar",
+      "cabinet dentaire dakar",
+      "dentiste liberte 6",
+      "dentiste parcelles assainies",
+      "clinique dentaire sicap foire",
+    ],
+    author: AUTHORS.sao,
+    cover: prixCover,
+    pinned: true,
+    readingMinutes: 14,
+    content: `Vous cherchez un **dentiste à Dakar**, à **Liberté 6**, aux **Parcelles Assainies** ou à **Sicap Foire** ? La Clinique DABIA centralise les recherches “cabinet dentaire Dakar”, “dentiste Liberté 6”, “dentiste Parcelles Assainies” avec imagerie 3D et plateau technique complet.
+
+## Requêtes fréquentes des patients
+- **Dentiste Dakar** pour un contrôle, un **détartrage** ou une douleur.
+- **Clinique dentaire Liberté 6** pour rester proche de la VDN et des Parcelles.
+- **Cabinet dentaire Sicap Foire** équipé en **CBCT** et **scanner intra-oral**.
+- **Dentiste Parcelles Assainies** pour les urgences, la pédiatrie ou l’orthodontie.
+
+## Ce que propose la Clinique DABIA (Liberté 6 / Sicap Foire)
+- **Urgence dentaire à Dakar** : douleur, abcès, dent cassée, traumatisme.
+- **Implant dentaire** et **prothèse** (bridge, couronne) planifiés en 3D.
+- **Orthodontie** (bagues, aligneurs) adulte/enfant + suivi **dentiste pédiatrique**.
+- **Esthétique** : **blanchiment des dents à Dakar**, facettes, corrections de sourire.
+- **Prévention** : bilans, **AirFlow**, coaching d’hygiène personnalisé.
+
+## Parcours patient clair
+1. **Prise de rendez-vous** en ligne ou par téléphone.
+2. **Bilan complet** : photos, radios, éventuel **CBCT**, devis expliqué.
+3. Plan de traitement **priorisé** (urgence → soins → esthétique) avec calendrier.
+4. **Suivi** : rappels et contrôle de la cicatrisation/occlusion.
+
+## Accès et horaires
+- Clinique située à **Liberté 6 / Sicap Foire**, accès rapide depuis les **Parcelles** et la **VDN**.
+- **Horaires étendus** en semaine, créneaux le **samedi** selon disponibilités.
+- Stationnement et transports faciles pour les quartiers voisins.
+
+> Pour trouver rapidement un **cabinet dentaire à Dakar** (Liberté 6, Parcelles Assainies, Sicap Foire), contactez la **Clinique DABIA** : un devis clair est remis avant chaque soin.`,
+    faq: [
+      {
+        q: "Le cabinet de Liberté 6 prend-il les urgences dentaires ?",
+        a: "Oui, des créneaux d’urgence sont réservés pour la douleur, l’abcès ou la dent cassée. Appelez avant de venir pour être orienté sur le prochain horaire disponible.",
+      },
+      {
+        q: "Puis-je obtenir un devis pour un implant ou un blanchiment ?",
+        a: "Un devis personnalisé est remis après examen clinique, photos et imagerie adaptée (panoramique ou CBCT si nécessaire).",
+      },
+      {
+        q: "La clinique est-elle accessible depuis les Parcelles Assainies ?",
+        a: "Oui, l’accès est direct via la VDN ou les axes secondaires ; le quartier **Liberté 6 / Sicap Foire** est central pour les patients venant des Parcelles.",
+      },
+    ],
+  },
+
+  {
+    slug: "urgence-dentiste-dakar-24-24-nuit-weekend",
+    title:
+      "Urgence dentiste à Dakar 24/24 : nuit, week-end et jours fériés",
+    description:
+      "Douleur pulsatile, gonflement, dent cassée : les gestes immédiats et comment trouver un dentiste d’urgence à Dakar, même la nuit ou le week-end.",
+    date: "2026-01-15",
+    category: "Urgences",
+    tags: [
+      "urgence dentaire dakar",
+      "dentiste dakar 24/24",
+      "dentiste nuit dakar",
+      "dentiste weekend dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: urgenceNuitCover,
+    pinned: true,
+    readingMinutes: 13,
+    content: `Une **douleur dentaire** à 23 h ou un choc un dimanche ? Voici le guide “**dentiste urgence Dakar 24/24**” pour savoir quoi faire la nuit ou le week-end.
+
+## Signes qui imposent un dentiste en urgence à Dakar
+- Douleur **pulsatile** qui empêche de dormir.
+- **Gonflement** de la joue/cou, fièvre, trismus.
+- **Dent cassée** ou expulsée après traumatisme (sport, chute).
+- Saignement qui ne s’arrête pas après extraction ou choc.
+
+## Gestes immédiats avant de consulter un dentiste de nuit
+- **Paracétamol** selon la notice (éviter l’aspirine en cas de saignement).
+- **Froid externe** 20 min on/20 min off.
+- **Rinçage eau tiède salée** si suppuration qui draine.
+- Conserver toute dent/fragment dans du **lait** ou du sérum physiologique.
+
+## Prise en charge à la Clinique DABIA (Dakar)
+- **Accueil téléphonique** pour vous insérer sur le créneau d’urgence disponible (soir, samedi, veille ou lendemain de férié).
+- Radios ciblées ou **CBCT** si besoin pour décider : **drainage**, **pulpotomie**, **traitement canalaire** d’urgence, extraction ou contention.
+- **Ordonnance** antalgiques/antibiotiques adaptée et **plan de soins** détaillé pour finaliser ensuite.
+
+## Budget et couverture
+- Devis expliqué avant chaque acte d’urgence.
+- Possibilités d’utiliser votre **IPM/mutuelle** selon le contrat.
+- Les traitements définitifs (couronne, implant, alignement) sont chiffrés à part.
+
+> Gardez ces réflexes si vous tapez “**dentiste 24/24 Dakar**”, “**dentiste de nuit Dakar**” ou “**urgence dentaire week-end Dakar**” : soulagez la douleur, protégez la dent et appelez la **Clinique DABIA** pour une prise en charge prioritaire.`,
+    faq: [
+      {
+        q: "Puis-je venir sans rendez-vous pour une douleur aiguë ?",
+        a: "Appelez d’abord : cela permet de réserver le prochain créneau d’urgence, de préparer l’équipe et de gagner du temps sur place.",
+      },
+      {
+        q: "Que faire si j’ai un vol tôt et une douleur la veille ?",
+        a: "Contactez la clinique dès les premiers symptômes : un geste de soulagement (drainage, ouverture de la dent, pansement calmant) est priorisé pour voyager sereinement.",
+      },
+      {
+        q: "Les urgences du week-end sont-elles plus chères ?",
+        a: "Selon les horaires, des honoraires spécifiques peuvent s’appliquer. Ils sont annoncés avant l’acte avec un devis clair.",
+      },
+    ],
+  },
+
+  {
+    slug: "dentiste-pas-cher-dakar-tarifs-devis",
+    title:
+      "Dentiste pas cher à Dakar : tarifs, devis et plan de traitement en plusieurs étapes",
+    description:
+      "Contrôle, détartrage, caries, implant ou facettes : comment obtenir un plan de soins clair, prioriser et mieux gérer le budget chez un dentiste à Dakar.",
+    date: "2026-01-12",
+    category: "Conseils",
+    tags: [
+      "dentiste pas cher dakar",
+      "tarif dentiste dakar",
+      "prix dentiste senegal",
+      "cabinet dentaire dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: prixCover,
+    pinned: true,
+    readingMinutes: 12,
+    content: `Vous recherchez un **dentiste pas cher à Dakar** ou un **cabinet dentaire** qui explique clairement les **tarifs** ? La clé est de disposer d’un **diagnostic complet**, d’un **devis** transparent et d’un **plan de traitement en phases**.
+
+## Actes fréquents et ce qui influence le prix
+- **Consultation + radios** : nécessaire pour établir un devis fiable.
+- **Détartrage / AirFlow** : dépend du temps clinique et de l’inflammation.
+- **Caries / composites** : taille et localisation de la lésion.
+- **Couronne / prothèse / implant** : matériaux, laboratoire, temps opératoire.
+
+## Astuces pour payer moins sans sacrifier la qualité
+- **Prioriser** : urgences (douleur, infection) → soins → esthétique.
+- Étaler en **phases** : provisoires puis définitifs quand la biologie est stabilisée.
+- Activer votre **IPM / mutuelle** : demander un devis daté et signé.
+- Miser sur la **prévention** (contrôles, hygiène) pour éviter les gros traitements.
+- Discuter des **alternatives** : onlay vs couronne, bridge vs implant selon le cas.
+
+## Comment se passe un devis à la Clinique DABIA ?
+1. **Bilan** (photos, radios, parfois **CBCT**).
+2. **Plan de traitement** écrit avec priorités et options.
+3. **Devis détaillé** remis pour la **mutuelle/IPM** ou la planification budgétaire.
+4. Calendrier des séances pour lisser les coûts si besoin.
+
+> Un “**dentiste pas cher à Dakar**” doit surtout fournir un **diagnostic** précis et des **explications**. Un devis clair vous permet de comparer en connaissance de cause.
+`,
+    faq: [
+      {
+        q: "Peut-on obtenir un devis sans se déplacer ?",
+        a: "Un chiffrage fiable nécessite un examen. Des photos peuvent aider à préparer la visite, mais le devis final se fait après un contrôle clinique et radiographique.",
+      },
+      {
+        q: "Les IPM et mutuelles prennent-elles en charge les soins ?",
+        a: "Souvent oui pour les soins courants ; prothèses/implants dépendent du contrat. Un devis signé est fourni pour vos démarches.",
+      },
+      {
+        q: "Existe-t-il des options plus économiques que l’implant ?",
+        a: "Selon le cas, un **bridge** ou une **prothèse amovible** peut être proposé. L’indication dépend du volume osseux, des dents voisines et de votre projet.",
+      },
+    ],
+  },
+
+  {
+    slug: "english-speaking-dentist-dakar-expats-diaspora",
+    title:
+      "Dentiste à Dakar pour expatriés : English-speaking dentist, devis et urgences",
+    description:
+      "Consultation en anglais ou en français, devis pour assurances internationales, urgences dentaires et soins esthétiques pour expatriés et voyageurs à Dakar.",
+    date: "2026-01-09",
+    category: "Conseils",
+    tags: [
+      "english speaking dentist dakar",
+      "dentiste anglophone dakar",
+      "expat dentist dakar",
+      "clinique dentaire dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: implantCover,
+    readingMinutes: 11,
+    content: `Les expatriés et voyageurs recherchent un **English-speaking dentist in Dakar** capable d’expliquer le traitement, d’anticiper un retour rapide et de préparer des **devis** pour les assurances internationales.
+
+## Les demandes les plus fréquentes
+- **Urgence dentaire à Dakar** avant un vol : douleur, fracture, infection.
+- **Check-up** rapide avec radios/CBCT et plan écrit en **anglais ou français**.
+- **Implant / couronne / facette** : devis détaillé pour remboursement.
+- **Blanchiment** ou **aligners** pour des séjours courts.
+
+## Parcours adapté aux expatriés
+1. **RDV rapide** (souvent < 72 h) pour établir le diagnostic.
+2. **Compte-rendu bilingue** (FR/EN) avec radios et plan de traitement.
+3. **Soins priorisés** selon la durée du séjour (urgence → provisoire → définitif).
+4. Factures et documents prêts pour votre **assurance internationale**.
+
+## Bonnes pratiques avant de venir
+- Envoyer vos **radios** si vous en avez déjà pour gagner du temps.
+- Préciser la **date de départ** pour organiser les séances.
+- Apporter vos **contrats d’assurance** ou formulaires à faire tamponner.
+
+> Si vous cherchez un **English-speaking dentist in Dakar** ou un **cabinet dentaire pour expatriés**, la **Clinique DABIA** peut fournir un devis bilingue et un plan de soins compatible avec votre planning.
+`,
+    faq: [
+      {
+        q: "Acceptez-vous les assurances internationales ?",
+        a: "Nous remettons factures et rapports en français ou en anglais pour vos demandes de remboursement. Les modalités de prise en charge directe dépendent du contrat.",
+      },
+      {
+        q: "Puis-je finaliser un traitement en deux séjours ?",
+        a: "Oui, c’est fréquent : une phase de soins ou de chirurgie, puis la prothèse/esthétique lors du séjour suivant.",
+      },
+      {
+        q: "Faut-il un CBCT pour un implant ?",
+        a: "Un bilan 3D (CBCT) est souvent recommandé pour planifier l’implantologie en toute sécurité, surtout si le timing est serré.",
+      },
+    ],
+  },
+
+  {
+    slug: "bilan-dentaire-complet-dakar-radio-3d-scanner",
+    title:
+      "Bilan dentaire complet à Dakar : radio 3D, scanner intra-oral et plan personnalisé",
+    description:
+      "Check-up complet avec panoramique ou CBCT, photos, scanner intra-oral et plan de traitement détaillé à la Clinique DABIA à Dakar.",
+    date: "2026-01-06",
+    category: "Technologie",
+    tags: [
+      "bilan dentaire dakar",
+      "cbct dakar",
+      "scanner intraoral dakar",
+      "dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: cbctCover,
+    readingMinutes: 13,
+    content: `Un **bilan dentaire complet à Dakar** permet d’éviter les surprises et de prioriser les soins. À la **Clinique DABIA**, le check-up combine **examen clinique**, **imagerie** (panoramique ou **CBCT**), **photos** et **scanner intra-oral** pour un plan de traitement clair.
+
+## Ce qui est évalué
+- **Gencives** : dépistage gingivite/parodontite.
+- **Carie** : lésions visibles et caries débutantes entre les dents.
+- **Occlusion et usure** : bruxisme, fractures, articulations.
+- **Esthétique** : teinte, alignement, volume gingival.
+
+## Technologies utilisées au cabinet dentaire
+- **Panoramique** ou **CBCT 3D** selon l’indication (implant, dents incluses, canaux complexes).
+- **Scanner intra-oral** pour empreintes numériques (implants, onlays, aligneurs).
+- **Photographies** haute définition pour le suivi et les simulations.
+
+## Livrables et plan de traitement
+1. **Diagnostic** détaillé en français (ou version anglaise sur demande).
+2. **Devis** et calendrier : urgences → soins → prothèse/esthétique.
+3. Conseils d’**hygiène personnalisés** (AirFlow, brossettes, fluor).
+4. Programmation des contrôles (6–12 mois) et rappels.
+
+> Pour un **bilan dentaire à Dakar** avec technologie **CBCT** et **scanner intra-oral**, prenez rendez-vous à la **Clinique DABIA** : un plan de soins priorisé et chiffré vous est remis.
+`,
+    faq: [
+      {
+        q: "Combien de temps dure un check-up complet ?",
+        a: "Prévoyez environ 45 à 60 minutes selon le nombre d’examens (photos, radios, scanner intra-oral).",
+      },
+      {
+        q: "Le CBCT est-il systématique ?",
+        a: "Non, il est réservé aux situations où une image 3D apporte une réelle valeur (implant, dent de sagesse incluse, endodontie complexe).",
+      },
+      {
+        q: "Repart-on avec un devis ?",
+        a: "Oui, un **plan de traitement** et un **devis** sont remis après l’examen pour prioriser les soins et anticiper le budget.",
+      },
+    ],
+  },
+
+  {
     slug: "parodontite-dakar-surfacage-plan-traitement",
     title: "Parodontite à Dakar : symptômes, surfaçage et plan de traitement",
     description:

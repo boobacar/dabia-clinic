@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/dentiste-dakar-liberte-6-parcelles-sicap-foire</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/prix.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/urgence-dentiste-dakar-24-24-nuit-weekend</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/urgence-nuit.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/dentiste-pas-cher-dakar-tarifs-devis</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/prix.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/english-speaking-dentist-dakar-expats-diaspora</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/implant.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/bilan-dentaire-complet-dakar-radio-3d-scanner</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/technologie/tech-cbct.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.cliniquedentairedabia.com/blog/parodontite-dakar-surfacage-plan-traitement</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
       <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/gingivite.webp</image:loc>
