@@ -10,6 +10,8 @@ const FADE_S = 1.5; // durée du fondu en secondes
 
 const HeroSlideshow = () => {
   const [index, setIndex] = useState(0);
+  // Démarre le slideshow seulement après le rendu initial pour laisser la LCP se stabiliser
+  const [enableLoop, setEnableLoop] = useState(false);
   const shouldReduceMotion = useReducedMotion();
   const timerRef = useRef(null);
 
@@ -21,9 +23,26 @@ const HeroSlideshow = () => {
     });
   }, []);
 
+  // Ne lance l'animation qu'en idle pour ne pas dégrader le LCP
+  useEffect(() => {
+    const cb =
+      (typeof window !== "undefined" && window.requestIdleCallback) ||
+      ((fn) => setTimeout(fn, 350));
+    const handle = cb(() => setEnableLoop(true));
+    return () => {
+      if (typeof window !== "undefined" && window.cancelIdleCallback) {
+        try {
+          window.cancelIdleCallback(handle);
+        } catch {}
+      } else {
+        clearTimeout(handle);
+      }
+    };
+  }, []);
+
   // Auto-play avec setTimeout (plus fiable que setInterval ici)
   useEffect(() => {
-    if (heroImages.length <= 1) return;
+    if (!enableLoop || heroImages.length <= 1) return;
 
     // Nettoyage de l'ancien timer au changement de vitesse / longueur / index
     if (timerRef.current) clearTimeout(timerRef.current);
@@ -36,31 +55,45 @@ const HeroSlideshow = () => {
       if (timerRef.current) clearTimeout(timerRef.current);
     };
     // 👉 très important: inclure SLIDE_MS et la longueur
-  }, [index, SLIDE_MS, heroImages.length]);
+  }, [index, SLIDE_MS, heroImages.length, enableLoop]);
 
   const currentSrc = useMemo(() => heroImages[index], [index]);
+  const isSlideshow = enableLoop && heroImages.length > 1;
+  const heroAlt = "Dentiste Dakar - Clinique dentaire DABIA";
 
   return (
     <section className="relative h-screen overflow-hidden bg-black">
-      <AnimatePresence initial={false}>
-        <motion.img
-          key={currentSrc}
+      {isSlideshow ? (
+        <AnimatePresence initial={false}>
+          <motion.img
+            key={currentSrc}
+            src={currentSrc}
+            alt={heroAlt}
+            aria-hidden="true"
+            className="absolute inset-0 w-full h-full object-cover will-change-[opacity,transform]"
+            decoding="async"
+            fetchPriority={index === 0 ? "high" : "auto"}
+            sizes="100vw"
+            initial={{ opacity: 0, scale: shouldReduceMotion ? 1 : 1.08 }}
+            animate={{ opacity: 1, scale: shouldReduceMotion ? 1 : 1.2 }}
+            exit={{ opacity: shouldReduceMotion ? 1 : 0 }}
+            transition={{
+              duration: shouldReduceMotion ? 0 : Math.min(1.2, SLIDE_MS / 1000),
+              ease: "easeOut",
+            }}
+          />
+        </AnimatePresence>
+      ) : (
+        <img
           src={currentSrc}
-          alt="Dentiste Dakar - Clinique dentaire DABIA"
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover will-change-[opacity,transform]"
+          alt={heroAlt}
+          className="absolute inset-0 w-full h-full object-cover"
           decoding="async"
-          fetchPriority={index === 0 ? "high" : "auto"}
+          fetchPriority="high"
           sizes="100vw"
-          initial={{ opacity: 0, scale: shouldReduceMotion ? 1 : 1.08 }}
-          animate={{ opacity: 1, scale: shouldReduceMotion ? 1 : 1.2 }}
-          exit={{ opacity: shouldReduceMotion ? 1 : 0 }}
-          transition={{
-            duration: shouldReduceMotion ? 0 : Math.min(1.2, SLIDE_MS / 1000),
-            ease: "easeOut",
-          }}
+          loading="eager"
         />
-      </AnimatePresence>
+      )}
 
       <div className="absolute inset-0 bg-black/70" />
 

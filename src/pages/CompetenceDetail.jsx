@@ -1,7 +1,8 @@
-import { useEffect, useMemo } from "react";
+import { useMemo } from "react";
 import { motion } from "framer-motion";
 import { useParams, Link } from "react-router-dom";
 import { POSTS } from "../data/posts"; // ← articles du blog pour les "Articles liés"
+import Seo from "../components/Seo";
 
 import esthetique from "../assets/competences/esthetique.webp";
 import parodontologie from "../assets/competences/parodontologie.webp";
@@ -205,37 +206,6 @@ const CompetenceDetail = () => {
   const nextSlug =
     index >= 0 && index < slugs.length - 1 ? slugs[index + 1] : null;
 
-  useEffect(() => {
-    if (!competence) return;
-    const origin =
-      typeof window !== "undefined"
-        ? window.location.origin
-        : "https://www.cliniquedentairedabia.com";
-    const url = `${origin}/competences/${slug}`;
-
-    // Title + meta description
-    document.title = `${competence.titre} – Clinique Dentaire DABIA (Dakar)`;
-    const desc = document.querySelector('meta[name="description"]');
-    const content = (competence.description || "").slice(0, 155);
-    if (desc) {
-      desc.setAttribute("content", content);
-    } else {
-      const m = document.createElement("meta");
-      m.name = "description";
-      m.content = content;
-      document.head.appendChild(m);
-    }
-
-    // Canonical
-    let link = document.querySelector('link[rel="canonical"]');
-    if (!link) {
-      link = document.createElement("link");
-      link.setAttribute("rel", "canonical");
-      document.head.appendChild(link);
-    }
-    link.setAttribute("href", url);
-  }, [competence, slug]);
-
   // JSON-LD Service + Breadcrumb + FAQ light
   const origin =
     typeof window !== "undefined"
@@ -247,6 +217,7 @@ const CompetenceDetail = () => {
       : `${origin}${competence.image}`
     : `${origin}/og-image.webp`;
   const url = `${origin}/competences/${slug}`;
+  const description = (competence?.description || "").slice(0, 155);
 
   const jsonLdService = competence
     ? {
@@ -318,6 +289,13 @@ const CompetenceDetail = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
+        <Seo
+          title="Compétence introuvable"
+          description="Cette page n’existe pas ou a été déplacée."
+          canonical={url}
+          url={url}
+          robots="noindex,follow"
+        />
         <h1 className="text-3xl font-bold text-red-500 mb-4">
           Compétence introuvable
         </h1>
@@ -338,6 +316,16 @@ const CompetenceDetail = () => {
       animate="animate"
       exit="exit"
     >
+      <Seo
+        title={`${competence.titre} à Dakar`}
+        description={description}
+        canonical={url}
+        url={url}
+        image={imgAbs}
+        prevUrl={prevSlug ? `/competences/${prevSlug}` : undefined}
+        nextUrl={nextSlug ? `/competences/${nextSlug}` : undefined}
+        jsonLd={[jsonLdService, jsonLdBreadcrumb, jsonLdFAQ].filter(Boolean)}
+      />
       <nav aria-label="Fil d’Ariane" className="text-sm mb-4 text-gray-600">
         <Link to="/" className="hover:underline">
           Accueil
@@ -474,26 +462,6 @@ const CompetenceDetail = () => {
           </section>
         )}
       </motion.div>
-
-      {/* Données structurées */}
-      {jsonLdService && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdService) }}
-        />
-      )}
-      {jsonLdBreadcrumb && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }}
-        />
-      )}
-      {jsonLdFAQ && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFAQ) }}
-        />
-      )}
     </motion.section>
   );
 };

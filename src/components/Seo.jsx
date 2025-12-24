@@ -41,7 +41,17 @@ export default function Seo({
   const finalTitle = title
     ? `${title} | ${defaultSite.name}`
     : defaultSite.name;
-  const finalUrl = url || defaultSite.domain;
+  const makeAbs = (u) => {
+    if (!u) return undefined;
+    if (/^https?:\/\//i.test(u)) return u;
+    const base = defaultSite.domain.replace(/\/$/, "");
+    const path = u.startsWith("/") ? u : `/${u}`;
+    return `${base}${path}`;
+  };
+
+  const finalUrl = makeAbs(url) || defaultSite.domain;
+  const finalImage = makeAbs(image) || makeAbs("/og-image.webp");
+  const finalCanonical = makeAbs(canonical);
   const finalDesc =
     description ||
     "Dentiste à Dakar : clinique dentaire moderne pour implants, orthodontie, urgences et esthétique. Prenez rendez-vous à la Clinique Dentaire DABIA.";
@@ -51,7 +61,7 @@ export default function Seo({
     "@type": "Dentist",
     name: defaultSite.name,
     url: defaultSite.domain,
-    image,
+    image: finalImage,
     telephone: defaultSite.phone,
     address: { "@type": "PostalAddress", ...defaultSite.address },
     openingHours: ["Mo-Fr 09:00-19:00", "Sa 09:00-13:00"],
@@ -75,14 +85,6 @@ export default function Seo({
 
   const blocks = [websiteJsonLd, orgJsonLd, ...jsonLd];
 
-  const makeAbs = (u) => {
-    if (!u) return undefined;
-    if (/^https?:\/\//i.test(u)) return u;
-    const base = defaultSite.domain.replace(/\/$/, "");
-    const path = u.startsWith("/") ? u : `/${u}`;
-    return `${base}${path}`;
-  };
-
   // keep simple relative/absolute handling for links below
 
   return (
@@ -94,7 +96,8 @@ export default function Seo({
       <meta property="og:description" content={finalDesc} />
       <meta property="og:type" content={type} />
       <meta property="og:url" content={finalUrl} />
-      <meta property="og:image" content={image} />
+      <meta property="og:image" content={finalImage} />
+      <meta property="og:image:alt" content={finalTitle} />
       <meta property="og:locale" content={locale} />
       <meta property="og:site_name" content={defaultSite.siteLabel} />
       <meta name="application-name" content={defaultSite.siteLabel} />
@@ -105,14 +108,14 @@ export default function Seo({
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={finalTitle} />
       <meta name="twitter:description" content={finalDesc} />
-      <meta name="twitter:image" content={image} />
+      <meta name="twitter:image" content={finalImage} />
       {type === "article" && publishedTime && (
         <meta property="article:published_time" content={publishedTime} />
       )}
       {type === "article" && modifiedTime && (
         <meta property="article:modified_time" content={modifiedTime} />
       )}
-      {canonical && <link rel="canonical" href={canonical} />}
+      {finalCanonical && <link rel="canonical" href={finalCanonical} />}
       {prevUrl && <link rel="prev" href={makeAbs(prevUrl)} />}
       {nextUrl && <link rel="next" href={makeAbs(nextUrl)} />}
       {/* RSS link retiré (retour configuration simple) */}
@@ -120,10 +123,10 @@ export default function Seo({
       {(() => {
         const entries =
           hrefLangs ||
-          (canonical
+          (finalCanonical
             ? [
-                { lang: "fr-SN", href: canonical },
-                { lang: "x-default", href: canonical },
+                { lang: "fr-SN", href: finalCanonical },
+                { lang: "x-default", href: finalCanonical },
               ]
             : []);
         return entries.map((e, i) => (

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import HeroSlideshow from "../components/HeroSlideshow";
 import SkeletonImage from "../components/SkeletonImage";
+import Seo from "../components/Seo";
 // Sections chargées en lazy pour alléger le bundle initial
 const BeforeAfterGallery = React.lazy(() =>
   import("../components/BeforeAfterGallery")
@@ -106,6 +107,12 @@ const Home = () => {
 
   return (
     <div className="bg-white text-gray-800">
+      <Seo
+        title="Dentiste à Dakar"
+        description="Clinique dentaire à Dakar : soins modernes (implants, esthétique, orthodontie, urgences) dans un cadre chaleureux. Prenez rendez-vous à la Clinique Dentaire DABIA."
+        canonical="https://www.cliniquedentairedabia.com/"
+        url="https://www.cliniquedentairedabia.com/"
+      />
       <HeroSlideshow />
       <Suspense fallback={<div className="py-12" aria-hidden="true" />}>
         <BeforeAfterGallery />
