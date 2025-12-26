@@ -1,9 +1,11 @@
 import React, { Suspense, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { FaCheckCircle } from "react-icons/fa";
 import HeroSlideshow from "../components/HeroSlideshow";
 import SkeletonImage from "../components/SkeletonImage";
 import Seo from "../components/Seo";
+import FAQ from "../components/FAQ";
 // Sections chargées en lazy pour alléger le bundle initial
 const BeforeAfterGallery = React.lazy(() =>
   import("../components/BeforeAfterGallery")
@@ -166,6 +168,72 @@ const Home = () => {
         />
         <CompetencesGrid />
       </Suspense>
+
+      {/* Pourquoi nous choisir */}
+      <section className="py-14 px-4 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="max-w-3xl">
+            <h2 className="text-3xl font-extrabold text-[#ad9d64]">
+              Pourquoi nous choisir comme dentiste à Dakar ?
+            </h2>
+            <p className="mt-3 text-gray-700 text-base">
+              Clinique DABIA, Sicap Foire (Liberté 6) : urgences, implants,
+              orthodontie, esthétique et soins enfants, avec un plateau
+              technique moderne et une équipe bilingue.
+            </p>
+          </div>
+          <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {[
+              "Rendez-vous rapides (urgences sous 24h) et devis clairs",
+              "CBCT 3D, scanner intra-oral, stérilisation Classe B",
+              "Implants, facettes, aligneurs, blanchiment, parodontologie",
+              "Soins pour enfants et adultes, équipe bilingue FR/EN",
+              "Accès facile VDN/Corniche, parking devant la clinique",
+              "Accompagnement post-soins : contrôles, hygiène, rappels",
+            ].map((text, idx) => (
+              <div
+                key={idx}
+                className="flex items-start gap-3 rounded-xl border border-gray-200 bg-gray-50 p-4 shadow-sm"
+              >
+                <FaCheckCircle className="mt-1 text-[#bb2988]" />
+                <p className="text-sm text-gray-800">{text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Home */}
+      <section className="py-12 px-4 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <FAQ
+            asJsonLd={false}
+            title="Foire aux questions"
+            items={[
+              {
+                q: "Où se situe la clinique ?",
+                a: "À Sicap Foire, 150m des deux voies de Liberté 6, proche VDN/Corniche. Parking devant l’entrée.",
+              },
+              {
+                q: "Proposez-vous des urgences dentaires à Dakar ?",
+                a: "Oui, nous ouvrons des créneaux sous 24h. Appelez avant de venir pour organiser la prise en charge.",
+              },
+              {
+                q: "Quels soins sont proposés ?",
+                a: "Implants, facettes, orthodontie (aligneurs/bagues), parodontologie, soins enfants, détartrage et esthétique.",
+              },
+              {
+                q: "Parlez-vous anglais ?",
+                a: "Oui, l’équipe explique les plans de traitement en français ou en anglais pour les expatriés et voyageurs.",
+              },
+              {
+                q: "Comment prendre rendez-vous ?",
+                a: "En ligne via la page Rendez-vous ou par téléphone/WhatsApp. Les devis sont expliqués avec des étapes claires.",
+              },
+            ]}
+          />
+        </div>
+      </section>
 
       {/* =========================
           Derniers articles (grille)

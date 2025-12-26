@@ -5,7 +5,6 @@ const LS_KEY = "dabia_consent_v1";
 
 const defaultState = {
   analytics: false,
-  ads: false,
 };
 
 function applyConsent(state) {
@@ -13,9 +12,9 @@ function applyConsent(state) {
   window.__analytics_allowed = !!state.analytics;
   window.gtag("consent", "update", {
     analytics_storage: state.analytics ? "granted" : "denied",
-    ad_storage: state.ads ? "granted" : "denied",
-    ad_user_data: state.ads ? "granted" : "denied",
-    ad_personalization: state.ads ? "granted" : "denied",
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied",
     functionality_storage: "granted",
     security_storage: "granted",
   });
@@ -47,21 +46,67 @@ export default function CookieConsent() {
 
   return (
     <div
-      className="pointer-events-none fixed inset-x-0 bottom-4 md:bottom-6 z-[60] px-3 md:px-6 flex justify-start"
+      className="pointer-events-none fixed inset-x-0 bottom-3 md:bottom-5 z-[60] px-3 md:px-6 flex justify-center"
       style={{ paddingBottom: "max(1rem, env(safe-area-inset-bottom))" }}
     >
-      <div className="pointer-events-auto w-full max-w-[430px] rounded-2xl border border-gray-200/70 bg-white shadow-xl shadow-gray-900/10 backdrop-blur p-4">
-        <p className="text-[13px] leading-5 text-gray-800">
-          Nous utilisons des cookies essentiels et de mesure d’audience pour
-          améliorer votre expérience. Vous pouvez accepter, refuser ou choisir
-          vos préférences.
-        </p>
+      <div
+        className={
+          "pointer-events-auto w-full max-w-[780px] rounded-xl border px-4 py-2 transition-all duration-200 " +
+          (showManage
+            ? "border-gray-200 bg-white shadow-lg shadow-gray-900/10"
+            : "border-gray-200 bg-white/90 backdrop-blur-md shadow-md shadow-gray-900/5")
+        }
+      >
+        <div className="flex flex-wrap items-center gap-3 justify-between">
+          <p className="text-[13px] leading-5 text-gray-800 flex-1 min-w-[220px]">
+            Nous utilisons des cookies essentiels et de mesure d’audience pour
+            améliorer votre expérience. Vous pouvez accepter, refuser ou choisir
+            vos préférences.
+          </p>
+          <div className="flex items-center gap-2">
+            <button
+              className="px-3 py-1 text-[12px] font-medium text-gray-600 rounded-full border border-gray-200 hover:border-gray-300 transition"
+              onClick={() => setShowManage((s) => !s)}
+              aria-expanded={showManage}
+            >
+              Gérer
+            </button>
+            <button
+              className="px-3 py-1 text-[12px] font-semibold rounded-full border border-gray-200 text-gray-800 hover:border-gray-300 transition"
+              onClick={() => {
+                const state = { ...defaultState, analytics: false };
+                localStorage.setItem(LS_KEY, JSON.stringify(state));
+                applyConsent(state);
+                try {
+                  sendEvent("consent_update", { action: "reject_all" });
+                } catch {}
+                setOpen(false);
+              }}
+            >
+              Refuser
+            </button>
+            <button
+              className="px-3.5 py-1 text-[12px] font-semibold rounded-full bg-[#ad9d64] text-white hover:shadow-sm transition"
+              onClick={() => {
+                const state = { analytics: true };
+                localStorage.setItem(LS_KEY, JSON.stringify(state));
+                applyConsent(state);
+                try {
+                  sendEvent("consent_update", { action: "accept_all" });
+                } catch {}
+                setOpen(false);
+              }}
+            >
+              Accepter
+            </button>
+          </div>
+        </div>
 
         {showManage && (
-          <div className="mt-3 rounded-lg bg-gray-50 p-3 text-[13px]">
+          <div className="mt-2 rounded-2xl border border-gray-200 bg-white px-3 py-2.5 text-[12px] text-gray-700 shadow-sm">
             <label className="flex items-center gap-2">
               <input type="checkbox" checked readOnly disabled />
-              Fonctionnels (toujours actifs)
+              Essentiels (toujours actifs)
             </label>
             <label className="mt-2 flex items-center gap-2">
               <input
@@ -73,53 +118,8 @@ export default function CookieConsent() {
               />
               Mesure d’audience (GA4)
             </label>
-            <label className="mt-2 flex items-center gap-2">
-              <input
-                type="checkbox"
-                checked={prefs.ads}
-                onChange={(e) => setPrefs((p) => ({ ...p, ads: e.target.checked }))}
-              />
-              Publicité personnalisée
-            </label>
           </div>
         )}
-
-        <div className="mt-3 flex flex-wrap gap-2">
-          <button
-            className="btn-cta btn-cta-sm text-[13px]"
-            onClick={() => setShowManage((s) => !s)}
-          >
-            {showManage ? "Fermer" : "Paramètres"}
-          </button>
-          <button
-            className="btn-cta btn-cta-sm text-[13px]"
-            onClick={() => {
-              const state = { ...defaultState, analytics: false, ads: false };
-              localStorage.setItem(LS_KEY, JSON.stringify(state));
-              applyConsent(state);
-              try {
-                sendEvent("consent_update", { action: "reject_all" });
-              } catch {}
-              setOpen(false);
-            }}
-          >
-            Tout refuser
-          </button>
-          <button
-            className="btn-cta btn-cta-sm text-[13px]"
-            onClick={() => {
-              const state = { analytics: true, ads: true };
-              localStorage.setItem(LS_KEY, JSON.stringify(state));
-              applyConsent(state);
-              try {
-                sendEvent("consent_update", { action: "accept_all" });
-              } catch {}
-              setOpen(false);
-            }}
-          >
-            Tout accepter
-          </button>
-        </div>
       </div>
     </div>
   );
