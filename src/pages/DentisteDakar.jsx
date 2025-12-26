@@ -11,7 +11,6 @@ import {
   FaStar,
   FaCheckCircle,
   FaClock,
-  FaLanguage,
 } from "react-icons/fa";
 import Seo from "../components/Seo";
 import Breadcrumbs from "../components/Breadcrumbs";
@@ -43,10 +42,6 @@ export default function DentisteDakar() {
     {
       q: "Comment prendre rendez‑vous ?",
       a: "En ligne en 1 minute via la page Rendez‑vous, par téléphone ou WhatsApp.",
-    },
-    {
-      q: "Parlez‑vous anglais pour les expatriés à Dakar ?",
-      a: "Oui, l’équipe peut expliquer les plans de traitement en anglais ou en français pour faciliter vos décisions.",
     },
   ];
 
@@ -143,7 +138,7 @@ export default function DentisteDakar() {
     <main className="pt-20 pb-14 px-4 max-w-7xl mx-auto">
       <Seo
         title="Dentiste à Dakar – Clinique Dentaire DABIA"
-        description="Dentiste à Dakar (Liberté 6 – Sicap Foire) : urgences, implants, aligneurs, facettes, enfants. Rendez‑vous rapides, équipe bilingue, CBCT et scanner intra‑oral."
+        description="Dentiste à Dakar (Liberté 6 – Sicap Foire) : urgences, implants, aligneurs, facettes, enfants. Rendez‑vous rapides, CBCT et scanner intra‑oral."
         canonical={canonical}
         url={canonical}
         jsonLd={jsonLd}
@@ -241,15 +236,11 @@ export default function DentisteDakar() {
             </p>
           </div>
           <div className="flex flex-wrap gap-3 text-sm">
-            <div className="flex items-center gap-2 px-3 py-2 rounded-lg border bg-pink-50">
-              <FaClock className="text-[#bb2988]" />
-              <span>Rendez‑vous sous 24h pour l’urgence</span>
-            </div>
-            <div className="flex items-center gap-2 px-3 py-2 rounded-lg border bg-pink-50">
-              <FaLanguage className="text-[#bb2988]" />
-              <span>Français / English‑speaking dentist</span>
-            </div>
+          <div className="flex items-center gap-2 px-3 py-2 rounded-lg border bg-pink-50">
+            <FaClock className="text-[#bb2988]" />
+            <span>Rendez‑vous sous 24h pour l’urgence</span>
           </div>
+        </div>
         </div>
 
         <div className="mt-4">
@@ -444,8 +435,8 @@ export default function DentisteDakar() {
               <div>
                 <div className="font-semibold">Enfants et adultes</div>
                 <p className="text-xs text-gray-600">
-                  Consultations dédiées pour les enfants, les étudiants ou les
-                  expatriés en anglais ou français.
+                  Consultations dédiées pour les enfants, les étudiants et les
+                  familles, avec une approche douce et pédagogique.
                 </p>
               </div>
             </div>

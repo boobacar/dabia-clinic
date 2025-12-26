@@ -260,33 +260,33 @@ export const POSTS = [
   },
 
   {
-    slug: "english-speaking-dentist-dakar-expats-diaspora",
+    slug: "dentiste-expatries-dakar-urgences-assurances",
     title:
-      "Dentiste à Dakar pour expatriés : English-speaking dentist, devis et urgences",
+      "Dentiste à Dakar pour expatriés : urgences, devis et assurances",
     description:
-      "Consultation en anglais ou en français, devis pour assurances internationales, urgences dentaires et soins esthétiques pour expatriés et voyageurs à Dakar.",
+      "Consultation pour expatriés et voyageurs à Dakar, devis pour assurances internationales, urgences dentaires et soins esthétiques.",
     date: "2026-01-09",
     category: "Conseils",
     tags: [
-      "english speaking dentist dakar",
-      "dentiste anglophone dakar",
-      "expat dentist dakar",
-      "clinique dentaire dakar",
+      "dentiste expatrie dakar",
+      "dentiste voyageur dakar",
+      "cabinet dentaire dakar",
+      "assurance internationale dentaire",
     ],
     author: AUTHORS.sao,
     cover: implantCover,
     readingMinutes: 11,
-    content: `Les expatriés et voyageurs recherchent un **English-speaking dentist in Dakar** capable d’expliquer le traitement, d’anticiper un retour rapide et de préparer des **devis** pour les assurances internationales.
+    content: `Les expatriés et voyageurs recherchent un **dentiste à Dakar** capable d’expliquer clairement le traitement, d’anticiper un retour rapide et de préparer des **devis** pour les assurances internationales.
 
 ## Les demandes les plus fréquentes
 - **Urgence dentaire à Dakar** avant un vol : douleur, fracture, infection.
-- **Check-up** rapide avec radios/CBCT et plan écrit en **anglais ou français**.
+- **Check-up** rapide avec radios/CBCT et plan écrit de façon claire et détaillée.
 - **Implant / couronne / facette** : devis détaillé pour remboursement.
 - **Blanchiment** ou **aligners** pour des séjours courts.
 
 ## Parcours adapté aux expatriés
 1. **RDV rapide** (souvent < 72 h) pour établir le diagnostic.
-2. **Compte-rendu bilingue** (FR/EN) avec radios et plan de traitement.
+2. **Compte-rendu détaillé** avec radios et plan de traitement.
 3. **Soins priorisés** selon la durée du séjour (urgence → provisoire → définitif).
 4. Factures et documents prêts pour votre **assurance internationale**.
 
@@ -295,12 +295,12 @@ export const POSTS = [
 - Préciser la **date de départ** pour organiser les séances.
 - Apporter vos **contrats d’assurance** ou formulaires à faire tamponner.
 
-> Si vous cherchez un **English-speaking dentist in Dakar** ou un **cabinet dentaire pour expatriés**, la **Clinique DABIA** peut fournir un devis bilingue et un plan de soins compatible avec votre planning.
+> Si vous cherchez un **cabinet dentaire pour expatriés à Dakar**, la **Clinique DABIA** peut fournir un devis détaillé et un plan de soins compatible avec votre planning.
 `,
     faq: [
       {
         q: "Acceptez-vous les assurances internationales ?",
-        a: "Nous remettons factures et rapports en français ou en anglais pour vos demandes de remboursement. Les modalités de prise en charge directe dépendent du contrat.",
+        a: "Nous remettons factures et rapports détaillés pour vos demandes de remboursement. Les modalités de prise en charge directe dépendent du contrat.",
       },
       {
         q: "Puis-je finaliser un traitement en deux séjours ?",
@@ -344,7 +344,7 @@ export const POSTS = [
 - **Photographies** haute définition pour le suivi et les simulations.
 
 ## Livrables et plan de traitement
-1. **Diagnostic** détaillé en français (ou version anglaise sur demande).
+1. **Diagnostic** détaillé en français.
 2. **Devis** et calendrier : urgences → soins → prothèse/esthétique.
 3. Conseils d’**hygiène personnalisés** (AirFlow, brossettes, fluor).
 4. Programmation des contrôles (6–12 mois) et rappels.

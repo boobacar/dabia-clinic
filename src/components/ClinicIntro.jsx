@@ -46,8 +46,8 @@ const ClinicIntro = () => {
             accueille à 150m des deux voies pour des soins modernes : urgences,
             implants, aligneurs, facettes, parodontologie, soins enfants.
             Plateau technique CBCT, scanner intra-oral, stérilisation Classe B,
-            équipe bilingue français/anglais. Devis clairs, suivi post-soins,
-            et accompagnement personnalisé pour un sourire durable.
+            devis clairs, suivi post-soins, et accompagnement personnalisé pour
+            un sourire durable.
           </p>
           <Link to="/rendez-vous" className="btn-cta">
             Prendre un rendez-vous

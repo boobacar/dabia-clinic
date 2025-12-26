@@ -106,6 +106,14 @@ const Home = () => {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } },
   };
+  const sectionReveal = {
+    hidden: { opacity: 0, y: 24 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.55, ease: "easeOut" } },
+  };
+  const cardReveal = {
+    hidden: { opacity: 0, y: 16 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.45, ease: "easeOut" } },
+  };
 
   return (
     <div className="bg-white text-gray-800">
@@ -170,70 +178,114 @@ const Home = () => {
       </Suspense>
 
       {/* Pourquoi nous choisir */}
-      <section className="py-14 px-4 bg-white">
+      <motion.section
+        className="py-14 px-4 bg-white"
+        variants={sectionReveal}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
+      >
         <div className="max-w-7xl mx-auto">
-          <div className="max-w-3xl">
+          <motion.div
+            className="max-w-3xl"
+            variants={cardReveal}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.35 }}
+          >
             <h2 className="text-3xl font-extrabold text-[#ad9d64]">
               Pourquoi nous choisir comme dentiste à Dakar ?
             </h2>
             <p className="mt-3 text-gray-700 text-base">
               Clinique DABIA, Sicap Foire (Liberté 6) : urgences, implants,
               orthodontie, esthétique et soins enfants, avec un plateau
-              technique moderne et une équipe bilingue.
+              technique moderne.
             </p>
-          </div>
-          <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          </motion.div>
+          <motion.div
+            className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3"
+            variants={{ show: { transition: { staggerChildren: 0.08 } } }}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+          >
             {[
               "Rendez-vous rapides (urgences sous 24h) et devis clairs",
               "CBCT 3D, scanner intra-oral, stérilisation Classe B",
               "Implants, facettes, aligneurs, blanchiment, parodontologie",
-              "Soins pour enfants et adultes, équipe bilingue FR/EN",
+              "Soins pour enfants et adultes, approche douce et pédagogique",
               "Accès facile VDN/Corniche, parking devant la clinique",
               "Accompagnement post-soins : contrôles, hygiène, rappels",
             ].map((text, idx) => (
-              <div
+              <motion.div
                 key={idx}
                 className="flex items-start gap-3 rounded-xl border border-gray-200 bg-gray-50 p-4 shadow-sm"
+                variants={cardReveal}
               >
                 <FaCheckCircle className="mt-1 text-[#bb2988]" />
                 <p className="text-sm text-gray-800">{text}</p>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       {/* FAQ Home */}
-      <section className="py-12 px-4 bg-gray-50">
+      <motion.section
+        className="py-12 px-4 bg-gray-50"
+        variants={sectionReveal}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
+      >
         <div className="max-w-7xl mx-auto">
-          <FAQ
-            asJsonLd={false}
-            title="Foire aux questions"
-            items={[
-              {
-                q: "Où se situe la clinique ?",
-                a: "À Sicap Foire, 150m des deux voies de Liberté 6, proche VDN/Corniche. Parking devant l’entrée.",
-              },
-              {
-                q: "Proposez-vous des urgences dentaires à Dakar ?",
-                a: "Oui, nous ouvrons des créneaux sous 24h. Appelez avant de venir pour organiser la prise en charge.",
-              },
-              {
-                q: "Quels soins sont proposés ?",
-                a: "Implants, facettes, orthodontie (aligneurs/bagues), parodontologie, soins enfants, détartrage et esthétique.",
-              },
-              {
-                q: "Parlez-vous anglais ?",
-                a: "Oui, l’équipe explique les plans de traitement en français ou en anglais pour les expatriés et voyageurs.",
-              },
-              {
-                q: "Comment prendre rendez-vous ?",
-                a: "En ligne via la page Rendez-vous ou par téléphone/WhatsApp. Les devis sont expliqués avec des étapes claires.",
-              },
-            ]}
-          />
+          <motion.div
+            variants={cardReveal}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.35 }}
+          >
+            <FAQ
+              asJsonLd={false}
+              title="Foire aux questions"
+              items={[
+                {
+                  q: "Où se situe la clinique ?",
+                  a: "À Sicap Foire, 150m des deux voies de Liberté 6, proche VDN/Corniche. Parking devant l’entrée.",
+                },
+                {
+                  q: "Proposez-vous des urgences dentaires à Dakar ?",
+                  a: "Oui, nous ouvrons des créneaux sous 24h. Appelez avant de venir pour organiser la prise en charge.",
+                },
+                {
+                  q: "Quels soins sont proposés ?",
+                  a: "Implants, facettes, orthodontie (aligneurs/bagues), parodontologie, soins enfants, détartrage et esthétique.",
+                },
+                {
+                  q: "Proposez-vous des devis détaillés ?",
+                  a: "Oui, après l’examen, un plan de traitement et un devis clairs sont expliqués avec des étapes et options.",
+                },
+                {
+                  q: "Comment prendre rendez-vous ?",
+                  a: "En ligne via la page Rendez-vous ou par téléphone/WhatsApp. Les devis sont expliqués avec des étapes claires.",
+                },
+                {
+                  q: "Quels sont vos horaires ?",
+                  a: "Lundi à vendredi 9h-19h, samedi 9h-13h. Pour une urgence, appelez avant de vous déplacer.",
+                },
+                {
+                  q: "Acceptez-vous les IPM et assurances ?",
+                  a: "Nous aidons à la préparation des dossiers. Un devis détaillé est fourni pour vos demandes de prise en charge.",
+                },
+                {
+                  q: "Puis-je étaler les soins ou les paiements ?",
+                  a: "Les plans de traitement peuvent être phasés. Selon le cas, un étalement des rendez-vous et des paiements est proposé.",
+                },
+              ]}
+            />
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       {/* =========================
           Derniers articles (grille)
