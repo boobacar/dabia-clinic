@@ -8,8 +8,8 @@ import CookieConsent from "./components/CookieConsent";
 import ConversionTracker from "./components/ConversionTracker";
 import RoutesWithTransitions from "./components/RoutesWithTransitions";
 import ScrollTopButton from "./components/ScrollTopButton";
-import EmergencyCallButton from "./components/EmergencyCallButton";
 import LoadingOverlay from "./components/LoadingOverlay";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
       <CookieConsent />
       <Header />
       <ScrollTopButton />
-      <EmergencyCallButton />
+      <WhatsAppButton />
       <Suspense fallback={<LoadingOverlay fullScreen label="Chargement" />}>
         <RoutesWithTransitions />
       </Suspense>

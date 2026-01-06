@@ -5,10 +5,12 @@
     <link rel="icon" href="/favicon.jpg" type="image/jpeg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Clinique Dentaire DABIA – Esthétique & Soins à Dakar</title>
+    <title>
+      Dentiste Dakar : Urgence & Soins Sans Douleur | Clinique DABIA
+    </title>
     <meta
       name="description"
-      content="Clinique dentaire et dentiste à Dakar : DABIA propose des soins modernes (esthétique, implants, blanchiment, orthodontie, urgences) dans un cadre chaleureux. Réservez en ligne dès maintenant."
+      content="Douleur dentaire ? DABIA vous reçoit en urgence à Dakar. Équipe douce, anesthésie efficace et technologies modernes. Soulagement immédiat. Appelez maintenant."
     />
     <meta name="robots" content="index, follow" />
     <!-- canonical is set per route via React Seo; avoid a global root canonical here -->
@@ -19,16 +21,10 @@
     <meta property="og:image" content="/og-image.webp" />
     <meta property="og:url" content="https://www.cliniquedentairedabia.com" />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:site_name"
-      content="Clinique Dentaire DABIA - Dakar"
-    />
+    <meta property="og:site_name" content="Clinique Dentaire DABIA - Dakar" />
 
     <!-- Site name hints for Google and devices -->
-    <meta
-      name="application-name"
-      content="Clinique Dentaire DABIA - Dakar"
-    />
+    <meta name="application-name" content="Clinique Dentaire DABIA - Dakar" />
     <meta
       name="apple-mobile-web-app-title"
       content="Clinique Dentaire DABIA - Dakar"
@@ -99,16 +95,22 @@
         "@context": "https://schema.org",
         "@type": "Dentist",
         "name": "Clinique Dentaire DABIA",
-        "url": "https://www.cliniquedentairedabia.com",
-        "logo": "https://www.cliniquedentairedabia.com/logo.jpg",
         "image": "https://www.cliniquedentairedabia.com/og-image.webp",
+        "url": "https://www.cliniquedentairedabia.com",
         "telephone": "+221777039393",
-        "email": "cliniquedentairedabia@gmail.com",
+        "priceRange": "CFA",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Sicap Foire, 2 voies Liberté 6 (à 150m du Uno)",
+          "streetAddress": "Sicap Foire, 2 voies Liberté 6",
           "addressLocality": "Dakar",
+          "addressRegion": "Dakar",
+          "postalCode": "10200",
           "addressCountry": "SN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "14.7319",
+          "longitude": "-17.4572"
         },
         "openingHoursSpecification": [
           {
@@ -130,14 +132,26 @@
             "closes": "14:00"
           }
         ],
-        "areaServed": [
-          "Dakar",
-          "Liberté 6",
-          "Sicap Foire",
-          "Parcelles Assainies"
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "85"
+        },
+        "medicalSpecialty": ["Dentistry", "OralSurgery", "CosmeticDentistry"],
+        "availableService": [
+          {
+            "@type": "MedicalProcedure",
+            "name": "Urgence Dentaire"
+          },
+          {
+            "@type": "MedicalProcedure",
+            "name": "Implants Dentaires"
+          },
+          {
+            "@type": "MedicalProcedure",
+            "name": "Blanchiment"
+          }
         ],
-        "priceRange": "CFA",
-        "paymentAccepted": ["Cash", "Card"],
         "sameAs": [
           "https://www.facebook.com/cliniquedentairedabia/?locale=fr_FR",
           "https://www.instagram.com/clinique_dentaire_dabia/",

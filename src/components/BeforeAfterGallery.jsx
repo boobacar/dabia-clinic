@@ -53,7 +53,7 @@ export default function BeforeAfterGallery() {
         {avantApresImages.map((pair, idx) => (
           <motion.div key={idx} variants={itemVariants}>
             <ReactCompareSlider
-              className="rounded-lg shadow-md overflow-hidden h-48 md:h-64 lg:h-80 lg:w-150"
+              className="rounded-lg shadow-md overflow-hidden h-48 md:h-64 lg:h-80 lg:w-135"
               itemOne={
                 <ReactCompareSliderImage
                   src={pair.before}
