@@ -145,8 +145,7 @@ export const POSTS = [
 
   {
     slug: "urgence-dentiste-dakar-24-24-nuit-weekend",
-    title:
-      "Urgence dentiste à Dakar 24/24 : nuit, week-end et jours fériés",
+    title: "Urgence dentiste à Dakar 24/24 : nuit, week-end et jours fériés",
     description:
       "Douleur pulsatile, gonflement, dent cassée : les gestes immédiats et comment trouver un dentiste d’urgence à Dakar, même la nuit ou le week-end.",
     date: "2026-01-15",
@@ -261,8 +260,7 @@ export const POSTS = [
 
   {
     slug: "dentiste-expatries-dakar-urgences-assurances",
-    title:
-      "Dentiste à Dakar pour expatriés : urgences, devis et assurances",
+    title: "Dentiste à Dakar pour expatriés : urgences, devis et assurances",
     description:
       "Consultation pour expatriés et voyageurs à Dakar, devis pour assurances internationales, urgences dentaires et soins esthétiques.",
     date: "2026-01-09",
@@ -428,11 +426,7 @@ export const POSTS = [
       "Orthèse d’avancée mandibulaire (OAM), bilan sommeil, prix indicatifs et entretien à la Clinique DABIA.",
     date: "2025-12-10",
     category: "Conseils",
-    tags: [
-      "ronflement",
-      "apnée du sommeil",
-      "orthèse d'avancée mandibulaire",
-    ],
+    tags: ["ronflement", "apnée du sommeil", "orthèse d'avancée mandibulaire"],
     author: AUTHORS.sao,
     cover: nuitCover,
     readingMinutes: 12,
@@ -661,13 +655,17 @@ export const POSTS = [
 
   {
     slug: "carie-biberon-enfant-senegal-prevention",
-    title:
-      "Carie du biberon au Sénégal : signes, prévention et soins précoces",
+    title: "Carie du biberon au Sénégal : signes, prévention et soins précoces",
     description:
       "Biberon sucré, attaya ou jus chez les tout-petits : comment éviter la carie précoce et quand consulter un dentiste pédiatrique.",
     date: "2025-10-01",
     category: "Pédiatrie",
-    tags: ["carie biberon", "dentiste pediatrique dakar", "prévention", "enfant"],
+    tags: [
+      "carie biberon",
+      "dentiste pediatrique dakar",
+      "prévention",
+      "enfant",
+    ],
     author: AUTHORS.sao,
     cover: enfantCover,
     pinned: true,
@@ -793,7 +791,8 @@ Voir nos équipements d’imagerie et de planification : [/infos/technologie](/i
   {
     slug: "scellants-sillons-enfants-dakar",
     title: "Scellants des sillons chez l’enfant : quand et pourquoi ?",
-    description: "Prévenir les caries des molaires définitives avec les sealants : indications, déroulé et durée.",
+    description:
+      "Prévenir les caries des molaires définitives avec les sealants : indications, déroulé et durée.",
     date: "2025-09-23",
     category: "Pédiatrie",
     tags: ["scellants", "prévention caries", "enfant"],
@@ -887,7 +886,8 @@ Oui, sous contrôle du dentiste : vernis fluorés, conseils sur le dentifrice et
   {
     slug: "bruxisme-gouttiere-protection-dakar",
     title: "Bruxisme : symptômes, causes et gouttière de protection",
-    description: "Serrage/grincement la nuit, douleurs musculaires, usure des dents : comment diagnostiquer et soulager.",
+    description:
+      "Serrage/grincement la nuit, douleurs musculaires, usure des dents : comment diagnostiquer et soulager.",
     date: "2025-09-17",
     category: "Prévention",
     tags: ["bruxisme", "gouttière", "douleur nocturne"],
@@ -900,7 +900,8 @@ Oui, sous contrôle du dentiste : vernis fluorés, conseils sur le dentifrice et
   {
     slug: "all-on-4-prothese-implants-dakar",
     title: "All‑on‑4 / Prothèse complète sur implants : pour qui ?",
-    description: "Arcade complète fixée sur 4 implants : indications, étapes, confort et entretien.",
+    description:
+      "Arcade complète fixée sur 4 implants : indications, étapes, confort et entretien.",
     date: "2025-09-14",
     category: "Implantologie",
     tags: ["all-on-4", "prothèse sur implants", "edentement total"],
@@ -913,7 +914,8 @@ Oui, sous contrôle du dentiste : vernis fluorés, conseils sur le dentifrice et
   {
     slug: "sensibilite-dentaire-causes-solutions-dakar",
     title: "Sensibilité dentaire : causes et solutions efficaces",
-    description: "Dents sensibles au froid/chaud : causes fréquentes et traitements possibles.",
+    description:
+      "Dents sensibles au froid/chaud : causes fréquentes et traitements possibles.",
     date: "2025-09-11",
     category: "Prévention",
     tags: ["sensibilité", "émail", "collet"],
@@ -969,7 +971,8 @@ Oui, sous contrôle du dentiste : vernis fluorés, conseils sur le dentifrice et
 
   {
     slug: "detartrage-dentaire-dakar-prix-frequence-airflow",
-    title: "Détartrage dentaire à Dakar : prix, fréquence, AirFlow et résultats",
+    title:
+      "Détartrage dentaire à Dakar : prix, fréquence, AirFlow et résultats",
     description:
       "Pourquoi le détartrage est essentiel, quand privilégier l’AirFlow et de quoi dépend le tarif à Dakar.",
     date: "2025-09-05",
@@ -1010,7 +1013,11 @@ Généralement **tous les 6 à 12 mois**, plus rapproché si **facteurs de risqu
     date: "2025-09-02",
     category: "Conseils",
     pinned: true,
-    tags: ["meilleur dentiste dakar", "cabinet dentaire dakar", "dentiste dakar"],
+    tags: [
+      "meilleur dentiste dakar",
+      "cabinet dentaire dakar",
+      "dentiste dakar",
+    ],
     author: AUTHORS.sao,
     cover: prixCover,
     readingMinutes: 11,
@@ -1191,18 +1198,12 @@ Un **devis détaillé** vous est remis avant tout acte.
   // --- Nouveaux articles orientés "prix" ---
   {
     slug: "prix-couronne-dentaire-dakar-materiaux-devis",
-    title:
-      "Prix d’une couronne dentaire à Dakar : matériaux, étapes et devis",
+    title: "Prix d’une couronne dentaire à Dakar : matériaux, étapes et devis",
     description:
       "Céramique, zircone, métal-céramique : ce qui influence le coût d’une couronne à Dakar, comment se déroule la pose et quand la préférer à un onlay.",
     date: "2025-08-21",
     category: "Conseils",
-    tags: [
-      "couronne dentaire",
-      "prix",
-      "prothèse dentaire",
-      "dentiste dakar",
-    ],
+    tags: ["couronne dentaire", "prix", "prothèse dentaire", "dentiste dakar"],
     author: AUTHORS.sao,
     cover: onlayCover,
     pinned: true,
@@ -1234,10 +1235,22 @@ Le choix se fait selon la **position**, l’**occlusion**, le **sourire** et le 
 
 > Chez DABIA, nous expliquons les **options** et remettons un **devis clair** avec les matériaux proposés. Demandez une évaluation : [/rendez-vous](/rendez-vous).`,
     faq: [
-      { q: "Couronne ou onlay : que choisir ?", a: "L’onlay renforce une dent encore largement préservée. La couronne s’impose lorsque la dent est très fragilisée (après dévitalisation, fractures, perte de substance importante)." },
-      { q: "Zircone ou céramique stratifiée ?", a: "La zircone monolithique privilégie la résistance (molaires). La céramique stratifiée apporte un rendu très naturel pour les dents visibles. Le choix dépend de la zone et des objectifs esthétiques." },
-      { q: "Combien de rendez‑vous ?", a: "Généralement deux à trois : préparation + empreinte/scan, puis essayage/pose. Une couronne provisoire protège la dent entre les séances." },
-      { q: "Quel ordre de prix ?", a: "Le tarif dépend du matériau, du travail de laboratoire et de la complexité clinique. Un devis précis est remis après l’examen clinique." }
+      {
+        q: "Couronne ou onlay : que choisir ?",
+        a: "L’onlay renforce une dent encore largement préservée. La couronne s’impose lorsque la dent est très fragilisée (après dévitalisation, fractures, perte de substance importante).",
+      },
+      {
+        q: "Zircone ou céramique stratifiée ?",
+        a: "La zircone monolithique privilégie la résistance (molaires). La céramique stratifiée apporte un rendu très naturel pour les dents visibles. Le choix dépend de la zone et des objectifs esthétiques.",
+      },
+      {
+        q: "Combien de rendez‑vous ?",
+        a: "Généralement deux à trois : préparation + empreinte/scan, puis essayage/pose. Une couronne provisoire protège la dent entre les séances.",
+      },
+      {
+        q: "Quel ordre de prix ?",
+        a: "Le tarif dépend du matériau, du travail de laboratoire et de la complexité clinique. Un devis précis est remis après l’examen clinique.",
+      },
     ],
   },
   {
@@ -1283,10 +1296,22 @@ Une dent traitée canalaires est **plus fragile** : une **couronne** est souvent
 
 > Pour connaître le **budget exact** dans votre cas, un **examen clinique** est indispensable. Prenez rendez‑vous : [/rendez-vous](/rendez-vous).`,
     faq: [
-      { q: "Est‑ce douloureux ?", a: "Non, l’acte se fait sous anesthésie locale. Une sensibilité passagère est possible et contrôlée par antalgiques." },
-      { q: "Combien de séances ?", a: "1 à 2 séances pour une dent antérieure, 1 à 3 pour une molaire selon le nombre de canaux et la complexité." },
-      { q: "Quel prix selon la dent ?", a: "Le coût dépend du nombre de canaux (incisive ⟶ molaire), de la reprise éventuelle d’un ancien traitement et du temps opératoire. Un devis est remis après examen." },
-      { q: "Faut‑il poser une couronne après ?", a: "Souvent oui : une dent dévitalisée est plus fragile. La couronne protège durablement contre la fracture." }
+      {
+        q: "Est‑ce douloureux ?",
+        a: "Non, l’acte se fait sous anesthésie locale. Une sensibilité passagère est possible et contrôlée par antalgiques.",
+      },
+      {
+        q: "Combien de séances ?",
+        a: "1 à 2 séances pour une dent antérieure, 1 à 3 pour une molaire selon le nombre de canaux et la complexité.",
+      },
+      {
+        q: "Quel prix selon la dent ?",
+        a: "Le coût dépend du nombre de canaux (incisive ⟶ molaire), de la reprise éventuelle d’un ancien traitement et du temps opératoire. Un devis est remis après examen.",
+      },
+      {
+        q: "Faut‑il poser une couronne après ?",
+        a: "Souvent oui : une dent dévitalisée est plus fragile. La couronne protège durablement contre la fracture.",
+      },
     ],
   },
 
@@ -1355,8 +1380,7 @@ Chez l’enfant et l’ado, l’orthodontie participe au bon **développement** 
 
   {
     slug: "prix-urgence-dentaire-dakar-jour-nuit",
-    title:
-      "Prix d’une urgence dentaire à Dakar : consultation, actes et nuit",
+    title: "Prix d’une urgence dentaire à Dakar : consultation, actes et nuit",
     description:
       "Douleur aiguë, abcès, traumatisme : ce qui influence le tarif d’une urgence dentaire à Dakar, en journée ou la nuit.",
     date: "2025-08-12",
@@ -2456,8 +2480,7 @@ Oui, mais les soins seront facturés directement au patient, avec possibilité d
 
   {
     slug: "attaya-cafe-kola-effets-sur-les-dents",
-    title:
-      "Attaya, café, kola : quels effets sur vos dents et votre sourire ?",
+    title: "Attaya, café, kola : quels effets sur vos dents et votre sourire ?",
     description:
       "Taches sur les dents, caries, mauvaise haleine : point complet sur l’attaya, le café, la kola et les bons réflexes à Dakar.",
     date: "2025-05-29",
@@ -2560,5 +2583,201 @@ Les antibiotiques sans prescription peuvent masquer les symptômes sans traiter 
 - Seul un examen permet de poser le **bon diagnostic** et le bon traitement.
 
 > En corrigeant ces habitudes et en consultant régulièrement, vous protégez durablement vos dents et vos gencives. La Clinique DABIA à Dakar vous accompagne avec des conseils personnalisés.`,
+  },
+  // --- Nouveaux articles ajoutés (SEO & Contenu riche) ---
+  {
+    slug: "extraction-dents-de-sagesse-dakar-prix-douleur",
+    title:
+      "Extraction dents de sagesse à Dakar : prix, douleur et cicatrisation",
+    description:
+      "Douleur au fond de la bouche ? Tout savoir sur l'extraction des dents de sagesse à Dakar : prix, déroulement et conseils pour éviter le gonflement.",
+    date: "2026-02-05",
+    category: "Urgences",
+    tags: [
+      "extraction dent de sagesse dakar",
+      "dentiste dakar",
+      "prix extraction dent de sagesse dakar",
+      "stomatologue dakar",
+      "douleur dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: sagesseCover,
+    pinned: true,
+    readingMinutes: 13,
+    content: `Les **dents de sagesse** (ou troisièmes molaires) sont souvent source de **douleur**, d'infections (**péricoronarite**) et de chevauchement dentaire. À Dakar, leur **extraction** est une intervention courante, réalisée sans douleur grâce aux techniques modernes d'anesthésie.\n\n## Pourquoi extraire les dents de sagesse ?\nL'extraction n'est pas systématique. Elle est recommandée si :\n- **Manque de place** : la dent pousse de travers (enclavée ou incluse) et abîme la dent voisine.\n- **Infection récurrente** : douleur, gonflement de la gencive, difficultés à ouvrir la bouche.\n- **Kyste** ou lésion osseuse visible à la radio.\n- **Carie** impossible à soigner correctement à cause de la position.\n\n## Prix extraction dent de sagesse à Dakar\nLe **prix** varie selon la complexité :\n- **Extraction simple** (dent sortie) : tarif standard.\n- **Extraction chirurgicale** (dent incluse/sous la gencive) : nécessite une petite incision, des sutures et parfois une imagerie 3D (**CBCT**). Le coût est légèrement supérieur.\nUn **devis clair** est toujours établi avant l'intervention.\n\n## Déroulement de l'intervention\n1. **Bilan Radiographique** : Panoramique ou Scanner 3D pour visualiser les racines et le nerf mandibulaire.\n2. **Anesthésie Locale** : Intervention totalement **indolore**.\n3. **Extraction** : Rapide et précise.\n4. **Sutures** : Fils résorbables pour une meilleure cicatrisation.\n\n## Conseils post-opératoires pour éviter le gonflement\n- **Froid** : Appliquer une poche de glace sur la joue (20 min toutes les heures) le premier jour.\n- **Alimentation** : Molle et tiède/froide pendant 48h (biogourts, glaces, purées).\n- **Hygiène** : Pas de bains de bouche le jour même. Brossage doux dès le lendemain.\n- **Repos** : Éviter le sport intense pendant 3-4 jours.\n\n> Vous ressentez une douleur au fond de la mâchoire ? Prenez rendez-vous pour une évaluation : [/rendez-vous](/rendez-vous).`,
+    faq: [
+      {
+        q: "Est-ce que ça fait mal ?",
+        a: "Non, l'intervention se fait sous anesthésie locale efficace. Après l'extraction, des antalgiques sont prescrits pour gérer la gêne éventuelle.",
+      },
+      {
+        q: "Combien de temps pour cicatriser ?",
+        a: "La gencive cicatrise en 1 à 2 semaines. L'os prend plusieurs mois pour se combler totalement, mais vous pouvez manger normalement après quelques jours.",
+      },
+      {
+        q: "Faut-il enlever les 4 en même temps ?",
+        a: "C'est possible, souvent sous anesthésie générale ou sédation, mais nous procédons souvent par côté (haut et bas d'un même côté) sous anesthésie locale pour plus de confort.",
+      },
+    ],
+  },
+  {
+    slug: "facettes-dentaires-dakar-hollywood-smile-prix",
+    title: "Facettes dentaires à Dakar (Hollywood Smile) : prix et durée",
+    description:
+      "Envie d'un sourire Hollywood ? Découvrez les facettes dentaires à Dakar : céramique ou composite, prix et durée pour transformer votre sourire.",
+    date: "2026-02-03",
+    category: "Esthétique",
+    tags: [
+      "facette dentaire dakar",
+      "hollywood smile dakar",
+      "prix facette dentaire senegal",
+      "esthétique dentaire",
+      "dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: facettesCover,
+    pinned: true,
+    readingMinutes: 14,
+    content: `Le **Hollywood Smile** n'est plus réservé aux stars. Grâce aux **facettes dentaires**, vous pouvez corriger la forme, la teinte et l'alignement de vos dents de manière durable et spectaculaire. À Dakar, la Clinique DABIA propose des facettes haut de gamme en **céramique** et en **composite**.\n\n## Qu'est-ce qu'une facette dentaire ?\nC'est une fine pellicule (comme une lentille de contact) collée sur la face visible de la dent. Elle permet de masquer :\n- Des dents **tachées** ou jaunes (résistantes au blanchiment).\n- Des dents **cassées** ou usées.\n- Des **écarts** (diastèmes) entre les dents.\n- De légers **chevauchements**.\n\n## Facette Céramique vs Composite : Prix et Différences\n### Facettes Céramique (Emax / Zircone)\n- **Esthétique** : Résultat ultra-naturel, translucidité parfaite.\n- **Durabilité** : Très résistantes, ne changent pas de couleur (15-20 ans).\n- **Prix** : Investissement plus important.\n### Facettes Composite\n- **Esthétique** : Très beau résultat, réalisé directement au fauteuil.\n- **Durabilité** : Moins résistantes que la céramique, peuvent se ternir (5-7 ans).\n- **Prix** : Plus abordable.\n\n## Comment obtenir un Hollywood Smile à Dakar ?\n1. **Consultation Esthétique** : Photos, analyse du sourire (Smile Design).\n2. **Mock-up** : Essai du futur sourire en résine provisoire (sans toucher vos dents) pour valider la forme.\n3. **Préparation** : Légère préparation de l'émail (parfois sans préparation "No-Prep").\n4. **Pose** : Collage minutieux des facettes définitives.\n\n## Entretien\nComme vos dents naturelles : brossage soigné, fil dentaire et visite de contrôle annuelle.\n\n> Envie de sublimer votre sourire ? Demandez votre consultation esthétique : [/rendez-vous](/rendez-vous).`,
+    faq: [
+      {
+        q: "Est-ce que ça abîme les dents ?",
+        a: "Les techniques modernes sont très conservatrices (préparation pelliculaire de 0,3 à 0,5 mm) et respectent la vitalité de la dent.",
+      },
+      {
+        q: "Le résultat fait-il naturel ?",
+        a: "Oui, nous choisissons la forme et la teinte avec vous pour un résultat harmonieux qui correspond à votre visage.",
+      },
+      {
+        q: "Quel est le prix d'une facette à Dakar ?",
+        a: "Le tarif dépend du matériau (céramique ou composite) et du nombre de dents. Un devis personnalisé vous est remis lors de la consultation.",
+      },
+    ],
+  },
+  {
+    slug: "invisalign-dakar-orthodontie-invisible-adulte",
+    title: "Invisalign à Dakar : l'orthodontie invisible pour adultes",
+    description:
+      "Redresser ses dents sans bagues ? C'est possible avec Invisalign et les aligneurs invisibles à Dakar. Prix, durée et avantages pour les adultes.",
+    date: "2026-01-30",
+    category: "Orthodontie",
+    tags: [
+      "invisalign dakar",
+      "orthodontie invisible dakar",
+      "appareil dentaire transparent dakar",
+      "aligneurs dakar",
+      "orthodontie adulte",
+    ],
+    author: AUTHORS.sao,
+    cover: invisalignCover,
+    pinned: true,
+    readingMinutes: 15,
+    content: `Vous rêvez de dents alignées mais refusez de porter des bagues métalliques ? L'**orthodontie invisible** par aligneurs (type **Invisalign**) est la solution idéale pour les adultes et adolescents actifs à Dakar.\n\n## Pourquoi choisir Invisalign à Dakar ?\n- **Discrétion Absolue** : Les gouttières sont transparentes et quasi-invisibles.\n- **Confort** : Pas de métal, pas de blessures aux joues ou aux lèvres.\n- **Hygiène Facilitée** : Les aligneurs sont amovibles. Vous les retirez pour manger et vous brosser les dents.\n- **Visualisation** : Grâce au scanner 3D, vous voyez le résultat final virtuel avant même de commencer.\n\n## Pour quels problèmes ?\nInvisalign est efficace pour corriger :\n- Chevauchements dentaires.\n- Espacements (dents écartées).\n- Problèmes d'occlusion (articulé croisé, supraclusion).\n\n## Durée et Prix du traitement\nLa durée varie de **6 à 18 mois** selon la complexité. Le **prix** dépend du nombre d'aligneurs nécessaires. Bien que souvent plus coûteux que les bagues traditionnelles, le confort et l'esthétique justifient l'investissement pour de nombreux patients.\n\n## Déroulement\n1. **Scan 3D** : Empreinte numérique de vos dents (fini la pâte à empreinte !).\n2. **ClinCheck** : Planification vidéo du mouvement de vos dents.\n3. **Pose** : Remise de vos premiers aligneurs.\n4. **Suivi** : Visites de contrôle toutes les 6 à 8 semaines.\n\n> Prêt à transformer votre sourire en toute discrétion ? Prenez rendez-vous pour un scan 3D : [/rendez-vous](/rendez-vous).`,
+    faq: [
+      {
+        q: "Dois-je les porter tout le temps ?",
+        a: "Pour être efficace, il faut les porter 22h/24, jour et nuit. Vous ne les retirez que pour manger et boire (sauf de l'eau).",
+      },
+      {
+        q: "Est-ce douloureux ?",
+        a: "Vous ressentirez une légère pression à chaque changement d'aligneur (toutes les 1 à 2 semaines), signe que les dents bougent. C'est bien moins douloureux que les bagues.",
+      },
+      {
+        q: "Invisalign est-il disponible à Dakar ?",
+        a: "Oui, la Clinique DABIA propose des traitements par aligneurs invisibles avec un suivi complet à Dakar.",
+      },
+    ],
+  },
+  {
+    slug: "implant-dentaire-ou-bridge-choisir-dakar",
+    title: "Implant dentaire ou Bridge : que choisir à Dakar ?",
+    description:
+      "Remplacer une dent manquante : faut-il choisir un implant ou un bridge ? Comparatif des prix, de la durée de vie et de l'esthétique à Dakar.",
+    date: "2026-01-28",
+    category: "Implantologie",
+    tags: [
+      "implant dentaire dakar",
+      "bridge dentaire dakar",
+      "prothèse dentaire dakar",
+      "remplacement dent",
+      "prix implant dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: bridgeImplantCover,
+    readingMinutes: 12,
+    content: `Perdre une dent n'est pas une fatalité. Pour la remplacer, deux solutions principales s'offrent à vous à Dakar : l'**implant dentaire** et le **bridge**. Comment choisir la meilleure option ? Voici un comparatif détaillé.\n\n## L'Implant Dentaire : La référence\nC'est une racine artificielle en titane insérée dans l'os.\n- **Avantages** : Solution la plus **durable** (à vie souvent), préserve les dents voisines, stimule l'os, sensation identique à une dent naturelle.\n- **Inconvénients** : Nécessite une petite chirurgie, délai de cicatrisation (3-4 mois), coût initial plus élevé.\n\n## Le Bridge Dentaire : L'alternative classique\nC'est un pont de 3 dents qui s'appuie sur les dents voisines.\n- **Avantages** : Rapide (réalisé en 2-3 semaines), esthétique, moins cher que l'implant dans certains cas.\n- **Inconvénients** : Oblige à **tailler** (mutiler) les dents voisines, risque de carie sous les piliers, l'os continue de fondre sous la dent remplacée.\n\n## Comparatif Prix à Dakar\nÀ première vue, le **bridge** semble moins cher. Cependant, si l'on considère la durée de vie et le fait qu'il faille souvent le refaire après 10-15 ans, l'**implant** est souvent plus économique sur le long terme.\n\n## Le verdict du dentiste\nNous privilégions l'**implant dentaire** car il est plus conservateur (on ne touche pas aux autres dents). Le bridge reste une bonne option si les dents voisines sont déjà abîmées ou si l'implant est contre-indiqué (manque d'os sévère, problèmes de santé).\n\n> Une dent manquante ? N'attendez pas que les autres dents bougent. Demandez conseil : [/rendez-vous](/rendez-vous).`,
+    faq: [
+      {
+        q: "L'implant est-il remboursé ?",
+        a: "Les implants sont rarement couverts par les assurances classiques au Sénégal, contrairement aux bridges qui peuvent bénéficier d'une prise en charge partielle.",
+      },
+      {
+        q: "La pose d'implant fait-elle mal ?",
+        a: "Non, l'intervention se déroule sous anesthésie locale. Les suites sont généralement simples, souvent moins douloureuses qu'une extraction.",
+      },
+      {
+        q: "Combien de temps dure un implant ?",
+        a: "Avec une bonne hygiène bucco-dentaire, un implant peut durer toute la vie.",
+      },
+    ],
+  },
+  {
+    slug: "femme-enceinte-dentiste-dakar-soins-autorises",
+    title: "Femme enceinte et dentiste à Dakar : soins autorisés et risques",
+    description:
+      "Peut-on aller chez le dentiste enceinte ? Gingivite de grossesse, anesthésie, radio : tout ce qu'il faut savoir pour des soins sans danger à Dakar.",
+    date: "2026-01-25",
+    category: "Conseils",
+    tags: [
+      "femme enceinte dentiste dakar",
+      "soins dentaires grossesse",
+      "gingivite femme enceinte",
+      "dentiste dakar",
+      "grossesse",
+    ],
+    author: AUTHORS.sao,
+    cover: grossesseCover,
+    readingMinutes: 10,
+    content: `**"Je suis enceinte, puis-je aller chez le dentiste ?"** La réponse est **OUI**, c'est même fortement recommandé ! Les changements hormonaux pendant la grossesse fragilisent les dents et les gencives. À Dakar, nous accompagnons les futures mamans pour une grossesse sereine.\n\n## Gingivite de grossesse : Attention !\nLes hormones augmentent la réaction des gencives à la plaque dentaire. Résultat : gencives rouges, gonflées qui saignent (**gingivite gravidique**). Si elle n'est pas traitée, elle peut évoluer vers une parodontite, qui est un facteur de risque pour l'**accouchement prématuré**.\n\n## Quels soins sont autorisés ?\n- **Détartrage** : Indispensable pour calmer l'inflammation gingivale.\n- **Soins de caries** : Une carie non soignée est un nid à bactéries dangereux pour maman et bébé.\n- **Anesthésie** : Nous utilisons des anesthésiants compatibles et sans danger pour le fœtus.\n- **Radiographies** : Évitées par précaution, mais possibles en cas d'urgence absolue avec un tablier de plomb.\n\n## Le meilleur moment pour consulter\nLe **2ème trimestre** est idéal pour les soins courants. En cas d'urgence (douleur, infection), il faut consulter **immédiatement**, quel que soit le stade de la grossesse.\n\n## Conseils pour les futures mamans\n1. **Hygiène irréprochable** : Brossage 2x/jour + fil dentaire.\n2. **Nausées/Vomissements** : Rincez-vous la bouche à l'eau (ne brossez pas tout de suite pour ne pas abîmer l'émail fragilisé par l'acide).\n3. **Alimentation** : Attention aux fringales sucrées !\n\n> Prenez soin de vous et de votre bébé. Programmez votre contrôle dentaire : [/rendez-vous](/rendez-vous).`,
+    faq: [
+      {
+        q: "L'anesthésie est-elle dangereuse pour le bébé ?",
+        a: "Non, nous utilisons des produits spécifiques pour les femmes enceintes qui ne traversent pas la barrière placentaire à dose toxique.",
+      },
+      {
+        q: "Puis-je faire un blanchiment enceinte ?",
+        a: "Non, par principe de précaution, les traitements esthétiques (blanchiment) sont reportés après l'accouchement et l'allaitement.",
+      },
+    ],
+  },
+  {
+    slug: "peur-du-dentiste-dakar-sedation-soins-sans-douleur",
+    title:
+      "Peur du dentiste à Dakar : nos solutions pour des soins sans douleur",
+    description:
+      "Phobie du dentiste ? Découvrez nos solutions de sédation et d'anesthésie douce à Dakar pour des soins dentaires sans stress et sans douleur.",
+    date: "2026-01-20",
+    category: "Conseils",
+    tags: [
+      "peur du dentiste dakar",
+      "dentiste sans douleur dakar",
+      "sédation dentaire dakar",
+      "stomato phobie",
+      "soins doux",
+    ],
+    author: AUTHORS.sao,
+    cover: sedationCover,
+    readingMinutes: 11,
+    content: `La **peur du dentiste** (ou stomatophobie) empêche de nombreux patients de se soigner, aggravant souvent leur état dentaire. À Dakar, la Clinique DABIA a mis en place une approche "Zero Douleur" et bienveillante pour vous réconcilier avec les soins.\n\n## Une approche bienveillante\nTout commence par l'**écoute**. Nous prenons le temps de comprendre vos peurs (douleur, bruit, piqûre...). Vous gardez le contrôle pendant le soin : un simple geste de la main et nous arrêtons tout.\n\n## Solutions techniques contre la douleur\n- **Anesthésie locale topique** : Un gel anesthésiant est appliqué sur la gencive *avant* la piqûre. Vous ne sentez quasiment rien.\n- **Anesthésie efficace** : Nous attendons que la dent soit *totalement* endormie avant de commencer. Aucune douleur n'est tolérée.\n\n## La Sédation Consciente (MEOPA) / Gaz Hilarant\nPour les patients très anxieux ou les enfants, nous pouvons utiliser une sédation légère. Vous respirez un mélange gazeux relaxant. Vous restez éveillé mais **totalement détendu**, l'anxiété disparaît et la perception du temps est modifiée.\n\n## Conseils pour les phobiques\n1. **Venez tôt** (mais pas trop) pour ne pas stresser en salle d'attente.\n2. **Écoutez de la musique** : Apportez vos écouteurs pour vous isoler des bruits.\n3. **Commencez petit** : Un simple détartrage ou contrôle pour reprendre confiance.\n\n> Ne laissez pas la peur gâcher votre sourire. Venez nous rencontrer pour une discussion sans engagement : [/rendez-vous](/rendez-vous).`,
+    faq: [
+      {
+        q: "La sédation est-elle une anesthésie générale ?",
+        a: "Non, vous restez conscient et pouvez parler. C'est beaucoup plus léger et vous récupérez vos esprits en quelques minutes après l'arrêt.",
+      },
+      {
+        q: "Est-ce que ça fonctionne pour les enfants ?",
+        a: "Oui, c'est très efficace pour les enfants agités ou anxieux, permettant de réaliser les soins dans le calme.",
+      },
+    ],
   },
 ];

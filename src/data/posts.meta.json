@@ -265,8 +265,7 @@
     "date": "2026-02-13",
     "category": "Prévention",
     "tags": ["diabète et dents", "parodontite diabétique", "prévention dakar"]
-  }
- ,
+  },
   {
     "slug": "prix-couronne-dentaire-dakar-materiaux-devis",
     "title": "Prix d’une couronne dentaire à Dakar : matériaux, étapes et devis",
@@ -274,15 +273,19 @@
     "date": "2026-02-20",
     "category": "Conseils",
     "tags": ["couronne dentaire", "prix", "prothèse dentaire", "dentiste dakar"]
-  }
- ,
+  },
   {
     "slug": "devitalisation-traitement-canalaire-prix-dakar",
     "title": "Dévitalisation (traitement canalaire) à Dakar : déroulé, indications et prix",
     "description": "Douleur, abcès, dent fissurée : quand dévitaliser ? Étapes, radios, durée et facteurs qui influencent le tarif à Dakar.",
     "date": "2026-02-27",
     "category": "Urgences",
-    "tags": ["traitement canalaire", "dé-vitalisation", "prix", "douleur dentaire"]
+    "tags": [
+      "traitement canalaire",
+      "dé-vitalisation",
+      "prix",
+      "douleur dentaire"
+    ]
   },
   {
     "slug": "prix-appareil-dentaire-orthodontie-dakar-enfant-adulte",
@@ -290,7 +293,12 @@
     "description": "Aligneurs transparents, bagues métalliques ou esthétiques : explications claires sur les facteurs de prix en orthodontie à Dakar et le déroulé du traitement.",
     "date": "2026-03-06",
     "category": "Orthodontie",
-    "tags": ["prix appareil dentaire dakar", "orthodontie", "Invisalign Dakar", "bagues dentaires"]
+    "tags": [
+      "prix appareil dentaire dakar",
+      "orthodontie",
+      "Invisalign Dakar",
+      "bagues dentaires"
+    ]
   },
   {
     "slug": "prix-urgence-dentaire-dakar-jour-nuit",
@@ -298,7 +306,11 @@
     "description": "Douleur aiguë, abcès, traumatisme : ce qui influence le tarif d’une urgence dentaire à Dakar, en journée ou la nuit.",
     "date": "2026-03-13",
     "category": "Urgences",
-    "tags": ["prix urgence dentaire dakar", "urgence dentaire", "dentiste dakar 24/24"]
+    "tags": [
+      "prix urgence dentaire dakar",
+      "urgence dentaire",
+      "dentiste dakar 24/24"
+    ]
   },
   {
     "slug": "prix-prothese-dentaire-dakar-partielle-complete",
@@ -306,7 +318,11 @@
     "description": "Prothèse amovible, bridge, prothèse complète ou sur implants : types, indications et facteurs qui influencent le coût à Dakar.",
     "date": "2026-03-20",
     "category": "Conseils",
-    "tags": ["prothèse dentaire", "prix prothese dentaire dakar", "dentier complet"]
+    "tags": [
+      "prothèse dentaire",
+      "prix prothese dentaire dakar",
+      "dentier complet"
+    ]
   },
   {
     "slug": "parodontite-dakar-surfacage-plan-traitement",
@@ -338,6 +354,90 @@
       "orthodontie enfant dakar",
       "appareil interceptif",
       "dentiste pediatrique dakar"
+    ]
+  },
+  {
+    "slug": "extraction-dents-de-sagesse-dakar-prix-douleur",
+    "title": "Extraction dents de sagesse à Dakar : prix, douleur et cicatrisation",
+    "description": "Douleur au fond de la bouche ? Tout savoir sur l'extraction des dents de sagesse à Dakar : prix, déroulement et conseils pour éviter le gonflement.",
+    "date": "2026-02-05",
+    "category": "Urgences",
+    "tags": [
+      "extraction dent de sagesse dakar",
+      "dentiste dakar",
+      "prix extraction dent de sagesse dakar",
+      "stomatologue dakar",
+      "douleur dentaire"
+    ]
+  },
+  {
+    "slug": "facettes-dentaires-dakar-hollywood-smile-prix",
+    "title": "Facettes dentaires à Dakar (Hollywood Smile) : prix et durée",
+    "description": "Envie d'un sourire Hollywood ? Découvrez les facettes dentaires à Dakar : céramique ou composite, prix et durée pour transformer votre sourire.",
+    "date": "2026-02-03",
+    "category": "Esthétique",
+    "tags": [
+      "facette dentaire dakar",
+      "hollywood smile dakar",
+      "prix facette dentaire senegal",
+      "esthétique dentaire",
+      "dentiste dakar"
+    ]
+  },
+  {
+    "slug": "invisalign-dakar-orthodontie-invisible-adulte",
+    "title": "Invisalign à Dakar : l'orthodontie invisible pour adultes",
+    "description": "Redresser ses dents sans bagues ? C'est possible avec Invisalign et les aligneurs invisibles à Dakar. Prix, durée et avantages pour les adultes.",
+    "date": "2026-01-30",
+    "category": "Orthodontie",
+    "tags": [
+      "invisalign dakar",
+      "orthodontie invisible dakar",
+      "appareil dentaire transparent dakar",
+      "aligneurs dakar",
+      "orthodontie adulte"
+    ]
+  },
+  {
+    "slug": "implant-dentaire-ou-bridge-choisir-dakar",
+    "title": "Implant dentaire ou Bridge : que choisir à Dakar ?",
+    "description": "Remplacer une dent manquante : faut-il choisir un implant ou un bridge ? Comparatif des prix, de la durée de vie et de l'esthétique à Dakar.",
+    "date": "2026-01-28",
+    "category": "Implantologie",
+    "tags": [
+      "implant dentaire dakar",
+      "bridge dentaire dakar",
+      "prothèse dentaire dakar",
+      "remplacement dent",
+      "prix implant dakar"
+    ]
+  },
+  {
+    "slug": "femme-enceinte-dentiste-dakar-soins-autorises",
+    "title": "Femme enceinte et dentiste à Dakar : soins autorisés et risques",
+    "description": "Peut-on aller chez le dentiste enceinte ? Gingivite de grossesse, anesthésie, radio : tout ce qu'il faut savoir pour des soins sans danger à Dakar.",
+    "date": "2026-01-25",
+    "category": "Conseils",
+    "tags": [
+      "femme enceinte dentiste dakar",
+      "soins dentaires grossesse",
+      "gingivite femme enceinte",
+      "dentiste dakar",
+      "grossesse"
+    ]
+  },
+  {
+    "slug": "peur-du-dentiste-dakar-sedation-soins-sans-douleur",
+    "title": "Peur du dentiste à Dakar : nos solutions pour des soins sans douleur",
+    "description": "Phobie du dentiste ? Découvrez nos solutions de sédation et d'anesthésie douce à Dakar pour des soins dentaires sans stress et sans douleur.",
+    "date": "2026-01-20",
+    "category": "Conseils",
+    "tags": [
+      "peur du dentiste dakar",
+      "dentiste sans douleur dakar",
+      "sédation dentaire dakar",
+      "stomato phobie",
+      "soins doux"
     ]
   }
 ]
