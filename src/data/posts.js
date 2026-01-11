@@ -2780,4 +2780,258 @@ Les antibiotiques sans prescription peuvent masquer les symptômes sans traiter 
       },
     ],
   },
+
+  // NOUVEAUX ARTICLES AJOUTÉS (Implant, Ortho, Blanchiment, Endo, Sagesse)
+  {
+    slug: "implant-dentaire-dakar-prix-avis",
+    title: "Implant dentaire à Dakar : prix, déroulement et avis",
+    description:
+      "Remplacer une dent manquante durablement : tout savoir sur la pose d'implant dentaire à Dakar, le prix, la douleur et la cicatrisation.",
+    date: "2026-02-02",
+    category: "Implantologie",
+    tags: [
+      "implant dentaire dakar",
+      "prix implant senegal",
+      "remplacer dent",
+      "chirurgie dentaire dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: implantCover,
+    readingMinutes: 15,
+    content: `Perdre une dent peut affecter le sourire et la mastication. L'**implant dentaire** est aujourd'hui la solution de référence à Dakar pour remplacer une dent de façon fixe et durable, sans abîmer les dents voisines.
+
+## Qu'est-ce qu'un implant dentaire ?
+C'est une racine artificielle en titane insérée dans l'os de la mâchoire. Une fois cicatrisée (ostéointégration), on y visse une couronne en céramique pour redonner l'apparence et la fonction d'une dent naturelle.
+
+## Déroulement de la pose à la Clinique DABIA
+1. **Bilan 3D (CBCT)** : Indispensable pour vérifier le volume osseux et choisir la taille de l'implant.
+2. **Pose chirurgicale** : Intervention sous anesthésie locale, totalement **indolore**. Durée : 30 à 60 min.
+3. **Cicatrisation** : Période de 3 à 4 mois pour que l'os fusionne avec l'implant. Une prothèse provisoire peut être posée pour l'esthétique.
+4. **Pose de la couronne** : Prise d'empreinte (souvent numérique) et fixation de la dent définitive.
+
+## Prix d'un implant dentaire à Dakar
+Le tarif varie selon la marque de l'implant, la nécessité d'une greffe osseuse et le type de couronne (Zircone ou Céramo-métal). À la Clinique DABIA, nous proposons un devis détaillé incluant :
+- La chirurgie (pose de l'implant)
+- L'accastillage (pilier)
+- La couronne définitive
+
+> **Bon à savoir** : C'est un investissement sur le long terme. Contrairement à un bridge (qui mutile les dents voisines) ou un appareil amovible, l'implant préserve votre capital osseux.
+
+## Est-ce douloureux ?
+Non. La pose se fait sous anesthésie locale efficace. Les suites opératoires sont généralement simples (léger gonflement), bien gérées avec des antalgiques classiques et de la glace.
+
+Prenez rendez-vous pour un **bilan implant** et retrouvez le plaisir de croquer la vie à pleines dents : [/rendez-vous](/rendez-vous).`,
+    faq: [
+      {
+        q: "Quelle est la durée de vie d'un implant ?",
+        a: "Avec une bonne hygiène (brossage + fil dentaire) et des contrôles réguliers, un implant peut durer toute la vie.",
+      },
+      {
+        q: "Y a-t-il une limite d'âge ?",
+        a: "Non, tant que l'état de santé général le permet. Il faut juste attendre la fin de la croissance (vers 18-20 ans) pour les jeunes patients.",
+      },
+    ],
+  },
+
+  {
+    slug: "appareil-dentaire-adulte-dakar-invisalign",
+    title:
+      "Appareil dentaire adulte à Dakar : bagues ou gouttières invisibles ?",
+    description:
+      "Aligner ses dents à l'âge adulte à Dakar, c'est possible. Comparatif entre bagues céramiques et aligneurs invisibles (type Invisalign) pour un sourire parfait.",
+    date: "2026-02-05",
+    category: "Orthodontie",
+    tags: [
+      "orthodontie adulte dakar",
+      "invisalign dakar",
+      "aligneurs dentaires",
+      "appareil dentaire invisible",
+    ],
+    author: AUTHORS.sao,
+    cover: invisalignCover,
+    readingMinutes: 12,
+    content: `Il n'est jamais trop tard pour aligner ses dents ! L'**orthodontie adulte** est en plein essor à Dakar. Fini les sourires métalliques "de collégien", place à des solutions discrètes et efficaces.
+
+## Les options pour adultes
+### 1. Les Aligneurs Invisibles (type Invisalign)
+C'est la solution préférée des actifs.
+- **Invisible** : Des gouttières transparentes quasi-imperceptibles.
+- **Amovible** : On les retire pour manger et se brosser les dents (hygiène top !).
+- **Confortable** : Pas de fils qui piquent.
+- **Efficace** : Traite des cas simples à complexes.
+
+### 2. Les Bagues Céramiques
+Des attaches collées sur les dents, mais de couleur "dent" ou transparentes.
+- **Discret**, bien que visible de près.
+- **Fixe** : Agit en continu, ne demande pas de discipline de port.
+- **Prix** : Souvent un peu plus économique que les aligneurs.
+
+## Pourquoi aligner ses dents adulte ?
+Au-delà de l'esthétique, des dents alignées :
+- Facilitent le brossage (moins de risque de déchaussement).
+- Améliorent l'occlusion (moins d'usure des dents).
+- Préviennent les douleurs articulaires.
+
+## Durée et Prix
+Un traitement adulte dure entre **6 et 24 mois** selon la complexité. Le coût dépend de la technique et de la durée.
+À la Clinique DABIA, nous réalisons un **bilan orthodontique** complet (photos, radio, empreinte numérique) pour vous proposer la solution la plus adaptée à votre vie sociale et professionnelle.
+
+> Envie d'un sourire aligné sans que ça se voie ? Demandez une simulation **scanner intra-oral** lors de votre consultation.`,
+    faq: [
+      {
+        q: "Est-ce douloureux ?",
+        a: "On ressent une pression les premiers jours (signe que les dents bougent), mais c'est très supportable. Les aligneurs sont souvent plus doux que les bagues.",
+      },
+      {
+        q: "Doit-on porter les aligneurs toute la journée ?",
+        a: "Oui, 22h/24. On ne les enlève que pour les repas et le brossage pour garantir le résultat.",
+      },
+    ],
+  },
+
+  {
+    slug: "blanchiment-dentaire-dakar-efficace-medical",
+    title: "Blanchiment dentaire à Dakar : la technique médicale efficace",
+    description:
+      "Vous rêvez de dents plus blanches ? Oubliez les astuces maison. Découvrez le blanchiment dentaire médical à Dakar : sûr, rapide et durable.",
+    date: "2026-02-08",
+    category: "Esthétique",
+    tags: [
+      "blanchiment dentaire dakar",
+      "dents blanches",
+      "détartrage blanchiment",
+      "esthétique dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: blanchimentCover,
+    readingMinutes: 10,
+    content: `Café, thé, attaya, épices... Avec le temps, nos dents jaunissent. Pour retrouver de l'éclat en toute sécurité, le **blanchiment dentaire médical** réalisé par un chirurgien-dentiste à Dakar est la seule option fiable qui préserve votre émail.
+
+## Blanchiment au cabinet (Fauteuil) vs "Bars à sourire"
+Il est crucial de distinguer le soin médical des produits en vente libre ou instituts non médicaux.
+- **Le Dentiste** utilise des produits (peroxyde) à des concentrations efficaces, uniquement autorisées aux professionnels de santé. Il protège vos gencives avec une barrière spéciale.
+- **Le Résultat** est immédiat et contrôlé.
+
+## Le Protocole Clinique DABIA
+1. **Bilan préalable** : On vérifie l'absence de caries ou de contre-indications (gencives saines obligatoires !).
+2. **Détartrage + Polissage** : Pour enlever le tartre et les taches de surface (tabac, attaya).
+3. **Séance de Blanchiment** : Application du gel éclaircissant activé par une lampe spécifique. Durée : environ 1h.
+4. **Kit ambulatoire (optionnel)** : Des gouttières sur mesure pour entretenir le résultat à la maison.
+
+## Est-ce que ça abîme l'émail ?
+**Non**, si c'est fait par un professionnel. Le produit agit en profondeur sur les pigments sans "rayer" l'émail (contrairement au charbon ou citron).
+
+## Sensibilité ?
+Une sensibilité au froid peut survenir pendant 24 à 48h. Nous appliquons des gels désensibilisants pour votre confort.
+
+> **Conseil** : Évitez les aliments colorés (curry, vin rouge, café) pendant 2-3 jours après le soin pour stabiliser la teinte.
+
+Redonnez de l'éclat à votre sourire avant un événement ou simplement pour vous faire plaisir.`,
+    faq: [
+      {
+        q: "Combien de teintes peut-on gagner ?",
+        a: "Cela dépend de votre teinte initiale, mais le résultat est toujours visiblement plus lumineux et naturel.",
+      },
+      {
+        q: "Le blanchiment marche-t-il sur les couronnes ?",
+        a: "Non, le produit n'agit que sur l'émail naturel. Si vous avez des couronnes visibles, il faudra peut-être les changer pour harmoniser la teinte.",
+      },
+    ],
+  },
+
+  {
+    slug: "devitaliser-dent-dakar-traitement-canal",
+    title: "Dévitaliser une dent à Dakar : pourquoi, étapes et douleur ?",
+    description:
+      "Une carie profonde ou une rage de dent ? Le traitement de canal (dévitalisation) permet de sauver votre dent. Explications d'experts à Dakar.",
+    date: "2026-02-12",
+    category: "Technologie",
+    tags: [
+      "devitalisation dakar",
+      "traitement canal",
+      "nerf dentaire",
+      "urgence dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: endoCover,
+    readingMinutes: 14,
+    content: `"Il faut dévitaliser la dent". Cette phrase fait souvent peur. Pourtant, le **traitement de canal** (endodontie) est un acte conservateur qui permet de **garder votre dent** plutôt que de l'extraire.
+
+## Quand doit-on dévitaliser ?
+Lorsque la carie est trop profonde et a atteint le nerf (pulpe), ou après un choc violent. Le nerf s'infecte ou se nécrose, provoquant souvent une douleur aiguë (la fameuse rage de dent) ou un abcès.
+
+## Les étapes du traitement à la Clinique DABIA
+Grâce aux technologies modernes (localisateur d'apex, instruments rotatifs), ce soin est aujourd'hui rapide et sûr :
+1. **Anesthésie** : La dent est totalement endormie.
+2. **Nettoyage** : On retire le nerf infecté et on désinfecte l'intérieur des racines.
+3. **Obturation** : On rebouche les canaux de manière étanche pour éviter toute réinfection.
+4. **Reconstitution** : La dent dévitalisée est plus fragile. Il est souvent indispensable de poser une **couronne** ou un **onlay** pour la consolider et éviter qu'elle ne casse.
+
+## Est-ce que ça fait mal ?
+C'est souvent le contraire ! La dévitalisation **soulage** la douleur de l'infection. L'acte lui-même se fait sous anesthésie et est indolore. Une légère sensibilité à la pression peut durer quelques jours après.
+
+> **Sauver sa dent naturelle** est toujours la meilleure option. L'implant ne vient qu'en dernier recours.
+
+Si vous ressentez une douleur au froid, au chaud ou à la mastication, ne tardez pas. Une prise en charge rapide évite l'abcès et l'extraction.`,
+    faq: [
+      {
+        q: "Une dent dévitalisée est-elle morte ?",
+        a: "Elle n'a plus de nerf (sensibilité), mais elle reste ancrée dans l'os et la gencive qui sont bien vivants. Elle garde sa fonction masticatoire.",
+      },
+      {
+        q: "La dent va-t-elle noircir ?",
+        a: "C'était vrai avec les anciennes techniques. Aujourd'hui, avec les matériaux modernes, le risque de coloration est minime. Une couronne permet aussi de masquer toute dyschromie.",
+      },
+    ],
+  },
+
+  {
+    slug: "extraction-dent-sagesse-dakar-prix-douleur",
+    title: "Extraction dent de sagesse à Dakar : quand l'enlever ?",
+    description:
+      "Douleur au fond de la bouche, dents qui se chevauchent ? Focus sur l'extraction des dents de sagesse à Dakar : indications et suites opératoires.",
+    date: "2026-02-15",
+    category: "Urgences",
+    tags: [
+      "dent de sagesse dakar",
+      "extraction dentaire",
+      "chirurgie dentaire dakar",
+      "douleur dents",
+    ],
+    author: AUTHORS.sao,
+    cover: sagesseCover,
+    readingMinutes: 11,
+    content: `Les **dents de sagesse** (3èmes molaires) apparaissent souvent entre 17 et 25 ans. Elles manquent parfois de place, provoquant douleurs ou infections. À Dakar, nous évaluons la nécessité de les extraire au cas par cas grâce à la radiographie panoramique.
+
+## Pourquoi les enlever ?
+- **Manque de place** : Elles poussent les autres dents et peuvent perturber un alignement orthodontique.
+- **Infection (Péricoronarite)** : La gencive recouvre partiellement la dent, créant une poche où les bactéries prolifèrent (douleur, gonflement).
+- **Carie** : Positionnées très loin, elles sont difficiles à brosser et se carient vite.
+- **Kyste** : Parfois autour d'une dent incluse.
+
+## L'intervention à la Clinique DABIA
+- **Anesthésie locale** efficace.
+- Extraction douce (parfois en fractionnant la dent pour préserver l'os).
+- Points de suture (souvent résorbables).
+- Durée : De 20 min à 1h selon la difficulté.
+
+## Suites opératoires (Après l'extraction)
+- **Gonflement** : Fréquent ("joue de hamster"), il diminue après 3 jours. Glacez bien !
+- **Alimentation** : Molle et tiède/froide pendant 48h (yaourts, purées, glaces). Pas d'épices, pas d'alcool.
+- **Hygiène** : Brossage doux, bains de bouche prescrits à commencer le lendemain.
+
+> **Faut-il les enlever préventivement ?** Pas systématiquement. Si elles sont saines, bien positionnées et fonctionnelles, on les garde !
+
+Une radio panoramique permet de trancher. Si vous avez mal au fond de la mâchoire, consultez pour éviter l'infection.`,
+    faq: [
+      {
+        q: "Peut-on enlever les 4 d'un coup ?",
+        a: "Sous anesthésie locale, on préfère souvent faire un côté (haut et bas) puis l'autre 15 jours plus tard, pour vous laisser un côté pour manger.",
+      },
+      {
+        q: "Combien coûte l'extraction ?",
+        a: "Le tarif varie selon que la dent est sortie (extraction simple) ou incluse dans l'os (extraction chirurgicale). Un devis est établi après la radio.",
+      },
+    ],
+  },
 ];
