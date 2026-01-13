@@ -118,8 +118,8 @@ const Home = () => {
   return (
     <div className="bg-white text-gray-800">
       <Seo
-        title="Dentiste à Dakar"
-        description="Clinique dentaire à Dakar : soins modernes (implants, esthétique, orthodontie, urgences) dans un cadre chaleureux. Prenez rendez-vous à la Clinique Dentaire DABIA."
+        title="Dentiste à Dakar : Clinique Dentaire DABIA - Soins & Urgences"
+        description="Besoin d'un dentiste à Dakar ? La Clinique Dentaire DABIA est votre clinique dentaire de référence à Dakar (Liberté 6). Urgences, Implants, Orthodontie. Prenez RDV."
         canonical="https://www.cliniquedentairedabia.com/"
         url="https://www.cliniquedentairedabia.com/"
       />
@@ -169,11 +169,7 @@ const Home = () => {
       </section>
       <Suspense fallback={<div className="py-10" aria-hidden="true" />}>
         <StaffPreview />
-        <AssuranceMarquee
-          className="py-6"
-          speed={45}
-          logos={assuranceLogos}
-        />
+        <AssuranceMarquee className="py-6" speed={45} logos={assuranceLogos} />
         <CompetencesGrid />
       </Suspense>
 

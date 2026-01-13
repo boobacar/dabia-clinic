@@ -41,13 +41,18 @@ const ClinicIntro = () => {
           <h2 className="text-3xl text-[#ad9d64] font-bold mb-4">
             À propos de la Clinique Dentaire DABIA à Dakar
           </h2>
+          <p className="text-lg mb-4 text-gray-700">
+            Bienvenue à la Clinique Dentaire DABIA, votre référence pour trouver
+            un excellent dentiste à Dakar. Située à Sicap Foire (Liberté 6),
+            notre structure moderne vous offre une expertise complète : urgences
+            dentaires, implants, orthodontie, et esthétique du sourire.
+          </p>
           <p className="text-lg mb-6 text-gray-700">
-            Dentiste à Dakar (Liberté 6 / Sicap Foire), la clinique DABIA vous
-            accueille à 150m des deux voies pour des soins modernes : urgences,
-            implants, aligneurs, facettes, parodontologie, soins enfants.
-            Plateau technique CBCT, scanner intra-oral, stérilisation Classe B,
-            devis clairs, suivi post-soins, et accompagnement personnalisé pour
-            un sourire durable.
+            En tant que clinique dentaire à Dakar dotée d'un plateau technique
+            de pointe (Scanner 3D, radio panoramique), nous garantissons des
+            soins de haute qualité. Que vous cherchiez un dentiste pour un
+            simple détartrage ou une réhabilitation complexe, notre équipe
+            dévouée vous assure une prise en charge douce et personnalisée.
           </p>
           <Link to="/rendez-vous" className="btn-cta">
             Prendre un rendez-vous
