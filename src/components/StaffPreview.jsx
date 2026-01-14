@@ -4,7 +4,7 @@ import sao from "../assets/sao.webp";
 
 const StaffPreview = () => {
   return (
-    <section className="relative py-20 px-4 overflow-hidden">
+    <section className="relative py-10 px-4 overflow-hidden">
       {/* Background decor (optional subtle gradient) */}
       <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-50 -z-10" />
 
@@ -26,7 +26,7 @@ const StaffPreview = () => {
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center mb-12"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center"
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}

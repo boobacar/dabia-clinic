@@ -27,7 +27,7 @@ export default function AssuranceMarquee({
               src={src}
               alt="Assurance"
               className="h-10 w-auto object-contain opacity-90"
-              loading="lazy"
+              loading="eager"
             />
           ))}
         </div>
@@ -48,7 +48,7 @@ export default function AssuranceMarquee({
               src={src}
               alt="Assurance"
               className="h-10 w-auto object-contain opacity-90"
-              loading="lazy"
+              loading="eager"
             />
           ))}
         </div>

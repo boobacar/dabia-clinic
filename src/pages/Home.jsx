@@ -19,11 +19,9 @@ const StaffPreview = React.lazy(() => import("../components/StaffPreview"));
 const BlogListCompact = React.lazy(() =>
   import("../components/BlogListCompact")
 );
-const SectionWave = React.lazy(() => import("../components/SectionWave"));
-const KeyMetrics = React.lazy(() => import("../components/KeyMetrics"));
-const AssuranceMarquee = React.lazy(() =>
-  import("../components/AssuranceMarquee")
-);
+import SectionWave from "../components/SectionWave";
+import KeyMetrics from "../components/KeyMetrics";
+import AssuranceMarquee from "../components/AssuranceMarquee";
 
 // 👉 On importe la source des articles
 import { POSTS } from "../data/posts";
@@ -170,9 +168,9 @@ const Home = () => {
       </section>
       <Suspense fallback={<div className="py-10" aria-hidden="true" />}>
         <StaffPreview />
-        <AssuranceMarquee className="py-6" speed={45} logos={assuranceLogos} />
         <CompetencesGrid />
       </Suspense>
+      <AssuranceMarquee className="py-6" speed={45} logos={assuranceLogos} />
       {/* Pourquoi nous choisir */}
       <motion.section
         className="py-14 px-4 bg-white"
