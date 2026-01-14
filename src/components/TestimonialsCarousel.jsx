@@ -4,7 +4,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import ReviewCTA from "./ReviewCTA";
+import SectionTitle from "./SectionTitle";
 import { FAKE_GOOGLE_REVIEWS } from "../data/fakeGoogleReviews";
+// ... (rest of imports/helpers)
 
 const Star = ({ filled }) => (
   <svg
@@ -89,15 +91,11 @@ const TestimonialsCarousel = () => {
       transition={{ duration: 0.5, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.2 }}
     >
-      <motion.h2
-        className="text-3xl text-[#ad9d64] font-bold mb-2"
-        initial={{ opacity: 0, y: 8 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4, delay: 0.05 }}
-        viewport={{ once: true, amount: 0.5 }}
-      >
-        Témoignages
-      </motion.h2>
+      <SectionTitle
+        title="Témoignages"
+        subtitle="Avis Patients"
+        className="mb-8"
+      />
 
       {placeInfo && (
         <p className="text-sm text-gray-600 mb-6">
@@ -112,7 +110,11 @@ const TestimonialsCarousel = () => {
           className="max-w-2xl mx-auto mb-10"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ repeat: Infinity, duration: 1.2, repeatType: "reverse" }}
+          transition={{
+            repeat: Infinity,
+            duration: 1.2,
+            repeatType: "reverse",
+          }}
         >
           <div className="animate-pulse bg-white shadow-md p-10 rounded-lg">
             Chargement des avis…

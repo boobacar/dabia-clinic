@@ -17,9 +17,14 @@ const HeroSlideshow = () => {
 
   // Préchargement léger: première et suivante uniquement (réduit la concurrence réseau initiale)
   useEffect(() => {
-    [heroImages[0], heroImages[1]].filter(Boolean).forEach((src) => {
-      const img = new Image();
-      img.src = src;
+    // heroImages is now an array of objects { desktop, mobile }
+    [heroImages[0], heroImages[1]].filter(Boolean).forEach((imgObj) => {
+      // Preload desktop
+      const imgD = new Image();
+      imgD.src = imgObj.desktop;
+      // Preload mobile (browser cache will handle it if needed)
+      const imgM = new Image();
+      imgM.src = imgObj.mobile;
     });
   }, []);
 
@@ -57,7 +62,7 @@ const HeroSlideshow = () => {
     // 👉 très important: inclure SLIDE_MS et la longueur
   }, [index, SLIDE_MS, heroImages.length, enableLoop]);
 
-  const currentSrc = useMemo(() => heroImages[index], [index]);
+  const currentObj = useMemo(() => heroImages[index], [index]);
   const isSlideshow = enableLoop && heroImages.length > 1;
   const heroAlt = "Dentiste Dakar - Clinique dentaire DABIA";
 
@@ -66,14 +71,15 @@ const HeroSlideshow = () => {
       {isSlideshow ? (
         <AnimatePresence initial={false}>
           <motion.img
-            key={currentSrc}
-            src={currentSrc}
+            key={currentObj.desktop}
+            src={currentObj.desktop}
+            srcSet={`${currentObj.mobile} 640w, ${currentObj.desktop} 1600w`}
+            sizes="100vw"
             alt={heroAlt}
             aria-hidden="true"
             className="absolute inset-0 w-full h-full object-cover will-change-[opacity,transform]"
             decoding="async"
             fetchPriority={index === 0 ? "high" : "auto"}
-            sizes="100vw"
             initial={{ opacity: 0, scale: shouldReduceMotion ? 1 : 1.08 }}
             animate={{ opacity: 1, scale: shouldReduceMotion ? 1 : 1.2 }}
             exit={{ opacity: shouldReduceMotion ? 1 : 0 }}
@@ -85,12 +91,13 @@ const HeroSlideshow = () => {
         </AnimatePresence>
       ) : (
         <img
-          src={currentSrc}
+          src={currentObj.desktop}
+          srcSet={`${currentObj.mobile} 640w, ${currentObj.desktop} 1600w`}
+          sizes="100vw"
           alt={heroAlt}
           className="absolute inset-0 w-full h-full object-cover"
           decoding="async"
           fetchPriority="high"
-          sizes="100vw"
           loading="eager"
         />
       )}

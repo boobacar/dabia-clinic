@@ -7,34 +7,58 @@ export default function AssuranceMarquee({
   className = "",
 }) {
   const list = logos.length ? logos : [];
-  const repeated = list.concat(list).concat(list); // 3 fois pour boucle continue
+
   return (
     <div className={`overflow-hidden bg-white ${className}`}>
-      <div
-        className="flex items-center gap-10"
-        style={{
-          width: "max-content",
-          animation: `dabia-marquee ${speed}s linear infinite`,
-          willChange: "transform",
-          // léger masque aux bords pour éviter les ruptures visuelles
-          WebkitMaskImage:
-            "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
-          maskImage:
-            "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
-        }}
-      >
-        {repeated.map((src, i) => (
-          <img
-            key={i}
-            src={src}
-            alt="Assurance"
-            className="h-10 w-auto object-contain opacity-90"
-            loading="lazy"
-          />
-        ))}
+      {/* Wrapper with gap-10 (2.5rem) to separate the two tracks */}
+      <div className="flex items-center gap-10 w-max">
+        {/* Track 1 */}
+        <div
+          className="flex shrink-0 items-center justify-around gap-10"
+          style={{
+            minWidth: "100%",
+            animation: `dabia-marquee ${speed}s linear infinite`,
+            willChange: "transform",
+          }}
+        >
+          {list.map((src, i) => (
+            <img
+              key={`t1-${i}`}
+              src={src}
+              alt="Assurance"
+              className="h-10 w-auto object-contain opacity-90"
+              loading="lazy"
+            />
+          ))}
+        </div>
+
+        {/* Track 2 (Duplicate) */}
+        <div
+          className="flex shrink-0 items-center justify-around gap-10"
+          style={{
+            minWidth: "100%",
+            animation: `dabia-marquee ${speed}s linear infinite`,
+            willChange: "transform",
+          }}
+          aria-hidden="true"
+        >
+          {list.map((src, i) => (
+            <img
+              key={`t2-${i}`}
+              src={src}
+              alt="Assurance"
+              className="h-10 w-auto object-contain opacity-90"
+              loading="lazy"
+            />
+          ))}
+        </div>
       </div>
+
       <style>{`
-        @keyframes dabia-marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-33.333%); } }
+        @keyframes dabia-marquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(calc(-100% - 2.5rem)); } /* -100% (width) - 2.5rem (gap-10) */
+        }
       `}</style>
     </div>
   );

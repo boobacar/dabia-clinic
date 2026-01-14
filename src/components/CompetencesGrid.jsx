@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import competences from "../data/competences";
 import SkeletonImage from "./SkeletonImage";
+import SectionTitle from "./SectionTitle";
 
 const container = {
   hidden: {},
@@ -35,15 +36,11 @@ export default function CompetencesGrid() {
       id="competences"
       className="scroll-mt-24 py-16 px-4 max-w-6xl mx-auto"
     >
-      <motion.h2
-        className="text-3xl text-[#ad9d64] font-bold text-center mb-8"
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-      >
-        Nos Compétences
-      </motion.h2>
+      <SectionTitle
+        title="Nos Compétences"
+        subtitle="Soins Dentaires"
+        className="mb-8"
+      />
 
       <p className="max-w-3xl mx-auto text-center text-sm text-gray-600 mb-6">
         Dans notre clinique dentaire à Dakar, nous proposons une large gamme de

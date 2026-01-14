@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import SectionTitle from "./SectionTitle";
 import apropos from "../assets/apropos.webp";
 
 const ClinicIntro = () => {
@@ -38,9 +39,12 @@ const ClinicIntro = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl text-[#ad9d64] font-bold mb-4">
-            À propos de la Clinique Dentaire DABIA à Dakar
-          </h2>
+          <SectionTitle
+            title="À propos de la Clinique Dentaire DABIA à Dakar"
+            subtitle="Votre sourire, notre priorité"
+            center={false}
+            className="mb-6"
+          />
           <p className="text-lg mb-4 text-gray-700">
             Bienvenue à la Clinique Dentaire DABIA, votre référence pour trouver
             un excellent dentiste à Dakar. Située à Sicap Foire (Liberté 6),

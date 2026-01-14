@@ -4,6 +4,7 @@ import {
   ReactCompareSlider,
   ReactCompareSliderImage,
 } from "react-compare-slider";
+import SectionTitle from "./SectionTitle";
 import avantApresImages from "../assets/avantApresImages";
 
 // Animation variants
@@ -28,19 +29,12 @@ const itemVariants = {
 export default function BeforeAfterGallery() {
   return (
     <section className="py-12 px-4 max-w-full mx-auto">
-      {/* Heading animation */}
-      <div className="flex flex-col items-center mb-8">
-        <motion.h2
-          className="text-3xl text-[#ad9d64] font-bold text-center"
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.6 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-        >
-          Résultats Avant/Après
-        </motion.h2>
-        <p>Glissez pour comparer</p>
-      </div>
+      {/* Heading */}
+      <SectionTitle
+        title="Résultats Avant/Après"
+        subtitle="Transformations"
+        className="mb-10"
+      />
 
       {/* Grid animation with staggered children */}
       <motion.div

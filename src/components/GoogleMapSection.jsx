@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import SectionTitle from "./SectionTitle";
 
 const GoogleMapSection = () => {
   return (
@@ -9,15 +10,10 @@ const GoogleMapSection = () => {
       transition={{ duration: 0.5, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.2 }}
     >
-      <motion.h2
-        className="text-3xl text-[#ad9d64] font-bold text-center mb-6"
-        initial={{ opacity: 0, y: 8 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4, delay: 0.05 }}
-        viewport={{ once: true, amount: 0.5 }}
-      >
-        Trouver la clinique dentaire DABIA à Dakar
-      </motion.h2>
+      <SectionTitle
+        title="Trouver la clinique dentaire DABIA à Dakar"
+        subtitle="Localisation"
+      />
       <motion.div
         className="w-full h-96 max-w-6xl mx-auto"
         initial={{ opacity: 0, scale: 0.98 }}

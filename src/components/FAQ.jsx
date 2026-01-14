@@ -1,6 +1,12 @@
 import React from "react";
+import SectionTitle from "./SectionTitle";
 
-export default function FAQ({ items = [], asJsonLd = true, title = "Questions fréquentes", className = "" }) {
+export default function FAQ({
+  items = [],
+  asJsonLd = true,
+  title = "Questions fréquentes",
+  className = "",
+}) {
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -15,7 +21,12 @@ export default function FAQ({ items = [], asJsonLd = true, title = "Questions fr
 
   return (
     <section className={className}>
-      <h2 className="text-2xl font-bold text-[#ad9d64] mb-3">{title}</h2>
+      <SectionTitle
+        title={title}
+        subtitle="FAQ"
+        center={false}
+        className="mb-8"
+      />
       <div className="space-y-3">
         {items.map((f, i) => (
           <details key={i} className="border rounded-xl p-4 bg-white">
@@ -30,4 +41,3 @@ export default function FAQ({ items = [], asJsonLd = true, title = "Questions fr
     </section>
   );
 }
-

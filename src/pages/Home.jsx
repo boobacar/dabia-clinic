@@ -6,6 +6,7 @@ import HeroSlideshow from "../components/HeroSlideshow";
 import SkeletonImage from "../components/SkeletonImage";
 import Seo from "../components/Seo";
 import FAQ from "../components/FAQ";
+import SectionTitle from "../components/SectionTitle";
 // Sections chargées en lazy pour alléger le bundle initial
 const BeforeAfterGallery = React.lazy(() =>
   import("../components/BeforeAfterGallery")
@@ -172,7 +173,6 @@ const Home = () => {
         <AssuranceMarquee className="py-6" speed={45} logos={assuranceLogos} />
         <CompetencesGrid />
       </Suspense>
-
       {/* Pourquoi nous choisir */}
       <motion.section
         className="py-14 px-4 bg-white"
@@ -225,7 +225,6 @@ const Home = () => {
           </motion.div>
         </div>
       </motion.section>
-
       {/* FAQ Home */}
       <motion.section
         className="py-12 px-4 bg-gray-50"
@@ -294,23 +293,22 @@ const Home = () => {
         viewport={{ once: true, amount: 0.2 }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <motion.div
-            className="flex items-end justify-between mb-8"
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.05 }}
-            viewport={{ once: true, amount: 0.4 }}
-          >
-            <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight">
-              Derniers articles du blog
-            </h2>
+          <div className="flex flex-col md:flex-row items-end justify-between mb-8">
+            <div className="md:flex-1 w-full">
+              <SectionTitle
+                title="Derniers articles du blog"
+                subtitle="Conseils & Actualités"
+                center={false}
+                className="mb-0"
+              />
+            </div>
             <Link
               to="/blog"
-              className="text-pink-600 hover:text-[#bb2988] font-medium"
+              className="text-pink-600 hover:text-[#bb2988] font-medium mt-4 md:mt-0 md:mb-6 shrink-0"
             >
               Voir le blog →
             </Link>
-          </motion.div>
+          </div>
 
           <motion.div
             className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
@@ -375,7 +373,6 @@ const Home = () => {
           </motion.div>
         </div>
       </motion.section>
-
       {/* ===================================
           Tous nos articles (liste de liens)
          =================================== */}
