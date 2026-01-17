@@ -57,15 +57,9 @@ const GoogleMapSection = React.lazy(() =>
 // Utils: épinglés d'abord puis date décroissante
 const sortByDateDesc = (a, b) =>
   new Date(b.date).getTime() - new Date(a.date).getTime();
-const sortPinnedThenDate = (a, b) => {
-  const ap = a.pinned ? 1 : 0;
-  const bp = b.pinned ? 1 : 0;
-  if (ap !== bp) return bp - ap;
-  return sortByDateDesc(a, b);
-};
 
 const Home = () => {
-  const postsSorted = useMemo(() => [...POSTS].sort(sortPinnedThenDate), []);
+  const postsSorted = useMemo(() => [...POSTS].sort(sortByDateDesc), []);
   const latest = useMemo(() => postsSorted.slice(0, 6), [postsSorted]);
   const assuranceLogos = useMemo(
     () => [

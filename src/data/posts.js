@@ -29,6 +29,11 @@ import onlayCover from "../assets/blog/onlay.webp";
 import cbctCover from "../assets/technologie/tech-cbct.webp";
 import traumaEnfantCover from "../assets/blog/trauma-enfant.webp";
 import diabeteCover from "../assets/blog/diabete.webp";
+import detartragePrixCover from "../assets/blog/detartrage_prix.png";
+import protheseAmovibleCover from "../assets/blog/prothese_amovible.png";
+import radioPanoramiqueCover from "../assets/blog/radio_panoramique_prix.png";
+import devisDentaireCover from "../assets/blog/devis_dentaire.png";
+import soinCariePrixCover from "../assets/blog/soin_carie_prix.png";
 
 export const AUTHORS = {
   sao: {
@@ -3031,6 +3036,234 @@ Une radio panoramique permet de trancher. Si vous avez mal au fond de la mâchoi
       {
         q: "Combien coûte l'extraction ?",
         a: "Le tarif varie selon que la dent est sortie (extraction simple) ou incluse dans l'os (extraction chirurgicale). Un devis est établi après la radio.",
+      },
+    ],
+  },
+  {
+    slug: "detartrage-dentaire-dakar-prix-frequence",
+    title: "Détartrage dentaire à Dakar : prix, fréquence et importance",
+    description: "Combien coûte un détartrage à Dakar ? Pourquoi le faire tous les 6 mois ? Guide complet sur le soin préventif n°1.",
+    date: "2026-01-20",
+    category: "Prévention",
+    tags: ["détartrage dakar", "prix détartrage", "hygiène dentaire", "dentiste dakar"],
+    author: AUTHORS.sao,
+    cover: detartragePrixCover,
+    readingMinutes: 8,
+    content: `Le **détartrage** est le soin dentaire le plus courant, et pourtant, beaucoup de patients attendent d'avoir mal aux gencives pour consulter. À Dakar, le **prix d'un détartrage** est accessible et reste le meilleur investissement pour éviter des soins lourds (et chers) plus tard.
+
+## Pourquoi le tartre est-il dangereux ?
+Le tartre est une plaque dentaire calcifiée que la brosse à dents ne peut plus enlever. S'il s'accumule :
+- **Gingivite** : La gencive gonfle et saigne (très fréquent).
+- **Mauvaise haleine** : Les bactéries logées dans le tartre libèrent des odeurs.
+- **Déchaussement** : À long terme, l'os se résorbe et les dents bougent.
+
+## Combien coûte un détartrage à Dakar ?
+Le **prix** varie selon la complexité :
+1. **Détartrage simple** : Si réalisé régulièrement (tous les 6 mois), c'est un acte rapide.
+2. **Détartrage approfondi / Surfaçage** : Si le tartre est sous la gencive depuis longtemps, le soin demande plus de temps et parfois une anesthésie. Le tarif sera logiquement plus élevé.
+
+> En moyenne, le coût d'un détartrage est bien inférieur à celui de soigner une carie ou de poser une dent !
+
+## Comment ça se passe à la Clinique DABIA ?
+1. **Ultrasons** : Pour décoller le tartre sans abîmer l'émail.
+2. **Polissage / AirFlow** : Pour enlever les taches (thé, café, cigarette) et rendre les dents lisses.
+3. **Conseils** : On vous montre les zones que vous brossez moins bien.
+
+> Ne laissez pas le tartre s'installer. Prenez rendez-vous pour un sourire propre et sain.`,
+    faq: [
+      {
+        q: "Est-ce que le détartrage fait mal ?",
+        a: "Non, avec les ultrasons modernes, c'est désagréable mais pas douloureux. Si vos dents sont sensibles, on peut anesthésier la gencive.",
+      },
+      {
+        q: "Le détartrage abîme-t-il les dents ?",
+        a: "Absolument pas. Au contraire, il enlève ce qui les agresse. L'émail est très dur et ne craint pas les ultrasons.",
+      },
+    ],
+  },
+
+  {
+    slug: "prix-prothese-dentaire-dakar-dentier-stellite",
+    title: "Prix prothèse dentaire à Dakar : dentier complet, partiel et stellite",
+    description: "Appareil complet, résine ou stellite ? Comprendre les différents types de prothèses amovibles et leurs tarifs à Dakar.",
+    date: "2026-01-22",
+    category: "Conseils",
+    tags: ["prothèse dentaire dakar", "prix dentier", "stellite dakar", "dentier complet"],
+    author: AUTHORS.sao,
+    cover: protheseAmovibleCover,
+    readingMinutes: 10,
+    content: `Remplacer des dents manquantes est essentiel pour manger et sourire. Si l'implant reste la solution "idéale", la **prothèse amovible** (le "dentier") est une option plus économique et très courante à Dakar.
+
+## Les différents types de prothèses
+Le **prix** dépend du matériau et du nombre de dents à remplacer :
+
+### 1. La prothèse en résine (Partielle ou Complète)
+- C'est la solution la plus **économique**.
+- Idéale comme appareil provisoire après une extraction, ou définitif si le budget est serré.
+- Elle repose sur la gencive.
+
+### 2. Le Stellite (Métal + Résine)
+- Plus **fin**, plus **solide** et plus stable.
+- Une armature en métal s'appuie sur les dents restantes avec des crochets discrets.
+- Plus confortable que la résine pure car il encombre moins le palais.
+
+### 3. La prothèse flex (Valplast)
+- Une résine souple et incassable, sans crochets métalliques visibles.
+- Très esthétique pour remplacer quelques dents.
+
+## Quel est le prix à Dakar ?
+Le tarif se calcule souvent selon :
+- Le type (Résine simple vs Stellite).
+- Le nombre de dents (Appareil 1 dent vs Complet).
+- L'origine des dents (Qualité standard vs Dents haut de gamme).
+
+Un devis précis est remis après l'examen clinique, car il faut vérifier l'état des dents supports.
+
+## L'entretien
+Une prothèse doit être nettoyée chaque jour (hors de la bouche) pour éviter les infections (candidoses). À la Clinique DABIA, nous vous expliquons comment la garder neuve longtemps.
+
+> Vous hésitez entre un appareil et des implants ? Venez en discuter pour comparer les devis et le confort.`,
+    faq: [
+      {
+        q: "Combien de temps faut-il pour faire un appareil ?",
+        a: "Il faut compter entre 3 et 5 séances (empreintes, essayage cire, essayage dents, pose) sur environ 2 semaines.",
+      },
+      {
+        q: "Est-ce que ça tient bien ?",
+        a: "Une prothèse bien ajustée tient par effet ventouse (complet) ou grâce aux crochets (partiel). Si elle bouge, un 'rebasage' est possible.",
+      },
+    ],
+  },
+
+  {
+    slug: "prix-radio-dentaire-scanner-3d-dakar",
+    title: "Prix radio dentaire et scanner 3D (CBCT) à Dakar : pourquoi faire un bilan ?",
+    description: "Panoramique, rétro-alvéolaire ou Scanner 3D : quel est le coût de ces examens indispensables pour un diagnostic précis ?",
+    date: "2026-01-25",
+    category: "Technologie",
+    tags: ["radio dentaire dakar", "prix panoramique", "prix scanner dentaire", "cbct dakar"],
+    author: AUTHORS.sao,
+    cover: radioPanoramiqueCover,
+    readingMinutes: 7,
+    content: `"Pourquoi faire une radio alors que je vois le trou ?" C'est une question fréquente. Pourtant, ce qui se passe **sous** la dent (la racine, l'os) est invisible à l'œil nu. À Dakar, la Clinique DABIA est équipée pour réaliser tous vos examens sur place.
+
+## Les types de radios et leurs prix
+Les tarifs varient selon la technologie :
+
+1. **La radio rétro-alvéolaire (Petite radio)**
+   - Cible 1 ou 2 dents.
+   - Idéal pour une rage de dent, vérifier une carie profonde ou un traitement de racine.
+   - **Coût** : Très accessible.
+
+2. **La radio Panoramique**
+   - Donne une vue d'ensemble de toute la mâchoire (dents de sagesse, infections silencieuses, niveau d'os).
+   - Indispensable pour un premier bilan complet.
+   - **Coût** : Moyen.
+
+3. **Le Scanner 3D (CBCT)**
+   - Une image en 3 dimensions.
+   - **Obligatoire** pour poser des implants en sécurité ou comprendre une douleur complexe.
+   - **Coût** : Plus élevé qu'une radio classique, mais évite des erreurs graves.
+
+## Pourquoi payer pour un diagnostic ?
+Un devis basé uniquement sur un "coup d'œil" est un devis risqué. 
+- La radio révèle l'ampleur réelle des dégâts.
+- Elle permet de savoir si la dent est **récupérable** ou non.
+- Elle évite de commencer un soin inutile.
+
+> Chez nous, le prix de la consultation et de l'imagerie est transparent. C'est l'assurance d'un plan de traitement fiable.`,
+    faq: [
+      {
+        q: "Les rayons X sont-ils dangereux ?",
+        a: "Les appareils numériques modernes émettent des doses très faibles, inférieures à un vol en avion long-courrier.",
+      },
+      {
+        q: "Puis-je repartir avec ma radio ?",
+        a: "Oui, nous vous envoyons vos clichés par email ou WhatsApp, ou sur clé USB si besoin.",
+      },
+    ],
+  },
+
+  {
+    slug: "devis-dentaire-dakar-comprendre-tarifs",
+    title: "Devis dentaire à Dakar : comment analyser les tarifs et éviter les surprises",
+    description: "Comprendre votre devis dentaire : matériaux, stérilisation, expertise. Comment comparer ce qui est comparable ?",
+    date: "2026-01-28",
+    category: "Conseils",
+    tags: ["devis dentaire", "tarifs dentiste dakar", "prix soins dentaires", "conseil"],
+    author: AUTHORS.sao,
+    cover: devisDentaireCover,
+    readingMinutes: 9,
+    content: `Recevoir un **devis dentaire** peut parfois surprendre. Pourquoi une couronne coûte-t-elle ce prix ? Pourquoi y a-t-il des écarts entre deux cabinets à Dakar ? Voici les clés pour lire votre devis.
+
+## De quoi est composé le prix ?
+Quand vous payez un soin, vous payez pour :
+1. **L'expertise du praticien** : Sa formation continue, sa spécialisation.
+2. **La technologie** : Scanner 3D, Caméra optique, Moteurs d'endodontie...
+3. **La stérilisation** : Un poste de dépense énorme mais CRUCIAL pour votre sécurité (autoclaves classe B, traçabilité).
+4. **Les matériaux** : Une résine composite de haute qualité ou un implant de marque reconnue coûte plus cher qu'un produit générique.
+5. **Le laboratoire** : La prothèse est-elle faite par un prothésiste artisan qualifié ?
+
+## Le devis "Low Cost" vs Le devis "Juste"
+Attention aux prix d'appel trop bas. 
+- Un détartrage fait en 5 minutes n'est pas le même qu'un détartrage complet de 30 minutes. 
+- Une couronne qui s'adapte mal créera une carie en dessous dans 2 ans.
+
+## La transparence à la Clinique DABIA
+- Avant de commencer, nous vous remettons un **plan de traitement écrit**.
+- Nous expliquons chaque ligne : "Pourquoi cette dent a besoin d'une couronne et pas juste d'un plombage ?".
+- Nous proposons des **options** quand c'est possible (ex: Bridge vs Implant).
+
+> Un bon patient est un patient informé. N'hésitez jamais à poser des questions sur votre devis !`,
+    faq: [
+      {
+        q: "Le devis est-il payant ?",
+        a: "Le devis lui-même est gratuit, mais il nécessite une consultation et souvent une radio (actes payants) pour être établi sérieusement.",
+      },
+      {
+        q: "Puis-je payer en plusieurs fois ?",
+        a: "Nous proposons souvent un étalement des paiements au fur et à mesure de l'avancement des soins (ex: acompte au début, solde à la pose).",
+      },
+    ],
+  },
+
+  {
+    slug: "soigner-carie-prix-dakar-plombage-composite",
+    title: "Prix pour soigner une carie à Dakar : plombage, composite ou onlay ?",
+    description: "Le prix pour soigner une carie dépend de sa taille. Découvrez les différentes options : du simple composite à la dévitalisation.",
+    date: "2026-01-30",
+    category: "Conseils",
+    tags: ["prix soin carie", "dentiste dakar", "composite", "dévitalisation"],
+    author: AUTHORS.sao,
+    cover: soinCariePrixCover,
+    readingMinutes: 8,
+    content: `"J'ai juste un petit trou". C'est souvent ce qu'on pense, mais la carie est comme un iceberg. Le **prix pour la soigner à Dakar** dépend directement du stade où vous venez consulter.
+
+## Stade 1 : La carie débutante (Prix : € / FCFA le moins cher)
+- La carie touche juste l'émail ou un peu la dentine.
+- **Le soin** : On nettoie et on pose un **composite** (plombage blanc esthétique).
+- C'est rapide, indolore et économique.
+
+## Stade 2 : La carie profonde (Prix : Moyen)
+- La dent est très abîmée mais le nerf est vivant.
+- Un simple plombage risque de casser.
+- **Le soin** : On peut proposer un **Onlay** (une pièce en céramique fabriquée sur mesure) pour consolider la dent durablement.
+
+## Stade 3 : La rage de dent (Prix : Élevé)
+- La carie a atteint le nerf. Il faut **dévitaliser** (traitement de racine).
+- C'est un acte long, technique et minutieux.
+- Après la dévitalisation, la dent est fragile et nécessite souvent une **couronne** pour ne pas casser.
+- **Coût total** : Dévitalisation + Reconstruction + Couronne = Beaucoup plus cher qu'un simple soin du stade 1.
+
+> **Le conseil économique** : Plus vous attendez, plus le trou grandit, et plus la facture monte. Soigner une carie dès qu'elle est petite est la meilleure façon de faire des économies !`,
+    faq: [
+      {
+        q: "Les plombages gris (amalgame) sont-ils moins chers ?",
+        a: "Ils ne sont presque plus utilisés à cause du mercure et de l'esthétique. Nous privilégions les composites (blancs) ultra-résistants.",
+      },
+      {
+        q: "Combien de temps dure un soin ?",
+        a: "Pour une carie simple, comptez 30 à 45 minutes. Pour une dévitalisation, cela peut prendre 1h30 ou plusieurs séances.",
       },
     ],
   },

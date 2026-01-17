@@ -11,12 +11,6 @@ function useQuery() {
 
 const PAGE_SIZE = 6;
 const sortByDateDesc = (a, b) => new Date(b.date) - new Date(a.date);
-const sortPinnedThenDate = (a, b) => {
-  const ap = a.pinned ? 1 : 0;
-  const bp = b.pinned ? 1 : 0;
-  if (ap !== bp) return bp - ap; // pinned d'abord
-  return sortByDateDesc(a, b);
-};
 
 export default function Blog() {
   const q = useQuery();
@@ -39,10 +33,7 @@ export default function Blog() {
     });
   }, [search, cat]);
 
-  const sorted = useMemo(
-    () => [...filtered].sort(sortPinnedThenDate),
-    [filtered]
-  );
+  const sorted = useMemo(() => [...filtered].sort(sortByDateDesc), [filtered]);
   const totalPages = Math.max(1, Math.ceil(sorted.length / PAGE_SIZE));
   const pageItems = sorted.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
