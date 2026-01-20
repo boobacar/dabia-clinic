@@ -35,6 +35,23 @@ import radioPanoramiqueCover from "../assets/blog/radio_panoramique_prix.png";
 import devisDentaireCover from "../assets/blog/devis_dentaire.png";
 import soinCariePrixCover from "../assets/blog/soin_carie_prix.png";
 
+// Nouveaux imports pour les 10 articles ajoutés
+import prixSoinsCover from "../assets/blog/prix_soins_dentaires_dakar.png";
+import urgenceActionCover from "../assets/blog/urgence_dentaire_action.png";
+// TODO: Restore correct paths after manually copying images
+import choisirDentisteCover from "../assets/blog/choisir_bon_dentiste_dakar.png";
+import blanchimentEfficaceCover from "../assets/blog/blanchiment_efficace_senegal.png";
+import implantSourireCover from "../assets/blog/implant_retrouver_sourire.png";
+import remedeRageCover from "../assets/blog/remede_rage_dent.png";
+import gingiviteTraitementCover from "../assets/blog/gingivite_traitement.png";
+import orthoAdulteCover from "../assets/blog/orthodontie_adulte_choix.png";
+import santeEnfantCover from "../assets/blog/sante_dentaire_enfants_senegal.png";
+import detartragePreventifCover from "../assets/blog/detartrage_preventif.png";
+
+// Nouveaux imports pour les articles pédiatriques existants
+import scellantsCover from "../assets/blog/scellants_sillons_enfant.png";
+import premierRdvCover from "../assets/blog/dentiste_enfant_premier_rdv.png";
+
 export const AUTHORS = {
   sao: {
     name: "Dr Fatoumata SAO",
@@ -802,7 +819,7 @@ Voir nos équipements d’imagerie et de planification : [/infos/technologie](/i
     category: "Pédiatrie",
     tags: ["scellants", "prévention caries", "enfant"],
     author: AUTHORS.sao,
-    cover: enfantCover,
+    cover: scellantsCover,
     readingMinutes: 8,
     content: `Les **scellants** (ou sealants) protègent les **sillons des molaires** de l’enfant. Ils forment une fine **barrière** contre la plaque et les sucres.\n\n## Quand les poser ?\n- À l’éruption des **molaires définitives** (vers 6–7 ans),\n- Chez les enfants à **risque carieux** élevé (taches, habitudes sucrées).\n\n## Déroulé rapide\nNettoyage – isolation – application du matériau – **photopolymérisation**. Indolore et réversible.\n\n> Couplé à une **hygiène fluorée** et des contrôles, c’est une des meilleures stratégies de **prévention**.`,
   },
@@ -822,7 +839,7 @@ Voir nos équipements d’imagerie et de planification : [/infos/technologie](/i
       "prevention dentaire enfant",
     ],
     author: AUTHORS.sao,
-    cover: enfantCover,
+    cover: premierRdvCover,
     readingMinutes: 12,
     pinned: true,
     content: `Un **dentiste pour enfants** (pédodontiste ou chirurgien‑dentiste formé à la pédiatrie) accompagne les familles dès les premières dents de lait. À Dakar et dans tout le Sénégal, une prise en charge précoce permet d’**éviter les grosses caries**, la peur du dentiste et les urgences douloureuses.
@@ -3042,10 +3059,16 @@ Une radio panoramique permet de trancher. Si vous avez mal au fond de la mâchoi
   {
     slug: "detartrage-dentaire-dakar-prix-frequence",
     title: "Détartrage dentaire à Dakar : prix, fréquence et importance",
-    description: "Combien coûte un détartrage à Dakar ? Pourquoi le faire tous les 6 mois ? Guide complet sur le soin préventif n°1.",
+    description:
+      "Combien coûte un détartrage à Dakar ? Pourquoi le faire tous les 6 mois ? Guide complet sur le soin préventif n°1.",
     date: "2026-01-20",
     category: "Prévention",
-    tags: ["détartrage dakar", "prix détartrage", "hygiène dentaire", "dentiste dakar"],
+    tags: [
+      "détartrage dakar",
+      "prix détartrage",
+      "hygiène dentaire",
+      "dentiste dakar",
+    ],
     author: AUTHORS.sao,
     cover: detartragePrixCover,
     readingMinutes: 8,
@@ -3084,11 +3107,18 @@ Le **prix** varie selon la complexité :
 
   {
     slug: "prix-prothese-dentaire-dakar-dentier-stellite",
-    title: "Prix prothèse dentaire à Dakar : dentier complet, partiel et stellite",
-    description: "Appareil complet, résine ou stellite ? Comprendre les différents types de prothèses amovibles et leurs tarifs à Dakar.",
+    title:
+      "Prix prothèse dentaire à Dakar : dentier complet, partiel et stellite",
+    description:
+      "Appareil complet, résine ou stellite ? Comprendre les différents types de prothèses amovibles et leurs tarifs à Dakar.",
     date: "2026-01-22",
     category: "Conseils",
-    tags: ["prothèse dentaire dakar", "prix dentier", "stellite dakar", "dentier complet"],
+    tags: [
+      "prothèse dentaire dakar",
+      "prix dentier",
+      "stellite dakar",
+      "dentier complet",
+    ],
     author: AUTHORS.sao,
     cover: protheseAmovibleCover,
     readingMinutes: 10,
@@ -3137,11 +3167,18 @@ Une prothèse doit être nettoyée chaque jour (hors de la bouche) pour éviter 
 
   {
     slug: "prix-radio-dentaire-scanner-3d-dakar",
-    title: "Prix radio dentaire et scanner 3D (CBCT) à Dakar : pourquoi faire un bilan ?",
-    description: "Panoramique, rétro-alvéolaire ou Scanner 3D : quel est le coût de ces examens indispensables pour un diagnostic précis ?",
+    title:
+      "Prix radio dentaire et scanner 3D (CBCT) à Dakar : pourquoi faire un bilan ?",
+    description:
+      "Panoramique, rétro-alvéolaire ou Scanner 3D : quel est le coût de ces examens indispensables pour un diagnostic précis ?",
     date: "2026-01-25",
     category: "Technologie",
-    tags: ["radio dentaire dakar", "prix panoramique", "prix scanner dentaire", "cbct dakar"],
+    tags: [
+      "radio dentaire dakar",
+      "prix panoramique",
+      "prix scanner dentaire",
+      "cbct dakar",
+    ],
     author: AUTHORS.sao,
     cover: radioPanoramiqueCover,
     readingMinutes: 7,
@@ -3186,11 +3223,18 @@ Un devis basé uniquement sur un "coup d'œil" est un devis risqué.
 
   {
     slug: "devis-dentaire-dakar-comprendre-tarifs",
-    title: "Devis dentaire à Dakar : comment analyser les tarifs et éviter les surprises",
-    description: "Comprendre votre devis dentaire : matériaux, stérilisation, expertise. Comment comparer ce qui est comparable ?",
+    title:
+      "Devis dentaire à Dakar : comment analyser les tarifs et éviter les surprises",
+    description:
+      "Comprendre votre devis dentaire : matériaux, stérilisation, expertise. Comment comparer ce qui est comparable ?",
     date: "2026-01-28",
     category: "Conseils",
-    tags: ["devis dentaire", "tarifs dentiste dakar", "prix soins dentaires", "conseil"],
+    tags: [
+      "devis dentaire",
+      "tarifs dentiste dakar",
+      "prix soins dentaires",
+      "conseil",
+    ],
     author: AUTHORS.sao,
     cover: devisDentaireCover,
     readingMinutes: 9,
@@ -3229,8 +3273,10 @@ Attention aux prix d'appel trop bas.
 
   {
     slug: "soigner-carie-prix-dakar-plombage-composite",
-    title: "Prix pour soigner une carie à Dakar : plombage, composite ou onlay ?",
-    description: "Le prix pour soigner une carie dépend de sa taille. Découvrez les différentes options : du simple composite à la dévitalisation.",
+    title:
+      "Prix pour soigner une carie à Dakar : plombage, composite ou onlay ?",
+    description:
+      "Le prix pour soigner une carie dépend de sa taille. Découvrez les différentes options : du simple composite à la dévitalisation.",
     date: "2026-01-30",
     category: "Conseils",
     tags: ["prix soin carie", "dentiste dakar", "composite", "dévitalisation"],
@@ -3264,6 +3310,483 @@ Attention aux prix d'appel trop bas.
       {
         q: "Combien de temps dure un soin ?",
         a: "Pour une carie simple, comptez 30 à 45 minutes. Pour une dévitalisation, cela peut prendre 1h30 ou plusieurs séances.",
+      },
+    ],
+  },
+
+  // --- 10 NOUVEAUX ARTICLES ---
+
+  {
+    slug: "prix-soins-dentaires-dakar-2026-guide",
+    title:
+      "Prix des soins dentaires à Dakar (2026) : Guide complet et transparence",
+    description:
+      "Combien coûte un dentiste à Dakar ? Découvrez les tarifs moyens pour un détartrage, une dévitalisation ou une extraction et comment obtenir un devis clair.",
+    date: "2026-02-15",
+    category: "Conseils",
+    tags: [
+      "prix dentiste dakar",
+      "tarif soins dentaires",
+      "coût dentiste senegal",
+      "devis dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: prixSoinsCover,
+    readingMinutes: 7,
+    content: `La question du **prix des soins dentaires à Dakar** est souvent source d'inquiétude. Entre les variations de tarifs et la crainte de la facture finale, beaucoup repoussent leurs soins. Voici un guide pour comprendre les coûts et l'importance de la transparence.
+
+## Les tarifs moyens observés à Dakar
+Bien que chaque cas soit unique, voici une fourchette de prix pour les actes courants :
+- **Consultation** : Souvent entre 10 000 et 20 000 FCFA selon le cabinet.
+- **Détartrage** : Indispensable pour la santé, il varie selon la complexité.
+- **Extraction** : Dépend de la difficulté (dent de sagesse incluse ou dent simple).
+
+## Pourquoi les prix varient-ils ?
+Le tarif d'un soin dentaire inclut bien plus que le temps passé sur le fauteuil :
+1. **La technologie** : Un cabinet équipé de radio panoramique ou 3D investit pour un meilleur diagnostic.
+2. **L'hygiène** : La chaîne de stérilisation (autoclaves, sachets) a un coût incompressible pour votre sécurité.
+3. **Les matériaux** : Utiliser des composites de marque ou des implants certifiés influence le prix final.
+
+## L'importance du devis écrit
+À la Clinique DABIA, nous nous engageons à la transparence totale.
+- Avant tout soin onéreux (prothèse, chirurgie), un **devis détaillé** vous est remis.
+- Il explique le plan de traitement : pourquoi ce soin, combien de séances, et le coût exact.
+- Pas de surprise à la caisse : tout est clair dès le départ.
+
+> **Conseil** : Ne choisissez pas votre dentiste uniquement sur le prix. La qualité du diagnostic et de la stérilisation sont garants de votre santé à long terme.`,
+    faq: [
+      {
+        q: "Les soins sont-ils remboursés par les assurances ?",
+        a: "La plupart des soins courants (détartrage, soins de caries) sont couverts par les IPM et assurances. Les prothèses et l'esthétique le sont selon votre contrat.",
+      },
+      {
+        q: "Peut-on connaître le prix exact par téléphone ?",
+        a: "C'est difficile sans examen. Une douleur peut venir d'une simple carie ou d'une infection nécessitant une dévitalisation. Le devis nécessite un diagnostic.",
+      },
+    ],
+  },
+
+  {
+    slug: "urgence-dentaire-dakar-qui-appeler",
+    title:
+      "Urgence dentaire à Dakar : Qui appeler et quoi faire en attendant ?",
+    description:
+      "Douleur insupportable, dent cassée ou abcès ? Guide de survie pour gérer une urgence dentaire à Dakar avant votre rendez-vous.",
+    date: "2026-02-12",
+    category: "Urgences",
+    tags: [
+      "urgence dentaire dakar",
+      "dentiste garde dakar",
+      "sos dentiste",
+      "douleur dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: urgenceActionCover,
+    readingMinutes: 6,
+    content: `Une **urgence dentaire** prévient rarement. Que ce soit un samedi soir ou en plein travail, la douleur peut être paralysante. Voici les bons réflexes à avoir à Dakar.
+
+## Identifier l'urgence
+Toutes les douleurs ne sont pas des urgences vitales, mais nécessitent une attention rapide :
+- **Douleur pulsatile** (qui tape) : Souvent une pulpite (rage de dent).
+- **Gonflement (Chique)** : Signe d'infection ou d'abcès. Consultez rapidement pour éviter la propagation.
+- **Traumatisme** : Dent expulsée ou cassée après une chute.
+
+## Gestes de premiers secours
+En attendant d'arriver au cabinet :
+1. **Rage de dent** : Prenez du Paracétamol. Évitez l'anti-inflammatoire en automédication si vous suspectez une infection. Restez assis ou la tête surélevée.
+2. **Dent expulsée** : Récupérez la dent par la couronne (pas la racine). Conservez-la dans du lait ou de la salive. Venez au cabinet dans l'heure !
+3. **Abcès** : Ne mettez pas de chaud (ça active l'infection). Mettez une poche de glace sur la joue.
+
+## Où aller à Dakar ?
+La Clinique DABIA reçoit les urgences sur rendez-vous prioritaire. Contactez-nous dès l'ouverture ou via notre numéro d'urgence si disponible.
+Ne restez pas avec la douleur, une infection dentaire peut avoir des répercussions sur la santé générale.
+
+> **Important** : Si vous avez du mal à respirer, à avaler ou si la fièvre est très élevée, rendez-vous aux urgences de l'hôpital le plus proche.`,
+    faq: [
+      {
+        q: "Puis-je venir sans rendez-vous pour une urgence ?",
+        a: "Il est toujours préférable d'appeler avant. Nous réservons des créneaux pour les urgences afin de vous recevoir dans les meilleures conditions.",
+      },
+      {
+        q: "Le clou de girofle est-il efficace ?",
+        a: "C'est un apaisant temporaire, mais il ne soigne pas la cause. Il ne remplace pas la visite chez le dentiste.",
+      },
+    ],
+  },
+
+  {
+    slug: "comment-choisir-meilleur-dentiste-dakar",
+    title: "Comment choisir le meilleur dentiste à Dakar pour vos besoins ?",
+    description:
+      "Critères essentiels pour trouver un bon cabinet dentaire à Dakar : hygiène, écoute, équipements et localisation.",
+    date: "2026-02-10",
+    category: "Conseils",
+    tags: [
+      "meilleur dentiste dakar",
+      "avis dentiste dakar",
+      "choisir dentiste",
+      "cabinet dentaire moderne",
+    ],
+    author: AUTHORS.sao,
+    cover: choisirDentisteCover,
+    readingMinutes: 8,
+    content: `Avec les nombreux cabinets qui ouvrent, trouver le **meilleur dentiste à Dakar** pour vous peut sembler complexe. Au-delà du bouche-à-oreille, voici des critères objectifs pour faire votre choix.
+
+## 1. L'Hygiène et la Stérilisation
+C'est le critère N°1. Un cabinet moderne doit avoir une chaîne de stérilisation stricte.
+- Les instruments sont-ils sous sachets stériles ?
+- Le praticien porte-t-il des gants et un masque ?
+- L'environnement semble-t-il propre et entretenu ?
+
+## 2. L'Écoute et la Pédagogie
+Un bon dentiste prend le temps de vous expliquer.
+- Il ne se contente pas de soigner, il vous montre (caméra intra-orale, radios).
+- Il vous présente les différentes options de traitement.
+- Il est à l'écoute de votre peur ou de votre douleur.
+
+## 3. Le Plateau Technique
+La dentisterie moderne s'appuie sur la technologie pour être plus précise et moins douloureuse.
+- Radio panoramique sur place (évite de courir ailleurs).
+- Fauteuils confortables.
+- Matériel d'endodontie mécanisé pour des soins de racine plus sûrs.
+
+## 4. La Relation de Confiance
+Votre dentiste est un partenaire santé pour le long terme. Choisissez quelqu'un avec qui vous vous sentez à l'aise, qui respecte ses horaires et qui est transparent sur ses honoraires.
+
+> À la Clinique DABIA, nous misons sur l'accueil, la technologie et une hygiène irréprochable pour mériter votre confiance.`,
+    faq: [
+      {
+        q: "Est-ce important d'avoir un dentiste proche de chez soi ?",
+        a: "Oui pour le confort, mais la qualité des soins prime. Parfois, faire quelques kilomètres de plus garantit une meilleure prise en charge.",
+      },
+      {
+        q: "Comment vérifier la réputation d'un dentiste ?",
+        a: "Les avis Google peuvent aider, mais le ressenti lors de la première consultation est le meilleur indicateur.",
+      },
+    ],
+  },
+
+  {
+    slug: "blanchiment-dentaire-dakar-efficace-ou-danger",
+    title: "Blanchiment dentaire à Dakar : Techniques efficaces vs dangers",
+    description:
+      "Envie d'un sourire éclatant ? Démêlez le vrai du faux sur le blanchiment dentaire au Sénégal : techniques pro vs recettes maison.",
+    date: "2026-02-08",
+    category: "Esthétique",
+    tags: [
+      "blanchiment dentaire dakar",
+      "dents blanches senegal",
+      "prix blanchiment",
+      "danger charbon",
+    ],
+    author: AUTHORS.sao,
+    cover: blanchimentEfficaceCover,
+    readingMinutes: 7,
+    content: `Avoir un sourire éclatant est un signe de beauté et de santé très prisé au Sénégal. Mais attention, toutes les méthodes de **blanchiment dentaire** ne se valent pas, et certaines sont dangereuses.
+
+## Les "Astuces" à éviter
+Sur les réseaux sociaux, on voit tout et n'importe quoi :
+- **Le Bicarbonate et Citron** : Très acide et abrasif, ce mélange use l'émail de vos dents de manière irréversible. Vos dents deviendront plus jaunes (car la dentine sous l'émail est jaune) et plus sensibles.
+- **Le Charbon actif** : Il enlève les taches de surface par abrasion, mais raye l'émail à long terme. À utiliser avec grande modération.
+
+## Le Blanchiment Professionnel au fauteuil
+C'est la seule méthode sûre et vraiment efficace pour éclaircir la teinte de la dent.
+- **Le principe** : On utilise un gel à base de peroxyde d'hydrogène (eau oxygénée) concentré.
+- **La sécurité** : On protège vos gencives avec une barrière étanche pour éviter les brûlures.
+- **Le résultat** : Un éclaircissement visible en une séance, durable si l'entretien est bon.
+
+## Le Préalable indispensable : Le Détartrage
+On ne peut pas blanchir des dents sales ! Un détartrage-polissage complet est obligatoire avant tout blanchiment pour retirer le tartre et les colorations superficielles (thé, café, tabac).
+
+> Vous voulez des dents blanches en toute sécurité à Dakar ? Demandez conseil à votre dentiste avant de tester des produits miracles.`,
+    faq: [
+      {
+        q: "Le blanchiment abîme-t-il les dents ?",
+        a: "S'il est réalisé par un professionnel avec les bons produits, non. Il peut créer une sensibilité passagère qui s'estompe vite.",
+      },
+      {
+        q: "Combien de temps dure le résultat ?",
+        a: "Entre 1 et 3 ans selon vos habitudes (consommation de café, tabac, etc.).",
+      },
+    ],
+  },
+
+  {
+    slug: "implant-dentaire-dakar-retrouver-sourire",
+    title:
+      "Implant dentaire à Dakar : La solution durable pour remplacer une dent",
+    description:
+      "Perdre une dent n'est plus une fatalité. Découvrez comment l'implant dentaire peut vous rendre votre sourire et votre confort de mastication.",
+    date: "2026-02-05",
+    category: "Implantologie",
+    tags: [
+      "implant dentaire dakar",
+      "dentier vs implant",
+      "prix implant senegal",
+      "chirurgie dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: implantSourireCover,
+    readingMinutes: 9,
+    content: `Perdre une dent peut être un complexe esthétique mais aussi un handicap pour manger. L'**implant dentaire** est aujourd'hui la solution de référence à Dakar pour remplacer une dent manquante.
+
+## Qu'est-ce qu'un implant ?
+C'est une petite racine artificielle en titane (matériau biocompatible) que l'on insère dans l'os de la mâchoire. Une fois cicatrisé, on vient visser une couronne dessus.
+C'est comme si vous aviez une nouvelle dent naturelle !
+
+## Les avantages par rapport au bridge ou au dentier
+1. **Préservation des dents voisines** : Contrairement au bridge, on ne touche pas aux dents d'à côté.
+2. **Confort absolu** : C'est fixe. Rien ne bouge quand vous parlez ou mangez.
+3. **Esthétique** : Le résultat est invisible.
+4. **Préservation de l'os** : L'implant stimule l'os et évite qu'il ne se résorbe (visage qui se creuse).
+
+## Comment ça se passe à la Clinique DABIA ?
+1. **Bilan 3D (Scanner)** : Pour vérifier si vous avez assez d'os.
+2. **Pose de l'implant** : Une intervention rapide sous anesthésie locale (totalement indolore).
+3. **Cicatrisation** : On attend 3 à 4 mois que l'os "soude" l'implant.
+4. **Pose de la couronne** : Vous retrouvez votre sourire !
+
+> C'est un investissement pour votre santé et votre qualité de vie. Manger des pommes, sourire à pleines dents... ça n'a pas de prix !`,
+    faq: [
+      {
+        q: "Est-ce que ça fait mal ?",
+        a: "L'intervention se fait sous anesthésie, vous ne sentez rien. Les suites sont souvent moins douloureuses qu'une extraction.",
+      },
+      {
+        q: "Y a-t-il des rejets ?",
+        a: "Le taux de réussite est supérieur à 95%. Le rejet (allergie) est rarissime. L'échec vient souvent d'une infection ou du tabac.",
+      },
+    ],
+  },
+
+  {
+    slug: "rage-de-dent-remede-grand-mere-dakar",
+    title: "Rage de dent : Remèdes de grand-mère vs visite chez le dentiste",
+    description:
+      "Peut-on soigner une rage de dent avec des plantes ? Ce qui marche pour soulager et pourquoi il faut consulter un dentiste à Dakar.",
+    date: "2026-02-02",
+    category: "Urgences",
+    tags: [
+      "rage de dent",
+      "douleur dentaire remède",
+      "dentiste dakar",
+      "soigner dent naturellement",
+    ],
+    author: AUTHORS.sao,
+    cover: remedeRageCover,
+    readingMinutes: 6,
+    content: `La **rage de dent** est une douleur intense, souvent nocturne, qui pousse à tout essayer pour être soulagé. Au Sénégal, les remèdes traditionnels sont nombreux, mais sont-ils efficaces ?
+
+## Ce qui peut soulager (temporairement)
+- **Le Clou de Girofle** : Il contient de l'eugénol, un anesthésiant naturel puissant. En huile essentielle ou écrasé sur la dent, il apaise.
+- **La poche de glace** : Le froid anesthésie et réduit l'inflammation.
+- **L'eau salée** : En bain de bouche, elle désinfecte légèrement.
+
+## Ce qu'il ne faut JAMAIS faire
+- **Mettre de l'aspirine ou du tabac directement sur la dent** : Cela brûle la gencive et aggrave la situation (ulcère chimique).
+- **Prendre des antibiotiques au hasard** : Inutile si ce n'est pas une infection bactérienne, et dangereux pour votre santé future (résistance).
+- **Attendre que "ça passe"** : Une dent ne guérit jamais toute seule. Si la douleur s'arrête brutalement, c'est souvent que le nerf est mort (nécrosé)... et l'infection va suivre (abcès).
+
+## Pourquoi aller chez le dentiste ?
+Le remède calme le symptôme (la douleur), le dentiste soigne la cause (la carie, l'infection).
+À Dakar, la Clinique DABIA peut vous recevoir en urgence pour traiter l'origine du mal et vous éviter une extraction.
+
+> Utilisez les remèdes naturels pour tenir jusqu'au rendez-vous, pas pour le remplacer !`,
+    faq: [
+      {
+        q: "Pourquoi la douleur est-elle plus forte la nuit ?",
+        a: "En position allongée, l'afflux sanguin vers la tête augmente, ce qui accroît la pression dans la dent enflammée.",
+      },
+      {
+        q: "Une dent dévitalisée peut-elle refaire mal ?",
+        a: "Oui, si elle s'est réinfectée au bout de la racine. Une radio de contrôle est nécessaire.",
+      },
+    ],
+  },
+
+  {
+    slug: "gencives-qui-saignent-gingivite-dakar",
+    title:
+      "Gencives qui saignent : Pourquoi il ne faut pas ignorer une gingivite",
+    description:
+      "Du sang lors du brossage ? C'est le premier signe d'une maladie des gencives. Découvrez comment traiter la gingivite à Dakar.",
+    date: "2026-01-28",
+    category: "Prévention",
+    tags: [
+      "gencives saignantes",
+      "gingivite",
+      "mauvaise haleine",
+      "parodontite dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: gingiviteTraitementCover,
+    readingMinutes: 7,
+    content: `"C'est normal, j'ai les gencives sensibles". **FAUX**.
+Une gencive saine ne saigne JAMAIS, même en brossant fort. Le saignement est le signal d'alarme d'une inflammation : la **gingivite**.
+
+## Pourquoi ça saigne ?
+C'est la réponse de votre corps aux bactéries. La plaque dentaire et le tartre s'accumulent au bord de la gencive. Pour se défendre, la gencive gonfle, rougit et saigne au moindre contact.
+
+## Les conséquences si on ne fait rien
+Si la gingivite n'est pas soignée, elle évolue en **Parodontite** (déchaussement).
+- L'os qui tient la dent est attaqué.
+- Les dents deviennent mobiles (elles bougent).
+- À terme, les dents tombent, même si elles n'ont pas de carie !
+- C'est aussi la cause n°1 de la **mauvaise haleine** (halitose).
+
+## Le Traitement à Dakar
+Il est simple et efficace s'il est pris à temps :
+1. **Le Détartrage Professionnel** : Seul le dentiste peut enlever le tartre durci.
+2. **L'Hygiène à la maison** : Nous vous apprendrons à utiliser le fil dentaire ou les brossettes interdentaires. C'est là que tout se joue !
+
+> N'ayez pas peur de brosser parce que ça saigne. Au contraire, c'est en nettoyant bien que l'inflammation va disparaître.`,
+    faq: [
+      {
+        q: "Quel dentifrice utiliser pour les gencives ?",
+        a: "Un dentifrice spécifique peut aider, mais il ne remplace pas l'action mécanique du brossage et du détartrage.",
+      },
+      {
+        q: "Le tabac joue-t-il un rôle ?",
+        a: "Oui, le tabac masque le saignement (mauvaise vascularisation) mais accélère la destruction de l'os. C'est un ennemi redoutable pour vos dents.",
+      },
+    ],
+  },
+
+  {
+    slug: "orthodontie-adulte-invisible-dakar-aligneurs",
+    title: "Orthodontie adulte à Dakar : Des solutions invisibles existent",
+    description:
+      "Aligner ses dents n'est plus réservé aux ados. Découvrez les gouttières invisibles et l'orthodontie discrète pour adultes à Dakar.",
+    date: "2026-01-25",
+    category: "Orthodontie",
+    tags: [
+      "orthodontie adulte",
+      "invisalign dakar",
+      "aligneurs invisibles",
+      "bagues dentaires",
+    ],
+    author: AUTHORS.sao,
+    cover: orthoAdulteCover,
+    readingMinutes: 8,
+    content: `Il n'est jamais trop tard pour avoir un beau sourire. De plus en plus d'adultes à Dakar consultent pour aligner leurs dents. Fini le "sourire d'enfer" métallique, place à la discrétion !
+
+## Pourquoi faire de l'orthodontie adulte ?
+- **Esthétique** : Corriger un chevauchement ou des dents avancées.
+- **Santé** : Des dents alignées sont plus faciles à brosser (moins de caries et de tartre).
+- **Fonction** : Améliorer l'emboîtement des dents pour éviter l'usure prématurée.
+
+## La Révolution des Aligneurs Invisibles (Gouttières)
+C'est la solution préférée des adultes actifs.
+- **Invisible** : Ce sont des coquilles en plastique transparent moulées sur vos dents.
+- **Amovible** : Vous les enlevez pour manger et pour vous brosser les dents. Aucune contrainte alimentaire !
+- **Confortable** : Pas de bague qui blesse la joue, pas de fil qui pique.
+
+## Et les bagues ?
+Les bagues "classiques" restent très performantes pour les cas complexes. Aujourd'hui, elles existent en **céramique transparente** pour être beaucoup plus discrètes que les bagues en métal.
+
+> À la Clinique DABIA, nous étudions votre sourire pour vous proposer la solution la plus adaptée à votre vie sociale et professionnelle.`,
+    faq: [
+      {
+        q: "Combien de temps dure le traitement ?",
+        a: "Cela varie de 6 mois pour des corrections légères à 2 ans pour des cas complexes. La moyenne est souvent autour de 12-18 mois.",
+      },
+      {
+        q: "Peut-on mettre des bagues avec des couronnes ou implants ?",
+        a: "Avec des couronnes oui. Avec des implants, c'est plus délicat car l'implant ne bouge pas. Le diagnostic orthodontique le déterminera.",
+      },
+    ],
+  },
+
+  {
+    slug: "sante-dentaire-enfant-senegal-prevention",
+    title: "Santé dentaire de l'enfant au Sénégal : Quand commencer ?",
+    description:
+      "Protéger les dents de vos enfants dès le plus jeune âge. Conseils pour la première visite, le brossage et l'alimentation à Dakar.",
+    date: "2026-01-22",
+    category: "Pédiatrie",
+    tags: [
+      "dentiste enfant dakar",
+      "pedodontiste",
+      "carie biberon",
+      "brossage enfant",
+    ],
+    author: AUTHORS.sao,
+    cover: santeEnfantCover,
+    readingMinutes: 7,
+    content: `Les caries de la petite enfance sont un fléau au Sénégal, causant douleurs et infections précoces. Pourtant, elles sont 100% évitables. Voici comment protéger le capital sourire de vos enfants.
+
+## La Première Visite : Quand ?
+L'idéal est de venir **dès l'apparition des premières dents** (vers 1 an) ou au plus tard à 3 ans.
+- **Le but** : Vérifier que tout va bien, donner des conseils aux parents, et habituer l'enfant à l'environnement du cabinet AVANT qu'il n'ait mal.
+- Si vous attendez que l'enfant ait mal pour venir, il associera le dentiste à la douleur.
+
+## Attention au sucre !
+- **Le biberon du soir** : C'est l'ennemi n°1. Ne donnez jamais de lait sucré, de jus ou de bouillie sucrée avant le dodo sans brossage ensuite. Le sucre reste toute la nuit sur les dents.
+- **Les bonbons et biscuits** : À limiter aux repas, pas en grignotage toute la journée.
+
+## Le Brossage
+- **Dès la première dent** : Avec une compresse ou une brosse adaptée.
+- **Le dentifrice** : Fluoré, adapté à l'âge (dose grain de riz, puis petit pois).
+- **Aider l'enfant** : Jusqu'à 6-8 ans, l'enfant n'a pas la dextérité manuelle pour bien faire seul. Les parents doivent repasser derrière !
+
+> Un enfant sans carie est un enfant qui grandit bien, mange bien et dort bien. La prévention est le plus beau cadeau que vous puissiez lui faire.`,
+    faq: [
+      {
+        q: "Faut-il soigner les dents de lait puisqu'elles vont tomber ?",
+        a: "ABSOLUMENT ! Une dent de lait infectée fait mal et peut abîmer le germe de la dent définitive qui pousse en dessous.",
+      },
+      {
+        q: "Mon enfant a peur, que faire ?",
+        a: "Parlez du dentiste positivement. Ne dites pas 'il ne va pas te faire mal' (l'enfant entend 'mal'). Dites 'il va compter tes dents'. Nos équipes sont formées pour rassurer les petits.",
+      },
+    ],
+  },
+
+  {
+    slug: "detartrage-preventif-dakar-investissement",
+    title: "Le détartrage préventif : Pourquoi c'est le soin le plus rentable",
+    description:
+      "Pourquoi faire un détartrage tous les ans ? Ce soin simple vous évite des traitements coûteux et douloureux. Explications.",
+    date: "2026-01-20",
+    category: "Prévention",
+    tags: [
+      "détartrage dakar",
+      "prix détartrage",
+      "prévention dentaire",
+      "hygiène bucco-dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: detartragePreventifCover,
+    readingMinutes: 5,
+    content: `Si vous cherchez le moyen le moins cher de garder vos dents toute la vie, la réponse est simple : **le détartrage régulier**.
+Beaucoup de patients à Dakar attendent d'avoir mal pour consulter. C'est une erreur qui coûte cher.
+
+## Qu'est-ce que le détartrage ?
+C'est l'élimination de la plaque dentaire (bactéries moues) et du tartre (bactéries dures calcifiées) que la brosse à dents ne peut plus enlever.
+C'est un soin indolore réalisé avec des ultrasons (vibrations d'eau).
+
+## Pourquoi est-ce rentable ?
+- **Coût d'un détartrage** : Faible (et souvent remboursé).
+- **Coût de ce qu'il évite** :
+    - Soins de caries (le tartre cache les caries).
+    - Dévitalisations et couronnes.
+    - Soins de gencives (parodontite) et perte de dents.
+    - Implants (très coûteux) pour remplacer les dents perdues.
+
+En investissant dans 1 ou 2 détartrages par an, vous économisez des centaines de milliers de francs de prothèses futures !
+
+## Le bonus esthétique
+En plus de la santé, le détartrage enlève les colorations (café, thé, tabac). Vous ressortez avec une sensation de fraîcheur et des dents plus nettes.
+
+> N'attendez pas la douleur. Prenez rendez-vous pour votre bilan annuel à la Clinique DABIA.`,
+    faq: [
+      {
+        q: "Est-ce que le détartrage abîme l'émail ?",
+        a: "Non, absolument pas. Les inserts à ultrasons sont conçus pour décoller le tartre sans rayer la dent.",
+      },
+      {
+        q: "À quelle fréquence faut-il le faire ?",
+        a: "Pour la plupart des gens, tous les 6 mois ou tous les ans. Votre dentiste vous le dira selon votre vitesse à faire du tartre.",
       },
     ],
   },
