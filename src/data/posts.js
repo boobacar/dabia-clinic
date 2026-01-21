@@ -48,6 +48,14 @@ import orthoAdulteCover from "../assets/blog/orthodontie_adulte_choix.png";
 import santeEnfantCover from "../assets/blog/sante_dentaire_enfants_senegal.png";
 import detartragePreventifCover from "../assets/blog/detartrage_preventif.png";
 
+// Nouveaux imports pour les articles GSC (Jan 2026)
+import guideTarifsCover from "../assets/blog/guide_tarifs_2025.png";
+import appareilPrixCover from "../assets/blog/appareil_dentaire_prix.png";
+import implantCoutCover from "../assets/blog/implant_dentaire_cout.png";
+import blanchimentEclatCover from "../assets/blog/blanchiment_dentaire_eclat.png";
+// import cliniqueDabiaCover from "../assets/blog/clinique_dabia_expertise.png"; // Replaced by existing asset
+import cliniqueDabiaCover from "../assets/dabia.webp";
+
 // Nouveaux imports pour les articles pédiatriques existants
 import scellantsCover from "../assets/blog/scellants_sillons_enfant.png";
 import premierRdvCover from "../assets/blog/dentiste_enfant_premier_rdv.png";
@@ -103,6 +111,287 @@ export const TAGS = [
 ];
 
 export const POSTS = [
+  {
+    slug: "guide-tarifs-dentiste-dakar-2025",
+    title:
+      "Guide des Tarifs Dentaires à Dakar (2025) : transparence et juste prix",
+    description:
+      "Combien coûte un détartrage, une extraction ou une consultation à Dakar ? Guide complet des tarifs moyens pratiqués et conseils pour votre budget santé.",
+    date: "2026-01-21",
+    category: "Conseils",
+    tags: [
+      "tarif dentiste dakar",
+      "détartrage dentaire dakar prix",
+      "prix consultation dentiste",
+      "soins dentaires pas cher",
+      "clinique dentaire dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: guideTarifsCover,
+    pinned: true,
+    readingMinutes: 8,
+    content: `La question du **prix** est souvent la première que l’on se pose avant d'aller chez le dentiste. Combien coûte un détartrage ? Quel est le tarif d'une couronne ? À Dakar, les prix peuvent varier, mais la transparence est essentielle pour établir une relation de confiance.
+
+## Tarifs moyens observés à Dakar (2025)
+Voici une fourchette de prix indicative pour les soins courants à Dakar (ces tarifs peuvent varier selon la complexité du cas) :
+
+- **Consultation simple** : entre 10 000 et 20 000 FCFA.
+- **Détartrage et polissage** : entre 25 000 et 40 000 FCFA.
+- **Extraction dentaire simple** : à partir de 20 000 FCFA.
+- **Plombage (Composite)** : entre 25 000 et 45 000 FCFA selon la taille.
+- **Dévitalisation (Traitement de racine)** : de 40 000 à 90 000 FCFA selon la dent (incisive vs molaire).
+
+## Pourquoi les prix varient-ils ?
+1. **La technologie utilisée** : L'utilisation de radios numériques, de scanners 3D ou de lasers a un coût, mais garantit un diagnostic plus précis et des soins moins douloureux.
+2. **La qualité des matériaux** : Entre un composite standard et un composite esthétique haut de gamme, ou entre une couronne métal et une couronne Zircone, le prix diffère logiquement.
+3. **L'expertise du praticien** : La formation continue et la spécialisation (orthodontie, implantologie) sont des investissements au service de votre santé.
+
+## Comment maîtriser son budget dentaire ?
+- **Demandez toujours un devis clair** : Avant tout soin onéreux (prothèse, implant), votre dentiste doit vous fournir un devis détaillé.
+- **N'attendez pas l'urgence** : Un petit soin de carie coûte 3 à 4 fois moins cher qu'une dévitalisation avec couronne.
+- **La prévention est rentable** : Un détartrage annuel à 30 000 FCFA évite souvent des maladies des gencives qui coûtent des centaines de milliers de francs à traiter plus tard.
+
+> À la **Clinique DABIA**, nous nous engageons sur la **transparence**. Un devis vous est remis avant le début des soins, sans surprise. N'hésitez pas à nous demander le détail de nos honoraires.`,
+    faq: [
+      {
+        q: "Le devis est-il payant ?",
+        a: "Le devis est généralement établi lors de la consultation de bilan. La consultation est payante, mais le devis en lui-même est un document administratif remis gratuitement à l'issue de l'examen.",
+      },
+      {
+        q: "Acceptez-vous les prises en charge IPM ?",
+        a: "Nous travaillons avec plusieurs IPM et assurances. Merci de nous contacter avec le nom de votre IPM pour vérifier votre couverture.",
+      },
+    ],
+  },
+  {
+    slug: "prix-appareil-dentaire-dakar-senegal",
+    title:
+      "Prix des Appareils Dentaires à Dakar : Tout Savoir (Bagues vs Invisalign)",
+    description:
+      "Quel budget pour un appareil dentaire à Dakar ? Comparatif des prix entre bagues métalliques, céramiques et aligneurs invisibles au Sénégal.",
+    date: "2026-01-21",
+    category: "Orthodontie",
+    tags: [
+      "appareil dentaire prix dakar",
+      "prix appareil dentaire au sénégal",
+      "orthodontie dakar",
+      "bagues dentaires prix",
+      "invisalign dakar tarif",
+    ],
+    author: AUTHORS.sao,
+    cover: appareilPrixCover,
+    pinned: true,
+    readingMinutes: 10,
+    content: `Avoir un sourire aligné est un atout charme et santé indéniable. Mais quel est le **prix d'un appareil dentaire à Dakar** ? C'est une question fréquente de nos patients, qu'il s'agisse de parents pour leurs enfants ou d'adultes souhaitant améliorer leur sourire.
+
+## Les différents types d'appareils et leurs coûts
+Le budget dépend de la technique choisie et de la durée du traitement.
+
+### 1. Les bagues métalliques (Le classique)
+C'est la solution la plus économique et très efficace.
+*   **Budget estimatif** : Souvent entre 600 000 et 1 200 000 FCFA pour un traitement complet (payables souvent par semestre ou trimestre).
+*   **Pour qui ?** Les adolescents principalement, mais aussi les adultes qui privilégient l'efficacité au coût.
+
+### 2. Les bagues céramiques (Le discret)
+Plus discrètes, elles se fondent avec la couleur des dents.
+*   **Budget** : Comptez environ 20% à 30% de plus que le métal.
+*   **Avantage** : Esthétique soignée tout en gardant la mécanique éprouvée des bagues.
+
+### 3. Les aligneurs invisibles (Type Invisalign)
+La révolution pour les adultes ! Des gouttières transparentes amovibles.
+*   **Budget** : Variable selon le nombre de gouttières, souvent à partir de 1 500 000 FCFA et jusqu'à 2 500 000 FCFA+ pour les cas complexes.
+*   **Avantage** : Invisible, confortable, hygiène facilitée.
+
+## Ce qui est inclus dans le prix
+Lorsqu'on vous annonce un tarif, vérifiez qu'il comprend :
+- La pose de l'appareil.
+- Les rendez-vous de suivi mensuels (activations).
+- La dépose en fin de traitement.
+- La **contention** (le fil collé derrière les dents pour maintenir le résultat). C'est crucial pour ne pas que les dents rebougent !
+
+## Peut-on payer en plusieurs fois ?
+Oui, c'est la norme en orthodontie. Contrairement à un soin unique, l'orthodontie dure de 6 à 24 mois.
+À la Clinique DABIA, nous proposons des **échéanciers de paiement** : un acompte initial pour le matériel, puis des mensualités ou trimestrialités adaptées à votre budget.
+
+> **Conseil de pro** : Ne choisissez pas votre orthodontiste uniquement sur le prix. La réussite du traitement dépend du suivi rigoureux et de l'expérience du praticien. Un traitement "pas cher" mais raté coûtera beaucoup plus cher à reprendre.`,
+    faq: [
+      {
+        q: "Combien de temps dure le traitement ?",
+        a: "En moyenne entre 12 et 24 mois selon la complexité du décalage dentaire.",
+      },
+      {
+        q: "Est-ce douloureux ?",
+        a: "On ressent une tension pendant 2-3 jours après chaque réglage, mais ce n'est pas une douleur aiguë. C'est le signe que les dents bougent !",
+      },
+    ],
+  },
+  {
+    slug: "tarif-implant-dentaire-dakar-deroulement",
+    title: "Implants Dentaires à Dakar : Coût, Déroulement et Avantages",
+    description:
+      "Tout sur l'implantologie à Dakar : tarif moyen d'un implant dentaire complet, étapes de la pose et pourquoi c'est la meilleure solution pour remplacer une dent.",
+    date: "2026-01-20",
+    category: "Implantologie",
+    tags: [
+      "tarif implant dentaire à dakar",
+      "implant dentaire dakar",
+      "prix fausse dent dakar",
+      "chirurgie dentaire dakar",
+      "clinique dentaire dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: implantCoutCover,
+    pinned: true,
+    readingMinutes: 12,
+    content: `Perdre une dent peut affecter votre sourire, mais aussi votre capacité à mâcher et la santé de votre mâchoire. L'**implant dentaire** est aujourd'hui la solution de référence pour remplacer une racine naturelle. Mais quel est le **tarif d'un implant dentaire à Dakar** ? Décryptage.
+
+## Qu'est-ce qu'un implant dentaire ?
+C'est une petite vis en titane (ou zircone) insérée dans l'os de la mâchoire, sur laquelle on vient fixer une couronne. C'est comme une "racine artificielle".
+
+## Combien ça coûte à Dakar ?
+Le prix d'un implant "complet" (Implant + Pilier + Couronne) varie généralement entre **400 000 FCFA et 800 000 FCFA** par dent au Sénégal.
+Ce tarif comprend :
+1.  **La phase chirurgicale** : Pose de l'implant dans l'os.
+2.  **La phase prothétique** : Fabrication et pose de la couronne (la dent visible).
+
+Attention aux prix d'appel trop bas : vérifiez la marque de l'implant (les marques reconnues mondialement offrent des pièces détachées disponibles à vie) et la qualité de la couronne (Céramo-métal vs Zircone).
+
+## Pourquoi est-ce si coûteux ?
+- **Matériel de haute technologie** : Le titane médical est onéreux et biocompatible.
+- **Stérilité absolue** : La pose demande un bloc ou une salle dédiée avec un niveau d'asepsie chirurgicale.
+- **Expertise** : C'est un acte chirurgical qui demande une formation avancée.
+
+## Les étapes du traitement à la Clinique DABIA
+1.  **Bilan 3D (Scanner/CBCT)** : Indispensable pour vérifier le volume osseux.
+2.  **Pose de l'implant** : Intervention sous anesthésie locale, totalement indolore. Durée : environ 30-45 minutes.
+3.  **Cicatrisation (Ostéointégration)** : On attend 2 à 4 mois que l'os "soude" l'implant.
+4.  **Pose de la couronne** : Une fois solide, on visse la nouvelle dent.
+
+## Est-ce remboursé ?
+Les implants sont considérés comme du "hors nomenclature" par la plupart des IPM et assurances classiques au Sénégal. Cependant, certaines assurances internationales ou mutuelles haut de gamme proposent des forfaits annuels pour l'implantologie.
+
+> Retrouvez le plaisir de croquer la vie à pleines dents. L'implant est un investissement durable pour votre santé et votre confiance en vous.`,
+    faq: [
+      {
+        q: "Est-ce que ça fait mal ?",
+        a: "C'est l'une des questions les plus fréquentes ! Étonnamment, les suites opératoires sont souvent moins douloureuses qu'une extraction dentaire. Avec des antalgiques simples, cela passe très bien.",
+      },
+      {
+        q: "Quelle est la durée de vie d'un implant ?",
+        a: "Avec une bonne hygiène (brossage + détartrage annuel), un implant peut durer toute la vie.",
+      },
+    ],
+  },
+  {
+    slug: "blanchiment-dentaire-dakar-prix-efficacite",
+    title: "Blanchiment Dentaire à Dakar : Retrouvez l'Éclat de votre Sourire",
+    description:
+      "Le blanchiment dentaire fait fureur à Dakar. Découvrez les techniques sûres au cabinet vs les risques des produits maison. Prix et résultats.",
+    date: "2026-01-20",
+    category: "Esthétique",
+    tags: [
+      "blanchiment dentaire dakar",
+      "dents blanches sénégal",
+      "prix blanchiment dentaire",
+      "esthétique dentaire dakar",
+      "clinique dentaire dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: blanchimentEclatCover,
+    pinned: true,
+    readingMinutes: 7,
+    content: `Le thé, le café, le tabac ou simplement le temps... nos dents ont tendance à jaunir. Vous cherchez un **blanchiment dentaire à Dakar** ? Voici ce qu'il faut savoir pour éclaircir votre sourire sans danger.
+
+## Pourquoi faire un blanchiment chez le dentiste ?
+On voit beaucoup de "bars à sourire" ou de produits miracles sur Internet (charbon, kits UV...). Attention !
+- **Sécurité** : Le dentiste protège vos gencives. Les produits non contrôlés peuvent causer des brûlures chimiques graves.
+- **Efficacité** : Les produits professionnels sont plus concentrés et agissent en profondeur, là où les dentifrices "blancheur" ne font que rayer la surface.
+- **Diagnostic préalable** : On ne blanchit jamais sur des caries ou du tartre ! Un détartrage préalable est obligatoire.
+
+## Les techniques proposées
+1.  **Le blanchiment au fauteuil (Cabinet)** :
+    *   Résultat immédiat en une séance (1h - 1h30).
+    *   Utilisation d'un gel activé par une lampe spécifique.
+    *   Idéal pour un événement (mariage, shooting).
+2.  **Le blanchiment ambulatoire (Gouttières maison)** :
+    *   Le dentiste fabrique des gouttières sur mesure.
+    *   Vous appliquez le produit chez vous pendant 10-15 jours (souvent la nuit).
+    *   Résultat souvent plus durable et stable dans le temps.
+
+## Quel est le prix d'un blanchiment à Dakar ?
+Le tarif varie selon la technique, généralement entre **150 000 FCFA et 300 000 FCFA** pour un traitement complet professionnel.
+C'est un acte esthétique, donc non pris en charge par les assurances.
+
+## Et le résultat ?
+On gagne en moyenne 2 à 3 teintes. Attention, les couronnes et les plombages ne blanchissent pas ! Si vous en avez sur les dents de devant, il faudra peut-être les changer après le blanchiment pour harmoniser la couleur.
+
+> **Le conseil Dabia** : Commencez toujours par un **détartrage-polissage** complet. Parfois, cela suffit à redonner un éclat naturel suffisant en enlevant les taches externes !`,
+    faq: [
+      {
+        q: "Est-ce que ça abîme l'émail ?",
+        a: "Non, si le protocole est respecté par un professionnel. Il peut y avoir une sensibilité passagère au froid pendant 24h, mais l'émail reste intact.",
+      },
+      {
+        q: "Combien de temps ça dure ?",
+        a: "Les résultats durent entre 1 et 3 ans selon votre consommation de café/thé/tabac.",
+      },
+    ],
+  },
+  {
+    slug: "clinique-dentaire-dabia-dakar-avis",
+    title:
+      "Pourquoi choisir la Clinique Dentaire DABIA pour vos soins à Dakar ?",
+    description:
+      "Expertise, plateau technique moderne et approche humaine. Découvrez pourquoi la Clinique DABIA est recommandée pour vos soins dentaires à Dakar.",
+    date: "2026-01-19",
+    category: "Conseils",
+    tags: [
+      "clinique dentaire dabia",
+      "clinique dabia",
+      "meilleur dentiste dakar",
+      "avis dentiste dakar",
+      "dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: cliniqueDabiaCover,
+    pinned: true,
+    readingMinutes: 6,
+    content: `Choisir son dentiste n'est pas anodin. C'est une relation de confiance qui touche à votre intimité et votre santé. Si vous cherchez " **Clinique Dentaire DABIA** " ou un dentiste de confiance à Dakar, voici qui nous sommes et ce qui nous anime.
+
+## Une approche moderne et humaine
+Chez DABIA, nous avons banni l'image du dentiste "arracheur de dents". Notre priorité : **votre confort**.
+- **Gestion de la douleur** : Anesthésie systématique, douceur dans les gestes.
+- **Écoute** : Nous prenons le temps de vous expliquer le "pourquoi" et le "comment" de chaque acte.
+
+## Un plateau technique complet
+Pour bien soigner, il faut bien voir et bien diagnostiquer. La clinique est équipée de :
+- **Radio Panoramique & 3D (CBCT)** : Pour voir ce qui se passe sous la gencive et dans l'os.
+- **Caméra Intra-orale** : Pour vous montrer l'état de vos dents sur écran en temps réel.
+- **Moteurs d'endodontie** : Pour des dévitalisations précises et rapides.
+
+## Hygiène et Stérilisation : Notre Obsession
+C'est le point non-négociable. Nous suivons des protocoles draconiens :
+- Chaîne de stérilisation aux normes internationales (Autoclave classe B).
+- Instruments sous sachets stériles ouverts devant vous.
+- Désinfection des surfaces entre chaque patient.
+
+## Notre engagement tarifaire
+Nous savons que les soins dentaires représentent un budget.
+- **Transparence** : Aucun soin n'est commencé sans votre accord sur le devis.
+- **Juste prix** : Nous calculons nos honoraires au plus juste pour offrir la meilleure qualité de matériel tout en restant accessibles.
+
+> **Votre sourire est notre meilleure carte de visite.** Rejoignez les centaines de patients qui nous ont fait confiance pour retrouver le plaisir de sourire.`,
+    faq: [
+      {
+        q: "Où êtes-vous situés ?",
+        a: "Nous sommes situés à Dakar, facilement accessibles. Contactez-nous pour l'adresse exacte et le plan d'accès.",
+      },
+      {
+        q: "Prenez-vous les urgences ?",
+        a: "Oui, nous réservons des créneaux quotidiens pour soulager les douleurs aiguës (rage de dent, abcès, traumatisme).",
+      },
+    ],
+  },
   {
     slug: "dentiste-dakar-liberte-6-parcelles-sicap-foire",
     title:
