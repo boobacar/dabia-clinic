@@ -83,7 +83,7 @@ export default function CookieConsent() {
                 setOpen(false);
               }}
             >
-              Refuser
+              Tout refuser
             </button>
             <button
               className="px-3.5 py-1 text-[12px] font-semibold rounded-full bg-[#ad9d64] text-white hover:shadow-sm transition"
@@ -97,7 +97,7 @@ export default function CookieConsent() {
                 setOpen(false);
               }}
             >
-              Accepter
+              Tout accepter
             </button>
           </div>
         </div>
@@ -118,6 +118,20 @@ export default function CookieConsent() {
               />
               Mesure d’audience (GA4)
             </label>
+
+            <button
+              className="mt-3 px-3 py-1.5 text-[12px] font-semibold rounded-md bg-gray-800 text-white hover:bg-gray-900 transition w-full md:w-auto"
+              onClick={() => {
+                localStorage.setItem(LS_KEY, JSON.stringify(prefs));
+                applyConsent(prefs);
+                try {
+                  sendEvent("consent_update", { action: "save_custom" });
+                } catch {}
+                setOpen(false);
+              }}
+            >
+              Enregistrer mes choix
+            </button>
           </div>
         )}
       </div>
