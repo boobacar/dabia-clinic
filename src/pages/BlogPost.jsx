@@ -48,6 +48,298 @@ export default function BlogPost() {
   const { slug } = useParams();
   const post = useMemo(() => POSTS.find((p) => p.slug === slug), [slug]);
 
+  const currentSlug = post ? post.slug : "";
+  const canonical = `https://www.cliniquedentairedabia.com/blog/${currentSlug}`;
+  // Memoize tags validation to avoid frequent re-renders of dependent hooks
+  const tags = useMemo(
+    () => ((post && post.tags) || []).map((t) => t.toLowerCase()),
+    [post],
+  );
+
+  const postSlug = post ? post.slug : "";
+  const postCategory = post ? post.category : "";
+  const postFaq = useMemo(() => (post ? post.faq : []), [post]);
+  const postContent = post ? post.content : "";
+  const postCover = post ? post.cover : null;
+
+  // Build enriched sections as Markdown to merge with article Markdown for homogeneity
+  const enrichedMd = useMemo(() => {
+    if (!post) return "";
+    const parts = [];
+    parts.push(
+      `## Indications et contre-indications\n\n` +
+        `Les traitements décrits s’adressent aux patients selon un diagnostic personnalisé. ` +
+        `Un bilan clinique et radiologique préalable permet de confirmer l’indication, ` +
+        `de repérer d’éventuelles contre-indications (inflammation active, pathologies générales non stabilisées, ` +
+        `hygiène insuffisante), et d’adapter le protocole pour garantir sécurité et efficacité.`,
+    );
+    parts.push(
+      `## Étapes clés du traitement\n\n` +
+        `La prise en charge suit un enchaînement clair : consultation, explication des options, consentement éclairé, ` +
+        `réalisation du soin, puis contrôle. Selon le cas, un traitement préparatoire (détartrage, soins des gencives, ` +
+        `photographie, empreinte numérique) peut être nécessaire pour optimiser le résultat.`,
+    );
+    parts.push(
+      `## Durée, confort et suites\n\n` +
+        `La durée dépend de la complexité et des objectifs. Les techniques modernes, l’anesthésie et les équipements ` +
+        `(CBCT, scanner intra-oral, systèmes d’aspiration) permettent des soins précis et confortables. ` +
+        `Une gêne transitoire est possible et se contrôle avec des conseils et antalgiques adaptés.`,
+    );
+    parts.push(
+      `## Coût et devis transparents\n\n` +
+        `Un devis détaillé est systématiquement remis après l’examen clinique et le plan de traitement. ` +
+        `Le prix reflète la durée, les matériaux, la complexité et les contrôles. Des alternatives thérapeutiques ` +
+        `sont toujours discutées pour concilier efficacité, esthétique et budget.`,
+    );
+    parts.push(
+      `## Prévention et entretien\n\n` +
+        `Les résultats à long terme reposent sur une hygiène rigoureuse (brossage bi-quotidien, fil/brossettes), ` +
+        `une alimentation équilibrée, des contrôles réguliers et des séances de prophylaxie. ` +
+        `Des conseils personnalisés sont fournis pour prolonger les bénéfices du soin.`,
+    );
+    if (tags.some((t) => /urgence|douleur|trauma/.test(t))) {
+      parts.push(
+        `## Quand consulter en urgence\n\n` +
+          `Douleur intense, fièvre, gonflement qui s’étend, saignement persistant, traumatisme avec dent mobile ` +
+          `ou expulsée : contactez la clinique sans tarder pour une prise en charge prioritaire.`,
+      );
+    }
+    parts.push(
+      `## À retenir\n\n` +
+        `- Diagnostic personnalisé et information claire avant tout acte.\n` +
+        `- Équipements modernes pour précision et confort des soins.\n` +
+        `- Suivi et prévention pour des résultats durables.`,
+    );
+    return parts.join("\n\n");
+  }, [post, tags]); // Included 'tags' array itself used inside
+
+  const combinedMarkdown = useMemo(() => {
+    if (!post) return "";
+    return `${postContent || ""}\n\n${enrichedMd}`.trim();
+  }, [post, postContent, enrichedMd]);
+
+  // Style spécial pour le bloc "À retenir" (applique une classe callout au list suivant le titre)
+  useEffect(() => {
+    const h2s = document.querySelectorAll("h2");
+    h2s.forEach((h) => {
+      const txt = (h.textContent || "").trim().toLowerCase();
+      if (txt === "à retenir" || txt === "a retenir") {
+        h.classList.add("callout-title");
+        const next = h.nextElementSibling;
+        if (next) next.classList.add("callout");
+      }
+    });
+  }, [currentSlug, combinedMarkdown]);
+  const headings = extractHeadings(combinedMarkdown || "");
+
+  // Auto-scroll si on arrive avec /blog/slug#ancre
+  useEffect(() => {
+    const hash = window.location.hash?.slice(1);
+    if (!hash) return;
+    const el = document.getElementById(hash);
+    if (!el) return;
+    const headerOffset = 100;
+    const y = el.getBoundingClientRect().top + window.scrollY - headerOffset;
+    setTimeout(() => window.scrollTo({ top: y, behavior: "smooth" }), 0);
+  }, [currentSlug]);
+
+  const [imgDims, setImgDims] = useState(null);
+  useEffect(() => {
+    if (!postCover) return;
+    try {
+      const img = new Image();
+      img.src = postCover;
+      img.onload = () =>
+        setImgDims({ width: img.naturalWidth, height: img.naturalHeight });
+    } catch {
+      // Ignore image loading errors
+    }
+  }, [postCover]);
+
+  const articleJsonLd = useMemo(() => {
+    if (!post) return null;
+    return {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: post.title,
+      description: post.description,
+      image: [
+        {
+          "@type": "ImageObject",
+          url: post.cover,
+          ...(imgDims ? { width: imgDims.width, height: imgDims.height } : {}),
+        },
+      ],
+      datePublished: post.date,
+      dateModified: post.date,
+      wordCount: Math.max(400, (post.content || "").split(/\s+/).length),
+      author: {
+        "@type": "Person",
+        name: post?.author?.name || "Clinique Dentaire DABIA",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "Clinique Dentaire DABIA",
+        logo: { "@type": "ImageObject", url: "/logo192.png" },
+      },
+    };
+  }, [post, imgDims]);
+
+  // Related posts (based on shared tags/category)
+  const related = useMemo(() => {
+    if (!post) return [];
+    const sameCat = POSTS.filter(
+      (p) => p.category === postCategory && p.slug !== postSlug,
+    );
+    const byTags = POSTS.filter(
+      (p) =>
+        p.slug !== postSlug &&
+        (p.tags || []).some((t) => tags.includes(String(t).toLowerCase())),
+    );
+    const merged = [...sameCat, ...byTags];
+    const unique = [];
+    const seen = new Set();
+    for (const r of merged) {
+      if (!seen.has(r.slug)) {
+        seen.add(r.slug);
+        unique.push(r);
+      }
+      if (unique.length >= 6) break;
+    }
+    return unique;
+  }, [post, postSlug, postCategory, tags]);
+
+  // Competence links suggestions based on tags
+  const competenceLinks = useMemo(() => {
+    const map = [
+      {
+        keys: ["implant", "implantologie"],
+        to: "/competences/implantologie",
+        label: "Implantologie",
+      },
+      {
+        keys: ["orthodontie", "aligneurs", "bagues"],
+        to: "/competences/orthodontie",
+        label: "Orthodontie",
+      },
+      {
+        keys: ["facette", "facettes"],
+        to: "/competences/facettes-dentaires",
+        label: "Facettes dentaires",
+      },
+      {
+        keys: ["blanchiment"],
+        to: "/competences/blanchiment-dentaire",
+        label: "Blanchiment dentaire",
+      },
+      {
+        keys: ["detartrage", "parodont"],
+        to: "/competences/parodontologie",
+        label: "Parodontologie",
+      },
+    ];
+    const out = [];
+    const seen = new Set();
+    for (const m of map) {
+      if (m.keys.some((k) => tags.some((t) => t.includes(k)))) {
+        if (!seen.has(m.to)) {
+          seen.add(m.to);
+          out.push(m);
+        }
+      }
+    }
+    return out;
+  }, [tags]);
+
+  // Auto‑FAQ hints per tag (fallback generic)
+  const faqItems = useMemo(() => {
+    if (!post) return [];
+    const items = [];
+    if (Array.isArray(postFaq) && postFaq.length) {
+      return postFaq.slice(0, 6);
+    }
+    const has = (w) => tags.some((t) => t.includes(w));
+    if (has("implant")) {
+      items.push(
+        {
+          q: "Combien de temps dure un implant dentaire ?",
+          a: "Avec une hygiène rigoureuse et des contrôles réguliers, un implant peut durer de très nombreuses années, souvent plusieurs décennies.",
+        },
+        {
+          q: "L’intervention est‑elle douloureuse ?",
+          a: "Elle se fait sous anesthésie locale. Une gêne transitoire est possible et bien contrôlée par des antalgiques.",
+        },
+      );
+    }
+    if (has("orthodontie") || has("aligneur")) {
+      items.push(
+        {
+          q: "Aligneurs ou bagues : que choisir ?",
+          a: "Les aligneurs sont discrets et confortables ; les bagues sont indiquées pour des cas plus complexes. Le choix dépend du diagnostic.",
+        },
+        {
+          q: "Durée d’un traitement orthodontique ?",
+          a: "De quelques mois à 24 mois en moyenne selon la complexité et la coopération.",
+        },
+      );
+    }
+    if (has("blanchiment")) {
+      items.push(
+        {
+          q: "Le blanchiment abîme‑t‑il les dents ?",
+          a: "Réalisé sous contrôle professionnel avec des produits homologués, il est sûr et respecte l’émail.",
+        },
+        {
+          q: "Combien de temps durent les résultats ?",
+          a: "En moyenne 12 à 24 mois ; des retouches seront proposées si besoin.",
+        },
+      );
+    }
+    if (items.length === 0) {
+      items.push(
+        {
+          q: "Quand faut‑il consulter en priorité ?",
+          a: "Douleur aiguë, gonflement, fièvre, traumatisme : contactez la clinique rapidement pour une prise en charge adaptée.",
+        },
+        {
+          q: "Comment connaître le prix d’un soin ?",
+          a: "Un devis clair est remis après l’examen clinique et le plan de traitement personnalisé.",
+        },
+      );
+    }
+    return items.slice(0, 4);
+  }, [post, postFaq, tags]);
+
+  const faqJsonLd = useMemo(() => {
+    if (!post) return null;
+    return {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqItems.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    };
+  }, [post, faqItems]);
+
+  // Optional HowTo for urgent topics
+  const isHowTo =
+    post &&
+    (/que-faire|urgence/i.test(post.slug) ||
+      tags.some((t) => /urgence|que faire/.test(t)));
+
+  const howToJsonLd = isHowTo
+    ? {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        name: `Que faire – ${post.title}`,
+        step: headings
+          .slice(0, 6)
+          .map((h) => ({ "@type": "HowToStep", name: h.text })),
+      }
+    : null;
+
   if (!post) {
     return (
       <section className="py-20 px-4 max-w-4xl mx-auto mt-20">
@@ -70,215 +362,6 @@ export default function BlogPost() {
     );
   }
 
-  const canonical = `https://www.cliniquedentairedabia.com/blog/${post.slug}`;
-  const tags = (post.tags || []).map((t) => t.toLowerCase());
-
-  // Build enriched sections as Markdown to merge with article Markdown for homogeneity
-  const enrichedMd = useMemo(() => {
-    const parts = [];
-    parts.push(
-      `## Indications et contre‑indications\n\n` +
-        `Les traitements décrits s’adressent aux patients selon un diagnostic personnalisé. ` +
-        `Un bilan clinique et radiologique préalable permet de confirmer l’indication, ` +
-        `de repérer d’éventuelles contre‑indications (inflammation active, pathologies générales non stabilisées, ` +
-        `hygiène insuffisante), et d’adapter le protocole pour garantir sécurité et efficacité.`
-    );
-    parts.push(
-      `## Étapes clés du traitement\n\n` +
-        `La prise en charge suit un enchaînement clair : consultation, explication des options, consentement éclairé, ` +
-        `réalisation du soin, puis contrôle. Selon le cas, un traitement préparatoire (détartrage, soins des gencives, ` +
-        `photographie, empreinte numérique) peut être nécessaire pour optimiser le résultat.`
-    );
-    parts.push(
-      `## Durée, confort et suites\n\n` +
-        `La durée dépend de la complexité et des objectifs. Les techniques modernes, l’anesthésie et les équipements ` +
-        `(CBCT, scanner intra‑oral, systèmes d’aspiration) permettent des soins précis et confortables. ` +
-        `Une gêne transitoire est possible et se contrôle avec des conseils et antalgiques adaptés.`
-    );
-    parts.push(
-      `## Coût et devis transparents\n\n` +
-        `Un devis détaillé est systématiquement remis après l’examen clinique et le plan de traitement. ` +
-        `Le prix reflète la durée, les matériaux, la complexité et les contrôles. Des alternatives thérapeutiques ` +
-        `sont toujours discutées pour concilier efficacité, esthétique et budget.`
-    );
-    parts.push(
-      `## Prévention et entretien\n\n` +
-        `Les résultats à long terme reposent sur une hygiène rigoureuse (brossage bi‑quotidien, fil/brossettes), ` +
-        `une alimentation équilibrée, des contrôles réguliers et des séances de prophylaxie. ` +
-        `Des conseils personnalisés sont fournis pour prolonger les bénéfices du soin.`
-    );
-    if (tags.some((t) => /urgence|douleur|trauma/.test(t))) {
-      parts.push(
-        `## Quand consulter en urgence\n\n` +
-          `Douleur intense, fièvre, gonflement qui s’étend, saignement persistant, traumatisme avec dent mobile ` +
-          `ou expulsée : contactez la clinique sans tarder pour une prise en charge prioritaire.`
-      );
-    }
-    parts.push(
-      `## À retenir\n\n` +
-        `- Diagnostic personnalisé et information claire avant tout acte.\n` +
-        `- Équipements modernes pour précision et confort des soins.\n` +
-        `- Suivi et prévention pour des résultats durables.`
-    );
-    return parts.join("\n\n");
-  }, [tags.join("|")]);
-
-  const combinedMarkdown = useMemo(() => {
-    return `${post.content || ""}\n\n${enrichedMd}`.trim();
-  }, [post.content, enrichedMd]);
-
-  // Style spécial pour le bloc "À retenir" (applique une classe callout au list suivant le titre)
-  useEffect(() => {
-    const h2s = document.querySelectorAll('h2');
-    h2s.forEach((h) => {
-      const txt = (h.textContent || '').trim().toLowerCase();
-      if (txt === 'à retenir' || txt === 'a retenir') {
-        h.classList.add('callout-title');
-        const next = h.nextElementSibling;
-        if (next) next.classList.add('callout');
-      }
-    });
-  }, [post.slug, combinedMarkdown]);
-  const headings = extractHeadings(combinedMarkdown || "");
-
-  // Auto-scroll si on arrive avec /blog/slug#ancre
-  useEffect(() => {
-    const hash = window.location.hash?.slice(1);
-    if (!hash) return;
-    const el = document.getElementById(hash);
-    if (!el) return;
-    const headerOffset = 100;
-    const y = el.getBoundingClientRect().top + window.scrollY - headerOffset;
-    setTimeout(() => window.scrollTo({ top: y, behavior: "smooth" }), 0);
-  }, [post?.slug]);
-
-  const [imgDims, setImgDims] = useState(null);
-  useEffect(() => {
-    try {
-      const img = new Image();
-      img.src = post.cover;
-      img.onload = () => setImgDims({ width: img.naturalWidth, height: img.naturalHeight });
-    } catch {}
-  }, [post.cover]);
-
-  const articleJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: post.title,
-    description: post.description,
-    image: [
-      {
-        "@type": "ImageObject",
-        url: post.cover,
-        ...(imgDims ? { width: imgDims.width, height: imgDims.height } : {}),
-      },
-    ],
-    datePublished: post.date,
-    dateModified: post.date,
-    wordCount: Math.max(400, (post.content || "").split(/\s+/).length),
-    author: {
-      "@type": "Person",
-      name: post?.author?.name || "Clinique Dentaire DABIA",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "Clinique Dentaire DABIA",
-      logo: { "@type": "ImageObject", url: "/logo192.png" },
-    },
-  };
-
-  // Related posts (based on shared tags/category)
-  const related = useMemo(() => {
-    const sameCat = POSTS.filter((p) => p.category === post.category && p.slug !== post.slug);
-    const byTags = POSTS.filter(
-      (p) => p.slug !== post.slug && (p.tags || []).some((t) => tags.includes(String(t).toLowerCase()))
-    );
-    const merged = [...sameCat, ...byTags];
-    const unique = [];
-    const seen = new Set();
-    for (const r of merged) {
-      if (!seen.has(r.slug)) {
-        seen.add(r.slug);
-        unique.push(r);
-      }
-      if (unique.length >= 6) break;
-    }
-    return unique;
-  }, [post.slug, post.category, tags.join("|")]);
-
-  // Competence links suggestions based on tags
-  const competenceLinks = useMemo(() => {
-    const map = [
-      { keys: ["implant", "implantologie"], to: "/competences/implantologie", label: "Implantologie" },
-      { keys: ["orthodontie", "aligneurs", "bagues"], to: "/competences/orthodontie", label: "Orthodontie" },
-      { keys: ["facette", "facettes"], to: "/competences/facettes-dentaires", label: "Facettes dentaires" },
-      { keys: ["blanchiment"], to: "/competences/blanchiment-dentaire", label: "Blanchiment dentaire" },
-      { keys: ["detartrage", "parodont"], to: "/competences/parodontologie", label: "Parodontologie" },
-    ];
-    const out = [];
-    const seen = new Set();
-    for (const m of map) {
-      if (m.keys.some((k) => tags.some((t) => t.includes(k)))) {
-        if (!seen.has(m.to)) {
-          seen.add(m.to);
-          out.push(m);
-        }
-      }
-    }
-    return out;
-  }, [tags.join("|")]);
-
-  // Auto‑FAQ hints per tag (fallback generic)
-  const faqItems = useMemo(() => {
-    const items = [];
-    if (Array.isArray(post.faq) && post.faq.length) {
-      return post.faq.slice(0, 6);
-    }
-    const has = (w) => tags.some((t) => t.includes(w));
-    if (has("implant")) {
-      items.push(
-        { q: "Combien de temps dure un implant dentaire ?", a: "Avec une hygiène rigoureuse et des contrôles réguliers, un implant peut durer de très nombreuses années, souvent plusieurs décennies." },
-        { q: "L’intervention est‑elle douloureuse ?", a: "Elle se fait sous anesthésie locale. Une gêne transitoire est possible et bien contrôlée par des antalgiques." }
-      );
-    }
-    if (has("orthodontie") || has("aligneur")) {
-      items.push(
-        { q: "Aligneurs ou bagues : que choisir ?", a: "Les aligneurs sont discrets et confortables ; les bagues sont indiquées pour des cas plus complexes. Le choix dépend du diagnostic." },
-        { q: "Durée d’un traitement orthodontique ?", a: "De quelques mois à 24 mois en moyenne selon la complexité et la coopération." }
-      );
-    }
-    if (has("blanchiment")) {
-      items.push(
-        { q: "Le blanchiment abîme‑t‑il les dents ?", a: "Réalisé sous contrôle professionnel avec des produits homologués, il est sûr et respecte l’émail." },
-        { q: "Combien de temps durent les résultats ?", a: "En moyenne 12 à 24 mois ; des retouches seront proposées si besoin." }
-      );
-    }
-    if (items.length === 0) {
-      items.push(
-        { q: "Quand faut‑il consulter en priorité ?", a: "Douleur aiguë, gonflement, fièvre, traumatisme : contactez la clinique rapidement pour une prise en charge adaptée." },
-        { q: "Comment connaître le prix d’un soin ?", a: "Un devis clair est remis après l’examen clinique et le plan de traitement personnalisé." }
-      );
-    }
-    return items.slice(0, 4);
-  }, [tags.join("|")]);
-
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
-  };
-
-  // Optional HowTo for urgent topics
-  const isHowTo = /que-faire|urgence/i.test(post.slug) || tags.some((t) => /urgence|que faire/.test(t));
-  const howToJsonLd = isHowTo
-    ? {
-        "@context": "https://schema.org",
-        "@type": "HowTo",
-        name: `Que faire – ${post.title}`,
-        step: headings.slice(0, 6).map((h) => ({ "@type": "HowToStep", name: h.text })),
-      }
-    : null;
-
   return (
     <section className="py-20 px-4 max-w-7xl mx-auto mt-20">
       <ReadingProgress />
@@ -291,7 +374,11 @@ export default function BlogPost() {
         image={post.cover}
         publishedTime={post.date}
         modifiedTime={post.date}
-        jsonLd={[articleJsonLd, faqJsonLd, ...(howToJsonLd ? [howToJsonLd] : [])]}
+        jsonLd={[
+          articleJsonLd,
+          faqJsonLd,
+          ...(howToJsonLd ? [howToJsonLd] : []),
+        ].filter(Boolean)}
       />
 
       <Breadcrumbs
@@ -328,7 +415,11 @@ export default function BlogPost() {
             </div>
             <div
               className="w-full rounded-xl mt-6 overflow-hidden"
-              style={{ aspectRatio: imgDims ? `${imgDims.width}/${imgDims.height}` : '1200/630' }}
+              style={{
+                aspectRatio: imgDims
+                  ? `${imgDims.width}/${imgDims.height}`
+                  : "1200/630",
+              }}
             >
               <img
                 src={post.cover}
@@ -345,6 +436,17 @@ export default function BlogPost() {
             {/* vidéos retirées */}
           </header>
 
+          <div className="my-8 flex justify-center lg:justify-start">
+            <Magnetic>
+              <Link
+                to="/rendez-vous"
+                className="ripple btn-cta px-8 py-3 text-lg shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1 block text-center"
+              >
+                Prendre un rendez-vous
+              </Link>
+            </Magnetic>
+          </div>
+
           {/* TOC mobile */}
           <div className="lg:hidden mb-6">
             <TOC headings={headings} />
@@ -355,7 +457,7 @@ export default function BlogPost() {
               remarkPlugins={[remarkGfm]}
               rehypePlugins={[rehypeRaw]}
               components={{
-                h2: ({ node, children, ...props }) => {
+                h2: ({ children, ...props }) => {
                   const txt = textFromChildren(children);
                   const id = slugify(txt);
                   return (
@@ -368,7 +470,7 @@ export default function BlogPost() {
                     </h2>
                   );
                 },
-                h3: ({ node, children, ...props }) => {
+                h3: ({ children, ...props }) => {
                   const txt = textFromChildren(children);
                   const id = slugify(txt);
                   return (
@@ -381,7 +483,7 @@ export default function BlogPost() {
                     </h3>
                   );
                 },
-                h4: ({ node, children, ...props }) => {
+                h4: ({ children, ...props }) => {
                   const txt = textFromChildren(children);
                   const id = slugify(txt);
                   return (
@@ -394,7 +496,7 @@ export default function BlogPost() {
                     </h4>
                   );
                 },
-                a: ({ node, href = "", children, ...props }) => {
+                a: ({ href = "", children, ...props }) => {
                   const isExternal = /^https?:\/\//i.test(href);
                   if (isExternal) {
                     return (
@@ -436,12 +538,22 @@ export default function BlogPost() {
           </div>
 
           <div className="mt-6 text-sm text-gray-700">
-            Voir aussi {" "}
-            <Link to="/all-competences" className="text-[#bb2988] underline">nos compétences</Link>
-            , {" "}
-            <Link to="/dentiste-dakar" className="text-[#bb2988] underline">Dentiste à Dakar</Link>
-            {" "}et {" "}
-            <Link to="/urgence-dentaire-dakar" className="text-[#bb2988] underline">Urgence dentaire</Link>.
+            Voir aussi{" "}
+            <Link to="/all-competences" className="text-[#bb2988] underline">
+              nos compétences
+            </Link>
+            ,{" "}
+            <Link to="/dentiste-dakar" className="text-[#bb2988] underline">
+              Dentiste à Dakar
+            </Link>{" "}
+            et{" "}
+            <Link
+              to="/urgence-dentaire-dakar"
+              className="text-[#bb2988] underline"
+            >
+              Urgence dentaire
+            </Link>
+            .
           </div>
         </article>
 
@@ -453,7 +565,10 @@ export default function BlogPost() {
               <ul className="space-y-2 text-sm">
                 {related.map((p) => (
                   <li key={p.slug}>
-                    <Link className="hover:text-[#bb2988]" to={`/blog/${p.slug}`}>
+                    <Link
+                      className="hover:text-[#bb2988]"
+                      to={`/blog/${p.slug}`}
+                    >
                       {p.title}
                     </Link>
                   </li>
@@ -480,7 +595,10 @@ export default function BlogPost() {
             <p className="text-sm text-gray-600">
               Notre équipe vous répond rapidement.
             </p>
-            <Link to="/rendez-vous" className="mt-3 inline-block btn-cta btn-cta-sm">
+            <Link
+              to="/rendez-vous"
+              className="mt-3 inline-block btn-cta btn-cta-sm"
+            >
               Prendre rendez-vous
             </Link>
           </div>
@@ -490,11 +608,15 @@ export default function BlogPost() {
       {/* FAQ visible (same content as JSON-LD) */}
       {faqItems.length > 0 && (
         <section className="mt-10">
-          <h2 className="text-2xl font-bold text-[#ad9d64] mb-3">Questions fréquentes</h2>
+          <h2 className="text-2xl font-bold text-[#ad9d64] mb-3">
+            Questions fréquentes
+          </h2>
           <div className="space-y-3">
             {faqItems.map((f, i) => (
               <details key={i} className="border rounded-xl p-4 bg-white">
-                <summary className="font-semibold cursor-pointer">{f.q}</summary>
+                <summary className="font-semibold cursor-pointer">
+                  {f.q}
+                </summary>
                 <p className="mt-2 text-gray-700 text-sm">{f.a}</p>
               </details>
             ))}

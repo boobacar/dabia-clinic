@@ -40,11 +40,8 @@ export default function ScrollManager() {
       // S'il y a une ancre, on ne fait PAS de scrollToTop
       scrollToHash(hash);
     } else {
-      // Pas d'ancre → remonte en haut
-      // setTimeout pour éviter de lutter avec le render/paint initial
-      setTimeout(() => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }, 0);
+      // Pas d'ancre → remonte en haut instantanément
+      window.scrollTo(0, 0);
     }
   }, [pathname, hash]);
 
