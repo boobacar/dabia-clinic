@@ -14,9 +14,7 @@ import FancySelect from "../components/FancySelect";
 
 // confetti (chargé à la demande)
 let confetti;
-import("canvas-confetti")
-  .then((m) => (confetti = m.default))
-  .catch(() => {});
+import("canvas-confetti").then((m) => (confetti = m.default)).catch(() => {});
 
 const minSelectableDate = addDays(startOfDay(new Date()), 2);
 const availableFromLabel = format(minSelectableDate, "dd MMMM", { locale: fr });
@@ -69,13 +67,35 @@ const RendezVous = () => {
       sendEvent("form_rendez_vous_submit", { step: "start" });
     } catch {}
 
-    emailjs
-      .sendForm(
+    const emailValue = form.current.email.value;
+    const promises = [];
+
+    // 1. Notification Admin (Toujours envoyer)
+    promises.push(
+      emailjs.sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         form.current,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      )
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+      ),
+    );
+
+    // 2. Auto-Reply Client (Seulement si email présent)
+    const autoReplyTemplateId = import.meta.env
+      .VITE_EMAILJS_AUTOREPLY_TEMPLATE_ID;
+
+    if (emailValue && autoReplyTemplateId) {
+      promises.push(
+        emailjs.sendForm(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          autoReplyTemplateId,
+          form.current,
+          import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        ),
+      );
+    }
+
+    Promise.all(promises)
       .then(() => {
         setStatus("success");
         setShowModal(true);
@@ -251,14 +271,23 @@ const RendezVous = () => {
                   placeholder="Sélectionner"
                   options={[
                     { value: "Consultation", label: "Consultation" },
-                    { value: "Esthétique dentaire", label: "Esthétique dentaire" },
+                    {
+                      value: "Esthétique dentaire",
+                      label: "Esthétique dentaire",
+                    },
                     { value: "Parodontologie", label: "Parodontologie" },
                     { value: "Implantologie", label: "Implantologie" },
                     { value: "Endodontie", label: "Endodontie" },
-                    { value: "Facettes dentaires", label: "Facettes dentaires" },
+                    {
+                      value: "Facettes dentaires",
+                      label: "Facettes dentaires",
+                    },
                     { value: "Orthodontie", label: "Orthodontie" },
                     { value: "Greffe osseuse", label: "Greffe osseuse" },
-                    { value: "Blanchiment dentaire", label: "Blanchiment dentaire" },
+                    {
+                      value: "Blanchiment dentaire",
+                      label: "Blanchiment dentaire",
+                    },
                   ]}
                 />
               </div>
@@ -293,11 +322,7 @@ const RendezVous = () => {
                     Nouveau patient
                   </label>
                   <label className="flex gap-2">
-                    <input
-                      type="checkbox"
-                      name="motif"
-                      value="déjà patient"
-                    />
+                    <input type="checkbox" name="motif" value="déjà patient" />
                     Déjà patient
                   </label>
                   <label className="flex gap-2">
