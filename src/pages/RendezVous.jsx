@@ -215,7 +215,6 @@ const RendezVous = () => {
                 <input
                   type="email"
                   name="email"
-                  required
                   className="border border-[#e7dcbc] rounded-full px-4 py-3 text-base bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
                 />
               </div>
