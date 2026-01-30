@@ -60,6 +60,11 @@ import cliniqueDabiaCover from "../assets/dabia.webp";
 import scellantsCover from "../assets/blog/scellants_sillons_enfant.png";
 import premierRdvCover from "../assets/blog/dentiste_enfant_premier_rdv.png";
 
+// Nouveaux imports pour la stratégie SEO "Dentiste Dakar" (Jan 2026 - V2)
+import protheseFixeAmovibleCover from "../assets/blog/prothese_fixe_vs_amovible.png";
+import appareilGuideCover from "../assets/blog/appareil_dentaire_guide.png";
+import cliniqueExpertCover from "../assets/blog/clinique_dabia_expert.png";
+
 export const AUTHORS = {
   sao: {
     name: "Dr Fatoumata SAO",
@@ -108,9 +113,192 @@ export const TAGS = [
   "ipm dentaire dakar",
   "attaya dents",
   "taches dents cafe",
+  "prothèse dentaire fixe",
+  "prix appareil dentaire sénégal",
+  "meilleur dentiste dakar",
 ];
 
 export const POSTS = [
+  {
+    slug: "prothese-dentaire-fixe-prix-senegal-amovible",
+    title: "Prothèse Dentaire Fixe vs Amovible au Sénégal : Prix et Solutions",
+    description:
+      "Comprendre la différence entre couronne, bridge et dentier. Quel budget prévoir au Sénégal ? Avantages et inconvénients pour remplacer vos dents manquantes.",
+    date: "2026-01-30",
+    category: "Conseils",
+    tags: [
+      "prothèse dentaire fixe prix sénégal",
+      "prix prothese dentaire dakar",
+      "dentier prix dakar",
+      "fausse dent prix",
+      "clinique dentaire dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: protheseFixeAmovibleCover,
+    pinned: true,
+    readingMinutes: 8,
+    content: `Perdre une ou plusieurs dents est une épreuve, mais les solutions pour retrouver le sourire sont nombreuses. À Dakar, on distingue principalement deux familles de prothèses : les **fixes** (qu'on ne retire pas) et les **amovibles** (qu'on retire pour nettoyer).
+    
+## 1. La Prothèse Fixe (Couronnes et Bridges)
+C'est la solution la plus confortable et la plus esthétique. Elle imite parfaitement la sensation des dents naturelles.
+
+### La Couronne
+Elle vient "coiffer" une dent abîmée ou dévitalisée pour la renforcer.
+- **Prix moyen au Sénégal** : Entre 150 000 et 350 000 FCFA selon le matériau (Céramo-métal ou Zircone).
+- **Durée de vie** : 10 à 20 ans avec une bonne hygiène.
+
+### Le Bridge
+Il remplace une dent manquante en prenant appui sur les dents voisines.
+- **Avantage** : fixe et solide.
+- **Inconvénient** : nécessite de tailler les dents saines à côté.
+- **Prix** : Multipliez le prix d'une couronne par le nombre d'éléments (généralement 3 pour remplacer 1 dent).
+
+## 2. La Prothèse Amovible (Le "Dentier")
+C'est la solution la plus économique, souvent utilisée quand il manque beaucoup de dents.
+
+### Partielle (stellite ou résine)
+Elle remplace quelques dents et tient grâce à des crochets.
+- **Prix moyen** : À partir de 75 000 - 150 000 FCFA selon le nombre de dents.
+- **Avantage** : Rapide à réaliser et peu coûteux.
+
+### Complète
+Quand il n'y a plus de dents. Elle tient par effet ventouse.
+- **Prix** : Sur devis, généralement plus abordable que les implants.
+
+## 3. Le "Must" : La Prothèse sur Implants
+C'est une prothèse fixe (couronne ou bridge) qui repose sur une racine artificielle (l'implant) au lieu des dents voisines.
+- **Le top du confort** : On ne touche pas aux autres dents.
+- **Prix** : Comptez le prix de l'implant + le prix de la couronne. (Voir notre article sur les implants).
+
+> **Conseil du Dr SAO** : "Le choix dépend de votre budget, mais aussi de l'état de votre os et de vos autres dents. Ne restez pas avec un trou : les dents voisines vont bouger et cela coûtera plus cher à réparer plus tard !"`,
+    faq: [
+      {
+        q: "Quelle est la prothèse la moins chère ?",
+        a: "La prothèse amovible en résine est la solution la plus économique au départ.",
+      },
+      {
+        q: "Est-ce que la prothèse fixe fait mal ?",
+        a: "Non, une fois posée, elle se fait oublier comme une vraie dent. La pose se fait sous anesthésie et est indolore.",
+      },
+    ],
+  },
+  {
+    slug: "appareil-dentaire-prix-dakar-guide-complet",
+    title: "Appareil Dentaire Prix Dakar : Le Guide Complet (2026)",
+    description:
+      "Quel est le prix d'un appareil dentaire à Dakar ? Bagues, aligneurs ou dentiers : tout savoir sur les tarifs et les options d'orthodontie et de prothèse.",
+    date: "2026-01-29",
+    category: "Orthodontie",
+    tags: [
+      "appareil dentaire prix dakar",
+      "prix appareil dentaire au sénégal",
+      "appareil dentaire",
+      "orthodontie dakar",
+      "dentier",
+    ],
+    author: AUTHORS.sao,
+    cover: appareilGuideCover,
+    pinned: true,
+    readingMinutes: 10,
+    content: `L'expression "appareil dentaire" peut désigner deux choses très différentes : les **bagues** pour aligner les dents (orthodontie) ou les **dentiers** pour remplacer les dents (prothèse). Voici un guide clair des prix pratiqués à Dakar en 2026 pour vous y retrouver.
+
+## 1. Appareil pour aligner les dents (Orthodontie)
+C'est le traitement pour avoir un sourire droit, pour enfants et adultes.
+
+### Les Bagues Métalliques
+- **Description** : Des petits carrés en métal collés sur les dents.
+- **Prix moyen** : Le traitement complet coûte souvent entre 600 000 et 1 200 000 FCFA, étalé sur 1 ou 2 ans.
+- **Efficacité** : Maximale.
+
+### Les Aligneurs Invisibles (type Invisalign)
+- **Description** : Des gouttières transparentes amovibles.
+- **Prix moyen** : À partir de 1 500 000 FCFA. C'est plus cher car c'est une technologie numérique importée.
+
+## 2. Appareil pour remplacer les dents (Prothèse amovible)
+C'est ce qu'on appelle communément le dentier.
+
+### L'appareil partiel
+- **Pour qui ?** Il vous manque quelques dents.
+- **Prix** : Dépend du nombre de dents. Comptez environ 15 000 à 25 000 FCFA par dent remplacée sur une base résine (prix indicatif variable selon les cabinets).
+
+### L'appareil complet
+- **Pour qui ?** Toutes les dents de l'arcade sont absentes.
+- **Prix** : Un complet haut ou bas coûte généralement entre 150 000 et 300 000 FCFA selon la qualité des dents choisies et de la résine.
+
+## Comment obtenir un prix exact ?
+Il est impossible de donner un prix ferme par téléphone.
+1.  Prenez rendez-vous pour une **consultation**.
+2.  Le dentiste examine votre bouche (nombre de dents, état des gencives).
+3.  Il vous remet un **devis écrit** et détaillé.
+
+> À la Clinique DABIA, nous proposons des facilités de paiement pour les traitements longs comme l'orthodontie.`,
+    faq: [
+      {
+        q: "Est-ce remboursé par les assurances ?",
+        a: "Les appareils de prothèse (dentiers) sont souvent partiellement couverts. L'orthodontie est parfois couverte pour les enfants, rarement pour les adultes.",
+      },
+      {
+        q: "Peut-on payer petit à petit ?",
+        a: "Pour l'orthodontie, oui, le paiement est toujours échelonné sur la durée du traitement (par mois ou trimestre).",
+      },
+    ],
+  },
+  {
+    slug: "clinique-dentaire-dabia-dakar-expert-tarifs",
+    title:
+      "Clinique Dentaire DABIA : Votre Expert Dentiste à Dakar (Avis & Tarifs)",
+    description:
+      "Pourquoi choisir la Clinique DABIA pour vos soins ? Expertise, technologies modernes et transparence des tarifs. Découvrez l'avis de nos patients.",
+    date: "2026-01-28",
+    category: "Conseils",
+    tags: [
+      "clinique dabia",
+      "clinique dentaire dabia",
+      "dentiste dakar",
+      "tarif dentiste dakar",
+      "avis dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: cliniqueExpertCover,
+    pinned: true,
+    readingMinutes: 6,
+    content: `Si vous cherchez un **dentiste de confiance à Dakar**, la Clinique Dentaire DABIA est devenue une référence pour la qualité de ses soins et son approche humaine. Située stratégiquement pour être accessible depuis **Liberté 6**, **Sicap Foire** et les **Parcelles Assainies**, nous accueillons patients locaux et expatriés.
+
+## Pourquoi nous choisir ?
+
+### 1. Une technologie de pointe
+Nous ne faisons pas de compromis sur le diagnostic.
+- **Radio Panoramique & 3D** sur place : Pas besoin de courir dans un centre de radiologie.
+- **Scanner Intra-oral** : Fini la pâte à empreinte qui donne la nausée ! Vos dents sont scannées en 3D.
+
+### 2. Transparence totale sur les tarifs
+C'est souvent le point noir des soins dentaires. Chez DABIA :
+- Pas de "prix à la tête du client".
+- Un **devis clair** est remis avant chaque soin coûteux.
+- Nous vous expliquons la différence entre les options (ex: couronne métal vs zircone) pour que vous choisissiez selon votre budget.
+
+### 3. Hygiène irréprochable
+Nous suivons les normes internationales de stérilisation (autoclave classe B, instruments sous sachets). Votre sécurité est notre priorité absolue.
+
+## Nos spécialités
+- **Implantologie** : Remplacer vos dents durablement.
+- **Esthétique** : Facettes et blanchiment pour un sourire de star.
+- **Orthodontie** : Pour aligner les dents des enfants et des adultes.
+- **Urgences** : Nous gardons des créneaux pour vous soulager rapidement.
+
+> **L'avis de nos patients** : "Enfin un dentiste qui prend le temps d'expliquer et qui ne fait pas mal !"
+> Venez vérifier par vous-même. Prenez rendez-vous en ligne en quelques clics.`,
+    faq: [
+      {
+        q: "Où se trouve la clinique ?",
+        a: "Nous sommes situés dans une zone calme et accessible, avec un stationnement facile. Appelez-nous pour le plan exact.",
+      },
+      {
+        q: "Acceptez-vous les nouveaux patients ?",
+        a: "Oui, nous sommes ravis d'accueillir de nouveaux sourires dans la famille DABIA.",
+      },
+    ],
+  },
   {
     slug: "guide-tarifs-dentiste-dakar-2025",
     title:
