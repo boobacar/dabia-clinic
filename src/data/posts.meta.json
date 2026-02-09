@@ -1,5 +1,45 @@
 [
   {
+    "slug": "soins-dentaires-pendant-ramadan-jeune",
+    "title": "Aller chez le dentiste casse-t-il le jeûne ? Ce qu'il faut savoir",
+    "description": "Anesthésie, détartrage, extraction : quels soins dentaires sont autorisés pendant le Ramadan au Sénégal ? Le point sur les avis religieux et médicaux.",
+    "date": "2026-02-15",
+    "category": "Conseils",
+    "tags": ["ramadan", "dentiste dakar", "soins dentaires", "jeûne"]
+  },
+  {
+    "slug": "mauvaise-haleine-ramadan-conseils-dakar",
+    "title": "Mauvaise haleine pendant le Ramadan : Causes et solutions à Dakar",
+    "description": "Bouche sèche, jeûne et mauvaise haleine (halitose) : nos astuces pour garder une haleine fraîche toute la journée pendant le Ramadan.",
+    "date": "2026-02-14",
+    "category": "Conseils",
+    "tags": ["mauvaise haleine", "ramadan", "conseils dentiste", "halitose"]
+  },
+  {
+    "slug": "brosser-dents-pendant-ramadan-autorise",
+    "title": "Peut-on se brosser les dents pendant le jeûne ? La réponse du dentiste",
+    "description": "Dentifrice, Siwak ou brosse à sec ? Le point sur l'hygiène bucco-dentaire autorisée pendant les heures de jeûne.",
+    "date": "2026-02-13",
+    "category": "Prévention",
+    "tags": ["brossage dents", "ramadan", "hygiène bucco-dentaire"]
+  },
+  {
+    "slug": "quand-aller-dentiste-pendant-ramadan",
+    "title": "Quel est le meilleur moment pour aller chez le dentiste pendant le Ramadan ?",
+    "description": "Matin ou soir ? Comment organiser ses rendez-vous dentaires pendant le mois de Ramadan pour éviter la fatigue et l'hypoglycémie.",
+    "date": "2026-02-12",
+    "category": "Conseils",
+    "tags": ["rendez-vous dentiste", "horaires ramadan", "dakar"]
+  },
+  {
+    "slug": "urgence-dentaire-rompre-jeune-ramadan",
+    "title": "Urgence dentaire : Faut-il rompre le jeûne pour se soigner ?",
+    "description": "Rage de dent insupportable, antibiotiques, antidouleurs... Dans quels cas l'urgence dentaire autorise-t-elle à rompre le jeûne ?",
+    "date": "2026-02-10",
+    "category": "Urgences",
+    "tags": ["urgence dentaire", "douleur", "ramadan"]
+  },
+  {
     "slug": "guide-tarifs-dentiste-dakar-2025",
     "title": "Guide des Tarifs Dentaires à Dakar (2025) : transparence et juste prix",
     "description": "Combien coûte un détartrage, une extraction ou une consultation à Dakar ? Guide complet des tarifs moyens pratiqués et conseils pour votre budget santé.",

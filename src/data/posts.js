@@ -65,6 +65,13 @@ import protheseFixeAmovibleCover from "../assets/blog/prothese_fixe_vs_amovible.
 import appareilGuideCover from "../assets/blog/appareil_dentaire_guide.png";
 import cliniqueExpertCover from "../assets/blog/clinique_dabia_expert.png";
 
+// Nouveaux imports pour les articles Ramadan (2026)
+import ramadanSoinsCover from "../assets/blog/ramadan_soins.png";
+import ramadanHaleineCover from "../assets/blog/ramadan_haleine.png";
+import ramadanBrossageCover from "../assets/blog/ramadan_brossage.png";
+import ramadanRdvCover from "../assets/blog/ramadan_rdv.png";
+import ramadanUrgenceCover from "../assets/blog/ramadan_urgence.png";
+
 export const AUTHORS = {
   sao: {
     name: "Dr Fatoumata SAO",
@@ -4264,6 +4271,172 @@ En plus de la santé, le détartrage enlève les colorations (café, thé, tabac
       {
         q: "À quelle fréquence faut-il le faire ?",
         a: "Pour la plupart des gens, tous les 6 mois ou tous les ans. Votre dentiste vous le dira selon votre vitesse à faire du tartre.",
+      },
+    ],
+  },
+  {
+    slug: "soins-dentaires-pendant-ramadan-jeune",
+    title: "Aller chez le dentiste casse-t-il le jeûne ? Ce qu'il faut savoir",
+    description:
+      "Anesthésie, détartrage, extraction : quels soins dentaires sont autorisés pendant le Ramadan au Sénégal ? Le point sur les avis religieux et médicaux.",
+    date: "2026-02-15",
+    category: "Conseils",
+    tags: ["ramadan", "dentiste dakar", "soins dentaires", "jeûne"],
+    author: AUTHORS.sao,
+    cover: ramadanSoinsCover,
+    readingMinutes: 6,
+    content: `Le Ramadan est une période de spiritualité, mais c'est aussi le moment où beaucoup de patients hésitent à aller chez le dentiste par peur de rompre leur jeûne.
+    
+## Les soins dentaires et le jeûne
+La majorité des savants s'accordent à dire que les soins dentaires **ne rompent pas le jeûne**, à condition de ne rien avaler volontairement.
+
+### Ce qui est autorisé :
+1.  **L'anesthésie locale** : La piqûre n'est pas nutritive, elle ne casse donc pas le jeûne.
+2.  **Le détartrage** : L'eau utilisée pour nettoyer les dents est aspirée par la pompe à salive. Tant que vous n'avalez pas d'eau, c'est bon.
+3.  **Les soins de carie et extractions** : Idem, tant que le sang ou les débris ne sont pas avalés.
+4.  **Le Siwak** : Son utilisation est recommandée et purifiante.
+
+### Les précautions à prendre
+Si vous avez peur d'avaler de l'eau par mégarde, signalez-le à votre dentiste ! À la Clinique DABIA, nous redoublons de vigilance avec une aspiration chirurgicale puissante pour éviter tout risque.
+
+> **Notre conseil** : Ne repoussez pas un soin urgent. Une infection dentaire fatigue le corps et rend le jeûne plus difficile. Soignez-vous sans crainte.`,
+    faq: [
+      {
+        q: "L'anesthésie coupe-t-elle le jeûne ?",
+        a: "Non, car elle n'apporte aucun nutriment au corps. Elle est purement locale.",
+      },
+      {
+        q: "Puis-je avaler ma salive après un soin ?",
+        a: "Oui, une fois la bouche rincée, avaler sa salive est naturel et n'a aucun impact sur le jeûne.",
+      },
+    ],
+  },
+  {
+    slug: "mauvaise-haleine-ramadan-conseils-dakar",
+    title: "Mauvaise haleine pendant le Ramadan : Causes et solutions à Dakar",
+    description:
+      "Bouche sèche, jeûne et mauvaise haleine (halitose) : nos astuces pour garder une haleine fraîche toute la journée pendant le Ramadan.",
+    date: "2026-02-14",
+    category: "Conseils",
+    tags: ["mauvaise haleine", "ramadan", "conseils dentiste", "halitose"],
+    author: AUTHORS.sao,
+    cover: ramadanHaleineCover,
+    readingMinutes: 5,
+    content: `La mauvaise haleine (halitose) est fréquente pendant le Ramadan. C'est gênant pour soi et pour les autres, mais ce n'est pas une fatalité !
+
+## Pourquoi a-t-on mauvaise haleine en jeûnant ?
+La cause principale est la **sécheresse on buccale** (xérostomie).
+Quand on ne mange pas et ne boit pas, on produit moins de salive. Or, la salive nettoie naturellement la bouche. Moins de salive = plus de bactéries qui stagnent = mauvaises odeurs.
+
+## Les Solutions Efficaces
+1.  **Hydratez-vous bien la nuit** : Buvez beaucoup d'eau entre la rupture (Worgou) et le Kheoud pour faire des réserves.
+2.  **Le brossage de la langue** : 80% des bactéries responsables des odeurs sont sur la langue. Brossez-la doucement !
+3.  **Le Siwak** : Utilisé par le Prophète (PSL), il a des propriétés antibactériennes reconnues scientifiquement.
+4.  **L'Hygiène rigoureuse** : Brossez vos dents après le Kheoud (avant l'aube) pour éliminer tous les résidus alimentaires de la nuit.
+
+> Une haleine fraîche passe d'abord par une bouche propre. Un détartrage avant le Ramadan est l'idéal pour partir sur de bonnes bases.`,
+    faq: [
+      {
+        q: "Le bain de bouche est-il autorisé ?",
+        a: "Oui, tant qu'il est recraché totalement. Attention aux bains de bouche alcoolisés (à éviter). Préférez ceux sans alcool.",
+      },
+    ],
+  },
+  {
+    slug: "brosser-dents-pendant-ramadan-autorise",
+    title:
+      "Peut-on se brosser les dents pendant le jeûne ? La réponse du dentiste",
+    description:
+      "Dentifrice, Siwak ou brosse à sec ? Le point sur l'hygiène bucco-dentaire autorisée pendant les heures de jeûne.",
+    date: "2026-02-13",
+    category: "Prévention",
+    tags: ["brossage dents", "ramadan", "hygiène bucco-dentaire"],
+    author: AUTHORS.sao,
+    cover: ramadanBrossageCover,
+    readingMinutes: 4,
+    content: `C'est une question qui revient chaque année : "Est-ce que je peux me brosser les dents le matin sans casser mon jeûne ?"
+LA RÉPONSE EST **OUI**.
+
+## L'avis religieux et médical
+L'Islam valorise la propreté. Se laver les dents est autorisé et même encouragé pour l'hygiène sociale.
+Le seul interdit est d'avaler le produit ou l'eau.
+
+## Comment se brosser les dents sans risque ?
+1.  **Utilisez peu de dentifrice** : Une quantité de la taille d'un grain de riz suffit.
+2.  **Ne gargarisez pas au fond de la gorge** : Rincez délicatement et recrachez tout de suite.
+3.  **Privilégiez le Siwak** en journée si le goût du dentifrice vous fait peur. C'est la brosse à dents naturelle par excellence !
+
+## Le moment idéal
+Pour être tranquille, faites un brossage complet et minutieux (3 minutes) **après le repas du matin (Kheoud)**, juste avant l'heure de l'Imssak. Comme ça, vous démarrez la journée avec des dents propres et l'esprit serein.`,
+    faq: [
+      {
+        q: "Le goût du dentifrice rompt-il le jeûne ?",
+        a: "Non, le goût dans la bouche ne rompt pas le jeûne tant que la matière n'est pas avalée.",
+      },
+    ],
+  },
+  {
+    slug: "quand-aller-dentiste-pendant-ramadan",
+    title:
+      "Quel est le meilleur moment pour aller chez le dentiste pendant le Ramadan ?",
+    description:
+      "Matin ou soir ? Comment organiser ses rendez-vous dentaires pendant le mois de Ramadan pour éviter la fatigue et l'hypoglycémie.",
+    date: "2026-02-12",
+    category: "Conseils",
+    tags: ["rendez-vous dentiste", "horaires ramadan", "dakar"],
+    author: AUTHORS.sao,
+    cover: ramadanRdvCover,
+    readingMinutes: 4,
+    content: `Pendant le Ramadan, notre rythme biologique change. Pour vos soins dentaires à Dakar, le choix de l'heure est stratégique pour votre confort.
+
+## 1. Le Matin (De 9h à 12h) : L'idéal
+C'est le meilleur moment pour les soins techniques (caries, couronnes).
+*   **Pourquoi ?** Vous avez encore de l'énergie du repas du matin. Votre taux de sucre est stable.
+*   **Avantage** : Vous êtes moins stressé et le dentiste est aussi plus frais !
+
+## 2. L'après-midi : À éviter pour les gros soins
+Vers 14h-16h, la fatigue et la soif se font sentir. L'hypoglycémie peut rendre le rendez-vous désagréable (tête qui tourne). Réservez ces créneaux pour des contrôles simples ou des urgences.
+
+## 3. Après la rupture (Le soir)
+Certains cabinets ouvrent tard ou le samedi. C'est le moment "confort" : vous avez mangé, bu, et vous pouvez avaler votre salive sans stress.
+À la Clinique DABIA, nous aménageons nos horaires pour vous recevoir dans les meilleures conditions.
+
+> **Conseil** : Si vous êtes diabétique, parlez-en absolument à votre dentiste avant de venir à jeûn !`,
+    faq: [
+      {
+        q: "Faites-vous des nocturnes pendant le Ramadan ?",
+        a: "Contactez le secrétariat pour connaître nos horaires aménagés spécial Ramadan.",
+      },
+    ],
+  },
+  {
+    slug: "urgence-dentaire-rompre-jeune-ramadan",
+    title: "Urgence dentaire : Faut-il rompre le jeûne pour se soigner ?",
+    description:
+      "Rage de dent insupportable, antibiotiques, antidouleurs... Dans quels cas l'urgence dentaire autorise-t-elle à rompre le jeûne ?",
+    date: "2026-02-10",
+    category: "Urgences",
+    tags: ["urgence dentaire", "douleur", "ramadan"],
+    author: AUTHORS.sao,
+    cover: ramadanUrgenceCover,
+    readingMinutes: 6,
+    content: `La douleur dentaire est l'une des plus intenses qui soit. L'Islam est une religion de facilité qui préserve la santé avant tout.
+
+## Quand la douleur devient insupportable
+Si vous avez une "rage de dent" (pulpite) ou un abcès avec fièvre :
+1.  **La souffrance n'est pas méritoire** : Rester dans une douleur extrême peut faire monter votre tension et vous mettre en danger.
+2.  **La prise de médicaments** : Si vous devez absolument prendre des antibiotiques ou des antidouleurs puissants en journée, cela rompt le jeûne.
+3.  **L'avis religieux** : Le malade est exempté de jeûne. Une infection dentaire aiguë EST une maladie. Vous pouvez rompre votre jeûne pour vous soigner et rattraper le jour plus tard.
+
+## Que faire en cas d'urgence ?
+Ne restez pas chez vous à souffrir en attendant le coucher du soleil.
+Venez consulter immédiatement. Le dentiste vous soulagera (geste d'urgence). Si cela nécessite de boire ou de prendre un médicament, votre santé prime.
+
+> Dieu veut pour vous la facilité, Il ne veut pas pour vous la difficulté (Coran 2:185).`,
+    faq: [
+      {
+        q: "Une extraction dentaire oblige-t-elle à rompre le jeûne ?",
+        a: "Non, pas l'acte en lui-même. Mais si vous avez besoin d'antidouleurs juste après, il faudra peut-être rompre le jeûne ce jour-là.",
       },
     ],
   },
