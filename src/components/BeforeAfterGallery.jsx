@@ -56,7 +56,7 @@ export default function BeforeAfterGallery() {
                 >
                   <ReactCompareSliderImage
                     src={pair.before}
-                    alt={`Avant ${idx + 1}`}
+                    alt={`Avant dentiste Dakar ${idx + 1}`}
                     style={{
                       objectFit: "cover",
                       width: "100%",
@@ -78,7 +78,7 @@ export default function BeforeAfterGallery() {
                 >
                   <ReactCompareSliderImage
                     src={pair.after}
-                    alt={`Après ${idx + 1}`}
+                    alt={`Après dentiste Dakar ${idx + 1}`}
                     style={{
                       objectFit: "cover",
                       width: "100%",
