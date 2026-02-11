@@ -64,7 +64,8 @@ const HeroSlideshow = () => {
 
   const currentObj = useMemo(() => heroImages[index], [index]);
   const isSlideshow = enableLoop && heroImages.length > 1;
-  const heroAlt = "Dentiste Dakar - Clinique dentaire DABIA";
+  const heroAlt =
+    "Dentiste Dakar - Clinique dentaire DABIA - Clinique dentaire dakar";
 
   return (
     <section className="relative h-screen overflow-hidden bg-black">
