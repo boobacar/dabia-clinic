@@ -103,7 +103,8 @@ const RendezVous = () => {
       sendEvent("form_rendez_vous_submit", { step: "start" });
     } catch {}
 
-    const emailValue = form.current.email.value;
+    const emailInput = form.current?.querySelector('input[name="email"]');
+    const emailValue = emailInput?.value?.trim() || "";
     const promises = [];
 
     // 1. Notification Admin (Toujours envoyer)
