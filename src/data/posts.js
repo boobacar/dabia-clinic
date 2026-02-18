@@ -127,6 +127,159 @@ export const TAGS = [
 
 export const POSTS = [
   {
+    slug: "dentiste-dakar-prix-consultation-2026",
+    title: "Dentiste Dakar : Prix Consultation et Soins (Guide 2026)",
+    description:
+      "Combien coûte un dentiste à Dakar ? Consultation, détartrage, urgence, soin de carie et devis: repères de prix et conseils pour bien planifier votre budget.",
+    date: "2026-02-18",
+    category: "Conseils",
+    tags: [
+      "dentiste dakar",
+      "tarif dentiste dakar",
+      "prix consultation dentiste dakar",
+      "clinique dentaire dakar",
+      "détartrage dentaire dakar prix",
+    ],
+    author: AUTHORS.sao,
+    cover: prixSoinsCover,
+    pinned: true,
+    readingMinutes: 8,
+    content: `Vous cherchez un **dentiste à Dakar** et vous voulez connaître les tarifs avant de prendre rendez-vous ? C'est normal. Voici un guide clair pour estimer votre budget et éviter les mauvaises surprises.
+
+## Prix indicatifs à Dakar (selon le cas)
+- **Consultation** : selon l'examen clinique et les besoins d'imagerie
+- **Détartrage** : selon la quantité de tartre et l'état gingival
+- **Soin de carie** : dépend de la profondeur et du matériau utilisé
+- **Urgence dentaire** : variable selon la cause (douleur, infection, fracture)
+
+> Un tarif précis ne peut être confirmé qu'après examen. À la Clinique DABIA, un plan de traitement clair est expliqué avant toute intervention.
+
+## Pourquoi les prix varient ?
+1. Complexité du cas
+2. Matériaux utilisés
+3. Besoin d'imagerie (radio, scanner)
+4. Nombre de séances nécessaires
+
+## Comment payer moins cher sur le long terme
+- Faire un contrôle régulier
+- Traiter tôt une carie ou une gingivite
+- Demander un plan de soins par étapes
+- Vérifier votre prise en charge IPM/assurance
+
+Pour une estimation adaptée à votre situation, le plus simple est de demander une consultation et un devis personnalisé.`,
+    faq: [
+      {
+        q: "Combien coûte une consultation dentiste à Dakar ?",
+        a: "Le tarif dépend du bilan nécessaire. Un devis détaillé est remis après examen clinique.",
+      },
+      {
+        q: "Peut-on obtenir un plan de soins progressif ?",
+        a: "Oui, selon le diagnostic, les soins peuvent être phasés pour mieux gérer le budget.",
+      },
+    ],
+  },
+  {
+    slug: "clinique-dentaire-dakar-comment-choisir",
+    title: "Clinique Dentaire Dakar : Comment choisir la bonne clinique ?",
+    description:
+      "Découvrez les critères concrets pour choisir une clinique dentaire à Dakar: expertise, technologie, hygiène, clarté des devis et qualité du suivi.",
+    date: "2026-02-18",
+    category: "Conseils",
+    tags: [
+      "clinique dentaire dakar",
+      "dentiste dakar",
+      "meilleur dentiste dakar",
+      "cabinet dentaire dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: cliniqueExpertCover,
+    pinned: true,
+    readingMinutes: 7,
+    content: `Trouver une **clinique dentaire à Dakar** ne se résume pas au prix. Le bon choix combine sécurité, qualité des soins et confiance.
+
+## 5 critères essentiels
+1. **Compétence médicale** : équipe formée, expérience documentée
+2. **Plateau technique** : imagerie moderne, scanner intra-oral, protocoles à jour
+3. **Hygiène et stérilisation** : normes strictes, traçabilité
+4. **Transparence** : devis clair, options expliquées, pas de surprise
+5. **Suivi patient** : conseils post-soins, contrôles, disponibilité en cas de gêne
+
+## Signaux de qualité d'une bonne clinique
+- Explications pédagogiques avant de commencer
+- Plan de traitement par étapes
+- Temps d'écoute réel pendant la consultation
+- Communication simple (téléphone, WhatsApp, formulaire)
+
+## Erreurs fréquentes à éviter
+- Choisir uniquement sur le tarif affiché
+- Reporter un soin nécessaire
+- Ignorer les avis et la qualité du suivi
+
+Vous pouvez commencer par une consultation bilan, poser vos questions, puis comparer la clarté des réponses reçues.`,
+    faq: [
+      {
+        q: "Comment savoir si une clinique est fiable ?",
+        a: "Regardez la qualité du diagnostic, la stérilisation, la transparence du devis et le suivi proposé.",
+      },
+      {
+        q: "Faut-il choisir la clinique la moins chère ?",
+        a: "Pas forcément. Le coût initial peut être plus bas, mais la durabilité et la qualité du traitement comptent davantage.",
+      },
+    ],
+  },
+  {
+    slug: "urgence-dentiste-dakar-24h-que-faire",
+    title: "Urgence Dentiste Dakar 24h : Que faire immédiatement ?",
+    description:
+      "Rage de dent, gonflement, dent cassée: les bons réflexes avant de consulter en urgence à Dakar, et les signes qui imposent une prise en charge rapide.",
+    date: "2026-02-18",
+    category: "Urgences",
+    tags: [
+      "urgence dentiste 24h",
+      "urgence dentaire 24 24 dakar",
+      "dentiste dakar",
+      "douleur dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: urgenceActionCover,
+    pinned: true,
+    readingMinutes: 6,
+    content: `Une **urgence dentaire à Dakar** peut vite devenir très douloureuse. Voici les actions à faire tout de suite en attendant votre prise en charge.
+
+## Réflexes immédiats
+- Prenez un antalgique compatible (évitez l'automédication risquée)
+- Rincez doucement à l'eau tiède salée
+- Évitez de mâcher du côté douloureux
+- Contactez rapidement votre clinique
+
+## Cas fréquents
+### 1) Rage de dent
+Douleur pulsatile, parfois insomniante. Une consultation rapide évite l'aggravation.
+
+### 2) Gonflement / infection
+Si gonflement important ou fièvre, priorité élevée.
+
+### 3) Dent cassée
+Conservez le fragment si possible et consultez sans tarder.
+
+## Quand aller aux urgences hospitalières ?
+- Difficulté à respirer/avaler
+- Fièvre persistante avec altération de l'état général
+- Gonflement qui s'étend vers l'œil ou le cou
+
+En cas de doute, appelez immédiatement. Un triage téléphonique permet de vous orienter vers la bonne prise en charge.`,
+    faq: [
+      {
+        q: "Une rage de dent est-elle une urgence ?",
+        a: "Oui, surtout si la douleur est intense ou persistante. Une prise en charge précoce limite les complications.",
+      },
+      {
+        q: "Que faire si la douleur commence la nuit ?",
+        a: "Soulagez la douleur avec les mesures adaptées et contactez la clinique dès l'ouverture pour un rendez-vous prioritaire.",
+      },
+    ],
+  },
+  {
     slug: "prothese-dentaire-fixe-prix-senegal-amovible",
     title: "Prothèse Dentaire Fixe vs Amovible au Sénégal : Prix et Solutions",
     description:
