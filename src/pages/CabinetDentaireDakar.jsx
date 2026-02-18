@@ -176,6 +176,32 @@ export default function CabinetDentaireDakar() {
         </ul>
       </motion.section>
 
+      <section className="mt-10 p-5 rounded-xl border bg-white shadow-sm">
+        <h2 className="text-xl font-bold text-[#ad9d64]">
+          Ressources pratiques avant votre rendez-vous
+        </h2>
+        <div className="mt-3 grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
+          <Link className="underline text-[#bb2988]" to="/blog/dentiste-dakar-prix-consultation-2026">
+            Tarif dentiste Dakar : guide pratique
+          </Link>
+          <Link className="underline text-[#bb2988]" to="/blog/guide-prix-dentiste-dakar-consultation-soins">
+            Guide prix consultation et soins
+          </Link>
+          <Link className="underline text-[#bb2988]" to="/blog/clinique-dentaire-dakar-comment-choisir">
+            Bien choisir sa clinique dentaire à Dakar
+          </Link>
+          <Link className="underline text-[#bb2988]" to="/blog/soins-dentaires-pendant-ramadan-jeune">
+            Ramadan : soins dentaires et jeûne
+          </Link>
+          <Link className="underline text-[#bb2988]" to="/blog/ramadan-jeune-soins-dentaires-dakar">
+            Ramadan à Dakar : conseils dentaires
+          </Link>
+          <Link className="underline text-[#bb2988]" to="/rendez-vous">
+            Prendre rendez-vous rapidement
+          </Link>
+        </div>
+      </section>
+
       {/* FAQ visible, données FAQPage déjà fournies dans jsonLd via Seo */}
       <FAQ
         className="mt-10"

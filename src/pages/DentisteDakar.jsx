@@ -525,6 +525,32 @@ export default function DentisteDakar() {
         </Link>
       </div>
 
+      <section className="mt-10 p-5 rounded-xl border bg-white shadow-sm">
+        <h2 className="text-xl font-bold text-[#ad9d64]">
+          Guides utiles pour choisir votre dentiste à Dakar
+        </h2>
+        <div className="mt-3 grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
+          <Link className="underline text-[#bb2988]" to="/blog/dentiste-dakar-prix-consultation-2026">
+            Prix consultation dentiste à Dakar (2026)
+          </Link>
+          <Link className="underline text-[#bb2988]" to="/blog/clinique-dentaire-dakar-comment-choisir">
+            Comment choisir une clinique dentaire à Dakar
+          </Link>
+          <Link className="underline text-[#bb2988]" to="/blog/urgence-dentiste-dakar-24h-que-faire">
+            Urgence dentiste Dakar 24h : que faire
+          </Link>
+          <Link className="underline text-[#bb2988]" to="/blog/soins-dentaires-pendant-ramadan-jeune">
+            Ramadan : soins dentaires et jeûne
+          </Link>
+          <Link className="underline text-[#bb2988]" to="/blog/quand-aller-dentiste-pendant-ramadan">
+            Ramadan : meilleur horaire pour consulter
+          </Link>
+          <Link className="underline text-[#bb2988]" to="/rendez-vous">
+            Prendre rendez-vous en ligne
+          </Link>
+        </div>
+      </section>
+
       {/* FAQ – Dentiste Dakar (JSON-LD déjà injecté via Seo) */}
       <FAQ
         className="mt-10"

@@ -264,6 +264,32 @@ export default function UrgenceDentaire() {
         <GoogleMapSection />
       </div>
 
+      <section className="mt-10 p-5 rounded-xl border bg-white shadow-sm">
+        <h2 className="text-xl font-bold text-[#ad9d64]">
+          Lire aussi (urgence + Ramadan)
+        </h2>
+        <div className="mt-3 grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
+          <Link className="underline text-[#bb2988]" to="/blog/urgence-dentiste-dakar-24h-que-faire">
+            Urgence dentiste Dakar 24h : que faire
+          </Link>
+          <Link className="underline text-[#bb2988]" to="/blog/urgence-dentaire-rompre-jeune-ramadan">
+            Urgence dentaire : faut-il rompre le jeûne ?
+          </Link>
+          <Link className="underline text-[#bb2988]" to="/blog/quand-aller-dentiste-pendant-ramadan">
+            Ramadan : quand consulter le dentiste
+          </Link>
+          <Link className="underline text-[#bb2988]" to="/blog/mauvaise-haleine-ramadan-conseils-dakar">
+            Mauvaise haleine pendant Ramadan
+          </Link>
+          <Link className="underline text-[#bb2988]" to="/blog/brosser-dents-pendant-ramadan-autorise">
+            Brosser les dents pendant le jeûne
+          </Link>
+          <Link className="underline text-[#bb2988]" to="/rendez-vous?motif=urgence&soin=Consultation">
+            RDV urgence en ligne
+          </Link>
+        </div>
+      </section>
+
       {/* FAQ – affiche visible, JSON-LD déjà injecté via Seo */}
       <FAQ
         className="mt-10"

@@ -127,6 +127,55 @@ export const TAGS = [
 
 export const POSTS = [
   {
+    slug: "ramadan-dentiste-dakar-jeune-horaires-2026",
+    title: "Ramadan et Dentiste à Dakar : Horaires, Jeûne et Soins (2026)",
+    description:
+      "Peut-on aller chez le dentiste pendant le Ramadan au Sénégal ? Horaires recommandés, soins possibles en jeûnant, et quand consulter en urgence.",
+    date: "2026-02-18",
+    category: "Conseils",
+    tags: [
+      "ramadan",
+      "dentiste dakar",
+      "jeûne",
+      "soins dentaires",
+      "urgence dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: ramadanRdvCover,
+    pinned: true,
+    readingMinutes: 6,
+    content: `Pendant le mois de Ramadan, beaucoup de patients à Dakar se posent la même question : **peut-on consulter un dentiste sans invalider le jeûne ?**
+
+## Peut-on aller chez le dentiste en jeûnant ?
+Oui. Une consultation, un diagnostic, un détartrage léger ou des soins locaux sont généralement possibles. L'important est d'éviter d'avaler volontairement de l'eau ou des produits.
+
+## Quels créneaux privilégier ?
+- **Fin de journée (avant la rupture)** : pratique si une gêne survient après le soin
+- **Soirée (après ftour)** : idéal pour certains actes plus longs
+- **Matin** : possible pour un contrôle rapide
+
+## Et pour une urgence dentaire ?
+En cas de douleur intense, gonflement, fièvre ou dent cassée, il faut consulter rapidement. La priorité reste la santé.
+
+## Conseils pratiques pendant Ramadan
+1. Hydratation correcte entre le ftour et le shour
+2. Brossage doux après les repas
+3. Ne pas retarder un soin urgent
+4. Demander un plan de traitement adapté au rythme du jeûne
+
+À la Clinique DABIA, nous adaptons les rendez-vous pendant Ramadan pour plus de confort et de sérénité.`,
+    faq: [
+      {
+        q: "Une consultation dentaire annule-t-elle le jeûne ?",
+        a: "La consultation en elle-même n'annule pas le jeûne. Le praticien adapte les gestes et vous explique les précautions.",
+      },
+      {
+        q: "Dois-je reporter une urgence dentaire après Ramadan ?",
+        a: "Non. Une urgence dentaire doit être traitée rapidement pour éviter les complications.",
+      },
+    ],
+  },
+  {
     slug: "dentiste-dakar-prix-consultation-2026",
     title: "Dentiste Dakar : Prix Consultation et Soins (Guide 2026)",
     description:
