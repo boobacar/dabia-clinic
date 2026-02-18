@@ -121,7 +121,10 @@ export default function UrgenceDentaire() {
             <FaWhatsapp className="text-green-600" /> WhatsApp
           </a>
           <Magnetic>
-            <Link to="/rendez-vous" className="ripple inline-flex items-center gap-2 btn-cta">
+            <Link
+              to="/rendez-vous?motif=urgence&soin=Consultation"
+              className="ripple inline-flex items-center gap-2 btn-cta"
+            >
               Prendre rendez‑vous
             </Link>
           </Magnetic>
@@ -242,7 +245,10 @@ export default function UrgenceDentaire() {
         >
           <FaWhatsapp className="text-green-600" /> WhatsApp
         </a>
-        <Link to="/rendez-vous" className="inline-flex items-center gap-2 btn-cta">
+        <Link
+          to="/rendez-vous?motif=urgence&soin=Consultation"
+          className="inline-flex items-center gap-2 btn-cta"
+        >
           Prendre rendez‑vous
         </Link>
         <Link

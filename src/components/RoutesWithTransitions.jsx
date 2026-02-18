@@ -1,5 +1,5 @@
 import React, { useEffect, useState, lazy } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import Home from "../pages/Home"; // Static import for LCP
 
 // lazy routes (reuse same imports as App.jsx)
@@ -69,6 +69,10 @@ export default function RoutesWithTransitions() {
       <Route
         path="/cabinet-dentaire-dakar"
         element={<CabinetDentaireDakar />}
+      />
+      <Route
+        path="/clinique-dentaire-dakar"
+        element={<Navigate to="/cabinet-dentaire-dakar" replace />}
       />
       <Route path="/personnel" element={<Personnel />} />
       <Route path="/competences/:slug" element={<CompetenceDetail />} />

@@ -139,6 +139,9 @@ const Home = () => {
             <Link to="/cabinet-dentaire-dakar" className="btn-cta btn-cta-sm">
               Cabinet dentaire
             </Link>
+            <Link to="/clinique-dentaire-dakar" className="btn-cta btn-cta-sm">
+              Clinique dentaire Dakar
+            </Link>
             <Link to="/urgence-dentaire-dakar" className="btn-cta btn-cta-sm">
               Urgence
             </Link>

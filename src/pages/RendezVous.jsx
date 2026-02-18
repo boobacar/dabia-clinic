@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import SuccessModal from "../components/SuccessModal";
 import { AnimatePresence, motion } from "framer-motion";
@@ -8,6 +8,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import imgrv from "../assets/rendezvous-dabia.webp";
 import Seo from "../components/Seo";
 import Breadcrumbs from "../components/Breadcrumbs";
+import { useSearchParams } from "react-router-dom";
 import { addDays, startOfDay, format } from "date-fns";
 import { sendEvent } from "../analytics/ga4";
 import FancySelect from "../components/FancySelect";
@@ -25,10 +26,7 @@ const HorairesCard = ({ className = "" }) => (
   >
     <p className="text-sm font-semibold text-[#ad9d64] mb-2">Nos horaires</p>
     <ul className="text-sm text-gray-700 space-y-1">
-      <li>Lundi – 09:00–16:30</li>
-      <li>Mardi – 09:00–16:30</li>
-      <li>Mercredi – 09:00–16:30</li>
-      <li>Jeudi – 09:00–16:30</li>
+      <li>Lundi à Jeudi – 09:00–16:30</li>
       <li>Vendredi – 09:00–13:00, 15:00–16:30</li>
       <li>Samedi – 09:00–14:00</li>
       <li>Dimanche – Fermé</li>
@@ -41,6 +39,44 @@ const RendezVous = () => {
   const [status, setStatus] = useState("idle");
   const [showModal, setShowModal] = useState(false);
   const [date, setDate] = useState(minSelectableDate);
+  const [showAdvanced, setShowAdvanced] = useState(false);
+  const [hasStartedForm, setHasStartedForm] = useState(false);
+  const [searchParams] = useSearchParams();
+
+  const defaults = useMemo(() => {
+    const motif = (searchParams.get("motif") || "").toLowerCase();
+    const soin = searchParams.get("soin") || "";
+    return {
+      urgence: motif === "urgence",
+      soin,
+    };
+  }, [searchParams]);
+
+  useEffect(() => {
+    if (defaults.urgence || defaults.soin) {
+      setShowAdvanced(true);
+      try {
+        sendEvent("rdv_urgence_prefill", {
+          page_path: "/rendez-vous",
+          urgence: defaults.urgence ? "yes" : "no",
+          soin: defaults.soin || "none",
+        });
+      } catch {}
+    }
+  }, [defaults]);
+
+  const onFormStart = () => {
+    if (hasStartedForm) return;
+    setHasStartedForm(true);
+    try {
+      sendEvent("rdv_form_start", { page_path: "/rendez-vous" });
+    } catch {}
+  };
+
+  const scrollToForm = () => {
+    if (!form.current) return;
+    form.current.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -103,6 +139,7 @@ const RendezVous = () => {
         setDate(minSelectableDate);
         try {
           sendEvent("form_rendez_vous_submit", { step: "success" });
+          sendEvent("rdv_form_submit_success", { page_path: "/rendez-vous" });
         } catch {}
         try {
           confetti &&
@@ -166,17 +203,51 @@ const RendezVous = () => {
             confirmer l&apos;horaire exact.
           </p>
 
-          <div className="mt-10 grid gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.9fr)] items-start">
+          {/* Bloc conversion rapide */}
+          <div className="mt-6 rounded-2xl border border-[#e7dcbc] bg-white/90 p-4 md:p-5 shadow-sm">
+            <p className="text-sm md:text-base font-semibold text-[#ad9d64]">
+              Besoin d&apos;un rendez-vous rapide ?
+            </p>
+            <p className="mt-1 text-sm text-gray-700">
+              Choisissez l&apos;option la plus simple : appel, WhatsApp ou formulaire express.
+            </p>
+            <div className="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-2">
+              <a
+                href="tel:+221777039393"
+                className="btn-cta text-center"
+              >
+                Appeler maintenant
+              </a>
+              <a
+                href="https://wa.me/221777039393"
+                target="_blank"
+                rel="noreferrer"
+                className="btn-cta text-center"
+              >
+                WhatsApp
+              </a>
+              <button
+                type="button"
+                onClick={scrollToForm}
+                className="btn-cta"
+              >
+                Formulaire express (30s)
+              </button>
+            </div>
+          </div>
+
+          <div className="mt-8 grid gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.9fr)] items-start">
             <motion.form
               ref={form}
               onSubmit={handleSubmit}
+              onFocusCapture={onFormStart}
               className="space-y-6"
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.15 }}
             >
               <p className="text-xs text-red-500 text-right">
-                Les champs marqués d&apos;une * sont obligatoires.
+                Formulaire express : seuls Nom, Prénom, Téléphone et Date sont obligatoires.
               </p>
 
               <div className="grid md:grid-cols-2 gap-4">
@@ -186,6 +257,7 @@ const RendezVous = () => {
                     type="text"
                     name="nom"
                     required
+                    placeholder="Votre nom"
                     className="border border-[#e7dcbc] rounded-full px-4 py-3 text-base bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
                   />
                 </div>
@@ -195,6 +267,7 @@ const RendezVous = () => {
                     type="text"
                     name="prenom"
                     required
+                    placeholder="Votre prénom"
                     className="border border-[#e7dcbc] rounded-full px-4 py-3 text-base bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
                   />
                 </div>
@@ -206,15 +279,7 @@ const RendezVous = () => {
                   type="tel"
                   name="telephone"
                   required
-                  className="border border-[#e7dcbc] rounded-full px-4 py-3 text-base bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
-                />
-              </div>
-
-              <div className="flex flex-col">
-                <label className="text-sm text-gray-600 mb-1">Email</label>
-                <input
-                  type="email"
-                  name="email"
+                  placeholder="Ex: +221 77 000 00 00"
                   className="border border-[#e7dcbc] rounded-full px-4 py-3 text-base bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
                 />
               </div>
@@ -248,107 +313,138 @@ const RendezVous = () => {
               {/* Nos horaires juste sous la date sur mobile */}
               <HorairesCard className="mt-3 lg:hidden" />
 
-              <div className="flex flex-col">
-                <label className="text-sm text-gray-600 mb-1">
-                  Êtes-vous assuré(e) ?
-                </label>
-                <FancySelect
-                  name="assurance"
-                  placeholder="Sélectionner"
-                  options={[
-                    { value: "oui", label: "Oui" },
-                    { value: "non", label: "Non" },
-                  ]}
-                />
-              </div>
+              <div className="rounded-2xl border border-[#e7dcbc] bg-white/80 p-4">
+                <button
+                  type="button"
+                  onClick={() => setShowAdvanced((v) => !v)}
+                  className="w-full text-left text-sm font-semibold text-[#ad9d64]"
+                >
+                  {showAdvanced
+                    ? "Masquer les informations complémentaires"
+                    : "Ajouter des informations complémentaires (optionnel)"}
+                </button>
 
-              <div className="flex flex-col">
-                <label className="text-sm text-gray-600 mb-1">
-                  Types de soins
-                </label>
-                <FancySelect
-                  name="soin"
-                  placeholder="Sélectionner"
-                  options={[
-                    { value: "Consultation", label: "Consultation" },
-                    {
-                      value: "Esthétique dentaire",
-                      label: "Esthétique dentaire",
-                    },
-                    { value: "Parodontologie", label: "Parodontologie" },
-                    { value: "Implantologie", label: "Implantologie" },
-                    { value: "Endodontie", label: "Endodontie" },
-                    {
-                      value: "Facettes dentaires",
-                      label: "Facettes dentaires",
-                    },
-                    { value: "Orthodontie", label: "Orthodontie" },
-                    { value: "Greffe osseuse", label: "Greffe osseuse" },
-                    {
-                      value: "Blanchiment dentaire",
-                      label: "Blanchiment dentaire",
-                    },
-                  ]}
-                />
-              </div>
+                {showAdvanced && (
+                  <div className="mt-4 space-y-5">
+                    <div className="flex flex-col">
+                      <label className="text-sm text-gray-600 mb-1">Email</label>
+                      <input
+                        type="email"
+                        name="email"
+                        className="border border-[#e7dcbc] rounded-full px-4 py-3 text-base bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
+                      />
+                    </div>
 
-              <div>
-                <label className="text-sm text-gray-600 mb-1 block">
-                  Contact préféré
-                </label>
-                <div className="flex gap-6">
-                  <label className="flex items-center gap-2">
-                    <input type="radio" name="contact" value="courriel" />
-                    Par courriel
-                  </label>
-                  <label className="flex items-center gap-2">
-                    <input type="radio" name="contact" value="téléphone" />
-                    Par téléphone
-                  </label>
-                </div>
-              </div>
+                    <div className="flex flex-col">
+                      <label className="text-sm text-gray-600 mb-1">
+                        Êtes-vous assuré(e) ?
+                      </label>
+                      <FancySelect
+                        name="assurance"
+                        placeholder="Sélectionner"
+                        options={[
+                          { value: "oui", label: "Oui" },
+                          { value: "non", label: "Non" },
+                        ]}
+                      />
+                    </div>
 
-              <div>
-                <label className="text-sm text-gray-600 mb-1 block">
-                  Raison du rendez-vous :
-                </label>
-                <div className="space-y-2 text-sm text-gray-700">
-                  <label className="flex gap-2">
-                    <input
-                      type="checkbox"
-                      name="motif"
-                      value="nouveau patient"
-                    />
-                    Nouveau patient
-                  </label>
-                  <label className="flex gap-2">
-                    <input type="checkbox" name="motif" value="déjà patient" />
-                    Déjà patient
-                  </label>
-                  <label className="flex gap-2">
-                    <input type="checkbox" name="motif" value="modifier" />
-                    Modifier un rendez-vous
-                  </label>
-                  <label className="flex gap-2">
-                    <input type="checkbox" name="motif" value="enfant" />
-                    Rendez-vous pour mon enfant
-                  </label>
-                  <label className="flex gap-2">
-                    <input type="checkbox" name="motif" value="urgence" />
-                    Urgence dentaire
-                  </label>
-                </div>
-              </div>
+                    <div className="flex flex-col">
+                      <label className="text-sm text-gray-600 mb-1">
+                        Types de soins
+                      </label>
+                      <FancySelect
+                        name="soin"
+                        defaultValue={defaults.soin}
+                        placeholder="Sélectionner"
+                        options={[
+                          { value: "Consultation", label: "Consultation" },
+                          {
+                            value: "Esthétique dentaire",
+                            label: "Esthétique dentaire",
+                          },
+                          { value: "Parodontologie", label: "Parodontologie" },
+                          { value: "Implantologie", label: "Implantologie" },
+                          { value: "Endodontie", label: "Endodontie" },
+                          {
+                            value: "Facettes dentaires",
+                            label: "Facettes dentaires",
+                          },
+                          { value: "Orthodontie", label: "Orthodontie" },
+                          { value: "Greffe osseuse", label: "Greffe osseuse" },
+                          {
+                            value: "Blanchiment dentaire",
+                            label: "Blanchiment dentaire",
+                          },
+                        ]}
+                      />
+                    </div>
 
-              <div>
-                <label className="text-sm text-gray-600 mb-1">
-                  Message ou précisions
-                </label>
-                <textarea
-                  name="message"
-                  rows="4"
-                  className="w-full border border-[#e7dcbc] rounded-2xl px-4 py-3 text-base bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
-                ></textarea>
+                    <div>
+                      <label className="text-sm text-gray-600 mb-1 block">
+                        Contact préféré
+                      </label>
+                      <div className="flex gap-6">
+                        <label className="flex items-center gap-2">
+                          <input type="radio" name="contact" value="courriel" />
+                          Par courriel
+                        </label>
+                        <label className="flex items-center gap-2">
+                          <input type="radio" name="contact" value="téléphone" />
+                          Par téléphone
+                        </label>
+                      </div>
+                    </div>
+
+                    <div>
+                      <label className="text-sm text-gray-600 mb-1 block">
+                        Raison du rendez-vous :
+                      </label>
+                      <div className="space-y-2 text-sm text-gray-700">
+                        <label className="flex gap-2">
+                          <input
+                            type="checkbox"
+                            name="motif"
+                            value="nouveau patient"
+                          />
+                          Nouveau patient
+                        </label>
+                        <label className="flex gap-2">
+                          <input type="checkbox" name="motif" value="déjà patient" />
+                          Déjà patient
+                        </label>
+                        <label className="flex gap-2">
+                          <input type="checkbox" name="motif" value="modifier" />
+                          Modifier un rendez-vous
+                        </label>
+                        <label className="flex gap-2">
+                          <input type="checkbox" name="motif" value="enfant" />
+                          Rendez-vous pour mon enfant
+                        </label>
+                        <label className="flex gap-2">
+                          <input
+                            type="checkbox"
+                            name="motif"
+                            value="urgence"
+                            defaultChecked={defaults.urgence}
+                          />
+                          Urgence dentaire
+                        </label>
+                      </div>
+                    </div>
+
+                    <div>
+                      <label className="text-sm text-gray-600 mb-1">
+                        Message ou précisions
+                      </label>
+                      <textarea
+                        name="message"
+                        rows="4"
+                        className="w-full border border-[#e7dcbc] rounded-2xl px-4 py-3 text-base bg-white/90 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
+                      ></textarea>
+                    </div>
+                  </div>
+                )}
               </div>
 
               <button

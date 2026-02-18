@@ -5,10 +5,15 @@ export default function FancySelect({
   options,
   placeholder = "Sélectionner",
   className = "",
+  defaultValue = "",
 }) {
   const [open, setOpen] = useState(false);
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState(defaultValue);
   const containerRef = useRef(null);
+
+  useEffect(() => {
+    setValue(defaultValue || "");
+  }, [defaultValue]);
 
   useEffect(() => {
     const handleClickOutside = (event) => {

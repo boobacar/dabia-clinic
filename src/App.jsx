@@ -10,6 +10,7 @@ import RoutesWithTransitions from "./components/RoutesWithTransitions";
 import ScrollTopButton from "./components/ScrollTopButton";
 import LoadingOverlay from "./components/LoadingOverlay";
 import WhatsAppButton from "./components/WhatsAppButton";
+import StickyAppointmentBar from "./components/StickyAppointmentBar";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
       <Suspense fallback={<LoadingOverlay fullScreen label="Chargement" />}>
         <RoutesWithTransitions />
       </Suspense>
+      <StickyAppointmentBar />
       <Footer />
     </>
   );

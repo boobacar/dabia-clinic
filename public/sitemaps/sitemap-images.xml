@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/prothese-dentaire-fixe-prix-senegal-amovible</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/prothese_fixe_vs_amovible.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/appareil-dentaire-prix-dakar-guide-complet</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/appareil_dentaire_guide.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/clinique-dentaire-dabia-dakar-expert-tarifs</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/clinique_dabia_expert.png</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.cliniquedentairedabia.com/blog/guide-tarifs-dentiste-dakar-2025</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
       <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/guide_tarifs_2025.png</image:loc>
@@ -514,6 +532,36 @@
     <loc>https://www.cliniquedentairedabia.com/blog/detartrage-preventif-dakar-investissement</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
       <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/detartrage_preventif.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/soins-dentaires-pendant-ramadan-jeune</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/ramadan_soins.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/mauvaise-haleine-ramadan-conseils-dakar</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/ramadan_haleine.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/brosser-dents-pendant-ramadan-autorise</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/ramadan_brossage.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/quand-aller-dentiste-pendant-ramadan</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/ramadan_rdv.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/urgence-dentaire-rompre-jeune-ramadan</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/ramadan_urgence.png</image:loc>
     </image:image>
   </url>
 </urlset>

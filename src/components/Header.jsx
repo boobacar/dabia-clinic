@@ -202,7 +202,7 @@ const Header = () => {
           )}
           <Magnetic>
             <Link to="/rendez-vous" className="ripple btn-cta">
-              Rendez‑Vous
+              RDV rapide
             </Link>
           </Magnetic>
         </nav>
@@ -259,7 +259,7 @@ const Header = () => {
             )
           )}
           <Link to="/rendez-vous" className="btn-cta">
-            Prendre un rendez‑vous
+            RDV rapide
           </Link>
         </div>
       )}

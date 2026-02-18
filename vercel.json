@@ -1,5 +1,16 @@
 {
   "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "cliniquedentairedabia.com" }],
+      "destination": "https://www.cliniquedentairedabia.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/clinique-dentaire-dakar",
+      "destination": "/cabinet-dentaire-dakar",
+      "permanent": true
+    },
     { "source": "/services", "destination": "/all-competences", "permanent": true }
   ],
   "rewrites": [
