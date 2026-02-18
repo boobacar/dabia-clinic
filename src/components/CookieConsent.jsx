@@ -42,7 +42,18 @@ export default function CookieConsent() {
     }
   }, []);
 
-  if (!open) return null;
+  if (!open) {
+    return (
+      <button
+        type="button"
+        onClick={() => setOpen(true)}
+        className="fixed bottom-3 left-3 z-[55] rounded-full border border-gray-300 bg-white/95 px-3 py-1.5 text-[12px] text-gray-700 shadow-sm hover:bg-white"
+        aria-label="Gérer les cookies"
+      >
+        Cookies
+      </button>
+    );
+  }
 
   return (
     <div
