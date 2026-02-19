@@ -83,8 +83,8 @@ export default function UrgenceDentaire() {
   return (
     <section className="py-20 px-4 max-w-7xl mx-auto mt-20">
       <Seo
-        title="Urgence dentaire à Dakar – Clinique Dentaire DABIA"
-        description="Douleur aiguë, gonflement, dent cassée ? Conseils immédiats et prise en charge rapide à Dakar. Appelez la Clinique DABIA."
+        title="Urgence dentaire à Dakar – Prise en charge rapide | DABIA"
+        description="Urgence dentaire à Dakar : douleur, gonflement, dent cassée. Conseils immédiats + prise en charge rapide. Appelez ou WhatsApp la Clinique DABIA."
         canonical={canonical}
         url={canonical}
         jsonLd={[faqLD, howToLD]}

@@ -159,8 +159,8 @@ const RendezVous = () => {
   return (
     <section className="relative mt-20 overflow-hidden">
       <Seo
-        title="Prendre rendez-vous – Clinique Dentaire DABIA (Dakar)"
-        description="Réservez votre consultation dentaire à Dakar en ligne en 1 minute : esthétique, urgence, orthodontie, implants. Clinique DABIA."
+        title="Rendez-vous dentiste à Dakar – Formulaire express | DABIA"
+        description="Prenez rendez-vous chez le dentiste à Dakar en 1 minute: formulaire express, appel direct ou WhatsApp. Clinique Dentaire DABIA (Liberté 6)."
         canonical="https://www.cliniquedentairedabia.com/rendez-vous"
         url="https://www.cliniquedentairedabia.com/rendez-vous"
       />
@@ -234,6 +234,18 @@ const RendezVous = () => {
               >
                 Formulaire express (30s)
               </button>
+            </div>
+          </div>
+
+          <div className="mt-5 rounded-2xl border border-[#e7dcbc] bg-white/85 p-4">
+            <p className="text-sm font-semibold text-[#ad9d64]">Guides utiles avant votre rendez-vous</p>
+            <div className="mt-2 grid sm:grid-cols-2 lg:grid-cols-3 gap-2 text-sm">
+              <a href="/dentiste-dakar" className="underline text-[#bb2988]">Dentiste à Dakar (page principale)</a>
+              <a href="/urgence-dentaire-dakar" className="underline text-[#bb2988]">Urgence dentaire à Dakar</a>
+              <a href="/cabinet-dentaire-dakar" className="underline text-[#bb2988]">Cabinet dentaire à Dakar</a>
+              <a href="/blog/dentiste-dakar-prix-consultation-2026" className="underline text-[#bb2988]">Prix consultation dentiste à Dakar</a>
+              <a href="/blog/ramadan-dentiste-dakar-jeune-horaires-2026" className="underline text-[#bb2988]">Ramadan et dentiste à Dakar</a>
+              <a href="/blog/urgence-dentiste-dakar-24h-que-faire" className="underline text-[#bb2988]">Que faire en urgence dentaire 24h</a>
             </div>
           </div>
 

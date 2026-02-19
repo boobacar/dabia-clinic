@@ -7,27 +7,27 @@ const DOMAIN = "https://www.cliniquedentairedabia.com";
 const ROUTES = [
   {
     path: "/dentiste-dakar",
-    title: "Dentiste à Dakar – Clinique Dentaire DABIA",
+    title: "Dentiste à Dakar (Liberté 6) – RDV rapide | Clinique DABIA",
     description:
-      "Dentiste à Dakar (Liberté 6 – Sicap Foire) : urgences, implants, aligneurs, facettes, enfants. Rendez-vous rapides à la Clinique DABIA.",
+      "Dentiste à Dakar (Liberté 6 – Sicap Foire) : urgences, implants, aligneurs, facettes, enfants. RDV rapide par téléphone, WhatsApp ou formulaire.",
   },
   {
     path: "/cabinet-dentaire-dakar",
-    title: "Cabinet dentaire à Dakar – DABIA",
+    title: "Cabinet dentaire à Dakar – Devis clair & RDV rapide | DABIA",
     description:
-      "Cabinet dentaire moderne à Dakar: prévention, esthétique, implants, orthodontie, urgences. Technologies CBCT et scanner intra-oral.",
+      "Cabinet dentaire moderne à Dakar: prévention, esthétique, implants, orthodontie et urgences. Devis clair + prise de rendez-vous rapide (appel/WhatsApp).",
   },
   {
     path: "/urgence-dentaire-dakar",
-    title: "Urgence dentaire à Dakar – Clinique Dentaire DABIA",
+    title: "Urgence dentaire à Dakar – Prise en charge rapide | DABIA",
     description:
-      "Douleur aiguë, gonflement, dent cassée ? Conseils immédiats et prise en charge rapide à Dakar. Appelez la Clinique DABIA.",
+      "Urgence dentaire à Dakar : douleur, gonflement, dent cassée. Conseils immédiats + prise en charge rapide. Appelez ou WhatsApp la Clinique DABIA.",
   },
   {
     path: "/rendez-vous",
-    title: "Prendre rendez-vous dentiste à Dakar – Clinique DABIA",
+    title: "Rendez-vous dentiste à Dakar – Formulaire express | DABIA",
     description:
-      "Prenez rendez-vous en ligne avec la Clinique Dentaire DABIA à Dakar. Option rapide: appel, WhatsApp ou formulaire express.",
+      "Prenez rendez-vous chez le dentiste à Dakar en 1 minute: formulaire express, appel direct ou WhatsApp. Clinique Dentaire DABIA (Liberté 6).",
   },
 ];
 

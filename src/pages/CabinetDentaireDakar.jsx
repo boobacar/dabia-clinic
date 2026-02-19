@@ -56,8 +56,8 @@ export default function CabinetDentaireDakar() {
   return (
     <section className="py-20 px-4 max-w-7xl mx-auto mt-20">
       <Seo
-        title="Cabinet dentaire à Dakar – DABIA"
-        description="Cabinet dentaire moderne à Dakar: prévention, esthétique, implants, orthodontie, urgences. Technologies CBCT, scanner intra‑oral, autoclave classe B."
+        title="Cabinet dentaire à Dakar – Devis clair & RDV rapide | DABIA"
+        description="Cabinet dentaire moderne à Dakar: prévention, esthétique, implants, orthodontie et urgences. Devis clair + prise de rendez-vous rapide (appel/WhatsApp)."
         canonical={canonical}
         url={canonical}
         jsonLd={[lbLD, faqLD]}
