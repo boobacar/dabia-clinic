@@ -2,9 +2,11 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "cliniquedentairedabia.com" }],
+      "has": [
+        { "type": "host", "value": "cliniquedentairedabia.com" }
+      ],
       "destination": "https://www.cliniquedentairedabia.com/:path*",
-      "permanent": true
+      "statusCode": 308
     },
     {
       "source": "/clinique-dentaire-dakar",
