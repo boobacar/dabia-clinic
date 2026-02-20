@@ -510,6 +510,18 @@ export default function BlogPost() {
                       </a>
                     );
                   }
+
+                  const isRdvLink =
+                    href === "/rendez-vous" || href.endsWith("/rendez-vous");
+
+                  if (isRdvLink) {
+                    return (
+                      <Link to="/rendez-vous" className="btn-cta btn-cta-sm inline-block" {...props}>
+                        📅 Rendez-vous rapide
+                      </Link>
+                    );
+                  }
+
                   return (
                     <a href={href} {...props}>
                       {children}
