@@ -363,7 +363,7 @@ export default function BlogPost() {
   }
 
   return (
-    <section className="py-20 px-4 max-w-7xl mx-auto mt-20">
+    <section className="py-20 pb-28 lg:pb-20 px-4 max-w-7xl mx-auto mt-20">
       <ReadingProgress />
       <Seo
         title={post.title}
@@ -603,6 +603,16 @@ export default function BlogPost() {
             </Link>
           </div>
         </aside>
+      </div>
+
+      {/* CTA sticky mobile (above the fold visibility on small screens) */}
+      <div className="fixed bottom-3 left-0 right-0 z-40 px-4 lg:hidden">
+        <Link
+          to="/rendez-vous"
+          className="block text-center btn-cta py-3 shadow-xl"
+        >
+          📅 RDV rapide
+        </Link>
       </div>
 
       {/* FAQ visible (same content as JSON-LD) */}

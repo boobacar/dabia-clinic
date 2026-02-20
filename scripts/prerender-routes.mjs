@@ -164,7 +164,18 @@ async function main() {
   const routes = await collectRoutes();
   console.log(`🗺️  Routes à pré-rendre: ${routes.length}`);
   const closeServer = await startStaticServer();
-  const browser = await chromium.launch({ headless: true });
+
+  let browser;
+  try {
+    browser = await chromium.launch({ headless: true });
+  } catch (e) {
+    console.warn("⚠️ Prerender Playwright indisponible sur cet environnement.");
+    console.warn(`↳ Raison: ${e?.message || e}`);
+    console.warn("↳ Fallback: build SPA conservé + fichiers publics copiés.");
+    await closeServer();
+    await copyPublicFallback();
+    return;
+  }
 
   const results = [];
   for (const route of routes) {

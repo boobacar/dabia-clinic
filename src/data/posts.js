@@ -126,6 +126,68 @@ export const TAGS = [
 ];
 
 export const POSTS = [
+
+  {
+    slug: "dentiste-plateau-dakar-prix-rdv-local",
+    title: "Dentiste à Dakar Plateau : prix, accès rapide et RDV local",
+    description:
+      "Vous êtes au Plateau (Dakar) et cherchez un dentiste proche ? Guide local avec repères de prix, accès, urgences et prise de rendez-vous rapide.",
+    date: "2026-02-20",
+    category: "Conseils",
+    tags: [
+      "dentiste plateau dakar",
+      "cabinet dentaire plateau",
+      "dentiste dakar",
+      "urgence dentaire dakar",
+      "tarif dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: prixSoinsCover,
+    pinned: true,
+    readingMinutes: 7,
+    content: `Vous travaillez ou habitez au **Plateau à Dakar** et vous cherchez un dentiste fiable, avec des horaires flexibles et une prise en charge claire ?
+
+👉 **Prendre rendez-vous maintenant : [/rendez-vous](/rendez-vous)**
+
+## Ce que recherchent les patients du Plateau
+- Un accès rapide avant/après le travail
+- Un devis transparent avant les soins
+- Une solution rapide en cas de douleur
+
+## Quels soins sont les plus demandés ?
+- Consultation + bilan
+- Détartrage et soins de carie
+- Urgence dentaire (douleur, gonflement, dent cassée)
+- Devis pour couronne, implant ou orthodontie
+
+## Repères pratiques
+- En cas de douleur aiguë : voir la page **[urgence dentaire à Dakar](/urgence-dentaire-dakar)**
+- Pour les soins programmés : page **[dentiste dakar](/dentiste-dakar)**
+- Pour un devis rapide : **[prendre rendez-vous](/rendez-vous)**
+
+## FAQ (Plateau Dakar)
+### Peut-on avoir un RDV rapide le même jour ?
+Oui, selon les disponibilités, surtout pour les urgences.
+
+### Le devis est-il expliqué avant les soins ?
+Oui, un plan de traitement clair est présenté avant intervention.
+
+### La clinique est-elle accessible depuis le Plateau ?
+Oui, l’accès est rapide depuis le centre-ville via les axes principaux de Dakar.
+
+> Objectif : vous offrir une prise en charge simple, rapide et transparente, même avec un agenda chargé.`,
+    faq: [
+      {
+        q: "Je suis au Plateau, puis-je avoir un RDV en fin de journée ?",
+        a: "Oui, des créneaux sont proposés selon disponibilité. Le plus simple est de réserver via /rendez-vous.",
+      },
+      {
+        q: "En cas de rage de dent au bureau, que faire ?",
+        a: "Contactez la clinique rapidement pour un créneau prioritaire et consultez la page urgence dentaire pour les premiers gestes.",
+      },
+    ],
+  },
+
   {
     slug: "ramadan-dentiste-dakar-jeune-horaires-2026",
     title: "Ramadan et Dentiste à Dakar : Horaires, Jeûne et Soins (2026)",
@@ -145,6 +207,8 @@ export const POSTS = [
     pinned: true,
     readingMinutes: 6,
     content: `Pendant le mois de Ramadan, beaucoup de patients à Dakar se posent la même question : **peut-on consulter un dentiste sans invalider le jeûne ?**
+
+👉 Besoin d’un créneau adapté Ramadan ? **[Prendre rendez-vous](/rendez-vous)** ou consulter notre page **[urgence dentaire à Dakar](/urgence-dentaire-dakar)**.
 
 ## Peut-on aller chez le dentiste en jeûnant ?
 Oui. Une consultation, un diagnostic, un détartrage léger ou des soins locaux sont généralement possibles. L'important est d'éviter d'avaler volontairement de l'eau ou des produits.
@@ -194,6 +258,8 @@ En cas de douleur intense, gonflement, fièvre ou dent cassée, il faut consulte
     pinned: true,
     readingMinutes: 8,
     content: `Vous cherchez un **dentiste à Dakar** et vous voulez connaître les tarifs avant de prendre rendez-vous ? C'est normal. Voici un guide clair pour estimer votre budget et éviter les mauvaises surprises.
+
+📍 Commencez par une visite sur **[Dentiste Dakar](/dentiste-dakar)** puis réservez en 1 minute via **[/rendez-vous](/rendez-vous)**.
 
 ## Prix indicatifs à Dakar (selon le cas)
 - **Consultation** : selon l'examen clinique et les besoins d'imagerie
@@ -527,7 +593,9 @@ Nous suivons les normes internationales de stérilisation (autoclave classe B, i
     cover: guideTarifsCover,
     pinned: true,
     readingMinutes: 8,
-    content: `La question du **prix** est souvent la première que l’on se pose avant d'aller chez le dentiste. Combien coûte un détartrage ? Quel est le tarif d'une couronne ? À Dakar, les prix peuvent varier, mais la transparence est essentielle pour établir une relation de confiance.
+    content: `La question du **prix** est souvent la première que l’on se pose avant d'aller chez le dentiste.
+
+✅ Pour un devis clair et rapide : **[prendre rendez-vous](/rendez-vous)** ou consulter notre page **[cabinet dentaire à Dakar](/cabinet-dentaire-dakar)**. Combien coûte un détartrage ? Quel est le tarif d'une couronne ? À Dakar, les prix peuvent varier, mais la transparence est essentielle pour établir une relation de confiance.
 
 ## Tarifs moyens observés à Dakar (2025)
 Voici une fourchette de prix indicative pour les soins courants à Dakar (ces tarifs peuvent varier selon la complexité du cas) :
@@ -579,7 +647,9 @@ Voici une fourchette de prix indicative pour les soins courants à Dakar (ces ta
     cover: appareilPrixCover,
     pinned: true,
     readingMinutes: 10,
-    content: `Avoir un sourire aligné est un atout charme et santé indéniable. Mais quel est le **prix d'un appareil dentaire à Dakar** ? C'est une question fréquente de nos patients, qu'il s'agisse de parents pour leurs enfants ou d'adultes souhaitant améliorer leur sourire.
+    content: `Avoir un sourire aligné est un atout charme et santé indéniable.
+
+👉 Vous pouvez aussi consulter nos pages money : **[Dentiste Dakar](/dentiste-dakar)** et **[Cabinet dentaire Dakar](/cabinet-dentaire-dakar)** avant de réserver votre bilan **[ici](/rendez-vous)**. Mais quel est le **prix d'un appareil dentaire à Dakar** ? C'est une question fréquente de nos patients, qu'il s'agisse de parents pour leurs enfants ou d'adultes souhaitant améliorer leur sourire.
 
 ## Les différents types d'appareils et leurs coûts
 Le budget dépend de la technique choisie et de la durée du traitement.
@@ -640,7 +710,9 @@ Oui, c'est la norme en orthodontie. Contrairement à un soin unique, l'orthodont
     cover: implantCoutCover,
     pinned: true,
     readingMinutes: 12,
-    content: `Perdre une dent peut affecter votre sourire, mais aussi votre capacité à mâcher et la santé de votre mâchoire. L'**implant dentaire** est aujourd'hui la solution de référence pour remplacer une racine naturelle. Mais quel est le **tarif d'un implant dentaire à Dakar** ? Décryptage.
+    content: `Perdre une dent peut affecter votre sourire, mais aussi votre capacité à mâcher et la santé de votre mâchoire.
+
+📞 Pour un plan de traitement personnalisé, prenez un créneau via **[rendez-vous](/rendez-vous)** (ou voyez d’abord **[urgence dentaire à Dakar](/urgence-dentaire-dakar)** en cas de douleur). L'**implant dentaire** est aujourd'hui la solution de référence pour remplacer une racine naturelle. Mais quel est le **tarif d'un implant dentaire à Dakar** ? Décryptage.
 
 ## Qu'est-ce qu'un implant dentaire ?
 C'est une petite vis en titane (ou zircone) insérée dans l'os de la mâchoire, sur laquelle on vient fixer une couronne. C'est comme une "racine artificielle".
