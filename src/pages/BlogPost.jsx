@@ -517,7 +517,7 @@ export default function BlogPost() {
                   if (isRdvLink) {
                     return (
                       <Link to="/rendez-vous" className="btn-cta btn-cta-sm inline-block" {...props}>
-                        📅 Rendez-vous rapide
+                        Rendez-vous rapide
                       </Link>
                     );
                   }

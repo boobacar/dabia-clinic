@@ -147,7 +147,7 @@ export const POSTS = [
     readingMinutes: 7,
     content: `Vous travaillez ou habitez au **Plateau à Dakar** et vous cherchez un dentiste fiable, avec des horaires flexibles et une prise en charge claire ?
 
-👉 **[RDV rapide](/rendez-vous)**
+**[RDV rapide](/rendez-vous)**
 
 ## Ce que recherchent les patients du Plateau
 - Un accès rapide avant/après le travail
@@ -208,7 +208,7 @@ Oui, l’accès est rapide depuis le centre-ville via les axes principaux de Dak
     readingMinutes: 6,
     content: `Pendant le mois de Ramadan, beaucoup de patients à Dakar se posent la même question : **peut-on consulter un dentiste sans invalider le jeûne ?**
 
-👉 Besoin d’un créneau adapté Ramadan ? **[Prendre rendez-vous](/rendez-vous)** ou consulter notre page **[urgence dentaire à Dakar](/urgence-dentaire-dakar)**.
+Besoin d’un créneau adapté Ramadan ? **[Prendre rendez-vous](/rendez-vous)** ou consulter notre page **[urgence dentaire à Dakar](/urgence-dentaire-dakar)**.
 
 ## Peut-on aller chez le dentiste en jeûnant ?
 Oui. Une consultation, un diagnostic, un détartrage léger ou des soins locaux sont généralement possibles. L'important est d'éviter d'avaler volontairement de l'eau ou des produits.
@@ -649,7 +649,7 @@ Voici une fourchette de prix indicative pour les soins courants à Dakar (ces ta
     readingMinutes: 10,
     content: `Avoir un sourire aligné est un atout charme et santé indéniable.
 
-👉 Vous pouvez aussi consulter nos pages money : **[Dentiste Dakar](/dentiste-dakar)** et **[Cabinet dentaire Dakar](/cabinet-dentaire-dakar)** avant de réserver votre bilan **[ici](/rendez-vous)**. Mais quel est le **prix d'un appareil dentaire à Dakar** ? C'est une question fréquente de nos patients, qu'il s'agisse de parents pour leurs enfants ou d'adultes souhaitant améliorer leur sourire.
+Vous pouvez aussi consulter nos pages money : **[Dentiste Dakar](/dentiste-dakar)** et **[Cabinet dentaire Dakar](/cabinet-dentaire-dakar)** avant de réserver votre bilan **[ici](/rendez-vous)**. Mais quel est le **prix d'un appareil dentaire à Dakar** ? C'est une question fréquente de nos patients, qu'il s'agisse de parents pour leurs enfants ou d'adultes souhaitant améliorer leur sourire.
 
 ## Les différents types d'appareils et leurs coûts
 Le budget dépend de la technique choisie et de la durée du traitement.
