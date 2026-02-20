@@ -147,7 +147,7 @@ export const POSTS = [
     readingMinutes: 7,
     content: `Vous travaillez ou habitez au **Plateau à Dakar** et vous cherchez un dentiste fiable, avec des horaires flexibles et une prise en charge claire ?
 
-👉 **Prendre rendez-vous maintenant : [/rendez-vous](/rendez-vous)**
+👉 **[RDV rapide](/rendez-vous)**
 
 ## Ce que recherchent les patients du Plateau
 - Un accès rapide avant/après le travail
