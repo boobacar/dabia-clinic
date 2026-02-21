@@ -1,7 +1,7 @@
 // ... imports ...
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, ChevronDown, Phone, Mail } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import logo from "../assets/logo.jpg";
 import Magnetic from "./Magnetic";
 
@@ -65,27 +65,11 @@ const Header = () => {
           <div className="overflow-hidden">
             <div className="marquee-track flex items-center gap-6 py-1 px-4 whitespace-nowrap">
               {[0, 1].map((k) => (
-                <div key={k} className="flex items-center gap-6">
-                  <span className="flex items-center gap-1">
-                    <Phone className="w-3.5 h-3.5" />
-                    <a href="tel:+221777039393" className="hover:underline">
-                      +221 77 703 93 93
-                    </a>
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Phone className="w-3.5 h-3.5" />
-                    <a href="tel:+221338684704" className="hover:underline">
-                      +221 33 868 47 04
-                    </a>
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Mail className="w-3.5 h-3.5" />
-                    <a
-                      href="mailto:cliniquedentairedabia@gmail.com"
-                      className="hover:underline"
-                    >
-                      cliniquedentairedabia@gmail.com
-                    </a>
+                <div key={k} className="flex items-center gap-4">
+                  <span>
+                    La Clinique Dentaire DABIA souhaite un Ramadan Mubarak à la
+                    communauté musulmane et un bon Carême à la communauté
+                    chrétienne.
                   </span>
                   <span className="opacity-60">•</span>
                 </div>
@@ -96,30 +80,9 @@ const Header = () => {
 
         {/* Desktop/tablette: statique */}
         <div className="hidden sm:block">
-          <div className="max-w-7xl mx-auto px-4 py-1 flex items-center justify-between gap-2">
-            <div className="flex items-center gap-4">
-              <span className="flex items-center gap-1">
-                <Phone className="w-3.5 h-3.5" />
-                <a href="tel:+221777039393" className="hover:underline">
-                  +221 77 703 93 93
-                </a>
-              </span>
-              <span className="hidden md:flex items-center gap-1">
-                <Phone className="w-3.5 h-3.5" />
-                <a href="tel:+221338684704" className="hover:underline">
-                  +221 33 868 47 04
-                </a>
-              </span>
-            </div>
-            <div className="flex items-center gap-1">
-              <Mail className="w-3.5 h-3.5" />
-              <a
-                href="mailto:cliniquedentairedabia@gmail.com"
-                className="hover:underline"
-              >
-                cliniquedentairedabia@gmail.com
-              </a>
-            </div>
+          <div className="max-w-7xl mx-auto px-4 py-1 text-center">
+            La Clinique Dentaire DABIA souhaite un Ramadan Mubarak à la
+            communauté musulmane et un bon Carême à la communauté chrétienne.
           </div>
         </div>
       </div>
