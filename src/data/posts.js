@@ -128,6 +128,72 @@ export const TAGS = [
 export const POSTS = [
 
   {
+    slug: "dentiste-pendant-ramadan-dakar-soins-faq-2026",
+    title: "Dentiste pendant le Ramadan à Dakar : Soins possibles, précautions et FAQ (2026)",
+    description:
+      "Peut-on consulter un dentiste à Dakar sans rompre son jeûne ? Soins autorisés, cas d'urgence, horaires conseillés et réponses aux questions fréquentes.",
+    date: "2026-02-22",
+    category: "Conseils",
+    tags: [
+      "dentiste dakar",
+      "ramadan",
+      "jeûne",
+      "soins dentaires",
+      "urgence dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: ramadanSoinsCover,
+    pinned: true,
+    readingMinutes: 7,
+    content: `En plein **Ramadan à Dakar**, beaucoup de patients reportent leurs soins dentaires par peur de "casser" leur jeûne. Pourtant, dans la plupart des cas, il est possible de se faire soigner en toute sérénité.
+
+Besoin d'un créneau adapté ? **[Prendre rendez-vous](/rendez-vous)**.
+
+## Peut-on aller chez le dentiste pendant le jeûne ?
+Oui, en règle générale. Une consultation, un examen, un détartrage prudent, un soin de carie ou une anesthésie locale peuvent être réalisés, tant que rien n'est avalé volontairement.
+
+## Soins possibles pendant Ramadan
+- Consultation et diagnostic
+- Détartrage avec aspiration renforcée
+- Soin de carie
+- Anesthésie locale
+- Extraction si nécessaire
+
+## Précautions importantes
+1. Signaler au praticien que vous jeûnez.
+2. Préférer un rinçage minimal et recracher immédiatement.
+3. Planifier les soins longs en fin de journée ou après le ftour.
+4. Ne pas retarder une infection ou une douleur intense.
+
+## Urgence dentaire : ne pas attendre
+Si vous avez douleur pulsatile, gonflement, fièvre, difficulté à mâcher ou à dormir, il faut consulter rapidement. La santé passe avant tout et un retard de prise en charge peut compliquer le traitement.
+
+## Quel horaire choisir à Dakar ?
+- **Matin (9h-12h)** : souvent plus confortable pour les soins courts
+- **Fin d'après-midi** : pratique si vous préférez enchaîner avec la rupture
+- **Après ftour** : idéal pour certains actes plus longs
+
+## En résumé
+Le Ramadan n'empêche pas de se soigner. Avec une bonne organisation et des précautions simples, vous pouvez préserver votre santé bucco-dentaire sans stress.
+
+> À la Clinique DABIA, les protocoles sont adaptés aux patients qui jeûnent pour garantir confort, sécurité et clarté sur chaque étape du soin.`,
+    faq: [
+      {
+        q: "L'anesthésie locale annule-t-elle le jeûne ?",
+        a: "Non, l'anesthésie locale n'est pas nutritive. L'important est d'éviter d'avaler volontairement liquides ou débris pendant le soin.",
+      },
+      {
+        q: "Dois-je reporter une rage de dent après Ramadan ?",
+        a: "Non. Une urgence dentaire doit être traitée rapidement pour éviter infection, abcès ou aggravation de la douleur.",
+      },
+      {
+        q: "Quel est le meilleur moment pour un rendez-vous ?",
+        a: "Pour beaucoup de patients, le matin ou juste avant/juste après le ftour est le plus confortable. La clinique peut proposer un créneau adapté.",
+      },
+    ],
+  },
+
+  {
     slug: "dentiste-plateau-dakar-prix-rdv-local",
     title: "Dentiste à Dakar Plateau : prix, accès rapide et RDV local",
     description:
