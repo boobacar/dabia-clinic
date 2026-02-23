@@ -128,6 +128,72 @@ export const TAGS = [
 export const POSTS = [
 
   {
+    slug: "urgence-dentaire-ramadan-dakar-premiers-gestes-2026",
+    title: "Urgence dentaire pendant le Ramadan à Dakar : les premiers gestes qui soulagent",
+    description:
+      "Rage de dent, gonflement, dent cassée pendant le jeûne : que faire immédiatement à Dakar, quoi éviter, et quand consulter en urgence.",
+    date: "2026-02-23",
+    category: "Urgences",
+    tags: [
+      "urgence dentaire",
+      "dentiste dakar",
+      "ramadan",
+      "douleur dentaire",
+      "jeûne",
+    ],
+    author: AUTHORS.sao,
+    cover: ramadanUrgenceCover,
+    pinned: true,
+    readingMinutes: 6,
+    content: `Une douleur dentaire pendant le **Ramadan** peut vite devenir difficile à supporter : fatigue, manque de sommeil, et peur de prendre la mauvaise décision pendant le jeûne.
+
+Si la douleur est forte, ne restez pas seul : **[Prendre rendez-vous](/rendez-vous)** ou consulter la page **[urgence dentaire à Dakar](/urgence-dentaire-dakar)**.
+
+## Les 5 premiers gestes à faire immédiatement
+1. **Rincer doucement la bouche** avec de l'eau tiède (sans avaler).
+2. **Nettoyer la zone** avec une brosse souple pour retirer les résidus alimentaires.
+3. **Appliquer du froid externe** (joue) 10 min pour réduire gonflement et douleur.
+4. **Éviter de mâcher** du côté douloureux.
+5. **Noter les symptômes** (douleur pulsatile, fièvre, gonflement, saignement) pour les expliquer au dentiste.
+
+## Ce qu'il faut éviter absolument
+- Mettre de l'aspirine directement sur la gencive
+- Poser des remèdes maison irritants sur la dent
+- Attendre plusieurs jours avec un gonflement ou de la fièvre
+- Prendre des antibiotiques sans avis médical
+
+## Quand consulter en urgence à Dakar ?
+Consultez rapidement si vous avez :
+- douleur qui empêche de dormir
+- gonflement de la joue ou de la gencive
+- fièvre
+- dent cassée après choc
+- difficulté à ouvrir la bouche ou à avaler
+
+## Ramadan et jeûne : que retenir ?
+Une consultation d'urgence est prioritaire pour éviter les complications. Le protocole est adapté au patient à jeûn et le praticien vous explique clairement chaque étape.
+
+## En résumé
+Une urgence dentaire ne doit pas être repoussée. Plus la prise en charge est rapide, plus le traitement est simple et le soulagement durable.
+
+> À la Clinique DABIA, les urgences dentaires sont évaluées rapidement avec un plan d'action clair pour soulager la douleur en sécurité.`,
+    faq: [
+      {
+        q: "Dois-je attendre la rupture du jeûne avant de consulter ?",
+        a: "Pas forcément. En cas de douleur intense, gonflement ou fièvre, il faut consulter sans tarder pour éviter une aggravation.",
+      },
+      {
+        q: "Le froid aide-t-il vraiment en attendant le rendez-vous ?",
+        a: "Oui, appliqué sur la joue par courtes sessions, il peut diminuer douleur et inflammation de manière temporaire.",
+      },
+      {
+        q: "Une dent cassée sans douleur est-elle une urgence ?",
+        a: "Oui, il faut tout de même consulter rapidement pour prévenir infection, sensibilité ou complications ultérieures.",
+      },
+    ],
+  },
+
+  {
     slug: "dentiste-pendant-ramadan-dakar-soins-faq-2026",
     title: "Dentiste pendant le Ramadan à Dakar : Soins possibles, précautions et FAQ (2026)",
     description:
