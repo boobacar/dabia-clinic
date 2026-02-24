@@ -12,7 +12,7 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "postbuild": "node scripts/generate-sitemap.mjs && node scripts/generate-seo-shells.mjs",
+    "postbuild": "node scripts/generate-sitemap.mjs && node scripts/generate-seo-shells.mjs && node scripts/generate-ghpages-vercel-config.mjs",
     "sitemap:dev": "SITE_URL=http://localhost:5173 node scripts/generate-sitemap.mjs",
     "seo:check": "node scripts/seo-check.mjs",
     "prerender": "node scripts/prerender-routes.mjs",
