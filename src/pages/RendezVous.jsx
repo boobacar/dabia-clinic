@@ -41,6 +41,7 @@ const RendezVous = () => {
   const [date, setDate] = useState(minSelectableDate);
   const [showAdvanced, setShowAdvanced] = useState(false);
   const [hasStartedForm, setHasStartedForm] = useState(false);
+  const [abVariant, setAbVariant] = useState("A");
   const [searchParams] = useSearchParams();
 
   const defaults = useMemo(() => {
@@ -65,11 +66,40 @@ const RendezVous = () => {
     }
   }, [defaults]);
 
+  useEffect(() => {
+    try {
+      const key = "rdv_ab_variant_v1";
+      let variant = localStorage.getItem(key);
+      if (!variant) {
+        variant = Math.random() < 0.5 ? "A" : "B";
+        localStorage.setItem(key, variant);
+      }
+      setAbVariant(variant);
+      sendEvent("rdv_ab_variant_view", {
+        page_path: "/rendez-vous",
+        ab_variant: variant,
+      });
+    } catch {}
+  }, []);
+
+  const variantCopy =
+    abVariant === "B"
+      ? {
+          hero: "Obtenez votre rendez-vous dentaire rapidement à Dakar",
+          sub: "Choisissez appel, WhatsApp ou formulaire express. Notre équipe vous rappelle vite pour confirmer.",
+          submit: "Recevoir une confirmation rapide",
+        }
+      : {
+          hero: "Prendre un rendez-vous",
+          sub: "Quelques informations suffisent pour réserver votre consultation à la Clinique Dentaire DABIA. Nous vous recontactons rapidement pour confirmer l'horaire exact.",
+          submit: "Confirmer mon rendez-vous",
+        };
+
   const onFormStart = () => {
     if (hasStartedForm) return;
     setHasStartedForm(true);
     try {
-      sendEvent("rdv_form_start", { page_path: "/rendez-vous" });
+      sendEvent("rdv_form_start", { page_path: "/rendez-vous", ab_variant: abVariant });
     } catch {}
   };
 
@@ -79,6 +109,7 @@ const RendezVous = () => {
       sendEvent("cta_rendez_vous_click", {
         page_path: "/rendez-vous",
         cta_type: "scroll_form",
+        ab_variant: abVariant,
       });
     } catch {}
     form.current.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -106,7 +137,7 @@ const RendezVous = () => {
 
     setStatus("loading");
     try {
-      sendEvent("form_rendez_vous_submit", { step: "start" });
+      sendEvent("form_rendez_vous_submit", { step: "start", ab_variant: abVariant });
     } catch {}
 
     const emailInput = form.current?.querySelector('input[name="email"]');
@@ -145,8 +176,8 @@ const RendezVous = () => {
         form.current.reset();
         setDate(minSelectableDate);
         try {
-          sendEvent("form_rendez_vous_submit", { step: "success" });
-          sendEvent("rdv_form_submit_success", { page_path: "/rendez-vous" });
+          sendEvent("form_rendez_vous_submit", { step: "success", ab_variant: abVariant });
+          sendEvent("rdv_form_submit_success", { page_path: "/rendez-vous", ab_variant: abVariant });
         } catch {}
         try {
           confetti &&
@@ -157,7 +188,7 @@ const RendezVous = () => {
         console.error("EmailJS error:", err);
         setStatus("error");
         try {
-          sendEvent("form_rendez_vous_submit", { step: "error" });
+          sendEvent("form_rendez_vous_submit", { step: "error", ab_variant: abVariant });
         } catch {}
       });
   };
@@ -202,12 +233,10 @@ const RendezVous = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-            Prendre un rendez-vous
+            {variantCopy.hero}
           </motion.h2>
           <p className="text-center text-gray-600 max-w-2xl mx-auto">
-            Quelques informations suffisent pour réserver votre consultation à
-            la Clinique Dentaire DABIA. Nous vous recontactons rapidement pour
-            confirmer l&apos;horaire exact.
+            {variantCopy.sub}
           </p>
 
           <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-2 text-sm">
@@ -235,8 +264,8 @@ const RendezVous = () => {
                 href="tel:+221777039393"
                 onClick={() => {
                   try {
-                    sendEvent("click_tel", { page_path: "/rendez-vous", source: "quick_cta" });
-                    sendEvent("cta_rendez_vous_click", { page_path: "/rendez-vous", cta_type: "call" });
+                    sendEvent("click_tel", { page_path: "/rendez-vous", source: "quick_cta", ab_variant: abVariant });
+                    sendEvent("cta_rendez_vous_click", { page_path: "/rendez-vous", cta_type: "call", ab_variant: abVariant });
                   } catch {}
                 }}
                 className="btn-cta text-center"
@@ -249,8 +278,8 @@ const RendezVous = () => {
                 rel="noreferrer"
                 onClick={() => {
                   try {
-                    sendEvent("click_whatsapp", { page_path: "/rendez-vous", source: "quick_cta" });
-                    sendEvent("cta_rendez_vous_click", { page_path: "/rendez-vous", cta_type: "whatsapp" });
+                    sendEvent("click_whatsapp", { page_path: "/rendez-vous", source: "quick_cta", ab_variant: abVariant });
+                    sendEvent("cta_rendez_vous_click", { page_path: "/rendez-vous", cta_type: "whatsapp", ab_variant: abVariant });
                   } catch {}
                 }}
                 className="btn-cta text-center"
@@ -499,7 +528,7 @@ const RendezVous = () => {
                 disabled={status === "loading"}
                 className="btn-cta disabled:opacity-50"
               >
-                {status === "loading" ? "Envoi..." : "Confirmer mon rendez-vous"}
+                {status === "loading" ? "Envoi..." : variantCopy.submit}
               </button>
 
               {status === "error" && (
