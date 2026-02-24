@@ -222,15 +222,9 @@ const RendezVous = () => {
             {variantCopy.sub}
           </p>
 
-          <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-2 text-sm">
-            <div className="rounded-xl border border-[#e7dcbc] bg-[#fff9ea] px-3 py-2 text-center text-gray-700 inline-flex items-center justify-center gap-2">
+          <div className="mt-4 text-sm">
+            <div className="rounded-xl border border-[#e7dcbc] bg-[#fff9ea] px-3 py-2 text-center text-gray-700 inline-flex items-center justify-center gap-2 w-full">
               <FaCheckCircle className="text-green-600" /> Réponse rapide de l&apos;équipe
-            </div>
-            <div className="rounded-xl border border-[#e7dcbc] bg-[#fff9ea] px-3 py-2 text-center text-gray-700 inline-flex items-center justify-center gap-2">
-              <FaMapMarkerAlt className="text-[#bb2988]" /> Liberté 6, accès simple depuis Dakar
-            </div>
-            <div className="rounded-xl border border-[#e7dcbc] bg-[#fff9ea] px-3 py-2 text-center text-gray-700 inline-flex items-center justify-center gap-2">
-              <FaPhoneAlt className="text-[#ad9d64]" /> WhatsApp & téléphone disponibles
             </div>
           </div>
 
