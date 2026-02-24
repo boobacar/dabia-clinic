@@ -1,1 +1,0 @@
-import{j as e}from"./index-BHaCBS2Q.js";function d({title:s="Astuces",children:r}){return e.jsxs("div",{className:"mt-6 p-4 rounded-xl border bg-[#faf7ef] border-l-4 border-l-[#ad9d64]",children:[e.jsx("p",{className:"text-[#ad9d64] font-semibold mb-1",children:s}),e.jsx("div",{className:"text-sm text-gray-700",children:r})]})}export{d as C};
