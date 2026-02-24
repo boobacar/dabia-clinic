@@ -12,6 +12,7 @@ import { useSearchParams } from "react-router-dom";
 import { addDays, startOfDay, format } from "date-fns";
 import { sendEvent } from "../analytics/ga4";
 import FancySelect from "../components/FancySelect";
+import { FaCheckCircle, FaMapMarkerAlt, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 
 // confetti (chargé à la demande)
 let confetti;
@@ -82,18 +83,11 @@ const RendezVous = () => {
     } catch {}
   }, []);
 
-  const variantCopy =
-    abVariant === "B"
-      ? {
-          hero: "Obtenez votre rendez-vous dentaire rapidement à Dakar",
-          sub: "Choisissez appel, WhatsApp ou formulaire express. Notre équipe vous rappelle vite pour confirmer.",
-          submit: "Recevoir une confirmation rapide",
-        }
-      : {
-          hero: "Prendre un rendez-vous",
-          sub: "Quelques informations suffisent pour réserver votre consultation à la Clinique Dentaire DABIA. Nous vous recontactons rapidement pour confirmer l'horaire exact.",
-          submit: "Confirmer mon rendez-vous",
-        };
+  const variantCopy = {
+    hero: "Prendre un rendez-vous",
+    sub: "Quelques informations suffisent pour réserver votre consultation à la Clinique Dentaire DABIA. Nous vous recontactons rapidement pour confirmer l'horaire exact.",
+    submit: "Confirmer mon rendez-vous",
+  };
 
   const onFormStart = () => {
     if (hasStartedForm) return;
@@ -103,17 +97,6 @@ const RendezVous = () => {
     } catch {}
   };
 
-  const scrollToForm = () => {
-    if (!form.current) return;
-    try {
-      sendEvent("cta_rendez_vous_click", {
-        page_path: "/rendez-vous",
-        cta_type: "scroll_form",
-        ab_variant: abVariant,
-      });
-    } catch {}
-    form.current.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -240,71 +223,14 @@ const RendezVous = () => {
           </p>
 
           <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-2 text-sm">
-            <div className="rounded-xl border border-[#e7dcbc] bg-[#fff9ea] px-3 py-2 text-center text-gray-700">
-              ✅ Réponse rapide de l&apos;équipe
+            <div className="rounded-xl border border-[#e7dcbc] bg-[#fff9ea] px-3 py-2 text-center text-gray-700 inline-flex items-center justify-center gap-2">
+              <FaCheckCircle className="text-green-600" /> Réponse rapide de l&apos;équipe
             </div>
-            <div className="rounded-xl border border-[#e7dcbc] bg-[#fff9ea] px-3 py-2 text-center text-gray-700">
-              📍 Liberté 6, accès simple depuis Dakar
+            <div className="rounded-xl border border-[#e7dcbc] bg-[#fff9ea] px-3 py-2 text-center text-gray-700 inline-flex items-center justify-center gap-2">
+              <FaMapMarkerAlt className="text-[#bb2988]" /> Liberté 6, accès simple depuis Dakar
             </div>
-            <div className="rounded-xl border border-[#e7dcbc] bg-[#fff9ea] px-3 py-2 text-center text-gray-700">
-              📞 WhatsApp & téléphone disponibles
-            </div>
-          </div>
-
-          {/* Bloc conversion rapide */}
-          <div className="mt-6 rounded-2xl border border-[#e7dcbc] bg-white/90 p-4 md:p-5 shadow-sm">
-            <p className="text-sm md:text-base font-semibold text-[#ad9d64]">
-              Besoin d&apos;un rendez-vous rapide ?
-            </p>
-            <p className="mt-1 text-sm text-gray-700">
-              Choisissez l&apos;option la plus simple : appel, WhatsApp ou formulaire express.
-            </p>
-            <div className="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-2">
-              <a
-                href="tel:+221777039393"
-                onClick={() => {
-                  try {
-                    sendEvent("click_tel", { page_path: "/rendez-vous", source: "quick_cta", ab_variant: abVariant });
-                    sendEvent("cta_rendez_vous_click", { page_path: "/rendez-vous", cta_type: "call", ab_variant: abVariant });
-                  } catch {}
-                }}
-                className="btn-cta text-center"
-              >
-                Appeler maintenant
-              </a>
-              <a
-                href="https://wa.me/221777039393?text=Bonjour%20Clinique%20DABIA%2C%20je%20souhaite%20prendre%20un%20rendez-vous."
-                target="_blank"
-                rel="noreferrer"
-                onClick={() => {
-                  try {
-                    sendEvent("click_whatsapp", { page_path: "/rendez-vous", source: "quick_cta", ab_variant: abVariant });
-                    sendEvent("cta_rendez_vous_click", { page_path: "/rendez-vous", cta_type: "whatsapp", ab_variant: abVariant });
-                  } catch {}
-                }}
-                className="btn-cta text-center"
-              >
-                WhatsApp
-              </a>
-              <button
-                type="button"
-                onClick={scrollToForm}
-                className="btn-cta"
-              >
-                Formulaire express (30s)
-              </button>
-            </div>
-          </div>
-
-          <div className="mt-5 rounded-2xl border border-[#e7dcbc] bg-white/85 p-4">
-            <p className="text-sm font-semibold text-[#ad9d64]">Guides utiles avant votre rendez-vous</p>
-            <div className="mt-2 grid sm:grid-cols-2 lg:grid-cols-3 gap-2 text-sm">
-              <a href="/dentiste-dakar" className="underline text-[#bb2988]">Dentiste à Dakar (page principale)</a>
-              <a href="/urgence-dentaire-dakar" className="underline text-[#bb2988]">Urgence dentaire à Dakar</a>
-              <a href="/cabinet-dentaire-dakar" className="underline text-[#bb2988]">Cabinet dentaire à Dakar</a>
-              <a href="/blog/dentiste-dakar-prix-consultation-2026" className="underline text-[#bb2988]">Prix consultation dentiste à Dakar</a>
-              <a href="/blog/ramadan-dentiste-dakar-jeune-horaires-2026" className="underline text-[#bb2988]">Ramadan et dentiste à Dakar</a>
-              <a href="/blog/urgence-dentiste-dakar-24h-que-faire" className="underline text-[#bb2988]">Que faire en urgence dentaire 24h</a>
+            <div className="rounded-xl border border-[#e7dcbc] bg-[#fff9ea] px-3 py-2 text-center text-gray-700 inline-flex items-center justify-center gap-2">
+              <FaPhoneAlt className="text-[#ad9d64]" /> WhatsApp & téléphone disponibles
             </div>
           </div>
 
@@ -537,6 +463,47 @@ const RendezVous = () => {
                   et réessayer.
                 </p>
               )}
+
+              <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2">
+                <a
+                  href="tel:+221777039393"
+                  onClick={() => {
+                    try {
+                      sendEvent("click_tel", { page_path: "/rendez-vous", source: "after_form", ab_variant: abVariant });
+                      sendEvent("cta_rendez_vous_click", { page_path: "/rendez-vous", cta_type: "call_after_form", ab_variant: abVariant });
+                    } catch {}
+                  }}
+                  className="btn-cta text-center inline-flex items-center justify-center gap-2"
+                >
+                  <FaPhoneAlt /> Appeler maintenant
+                </a>
+                <a
+                  href="https://wa.me/221777039393?text=Bonjour%20Clinique%20DABIA%2C%20je%20souhaite%20prendre%20un%20rendez-vous."
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={() => {
+                    try {
+                      sendEvent("click_whatsapp", { page_path: "/rendez-vous", source: "after_form", ab_variant: abVariant });
+                      sendEvent("cta_rendez_vous_click", { page_path: "/rendez-vous", cta_type: "whatsapp_after_form", ab_variant: abVariant });
+                    } catch {}
+                  }}
+                  className="btn-cta text-center inline-flex items-center justify-center gap-2"
+                >
+                  <FaWhatsapp className="text-green-600" /> WhatsApp
+                </a>
+              </div>
+
+              <div className="mt-5 rounded-2xl border border-[#e7dcbc] bg-white/85 p-4">
+                <p className="text-sm font-semibold text-[#ad9d64]">Guides utiles avant votre rendez-vous</p>
+                <div className="mt-2 grid sm:grid-cols-2 lg:grid-cols-3 gap-2 text-sm">
+                  <a href="/dentiste-dakar" className="underline text-[#bb2988]">Dentiste à Dakar (page principale)</a>
+                  <a href="/urgence-dentaire-dakar" className="underline text-[#bb2988]">Urgence dentaire à Dakar</a>
+                  <a href="/cabinet-dentaire-dakar" className="underline text-[#bb2988]">Cabinet dentaire à Dakar</a>
+                  <a href="/blog/dentiste-dakar-prix-consultation-2026" className="underline text-[#bb2988]">Prix consultation dentiste à Dakar</a>
+                  <a href="/blog/ramadan-dentiste-dakar-jeune-horaires-2026" className="underline text-[#bb2988]">Ramadan et dentiste à Dakar</a>
+                  <a href="/blog/urgence-dentiste-dakar-24h-que-faire" className="underline text-[#bb2988]">Que faire en urgence dentaire 24h</a>
+                </div>
+              </div>
             </motion.form>
 
             <motion.div
