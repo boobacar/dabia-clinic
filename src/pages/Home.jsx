@@ -111,8 +111,8 @@ const Home = () => {
   return (
     <div className="bg-white text-gray-800">
       <Seo
-        title="Dentiste à Dakar : Clinique Dentaire DABIA - Soins & Urgences"
-        description="Besoin d'un dentiste à Dakar ? La Clinique Dentaire DABIA est votre clinique dentaire de référence à Dakar (Liberté 6). Urgences, Implants, Orthodontie. Prenez RDV."
+        title="Dentiste à Dakar (Liberté 6) – Urgence & RDV rapide | DABIA"
+        description="Clinique dentaire à Dakar : urgences, détartrage, implants, orthodontie et esthétique. Prenez rendez-vous rapidement par téléphone, WhatsApp ou formulaire."
         canonical="https://www.cliniquedentairedabia.com/"
         url="https://www.cliniquedentairedabia.com/"
       />

@@ -128,6 +128,79 @@ export const TAGS = [
 export const POSTS = [
 
   {
+    slug: "detartrage-dakar-frequence-senegal-dents-saines-2026",
+    title: "Détartrage à Dakar : à quelle fréquence le faire au Sénégal pour garder des dents saines ?",
+    description:
+      "Tous les combien faire un détartrage à Dakar ? Fréquence recommandée selon votre profil, prix indicatif, signes d’alerte et conseils pratiques au Sénégal.",
+    date: "2026-02-23",
+    category: "Prévention",
+    tags: [
+      "détartrage",
+      "dentiste dakar",
+      "détartrage dentaire dakar prix",
+      "gingivite",
+      "prévention",
+    ],
+    author: AUTHORS.sao,
+    cover: detartragePreventifCover,
+    pinned: true,
+    readingMinutes: 8,
+    content: `Le **détartrage** n’est pas un simple soin esthétique : c’est un pilier de la prévention pour garder des gencives saines et éviter des traitements plus lourds.
+
+À Dakar comme ailleurs, la bonne fréquence dépend de votre profil (hygiène, tabac, diabète, antécédents de gingivite/parodontite). Si vous voulez un avis personnalisé, vous pouvez **[prendre rendez-vous](/rendez-vous)**.
+
+## À quelle fréquence faire un détartrage au Sénégal ?
+- **Profil faible risque** (bonne hygiène, pas de saignement) : en général tous les **12 mois**.
+- **Profil moyen risque** (tartre qui revient vite, saignement occasionnel) : tous les **6 à 9 mois**.
+- **Profil élevé** (tabac, diabète, antécédents parodontaux, appareil orthodontique) : souvent tous les **3 à 6 mois**.
+
+> L’intervalle exact se décide après examen clinique des gencives.
+
+## Signes qui montrent qu’il faut consulter sans attendre
+- Gencives qui saignent au brossage
+- Mauvaise haleine persistante
+- Sensibilité gingivale ou gonflement
+- Dépôts jaunâtres/brunâtres près de la gencive
+- Impression de dents “plus longues” (récession)
+
+## Détartrage simple ou soin plus profond ?
+Un détartrage classique suffit quand l’inflammation est superficielle. Si des poches parodontales sont présentes, un **surfaçage radiculaire** peut être indiqué pour assainir en profondeur.
+
+## Et le prix du détartrage à Dakar ?
+Le tarif varie selon :
+1. la quantité de tartre,
+2. l’état des gencives,
+3. la nécessité d’un soin simple ou approfondi.
+
+Un devis clair est expliqué avant tout acte.
+
+## Conseils pour prolonger les résultats
+- Brossage 2 à 3 fois/jour avec brosse souple
+- Nettoyage interdentaire (fil/brossettes)
+- Limiter tabac et sucre fréquent
+- Contrôle régulier selon votre profil
+
+## En résumé
+Faire un détartrage au bon rythme coûte toujours moins cher que traiter une parodontite avancée. La prévention reste votre meilleur investissement santé.
+
+> À la Clinique DABIA, chaque patient repart avec un plan d’entretien personnalisé (fréquence + gestes d’hygiène adaptés).`,
+    faq: [
+      {
+        q: "Le détartrage abîme-t-il les dents ?",
+        a: "Non. Réalisé correctement, il n’abîme pas l’émail. Il retire le tartre qui entretient l’inflammation gingivale.",
+      },
+      {
+        q: "Est-ce douloureux ?",
+        a: "La plupart du temps non, ou avec une gêne légère. En cas de sensibilité importante, le praticien adapte le protocole pour votre confort.",
+      },
+      {
+        q: "Puis-je attendre d’avoir mal avant de faire un détartrage ?",
+        a: "Mieux vaut éviter. Le détartrage est préventif : attendre la douleur signifie souvent que l’inflammation est déjà plus avancée.",
+      },
+    ],
+  },
+
+  {
     slug: "urgence-dentaire-ramadan-dakar-premiers-gestes-2026",
     title: "Urgence dentaire pendant le Ramadan à Dakar : les premiers gestes qui soulagent",
     description:
@@ -373,9 +446,9 @@ En cas de douleur intense, gonflement, fièvre ou dent cassée, il faut consulte
   },
   {
     slug: "dentiste-dakar-prix-consultation-2026",
-    title: "Dentiste Dakar : Prix Consultation et Soins (Guide 2026)",
+    title: "Prix consultation dentiste à Dakar (2026) : guide clair + conseils budget",
     description:
-      "Combien coûte un dentiste à Dakar ? Consultation, détartrage, urgence, soin de carie et devis: repères de prix et conseils pour bien planifier votre budget.",
+      "Prix consultation dentiste à Dakar : repères 2026 pour détartrage, carie, urgence et devis. Comprendre les tarifs et réserver le bon soin au bon moment.",
     date: "2026-02-18",
     category: "Conseils",
     tags: [

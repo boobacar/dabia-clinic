@@ -31,8 +31,8 @@ export default function LocaliteYoff() {
   return (
     <section className="py-20 px-4 max-w-6xl mx-auto mt-20">
       <Seo
-        title="Dentiste à Yoff (proche) – Clinique DABIA"
-        description="Dentiste proche de Yoff : urgences, détartrage, orthodontie, esthétique, implants. Clinique DABIA, Sicap Foire."
+        title="Dentiste Yoff (proche) – Urgence & RDV rapide | DABIA"
+        description="Dentiste proche de Yoff : urgences, détartrage, orthodontie, esthétique et implants. Clinique DABIA à Sicap Foire, RDV rapide."
         url={url}
         canonical={url}
         jsonLd={jsonLd}

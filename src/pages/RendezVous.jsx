@@ -75,6 +75,12 @@ const RendezVous = () => {
 
   const scrollToForm = () => {
     if (!form.current) return;
+    try {
+      sendEvent("cta_rendez_vous_click", {
+        page_path: "/rendez-vous",
+        cta_type: "scroll_form",
+      });
+    } catch {}
     form.current.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
@@ -159,8 +165,8 @@ const RendezVous = () => {
   return (
     <section className="relative mt-20 overflow-hidden">
       <Seo
-        title="Rendez-vous dentiste à Dakar – Formulaire express | DABIA"
-        description="Prenez rendez-vous chez le dentiste à Dakar en 1 minute: formulaire express, appel direct ou WhatsApp. Clinique Dentaire DABIA (Liberté 6)."
+        title="Rendez-vous dentiste Dakar – RDV rapide WhatsApp/Téléphone | DABIA"
+        description="Prenez rendez-vous avec un dentiste à Dakar en 30 secondes : formulaire express, appel direct ou WhatsApp. Réponse rapide de la Clinique Dentaire DABIA (Liberté 6)."
         canonical="https://www.cliniquedentairedabia.com/rendez-vous"
         url="https://www.cliniquedentairedabia.com/rendez-vous"
       />
@@ -204,6 +210,18 @@ const RendezVous = () => {
             confirmer l&apos;horaire exact.
           </p>
 
+          <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-2 text-sm">
+            <div className="rounded-xl border border-[#e7dcbc] bg-[#fff9ea] px-3 py-2 text-center text-gray-700">
+              ✅ Réponse rapide de l&apos;équipe
+            </div>
+            <div className="rounded-xl border border-[#e7dcbc] bg-[#fff9ea] px-3 py-2 text-center text-gray-700">
+              📍 Liberté 6, accès simple depuis Dakar
+            </div>
+            <div className="rounded-xl border border-[#e7dcbc] bg-[#fff9ea] px-3 py-2 text-center text-gray-700">
+              📞 WhatsApp & téléphone disponibles
+            </div>
+          </div>
+
           {/* Bloc conversion rapide */}
           <div className="mt-6 rounded-2xl border border-[#e7dcbc] bg-white/90 p-4 md:p-5 shadow-sm">
             <p className="text-sm md:text-base font-semibold text-[#ad9d64]">
@@ -215,14 +233,26 @@ const RendezVous = () => {
             <div className="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-2">
               <a
                 href="tel:+221777039393"
+                onClick={() => {
+                  try {
+                    sendEvent("click_tel", { page_path: "/rendez-vous", source: "quick_cta" });
+                    sendEvent("cta_rendez_vous_click", { page_path: "/rendez-vous", cta_type: "call" });
+                  } catch {}
+                }}
                 className="btn-cta text-center"
               >
                 Appeler maintenant
               </a>
               <a
-                href="https://wa.me/221777039393"
+                href="https://wa.me/221777039393?text=Bonjour%20Clinique%20DABIA%2C%20je%20souhaite%20prendre%20un%20rendez-vous."
                 target="_blank"
                 rel="noreferrer"
+                onClick={() => {
+                  try {
+                    sendEvent("click_whatsapp", { page_path: "/rendez-vous", source: "quick_cta" });
+                    sendEvent("cta_rendez_vous_click", { page_path: "/rendez-vous", cta_type: "whatsapp" });
+                  } catch {}
+                }}
                 className="btn-cta text-center"
               >
                 WhatsApp
@@ -460,12 +490,16 @@ const RendezVous = () => {
                 )}
               </div>
 
+              <p className="text-xs text-gray-600 -mb-2">
+                Après envoi, notre équipe vous contacte rapidement pour confirmer l&apos;horaire.
+              </p>
+
               <button
                 type="submit"
                 disabled={status === "loading"}
                 className="btn-cta disabled:opacity-50"
               >
-                {status === "loading" ? "Envoi..." : "Envoyer"}
+                {status === "loading" ? "Envoi..." : "Confirmer mon rendez-vous"}
               </button>
 
               {status === "error" && (

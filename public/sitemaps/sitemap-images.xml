@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/detartrage-dakar-frequence-senegal-dents-saines-2026</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/detartrage_preventif.png</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.cliniquedentairedabia.com/blog/urgence-dentaire-ramadan-dakar-premiers-gestes-2026</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
       <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/ramadan_urgence.png</image:loc>

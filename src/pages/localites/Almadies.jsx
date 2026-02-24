@@ -31,8 +31,8 @@ export default function LocaliteAlmadies() {
   return (
     <section className="py-20 px-4 max-w-6xl mx-auto mt-20">
       <Seo
-        title="Dentiste proche des Almadies – Clinique DABIA"
-        description="Vous cherchez un dentiste aux Almadies ? La Clinique Dentaire DABIA (Sicap Foire) propose urgences, détartrage, implants, orthodontie et esthétique."
+        title="Dentiste Almadies (proche) – Soins complets & RDV rapide | DABIA"
+        description="Vous cherchez un dentiste proche des Almadies ? Clinique DABIA (Sicap Foire) : urgences, détartrage, implants, orthodontie et esthétique."
         url={url}
         canonical={url}
         jsonLd={jsonLd}
