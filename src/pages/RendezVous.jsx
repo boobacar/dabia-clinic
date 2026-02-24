@@ -322,16 +322,6 @@ const RendezVous = () => {
                     : "Ajouter des informations complémentaires (optionnel)"}
                 </button>
 
-                <div className="mt-3">
-                  <button
-                    type="submit"
-                    disabled={status === "loading"}
-                    className="btn-cta disabled:opacity-50 w-full"
-                  >
-                    {status === "loading" ? "Envoi..." : variantCopy.submit}
-                  </button>
-                </div>
-
                 {showAdvanced && (
                   <div className="mt-4 space-y-5">
                     <div className="flex flex-col">
@@ -454,6 +444,14 @@ const RendezVous = () => {
                   </div>
                 )}
               </div>
+
+              <button
+                type="submit"
+                disabled={status === "loading"}
+                className="btn-cta disabled:opacity-50 w-full"
+              >
+                {status === "loading" ? "Envoi..." : "Envoyer"}
+              </button>
 
               <p className="text-xs text-gray-600 -mb-2">
                 Après envoi, notre équipe vous contacte rapidement pour confirmer l&apos;horaire.
