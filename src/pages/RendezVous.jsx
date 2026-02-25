@@ -179,8 +179,8 @@ const RendezVous = () => {
   return (
     <section className="relative mt-20 overflow-hidden">
       <Seo
-        title="Rendez-vous dentiste Dakar – RDV rapide WhatsApp/Téléphone | DABIA"
-        description="Prenez rendez-vous avec un dentiste à Dakar en 30 secondes : formulaire express, appel direct ou WhatsApp. Réponse rapide de la Clinique Dentaire DABIA (Liberté 6)."
+        title="Rendez-vous dentiste à Dakar | Réservation en ligne rapide"
+        description="Prenez rendez-vous avec votre dentiste à Dakar en moins d’une minute. Réservation en ligne, appel direct ou WhatsApp avec réponse rapide."
         canonical="https://www.cliniquedentairedabia.com/rendez-vous"
         url="https://www.cliniquedentairedabia.com/rendez-vous"
       />
@@ -444,7 +444,7 @@ const RendezVous = () => {
                 disabled={status === "loading"}
                 className="btn-cta disabled:opacity-50 w-full"
               >
-                {status === "loading" ? "Envoi..." : "Envoyer"}
+                {status === "loading" ? "Envoi..." : variantCopy.submit}
               </button>
 
               <p className="text-xs text-gray-600 -mb-2">

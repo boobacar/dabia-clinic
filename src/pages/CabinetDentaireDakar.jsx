@@ -33,7 +33,7 @@ export default function CabinetDentaireDakar() {
   };
   const lbLD = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "Dentist",
     name: "Cabinet Dentaire DABIA",
     url: canonical,
     telephone: "+221777039393",
@@ -56,8 +56,8 @@ export default function CabinetDentaireDakar() {
   return (
     <section className="py-20 px-4 max-w-7xl mx-auto mt-20">
       <Seo
-        title="Cabinet dentaire Dakar – Soins modernes, devis clair & RDV rapide | DABIA"
-        description="Cabinet dentaire moderne à Dakar : prévention, esthétique, implants, orthodontie et urgences. Devis transparent et prise de rendez-vous rapide."
+        title="Clinique dentaire à Dakar | Équipe experte & RDV rapide"
+        description="Clinique dentaire à Dakar : prévention, soins, implants, orthodontie et urgences avec un plateau technique moderne. Réservez votre rendez-vous en ligne."
         canonical={canonical}
         url={canonical}
         jsonLd={[lbLD, faqLD]}

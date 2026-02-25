@@ -29,7 +29,7 @@ export default function StickyAppointmentBar() {
           to="/rendez-vous"
           className="inline-flex items-center justify-center gap-1 rounded-lg bg-[#bb2988] text-white font-semibold py-2"
         >
-          <CalendarPlus className="w-4 h-4" /> RDV
+          <CalendarPlus className="w-4 h-4" /> Prendre RDV
         </Link>
       </div>
     </div>
