@@ -128,6 +128,93 @@ export const TAGS = [
 export const POSTS = [
 
   {
+    slug: "dentiste-point-e-prix-consultation-soins-2026",
+    title: "Dentiste à Point E (Dakar) : prix consultation, soins courants et prise de RDV rapide",
+    description:
+      "Besoin d’un dentiste à Point E ? Découvrez les soins les plus demandés, les prix indicatifs à Dakar et comment obtenir un RDV rapidement.",
+    date: "2026-02-27",
+    category: "Conseils",
+    tags: [
+      "dentiste dakar",
+      "clinique dentaire dakar",
+      "prix",
+      "point e",
+      "tarif dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: prixSoinsCover,
+    pinned: true,
+    readingMinutes: 7,
+    content: `Vous cherchez un **dentiste à Point E** avec un bon équilibre entre qualité de soin, clarté des tarifs et disponibilité ? Voici un guide pratique pour prendre la bonne décision à Dakar.
+
+Pour une prise en charge rapide, vous pouvez **[prendre rendez-vous ici](/rendez-vous)**.
+
+## 1) Prix consultation dentiste à Dakar : comment ça se structure
+Le coût dépend surtout de :
+- votre motif de consultation,
+- la nécessité ou non d’une radio,
+- le plan de traitement proposé.
+
+Une consultation sérieuse doit inclure un diagnostic expliqué, des priorités de soins et un devis clair si des actes sont nécessaires.
+
+> Conseil : demandez un plan en plusieurs étapes (urgence, fonctionnel, esthétique) pour mieux gérer le budget.
+
+## 2) Soins les plus fréquents pour les patients de Point E
+Les consultations concernent souvent :
+- **douleurs dentaires** et urgences,
+- **détartrage** et santé des gencives,
+- **caries** et restaurations,
+- **prothèses dentaires** (fixes/amovibles),
+- **esthétique du sourire** (blanchiment, alignement).
+
+Prendre en charge tôt évite l’aggravation et réduit les coûts globaux.
+
+## 3) Ce qu’il faut vérifier avant de valider votre devis
+Avant de commencer, assurez-vous que le cabinet précise :
+1. les actes indispensables,
+2. le nombre de séances estimé,
+3. les alternatives possibles,
+4. les consignes de suivi.
+
+Un devis transparent vous aide à décider sans stress.
+
+## 4) Pourquoi la proximité Point E compte vraiment
+Un cabinet accessible depuis **Point E**, **Fann** ou **Mermoz** facilite :
+- la ponctualité des rendez-vous,
+- le suivi après soin,
+- la gestion rapide d’une gêne imprévue.
+
+En dentaire, le suivi régulier améliore la stabilité des résultats.
+
+## 5) Prise de RDV immédiate : Appel ou WhatsApp
+Préparez ces infos avant de contacter la clinique :
+- symptôme principal,
+- ancienneté de la douleur,
+- créneau souhaité.
+
+Contact direct :
+- **Appel :** [77 703 93 93](tel:+221777039393)
+- **WhatsApp :** [Prendre RDV](https://wa.me/221777039393?text=Bonjour%20Clinique%20DABIA%2C%20je%20souhaite%20prendre%20un%20rendez-vous.)
+
+## En résumé
+Pour trouver un dentiste à Point E, privilégiez un cabinet qui combine **diagnostic clair, devis transparent et disponibilité réelle**. C’est la meilleure approche pour traiter efficacement et durablement.`,
+    faq: [
+      {
+        q: "Quel est le prix d’une consultation dentaire à Point E ?",
+        a: "Le tarif dépend du besoin clinique et des examens éventuels. Le plus important est d’obtenir un devis détaillé et compréhensible avant traitement.",
+      },
+      {
+        q: "Peut-on obtenir un rendez-vous rapide ?",
+        a: "Oui. En appel ou WhatsApp, vous pouvez décrire votre situation et être orienté selon le degré d’urgence.",
+      },
+      {
+        q: "Dois-je attendre que la douleur devienne forte ?",
+        a: "Non. Une consultation précoce permet généralement un soin plus simple, moins coûteux et plus confortable.",
+      },
+    ],
+  },
+
+  {
     slug: "dentiste-parcelles-assainies-prix-consultation-soins-2026",
     title: "Dentiste aux Parcelles Assainies (Dakar) : prix consultation, soins fréquents et prise de RDV rapide",
     description:
