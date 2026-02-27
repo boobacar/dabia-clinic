@@ -128,6 +128,92 @@ export const TAGS = [
 export const POSTS = [
 
   {
+    slug: "dentiste-liberte-6-prix-consultation-soins-2026",
+    title: "Dentiste à Liberté 6 (Dakar) : prix consultation, soins fréquents et comment prendre RDV rapidement",
+    description:
+      "Vous cherchez un dentiste à Liberté 6 ? Tarifs indicatifs à Dakar, soins les plus demandés, délais de RDV, et conseils pour éviter les mauvaises surprises.",
+    date: "2026-02-26",
+    category: "Conseils",
+    tags: [
+      "dentiste dakar",
+      "clinique dentaire dakar",
+      "prix",
+      "liberté 6",
+      "tarif dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: prixSoinsCover,
+    pinned: true,
+    readingMinutes: 7,
+    content: `Trouver un **dentiste à Liberté 6** est souvent une question de 3 choses : **proximité**, **prix clair** et **prise en charge rapide**. Voici un guide concret pour Dakar, avec les informations utiles avant de réserver.
+
+Si vous souhaitez un avis direct, vous pouvez **[prendre rendez-vous ici](/rendez-vous)**.
+
+## 1) Prix consultation dentiste à Dakar : ce qu’il faut savoir
+Les tarifs varient selon la complexité du cas, l’imagerie nécessaire et le plan de traitement. En pratique, un rendez-vous sérieux comprend :
+- examen clinique,
+- explication du diagnostic,
+- plan de soins priorisé,
+- devis clair avant actes coûteux.
+
+> Le bon réflexe : demander un plan en étapes (urgent, nécessaire, optionnel) pour maîtriser le budget.
+
+## 2) Soins les plus demandés autour de Liberté 6
+Les demandes les plus fréquentes en cabinet sont :
+- **douleur/urgence dentaire** (rage de dent, gonflement),
+- **détartrage** et prévention gingivale,
+- **soins de carie** et reconstruction,
+- **prothèses** (fixe ou amovible),
+- **blanchiment** et esthétique du sourire.
+
+Pour un cas urgent, n’attendez pas que la douleur augmente : un traitement précoce coûte souvent moins cher qu’une intervention tardive.
+
+## 3) Comment éviter les mauvaises surprises sur le devis
+Avant de commencer, vérifiez :
+1. si des radios sont nécessaires,
+2. le nombre de séances prévu,
+3. les alternatives possibles (et leur coût),
+4. les consignes post-soin.
+
+Un devis lisible permet de décider vite, sans stress.
+
+## 4) Localité + accessibilité : pourquoi c’est important
+Choisir une clinique proche de **Liberté 6**, **Sicap**, **Mermoz** ou **Point E** aide à :
+- réduire les retards et rendez-vous manqués,
+- faciliter le suivi,
+- réagir plus vite en cas de douleur.
+
+La continuité des soins fait souvent la différence sur le résultat final.
+
+## 5) CTA rapide : Appel ou WhatsApp
+Pour gagner du temps, préparez 3 infos avant contact :
+- votre symptôme principal,
+- depuis quand la douleur gêne,
+- disponibilité (matin/après-midi).
+
+Ensuite, contactez la clinique via :
+- **Appel :** [77 703 93 93](tel:+221777039393)
+- **WhatsApp :** [Prendre RDV](https://wa.me/221777039393?text=Bonjour%20Clinique%20DABIA%2C%20je%20souhaite%20prendre%20un%20rendez-vous.)
+
+## En résumé
+Si vous cherchez un dentiste à Liberté 6, priorisez un cabinet qui propose **diagnostic clair + devis transparent + accès simple**. C’est la meilleure stratégie pour soigner vite, bien, et au bon coût.`,
+    faq: [
+      {
+        q: "Quel est le prix d’une consultation dentiste à Dakar ?",
+        a: "Le tarif dépend du motif de consultation et des examens nécessaires. L’essentiel est d’obtenir un plan de traitement clair et un devis détaillé avant les actes importants.",
+      },
+      {
+        q: "Peut-on prendre RDV rapidement depuis Liberté 6 ?",
+        a: "Oui, en appel ou WhatsApp, vous pouvez transmettre vos symptômes et obtenir une orientation rapide selon l’urgence.",
+      },
+      {
+        q: "Que faire en cas de douleur dentaire soudaine ?",
+        a: "Consultez rapidement. Évitez l’automédication prolongée et demandez une évaluation clinique pour traiter la cause, pas seulement la douleur.",
+      },
+    ],
+  },
+
+  {
     slug: "detartrage-dakar-frequence-senegal-dents-saines-2026",
     title: "Détartrage à Dakar : à quelle fréquence le faire au Sénégal pour garder des dents saines ?",
     description:
