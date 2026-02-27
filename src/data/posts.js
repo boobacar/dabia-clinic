@@ -128,6 +128,92 @@ export const TAGS = [
 export const POSTS = [
 
   {
+    slug: "tarifs-dentaires-dakar-2026-detartrage-carie-extraction",
+    title: "Tarifs dentaires à Dakar (2026) : détartrage, carie, extraction — guide pratique",
+    description:
+      "Combien coûtent un détartrage, un soin de carie et une extraction à Dakar en 2026 ? Fourchettes indicatives, facteurs de prix et conseils pour éviter les surcoûts.",
+    date: "2026-02-27",
+    category: "Conseils",
+    tags: [
+      "dentiste dakar",
+      "tarif dentiste dakar",
+      "détartrage dentaire dakar prix",
+      "soin carie prix",
+      "extraction dentaire dakar",
+      "prix",
+    ],
+    author: AUTHORS.sao,
+    cover: prixSoinsCover,
+    pinned: true,
+    readingMinutes: 8,
+    content: `Vous cherchez des repères fiables sur les **tarifs dentaires à Dakar** en 2026 ? Voici un guide clair pour les 3 actes les plus demandés : **détartrage**, **soin de carie** et **extraction**.
+
+> Important : ces montants restent des **fourchettes indicatives**. Le prix exact dépend toujours d’un examen clinique et, si besoin, d’une radio.
+
+## 1) Détartrage à Dakar : combien prévoir ?
+En pratique, un détartrage peut varier selon l’état des gencives et la quantité de tartre.
+
+**Repère indicatif 2026** :
+- Détartrage simple : souvent entre **25 000 et 45 000 FCFA**
+- Si inflammation plus marquée (soin plus long) : tarif ajusté après bilan
+
+Le coût dépend surtout du **temps clinique** et du niveau d’inflammation gingivale.
+
+## 2) Soin de carie : quel budget moyen ?
+Le tarif d’une carie varie selon la **profondeur** de la lésion et la **taille** de la reconstruction.
+
+**Repère indicatif 2026** :
+- Carie simple (petite à moyenne) : environ **25 000 à 60 000 FCFA**
+- Carie profonde : peut nécessiter des actes complémentaires (protection pulpaire, voire traitement canalaire), avec devis séparé
+
+Intervenir tôt reste la meilleure façon de limiter les coûts.
+
+## 3) Extraction dentaire : prix selon la difficulté
+Le prix dépend principalement de la position de la dent et de la difficulté opératoire.
+
+**Repère indicatif 2026** :
+- Extraction simple : souvent dès **20 000 FCFA**
+- Extraction complexe/chirurgicale : tarif supérieur après imagerie et évaluation
+
+En cas de gonflement, fièvre ou douleur intense, la priorité est la prise en charge rapide.
+
+## 4) Pourquoi les tarifs varient-ils d’un patient à l’autre ?
+Plusieurs facteurs influencent le devis :
+1. complexité du cas,
+2. imagerie nécessaire (radio/CBCT),
+3. durée du soin,
+4. matériaux utilisés,
+5. besoin de séances supplémentaires.
+
+Un bon cabinet remet un **devis clair** avant les actes importants.
+
+## 5) Comment réduire son budget dentaire sans sacrifier la qualité
+- Ne pas attendre la douleur sévère
+- Faire un contrôle régulier (6 à 12 mois)
+- Demander un plan de traitement par priorités
+- Vérifier sa couverture IPM/mutuelle
+
+## En résumé
+À Dakar en 2026, les tarifs d’un détartrage, d’une carie ou d’une extraction dépendent surtout du **diagnostic**. La meilleure stratégie reste : consultation précoce + devis transparent + plan de soins progressif.
+
+Besoin d’un chiffrage personnalisé ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Peut-on connaître le prix exact par téléphone ?",
+        a: "Un repère est possible, mais un prix exact demande un examen clinique et parfois une radio.",
+      },
+      {
+        q: "Le détartrage est-il toujours le même prix ?",
+        a: "Non. Le tarif varie selon la quantité de tartre, l’état gingival et le temps nécessaire.",
+      },
+      {
+        q: "Une extraction est-elle forcément chère ?",
+        a: "Pas toujours. Une extraction simple reste souvent accessible ; les cas chirurgicaux demandent un devis spécifique.",
+      },
+    ],
+  },
+
+  {
     slug: "dentiste-mermoz-prix-consultation-soins-2026",
     title: "Dentiste à Mermoz (Dakar) : prix consultation, soins prioritaires et RDV rapide",
     description:
