@@ -128,6 +128,95 @@ export const TAGS = [
 export const POSTS = [
 
   {
+    slug: "dentiste-parcelles-assainies-prix-consultation-soins-2026",
+    title: "Dentiste aux Parcelles Assainies (Dakar) : prix consultation, soins fréquents et prise de RDV rapide",
+    description:
+      "Vous cherchez un dentiste aux Parcelles Assainies ? Découvrez les soins les plus demandés, les tarifs indicatifs à Dakar et comment prendre un RDV rapidement.",
+    date: "2026-02-27",
+    category: "Conseils",
+    tags: [
+      "dentiste dakar",
+      "clinique dentaire dakar",
+      "parcelles assainies",
+      "prix",
+      "tarif dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: prixSoinsCover,
+    pinned: true,
+    readingMinutes: 7,
+    content: `Si vous habitez aux **Parcelles Assainies**, trouver un dentiste fiable repose souvent sur 3 critères : **accès facile**, **devis clair** et **rendez-vous rapide**. Voici un guide pratique pour vous orienter à Dakar.
+
+Pour un avis personnalisé, vous pouvez **[prendre rendez-vous ici](/rendez-vous)**.
+
+## 1) Prix d’une consultation dentaire à Dakar : l’essentiel
+Le tarif dépend du motif de consultation, des examens complémentaires (radio si nécessaire) et du traitement envisagé.
+
+Une consultation utile doit inclure :
+- un examen clinique complet,
+- une explication simple du diagnostic,
+- un plan de soins priorisé,
+- un devis transparent avant les actes plus coûteux.
+
+> Astuce budget : demandez toujours une stratégie par étapes (urgent, nécessaire, esthétique).
+
+## 2) Soins les plus demandés par les patients des Parcelles
+Les motifs de consultation les plus fréquents sont :
+- **douleur dentaire / urgence**,
+- **détartrage** et prévention gingivale,
+- **caries** et reconstitution de dent,
+- **prothèse dentaire** (fixe ou amovible),
+- **soins esthétiques** (blanchiment, harmonisation du sourire).
+
+Plus on intervient tôt, plus le traitement est simple et maîtrisable financièrement.
+
+## 3) Comment comparer deux cabinets sans se tromper
+Avant de valider votre RDV, vérifiez :
+1. la clarté du diagnostic,
+2. le détail des actes proposés,
+3. le nombre de séances prévues,
+4. les alternatives possibles selon votre budget,
+5. le suivi après le soin.
+
+Un bon cabinet vous laisse comprendre et décider, sans pression.
+
+## 4) Parcelles Assainies : l’intérêt d’un cabinet accessible
+Choisir une clinique facilement accessible depuis les **Parcelles Assainies** permet de :
+- respecter le calendrier des soins,
+- revenir vite en cas de gêne,
+- maintenir un suivi régulier (prévention, contrôle, détartrage).
+
+En santé bucco-dentaire, la régularité améliore fortement les résultats.
+
+## 5) Prise de RDV rapide : Appel ou WhatsApp
+Pour accélérer votre prise en charge, préparez :
+- votre symptôme principal,
+- la durée de la douleur,
+- votre disponibilité.
+
+Contact direct :
+- **Appel :** [77 703 93 93](tel:+221777039393)
+- **WhatsApp :** [Prendre RDV](https://wa.me/221777039393?text=Bonjour%20Clinique%20DABIA%2C%20je%20souhaite%20prendre%20un%20rendez-vous.)
+
+## En résumé
+Pour un dentiste aux Parcelles Assainies, privilégiez la combinaison **proximité + devis clair + suivi sérieux**. C’est la meilleure voie pour traiter efficacement, au bon rythme, et éviter les complications coûteuses.`,
+    faq: [
+      {
+        q: "Quel est le tarif d’une consultation dentiste aux Parcelles Assainies ?",
+        a: "Le tarif varie selon votre besoin réel et les examens nécessaires. Le plus important est d’avoir un diagnostic clair et un devis détaillé avant traitement.",
+      },
+      {
+        q: "Puis-je obtenir un RDV rapidement ?",
+        a: "Oui. En appel ou WhatsApp, vous pouvez décrire vos symptômes et être orienté rapidement selon le degré d’urgence.",
+      },
+      {
+        q: "Que faire si la douleur augmente la nuit ?",
+        a: "Ne tardez pas : consultez rapidement pour traiter la cause. Évitez de masquer la douleur plusieurs jours sans examen dentaire.",
+      },
+    ],
+  },
+
+  {
     slug: "dentiste-liberte-6-prix-consultation-soins-2026",
     title: "Dentiste à Liberté 6 (Dakar) : prix consultation, soins fréquents et comment prendre RDV rapidement",
     description:
