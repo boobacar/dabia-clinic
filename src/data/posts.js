@@ -128,6 +128,94 @@ export const TAGS = [
 export const POSTS = [
 
   {
+    slug: "dentiste-mermoz-prix-consultation-soins-2026",
+    title: "Dentiste à Mermoz (Dakar) : prix consultation, soins prioritaires et RDV rapide",
+    description:
+      "Vous cherchez un dentiste à Mermoz ? Voici les soins les plus fréquents, les prix indicatifs à Dakar et la meilleure façon d’obtenir un RDV rapidement.",
+    date: "2026-02-27",
+    category: "Conseils",
+    tags: [
+      "dentiste dakar",
+      "clinique dentaire dakar",
+      "prix",
+      "mermoz",
+      "tarif dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: prixSoinsCover,
+    pinned: true,
+    readingMinutes: 7,
+    content: `Si vous recherchez un **dentiste à Mermoz**, l’objectif est simple : obtenir un diagnostic clair, un plan de soins réaliste et une prise en charge rapide. Ce guide vous aide à choisir sans perdre de temps.
+
+Pour un contact direct, vous pouvez **[prendre rendez-vous ici](/rendez-vous)**.
+
+## 1) Prix consultation dentiste à Dakar : ce qui influence le tarif
+Le coût varie selon :
+- le motif de consultation,
+- la complexité clinique,
+- les examens nécessaires (radio, contrôle complémentaire),
+- le type de soin à prévoir.
+
+Une bonne consultation doit vous donner une vision claire : urgence à traiter, soins à planifier, options possibles selon budget.
+
+> Bon réflexe : demander un devis détaillé par étape pour éviter les surprises.
+
+## 2) Soins les plus demandés autour de Mermoz
+Les patients consultent souvent pour :
+- **douleurs dentaires aiguës**,
+- **détartrage** et prévention gingivale,
+- **caries** et reconstruction,
+- **prothèses** (fixes ou amovibles),
+- **soins esthétiques** du sourire.
+
+Consulter tôt permet en général de réduire la durée et le coût du traitement.
+
+## 3) Avant de valider un plan de soins, vérifiez ces 5 points
+1. le diagnostic est-il expliqué simplement ?
+2. les actes prioritaires sont-ils identifiés ?
+3. le nombre de séances est-il estimé ?
+4. y a-t-il des alternatives thérapeutiques ?
+5. le suivi post-soin est-il prévu ?
+
+La transparence du cabinet est un excellent indicateur de qualité.
+
+## 4) Pourquoi choisir un cabinet accessible depuis Mermoz
+Une clinique facilement accessible depuis **Mermoz**, **Sacré-Cœur** ou **Point E** facilite :
+- le respect des rendez-vous,
+- les contrôles réguliers,
+- la gestion rapide d’une gêne imprévue.
+
+Le suivi est un facteur clé de résultats durables.
+
+## 5) RDV rapide : Appel ou WhatsApp
+Pour accélérer votre orientation, préparez :
+- votre symptôme principal,
+- depuis quand la gêne dure,
+- vos disponibilités.
+
+Contact direct :
+- **Appel :** [77 703 93 93](tel:+221777039393)
+- **WhatsApp :** [Prendre RDV](https://wa.me/221777039393?text=Bonjour%20Clinique%20DABIA%2C%20je%20souhaite%20prendre%20un%20rendez-vous.)
+
+## En résumé
+Pour choisir un dentiste à Mermoz, privilégiez un cabinet qui combine **proximité, clarté du devis et suivi sérieux**. C’est la meilleure base pour des soins efficaces et durables.`,
+    faq: [
+      {
+        q: "Quel est le prix d’une consultation dentaire à Mermoz ?",
+        a: "Le tarif dépend de votre situation clinique et des examens nécessaires. L’important est d’obtenir un devis détaillé et transparent.",
+      },
+      {
+        q: "Peut-on avoir un RDV rapidement ?",
+        a: "Oui. Par appel ou WhatsApp, vous pouvez présenter votre besoin et être orienté rapidement selon l’urgence.",
+      },
+      {
+        q: "Est-ce utile de consulter même si la douleur est supportable ?",
+        a: "Oui. Une douleur légère peut cacher un problème qui évolue. Une consultation précoce évite souvent des soins plus lourds.",
+      },
+    ],
+  },
+
+  {
     slug: "dentiste-point-e-prix-consultation-soins-2026",
     title: "Dentiste à Point E (Dakar) : prix consultation, soins courants et prise de RDV rapide",
     description:
