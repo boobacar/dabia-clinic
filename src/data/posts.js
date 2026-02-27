@@ -129,9 +129,9 @@ export const POSTS = [
 
   {
     slug: "tarifs-dentaires-dakar-2026-detartrage-carie-extraction",
-    title: "Tarifs dentaires à Dakar (2026) : détartrage, carie, extraction — guide pratique",
+    title: "Tarifs dentaires à Dakar en 2026 : détartrage, carie, extraction",
     description:
-      "Combien coûtent un détartrage, un soin de carie et une extraction à Dakar en 2026 ? Fourchettes indicatives, facteurs de prix et conseils pour éviter les surcoûts.",
+      "Découvrez les prix indicatifs 2026 à Dakar pour un détartrage, un soin de carie et une extraction : fourchettes FCFA, facteurs de coût et conseils budget.",
     date: "2026-02-27",
     category: "Conseils",
     tags: [
