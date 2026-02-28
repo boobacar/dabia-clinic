@@ -128,6 +128,221 @@ export const TAGS = [
 export const POSTS = [
 
   {
+    slug: "dentiste-urgence-nuit-weekend-dakar-2026",
+    title: "Dentiste urgence nuit/week-end à Dakar : où aller et quoi faire ? (2026)",
+    description:
+      "Rage de dent la nuit ou le week-end à Dakar ? Les bons réflexes avant consultation, signes d’alerte et prise en charge rapide en urgence.",
+    date: "2026-02-28",
+    category: "Urgences",
+    tags: [
+      "dentiste dakar 24/24",
+      "urgence dentaire dakar",
+      "dentiste nuit dakar",
+      "dentiste weekend dakar",
+      "douleur dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: urgenceNuitCover,
+    pinned: true,
+    readingMinutes: 8,
+    content: `Une douleur dentaire qui démarre la nuit ou le week-end peut vite devenir ingérable. À Dakar, il faut d’abord soulager correctement, puis consulter rapidement pour éviter les complications.
+
+## 1) Premiers gestes utiles
+- Antalgique adapté selon notice,
+- Froid externe par sessions courtes,
+- Rinçage doux à l’eau tiède,
+- Repos, tête légèrement surélevée.
+
+## 2) Urgence vraie : quand ne pas attendre
+- Gonflement facial,
+- Fièvre,
+- Difficulté à avaler,
+- Douleur pulsatile persistante,
+- Dent cassée après traumatisme.
+
+## 3) Erreurs fréquentes à éviter
+- Automédication antibiotique,
+- Applications irritantes sur la gencive,
+- Reporter la consultation jusqu’au lundi.
+
+## En résumé
+En cas d’urgence dentaire la nuit/week-end à Dakar, le bon réflexe est : soulager, surveiller les signes d’alerte et consulter sans délai.
+
+Besoin d’orientation rapide : **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Puis-je attendre le lendemain si la douleur baisse ?",
+        a: "Mieux vaut consulter vite : l’accalmie peut être temporaire et l’infection progresser.",
+      },
+      {
+        q: "Le froid remplace-t-il le traitement ?",
+        a: "Non, il soulage temporairement seulement. La cause doit être traitée au cabinet.",
+      },
+    ],
+  },
+
+  {
+    slug: "ipm-mutuelle-dentiste-dakar-prise-en-charge-2026",
+    title: "IPM & mutuelle dentiste à Dakar : comment optimiser votre prise en charge ?",
+    description:
+      "Comment utiliser votre IPM/mutuelle chez le dentiste à Dakar ? Conseils pratiques pour devis, remboursements et planification des soins.",
+    date: "2026-02-28",
+    category: "Conseils",
+    tags: [
+      "ipm dentaire dakar",
+      "mutuelle dentaire dakar",
+      "assurance dentaire senegal",
+      "prix dentiste",
+      "devis dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: devisDentaireCover,
+    pinned: true,
+    readingMinutes: 7,
+    content: `À Dakar, beaucoup de patients disposent d’une **IPM** ou d’une **mutuelle** mais n’optimisent pas leur remboursement dentaire. Pourtant, quelques bonnes pratiques permettent de mieux gérer le budget.
+
+## 1) Avant le rendez-vous
+- Vérifiez votre plafond annuel,
+- Identifiez les actes couverts,
+- Préparez vos pièces (carte, numéro d’adhérent).
+
+## 2) Demander un devis exploitable
+Un bon devis doit être clair, daté, détaillé, et présenter les actes prioritaires.
+
+## 3) Stratégie budget
+- Traiter d’abord l’urgence,
+- Planifier les soins par étapes,
+- Utiliser les périodes de renouvellement de plafond si possible.
+
+## 4) Pourquoi c’est important
+Un plan de soins phasé évite de retarder les traitements nécessaires et limite les dépenses imprévues.
+
+## En résumé
+Avec une bonne préparation IPM/mutuelle, vous pouvez soigner efficacement tout en maîtrisant vos coûts.
+
+Pour un devis clair : **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Tous les soins sont-ils remboursés ?",
+        a: "Non, cela dépend du contrat (soins courants, prothèses, implantologie, etc.).",
+      },
+      {
+        q: "Puis-je obtenir un devis avant de commencer ?",
+        a: "Oui, c’est recommandé pour anticiper votre reste à charge.",
+      },
+    ],
+  },
+
+  {
+    slug: "invisalign-dakar-prix-adulte-aligneurs-2026",
+    title: "Invisalign à Dakar : prix adulte, durée et résultats des aligneurs (2026)",
+    description:
+      "Combien coûte Invisalign à Dakar en 2026 ? Durée du traitement, indications et conseils pour adultes qui veulent un appareil discret.",
+    date: "2026-02-28",
+    category: "Orthodontie",
+    tags: [
+      "invisalign dakar",
+      "appareil dentaire prix dakar",
+      "orthodontie adulte",
+      "aligneurs transparents",
+      "dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: invisalignCover,
+    pinned: true,
+    readingMinutes: 8,
+    content: `Les aligneurs transparents type **Invisalign** séduisent de plus en plus d’adultes à Dakar. Ils permettent d’aligner les dents discrètement, avec un vrai confort au quotidien.
+
+## 1) Pour quels cas ?
+- Chevauchements légers à modérés,
+- Espaces entre les dents,
+- Corrections orthodontiques esthétiques adultes.
+
+## 2) Durée moyenne
+Selon la complexité, le traitement dure souvent entre 6 et 18 mois.
+
+## 3) Prix Invisalign à Dakar (repères 2026)
+Le coût dépend du nombre d’aligneurs, du suivi et des corrections nécessaires. Un devis personnalisé est indispensable après bilan.
+
+## 4) Points clés pour de bons résultats
+- Porter les aligneurs 20–22h/jour,
+- Suivre les contrôles,
+- Respecter les consignes d’hygiène.
+
+## En résumé
+Invisalign est une solution premium pour les adultes qui veulent aligner leur sourire sans bagues visibles.
+
+Pour un bilan orthodontique : **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Invisalign est-il toujours plus cher que les bagues ?",
+        a: "Souvent oui, mais le tarif dépend surtout de la complexité clinique.",
+      },
+      {
+        q: "Est-ce adapté aux adultes actifs ?",
+        a: "Oui, c’est l’un des principaux avantages des aligneurs transparents.",
+      },
+    ],
+  },
+
+  {
+    slug: "extraction-dent-sagesse-prix-dakar-2026",
+    title: "Extraction dent de sagesse à Dakar : prix, douleur et cicatrisation (2026)",
+    description:
+      "Combien coûte l’extraction d’une dent de sagesse à Dakar ? Types d’intervention, douleur post-opératoire et conseils pour cicatriser vite.",
+    date: "2026-02-28",
+    category: "Urgences",
+    tags: [
+      "dent de sagesse",
+      "extraction dent de sagesse dakar",
+      "prix extraction dentaire",
+      "urgence dentaire",
+      "dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: sagesseCover,
+    pinned: true,
+    readingMinutes: 8,
+    content: `L’extraction d’une **dent de sagesse** est fréquente à Dakar, surtout en cas de douleur, infection ou manque de place. Une prise en charge adaptée limite la gêne et accélère la cicatrisation.
+
+## 1) Quand faut-il extraire ?
+- Douleur répétée au fond de la mâchoire,
+- Infection de gencive (péricoronarite),
+- Dent incluse ou mal positionnée,
+- Risque pour la dent voisine.
+
+## 2) Prix extraction dent de sagesse à Dakar
+Le tarif dépend de la difficulté :
+- extraction simple,
+- extraction chirurgicale (dent incluse).
+Un devis précis suit l’examen et l’imagerie.
+
+## 3) Douleur et suites opératoires
+L’intervention se fait sous anesthésie locale. La gêne post-op est généralement contrôlée avec un protocole simple (antalgiques, froid, repos).
+
+## 4) Conseils cicatrisation
+- Glace externe le premier jour,
+- Alimentation molle 24–48h,
+- Hygiène douce selon consignes,
+- Éviter tabac/efforts intenses au début.
+
+## En résumé
+Un diagnostic précoce et un protocole post-op bien suivi permettent une récupération rapide.
+
+Pour une évaluation : **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "L’extraction est-elle douloureuse ?",
+        a: "Non pendant l’acte (anesthésie locale). Une gêne post-op est possible mais contrôlable.",
+      },
+      {
+        q: "Combien de jours pour récupérer ?",
+        a: "La plupart des patients se sentent mieux en quelques jours, selon la complexité du cas.",
+      },
+    ],
+  },
+
+  {
     slug: "mal-de-dent-dakar-que-faire-urgence-2026",
     title: "Mal de dent à Dakar : que faire immédiatement avant de consulter ? (2026)",
     description:
