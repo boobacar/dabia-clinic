@@ -128,6 +128,225 @@ export const TAGS = [
 export const POSTS = [
 
   {
+    slug: "mal-de-dent-dakar-que-faire-urgence-2026",
+    title: "Mal de dent à Dakar : que faire immédiatement avant de consulter ? (2026)",
+    description:
+      "Douleur dentaire soudaine à Dakar ? Les bons réflexes pour soulager rapidement, éviter les erreurs fréquentes et savoir quand consulter en urgence.",
+    date: "2026-02-28",
+    category: "Urgences",
+    tags: [
+      "dentiste dakar",
+      "douleur dentaire",
+      "urgence dentaire",
+      "dentiste dakar 24/24",
+      "clinique dentaire dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: urgenceCover,
+    pinned: true,
+    readingMinutes: 7,
+    content: `Un **mal de dent** peut vite devenir insupportable, surtout la nuit. À Dakar, le plus important est de **soulager rapidement** sans aggraver la situation, puis de consulter pour traiter la cause.
+
+## 1) Les bons gestes immédiats
+- Prenez un antalgique adapté (selon notice).
+- Appliquez du froid sur la joue par sessions courtes.
+- Rincez doucement la bouche à l’eau tiède.
+- Évitez de mâcher du côté douloureux.
+
+## 2) Ce qu’il faut éviter
+- Poser de l’aspirine directement sur la gencive.
+- Prendre des antibiotiques sans examen.
+- Retarder la consultation plusieurs jours.
+
+## 3) Quand consulter en urgence à Dakar
+Consultez sans tarder si vous avez :
+- gonflement de la joue,
+- fièvre,
+- douleur qui empêche de dormir,
+- dent cassée après traumatisme.
+
+## 4) Pourquoi agir tôt change tout
+Une consultation précoce permet souvent un soin plus simple et moins coûteux qu’un traitement tardif.
+
+## En résumé
+Le mal de dent n’est pas “normal”. Soulagez vite, évitez l’automédication hasardeuse et consultez rapidement pour traiter la cause.
+
+Pour une prise en charge rapide : **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Dois-je attendre que la douleur passe toute seule ?",
+        a: "Mieux vaut consulter rapidement : une douleur dentaire peut cacher une infection qui s’aggrave.",
+      },
+      {
+        q: "Le froid aide-t-il vraiment ?",
+        a: "Oui, temporairement. Il réduit l’inflammation locale en attendant la consultation.",
+      },
+    ],
+  },
+
+  {
+    slug: "dentiste-enfant-dakar-premiere-visite-conseils-2026",
+    title: "Dentiste enfant à Dakar : à quel âge faire la première visite ?",
+    description:
+      "À quel âge consulter un dentiste pour enfant à Dakar ? Guide pratique pour parents : première visite, prévention des caries et bons réflexes au quotidien.",
+    date: "2026-02-28",
+    category: "Pédiatrie",
+    tags: [
+      "dentiste pour enfant dakar",
+      "dentiste pediatrique dakar",
+      "caries enfant",
+      "prévention",
+      "dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: enfantCover,
+    pinned: true,
+    readingMinutes: 8,
+    content: `La santé bucco-dentaire commence tôt. À Dakar, beaucoup de parents attendent la douleur avant de consulter, alors qu’une première visite précoce évite les urgences.
+
+## 1) Âge recommandé pour la première visite
+Idéalement, la première consultation se fait vers **1 an** ou dès l’éruption des premières dents.
+
+## 2) Pourquoi consulter tôt ?
+- Détecter les caries débutantes,
+- Corriger les habitudes à risque (biberon sucré, grignotage),
+- Habituer l’enfant au cabinet sans peur.
+
+## 3) Signes d’alerte à ne pas ignorer
+- Taches blanches/brunes sur les dents,
+- Douleur au froid ou au sucré,
+- Mauvaise haleine persistante,
+- Saignement gingival.
+
+## 4) Prévention à la maison
+- Brossage 2 fois/jour avec dentifrice fluoré adapté,
+- Limiter les boissons sucrées,
+- Contrôle dentaire régulier.
+
+## En résumé
+La première visite précoce protège le sourire de votre enfant et évite des soins lourds plus tard.
+
+Pour un bilan enfant : **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Mon enfant n’a pas mal, faut-il quand même consulter ?",
+        a: "Oui. Beaucoup de problèmes débutent sans douleur visible.",
+      },
+      {
+        q: "Les dents de lait sont-elles vraiment importantes ?",
+        a: "Oui, elles guident les dents définitives et influencent mastication et langage.",
+      },
+    ],
+  },
+
+  {
+    slug: "gencives-qui-saignent-dakar-causes-solutions-2026",
+    title: "Gencives qui saignent à Dakar : causes fréquentes et solutions efficaces",
+    description:
+      "Pourquoi les gencives saignent-elles au brossage ? Découvrez les causes les plus fréquentes, les soins recommandés et quand consulter à Dakar.",
+    date: "2026-02-28",
+    category: "Prévention",
+    tags: [
+      "gingivite",
+      "parodontite",
+      "détartrage",
+      "dentiste dakar",
+      "clinique dentaire dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: gingiviteCover,
+    pinned: true,
+    readingMinutes: 7,
+    content: `Des **gencives qui saignent** au brossage ne sont jamais anodines. À Dakar, ce symptôme est souvent lié à une inflammation gingivale débutante.
+
+## 1) Causes les plus fréquentes
+- Plaque et tartre accumulés,
+- Brossage insuffisant ou inadapté,
+- Tabac,
+- Déséquilibres métaboliques (ex : diabète mal contrôlé).
+
+## 2) Quand faut-il s’inquiéter ?
+Consultez si le saignement dure plus de quelques jours, s’accompagne de mauvaise haleine ou d’une sensibilité des gencives.
+
+## 3) Traitements possibles
+- Détartrage professionnel,
+- Surfaçage radiculaire si nécessaire,
+- Rééducation de l’hygiène bucco-dentaire.
+
+## 4) Prévenir la récidive
+- Brosse souple + gestes adaptés,
+- Nettoyage interdentaire,
+- Contrôles réguliers.
+
+## En résumé
+Traiter tôt une gingivite évite l’évolution vers une parodontite plus coûteuse et plus difficile à stabiliser.
+
+Besoin d’un bilan gingival : **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Le saignement disparaît parfois, est-ce grave ?",
+        a: "Même intermittent, il reste un signal d’inflammation à faire évaluer.",
+      },
+      {
+        q: "Un simple détartrage peut-il suffire ?",
+        a: "Oui dans beaucoup de cas précoces, avec une bonne hygiène quotidienne.",
+      },
+    ],
+  },
+
+  {
+    slug: "couronne-dentaire-prix-dakar-2026-guide",
+    title: "Couronne dentaire à Dakar : prix, types et durée de vie (Guide 2026)",
+    description:
+      "Quel est le prix d’une couronne dentaire à Dakar en 2026 ? Différences entre zircone et céramo-métal, étapes du soin et conseils budget.",
+    date: "2026-02-28",
+    category: "Conseils",
+    tags: [
+      "couronne dentaire",
+      "prix",
+      "dentiste dakar",
+      "prothèse dentaire",
+      "tarif dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: onlayCover,
+    pinned: true,
+    readingMinutes: 8,
+    content: `La **couronne dentaire** protège une dent fragilisée et restaure sa fonction. À Dakar, le coût varie selon le matériau et la complexité du cas.
+
+## 1) Quand poser une couronne ?
+- Dent dévitalisée,
+- Dent très reconstruite,
+- Fracture importante,
+- Besoin esthétique/fonctionnel durable.
+
+## 2) Types de couronnes les plus utilisées
+- **Céramo-métal** : robuste, coût intermédiaire.
+- **Zircone** : esthétique premium, excellente résistance.
+
+## 3) Prix d’une couronne à Dakar (repères 2026)
+Le tarif dépend du matériau, du laboratoire et de la préparation préalable (inlay-core, soins associés). Un devis personnalisé est indispensable.
+
+## 4) Durée de vie et entretien
+Avec une bonne hygiène et des contrôles réguliers, une couronne peut durer de nombreuses années.
+
+## En résumé
+Le bon choix de couronne dépend de votre situation clinique et de votre budget. Un plan clair permet de décider sereinement.
+
+Pour un devis personnalisé : **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "La zircone est-elle meilleure que la céramo-métal ?",
+        a: "Elle est souvent plus esthétique, mais l’indication dépend de la dent, de l’occlusion et du budget.",
+      },
+      {
+        q: "Peut-on connaître le prix exact sans consultation ?",
+        a: "Un ordre de grandeur est possible, mais le prix exact nécessite un examen clinique.",
+      },
+    ],
+  },
+
+  {
     slug: "tarifs-dentaires-dakar-2026-detartrage-carie-extraction",
     title: "Tarifs dentaires à Dakar en 2026 : détartrage, carie, extraction",
     description:
