@@ -128,6 +128,63 @@ export const TAGS = [
 export const POSTS = [
 
   {
+    slug: "comment-choisir-dentiste-dakar-criteres-2026",
+    title: "Comment choisir un bon dentiste à Dakar : 7 critères essentiels",
+    description:
+      "Vous cherchez un dentiste à Dakar ? Découvrez 7 critères concrets pour choisir un cabinet fiable : expertise, hygiène, avis, transparence et gestion des urgences.",
+    date: "2026-03-02",
+    category: "Conseils",
+    tags: [
+      "dentiste dakar",
+      "cabinet dentaire dakar",
+      "meilleur dentiste dakar",
+      "conseils dentiste",
+      "urgence dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: choisirDentisteCover,
+    pinned: true,
+    readingMinutes: 6,
+    content: `Trouver un **dentiste à Dakar** ne se limite pas à la proximité. Pour des soins durables, il faut surtout vérifier la qualité, la transparence et le suivi.
+
+## 1) Qualifications et expérience
+Vérifiez la formation du praticien et son expérience sur les soins dont vous avez besoin (prévention, esthétique, urgence, prothèse).
+
+## 2) Hygiène et stérilisation
+Un cabinet sérieux applique des protocoles stricts : matériel stérilisé, environnement propre, organisation rigoureuse.
+
+## 3) Avis patients et réputation locale
+Consultez les retours récents : accueil, clarté des explications, ponctualité, qualité du suivi.
+
+## 4) Clarté du diagnostic
+Un bon dentiste explique le problème, les options de traitement et les priorités sans jargon inutile.
+
+## 5) Transparence des tarifs
+Demandez un devis clair avant les actes importants pour éviter les surprises et planifier votre budget.
+
+## 6) Accessibilité à Dakar
+Horaires, localisation et disponibilité en cas d’urgence comptent autant que la qualité technique.
+
+## 7) Suivi après soin
+Le suivi (contrôles, conseils d’entretien, ajustements) est un vrai marqueur de qualité.
+
+## En résumé
+Le bon choix repose sur un équilibre : **compétence + hygiène + écoute + transparence + suivi**.
+
+Besoin d’un avis personnalisé ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Comment savoir si un cabinet dentaire est fiable à Dakar ?",
+        a: "Vérifiez les avis récents, l’hygiène observée sur place, la clarté du devis et la qualité des explications données par le praticien.",
+      },
+      {
+        q: "Faut-il choisir le dentiste le moins cher ?",
+        a: "Pas forcément. Le meilleur choix est celui qui combine qualité des soins, diagnostic précis, transparence et suivi.",
+      },
+    ],
+  },
+
+  {
     slug: "dentiste-urgence-nuit-weekend-dakar-2026",
     title: "Dentiste urgence nuit/week-end à Dakar : où aller et quoi faire ? (2026)",
     description:
