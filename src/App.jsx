@@ -1,16 +1,19 @@
 // src/App.jsx
-import { Suspense } from "react";
+import { Suspense, lazy } from "react";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 import ScrollManager from "./components/ScrollManager";
 import RouteAnalytics from "./components/RouteAnalytics";
-import CookieConsent from "./components/CookieConsent";
 import ConversionTracker from "./components/ConversionTracker";
 import RoutesWithTransitions from "./components/RoutesWithTransitions";
-import ScrollTopButton from "./components/ScrollTopButton";
 import LoadingOverlay from "./components/LoadingOverlay";
-import WhatsAppButton from "./components/WhatsAppButton";
-import StickyAppointmentBar from "./components/StickyAppointmentBar";
+
+const Footer = lazy(() => import("./components/Footer"));
+const CookieConsent = lazy(() => import("./components/CookieConsent"));
+const ScrollTopButton = lazy(() => import("./components/ScrollTopButton"));
+const WhatsAppButton = lazy(() => import("./components/WhatsAppButton"));
+const StickyAppointmentBar = lazy(() =>
+  import("./components/StickyAppointmentBar")
+);
 
 const App = () => {
   return (
@@ -18,15 +21,22 @@ const App = () => {
       <ScrollManager />
       <RouteAnalytics />
       <ConversionTracker />
-      <CookieConsent />
       <Header />
-      <ScrollTopButton />
-      <WhatsAppButton />
+
+      <Suspense fallback={null}>
+        <CookieConsent />
+        <ScrollTopButton />
+        <WhatsAppButton />
+      </Suspense>
+
       <Suspense fallback={<LoadingOverlay fullScreen label="Chargement" />}>
         <RoutesWithTransitions />
       </Suspense>
-      <StickyAppointmentBar />
-      <Footer />
+
+      <Suspense fallback={null}>
+        <StickyAppointmentBar />
+        <Footer />
+      </Suspense>
     </>
   );
 };
