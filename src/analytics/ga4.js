@@ -56,7 +56,7 @@ export function initGA() {
   });
 }
 
-export function sendPageView(pathname, title, extra = {}) {
+export function sendPageView(pathname, title) {
   const id = import.meta.env.VITE_GA4_ID;
   if (!id || typeof window === "undefined" || !window.gtag) return;
   const debugMode = isGaDebugEnabled();
@@ -64,7 +64,6 @@ export function sendPageView(pathname, title, extra = {}) {
     page_title: title || document.title,
     page_location: window.location.href,
     page_path: pathname,
-    ...extra,
     ...(debugMode ? { debug_mode: true } : {}),
   });
 }
