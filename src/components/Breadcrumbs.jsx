@@ -20,7 +20,13 @@ export default function Breadcrumbs({
     return baseUrl;
   }, [baseUrl]);
 
-  const finalItems = Array.isArray(items) && items.length ? items : [{ label: "Accueil", href: "/" }];
+  const finalItems = useMemo(
+    () =>
+      Array.isArray(items) && items.length
+        ? items
+        : [{ label: "Accueil", href: "/" }],
+    [items],
+  );
 
   const breadcrumbLd = useMemo(() => {
     if (!structuredData) return null;

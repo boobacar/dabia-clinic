@@ -22,7 +22,7 @@ export default function TOC({ headings = [] }) {
       if (el) obs.observe(el);
     });
     return () => obs.disconnect();
-  }, [ids.join("|")]);
+  }, [ids]);
 
   if (!headings.length) return null;
 
