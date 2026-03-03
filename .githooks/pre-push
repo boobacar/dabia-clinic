@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "[pre-push] Running build..."
+npm run build >/tmp/dabia-prepush-build.log 2>&1 || {
+  echo "[pre-push] Build failed. See log: /tmp/dabia-prepush-build.log"
+  tail -n 60 /tmp/dabia-prepush-build.log || true
+  exit 1
+}
+
+echo "[pre-push] Build OK"
+
+if npm run -s lint >/tmp/dabia-prepush-lint.log 2>&1; then
+  echo "[pre-push] Lint OK"
+else
+  echo "[pre-push] Lint warning/failure. See: /tmp/dabia-prepush-lint.log"
+  tail -n 40 /tmp/dabia-prepush-lint.log || true
+  # non-bloquant pour l’instant
+fi
+
+echo "[pre-push] Checks completed"
