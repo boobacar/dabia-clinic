@@ -1,9 +1,8 @@
-import React, { Suspense, useEffect, useMemo, useState } from "react";
+import React, { Suspense, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaCheckCircle } from "react-icons/fa";
 import HeroSlideshow from "../components/HeroSlideshow";
-import heroImages from "../assets/heroImages";
 import SkeletonImage from "../components/SkeletonImage";
 import Seo from "../components/Seo";
 import FAQ from "../components/FAQ";
@@ -24,6 +23,8 @@ import SectionWave from "../components/SectionWave";
 import KeyMetrics from "../components/KeyMetrics";
 import AssuranceMarquee from "../components/AssuranceMarquee";
 
+// 👉 On importe la source des articles
+import { POSTS } from "../data/posts";
 // Logos assurances (pour la home marquee)
 import logoSunu from "../assets/assurances/sunu.webp";
 import logoAxa from "../assets/assurances/axa.webp";
@@ -58,35 +59,8 @@ const sortByDateDesc = (a, b) =>
   new Date(b.date).getTime() - new Date(a.date).getTime();
 
 const Home = () => {
-  const [latest, setLatest] = useState([]);
-
-  useEffect(() => {
-    let mounted = true;
-    const loadPosts = async () => {
-      try {
-        const mod = await import("../data/posts");
-        const posts = Array.isArray(mod?.POSTS) ? mod.POSTS : [];
-        const top = [...posts].sort(sortByDateDesc).slice(0, 6);
-        if (mounted) setLatest(top);
-      } catch {
-        if (mounted) setLatest([]);
-      }
-    };
-
-    const schedule =
-      (typeof window !== "undefined" && window.requestIdleCallback) ||
-      ((cb) => setTimeout(cb, 250));
-    const cancel =
-      (typeof window !== "undefined" && window.cancelIdleCallback) ||
-      clearTimeout;
-
-    const handle = schedule(loadPosts);
-    return () => {
-      mounted = false;
-      cancel(handle);
-    };
-  }, []);
-
+  const postsSorted = useMemo(() => [...POSTS].sort(sortByDateDesc), []);
+  const latest = useMemo(() => postsSorted.slice(0, 6), [postsSorted]);
   const assuranceLogos = useMemo(
     () => [
       logoAxa,
@@ -141,20 +115,6 @@ const Home = () => {
         description="Clinique dentaire à Dakar : urgences, détartrage, implants, orthodontie et esthétique. Prenez rendez-vous rapidement par téléphone, WhatsApp ou formulaire."
         canonical="https://www.cliniquedentairedabia.com/"
         url="https://www.cliniquedentairedabia.com/"
-      />
-      <link
-        rel="preload"
-        as="image"
-        href={heroImages[0].mobile}
-        media="(max-width: 767px)"
-        fetchPriority="high"
-      />
-      <link
-        rel="preload"
-        as="image"
-        href={heroImages[0].desktop}
-        media="(min-width: 768px)"
-        fetchPriority="high"
       />
       <HeroSlideshow />
       <Suspense fallback={<div className="py-12" aria-hidden="true" />}>
