@@ -24,6 +24,46 @@ export default defineConfig({
   },
   plugins: [react()],
   base: "/", // Remplace ici
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (!id.includes("node_modules")) return;
+
+          // Core React stack
+          if (
+            id.includes("react/") ||
+            id.includes("react-dom/") ||
+            id.includes("react-router")
+          ) {
+            return "react-core";
+          }
+
+          // Markdown rendering libs (heavy on blog pages)
+          if (
+            id.includes("react-markdown") ||
+            id.includes("remark-") ||
+            id.includes("rehype-")
+          ) {
+            return "markdown";
+          }
+
+          // Animation + sliders
+          if (id.includes("framer-motion") || id.includes("swiper")) {
+            return "ui-motion";
+          }
+
+          // Date + picker utilities
+          if (id.includes("date-fns") || id.includes("react-datepicker")) {
+            return "date-utils";
+          }
+
+          // Everything else third-party
+          return "vendor";
+        },
+      },
+    },
+  },
   css: {
     postcss: {
       plugins: [
