@@ -113,9 +113,11 @@ const Header = () => {
           className="text-[#ad9d64] text-xl font-bold flex items-center gap-2"
         >
           <img
-            className="w-10 object-contain rounded-full"
+            className="w-10 h-10 object-contain rounded-full"
             src={logo}
             alt="Dentiste Dakar - Clinique dentaire DABIA"
+            width={40}
+            height={40}
           />
           <span className="hidden sm:inline">Clinique Dentaire DABIA</span>
         </Link>

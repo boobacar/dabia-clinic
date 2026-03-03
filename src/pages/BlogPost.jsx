@@ -1,5 +1,5 @@
 // src/pages/BlogPost.jsx
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
 import Seo from "../components/Seo";
 import Breadcrumbs from "../components/Breadcrumbs";
@@ -60,7 +60,6 @@ export default function BlogPost() {
   const postCategory = post ? post.category : "";
   const postFaq = useMemo(() => (post ? post.faq : []), [post]);
   const postContent = post ? post.content : "";
-  const postCover = post ? post.cover : null;
 
   // Build enriched sections as Markdown to merge with article Markdown for homogeneity
   const enrichedMd = useMemo(() => {
@@ -143,19 +142,6 @@ export default function BlogPost() {
     setTimeout(() => window.scrollTo({ top: y, behavior: "smooth" }), 0);
   }, [currentSlug]);
 
-  const [imgDims, setImgDims] = useState(null);
-  useEffect(() => {
-    if (!postCover) return;
-    try {
-      const img = new Image();
-      img.src = postCover;
-      img.onload = () =>
-        setImgDims({ width: img.naturalWidth, height: img.naturalHeight });
-    } catch {
-      // Ignore image loading errors
-    }
-  }, [postCover]);
-
   const articleJsonLd = useMemo(() => {
     if (!post) return null;
     return {
@@ -167,7 +153,8 @@ export default function BlogPost() {
         {
           "@type": "ImageObject",
           url: post.cover,
-          ...(imgDims ? { width: imgDims.width, height: imgDims.height } : {}),
+          width: 1200,
+          height: 675,
         },
       ],
       datePublished: post.date,
@@ -183,7 +170,7 @@ export default function BlogPost() {
         logo: { "@type": "ImageObject", url: "/logo192.png" },
       },
     };
-  }, [post, imgDims]);
+  }, [post]);
 
   // Related posts (based on shared tags/category)
   const related = useMemo(() => {
@@ -415,17 +402,13 @@ export default function BlogPost() {
             </div>
             <div
               className="w-full rounded-xl mt-6 overflow-hidden"
-              style={{
-                aspectRatio: imgDims
-                  ? `${imgDims.width}/${imgDims.height}`
-                  : "1200/630",
-              }}
+              style={{ aspectRatio: "16/9" }}
             >
               <img
                 src={post.cover}
                 alt={post.title}
-                width={imgDims?.width || 1200}
-                height={imgDims?.height || 630}
+                width={1200}
+                height={675}
                 className="w-full h-full object-cover"
                 style={{ viewTransitionName: `post-cover-${post.slug}` }}
                 decoding="async"

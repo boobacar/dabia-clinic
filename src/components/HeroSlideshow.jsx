@@ -38,7 +38,9 @@ const HeroSlideshow = () => {
       if (typeof window !== "undefined" && window.cancelIdleCallback) {
         try {
           window.cancelIdleCallback(handle);
-        } catch {}
+        } catch {
+          // noop
+        }
       } else {
         clearTimeout(handle);
       }
@@ -60,7 +62,7 @@ const HeroSlideshow = () => {
       if (timerRef.current) clearTimeout(timerRef.current);
     };
     // 👉 très important: inclure SLIDE_MS et la longueur
-  }, [index, SLIDE_MS, heroImages.length, enableLoop]);
+  }, [index, enableLoop]);
 
   const currentObj = useMemo(() => heroImages[index], [index]);
   const isSlideshow = enableLoop && heroImages.length > 1;
@@ -68,7 +70,7 @@ const HeroSlideshow = () => {
     "Dentiste Dakar - Clinique dentaire DABIA - Clinique dentaire dakar";
 
   return (
-    <section className="relative h-screen overflow-hidden bg-black">
+    <section className="relative h-[100svh] min-h-[100svh] overflow-hidden bg-black">
       {isSlideshow ? (
         <AnimatePresence initial={false}>
           <motion.img
