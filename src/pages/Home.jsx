@@ -21,7 +21,9 @@ const BlogListCompact = React.lazy(() =>
 );
 import SectionWave from "../components/SectionWave";
 import KeyMetrics from "../components/KeyMetrics";
-import AssuranceMarquee from "../components/AssuranceMarquee";
+const AssuranceMarquee = React.lazy(() =>
+  import("../components/AssuranceMarquee")
+);
 
 // 👉 On importe la source des articles
 import { POSTS } from "../data/posts";
@@ -167,7 +169,9 @@ const Home = () => {
         <StaffPreview />
         <CompetencesGrid />
       </Suspense>
-      <AssuranceMarquee className="py-6" speed={45} logos={assuranceLogos} />
+      <Suspense fallback={<div className="py-6" aria-hidden="true" />}>
+        <AssuranceMarquee className="py-6" speed={45} logos={assuranceLogos} />
+      </Suspense>
       {/* Pourquoi nous choisir */}
       <motion.section
         className="py-14 px-4 bg-white"
