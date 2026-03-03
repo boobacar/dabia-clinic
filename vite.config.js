@@ -58,6 +58,25 @@ export default defineConfig({
             return "date-utils";
           }
 
+          // Icons packages can be heavy
+          if (id.includes("react-icons") || id.includes("lucide-react")) {
+            return "icons";
+          }
+
+          // Animation/interaction libraries used outside framer/swiper
+          if (
+            id.includes("gsap") ||
+            id.includes("@gsap/react") ||
+            id.includes("canvas-confetti")
+          ) {
+            return "fx";
+          }
+
+          // Markdown ecosystem (secondary split for syntax stack)
+          if (id.includes("remark-gfm") || id.includes("rehype-raw")) {
+            return "markdown-extra";
+          }
+
           // Everything else third-party
           return "vendor";
         },
