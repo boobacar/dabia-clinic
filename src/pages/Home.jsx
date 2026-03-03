@@ -5,7 +5,7 @@ import { FaCheckCircle } from "react-icons/fa";
 import HeroSlideshow from "../components/HeroSlideshow";
 import SkeletonImage from "../components/SkeletonImage";
 import Seo from "../components/Seo";
-import FAQ from "../components/FAQ";
+const FAQ = React.lazy(() => import("../components/FAQ"));
 import SectionTitle from "../components/SectionTitle";
 // Sections chargées en lazy pour alléger le bundle initial
 const BeforeAfterGallery = React.lazy(() =>
@@ -20,7 +20,7 @@ const BlogListCompact = React.lazy(() =>
   import("../components/BlogListCompact")
 );
 const SectionWave = React.lazy(() => import("../components/SectionWave"));
-import KeyMetrics from "../components/KeyMetrics";
+const KeyMetrics = React.lazy(() => import("../components/KeyMetrics"));
 const AssuranceMarquee = React.lazy(() =>
   import("../components/AssuranceMarquee")
 );
@@ -239,44 +239,46 @@ const Home = () => {
             whileInView="show"
             viewport={{ once: true, amount: 0.35 }}
           >
-            <FAQ
-              asJsonLd={false}
-              title="Foire aux questions"
-              items={[
-                {
-                  q: "Où se situe la clinique ?",
-                  a: "À Sicap Foire, 150m des deux voies de Liberté 6, proche VDN/Corniche. Parking devant l’entrée.",
-                },
-                {
-                  q: "Proposez-vous des urgences dentaires à Dakar ?",
-                  a: "Oui, nous ouvrons des créneaux sous 24h. Appelez avant de venir pour organiser la prise en charge.",
-                },
-                {
-                  q: "Quels soins sont proposés ?",
-                  a: "Implants, facettes, orthodontie (aligneurs/bagues), parodontologie, soins enfants, détartrage et esthétique.",
-                },
-                {
-                  q: "Proposez-vous des devis détaillés ?",
-                  a: "Oui, après l’examen, un plan de traitement et un devis clairs sont expliqués avec des étapes et options.",
-                },
-                {
-                  q: "Comment prendre rendez-vous ?",
-                  a: "En ligne via la page Rendez-vous ou par téléphone/WhatsApp. Les devis sont expliqués avec des étapes claires.",
-                },
-                {
-                  q: "Quels sont vos horaires ?",
-                  a: "Lundi à vendredi 9h-19h, samedi 9h-13h. Pour une urgence, appelez avant de vous déplacer.",
-                },
-                {
-                  q: "Acceptez-vous les IPM et assurances ?",
-                  a: "Nous aidons à la préparation des dossiers. Un devis détaillé est fourni pour vos demandes de prise en charge.",
-                },
-                {
-                  q: "Puis-je étaler les soins ou les paiements ?",
-                  a: "Les plans de traitement peuvent être phasés. Selon le cas, un étalement des rendez-vous et des paiements est proposé.",
-                },
-              ]}
-            />
+            <Suspense fallback={<div className="py-8" aria-hidden="true" />}>
+              <FAQ
+                asJsonLd={false}
+                title="Foire aux questions"
+                items={[
+                  {
+                    q: "Où se situe la clinique ?",
+                    a: "À Sicap Foire, 150m des deux voies de Liberté 6, proche VDN/Corniche. Parking devant l’entrée.",
+                  },
+                  {
+                    q: "Proposez-vous des urgences dentaires à Dakar ?",
+                    a: "Oui, nous ouvrons des créneaux sous 24h. Appelez avant de venir pour organiser la prise en charge.",
+                  },
+                  {
+                    q: "Quels soins sont proposés ?",
+                    a: "Implants, facettes, orthodontie (aligneurs/bagues), parodontologie, soins enfants, détartrage et esthétique.",
+                  },
+                  {
+                    q: "Proposez-vous des devis détaillés ?",
+                    a: "Oui, après l’examen, un plan de traitement et un devis clairs sont expliqués avec des étapes et options.",
+                  },
+                  {
+                    q: "Comment prendre rendez-vous ?",
+                    a: "En ligne via la page Rendez-vous ou par téléphone/WhatsApp. Les devis sont expliqués avec des étapes claires.",
+                  },
+                  {
+                    q: "Quels sont vos horaires ?",
+                    a: "Lundi à vendredi 9h-19h, samedi 9h-13h. Pour une urgence, appelez avant de vous déplacer.",
+                  },
+                  {
+                    q: "Acceptez-vous les IPM et assurances ?",
+                    a: "Nous aidons à la préparation des dossiers. Un devis détaillé est fourni pour vos demandes de prise en charge.",
+                  },
+                  {
+                    q: "Puis-je étaler les soins ou les paiements ?",
+                    a: "Les plans de traitement peuvent être phasés. Selon le cas, un étalement des rendez-vous et des paiements est proposé.",
+                  },
+                ]}
+              />
+            </Suspense>
           </motion.div>
         </div>
       </motion.section>
