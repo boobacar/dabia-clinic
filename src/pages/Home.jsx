@@ -19,7 +19,7 @@ const StaffPreview = React.lazy(() => import("../components/StaffPreview"));
 const BlogListCompact = React.lazy(() =>
   import("../components/BlogListCompact")
 );
-import SectionWave from "../components/SectionWave";
+const SectionWave = React.lazy(() => import("../components/SectionWave"));
 import KeyMetrics from "../components/KeyMetrics";
 const AssuranceMarquee = React.lazy(() =>
   import("../components/AssuranceMarquee")
