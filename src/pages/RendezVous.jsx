@@ -97,7 +97,6 @@ const RendezVous = () => {
     } catch {}
   };
 
-
   const handleSubmit = (e) => {
     e.preventDefault();
 

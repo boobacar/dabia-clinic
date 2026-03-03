@@ -28,7 +28,6 @@ import logoIpmKingFahd from "../assets/assurances/ipm_kingfahd.webp";
 import logoSypaoa from "../assets/assurances/sypaoa.webp";
 import logoTransvie from "../assets/assurances/transvie.webp";
 import logoIpmSenelec from "../assets/assurances/ipm_senelec.webp";
-import logoIpmSura from "../assets/assurances/ipm_sura.webp";
 import logoSusu from "../assets/assurances/susu.webp";
 import logoAgetip from "../assets/assurances/agetip.webp";
 import logoMutuelleCapVert from "../assets/assurances/mutuelle_cap_vert.webp";

@@ -1,44 +1,44 @@
 // api/google-reviews.js
 import { FAKE_GOOGLE_REVIEWS } from "../src/data/fakeGoogleReviews.js";
 
+function serveFake(res, minRating) {
+  const filtered = (FAKE_GOOGLE_REVIEWS.reviews || [])
+    .filter(
+      (rv) => (rv.rating || 0) >= minRating && (rv.text || "").trim().length > 10,
+    )
+    .slice(0, 10);
+  const avg =
+    filtered.reduce((s, r) => s + (r.rating || 0), 0) /
+    (filtered.length || 1);
+
+  res.setHeader("Cache-Control", "s-maxage=43200, stale-while-revalidate=86400");
+  res.setHeader("x-google-reviews-fallback", "1");
+  return res.status(200).json({
+    name: FAKE_GOOGLE_REVIEWS.name,
+    rating: Number.isFinite(avg) ? Math.round(avg * 10) / 10 : 5,
+    user_ratings_total: filtered.length,
+    reviews: filtered.map((rv) => ({
+      author_name: rv.author_name,
+      profile_photo_url: rv.profile_photo_url,
+      rating: rv.rating,
+      text: rv.text,
+      relative_time: rv.relative_time,
+    })),
+  });
+}
+
 export default async function handler(req, res) {
   try {
     const API_KEY = process.env.GOOGLE_MAPS_API_KEY;
     const PLACE_ID = process.env.GOOGLE_PLACE_ID;
     const MIN_RATING = Number(process.env.REVIEWS_MIN_RATING || 4);
-    const USE_FAKE = process.env.USE_FAKE_REVIEWS === "1" ||
-      req?.query?.fake === "1" || req?.query?.fallback === "1";
-
-    const serveFake = () => {
-      const filtered = (FAKE_GOOGLE_REVIEWS.reviews || [])
-        .filter(
-          (rv) => (rv.rating || 0) >= MIN_RATING && (rv.text || "").trim().length > 10
-        )
-        .slice(0, 10);
-      const avg =
-        filtered.reduce((s, r) => s + (r.rating || 0), 0) /
-          (filtered.length || 1);
-      res.setHeader(
-        "Cache-Control",
-        "s-maxage=43200, stale-while-revalidate=86400"
-      );
-      res.setHeader("x-google-reviews-fallback", "1");
-      return res.status(200).json({
-        name: FAKE_GOOGLE_REVIEWS.name,
-        rating: Number.isFinite(avg) ? Math.round(avg * 10) / 10 : 5,
-        user_ratings_total: filtered.length,
-        reviews: filtered.map((rv) => ({
-          author_name: rv.author_name,
-          profile_photo_url: rv.profile_photo_url,
-          rating: rv.rating,
-          text: rv.text,
-          relative_time: rv.relative_time,
-        })),
-      });
-    };
+    const USE_FAKE =
+      process.env.USE_FAKE_REVIEWS === "1" ||
+      req?.query?.fake === "1" ||
+      req?.query?.fallback === "1";
 
     if (USE_FAKE) {
-      return serveFake();
+      return serveFake(res, MIN_RATING);
     }
 
     if (!API_KEY || !PLACE_ID) {
@@ -46,7 +46,7 @@ export default async function handler(req, res) {
         hasKey: !!API_KEY,
         hasPlace: !!PLACE_ID,
       });
-      return serveFake();
+      return serveFake(res, MIN_RATING);
     }
 
     const url = new URL(
@@ -65,7 +65,7 @@ export default async function handler(req, res) {
         status: data.status,
         message: data.error_message,
       });
-      return serveFake();
+      return serveFake(res, MIN_RATING);
     }
 
     const reviews = (data.result?.reviews || [])
@@ -103,6 +103,6 @@ export default async function handler(req, res) {
         .status(500)
         .json({ error: "Unhandled error", detail: e?.message });
     }
-    return serveFake();
+    return serveFake(res, Number(process.env.REVIEWS_MIN_RATING || 4));
   }
 }

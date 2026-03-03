@@ -148,7 +148,7 @@ export default function UrgenceDentaire() {
           </div>
           <p className="mt-2 text-sm text-gray-700">
             Contact prioritaire. Si extension vers l’œil/le cou ou fièvre
-            élevée : urgences hospitalières.
+            élevée : urgences hospitalières.
           </p>
         </motion.div>
         <motion.div className="bg-white border rounded-xl p-5 shadow-sm" initial={{ opacity:0, y:10 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true, amount:0.5 }} transition={{ duration:0.35, delay:0.1 }}>
@@ -185,12 +185,12 @@ export default function UrgenceDentaire() {
             {
               icon: <FaExclamationTriangle className="text-[#bb2988]" />,
               title: "Saignement post‑extraction",
-              text: "Compresse stérile 30–60 min. Si persistant, appelez. Évitez aspirine.",
+              text: "Compresse stérile 30–60 min. Si persistant, appelez. Évitez aspirine.",
             },
             {
               icon: <FaUserInjured className="text-[#bb2988]" />,
               title: "Traumatisme chez l’enfant",
-              text: "Dents temporaires : ne réimplantez pas. Nettoyez doucement, compresse, consultez.",
+              text: "Dents temporaires : ne réimplantez pas. Nettoyez doucement, compresse, consultez.",
             },
             {
               icon: <FaTemperatureHigh className="text-[#bb2988]" />,
