@@ -15,18 +15,6 @@ const HeroSlideshow = () => {
   const shouldReduceMotion = useReducedMotion();
   const timerRef = useRef(null);
 
-  // Préchargement ultra-ciblé: première image uniquement (priorité LCP)
-  useEffect(() => {
-    const first = heroImages[0];
-    if (!first) return;
-
-    const imgD = new Image();
-    imgD.src = first.desktop;
-
-    const imgM = new Image();
-    imgM.src = first.mobile;
-  }, []);
-
   // Ne lance l'animation qu'en idle pour ne pas dégrader le LCP
   useEffect(() => {
     const cb =
