@@ -15,17 +15,16 @@ const HeroSlideshow = () => {
   const shouldReduceMotion = useReducedMotion();
   const timerRef = useRef(null);
 
-  // Préchargement léger: première et suivante uniquement (réduit la concurrence réseau initiale)
+  // Préchargement ultra-ciblé: première image uniquement (priorité LCP)
   useEffect(() => {
-    // heroImages is now an array of objects { desktop, mobile }
-    [heroImages[0], heroImages[1]].filter(Boolean).forEach((imgObj) => {
-      // Preload desktop
-      const imgD = new Image();
-      imgD.src = imgObj.desktop;
-      // Preload mobile (browser cache will handle it if needed)
-      const imgM = new Image();
-      imgM.src = imgObj.mobile;
-    });
+    const first = heroImages[0];
+    if (!first) return;
+
+    const imgD = new Image();
+    imgD.src = first.desktop;
+
+    const imgM = new Image();
+    imgM.src = first.mobile;
   }, []);
 
   // Ne lance l'animation qu'en idle pour ne pas dégrader le LCP
