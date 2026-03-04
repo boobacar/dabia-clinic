@@ -105,7 +105,7 @@ const HeroSlideshow = () => {
             sizes="100vw"
             alt={heroAlt}
             aria-hidden="true"
-            className="absolute inset-0 w-full h-full object-cover will-change-[opacity,transform]"
+            className="absolute inset-0 w-full h-full object-cover will-change-[opacity]"
             decoding="async"
             fetchPriority={index === 0 ? "high" : "auto"}
             initial={{ opacity: 0, scale: 1 }}
