@@ -136,12 +136,7 @@ const HeroSlideshow = () => {
 
       <div className="absolute inset-0 bg-black/70" />
 
-      <motion.div
-        initial={isMobile ? false : { opacity: 0, scale: 0.98 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: isMobile ? 0 : 0.8, ease: "easeOut" }}
-        className="absolute inset-0 flex flex-col items-center justify-center text-center px-4"
-      >
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
         <h2 className="text-[#ad9d64] text-2xl md:text-3xl mb-2">
           Bienvenue à la Clinique Dentaire
         </h2>
@@ -170,7 +165,7 @@ const HeroSlideshow = () => {
             Prendre un rendez-vous
           </Link>
         </div>
-      </motion.div>
+      </div>
 
       {!isMobile && (
         <div className="pointer-events-none absolute inset-x-0 bottom-15 sm:bottom-40 md:bottom-40 flex flex-col items-center gap-3">
