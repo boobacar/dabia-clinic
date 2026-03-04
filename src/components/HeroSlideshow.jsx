@@ -183,34 +183,30 @@ const HeroSlideshow = () => {
         </div>
       </motion.div>
 
-      <div className="pointer-events-none absolute inset-x-0 bottom-15 sm:bottom-40 md:bottom-40 flex flex-col items-center gap-3">
-        <motion.div
-          aria-hidden="true"
-          initial={isMobile ? false : { opacity: 0, y: -8 }}
-          animate={
-            isMobile ? { opacity: 0.95, y: 0 } : { opacity: 0.95, y: [0, 42, 0] }
-          }
-          transition={
-            isMobile
-              ? { duration: 0 }
-              : { duration: 2.3, repeat: Infinity, ease: "easeInOut" }
-          }
-          className="relative flex h-16 w-16 items-center justify-center rounded-full border-2 border-[#ad9d64]/70 bg-gradient-to-b from-white/15 to-white/0 text-[#f2e7b2] shadow-[0_18px_60px_-20px_rgba(0,0,0,0.95)] ring-1 ring-white/30 backdrop-blur-[4px]"
-        >
-          <span className="sr-only">Faites défiler pour découvrir</span>
-          <svg
-            className="h-7 w-7 drop-shadow-[0_0_14px_rgba(173,157,100,0.8)]"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+      {!isMobile && (
+        <div className="pointer-events-none absolute inset-x-0 bottom-15 sm:bottom-40 md:bottom-40 flex flex-col items-center gap-3">
+          <motion.div
+            aria-hidden="true"
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 0.95, y: [0, 42, 0] }}
+            transition={{ duration: 2.3, repeat: Infinity, ease: "easeInOut" }}
+            className="relative flex h-16 w-16 items-center justify-center rounded-full border-2 border-[#ad9d64]/70 bg-gradient-to-b from-white/15 to-white/0 text-[#f2e7b2] shadow-[0_18px_60px_-20px_rgba(0,0,0,0.95)] ring-1 ring-white/30 backdrop-blur-[4px]"
           >
-            <path d="M6 10l6 6 6-6" />
-          </svg>
-        </motion.div>
-      </div>
+            <span className="sr-only">Faites défiler pour découvrir</span>
+            <svg
+              className="h-7 w-7 drop-shadow-[0_0_14px_rgba(173,157,100,0.8)]"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M6 10l6 6 6-6" />
+            </svg>
+          </motion.div>
+        </div>
+      )}
     </section>
     </>
   );
