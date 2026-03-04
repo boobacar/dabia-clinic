@@ -54,7 +54,7 @@ const HeroSlideshow = () => {
 
   // Auto-play avec setTimeout (plus fiable que setInterval ici)
   useEffect(() => {
-    if (!enableLoop || heroImages.length <= 1) return;
+    if (!enableLoop || isMobile || heroImages.length <= 1) return;
 
     // Nettoyage de l'ancien timer au changement de vitesse / longueur / index
     if (timerRef.current) clearTimeout(timerRef.current);
@@ -67,11 +67,11 @@ const HeroSlideshow = () => {
       if (timerRef.current) clearTimeout(timerRef.current);
     };
     // 👉 très important: inclure SLIDE_MS et la longueur
-  }, [index, enableLoop]);
+  }, [index, enableLoop, isMobile]);
 
   const currentObj = useMemo(() => heroImages[index], [index]);
   const firstHero = heroImages[0];
-  const isSlideshow = enableLoop && heroImages.length > 1;
+  const isSlideshow = enableLoop && !isMobile && heroImages.length > 1;
   const heroAlt =
     "Dentiste Dakar - Clinique dentaire DABIA - Clinique dentaire dakar";
 
