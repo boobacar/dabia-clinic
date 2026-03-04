@@ -105,6 +105,8 @@ const HeroSlideshow = () => {
             sizes="100vw"
             alt={heroAlt}
             aria-hidden="true"
+            width="1600"
+            height="900"
             className="absolute inset-0 w-full h-full object-cover will-change-[opacity]"
             decoding="sync"
             fetchPriority={index === 0 ? "high" : "auto"}
@@ -123,6 +125,8 @@ const HeroSlideshow = () => {
           srcSet={`${currentObj.mobile} 640w, ${currentObj.desktop} 1600w`}
           sizes="100vw"
           alt={heroAlt}
+          width="1600"
+          height="900"
           className="absolute inset-0 w-full h-full object-cover"
           decoding="sync"
           fetchPriority="high"
