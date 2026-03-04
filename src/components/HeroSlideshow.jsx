@@ -65,12 +65,32 @@ const HeroSlideshow = () => {
   }, [index, enableLoop]);
 
   const currentObj = useMemo(() => heroImages[index], [index]);
+  const firstHero = heroImages[0];
   const isSlideshow = enableLoop && heroImages.length > 1;
   const heroAlt =
     "Dentiste Dakar - Clinique dentaire DABIA - Clinique dentaire dakar";
 
   return (
-    <section className="relative h-[100svh] min-h-[100svh] overflow-hidden bg-black">
+    <>
+      {firstHero && (
+        <>
+          <link
+            rel="preload"
+            as="image"
+            href={firstHero.mobile}
+            media="(max-width: 640px)"
+            fetchPriority="high"
+          />
+          <link
+            rel="preload"
+            as="image"
+            href={firstHero.desktop}
+            media="(min-width: 641px)"
+            fetchPriority="high"
+          />
+        </>
+      )}
+      <section className="relative h-[100svh] min-h-[100svh] overflow-hidden bg-black">
       {isSlideshow ? (
         <AnimatePresence initial={false}>
           <motion.img
@@ -187,6 +207,7 @@ const HeroSlideshow = () => {
         </motion.div>
       </div>
     </section>
+    </>
   );
 };
 
