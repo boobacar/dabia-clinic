@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 import heroImages from "../assets/heroImages";
 
 const SLIDE_MS = 3000; // 5000 ms = 5 s par image
-const FADE_S = 1.5; // durée du fondu en secondes
+const LOOP_START_DESKTOP_MS = 1800;
+const LOOP_START_MOBILE_MS = 4500;
 
 const HeroSlideshow = () => {
   const [index, setIndex] = useState(0);
@@ -14,13 +15,19 @@ const HeroSlideshow = () => {
   const [isMobile, setIsMobile] = useState(false);
   const shouldReduceMotion = useReducedMotion();
   const timerRef = useRef(null);
+  const startRef = useRef(null);
 
-  // Ne lance l'animation qu'en idle pour ne pas dégrader le LCP
+  // Ne lance l'animation qu'en idle (+ délai) pour protéger la fenêtre LCP
   useEffect(() => {
     const cb =
       (typeof window !== "undefined" && window.requestIdleCallback) ||
       ((fn) => setTimeout(fn, 350));
-    const handle = cb(() => setEnableLoop(true));
+
+    const handle = cb(() => {
+      const startDelay = isMobile ? LOOP_START_MOBILE_MS : LOOP_START_DESKTOP_MS;
+      startRef.current = setTimeout(() => setEnableLoop(true), startDelay);
+    });
+
     return () => {
       if (typeof window !== "undefined" && window.cancelIdleCallback) {
         try {
@@ -31,8 +38,9 @@ const HeroSlideshow = () => {
       } else {
         clearTimeout(handle);
       }
+      if (startRef.current) clearTimeout(startRef.current);
     };
-  }, []);
+  }, [isMobile]);
 
   // Réduit les animations décoratives sur mobile (batch perf prudent)
   useEffect(() => {
