@@ -108,8 +108,8 @@ const HeroSlideshow = () => {
             className="absolute inset-0 w-full h-full object-cover will-change-[opacity,transform]"
             decoding="async"
             fetchPriority={index === 0 ? "high" : "auto"}
-            initial={{ opacity: 0, scale: shouldReduceMotion || isMobile ? 1 : 1.08 }}
-            animate={{ opacity: 1, scale: shouldReduceMotion || isMobile ? 1 : 1.2 }}
+            initial={{ opacity: 0, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: shouldReduceMotion || isMobile ? 1 : 0 }}
             transition={{
               duration: shouldReduceMotion ? 0 : Math.min(1.2, SLIDE_MS / 1000),
