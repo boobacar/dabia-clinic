@@ -142,14 +142,9 @@ const HeroSlideshow = () => {
         transition={{ duration: isMobile ? 0 : 0.8, ease: "easeOut" }}
         className="absolute inset-0 flex flex-col items-center justify-center text-center px-4"
       >
-        <motion.h2
-          initial={isMobile ? false : { opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: isMobile ? 0 : 0.2 }}
-          className="text-[#ad9d64] text-2xl md:text-3xl mb-2"
-        >
+        <h2 className="text-[#ad9d64] text-2xl md:text-3xl mb-2">
           Bienvenue à la Clinique Dentaire
-        </motion.h2>
+        </h2>
 
         {/* <motion.h1
           initial={{ opacity: 0, y: 10 }}
@@ -160,25 +155,15 @@ const HeroSlideshow = () => {
           Dabia
         </motion.h1> */}
 
-        <motion.h1
-          initial={isMobile ? false : { opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: isMobile ? 0 : 0.35 }}
-          className="text-[#ad9d64] font-bold text-7xl md:text-7xl mb-6"
-        >
+        <h1 className="text-[#ad9d64] font-bold text-7xl md:text-7xl mb-6">
           DABIA
-        </motion.h1>
+        </h1>
 
-        <motion.p
-          initial={isMobile ? false : { opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: isMobile ? 0 : 0.5 }}
-          className="border-2 border-[#ad9d64]/40 p-2 text-[#ad9d64] max-w-60 text-md text-justify mb-10 sm:max-w-100 rounded-lg"
-        >
+        <p className="border-2 border-[#ad9d64]/40 p-2 text-[#ad9d64] max-w-60 text-md text-justify mb-10 sm:max-w-100 rounded-lg">
           Clinique dentaire moderne à Dakar : implants, orthodontie, urgences et
           esthétique du sourire, avec un accueil chaleureux et un plateau
           technique de pointe.
-        </motion.p>
+        </p>
 
         <div className="flex flex-col items-center gap-6">
           <Link to="/rendez-vous" className="btn-cta">
