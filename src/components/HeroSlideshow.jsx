@@ -11,6 +11,7 @@ const HeroSlideshow = () => {
   const [index, setIndex] = useState(0);
   // Démarre le slideshow seulement après le rendu initial pour laisser la LCP se stabiliser
   const [enableLoop, setEnableLoop] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const shouldReduceMotion = useReducedMotion();
   const timerRef = useRef(null);
 
@@ -44,6 +45,16 @@ const HeroSlideshow = () => {
         clearTimeout(handle);
       }
     };
+  }, []);
+
+  // Réduit les animations décoratives sur mobile (batch perf prudent)
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const mq = window.matchMedia("(max-width: 768px)");
+    const apply = () => setIsMobile(mq.matches);
+    apply();
+    mq.addEventListener?.("change", apply);
+    return () => mq.removeEventListener?.("change", apply);
   }, []);
 
   // Auto-play avec setTimeout (plus fiable que setInterval ici)
@@ -102,9 +113,9 @@ const HeroSlideshow = () => {
             className="absolute inset-0 w-full h-full object-cover will-change-[opacity,transform]"
             decoding="async"
             fetchPriority={index === 0 ? "high" : "auto"}
-            initial={{ opacity: 0, scale: shouldReduceMotion ? 1 : 1.08 }}
-            animate={{ opacity: 1, scale: shouldReduceMotion ? 1 : 1.2 }}
-            exit={{ opacity: shouldReduceMotion ? 1 : 0 }}
+            initial={{ opacity: 0, scale: shouldReduceMotion || isMobile ? 1 : 1.08 }}
+            animate={{ opacity: 1, scale: shouldReduceMotion || isMobile ? 1 : 1.2 }}
+            exit={{ opacity: shouldReduceMotion || isMobile ? 1 : 0 }}
             transition={{
               duration: shouldReduceMotion ? 0 : Math.min(1.2, SLIDE_MS / 1000),
               ease: "easeOut",
@@ -127,15 +138,15 @@ const HeroSlideshow = () => {
       <div className="absolute inset-0 bg-black/70" />
 
       <motion.div
-        initial={{ opacity: 0, scale: 0.98 }}
+        initial={isMobile ? false : { opacity: 0, scale: 0.98 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+        transition={{ duration: isMobile ? 0 : 0.8, ease: "easeOut" }}
         className="absolute inset-0 flex flex-col items-center justify-center text-center px-4"
       >
         <motion.h2
-          initial={{ opacity: 0, y: -10 }}
+          initial={isMobile ? false : { opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: isMobile ? 0 : 0.2 }}
           className="text-[#ad9d64] text-2xl md:text-3xl mb-2"
         >
           Bienvenue à la Clinique Dentaire
@@ -151,18 +162,18 @@ const HeroSlideshow = () => {
         </motion.h1> */}
 
         <motion.h1
-          initial={{ opacity: 0, y: 10 }}
+          initial={isMobile ? false : { opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.35 }}
+          transition={{ delay: isMobile ? 0 : 0.35 }}
           className="text-[#ad9d64] font-bold text-7xl md:text-7xl mb-6"
         >
           DABIA
         </motion.h1>
 
         <motion.p
-          initial={{ opacity: 0, y: 8 }}
+          initial={isMobile ? false : { opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
+          transition={{ delay: isMobile ? 0 : 0.5 }}
           className="border-2 border-[#ad9d64]/40 p-2 text-[#ad9d64] max-w-60 text-md text-justify mb-10 sm:max-w-100 rounded-lg"
         >
           Clinique dentaire moderne à Dakar : implants, orthodontie, urgences et
@@ -180,9 +191,15 @@ const HeroSlideshow = () => {
       <div className="pointer-events-none absolute inset-x-0 bottom-15 sm:bottom-40 md:bottom-40 flex flex-col items-center gap-3">
         <motion.div
           aria-hidden="true"
-          initial={{ opacity: 0, y: -8 }}
-          animate={{ opacity: 0.95, y: [0, 42, 0] }}
-          transition={{ duration: 2.3, repeat: Infinity, ease: "easeInOut" }}
+          initial={isMobile ? false : { opacity: 0, y: -8 }}
+          animate={
+            isMobile ? { opacity: 0.95, y: 0 } : { opacity: 0.95, y: [0, 42, 0] }
+          }
+          transition={
+            isMobile
+              ? { duration: 0 }
+              : { duration: 2.3, repeat: Infinity, ease: "easeInOut" }
+          }
           className="relative flex h-16 w-16 items-center justify-center rounded-full border-2 border-[#ad9d64]/70 bg-gradient-to-b from-white/15 to-white/0 text-[#f2e7b2] shadow-[0_18px_60px_-20px_rgba(0,0,0,0.95)] ring-1 ring-white/30 backdrop-blur-[4px]"
         >
           <span className="sr-only">Faites défiler pour découvrir</span>
