@@ -106,7 +106,7 @@ const HeroSlideshow = () => {
             alt={heroAlt}
             aria-hidden="true"
             className="absolute inset-0 w-full h-full object-cover will-change-[opacity]"
-            decoding="async"
+            decoding="sync"
             fetchPriority={index === 0 ? "high" : "auto"}
             initial={{ opacity: 0, scale: 1 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -124,7 +124,7 @@ const HeroSlideshow = () => {
           sizes="100vw"
           alt={heroAlt}
           className="absolute inset-0 w-full h-full object-cover"
-          decoding="async"
+          decoding="sync"
           fetchPriority="high"
           loading="eager"
         />
