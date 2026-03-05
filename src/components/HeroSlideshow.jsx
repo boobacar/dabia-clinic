@@ -120,18 +120,27 @@ const HeroSlideshow = () => {
           />
         </AnimatePresence>
       ) : (
-        <img
-          src={currentObj.desktop}
-          srcSet={`${currentObj.mobile} 640w, ${currentObj.desktop} 1600w`}
-          sizes="100vw"
-          alt={heroAlt}
-          width="1600"
-          height="900"
-          className="absolute inset-0 w-full h-full object-cover"
-          decoding="sync"
-          fetchPriority="high"
-          loading="eager"
-        />
+        <picture>
+          {currentObj.mobileAvif && currentObj.desktopAvif && (
+            <source
+              type="image/avif"
+              srcSet={`${currentObj.mobileAvif} 640w, ${currentObj.desktopAvif} 1600w`}
+              sizes="100vw"
+            />
+          )}
+          <img
+            src={currentObj.desktop}
+            srcSet={`${currentObj.mobile} 640w, ${currentObj.desktop} 1600w`}
+            sizes="100vw"
+            alt={heroAlt}
+            width="1600"
+            height="900"
+            className="absolute inset-0 w-full h-full object-cover"
+            decoding="sync"
+            fetchPriority="high"
+            loading="eager"
+          />
+        </picture>
       )}
 
       <div className="absolute inset-0 bg-black/70" />
