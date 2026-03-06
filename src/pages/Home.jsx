@@ -1,4 +1,4 @@
-import React, { Suspense, useMemo } from "react";
+import React, { Suspense, useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaCheckCircle } from "react-icons/fa";
@@ -61,6 +61,7 @@ const sortByDateDesc = (a, b) =>
   new Date(b.date).getTime() - new Date(a.date).getTime();
 
 const Home = () => {
+  const [showBeforeAfter, setShowBeforeAfter] = useState(false);
   const postsSorted = useMemo(() => [...POSTS].sort(sortByDateDesc), []);
   const latest = useMemo(() => postsSorted.slice(0, 6), [postsSorted]);
   const assuranceLogos = useMemo(
@@ -105,6 +106,12 @@ const Home = () => {
     hidden: { opacity: 0, y: 24 },
     show: { opacity: 1, y: 0, transition: { duration: 0.55, ease: "easeOut" } },
   };
+
+  useEffect(() => {
+    // Déférer la galerie Avant/Après hors fenêtre LCP
+    const id = setTimeout(() => setShowBeforeAfter(true), 7000);
+    return () => clearTimeout(id);
+  }, []);
   const cardReveal = {
     hidden: { opacity: 0, y: 16 },
     show: { opacity: 1, y: 0, transition: { duration: 0.45, ease: "easeOut" } },
@@ -119,9 +126,13 @@ const Home = () => {
         url="https://www.cliniquedentairedabia.com/"
       />
       <HeroSlideshow />
-      <Suspense fallback={<div className="py-12" aria-hidden="true" />}>
-        <BeforeAfterGallery />
-      </Suspense>
+      {showBeforeAfter ? (
+        <Suspense fallback={<div className="py-12" aria-hidden="true" />}>
+          <BeforeAfterGallery />
+        </Suspense>
+      ) : (
+        <div className="py-12" aria-hidden="true" />
+      )}
       <Suspense fallback={<div className="py-8" aria-hidden="true" />}>
         <ClinicIntro />
         <KeyMetrics />
