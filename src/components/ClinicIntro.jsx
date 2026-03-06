@@ -2,9 +2,6 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import SectionTitle from "./SectionTitle";
 import aproposAvif from "../assets/apropos.avif";
-import aproposReception from "../assets/apropos-reception.webp";
-import aproposReceptionAvif from "../assets/apropos-reception.avif";
-import aproposReceptionMobileAvif from "../assets/apropos-reception-mobile.avif";
 
 const ClinicIntro = () => {
   return (
@@ -17,54 +14,12 @@ const ClinicIntro = () => {
 
       {/* ✅ Contenu animé */}
       <motion.div
-        className="relative z-10 max-w-4xl mx-auto flex flex-col sm:flex-row items-center gap-6 sm:gap-12"
+        className="relative z-10 max-w-4xl mx-auto"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        {/* ✅ Image visible sur mobile */}
-        <motion.div
-          className="sm:hidden w-full max-w-[360px] rounded-xl shadow-md overflow-hidden"
-          initial={{ opacity: 0, y: 12 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-          viewport={{ once: true }}
-        >
-          <picture>
-            <source type="image/avif" srcSet={aproposReceptionMobileAvif} />
-            <img
-              src={aproposReception}
-              alt="Accueil Clinique Dentaire DABIA"
-              loading="lazy"
-              decoding="async"
-              fetchPriority="low"
-              className="w-full h-56 object-cover"
-            />
-          </picture>
-        </motion.div>
-
-        {/* ✅ Image animée sur desktop */}
-        <motion.div
-          className="hidden sm:block sm:w-[420px] lg:w-[520px] rounded-xl shadow-md overflow-hidden self-stretch"
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true }}
-        >
-          <picture>
-            <source type="image/avif" srcSet={aproposReceptionAvif} />
-            <img
-              src={aproposReception}
-              alt="Accueil Clinique Dentaire DABIA"
-              loading="lazy"
-              decoding="async"
-              fetchPriority="low"
-              className="w-full h-full min-h-[420px] object-cover"
-            />
-          </picture>
-        </motion.div>
-
         {/* ✅ Texte & bouton animés */}
         <motion.div
           className="text-left sm:text-left"
