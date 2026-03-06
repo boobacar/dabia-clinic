@@ -109,8 +109,8 @@ const Home = () => {
   };
 
   useEffect(() => {
-    // Afficher rapidement la galerie sous le hero, sans bloquer la fenêtre LCP immédiate
-    const id = setTimeout(() => setShowBeforeAfter(true), 1200);
+    // Compromis UX/perf: galerie affichée vite, mais après la fenêtre LCP la plus critique
+    const id = setTimeout(() => setShowBeforeAfter(true), 2500);
     return () => clearTimeout(id);
   }, []);
 
