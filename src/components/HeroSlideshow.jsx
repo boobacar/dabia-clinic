@@ -143,7 +143,7 @@ const HeroSlideshow = () => {
         </picture>
       )}
 
-      <div className="absolute inset-0 bg-black/70" />
+      <div className="absolute inset-0 bg-black/55" />
 
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
         <h2 className="text-[#ad9d64] text-2xl md:text-3xl mb-2">

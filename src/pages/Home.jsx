@@ -62,6 +62,7 @@ const sortByDateDesc = (a, b) =>
 
 const Home = () => {
   const [showBeforeAfter, setShowBeforeAfter] = useState(false);
+  const [showAssurance, setShowAssurance] = useState(false);
   const postsSorted = useMemo(() => [...POSTS].sort(sortByDateDesc), []);
   const latest = useMemo(() => postsSorted.slice(0, 6), [postsSorted]);
   const assuranceLogos = useMemo(
@@ -110,6 +111,12 @@ const Home = () => {
   useEffect(() => {
     // Déférer la galerie Avant/Après hors fenêtre LCP
     const id = setTimeout(() => setShowBeforeAfter(true), 7000);
+    return () => clearTimeout(id);
+  }, []);
+
+  useEffect(() => {
+    // Déférer le bandeau assurances pour réduire la concurrence initiale
+    const id = setTimeout(() => setShowAssurance(true), 3500);
     return () => clearTimeout(id);
   }, []);
   const cardReveal = {
@@ -180,9 +187,13 @@ const Home = () => {
         <StaffPreview />
         <CompetencesGrid />
       </Suspense>
-      <Suspense fallback={<div className="py-6" aria-hidden="true" />}>
-        <AssuranceMarquee className="py-6" speed={45} logos={assuranceLogos} />
-      </Suspense>
+      {showAssurance ? (
+        <Suspense fallback={<div className="py-6" aria-hidden="true" />}>
+          <AssuranceMarquee className="py-6" speed={45} logos={assuranceLogos} />
+        </Suspense>
+      ) : (
+        <div className="py-6" aria-hidden="true" />
+      )}
       {/* Pourquoi nous choisir */}
       <motion.section
         className="py-14 px-4 bg-white"
