@@ -1,67 +1,34 @@
 import React from "react";
 
-// Continuous marquee. Accepts any logo array via props.
 export default function AssuranceMarquee({
   logos = [],
   speed = 40,
   className = "",
 }) {
-  const list = logos.length ? logos : [];
+  if (!logos.length) return null;
 
   return (
-    <div className={`overflow-hidden bg-white ${className}`}>
-      {/* Wrapper with gap-10 (2.5rem) to separate the two tracks */}
-      <div className="flex items-center gap-10 w-max">
-        {/* Track 1 */}
-        <div
-          className="flex shrink-0 items-center justify-around gap-10"
-          style={{
-            minWidth: "100%",
-            animation: `dabia-marquee ${speed}s linear infinite`,
-            willChange: "transform",
-          }}
-        >
-          {list.map((src, i) => (
-            <img
-              key={`t1-${i}`}
-              src={src}
-              alt="Assurance"
-              className="h-10 w-auto object-contain opacity-90"
-              loading="lazy"
-              decoding="async"
-              fetchPriority="low"
-            />
-          ))}
-        </div>
-
-        {/* Track 2 (Duplicate) */}
-        <div
-          className="flex shrink-0 items-center justify-around gap-10"
-          style={{
-            minWidth: "100%",
-            animation: `dabia-marquee ${speed}s linear infinite`,
-            willChange: "transform",
-          }}
-          aria-hidden="true"
-        >
-          {list.map((src, i) => (
-            <img
-              key={`t2-${i}`}
-              src={src}
-              alt="Assurance"
-              className="h-10 w-auto object-contain opacity-90"
-              loading="lazy"
-              decoding="async"
-              fetchPriority="low"
-            />
-          ))}
-        </div>
+    <div className={`overflow-hidden ${className}`}>
+      <div
+        className="flex w-max items-center gap-10"
+        style={{ animation: `assurance-scroll ${speed}s linear infinite` }}
+      >
+        {[...logos, ...logos].map((src, i) => (
+          <img
+            key={`${src}-${i}`}
+            src={src}
+            alt="Assurance"
+            className="h-10 w-auto object-contain opacity-90"
+            loading="lazy"
+            decoding="async"
+          />
+        ))}
       </div>
 
       <style>{`
-        @keyframes dabia-marquee {
+        @keyframes assurance-scroll {
           0% { transform: translateX(0); }
-          100% { transform: translateX(calc(-100% - 2.5rem)); } /* -100% (width) - 2.5rem (gap-10) */
+          100% { transform: translateX(-50%); }
         }
       `}</style>
     </div>
