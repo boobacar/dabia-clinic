@@ -126,6 +126,60 @@ export const TAGS = [
 ];
 
 export const POSTS = [
+  {
+    slug: "prix-soins-dentaires-dakar-senegal-guide-2026",
+    title: "Dentiste à Dakar : prix des soins dentaires au Sénégal (guide 2026)",
+    description:
+      "Combien coûte un soin dentaire à Dakar en 2026 ? Découvrez les fourchettes de prix, les facteurs qui influencent le coût et comment planifier votre budget sereinement.",
+    date: "2026-03-06",
+    category: "Conseils",
+    tags: [
+      "dentiste dakar",
+      "prix",
+      "tarif dentiste dakar",
+      "prix soins dentaires dakar",
+      "devis dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: guideTarifsCover,
+    pinned: true,
+    readingMinutes: 7,
+    content: `Le coût d’un soin dentaire à Dakar dépend de plusieurs éléments : type de soin, niveau de complexité, matériaux utilisés et éventuelle prise en charge par assurance/IPM.
+
+## 1) Quels facteurs font varier le prix ?
+- L’acte concerné (consultation, détartrage, soin de carie, urgence, prothèse, etc.)
+- Le nombre de dents à traiter
+- Les examens nécessaires (radio, bilan)
+- Les matériaux choisis (standard vs premium)
+
+## 2) Fourchettes de prix : comment les lire ?
+Les tarifs publiés en ligne sont souvent indicatifs. Le bon réflexe est de demander un devis personnalisé après examen clinique.
+
+## 3) Comment optimiser son budget dentaire ?
+- Prioriser les urgences et la douleur
+- Planifier les soins par étapes
+- Vérifier votre couverture IPM/mutuelle
+- Demander un plan de traitement clair
+
+## 4) Erreurs à éviter
+- Reporter trop longtemps un soin simple (le coût augmente ensuite)
+- Choisir uniquement sur le prix sans vérifier la qualité du suivi
+
+## En résumé
+Pour estimer correctement vos soins dentaires à Dakar, il faut un diagnostic précis + un devis transparent. C’est la meilleure manière d’éviter les surprises et de protéger votre santé bucco-dentaire.
+
+Besoin d’une estimation adaptée à votre cas ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Pourquoi deux patients paient-ils des montants différents pour un même type de soin ?",
+        a: "Parce que la complexité clinique, le nombre de dents concernées et les matériaux peuvent varier d’un cas à l’autre.",
+      },
+      {
+        q: "Peut-on obtenir un devis avant de commencer ?",
+        a: "Oui, c’est recommandé. Un devis détaillé vous permet de comprendre les étapes et d’organiser votre budget.",
+      },
+    ],
+  },
 
   {
     slug: "comment-choisir-dentiste-dakar-criteres-2026",

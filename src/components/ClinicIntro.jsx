@@ -46,7 +46,7 @@ const ClinicIntro = () => {
 
         {/* ✅ Image animée sur desktop */}
         <motion.div
-          className="hidden sm:block sm:w-[360px] lg:w-[420px] rounded-xl shadow-md overflow-hidden self-stretch"
+          className="hidden sm:block sm:w-[420px] lg:w-[520px] rounded-xl shadow-md overflow-hidden self-stretch"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
