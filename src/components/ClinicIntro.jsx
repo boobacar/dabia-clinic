@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import SectionTitle from "./SectionTitle";
 import apropos from "../assets/apropos.webp";
+import aproposAvif from "../assets/apropos.avif";
+import aproposMobileAvif from "../assets/apropos-mobile.avif";
 
 const ClinicIntro = () => {
   return (
@@ -9,7 +11,7 @@ const ClinicIntro = () => {
       {/* ✅ Background image mobile uniquement */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-20 sm:hidden"
-        style={{ backgroundImage: `url(${apropos})` }}
+        style={{ backgroundImage: `url(${aproposMobileAvif})` }}
       ></div>
 
       {/* ✅ Contenu animé */}
@@ -21,15 +23,25 @@ const ClinicIntro = () => {
         viewport={{ once: true }}
       >
         {/* ✅ Image animée sur desktop */}
-        <motion.img
-          src={apropos}
-          alt="Dentiste Dakar - Clinique dentaire DABIA"
-          className="hidden sm:block sm:w-[300px] rounded-lg shadow-md"
+        <motion.div
+          className="hidden sm:block sm:w-[300px] rounded-lg shadow-md overflow-hidden"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
-        />
+        >
+          <picture>
+            <source type="image/avif" srcSet={aproposAvif} />
+            <img
+              src={apropos}
+              alt="Dentiste Dakar - Clinique dentaire DABIA"
+              loading="lazy"
+              decoding="async"
+              fetchPriority="low"
+              className="w-full h-auto"
+            />
+          </picture>
+        </motion.div>
 
         {/* ✅ Texte & bouton animés */}
         <motion.div
