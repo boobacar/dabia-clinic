@@ -133,13 +133,6 @@ const Home = () => {
         url="https://www.cliniquedentairedabia.com/"
       />
       <HeroSlideshow />
-      {showBeforeAfter ? (
-        <Suspense fallback={<div className="py-12" aria-hidden="true" />}>
-          <BeforeAfterGallery />
-        </Suspense>
-      ) : (
-        <div className="py-12" aria-hidden="true" />
-      )}
       <Suspense fallback={<div className="py-8" aria-hidden="true" />}>
         <ClinicIntro />
         <KeyMetrics />
@@ -183,6 +176,13 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {showBeforeAfter ? (
+        <Suspense fallback={<div className="py-12" aria-hidden="true" />}>
+          <BeforeAfterGallery />
+        </Suspense>
+      ) : (
+        <div className="py-12" aria-hidden="true" />
+      )}
       <Suspense fallback={<div className="py-10" aria-hidden="true" />}>
         <StaffPreview />
         <CompetencesGrid />
