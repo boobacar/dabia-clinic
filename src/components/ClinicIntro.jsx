@@ -8,10 +8,10 @@ import aproposMobileAvif from "../assets/apropos-mobile.avif";
 const ClinicIntro = () => {
   return (
     <section className="relative overflow-hidden py-16 px-4 bg-gray-100 text-center">
-      {/* ✅ Léger fond mobile */}
+      {/* ✅ Fond image sur mobile + desktop */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-10 sm:hidden"
-        style={{ backgroundImage: `url(${aproposMobileAvif})` }}
+        className="absolute inset-0 bg-cover bg-center opacity-10 sm:opacity-[0.12]"
+        style={{ backgroundImage: `url(${aproposAvif})` }}
       ></div>
 
       {/* ✅ Contenu animé */}
