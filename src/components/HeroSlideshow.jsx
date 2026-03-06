@@ -25,7 +25,8 @@ const HeroSlideshow = () => {
 
     const handle = cb(() => {
       const startDelay = isMobile ? LOOP_START_MOBILE_MS : LOOP_START_DESKTOP_MS;
-      startRef.current = setTimeout(() => setEnableLoop(true), startDelay);
+      // LCP hardening: keep hero static (no runtime slideshow)
+      startRef.current = setTimeout(() => setEnableLoop(false), startDelay);
     });
 
     return () => {
@@ -71,7 +72,7 @@ const HeroSlideshow = () => {
 
   const currentObj = useMemo(() => heroImages[index], [index]);
   const firstHero = heroImages[0];
-  const isSlideshow = enableLoop && !isMobile && heroImages.length > 1;
+  const isSlideshow = false;
   const heroAlt =
     "Dentiste Dakar - Clinique dentaire DABIA - Clinique dentaire dakar";
 
