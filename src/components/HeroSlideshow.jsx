@@ -82,14 +82,14 @@ const HeroSlideshow = () => {
           <link
             rel="preload"
             as="image"
-            href={firstHero.mobile}
+            href={firstHero.mobileAvif || firstHero.mobile}
             media="(max-width: 640px)"
             fetchPriority="high"
           />
           <link
             rel="preload"
             as="image"
-            href={firstHero.desktop}
+            href={firstHero.desktopAvif || firstHero.desktop}
             media="(min-width: 641px)"
             fetchPriority="high"
           />
