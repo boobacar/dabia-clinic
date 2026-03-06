@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import SectionTitle from "./SectionTitle";
-import apropos from "../assets/apropos.webp";
 import aproposAvif from "../assets/apropos.avif";
-import aproposMobileAvif from "../assets/apropos-mobile.avif";
 import aproposReception from "../assets/apropos-reception.webp";
 import aproposReceptionAvif from "../assets/apropos-reception.avif";
 import aproposReceptionMobileAvif from "../assets/apropos-reception-mobile.avif";
