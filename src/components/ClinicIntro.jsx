@@ -8,9 +8,9 @@ import aproposMobileAvif from "../assets/apropos-mobile.avif";
 const ClinicIntro = () => {
   return (
     <section className="relative overflow-hidden py-16 px-4 bg-gray-100 text-center">
-      {/* ✅ Background image mobile uniquement */}
+      {/* ✅ Léger fond mobile */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-20 sm:hidden"
+        className="absolute inset-0 bg-cover bg-center opacity-10 sm:hidden"
         style={{ backgroundImage: `url(${aproposMobileAvif})` }}
       ></div>
 
@@ -22,6 +22,27 @@ const ClinicIntro = () => {
         transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{ once: true }}
       >
+        {/* ✅ Image visible sur mobile */}
+        <motion.div
+          className="sm:hidden w-full max-w-[320px] rounded-xl shadow-md overflow-hidden"
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+          <picture>
+            <source type="image/avif" srcSet={aproposMobileAvif} />
+            <img
+              src={apropos}
+              alt="Dentiste Dakar - Clinique dentaire DABIA"
+              loading="lazy"
+              decoding="async"
+              fetchPriority="low"
+              className="w-full h-48 object-cover"
+            />
+          </picture>
+        </motion.div>
+
         {/* ✅ Image animée sur desktop */}
         <motion.div
           className="hidden sm:block sm:w-[300px] rounded-lg shadow-md overflow-hidden"
