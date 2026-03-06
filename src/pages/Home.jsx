@@ -109,8 +109,8 @@ const Home = () => {
   };
 
   useEffect(() => {
-    // Déférer la galerie Avant/Après hors fenêtre LCP
-    const id = setTimeout(() => setShowBeforeAfter(true), 7000);
+    // Afficher rapidement la galerie sous le hero, sans bloquer la fenêtre LCP immédiate
+    const id = setTimeout(() => setShowBeforeAfter(true), 1200);
     return () => clearTimeout(id);
   }, []);
 
