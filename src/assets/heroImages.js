@@ -19,9 +19,11 @@ import h7m from "./hero/hero7-mobile.webp";
 import h8m from "./hero/hero8-mobile.webp";
 
 const heroImages = [
+  // On place une image orientée matériel dentaire en premier
+  // pour mieux illustrer la vision "plateau technique moderne" dès l’arrivée.
+  { desktop: h3, mobile: h3m },
   { desktop: h1, mobile: h1m, desktopAvif: h1a, mobileAvif: h1ma },
   { desktop: h2, mobile: h2m },
-  { desktop: h3, mobile: h3m },
   { desktop: h4, mobile: h4m },
   { desktop: h5, mobile: h5m },
   { desktop: h6, mobile: h6m },
