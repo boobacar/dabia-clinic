@@ -127,6 +127,543 @@ export const TAGS = [
 
 export const POSTS = [
   {
+    slug: "abces-dentaire-dakar-symptomes-traitement-urgence",
+    title: "Abcès dentaire à Dakar : symptômes, risques et traitement en urgence",
+    description:
+      "Gonflement, douleur pulsatile, fièvre : comment reconnaître un abcès dentaire, quoi faire immédiatement à Dakar et pourquoi il faut consulter vite.",
+    date: "2026-03-15",
+    category: "Urgences",
+    tags: [
+      "abcès dentaire",
+      "urgence dentaire",
+      "dentiste dakar",
+      "douleur dentaire",
+      "gonflement joue dent",
+    ],
+    author: AUTHORS.sao,
+    cover: urgenceActionCover,
+    pinned: true,
+    readingMinutes: 7,
+    content: `Un **abcès dentaire** est une infection qui ne guérit pas seule. Plus vous attendez, plus le risque de complications augmente (douleur intense, propagation de l’infection, fièvre).
+
+## 1) Les signes qui doivent alerter
+- Douleur pulsatile qui empêche de dormir
+- Gonflement de la gencive, de la joue ou sous la mâchoire
+- Goût/pus dans la bouche
+- Fièvre, fatigue, difficulté à ouvrir la bouche
+
+## 2) Que faire immédiatement ?
+- Prenez un antalgique compatible avec votre état de santé
+- Rincez doucement à l’eau tiède salée
+- Évitez de percer vous-même le gonflement
+- Consultez rapidement un dentiste
+
+## 3) Ce que fait le dentiste en urgence
+Selon le cas : drainage, traitement de la dent causale (endodontie), extraction si nécessaire, puis suivi.
+
+## 4) Ce qu’il ne faut pas faire
+- Automédication antibiotique sans avis médical
+- Reporter la consultation « parce que la douleur a baissé »
+- Appliquer des produits agressifs sur la gencive
+
+## En résumé
+Un abcès dentaire est une **urgence réelle**. Une prise en charge rapide évite les complications et réduit la douleur durablement.
+
+Besoin d’une prise en charge rapide ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Un abcès dentaire peut-il disparaître tout seul ?",
+        a: "Non. La douleur peut parfois diminuer temporairement, mais l’infection persiste et peut s’aggraver sans traitement adapté.",
+      },
+      {
+        q: "Faut-il prendre des antibiotiques automatiquement ?",
+        a: "Pas systématiquement. Le dentiste décide selon votre état clinique. Le traitement local de la cause reste essentiel.",
+      },
+    ],
+  },
+
+  {
+    slug: "dent-cassee-que-faire-dakar-guide-urgence",
+    title: "Dent cassée à Dakar : que faire dans l’heure qui suit ?",
+    description:
+      "Choc, accident, morsure sur aliment dur : les bons réflexes en cas de dent cassée, les erreurs à éviter et les options de réparation à Dakar.",
+    date: "2026-03-15",
+    category: "Urgences",
+    tags: [
+      "dent cassée",
+      "urgence dentaire",
+      "dentiste dakar",
+      "traumatisme dentaire",
+      "douleur dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: traumaEnfantCover,
+    pinned: false,
+    readingMinutes: 6,
+    content: `Une **dent cassée** doit être évaluée rapidement, même si la douleur semble modérée. Une fissure non traitée peut évoluer vers une infection ou une fragilité durable.
+
+## 1) Les premiers gestes
+- Récupérer le fragment si possible
+- Rincer la bouche à l’eau claire
+- Appliquer du froid sur la joue (10 min)
+- Éviter de mâcher du côté atteint
+
+## 2) En cas de saignement
+Comprimez doucement avec une compresse propre pendant quelques minutes.
+
+## 3) Pourquoi consulter vite ?
+Le dentiste vérifie si la fracture touche l’émail, la dentine ou le nerf. Plus la prise en charge est précoce, meilleures sont les chances de conserver la dent.
+
+## 4) Les solutions possibles
+- Composite esthétique
+- Facette ou onlay
+- Couronne si perte de structure importante
+- Traitement canalaire si la pulpe est atteinte
+
+## En résumé
+En cas de dent cassée, la rapidité d’action fait la différence entre une réparation simple et un traitement plus lourd.
+
+Besoin d’un avis rapide ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Puis-je attendre quelques jours si je n’ai pas mal ?",
+        a: "Ce n’est pas conseillé. Certaines fractures sont peu douloureuses au départ mais s’aggravent ensuite.",
+      },
+      {
+        q: "Une dent cassée peut-elle être reconstruite esthétiquement ?",
+        a: "Oui, dans beaucoup de cas. La technique dépend de l’ampleur de la fracture et de l’état de la dent.",
+      },
+    ],
+  },
+
+  {
+    slug: "couronne-dentaire-dakar-prix-indications-guide",
+    title: "Couronne dentaire à Dakar : indications, durée et budget à prévoir",
+    description:
+      "Quand faut-il poser une couronne dentaire ? Matériaux, durée de vie, étapes du traitement et facteurs qui influencent le prix à Dakar.",
+    date: "2026-03-15",
+    category: "Conseils",
+    tags: [
+      "couronne dentaire",
+      "prix",
+      "dentiste dakar",
+      "prothèse fixe",
+      "devis dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: protheseCover,
+    pinned: false,
+    readingMinutes: 8,
+    content: `La **couronne dentaire** protège une dent fragilisée (carie étendue, fracture, dent dévitalisée) et restaure la fonction de mastication.
+
+## 1) Dans quels cas poser une couronne ?
+- Dent très abîmée
+- Après traitement canalaire
+- Dent fissurée à risque de fracture
+- Réhabilitation esthétique/fonctionnelle
+
+## 2) Les étapes du traitement
+1. Bilan clinique et radiologique
+2. Préparation de la dent
+3. Empreinte/scan
+4. Pose de la couronne définitive
+
+## 3) Quels matériaux choisir ?
+- Céramique : très esthétique
+- Métallo-céramique : compromis résistance/esthétique
+- Zircone : haute résistance et rendu naturel
+
+## 4) Ce qui influence le budget
+Complexité du cas, matériau choisi, état de la dent, actes complémentaires éventuels.
+
+## En résumé
+La bonne couronne n’est pas seulement une question de prix : c’est surtout un choix médical personnalisé pour durer dans le temps.
+
+Pour un plan clair : **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Une couronne dentaire est-elle douloureuse ?",
+        a: "Le soin est réalisé sous anesthésie locale. Une sensibilité légère peut apparaître quelques jours après la pose.",
+      },
+      {
+        q: "Combien de temps dure une couronne ?",
+        a: "Souvent 10 ans ou plus avec une bonne hygiène, des contrôles réguliers et l’absence de parafonctions non traitées.",
+      },
+    ],
+  },
+
+  {
+    slug: "detartrage-dentaire-frequence-dakar-prevention",
+    title: "Détartrage dentaire à Dakar : à quelle fréquence le faire ?",
+    description:
+      "Tous les 6 mois, tous les ans ou plus souvent ? Découvrez la bonne fréquence de détartrage selon votre profil et comment éviter gingivite et mauvaise haleine.",
+    date: "2026-03-15",
+    category: "Prévention",
+    tags: [
+      "détartrage",
+      "prévention",
+      "gingivite",
+      "dentiste dakar",
+      "mauvaise haleine",
+    ],
+    author: AUTHORS.sao,
+    cover: detartragePreventifCover,
+    pinned: false,
+    readingMinutes: 6,
+    content: `Le **détartrage** retire les dépôts minéralisés que la brosse à dents ne peut pas éliminer. C’est un geste clé pour prévenir gingivite, saignements et mauvaise haleine.
+
+## 1) Fréquence standard
+Pour beaucoup de patients : un contrôle + détartrage tous les 6 à 12 mois.
+
+## 2) Cas nécessitant un suivi rapproché
+- Antécédents de gingivite/parodontite
+- Tabac
+- Appareil orthodontique
+- Diabète mal équilibré
+
+## 3) Signes qu’il faut consulter
+- Gencives qui saignent
+- Haleine persistante
+- Sensation de tartre derrière les incisives
+
+## 4) Bonnes habitudes entre deux séances
+Brossage 2x/jour, fil dentaire/brossettes, hydratation et contrôle des sucres.
+
+## En résumé
+La bonne fréquence dépend de votre risque parodontal. Un suivi personnalisé permet d’éviter des soins plus lourds ensuite.
+
+Besoin d’un bilan prévention ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Un détartrage abîme-t-il l’émail ?",
+        a: "Non, lorsqu’il est réalisé correctement par un professionnel. Il élimine le tartre sans détériorer l’émail.",
+      },
+      {
+        q: "Pourquoi mes gencives saignent-elles après un détartrage ?",
+        a: "Une légère sensibilité transitoire est possible. Si le saignement persiste, il faut reconsulter pour contrôle.",
+      },
+    ],
+  },
+
+  {
+    slug: "prothese-fixe-vs-amovible-dakar-comment-choisir",
+    title: "Prothèse dentaire fixe ou amovible à Dakar : comment choisir ?",
+    description:
+      "Bridge, couronne sur implant ou appareil amovible : comparatif simple pour choisir la meilleure prothèse selon confort, budget et durabilité.",
+    date: "2026-03-15",
+    category: "Conseils",
+    tags: [
+      "prothèse dentaire fixe",
+      "prix prothese dentaire dakar",
+      "dentiste dakar",
+      "bridge",
+      "implant dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: protheseFixeAmovibleCover,
+    pinned: false,
+    readingMinutes: 7,
+    content: `En cas de dents manquantes, le choix entre **prothèse fixe** et **prothèse amovible** dépend de trois critères : stabilité, entretien et budget global.
+
+## 1) Prothèse fixe : pour qui ?
+- Recherche de confort maximal
+- Mastication plus naturelle
+- Solution durable (bridge/implant selon indication)
+
+## 2) Prothèse amovible : quand c’est pertinent ?
+- Budget initial plus limité
+- Plusieurs dents absentes
+- Solution transitoire ou de long terme selon le cas
+
+## 3) Ce qui doit guider votre décision
+- État osseux et dentaire
+- Objectif esthétique
+- Habitudes de vie
+- Capacité d’entretien quotidien
+
+## 4) L’importance du devis comparatif
+Un devis clair doit présenter les options, les avantages et les limites de chaque solution.
+
+## En résumé
+Il n’existe pas de « meilleure prothèse » universelle. La meilleure est celle qui correspond à votre situation clinique et à vos priorités.
+
+Besoin d’un plan adapté ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Une prothèse amovible est-elle forcément inconfortable ?",
+        a: "Pas forcément. Une bonne adaptation et des réglages précis améliorent nettement le confort.",
+      },
+      {
+        q: "La solution fixe est-elle toujours plus chère ?",
+        a: "Souvent le coût initial est plus élevé, mais il faut comparer la durabilité et le confort sur le moyen/long terme.",
+      },
+    ],
+  },
+
+  {
+    slug: "prix-consultation-dentiste-dakar-combien-prevoir-2026",
+    title: "Prix consultation dentiste à Dakar : combien prévoir en 2026 ?",
+    description:
+      "Consultation simple, bilan complet, radio : ce qui influence le tarif d’une consultation dentaire à Dakar et comment éviter les mauvaises surprises.",
+    date: "2026-03-15",
+    category: "Conseils",
+    tags: [
+      "prix consultation dentiste",
+      "tarif dentiste dakar",
+      "dentiste dakar",
+      "devis dentaire",
+      "radio panoramique prix",
+    ],
+    author: AUTHORS.sao,
+    cover: devisDentaireCover,
+    pinned: false,
+    readingMinutes: 6,
+    content: `Le **prix d’une consultation dentaire à Dakar** dépend du motif de visite et des examens nécessaires.
+
+## 1) Consultation simple vs bilan complet
+- Consultation simple : douleur localisée, contrôle ciblé
+- Bilan complet : examen global + plan de traitement
+
+## 2) Ce qui peut faire varier le coût
+- Besoin d’une radio (rétro-alvéolaire ou panoramique)
+- Urgence ou non
+- Complexité clinique
+
+## 3) Comment bien préparer son budget
+- Demander un devis écrit si des soins sont prévus
+- Vérifier la prise en charge IPM/mutuelle
+- Prioriser les soins urgents et planifier le reste
+
+## En résumé
+Une consultation bien cadrée permet de poser un diagnostic fiable et d’éviter des dépenses imprévues plus tard.
+
+Pour une estimation personnalisée : **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Le prix de consultation inclut-il toujours la radio ?",
+        a: "Pas forcément. La radio est souvent facturée séparément selon le type d’examen requis.",
+      },
+      {
+        q: "Puis-je avoir un plan de traitement chiffré après la consultation ?",
+        a: "Oui, c’est recommandé pour comparer les options et planifier les étapes sereinement.",
+      },
+    ],
+  },
+
+  {
+    slug: "prix-extraction-dentaire-dakar-simple-ou-complexe",
+    title: "Extraction dentaire à Dakar : prix, déroulement et suites",
+    description:
+      "Extraction simple ou dent incluse : découvrez les facteurs qui influencent le prix à Dakar, le déroulement de l’acte et les conseils post-opératoires.",
+    date: "2026-03-15",
+    category: "Urgences",
+    tags: [
+      "extraction dentaire",
+      "prix",
+      "urgence dentaire",
+      "dentiste dakar",
+      "dent de sagesse",
+    ],
+    author: AUTHORS.sao,
+    cover: sagesseCover,
+    pinned: false,
+    readingMinutes: 7,
+    content: `Le coût d’une **extraction dentaire à Dakar** varie selon la difficulté : dent mobile, cassée, incluse ou proche de structures sensibles.
+
+## 1) Extraction simple vs complexe
+- Simple : dent accessible, geste rapide
+- Complexe : dent incluse/cassée, chirurgie plus technique
+
+## 2) Comment se déroule l’intervention ?
+Anesthésie locale, extraction, contrôle du saignement, puis consignes de cicatrisation.
+
+## 3) Suites normales après extraction
+- Gêne légère à modérée 24-72h
+- Sensibilité à la mastication
+- Amélioration progressive avec les consignes
+
+## 4) Signes qui imposent de reconsulter
+Douleur qui augmente après 2-3 jours, saignement prolongé, fièvre, mauvaise odeur persistante.
+
+## En résumé
+Un diagnostic précis permet d’anticiper le niveau de complexité, le budget et les suites opératoires.
+
+Besoin d’un avis rapide ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Le prix est-il le même pour une dent de sagesse ?",
+        a: "Non. Les dents de sagesse incluses ou semi-incluses nécessitent souvent une intervention plus complexe.",
+      },
+      {
+        q: "Puis-je reprendre le travail le jour même ?",
+        a: "Cela dépend de la complexité. Après une extraction simple, c’est parfois possible; après chirurgie, un repos est souvent conseillé.",
+      },
+    ],
+  },
+
+  {
+    slug: "prix-devitalisation-dakar-traitement-canalaire-guide",
+    title: "Dévitalisation à Dakar : prix du traitement canalaire et étapes",
+    description:
+      "Douleur profonde, nerf atteint : combien coûte une dévitalisation à Dakar, combien de séances prévoir et pourquoi une couronne peut être nécessaire.",
+    date: "2026-03-15",
+    category: "Urgences",
+    tags: [
+      "traitement canalaire",
+      "devitalisation",
+      "prix",
+      "douleur dentaire",
+      "dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: endoCover,
+    pinned: false,
+    readingMinutes: 8,
+    content: `La **dévitalisation** (traitement canalaire) permet de conserver une dent infectée au lieu de l’extraire.
+
+## 1) Quand faut-il dévitaliser ?
+- Douleur intense au chaud/froid
+- Carie profonde avec atteinte pulpaire
+- Infection autour de la racine
+
+## 2) Pourquoi le prix varie-t-il ?
+- Nombre de canaux (incisive vs molaire)
+- Niveau d’infection
+- Besoin d’une reconstruction/couronne ensuite
+
+## 3) Une ou plusieurs séances ?
+Selon la dent et l’infection, le traitement peut se faire en une ou plusieurs séances.
+
+## 4) Après la dévitalisation
+Une dent dévitalisée est plus fragile : une couronne peut être recommandée pour la protéger durablement.
+
+## En résumé
+La dévitalisation est souvent la meilleure option pour sauver une dent douloureuse et éviter l’extraction.
+
+Pour un plan complet : **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Une dévitalisation fait-elle mal ?",
+        a: "Le soin est réalisé sous anesthésie locale. L’objectif est justement de supprimer la douleur liée à l’infection pulpaire.",
+      },
+      {
+        q: "Pourquoi parle-t-on de couronne après dévitalisation ?",
+        a: "Parce que la dent peut devenir plus fragile. Une couronne améliore sa résistance à long terme, surtout sur les molaires.",
+      },
+    ],
+  },
+
+  {
+    slug: "dentiste-liberte6-parcelles-choisir-dentiste-proche",
+    title: "Dentiste proche Liberté 6 / Parcelles : 6 critères pour bien choisir",
+    description:
+      "Vous habitez Liberté 6 ou Parcelles Assainies ? Voici comment choisir un dentiste proche selon l’accessibilité, les horaires, l’expertise et le suivi.",
+    date: "2026-03-15",
+    category: "Conseils",
+    tags: [
+      "liberté 6",
+      "parcelles assainies",
+      "cabinet dentaire dakar",
+      "dentiste dakar",
+      "urgence dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: cliniqueDabiaCover,
+    pinned: false,
+    readingMinutes: 6,
+    content: `Quand on vit à **Liberté 6** ou aux **Parcelles Assainies**, le choix d’un dentiste ne doit pas se limiter à la distance.
+
+## 1) Proximité utile, mais pas suffisante
+Un cabinet proche fait gagner du temps, surtout en cas d’urgence.
+
+## 2) Vérifier les horaires réels
+Disponibilité en soirée ou le week-end : un vrai plus pour les actifs.
+
+## 3) Examiner l’offre de soins
+Prévention, urgences, esthétique, prothèse, pédiatrie : mieux vaut un cabinet complet.
+
+## 4) Exiger de la transparence
+Devis clair, explications simples, étapes du traitement bien détaillées.
+
+## 5) Regarder la qualité du suivi
+Rappels de contrôle, ajustements, disponibilité post-soin.
+
+## 6) Évaluer l’hygiène et l’organisation
+Un environnement propre et structuré est non négociable.
+
+## En résumé
+Le bon cabinet est celui qui combine **proximité + qualité médicale + suivi sérieux**.
+
+Besoin d’un bilan près de chez vous ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "La proximité doit-elle être mon premier critère ?",
+        a: "Elle est importante, surtout en urgence, mais la qualité des soins et le suivi restent prioritaires.",
+      },
+      {
+        q: "Comment comparer deux cabinets rapidement ?",
+        a: "Comparez les horaires, la clarté des devis, les services proposés et les retours patients récents.",
+      },
+    ],
+  },
+
+  {
+    slug: "ipm-mutuelle-soins-dentaires-dakar-comment-etre-rembourse",
+    title: "IPM / mutuelle et soins dentaires à Dakar : comment bien se faire rembourser",
+    description:
+      "Consultation, radio, prothèse : comprendre la prise en charge IPM/mutuelle à Dakar, les documents utiles et les erreurs qui bloquent le remboursement.",
+    date: "2026-03-15",
+    category: "Conseils",
+    tags: [
+      "assurance dentaire senegal",
+      "mutuelle dentaire dakar",
+      "ipm dentaire dakar",
+      "devis dentaire",
+      "dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: prixCover,
+    pinned: false,
+    readingMinutes: 7,
+    content: `Beaucoup de patients perdent du temps (et de l’argent) faute d’informations claires sur la **prise en charge IPM/mutuelle** des soins dentaires.
+
+## 1) Ce qui est souvent pris en charge
+- Consultation
+- Détartrage
+- Soins conservateurs
+- Certains actes prothétiques selon contrat
+
+## 2) Documents à préparer
+- Carte IPM/mutuelle à jour
+- Pièce d’identité
+- Devis (quand nécessaire)
+- Feuilles de soin/factures
+
+## 3) Pourquoi un devis est important
+Il permet de valider le remboursement avant de lancer des soins coûteux.
+
+## 4) Erreurs fréquentes à éviter
+- Commencer sans vérifier les plafonds
+- Oublier de demander l’entente préalable
+- Dépasser les délais de dépôt des pièces
+
+## En résumé
+Une bonne organisation administrative simplifie vos soins et sécurise votre budget.
+
+Pour établir un plan compatible avec votre couverture : **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Tous les soins dentaires sont-ils remboursés ?",
+        a: "Non. La couverture dépend de votre contrat, des plafonds annuels et des actes concernés.",
+      },
+      {
+        q: "Faut-il toujours une entente préalable ?",
+        a: "Pas pour tous les actes, mais elle est fréquente pour les traitements coûteux (prothèses, actes spécialisés).",
+      },
+    ],
+  },
+
+  {
     slug: "prix-soins-dentaires-dakar-senegal-guide-2026",
     title: "Dentiste à Dakar : prix des soins dentaires au Sénégal (guide 2026)",
     description:
