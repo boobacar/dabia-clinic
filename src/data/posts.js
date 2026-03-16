@@ -127,6 +127,63 @@ export const TAGS = [
 
 export const POSTS = [
   {
+    slug: "detartrage-dakar-frequence-gencives-senegal-2026",
+    title:
+      "Détartrage chez le dentiste à Dakar : à quelle fréquence le faire pour protéger vos gencives ?",
+    description:
+      "Tous les 6 mois, tous les ans ou plus souvent ? Guide pratique au Sénégal pour choisir la bonne fréquence de détartrage selon votre profil et éviter la gingivite.",
+    date: "2026-03-16",
+    category: "Prévention",
+    tags: [
+      "détartrage",
+      "dentiste dakar",
+      "gingivite",
+      "santé des gencives",
+      "sénégal",
+    ],
+    author: AUTHORS.sao,
+    cover: detartragePreventifCover,
+    pinned: true,
+    readingMinutes: 7,
+    content: `Le **détartrage** n’est pas un soin “optionnel” : c’est un acte de prévention essentiel pour garder des gencives saines et éviter des traitements plus lourds.
+
+## Pourquoi le détartrage est important
+La plaque dentaire se minéralise en tartre, surtout près de la gencive. Ce tartre entretient l’inflammation : saignements, mauvaise haleine, puis parfois parodontite si rien n’est fait.
+
+## Quelle fréquence selon votre profil ?
+- **Risque faible** (bonne hygiène, peu de tartre) : tous les **12 mois**
+- **Risque modéré** (saignements occasionnels, tartre qui revient vite) : tous les **6 à 9 mois**
+- **Risque élevé** (tabac, diabète, antécédents parodontaux, appareil) : tous les **3 à 6 mois**
+
+## Signes qui imposent un contrôle rapide
+- Gencives qui saignent au brossage
+- Mauvaise haleine persistante
+- Dépôts de tartre visibles près des incisives
+- Sensibilité gingivale ou gonflement
+
+## Comment prolonger les bénéfices entre deux séances
+- Brossage 2x/jour avec brosse souple
+- Nettoyage interdentaire (fil/brossettes)
+- Réduction des sucres fréquents
+- Contrôle régulier selon votre profil
+
+## En résumé
+À Dakar comme ailleurs au Sénégal, la bonne fréquence de détartrage est **personnalisée**. Un suivi adapté protège vos gencives, votre sourire et votre budget santé.
+
+Besoin d’un bilan prévention ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Un détartrage abîme-t-il l’émail ?",
+        a: "Non. Réalisé correctement par un professionnel, il retire le tartre sans endommager l’émail.",
+      },
+      {
+        q: "Dois-je attendre d’avoir mal pour faire un détartrage ?",
+        a: "Non. Le détartrage est un soin préventif : attendre la douleur signifie souvent que l’inflammation est déjà plus avancée.",
+      },
+    ],
+  },
+
+  {
     slug: "abces-dentaire-dakar-symptomes-traitement-urgence",
     title: "Abcès dentaire à Dakar : symptômes, risques et traitement en urgence",
     description:
