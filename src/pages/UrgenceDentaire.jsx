@@ -83,8 +83,8 @@ export default function UrgenceDentaire() {
   return (
     <section className="py-20 px-4 max-w-7xl mx-auto mt-20">
       <Seo
-        title="Urgence dentaire à Dakar | Prise en charge rapide"
-        description="Douleur intense, dent cassée, abcès ou gonflement ? Notre clinique dentaire à Dakar vous oriente et vous prend en charge rapidement."
+        title="Urgence dentaire à Dakar, Sénégal | Prise en charge rapide"
+        description="Douleur intense, dent cassée, abcès ou gonflement ? Notre clinique dentaire à Dakar (Sénégal) vous oriente et vous prend en charge rapidement."
         canonical={canonical}
         url={canonical}
         jsonLd={[faqLD, howToLD]}

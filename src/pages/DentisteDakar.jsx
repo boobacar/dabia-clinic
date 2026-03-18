@@ -137,8 +137,8 @@ export default function DentisteDakar() {
   return (
     <main className="pt-20 pb-14 px-4 max-w-7xl mx-auto">
       <Seo
-        title="Dentiste à Dakar | Consultation & soins dentaires"
-        description="Vous cherchez un dentiste à Dakar ? Consultations, urgences, implants, orthodontie et esthétique dentaire à la Clinique DABIA. Prenez rendez-vous rapidement."
+        title="Dentiste à Dakar, Sénégal | Consultation, urgences et soins dentaires"
+        description="Besoin d’un dentiste à Dakar (Sénégal) ? Consultations, urgences, implants, orthodontie et esthétique à la Clinique DABIA. Réservation rapide en ligne ou par téléphone."
         canonical={canonical}
         url={canonical}
         jsonLd={jsonLd}
@@ -535,6 +535,9 @@ export default function DentisteDakar() {
           </Link>
           <Link className="underline text-[#bb2988]" to="/blog/clinique-dentaire-dakar-comment-choisir">
             Comment choisir une clinique dentaire à Dakar
+          </Link>
+          <Link className="underline text-[#bb2988]" to="/blog/detartrage-dakar-frequence-gencives-senegal-2026">
+            Détartrage à Dakar : fréquence et santé des gencives
           </Link>
           <Link className="underline text-[#bb2988]" to="/blog/urgence-dentiste-dakar-24h-que-faire">
             Urgence dentiste Dakar 24h : que faire

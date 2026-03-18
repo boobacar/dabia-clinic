@@ -56,8 +56,8 @@ export default function CabinetDentaireDakar() {
   return (
     <section className="py-20 px-4 max-w-7xl mx-auto mt-20">
       <Seo
-        title="Clinique dentaire à Dakar | Équipe experte & RDV rapide"
-        description="Clinique dentaire à Dakar : prévention, soins, implants, orthodontie et urgences avec un plateau technique moderne. Réservez votre rendez-vous en ligne."
+        title="Clinique dentaire à Dakar, Sénégal | Équipe experte & RDV rapide"
+        description="Clinique dentaire à Dakar (Sénégal) : prévention, soins, implants, orthodontie et urgences avec un plateau technique moderne. Prenez rendez-vous en ligne en 1 minute."
         canonical={canonical}
         url={canonical}
         jsonLd={[lbLD, faqLD]}

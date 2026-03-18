@@ -13,6 +13,7 @@ import { addDays, startOfDay, format } from "date-fns";
 import { sendEvent } from "../analytics/ga4";
 import FancySelect from "../components/FancySelect";
 import { FaCheckCircle, FaMapMarkerAlt, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
+import FAQ from "../components/FAQ";
 
 // confetti (chargé à la demande)
 let confetti;
@@ -87,6 +88,34 @@ const RendezVous = () => {
     hero: "Prendre un rendez-vous",
     sub: "Quelques informations suffisent pour réserver votre consultation à la Clinique Dentaire DABIA. Nous vous recontactons rapidement pour confirmer l'horaire exact.",
     submit: "Confirmer mon rendez-vous",
+  };
+
+  const faqItems = [
+    {
+      q: "En combien de temps suis-je recontacté après la demande de rendez-vous ?",
+      a: "Notre équipe vous recontacte rapidement (souvent dans la même journée ouvrée) pour confirmer l’horaire exact.",
+    },
+    {
+      q: "Puis-je demander un rendez-vous urgent ?",
+      a: "Oui. Utilisez le motif “Urgence dentaire” dans le formulaire ou appelez directement la clinique pour un traitement prioritaire.",
+    },
+    {
+      q: "Quels moyens de contact sont disponibles ?",
+      a: "Vous pouvez réserver en ligne, appeler la clinique ou nous écrire sur WhatsApp au +221 77 703 93 93.",
+    },
+  ];
+
+  const faqLD = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    })),
   };
 
   const onFormStart = () => {
@@ -178,10 +207,11 @@ const RendezVous = () => {
   return (
     <section className="relative mt-20 overflow-hidden">
       <Seo
-        title="Rendez-vous dentiste à Dakar | Réservation en ligne rapide"
-        description="Prenez rendez-vous avec votre dentiste à Dakar en moins d’une minute. Réservation en ligne, appel direct ou WhatsApp avec réponse rapide."
+        title="Rendez-vous dentiste à Dakar, Sénégal | Réservation en ligne rapide"
+        description="Prenez rendez-vous avec votre dentiste à Dakar (Sénégal) en moins d’une minute. Réservation en ligne, appel direct ou WhatsApp avec réponse rapide."
         canonical="https://www.cliniquedentairedabia.com/rendez-vous"
         url="https://www.cliniquedentairedabia.com/rendez-vous"
+        jsonLd={[faqLD]}
       />
 
       {/* Fond photo + overlay dégradé */}
@@ -493,6 +523,7 @@ const RendezVous = () => {
                   <a href="/urgence-dentaire-dakar" className="underline text-[#bb2988]">Urgence dentaire à Dakar</a>
                   <a href="/cabinet-dentaire-dakar" className="underline text-[#bb2988]">Cabinet dentaire à Dakar</a>
                   <a href="/blog/dentiste-dakar-prix-consultation-2026" className="underline text-[#bb2988]">Prix consultation dentiste à Dakar</a>
+                  <a href="/blog/detartrage-dakar-frequence-gencives-senegal-2026" className="underline text-[#bb2988]">Détartrage à Dakar : fréquence recommandée</a>
                   <a href="/blog/ramadan-dentiste-dakar-jeune-horaires-2026" className="underline text-[#bb2988]">Ramadan et dentiste à Dakar</a>
                   <a href="/blog/urgence-dentiste-dakar-24h-que-faire" className="underline text-[#bb2988]">Que faire en urgence dentaire 24h</a>
                 </div>
@@ -530,6 +561,12 @@ const RendezVous = () => {
             </motion.div>
           </div>
         </motion.div>
+
+        <FAQ
+          className="mt-8"
+          asJsonLd={false}
+          items={faqItems}
+        />
 
         <AnimatePresence>
           {showModal && <SuccessModal onClose={() => setShowModal(false)} />}
