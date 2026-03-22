@@ -3,10 +3,8 @@ import Seo from "../components/Seo";
 
 const STORAGE_KEY = "dabia_seo_manager_v1";
 
-const createProject = (name = "dabia-clinic", repoUrl = "https://github.com/boobacar/dabia-clinic") => ({
-  id: `${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
-  name,
-  repoUrl,
+const defaultState = {
+  project: "dabia-clinic",
   kpis: {
     clicks: 0,
     impressions: 0,
@@ -23,169 +21,62 @@ const createProject = (name = "dabia-clinic", repoUrl = "https://github.com/boob
     { title: "Publier 1 article blog SEO", owner: "Fallcon", priority: "P1", status: "Todo" },
     { title: "Soumettre URLs à indexation", owner: "Fallcon", priority: "P2", status: "Todo" },
   ],
-});
-
-const defaultState = {
-  projects: [createProject()],
-  activeProjectId: null,
 };
 
 function loadState() {
   try {
-    const savedRaw = localStorage.getItem(STORAGE_KEY);
-    if (!savedRaw) {
-      const initial = {
-        ...defaultState,
-        activeProjectId: defaultState.projects[0].id,
-      };
-      return initial;
-    }
-
-    const saved = JSON.parse(savedRaw);
-
-    // Migration depuis l'ancien format mono-projet
-    if (saved && saved.project && !saved.projects) {
-      const migratedProject = {
-        ...createProject(saved.project, "https://github.com/"),
-        kpis: saved.kpis || createProject().kpis,
-        keywords: saved.keywords || createProject().keywords,
-        tasks: saved.tasks || createProject().tasks,
-      };
-      return {
-        projects: [migratedProject],
-        activeProjectId: migratedProject.id,
-      };
-    }
-
-    if (!saved.projects?.length) {
-      const fallback = createProject();
-      return { projects: [fallback], activeProjectId: fallback.id };
-    }
-
-    return {
-      projects: saved.projects,
-      activeProjectId: saved.activeProjectId || saved.projects[0].id,
-    };
+    const saved = localStorage.getItem(STORAGE_KEY);
+    return saved ? JSON.parse(saved) : defaultState;
   } catch {
-    const fallback = createProject();
-    return { projects: [fallback], activeProjectId: fallback.id };
+    return defaultState;
   }
 }
 
 export default function SeoManager() {
   const [state, setState] = useState(loadState);
-  const [newRepoUrl, setNewRepoUrl] = useState("");
 
   const save = (next) => {
     setState(next);
     localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
   };
 
-  const activeProject =
-    state.projects.find((p) => p.id === state.activeProjectId) || state.projects[0];
-
-  const patchActiveProject = (patch) => {
-    const projects = state.projects.map((p) =>
-      p.id === activeProject.id ? { ...p, ...patch } : p
-    );
-    save({ ...state, projects });
-  };
-
-  const addProjectFromRepo = () => {
-    const repoUrl = newRepoUrl.trim();
-    if (!repoUrl) return;
-
-    let parsedName = repoUrl;
-    try {
-      const u = new URL(repoUrl);
-      parsedName = u.pathname.replace(/^\//, "").replace(/\.git$/, "");
-    } catch {
-      // garder valeur brute si ce n'est pas une URL valide
-    }
-
-    const project = createProject(parsedName, repoUrl);
-    const next = {
-      projects: [...state.projects, project],
-      activeProjectId: project.id,
-    };
-    save(next);
-    setNewRepoUrl("");
-  };
-
   const addKeyword = () => {
-    patchActiveProject({
+    save({
+      ...state,
       keywords: [
-        ...activeProject.keywords,
+        ...state.keywords,
         { keyword: "", page: "/", position: 0, status: "À pousser" },
       ],
     });
   };
 
   const addTask = () => {
-    patchActiveProject({
+    save({
+      ...state,
       tasks: [
-        ...activeProject.tasks,
+        ...state.tasks,
         { title: "", owner: "Fallcon", priority: "P2", status: "Todo" },
       ],
     });
   };
 
   const topKeywords = useMemo(
-    () =>
-      [...activeProject.keywords]
-        .sort((a, b) => (a.position || 999) - (b.position || 999))
-        .slice(0, 5),
-    [activeProject.keywords]
+    () => [...state.keywords].sort((a, b) => (a.position || 999) - (b.position || 999)).slice(0, 5),
+    [state.keywords]
   );
 
   return (
     <main className="max-w-6xl mx-auto px-4 py-10 space-y-8">
       <Seo
         title="Dashboard SEO | Clinique Dentaire Dabia"
-        description="Interface web simple pour piloter les priorités SEO de vos projets."
+        description="Interface web simple pour piloter les priorités SEO de dabia-clinic."
         canonicalPath="/seo-manager"
       />
 
-      <section className="space-y-3">
-        <h1 className="text-3xl font-bold text-gray-900">SEO Manager — Multi-projets</h1>
-        <p className="text-sm text-gray-600">
-          Ajoute un projet en collant son lien GitHub, puis pilote ses KPI/keywords/exécution.
-        </p>
-
-        <div className="grid md:grid-cols-[1fr_auto] gap-2">
-          <input
-            type="url"
-            placeholder="https://github.com/owner/repo"
-            className="border rounded-lg px-3 py-2"
-            value={newRepoUrl}
-            onChange={(e) => setNewRepoUrl(e.target.value)}
-          />
-          <button className="btn-cta" onClick={addProjectFromRepo}>
-            + Ajouter projet via repo
-          </button>
-        </div>
-
-        <div className="grid md:grid-cols-[260px_1fr] gap-3 items-start">
-          <select
-            className="border rounded-lg px-3 py-2"
-            value={activeProject.id}
-            onChange={(e) => save({ ...state, activeProjectId: e.target.value })}
-          >
-            {state.projects.map((p) => (
-              <option key={p.id} value={p.id}>
-                {p.name}
-              </option>
-            ))}
-          </select>
-          <a
-            href={activeProject.repoUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="text-sm text-pink-700 underline break-all"
-          >
-            {activeProject.repoUrl}
-          </a>
-        </div>
+      <section className="space-y-2">
+        <p className="text-sm text-gray-500">Projet</p>
+        <h1 className="text-3xl font-bold text-gray-900">SEO Manager — {state.project}</h1>
+        <p className="text-sm text-gray-600">Version v1: tracking KPI, mots-clés et exécution.</p>
       </section>
 
       <section className="grid grid-cols-2 md:grid-cols-4 gap-3">
@@ -195,10 +86,11 @@ export default function SeoManager() {
             <input
               type="number"
               className="mt-2 w-full border rounded-lg px-3 py-2"
-              value={activeProject.kpis[kpi]}
+              value={state.kpis[kpi]}
               onChange={(e) =>
-                patchActiveProject({
-                  kpis: { ...activeProject.kpis, [kpi]: Number(e.target.value || 0) },
+                save({
+                  ...state,
+                  kpis: { ...state.kpis, [kpi]: Number(e.target.value || 0) },
                 })
               }
             />
@@ -222,16 +114,16 @@ export default function SeoManager() {
               </tr>
             </thead>
             <tbody>
-              {activeProject.keywords.map((row, idx) => (
+              {state.keywords.map((row, idx) => (
                 <tr key={idx} className="border-b last:border-none">
                   <td className="py-2 pr-2">
                     <input
                       className="w-full border rounded px-2 py-1"
                       value={row.keyword}
                       onChange={(e) => {
-                        const next = [...activeProject.keywords];
+                        const next = [...state.keywords];
                         next[idx].keyword = e.target.value;
-                        patchActiveProject({ keywords: next });
+                        save({ ...state, keywords: next });
                       }}
                     />
                   </td>
@@ -240,9 +132,9 @@ export default function SeoManager() {
                       className="w-full border rounded px-2 py-1"
                       value={row.page}
                       onChange={(e) => {
-                        const next = [...activeProject.keywords];
+                        const next = [...state.keywords];
                         next[idx].page = e.target.value;
-                        patchActiveProject({ keywords: next });
+                        save({ ...state, keywords: next });
                       }}
                     />
                   </td>
@@ -252,9 +144,9 @@ export default function SeoManager() {
                       className="w-full border rounded px-2 py-1"
                       value={row.position}
                       onChange={(e) => {
-                        const next = [...activeProject.keywords];
+                        const next = [...state.keywords];
                         next[idx].position = Number(e.target.value || 0);
-                        patchActiveProject({ keywords: next });
+                        save({ ...state, keywords: next });
                       }}
                     />
                   </td>
@@ -263,9 +155,9 @@ export default function SeoManager() {
                       className="w-full border rounded px-2 py-1"
                       value={row.status}
                       onChange={(e) => {
-                        const next = [...activeProject.keywords];
+                        const next = [...state.keywords];
                         next[idx].status = e.target.value;
-                        patchActiveProject({ keywords: next });
+                        save({ ...state, keywords: next });
                       }}
                     >
                       <option>À pousser</option>
@@ -299,15 +191,15 @@ export default function SeoManager() {
             <button className="btn-cta btn-cta-sm" onClick={addTask}>+ tâche</button>
           </div>
           <div className="space-y-2">
-            {activeProject.tasks.map((t, idx) => (
+            {state.tasks.map((t, idx) => (
               <div key={idx} className="border rounded-lg p-2 grid grid-cols-1 md:grid-cols-4 gap-2">
                 <input
                   className="border rounded px-2 py-1"
                   value={t.title}
                   onChange={(e) => {
-                    const next = [...activeProject.tasks];
+                    const next = [...state.tasks];
                     next[idx].title = e.target.value;
-                    patchActiveProject({ tasks: next });
+                    save({ ...state, tasks: next });
                   }}
                   placeholder="Tâche"
                 />
@@ -315,9 +207,9 @@ export default function SeoManager() {
                   className="border rounded px-2 py-1"
                   value={t.owner}
                   onChange={(e) => {
-                    const next = [...activeProject.tasks];
+                    const next = [...state.tasks];
                     next[idx].owner = e.target.value;
-                    patchActiveProject({ tasks: next });
+                    save({ ...state, tasks: next });
                   }}
                   placeholder="Owner"
                 />
@@ -325,9 +217,9 @@ export default function SeoManager() {
                   className="border rounded px-2 py-1"
                   value={t.priority}
                   onChange={(e) => {
-                    const next = [...activeProject.tasks];
+                    const next = [...state.tasks];
                     next[idx].priority = e.target.value;
-                    patchActiveProject({ tasks: next });
+                    save({ ...state, tasks: next });
                   }}
                 >
                   <option>P1</option>
@@ -338,9 +230,9 @@ export default function SeoManager() {
                   className="border rounded px-2 py-1"
                   value={t.status}
                   onChange={(e) => {
-                    const next = [...activeProject.tasks];
+                    const next = [...state.tasks];
                     next[idx].status = e.target.value;
-                    patchActiveProject({ tasks: next });
+                    save({ ...state, tasks: next });
                   }}
                 >
                   <option>Todo</option>
