@@ -127,6 +127,305 @@ export const TAGS = [
 
 export const POSTS = [
   {
+    slug: "prix-implants-dentaires-dakar-guide-complet-2026",
+    title: "Prix des implants dentaires à Dakar (2026) : guide complet avant de vous lancer",
+    description:
+      "Combien coûte un implant dentaire à Dakar en 2026 ? Les vrais facteurs de prix, les étapes du traitement et comment éviter les mauvaises surprises.",
+    date: "2026-03-19",
+    category: "Implantologie",
+    tags: [
+      "implant dentaire",
+      "tarif implant dentaire dakar",
+      "dentiste dakar",
+      "devis dentaire",
+      "prix",
+    ],
+    author: AUTHORS.sao,
+    cover: implantCoutCover,
+    pinned: true,
+    readingMinutes: 8,
+    content: `L’**implant dentaire** est souvent la solution la plus durable pour remplacer une dent absente. À Dakar, les patients posent tous la même question : **combien ça coûte réellement ?**
+
+## 1) Pourquoi le prix varie autant ?
+Le tarif dépend de plusieurs éléments :
+- La qualité de l’implant et de la prothèse
+- Le niveau de difficulté chirurgicale
+- L’état de l’os (avec ou sans greffe)
+- Les examens nécessaires (radio panoramique / CBCT)
+- Le suivi post-opératoire
+
+Un prix "trop bas" cache parfois des compromis sur les matériaux, la planification ou le suivi.
+
+## 2) Les étapes qui influencent le budget
+1. **Bilan initial** : examen clinique + imagerie
+2. **Pose de l’implant** (phase chirurgicale)
+3. **Période d’ostéointégration** (cicatrisation osseuse)
+4. **Pose de la couronne** sur implant
+5. **Contrôles** pour sécuriser le résultat
+
+Chaque étape est importante. Vouloir sauter des contrôles augmente le risque d’échec à moyen terme.
+
+## 3) Implant, bridge ou prothèse amovible ?
+- **Implant** : plus stable, protège l’os, confort élevé
+- **Bridge** : rapide dans certains cas, mais implique souvent les dents voisines
+- **Amovible** : option économique, confort variable
+
+Le bon choix dépend de votre bouche, pas seulement du prix affiché.
+
+## 4) Comment payer le juste prix à Dakar
+- Demandez un **devis détaillé** (actes, matériaux, suivi)
+- Vérifiez ce qui est inclus (imagerie, contrôles, retouches)
+- Évitez les promesses "implant express" sans vraie planification
+
+## En résumé
+Le coût d’un implant à Dakar doit être évalué avec une logique de **durabilité**. Un traitement bien planifié vous évite des reprises coûteuses.
+
+Besoin d’un plan clair et personnalisé ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Un implant dentaire est-il douloureux ?",
+        a: "La pose se fait sous anesthésie locale. La gêne post-opératoire est généralement modérée et bien contrôlée avec les conseils du dentiste.",
+      },
+      {
+        q: "Combien de temps dure un implant ?",
+        a: "Avec une bonne hygiène et des contrôles réguliers, un implant peut durer de nombreuses années.",
+      },
+    ],
+  },
+  {
+    slug: "radio-panoramique-dentaire-dakar-pourquoi-quand-2026",
+    title: "Radio panoramique dentaire à Dakar : pourquoi elle change le diagnostic",
+    description:
+      "À quoi sert une radio panoramique dentaire, quand la faire et quel est son intérêt avant extraction, implant ou traitement orthodontique à Dakar.",
+    date: "2026-03-19",
+    category: "Technologie",
+    tags: [
+      "radio panoramique prix",
+      "dentiste dakar",
+      "implant dentaire",
+      "orthodontie",
+      "diagnostic dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: radioPanoramiqueCover,
+    readingMinutes: 7,
+    content: `La **radio panoramique** donne une vue globale de vos dents, de vos racines et des structures osseuses. C’est un outil clé pour éviter les diagnostics incomplets.
+
+## Pourquoi ne pas se limiter à l’examen visuel ?
+Certaines lésions ne se voient pas à l’œil nu :
+- Infection au bout de la racine
+- Dent incluse (notamment dent de sagesse)
+- Kyste débutant
+- Perte osseuse autour des dents
+
+La radio permet d’anticiper au lieu de traiter trop tard.
+
+## Quand la radio panoramique est utile ?
+- Avant une extraction complexe
+- Avant la pose d’un implant
+- En bilan orthodontique
+- En cas de douleurs diffuses non expliquées
+- En contrôle global chez l’adulte
+
+## Est-ce dangereux ?
+La dose est faible et l’examen est rapide. Il est réalisé uniquement quand il apporte une vraie valeur médicale.
+
+## Ce que vous gagnez
+- Un plan de traitement plus précis
+- Moins d’imprévus pendant les soins
+- Une estimation budgétaire plus fiable
+
+## En résumé
+À Dakar, la radio panoramique est souvent la base d’une dentisterie moderne et prévisible.
+
+Vous souhaitez un bilan complet ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "La radio panoramique remplace-t-elle toutes les autres radios ?",
+        a: "Non. Elle offre une vue d’ensemble, mais d’autres clichés peuvent être nécessaires pour des détails précis.",
+      },
+      {
+        q: "Faut-il faire une radio à chaque visite ?",
+        a: "Non. Le dentiste la prescrit seulement quand elle est utile au diagnostic ou au suivi.",
+      },
+    ],
+  },
+  {
+    slug: "parodontite-dakar-signes-alerte-traitement-precoce",
+    title: "Parodontite à Dakar : 7 signes d’alerte à ne jamais ignorer",
+    description:
+      "Saignements, déchaussement, mauvaise haleine persistante : comment reconnaître une parodontite débutante et la traiter tôt pour sauver ses dents.",
+    date: "2026-03-19",
+    category: "Prévention",
+    tags: [
+      "gingivite",
+      "parodontite",
+      "dentiste dakar",
+      "détartrage",
+      "mauvaise haleine",
+    ],
+    author: AUTHORS.sao,
+    cover: gingiviteTraitementCover,
+    readingMinutes: 8,
+    content: `La **parodontite** est une infection des tissus de soutien de la dent. Elle progresse parfois sans forte douleur au début, ce qui la rend dangereuse.
+
+## 7 signes d’alerte fréquents
+1. Gencives qui saignent au brossage
+2. Mauvaise haleine persistante
+3. Sensation de dents plus longues
+4. Mobilité dentaire légère
+5. Gencives rouges ou gonflées
+6. Espaces qui s’ouvrent entre les dents
+7. Sensibilité au froid/chaud inhabituelle
+
+## Pourquoi agir tôt ?
+Une gingivite est souvent réversible. Une parodontite avancée peut entraîner une perte osseuse irréversible.
+
+## Traitement à Dakar : comment ça se passe
+- Bilan clinique + imagerie
+- Détartrage et assainissement en profondeur
+- Contrôle de la plaque et techniques de brossage personnalisées
+- Maintenance régulière (tous les 3 à 6 mois selon risque)
+
+## Facteurs aggravants au Sénégal
+- Tabac
+- Diabète mal équilibré
+- Hygiène irrégulière
+- Retard de consultation par manque de douleur
+
+## En résumé
+Plus la prise en charge est précoce, plus vous gardez vos dents longtemps et avec moins de coûts globaux.
+
+Besoin d’un bilan gencives ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "La parodontite se guérit-elle totalement ?",
+        a: "On peut la stabiliser très efficacement avec un traitement adapté et une maintenance régulière.",
+      },
+      {
+        q: "Le détartrage seul suffit-il ?",
+        a: "Pas toujours. En cas de parodontite, un traitement plus profond et un suivi structuré sont souvent nécessaires.",
+      },
+    ],
+  },
+  {
+    slug: "appareil-dentaire-adulte-dakar-options-delais-budget-2026",
+    title: "Appareil dentaire adulte à Dakar : options, délais et budget réaliste",
+    description:
+      "Bagues métalliques, céramiques ou aligneurs transparents : quel appareil dentaire choisir à l’âge adulte à Dakar selon vos objectifs et votre budget.",
+    date: "2026-03-19",
+    category: "Orthodontie",
+    tags: [
+      "prix appareil dentaire dakar",
+      "orthodontie",
+      "invisalign",
+      "dentiste dakar",
+      "appareil dentaire guide",
+    ],
+    author: AUTHORS.sao,
+    cover: appareilGuideCover,
+    readingMinutes: 9,
+    content: `De plus en plus d’adultes à Dakar démarrent un traitement orthodontique. L’objectif n’est pas seulement esthétique : un bon alignement améliore aussi l’hygiène et la stabilité des dents.
+
+## Les options principales
+- **Bagues métalliques** : robustes, souvent plus économiques
+- **Bagues céramiques** : plus discrètes
+- **Aligneurs transparents** : confort et esthétique, demande de la discipline
+
+## Quel délai prévoir ?
+Selon la complexité :
+- Cas légers : 6 à 12 mois
+- Cas modérés : 12 à 18 mois
+- Cas complexes : 18 à 24 mois (ou plus)
+
+La régularité des contrôles influence fortement la durée.
+
+## Ce qui fait varier le prix
+- Type d’appareil choisi
+- Complexité du déplacement dentaire
+- Besoin d’extractions ou d’actes complémentaires
+- Fréquence des rendez-vous de suivi
+
+## Erreurs fréquentes
+- Choisir uniquement selon le prix
+- Négliger la contention de fin de traitement
+- Manquer les rendez-vous de contrôle
+
+## En résumé
+Le bon appareil est celui qui correspond à votre situation clinique, votre mode de vie et votre budget global.
+
+Envie d’un plan orthodontique clair ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Peut-on poser un appareil à 30 ou 40 ans ?",
+        a: "Oui. L’orthodontie adulte est fréquente et donne d’excellents résultats avec un bon suivi.",
+      },
+      {
+        q: "Les aligneurs sont-ils toujours plus rapides ?",
+        a: "Pas systématiquement. La durée dépend surtout de la complexité du cas et de l’assiduité du patient.",
+      },
+    ],
+  },
+  {
+    slug: "facettes-dentaires-dakar-indications-limites-prix-2026",
+    title: "Facettes dentaires à Dakar : indications, limites et budget à prévoir",
+    description:
+      "Les facettes sont-elles faites pour vous ? Découvrez les bons candidats, les alternatives et les éléments qui influencent le prix à Dakar.",
+    date: "2026-03-19",
+    category: "Esthétique",
+    tags: [
+      "facettes dentaires",
+      "blanchiment des dents",
+      "dentiste dakar",
+      "esthétique dentaire",
+      "prix",
+    ],
+    author: AUTHORS.sao,
+    cover: blanchimentVsFacettesCover,
+    readingMinutes: 8,
+    content: `Les **facettes dentaires** permettent d’améliorer rapidement l’esthétique du sourire (forme, couleur, légers défauts d’alignement). Mais elles ne conviennent pas à tout le monde.
+
+## Quand les facettes sont pertinentes ?
+- Dents tachées résistantes au blanchiment
+- Petites fractures de l’émail
+- Espaces modérés entre les dents
+- Besoin esthétique sur les dents visibles du sourire
+
+## Quand éviter ou reporter ?
+- Caries actives ou gencives inflammatoires
+- Bruxisme non pris en charge
+- Mauvaise hygiène bucco-dentaire
+
+Dans ces cas, on traite d’abord la santé, ensuite l’esthétique.
+
+## Facettes vs blanchiment : quelle différence ?
+- **Blanchiment** : agit sur la couleur naturelle
+- **Facettes** : modifient couleur + forme + aspect de surface
+
+Les deux peuvent être complémentaires selon l’objectif final.
+
+## Ce qui influence le coût à Dakar
+- Nombre de dents concernées
+- Matériau choisi
+- Niveau de personnalisation esthétique
+- Expérience clinique et qualité du laboratoire
+
+## En résumé
+Une facette réussie, c’est un résultat naturel, durable et cohérent avec votre visage — pas juste des dents plus blanches.
+
+Besoin d’un diagnostic esthétique sérieux ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Les facettes abîment-elles les dents ?",
+        a: "Posées avec la bonne indication et une technique rigoureuse, elles préservent la structure dentaire au maximum.",
+      },
+      {
+        q: "Combien de temps durent des facettes ?",
+        a: "Avec une bonne hygiène et des contrôles réguliers, elles peuvent durer de nombreuses années.",
+      },
+    ],
+  },
+  {
     slug: "detartrage-dakar-frequence-gencives-senegal-2026",
     title:
       "Détartrage chez le dentiste à Dakar : à quelle fréquence le faire pour protéger vos gencives ?",
