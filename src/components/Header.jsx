@@ -66,11 +66,17 @@ const Header = () => {
             <div className="marquee-track flex items-center gap-6 py-1 px-4 whitespace-nowrap">
               {[0, 1].map((k) => (
                 <div key={k} className="flex items-center gap-4">
-                  <span>
-                    La Clinique Dentaire DABIA souhaite un Ramadan Mubarak à la
-                    communauté musulmane et un bon Carême à la communauté
-                    chrétienne.
-                  </span>
+                  <a href="mailto:cliniquedentairedabia@gmail.com" className="underline-offset-2 hover:underline">
+                    cliniquedentairedabia@gmail.com
+                  </a>
+                  <span className="opacity-60">•</span>
+                  <a href="tel:+221777039393" className="underline-offset-2 hover:underline">
+                    +221 77 703 93 93
+                  </a>
+                  <span className="opacity-60">•</span>
+                  <a href="tel:+221338684704" className="underline-offset-2 hover:underline">
+                    +221 33 868 47 04
+                  </a>
                   <span className="opacity-60">•</span>
                 </div>
               ))}
@@ -78,11 +84,20 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Desktop/tablette: statique */}
+        {/* Desktop/tablette: fixe */}
         <div className="hidden sm:block">
-          <div className="max-w-7xl mx-auto px-4 py-1 text-center">
-            La Clinique Dentaire DABIA souhaite un Ramadan Mubarak à la
-            communauté musulmane et un bon Carême à la communauté chrétienne.
+          <div className="max-w-7xl mx-auto px-4 py-1 flex items-center justify-between gap-4">
+            <a href="mailto:cliniquedentairedabia@gmail.com" className="truncate underline-offset-2 hover:underline">
+              cliniquedentairedabia@gmail.com
+            </a>
+            <div className="flex items-center gap-4 whitespace-nowrap">
+              <a href="tel:+221777039393" className="underline-offset-2 hover:underline">
+                +221 77 703 93 93
+              </a>
+              <a href="tel:+221338684704" className="underline-offset-2 hover:underline">
+                +221 33 868 47 04
+              </a>
+            </div>
           </div>
         </div>
       </div>
