@@ -127,6 +127,220 @@ export const TAGS = [
 
 export const POSTS = [
   {
+    slug: "douleur-dent-sagesse-infectee-dakar-que-faire-2026",
+    title: "Dent de sagesse infectée à Dakar : que faire tout de suite ?",
+    description:
+      "Douleur au fond de la mâchoire, gonflement, difficulté à ouvrir la bouche : les bons réflexes et le traitement adapté pour une dent de sagesse infectée à Dakar.",
+    date: "2026-03-31",
+    category: "Urgences",
+    tags: [
+      "dent de sagesse",
+      "urgence dentaire",
+      "dentiste dakar",
+      "douleur dentaire",
+      "infection dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: urgenceActionCover,
+    pinned: true,
+    readingMinutes: 7,
+    content: `Une **dent de sagesse infectée** peut évoluer rapidement. À Dakar, les cas les plus fréquents concernent une dent partiellement sortie qui retient les aliments et bactéries.
+
+## Signes d’alerte
+- Douleur pulsatile au fond de la bouche
+- Gencive gonflée autour de la dent
+- Mauvaise haleine/goût désagréable
+- Difficulté à ouvrir la bouche
+- Fièvre ou fatigue
+
+## Que faire immédiatement ?
+1. Rincer doucement à l’eau tiède salée
+2. Prendre un antalgique adapté
+3. Éviter l’automédication antibiotique
+4. Consulter rapidement
+
+## Traitement en cabinet
+Selon le diagnostic : nettoyage local, traitement anti-infectieux ciblé, puis extraction si l’indication est confirmée.
+
+## En résumé
+Une dent de sagesse infectée est une urgence relative : plus vous consultez tôt, plus le traitement est simple.
+
+Besoin d’un avis rapide ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      { q: "L’extraction est-elle systématique ?", a: "Non. Elle dépend de la position de la dent, de la fréquence des infections et de votre bilan clinique." },
+      { q: "Puis-je attendre que la douleur passe ?", a: "Ce n’est pas recommandé. L’infection peut récidiver ou s’aggraver." },
+    ],
+  },
+  {
+    slug: "prix-blanchiment-dentaire-dakar-combien-coute-2026",
+    title: "Prix du blanchiment dentaire à Dakar : combien prévoir en 2026 ?",
+    description:
+      "Cabinet, gouttières, retouches : ce qui fait varier le prix d’un blanchiment dentaire à Dakar et comment obtenir un résultat naturel sans abîmer l’émail.",
+    date: "2026-03-31",
+    category: "Esthétique",
+    tags: [
+      "blanchiment dentaire dakar",
+      "prix",
+      "esthétique dentaire",
+      "dentiste dakar",
+      "sourire",
+    ],
+    author: AUTHORS.sao,
+    cover: blanchimentEclatCover,
+    pinned: true,
+    readingMinutes: 8,
+    content: `Le coût d’un **blanchiment dentaire à Dakar** dépend de la méthode et de votre situation clinique.
+
+## Ce qui influence le tarif
+- Blanchiment au fauteuil vs gouttières à domicile
+- Nombre de séances nécessaires
+- Sensibilité dentaire initiale
+- Besoin de détartrage préalable
+
+## Pourquoi éviter les recettes maison ?
+Les solutions non médicales peuvent irriter les gencives et fragiliser l’émail. Un protocole encadré donne un résultat plus sûr et plus durable.
+
+## Comment optimiser son budget
+- Faire un bilan préalable
+- Demander un plan de retouche
+- Entretenir avec une hygiène adaptée
+
+## En résumé
+Le bon blanchiment n’est pas juste une question de prix : c’est un équilibre entre sécurité, naturel et durabilité.
+
+Envie d’un sourire plus éclatant ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      { q: "Le blanchiment fait-il mal ?", a: "Une sensibilité transitoire est possible, généralement courte et contrôlable." },
+      { q: "Le résultat dure combien de temps ?", a: "Souvent 1 à 3 ans selon vos habitudes (café, thé, tabac) et l’entretien." },
+    ],
+  },
+  {
+    slug: "radio-cbct-dentaire-dakar-quand-la-faire-2026",
+    title: "Radio CBCT dentaire à Dakar : dans quels cas la faire ?",
+    description:
+      "Implant, dent incluse, douleur persistante : comprendre quand une radio 3D CBCT est utile et pourquoi elle améliore la sécurité du traitement.",
+    date: "2026-03-31",
+    category: "Technologie",
+    tags: [
+      "cbct dakar",
+      "radio 3d dentaire",
+      "implant dentaire",
+      "dentiste dakar",
+      "diagnostic",
+    ],
+    author: AUTHORS.sao,
+    cover: cbctCover,
+    readingMinutes: 7,
+    content: `La **radio CBCT** offre une vision 3D très précise des dents, racines et structures osseuses.
+
+## Indications fréquentes
+- Planification d’implant
+- Dents de sagesse incluses
+- Infections persistantes
+- Endodontie complexe
+
+## Avantage concret pour le patient
+Un diagnostic plus précis permet de réduire les imprévus et d’adapter le traitement à votre anatomie réelle.
+
+## Est-ce systématique ?
+Non. Le CBCT est prescrit uniquement quand la 3D apporte une vraie valeur clinique.
+
+## En résumé
+Le CBCT est un outil de précision qui sécurise les actes complexes.
+
+Pour savoir si vous en avez besoin : **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      { q: "Le CBCT remplace-t-il la radio panoramique ?", a: "Pas toujours. La panoramique suffit dans de nombreux cas simples." },
+      { q: "L’examen est-il long ?", a: "Non, il est rapide et généralement réalisé en quelques minutes." },
+    ],
+  },
+  {
+    slug: "prothese-fixe-sur-implant-dakar-avantages-2026",
+    title: "Prothèse fixe sur implant à Dakar : pour qui et pourquoi ?",
+    description:
+      "Confort, stabilité, mastication : ce qu’il faut savoir sur la prothèse fixe sur implant à Dakar et les critères pour savoir si vous êtes un bon candidat.",
+    date: "2026-03-31",
+    category: "Implantologie",
+    tags: [
+      "prothèse fixe",
+      "implant dentaire",
+      "dentiste dakar",
+      "prix prothese dentaire dakar",
+      "confort mastication",
+    ],
+    author: AUTHORS.sao,
+    cover: protheseFixeAmovibleCover,
+    readingMinutes: 8,
+    content: `La **prothèse fixe sur implant** remplace une ou plusieurs dents absentes avec une excellente stabilité.
+
+## Pourquoi les patients la préfèrent
+- Sensation proche des dents naturelles
+- Mastication plus confortable
+- Pas de retrait quotidien
+
+## Conditions pour être éligible
+- Bilan osseux satisfaisant (ou greffe si nécessaire)
+- Hygiène bucco-dentaire régulière
+- Suivi clinique sérieux
+
+## Différence avec prothèse amovible
+La solution fixe offre plus de confort au quotidien, mais demande un investissement initial plus important.
+
+## En résumé
+C’est souvent la meilleure option de confort et de durabilité quand l’indication est bonne.
+
+Besoin d’un plan personnalisé ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      { q: "Peut-on poser une prothèse fixe rapidement ?", a: "Le délai dépend du cas, surtout du temps de cicatrisation implantaire." },
+      { q: "L’entretien est-il compliqué ?", a: "Non, mais il doit être rigoureux avec brossage et contrôles réguliers." },
+    ],
+  },
+  {
+    slug: "carie-enfant-dakar-signes-prevention-parents-2026",
+    title: "Caries chez l’enfant à Dakar : 8 signes que les parents doivent surveiller",
+    description:
+      "Douleur, taches, haleine, refus de manger : les signaux précoces de carie chez l’enfant et les bonnes actions pour éviter les urgences dentaires.",
+    date: "2026-03-31",
+    category: "Pédiatrie",
+    tags: [
+      "dentiste enfant dakar",
+      "caries enfant",
+      "prévention",
+      "dentiste pediatrique dakar",
+      "santé dentaire enfants",
+    ],
+    author: AUTHORS.sao,
+    cover: santeEnfantCover,
+    pinned: true,
+    readingMinutes: 8,
+    content: `Chez l’enfant, une carie peut évoluer vite. Plus elle est détectée tôt, plus le soin est simple.
+
+## 8 signes d’alerte
+1. Tache blanche ou brune sur une dent
+2. Douleur au sucré ou au froid
+3. Refus de mâcher d’un côté
+4. Mauvaise haleine persistante
+5. Réveil nocturne lié à la douleur
+6. Gencive gonflée localement
+7. Alimentation très sucrée fréquente
+8. Brossage irrégulier
+
+## Ce que les parents peuvent faire
+- Brossage 2x/jour avec dentifrice fluoré adapté
+- Réduire les grignotages sucrés
+- Faire un contrôle régulier
+
+## En résumé
+Une surveillance simple à la maison évite souvent des soins plus lourds et stressants.
+
+Pour un bilan pédiatrique : **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      { q: "À partir de quel âge consulter ?", a: "Idéalement dès la première année ou dès l’apparition des premières dents." },
+      { q: "Une dent de lait cariée doit-elle être soignée ?", a: "Oui, pour éviter douleur, infection et impact sur les dents définitives." },
+    ],
+  },
+
+  {
     slug: "prix-implants-dentaires-dakar-guide-complet-2026",
     title: "Prix des implants dentaires à Dakar (2026) : guide complet avant de vous lancer",
     description:
