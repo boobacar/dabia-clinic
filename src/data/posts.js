@@ -165,6 +165,10 @@ Selon le diagnostic : nettoyage local, traitement anti-infectieux ciblé, puis e
 ## En résumé
 Une dent de sagesse infectée est une urgence relative : plus vous consultez tôt, plus le traitement est simple.
 
+### À lire aussi
+- [Urgence dentaire à Dakar : que faire ?](/urgence-dentaire-dakar)
+- [Extraction dentaire à Dakar : prix et suites](/blog/prix-extraction-dentaire-dakar-simple-ou-complexe)
+
 Besoin d’un avis rapide ? **[Prendre rendez-vous](/rendez-vous)**.`,
     faq: [
       { q: "L’extraction est-elle systématique ?", a: "Non. Elle dépend de la position de la dent, de la fréquence des infections et de votre bilan clinique." },
@@ -208,6 +212,10 @@ Les solutions non médicales peuvent irriter les gencives et fragiliser l’éma
 ## En résumé
 Le bon blanchiment n’est pas juste une question de prix : c’est un équilibre entre sécurité, naturel et durabilité.
 
+### À lire aussi
+- [Blanchiment dentaire à Dakar : techniques et sécurité](/blog/blanchiment-dentaire-dakar-prix-efficacite)
+- [Facettes dentaires à Dakar : indications et limites](/blog/facettes-dentaires-dakar-indications-limites-prix-2026)
+
 Envie d’un sourire plus éclatant ? **[Prendre rendez-vous](/rendez-vous)**.`,
     faq: [
       { q: "Le blanchiment fait-il mal ?", a: "Une sensibilité transitoire est possible, généralement courte et contrôlable." },
@@ -247,6 +255,10 @@ Non. Le CBCT est prescrit uniquement quand la 3D apporte une vraie valeur cliniq
 
 ## En résumé
 Le CBCT est un outil de précision qui sécurise les actes complexes.
+
+### À lire aussi
+- [Radio panoramique dentaire à Dakar : pourquoi la faire](/blog/radio-panoramique-dentaire-dakar-pourquoi-quand-2026)
+- [Implant dentaire à Dakar : guide complet](/blog/prix-implants-dentaires-dakar-guide-complet-2026)
 
 Pour savoir si vous en avez besoin : **[Prendre rendez-vous](/rendez-vous)**.`,
     faq: [
@@ -288,6 +300,10 @@ La solution fixe offre plus de confort au quotidien, mais demande un investissem
 
 ## En résumé
 C’est souvent la meilleure option de confort et de durabilité quand l’indication est bonne.
+
+### À lire aussi
+- [Prothèse fixe ou amovible à Dakar : comment choisir](/blog/prothese-fixe-vs-amovible-dakar-comment-choisir)
+- [Prix des implants dentaires à Dakar : guide 2026](/blog/prix-implants-dentaires-dakar-guide-complet-2026)
 
 Besoin d’un plan personnalisé ? **[Prendre rendez-vous](/rendez-vous)**.`,
     faq: [
@@ -332,6 +348,10 @@ Besoin d’un plan personnalisé ? **[Prendre rendez-vous](/rendez-vous)**.`,
 
 ## En résumé
 Une surveillance simple à la maison évite souvent des soins plus lourds et stressants.
+
+### À lire aussi
+- [Dentiste enfant à Dakar : première visite et prévention](/blog/dentiste-enfant-dakar-premiere-visite-conseils-2026)
+- [Scellants des sillons chez l’enfant : quand et pourquoi ?](/blog/scellants-sillons-enfants-dakar)
 
 Pour un bilan pédiatrique : **[Prendre rendez-vous](/rendez-vous)**.`,
     faq: [
