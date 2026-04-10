@@ -127,6 +127,248 @@ export const TAGS = [
 
 export const POSTS = [
   {
+    slug: "dentiste-dakar-prix-consultation-soins-guide-2026",
+    title: "Dentiste à Dakar : prix consultation et soins (guide complet 2026)",
+    description:
+      "Tarifs consultation, détartrage, carie, extraction et prothèse à Dakar : un guide clair pour anticiper votre budget dentaire en 2026.",
+    date: "2026-04-10",
+    category: "Conseils",
+    tags: [
+      "dentiste dakar",
+      "tarif dentiste dakar",
+      "prix",
+      "clinique dentaire dakar",
+      "consultation dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: guideTarifsCover,
+    pinned: true,
+    readingMinutes: 9,
+    content: `Quand on cherche un **dentiste à Dakar**, la première question est souvent : « combien ça coûte ? ». Ce guide vous aide à comprendre les principaux postes de dépense et à mieux préparer votre plan de soins.
+
+## Quels actes influencent le budget ?
+- Consultation initiale et bilan
+- Radiographie (panoramique/CBCT selon le cas)
+- Détartrage et prévention
+- Soin de carie ou dévitalisation
+- Extraction simple ou complexe
+- Prothèse/implant selon les besoins
+
+## Pourquoi les tarifs varient ?
+Le prix dépend de la complexité du cas, du temps clinique, des matériaux utilisés et des examens nécessaires au diagnostic.
+
+## Comment payer moins cher à long terme
+- Consulter tôt au lieu d’attendre l’urgence
+- Faire un contrôle régulier
+- Respecter les plans d’entretien
+- Demander un devis détaillé avant les actes importants
+
+## En résumé
+Le bon choix n’est pas le « moins cher », mais le **meilleur rapport sécurité–durabilité–résultat**.
+
+### À lire aussi
+- [Guide tarifaire des soins dentaires à Dakar](/blog/guide-tarifaire-soins-dentaires-dakar-2025-2026)
+- [Devis dentaire à Dakar : comment lire et comparer](/blog/devis-dentaire-dakar-bien-lire-comparer-2026)
+
+Besoin d’une estimation personnalisée ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      { q: "Un devis est-il obligatoire ?", a: "Oui pour les plans de soins importants, il est fortement recommandé d’avoir un devis écrit et expliqué." },
+      { q: "Une urgence coûte-t-elle plus cher ?", a: "Souvent oui, car elle nécessite des actes immédiats et parfois plus complexes qu’un soin précoce." },
+    ],
+  },
+  {
+    slug: "saignement-gencives-dakar-causes-traitements-2026",
+    title: "Saignement des gencives à Dakar : causes, traitement et prévention",
+    description:
+      "Gencives qui saignent au brossage ? Découvrez les causes fréquentes, les traitements efficaces et les habitudes qui protègent vos dents durablement.",
+    date: "2026-04-10",
+    category: "Prévention",
+    tags: [
+      "gingivite",
+      "saignement gencives",
+      "dentiste dakar",
+      "détartrage",
+      "prévention",
+    ],
+    author: AUTHORS.sao,
+    cover: gingiviteCover,
+    pinned: true,
+    readingMinutes: 8,
+    content: `Des **gencives qui saignent** ne sont jamais « normales ». À Dakar, ce symptôme est le plus souvent lié à une inflammation gingivale (gingivite) qui peut évoluer vers une atteinte plus profonde si elle n’est pas traitée.
+
+## Causes les plus fréquentes
+- Plaque dentaire et tartre accumulés
+- Brossage insuffisant ou technique inadaptée
+- Tabac, stress, variations hormonales
+- Maladies générales (ex. diabète mal équilibré)
+
+## Quand consulter rapidement
+- Saignement quotidien > 7 jours
+- Gencives gonflées, douloureuses ou mauvaise haleine persistante
+- Mobilité dentaire ou sensibilité anormale
+
+## Traitement en cabinet
+Le traitement repose sur un détartrage/polissage, des conseils personnalisés d’hygiène et un suivi de contrôle.
+
+## En résumé
+Traiter tôt une gingivite évite des soins plus lourds et protège vos dents sur le long terme.
+
+### À lire aussi
+- [Gingivite : causes, symptômes et traitement](/blog/gingivite-causes-symptomes-traitement)
+- [Détartrage dentaire à Dakar : prix et fréquence](/blog/detartrage-dentaire-dakar-prix-frequence-bon-timing-2026)
+
+Pour un bilan gingival complet : **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      { q: "Le saignement peut-il disparaître seul ?", a: "Parfois temporairement, mais la cause persiste souvent sans traitement professionnel." },
+      { q: "Le détartrage fait-il mal ?", a: "Il est généralement bien toléré. Une légère sensibilité transitoire peut apparaître." },
+    ],
+  },
+  {
+    slug: "appareil-dentaire-dakar-adulte-options-prix-2026",
+    title: "Appareil dentaire à Dakar chez l’adulte : options, délais et prix 2026",
+    description:
+      "Bagues, aligneurs, durée de traitement, budget : tout ce qu’un adulte doit savoir avant de commencer une orthodontie à Dakar.",
+    date: "2026-04-10",
+    category: "Orthodontie",
+    tags: [
+      "orthodontie",
+      "prix appareil dentaire dakar",
+      "appareil dentaire",
+      "dentiste dakar",
+      "aligneurs",
+    ],
+    author: AUTHORS.sao,
+    cover: appareilPrixCover,
+    readingMinutes: 9,
+    content: `Il n’y a pas d’âge pour aligner son sourire. L’**orthodontie adulte à Dakar** propose aujourd’hui plusieurs solutions selon vos objectifs esthétiques et fonctionnels.
+
+## Les options principales
+- Bagues métalliques : robustes et efficaces
+- Bagues céramiques : plus discrètes
+- Aligneurs transparents : confort et esthétique
+
+## Ce qui détermine la durée
+- Complexité du décalage dentaire
+- Régularité du port des dispositifs
+- Qualité du suivi clinique
+
+## Budget : comment raisonner
+Ne regardez pas seulement le prix initial. Évaluez aussi la prévisibilité du résultat, la fréquence des contrôles et la contention finale.
+
+## En résumé
+Le meilleur appareil est celui qui correspond à votre cas clinique, votre mode de vie et votre capacité de suivi.
+
+### À lire aussi
+- [Prix appareil dentaire à Dakar : guide complet](/blog/prix-appareil-dentaire-dakar-guide-complet-2025-2026)
+- [Orthodontie adulte : quel appareil choisir ?](/blog/orthodontie-adulte-dakar-quel-appareil-choisir)
+
+Pour un plan orthodontique personnalisé : **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      { q: "Un adulte peut-il obtenir un bon résultat ?", a: "Oui, avec un diagnostic précis et une bonne observance, les résultats sont excellents." },
+      { q: "Les aligneurs sont-ils toujours possibles ?", a: "Non, certains cas complexes nécessitent des bagues classiques." },
+    ],
+  },
+  {
+    slug: "implant-dentaire-dakar-etapes-risques-reussite-2026",
+    title: "Implant dentaire à Dakar : étapes, risques et taux de réussite",
+    description:
+      "Bilan osseux, pose, cicatrisation, prothèse finale : un guide pratique pour comprendre la pose d’implant dentaire à Dakar en 2026.",
+    date: "2026-04-10",
+    category: "Implantologie",
+    tags: [
+      "implant dentaire",
+      "tarif implant dentaire dakar",
+      "dentiste dakar",
+      "prothèse dentaire fixe",
+      "cbct dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: implantCoutCover,
+    readingMinutes: 10,
+    content: `Un **implant dentaire** remplace la racine d’une dent absente et permet de retrouver confort masticatoire et stabilité sur le long terme.
+
+## Les étapes clés
+1. Consultation et bilan radiologique
+2. Planification (souvent avec imagerie 3D)
+3. Pose implantaire
+4. Cicatrisation osseuse
+5. Pose de la prothèse définitive
+
+## Les risques à connaître
+Comme tout acte chirurgical, il existe des risques (infection, intégration insuffisante), réduits par un protocole rigoureux et un suivi adapté.
+
+## Facteurs de réussite
+- Qualité de l’os et bilan initial
+- Hygiène bucco-dentaire
+- Arrêt/réduction du tabac
+- Respect des contrôles post-opératoires
+
+## En résumé
+L’implant est une solution très fiable quand l’indication est bien posée et le suivi sérieux.
+
+### À lire aussi
+- [Prix des implants dentaires à Dakar : guide complet](/blog/prix-implants-dentaires-dakar-guide-complet-2026)
+- [Bridge ou implant : que choisir ?](/blog/bridge-vs-implant-dentaire-que-choisir)
+
+Pour savoir si vous êtes éligible : **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      { q: "La pose d’implant est-elle douloureuse ?", a: "L’intervention se fait sous anesthésie locale et est généralement bien tolérée." },
+      { q: "Combien de temps dure le traitement complet ?", a: "Selon les cas, de quelques semaines à plusieurs mois." },
+    ],
+  },
+  {
+    slug: "urgence-dentaire-dakar-weekend-nuit-bons-reflexes-2026",
+    title: "Urgence dentaire à Dakar le week-end ou la nuit : les bons réflexes",
+    description:
+      "Douleur intense, dent cassée, abcès : que faire immédiatement à Dakar en cas d’urgence dentaire la nuit ou le week-end.",
+    date: "2026-04-10",
+    category: "Urgences",
+    tags: [
+      "urgence dentaire",
+      "dentiste dakar 24/24",
+      "douleur dentaire",
+      "abcès dentaire",
+      "cabinet dentaire dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: urgenceNuitCover,
+    pinned: true,
+    readingMinutes: 7,
+    content: `Une **urgence dentaire** mal gérée peut vite s’aggraver. Voici les actions utiles avant la consultation à Dakar.
+
+## Situations urgentes
+- Douleur pulsatile incontrôlable
+- Gonflement de la joue/gencive
+- Dent cassée après choc
+- Saignement qui persiste
+- Fièvre associée à une douleur dentaire
+
+## Ce qu’il faut faire tout de suite
+- Prendre un antalgique adapté
+- Rincer doucement à l’eau tiède salée
+- Appliquer du froid externe (joue)
+- Éviter de mâcher du côté douloureux
+- Consulter rapidement
+
+## Ce qu’il faut éviter
+- Antibiotiques sans prescription
+- Aspirine posée sur la gencive
+- Retarder la consultation si gonflement/fièvre
+
+## En résumé
+En urgence dentaire, la rapidité de prise en charge limite les complications et la douleur.
+
+### À lire aussi
+- [Urgence dentaire à Dakar : que faire ?](/blog/urgence-dentaire-dakar-que-faire)
+- [Que faire en cas de rage de dent la nuit ?](/blog/remede-rage-de-dent-quoi-faire-immédiatement)
+
+Besoin d’une prise en charge rapide ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      { q: "Dois-je aller aux urgences générales ?", a: "Si fièvre élevée, gonflement important ou malaise, oui. Sinon, un cabinet dentaire urgent est prioritaire." },
+      { q: "Un abcès peut-il attendre 2-3 jours ?", a: "Non recommandé : l’infection peut progresser rapidement." },
+    ],
+  },
+  {
     slug: "douleur-dent-sagesse-infectee-dakar-que-faire-2026",
     title: "Dent de sagesse infectée à Dakar : que faire tout de suite ?",
     description:
