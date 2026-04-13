@@ -127,6 +127,225 @@ export const TAGS = [
 
 export const POSTS = [
   {
+    slug: "dentiste-dakar-prix-consultation-que-comprend-votre-premiere-visite-2026",
+    title: "Dentiste à Dakar : prix consultation et ce que comprend votre 1re visite",
+    description:
+      "Consultation, radio, plan de traitement : ce que couvre réellement une première visite chez le dentiste à Dakar et comment éviter les mauvaises surprises.",
+    date: "2026-04-13",
+    category: "Conseils",
+    tags: [
+      "dentiste dakar",
+      "prix consultation dentiste",
+      "tarif dentiste dakar",
+      "clinique dentaire dakar",
+      "devis dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: prixSoinsCover,
+    pinned: true,
+    readingMinutes: 8,
+    content: `Vous prenez rendez-vous pour une première consultation chez un **dentiste à Dakar** ? Le vrai enjeu est de comprendre ce que vous payez et ce que vous obtenez.
+
+## Ce que comprend généralement la première visite
+- Examen clinique complet
+- Évaluation de la douleur ou du motif principal
+- Vérification gencives/dents/occlusion
+- Prescription ou réalisation de radio si nécessaire
+- Plan de traitement priorisé
+
+## Pourquoi le tarif peut varier
+Le prix dépend du niveau de complexité, du besoin d’imagerie et du temps clinique requis.
+
+## Le bon réflexe avant de commencer les soins
+Demandez un plan clair en 3 étapes :
+1. urgence à traiter,
+2. soins indispensables,
+3. soins de confort/esthétique.
+
+## En résumé
+Une bonne consultation n’est pas seulement un “prix”, c’est un diagnostic précis qui vous évite des dépenses mal orientées.
+
+Besoin d’un bilan personnalisé ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      { q: "Le prix inclut-il toujours la radio ?", a: "Pas forcément. L’imagerie est souvent facturée selon le type d’examen nécessaire." },
+      { q: "Peut-on repartir avec un devis détaillé ?", a: "Oui, c’est recommandé pour comparer et planifier sereinement les soins." },
+    ],
+  },
+  {
+    slug: "urgence-dentaire-dakar-abces-ou-rage-de-dent-quoi-faire-avant-consulter-2026",
+    title: "Urgence dentaire à Dakar : abcès ou rage de dent, que faire avant de consulter ?",
+    description:
+      "Douleur intense, gonflement, fièvre : les gestes utiles immédiatement à Dakar en cas d’urgence dentaire et les erreurs à éviter.",
+    date: "2026-04-13",
+    category: "Urgences",
+    tags: [
+      "urgence dentaire",
+      "dentiste dakar 24/24",
+      "abcès dentaire",
+      "douleur dentaire",
+      "dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: urgenceNuitCover,
+    readingMinutes: 7,
+    content: `En cas de **rage de dent** ou d’**abcès**, chaque heure compte. Le bon objectif est de limiter la douleur sans aggraver la situation.
+
+## Les bons réflexes immédiats
+- Prendre un antalgique adapté
+- Rincer doucement à l’eau tiède salée
+- Appliquer du froid sur la joue
+- Éviter de mâcher du côté douloureux
+
+## Signes qui imposent une consultation rapide
+- Gonflement visible de la joue
+- Fièvre associée
+- Douleur qui empêche de dormir
+- Difficulté à ouvrir la bouche
+
+## Ce qu’il faut éviter
+- Antibiotiques sans prescription
+- Poser de l’aspirine sur la gencive
+- Reporter de plusieurs jours
+
+## En résumé
+Une urgence dentaire bien gérée tôt évite souvent un traitement plus lourd et plus coûteux.
+
+Besoin d’une prise en charge rapide ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      { q: "Une douleur qui baisse peut-elle cacher un problème grave ?", a: "Oui. L’infection peut continuer malgré une accalmie temporaire." },
+      { q: "Dois-je aller aux urgences générales ?", a: "En cas de fièvre élevée, malaise ou gonflement important, oui. Sinon un cabinet dentaire urgent est prioritaire." },
+    ],
+  },
+  {
+    slug: "detartrage-dentaire-dakar-prix-frequence-et-qui-en-a-vraiment-besoin-2026",
+    title: "Détartrage dentaire à Dakar : prix, fréquence et qui en a vraiment besoin",
+    description:
+      "Tous les 6 mois, 9 mois ou 12 mois ? Guide pratique pour choisir la bonne fréquence de détartrage à Dakar selon votre profil.",
+    date: "2026-04-13",
+    category: "Prévention",
+    tags: [
+      "détartrage",
+      "détartrage dentaire dakar prix",
+      "gingivite",
+      "prévention",
+      "dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: detartragePreventifCover,
+    pinned: true,
+    readingMinutes: 8,
+    content: `Le **détartrage** est l’un des soins les plus rentables en prévention : il coûte peu comparé à une parodontite avancée.
+
+## Quelle fréquence selon votre profil ?
+- Risque faible : tous les 12 mois
+- Risque modéré : tous les 6 à 9 mois
+- Risque élevé : tous les 3 à 6 mois
+
+## Facteurs de risque à surveiller
+- Saignement des gencives
+- Tabac
+- Diabète mal équilibré
+- Tendance au tartre rapide
+
+## Pourquoi le prix varie
+La durée du soin et la profondeur de l’inflammation gingivale influencent le devis.
+
+## En résumé
+Le “bon timing” du détartrage n’est pas standard : il doit être personnalisé.
+
+Pour un bilan prévention : **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      { q: "Le détartrage abîme-t-il les dents ?", a: "Non, réalisé correctement, il retire le tartre sans endommager l’émail." },
+      { q: "Faut-il attendre d’avoir mal ?", a: "Non, le détartrage est un soin préventif, pas un soin de crise." },
+    ],
+  },
+  {
+    slug: "prix-implant-dentaire-dakar-comment-eviter-les-mauvaises-surprises-2026",
+    title: "Prix implant dentaire à Dakar : comment éviter les mauvaises surprises",
+    description:
+      "Ce qui fait vraiment le coût d’un implant dentaire à Dakar : bilan 3D, chirurgie, couronne et suivi. Guide simple pour comparer les devis.",
+    date: "2026-04-13",
+    category: "Implantologie",
+    tags: [
+      "implant dentaire",
+      "tarif implant dentaire dakar",
+      "devis dentaire",
+      "dentiste dakar",
+      "cbct dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: implantCoutCover,
+    readingMinutes: 9,
+    content: `Le prix d’un **implant dentaire** ne se résume pas à “la vis”. Le coût final dépend surtout de la qualité du diagnostic et du suivi.
+
+## Les 4 blocs d’un devis implant
+1. Bilan clinique + imagerie 3D
+2. Chirurgie implantaire
+3. Pilier + couronne
+4. Contrôles et maintenance
+
+## Pourquoi deux devis peuvent être très différents
+- Marque/qualité des composants
+- Besoin (ou non) de greffe osseuse
+- Complexité du cas
+- Niveau de suivi inclus
+
+## Erreurs à éviter
+- Choisir uniquement le prix le plus bas
+- Ignorer ce qui est inclus/exclu
+- Négliger les contrôles post-op
+
+## En résumé
+Un implant durable est un investissement de qualité, pas une simple course au tarif le plus bas.
+
+Pour savoir si vous êtes éligible : **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      { q: "Peut-on poser un implant à tout le monde ?", a: "Non. Un bilan osseux et médical est indispensable avant décision." },
+      { q: "Combien de temps dure le traitement complet ?", a: "Selon le cas, de quelques semaines à plusieurs mois." },
+    ],
+  },
+  {
+    slug: "dentiste-enfant-dakar-quand-consulter-et-comment-eviter-les-caries-2026",
+    title: "Dentiste enfant à Dakar : quand consulter et comment éviter les caries",
+    description:
+      "Première visite, fréquence de contrôle et gestes concrets pour réduire le risque de carie chez l’enfant à Dakar.",
+    date: "2026-04-13",
+    category: "Pédiatrie",
+    tags: [
+      "dentiste enfant dakar",
+      "dentiste pediatrique dakar",
+      "caries enfant",
+      "prévention",
+      "santé dentaire enfants",
+    ],
+    author: AUTHORS.sao,
+    cover: enfantCover,
+    readingMinutes: 8,
+    content: `La prévention dentaire chez l’enfant commence tôt. À Dakar, beaucoup de caries peuvent être évitées avec trois habitudes simples.
+
+## Quand faire la première visite ?
+Idéalement vers 1 an, puis un suivi régulier selon le risque carieux.
+
+## Les 3 leviers les plus efficaces
+- Brossage 2x/jour avec dentifrice fluoré adapté
+- Limiter grignotages et boissons sucrées
+- Contrôle périodique même sans douleur
+
+## Signes d’alerte chez l’enfant
+- Taches blanches/brunes
+- Douleur au froid ou au sucré
+- Mauvaise haleine persistante
+
+## En résumé
+Plus la prévention démarre tôt, moins les soins seront lourds ensuite.
+
+Pour un bilan pédiatrique : **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      { q: "Les dents de lait doivent-elles être soignées ?", a: "Oui, elles guident les dents définitives et évitent douleur/infection." },
+      { q: "Mon enfant n’a pas mal, faut-il quand même consulter ?", a: "Oui, beaucoup de caries débutent sans douleur visible." },
+    ],
+  },
+  {
     slug: "dentiste-dakar-prix-consultation-soins-guide-2026",
     title: "Dentiste à Dakar : prix consultation et soins (guide complet 2026)",
     description:
