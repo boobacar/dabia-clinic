@@ -16,6 +16,7 @@ import GoogleMapSection from "../components/GoogleMapSection";
 import { motion } from "framer-motion";
 import FAQ from "../components/FAQ";
 import Magnetic from "../components/Magnetic";
+import MobileCtaAB from "../components/MobileCtaAB";
 
 export default function UrgenceDentaire() {
   const canonical =
@@ -83,8 +84,8 @@ export default function UrgenceDentaire() {
   return (
     <section className="py-20 px-4 max-w-7xl mx-auto mt-20">
       <Seo
-        title="Urgence dentaire à Dakar, Sénégal | Prise en charge rapide"
-        description="Douleur intense, dent cassée, abcès ou gonflement ? Notre clinique dentaire à Dakar (Sénégal) vous oriente et vous prend en charge rapidement."
+        title="Urgence dentaire à Dakar : rage de dent, abcès, dent cassée | DABIA"
+        description="Urgence dentaire à Dakar : douleur intense, abcès, gonflement ou dent cassée. Conseils immédiats + prise en charge rapide par appel, WhatsApp ou RDV en ligne."
         canonical={canonical}
         url={canonical}
         jsonLd={[faqLD, howToLD]}
@@ -301,13 +302,10 @@ export default function UrgenceDentaire() {
         ]}
       />
 
-      {/* Sticky mobile actions */}
-      <div className="fixed bottom-4 right-4 md:hidden flex flex-col gap-2 z-30">
-        <a href="tel:+221777039393" className="btn-cta">
-          Appeler
-        </a>
-        <Link to="/rendez-vous" className="btn-cta">RDV</Link>
-      </div>
+      <MobileCtaAB
+        pagePath="/urgence-dentaire-dakar"
+        rdvTo="/rendez-vous?motif=urgence&soin=Consultation"
+      />
     </section>
   );
 }

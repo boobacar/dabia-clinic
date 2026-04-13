@@ -17,6 +17,7 @@ import Breadcrumbs from "../components/Breadcrumbs";
 import { motion } from "framer-motion";
 import AggregateRating from "../components/AggregateRating";
 import FAQ from "../components/FAQ";
+import MobileCtaAB from "../components/MobileCtaAB";
 // NAP non utilisé ici pour alléger le hero
 
 export default function DentisteDakar() {
@@ -137,8 +138,8 @@ export default function DentisteDakar() {
   return (
     <main className="pt-20 pb-14 px-4 max-w-7xl mx-auto">
       <Seo
-        title="Dentiste à Dakar, Sénégal | Consultation, urgences et soins dentaires"
-        description="Besoin d’un dentiste à Dakar (Sénégal) ? Consultations, urgences, implants, orthodontie et esthétique à la Clinique DABIA. Réservation rapide en ligne ou par téléphone."
+        title="Dentiste à Dakar : consultation, urgence, implant et RDV rapide | Clinique DABIA"
+        description="Dentiste à Dakar (Liberté 6) : consultation, urgence, implants, orthodontie et esthétique. Devis clair + rendez-vous rapide en ligne, appel ou WhatsApp."
         canonical={canonical}
         url={canonical}
         jsonLd={jsonLd}
@@ -369,6 +370,18 @@ export default function DentisteDakar() {
             </Link>
           </motion.div>
         </div>
+
+        <div className="mt-5 flex flex-wrap gap-2 text-sm">
+          <Link to="/rendez-vous?motif=consultation" className="btn-cta btn-cta-sm">
+            RDV consultation
+          </Link>
+          <Link to="/rendez-vous?motif=urgence" className="btn-cta btn-cta-sm">
+            RDV urgence
+          </Link>
+          <Link to="/rendez-vous?motif=esthetique" className="btn-cta btn-cta-sm">
+            RDV esthétique
+          </Link>
+        </div>
       </motion.section>
 
       <motion.section
@@ -560,6 +573,8 @@ export default function DentisteDakar() {
         asJsonLd={false}
         items={faqItems}
       />
+
+      <MobileCtaAB pagePath="/dentiste-dakar" rdvTo="/rendez-vous" />
     </main>
   );
 }

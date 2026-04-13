@@ -5,6 +5,7 @@ import Breadcrumbs from "../components/Breadcrumbs";
 import { motion } from "framer-motion";
 import AggregateRating from "../components/AggregateRating";
 import FAQ from "../components/FAQ";
+import MobileCtaAB from "../components/MobileCtaAB";
 
 export default function CabinetDentaireDakar() {
   const canonical =
@@ -56,8 +57,8 @@ export default function CabinetDentaireDakar() {
   return (
     <section className="py-20 px-4 max-w-7xl mx-auto mt-20">
       <Seo
-        title="Clinique dentaire à Dakar, Sénégal | Équipe experte & RDV rapide"
-        description="Clinique dentaire à Dakar (Sénégal) : prévention, soins, implants, orthodontie et urgences avec un plateau technique moderne. Prenez rendez-vous en ligne en 1 minute."
+        title="Cabinet dentaire à Dakar : devis clair, urgence et RDV rapide | DABIA"
+        description="Cabinet dentaire à Dakar : prévention, soins, implants, orthodontie et urgences. Devis transparent + prise de rendez-vous rapide (appel, WhatsApp ou formulaire)."
         canonical={canonical}
         url={canonical}
         jsonLd={[lbLD, faqLD]}
@@ -225,6 +226,8 @@ export default function CabinetDentaireDakar() {
           },
         ]}
       />
+
+      <MobileCtaAB pagePath="/cabinet-dentaire-dakar" rdvTo="/rendez-vous" />
     </section>
   );
 }
