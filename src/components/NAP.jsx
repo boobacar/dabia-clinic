@@ -72,7 +72,7 @@ export default function NAP({ compact = false }) {
       </div>
       {!compact && (
         <div className="text-center mt-2 text-[13px] text-gray-600">
-          Horaires : Lun–Ven (9h–18h) · Sam (9h-14h) · Dim (fermé)
+          Horaires : Lun–Jeu (9h–16h30) · Ven (9h–13h, 15h–16h30) · Sam (9h–14h) · Dim (fermé)
         </div>
       )}
     </div>

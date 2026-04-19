@@ -87,14 +87,14 @@ const Assurances = () => {
       <Breadcrumbs
         items={[{ label: "Accueil", href: "/" }, { label: "Assurances" }]}
       />
-      <motion.h2
+      <motion.h1
         className="text-4xl font-bold text-center text-[#ad9d64] mb-12"
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
       >
         Nos Partenaires Assurances
-      </motion.h2>
+      </motion.h1>
 
       <div className="flex justify-center mb-10">
         <Link to="/rendez-vous" className="btn-cta">

@@ -13,6 +13,7 @@ const DIST_DIR = join(ROOT, "dist");
 const PUBLIC_DIR = join(ROOT, "public");
 const PUBLIC_SITEMAPS_DIR = join(PUBLIC_DIR, "sitemaps");
 const POSTS_META_PATH = join(ROOT, "src", "data", "posts.meta.json");
+const POSTS_SOURCE_PATH = join(ROOT, "src", "data", "posts.js");
 
 const STATIC_ROUTES = [
   "/",
@@ -99,14 +100,44 @@ async function readPostsMeta() {
   }
 }
 
+async function readPostsSource() {
+  const src = await readFileSafe(POSTS_SOURCE_PATH);
+  return Array.from(
+    src.matchAll(
+      /\bslug:\s*"([^"]+)"[\s\S]*?\btitle:\s*"([^"]+)"[\s\S]*?\bdescription:\s*"([^"]+)"[\s\S]*?\bdate:\s*"([0-9]{4}-[0-9]{2}-[0-9]{2})"/g
+    )
+  ).map((m) => ({
+    slug: m[1],
+    title: m[2],
+    description: m[3],
+    date: m[4],
+  }));
+}
+
+function mergePosts(metaPosts, sourcePosts) {
+  const merged = new Map();
+  for (const p of sourcePosts) merged.set(p.slug, { ...p });
+  for (const p of metaPosts) {
+    merged.set(p.slug, {
+      ...(merged.get(p.slug) || {}),
+      ...p,
+    });
+  }
+  return Array.from(merged.values()).filter((p) => p?.slug);
+}
+
 async function build() {
   await ensureDist();
   await ensurePublic();
   const today = iso();
   const AGGR_DAYS = Number(process.env.SITEMAP_AGGRESSIVE_DAYS || 90); // jours récents marqués comme lastmod=today
 
-  const posts = await readPostsMeta();
-  console.log(`📝 Posts trouvés: ${posts.length}`);
+  const metaPosts = await readPostsMeta();
+  const sourcePosts = await readPostsSource();
+  const posts = mergePosts(metaPosts, sourcePosts);
+  console.log(
+    `📝 Posts trouvés: ${posts.length} (meta: ${metaPosts.length}, source: ${sourcePosts.length})`
+  );
 
   // 1) Statiques
   const staticXml = STATIC_ROUTES.map((path) => {
@@ -181,7 +212,7 @@ ${[...staticXml, ...competencesXml, ...blogXml, ...techXml].join("\n")}
   const reindexList = [
     ...STATIC_ROUTES.filter((p) => IMPORTANT_ROUTES.has(p)).map(abs),
     ...posts
-      .sort((a, b) => new Date(b.date) - new Date(a.date))
+      .sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0))
       .slice(0, 12)
       .map((p) => abs(`/blog/${p.slug}`)),
   ].join("\n");

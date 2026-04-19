@@ -239,14 +239,14 @@ const RendezVous = () => {
           <Breadcrumbs
             items={[{ label: "Accueil", href: "/" }, { label: "Rendez-vous" }]}
           />
-          <motion.h2
+          <motion.h1
             className="text-3xl md:text-4xl font-bold text-center mt-4 mb-3 bg-gradient-to-r from-[#ad9d64] to-[#bb2988] bg-clip-text text-transparent"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
             {variantCopy.hero}
-          </motion.h2>
+          </motion.h1>
           <p className="text-center text-gray-600 max-w-2xl mx-auto">
             {variantCopy.sub}
           </p>

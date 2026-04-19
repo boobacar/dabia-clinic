@@ -68,7 +68,7 @@ export default function Competences() {
         items={[{ label: "Accueil", href: "/" }, { label: "Nos compétences" }]}
       />
       {/* Title */}
-      <motion.h2
+      <motion.h1
         className="text-3xl text-[#ad9d64] font-bold text-center mb-8"
         variants={titleVariants}
         initial="hidden"
@@ -76,7 +76,7 @@ export default function Competences() {
         viewport={{ once: true, amount: 0.4 }}
       >
         Nos Compétences
-      </motion.h2>
+      </motion.h1>
 
       {/* CTA Button */}
       <motion.div

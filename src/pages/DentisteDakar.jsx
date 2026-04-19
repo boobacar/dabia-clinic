@@ -55,7 +55,7 @@ export default function DentisteDakar() {
         name: "Quels sont vos horaires à Dakar ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Lun–Ven 9h–18h, Sam 9h–14h. En cas d’urgence, contactez‑nous par téléphone.",
+          text: "Lun–Jeu 9h–16h30, Ven 9h–13h et 15h–16h30, Sam 9h–14h. En cas d’urgence, contactez‑nous par téléphone.",
         },
       },
       // On ajoute aussi les questions affichées dans le bloc FAQ
@@ -114,15 +114,27 @@ export default function DentisteDakar() {
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
         opens: "09:00",
-        closes: "19:00",
+        closes: "16:30",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Friday",
+        opens: "09:00",
+        closes: "13:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Friday",
+        opens: "15:00",
+        closes: "16:30",
       },
       {
         "@type": "OpeningHoursSpecification",
         dayOfWeek: "Saturday",
         opens: "09:00",
-        closes: "13:00",
+        closes: "14:00",
       },
     ],
     priceRange: "$$",

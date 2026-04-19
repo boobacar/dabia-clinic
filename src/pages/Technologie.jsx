@@ -22,7 +22,7 @@ const Technologie = () => {
         items={[{ label: "Accueil", href: "/" }, { label: "Technologie" }]}
       />
       {/* Titre */}
-      <motion.h2
+      <motion.h1
         className="text-4xl font-bold text-center text-[#ad9d64] mb-6"
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -30,7 +30,7 @@ const Technologie = () => {
         viewport={{ once: true }}
       >
         Nos Technologies
-      </motion.h2>
+      </motion.h1>
 
       {/* Intro */}
       <p className="text-center text-gray-700 max-w-3xl mx-auto mb-12">

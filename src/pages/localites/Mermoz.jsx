@@ -23,7 +23,7 @@ export default function LocaliteMermoz() {
         addressCountry: "SN",
       },
       areaServed: ["Mermoz", "Sicap Foire", "Point E", "Ouakam"],
-      openingHours: ["Mo-Fr 09:00-18:00", "Sa 09:00-14:00"],
+      openingHours: ["Mo-Th 09:00-16:30", "Fr 09:00-13:00", "Fr 15:00-16:30", "Sa 09:00-14:00"],
       priceRange: "CFA",
     },
   ];
@@ -75,7 +75,7 @@ export default function LocaliteMermoz() {
                 +221 77 703 93 93
               </a>
             </li>
-            <li>Horaires : Lun–Ven 9h–18h • Sam 9h–14h</li>
+            <li>Horaires : Lun–Jeu 9h–16h30 • Ven 9h–13h et 15h–16h30 • Sam 9h–14h</li>
             <li>
               <Link to="/rendez-vous" className="text-[#bb2988] underline">
                 Prendre rendez-vous en ligne

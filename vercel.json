@@ -1,12 +1,13 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "vite",
-  "buildCommand": "npm run build",
+  "buildCommand": "npm run build:ssg",
   "outputDirectory": "dist",
-  "rewrites": [
+  "redirects": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "source": "/clinique-dentaire-dakar",
+      "destination": "/cabinet-dentaire-dakar",
+      "permanent": true
     }
   ]
 }

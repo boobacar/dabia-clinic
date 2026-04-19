@@ -39,11 +39,14 @@ async function main() {
     "src/pages/Blog.jsx",
     "src/pages/BlogPost.jsx",
     "src/pages/RendezVous.jsx",
+    "src/pages/Rejoindre.jsx",
+    "src/pages/Personnel.jsx",
     "src/pages/Competences.jsx",
     "src/pages/CompetenceDetail.jsx",
     "src/pages/Assurances.jsx",
     "src/pages/PostVisite.jsx",
     "src/pages/ZoneEnfants.jsx",
+    "src/pages/Technologie.jsx",
     "src/pages/APropos.jsx",
     "src/pages/CabinetDentaireDakar.jsx",
     "src/pages/DentisteDakar.jsx",
@@ -80,4 +83,3 @@ main().catch((e) => {
   console.error(e);
   process.exit(1);
 });
-

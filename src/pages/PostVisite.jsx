@@ -197,14 +197,14 @@ const PostVisite = () => {
       <Breadcrumbs
         items={[{ label: "Accueil", href: "/" }, { label: "Conseils post‑visite" }]}
       />
-      <motion.h2
+      <motion.h1
         className="text-4xl font-bold text-[#ad9d64] text-center mb-8"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
         Conseils après visite (Post-opération)
-      </motion.h2>
+      </motion.h1>
 
       <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
         Ces recommandations vous permettent de bien récupérer après vos soins

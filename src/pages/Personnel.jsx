@@ -52,9 +52,9 @@ const Personnel = () => {
       <Breadcrumbs
         items={[{ label: "Accueil", href: "/" }, { label: "Notre équipe" }]}
       />
-      <h2 className="text-4xl font-bold text-center mb-10 text-[#ad9d64]">
+      <h1 className="text-4xl font-bold text-center mb-10 text-[#ad9d64]">
         Notre Équipe
-      </h2>
+      </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
         {personnel.map((membre, index) => (

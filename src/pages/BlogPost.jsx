@@ -49,7 +49,9 @@ export default function BlogPost() {
   const post = useMemo(() => POSTS.find((p) => p.slug === slug), [slug]);
 
   const currentSlug = post ? post.slug : "";
-  const canonical = `https://www.cliniquedentairedabia.com/blog/${currentSlug}`;
+  const canonical = post
+    ? `https://www.cliniquedentairedabia.com/blog/${currentSlug}`
+    : "https://www.cliniquedentairedabia.com/blog";
   // Memoize tags validation to avoid frequent re-renders of dependent hooks
   const tags = useMemo(
     () => ((post && post.tags) || []).map((t) => t.toLowerCase()),
@@ -167,7 +169,7 @@ export default function BlogPost() {
       publisher: {
         "@type": "Organization",
         name: "Clinique Dentaire DABIA",
-        logo: { "@type": "ImageObject", url: "/logo192.png" },
+        logo: { "@type": "ImageObject", url: "/logo.jpg" },
       },
     };
   }, [post]);
@@ -330,6 +332,13 @@ export default function BlogPost() {
   if (!post) {
     return (
       <section className="py-20 px-4 max-w-4xl mx-auto mt-20">
+        <Seo
+          title="Article introuvable"
+          description="Cet article n’existe pas ou a été déplacé. Consultez le blog de la Clinique Dentaire DABIA."
+          canonical="https://www.cliniquedentairedabia.com/blog"
+          url="https://www.cliniquedentairedabia.com/blog"
+          robots="noindex,follow"
+        />
         <Breadcrumbs
           items={[
             { label: "Accueil", href: "/" },

@@ -29,7 +29,7 @@ export default function LocaliteParcelles() {
         addressLocality: "Dakar",
         addressCountry: "SN",
       },
-      openingHours: ["Mo-Fr 09:00-18:00", "Sa 09:00-14:00"],
+      openingHours: ["Mo-Th 09:00-16:30", "Fr 09:00-13:00", "Fr 15:00-16:30", "Sa 09:00-14:00"],
       priceRange: "CFA",
     },
   ];

@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Seo from "../components/Seo";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 const Rejoindre = () => {
   const [formData, setFormData] = useState({
@@ -27,15 +29,24 @@ const Rejoindre = () => {
   };
 
   return (
-    <section className="py-50 px-4 max-w-6xl mx-auto">
-      <motion.h2
+    <section className="py-50 px-4 max-w-6xl mx-auto mt-20">
+      <Seo
+        title="Recrutement dentaire à Dakar – Rejoindre la Clinique DABIA"
+        description="Envoyez votre candidature à la Clinique Dentaire DABIA à Dakar. Postes ouverts en dentisterie, assistance et administration."
+        canonical="https://www.cliniquedentairedabia.com/rejoindre"
+        url="https://www.cliniquedentairedabia.com/rejoindre"
+      />
+      <Breadcrumbs
+        items={[{ label: "Accueil", href: "/" }, { label: "Rejoindre" }]}
+      />
+      <motion.h1
         className="text-4xl font-bold text-center text-[#ad9d64] mb-4"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
         Rejoindre la Clinique Dentaire Dabia
-      </motion.h2>
+      </motion.h1>
 
       <p className="text-center text-gray-700 max-w-3xl mx-auto mb-10">
         Nous accueillons avec plaisir toute candidature spontanée. Veuillez

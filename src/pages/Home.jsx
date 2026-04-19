@@ -288,7 +288,7 @@ const Home = () => {
                   },
                   {
                     q: "Quels sont vos horaires ?",
-                    a: "Lundi à vendredi 9h-19h, samedi 9h-13h. Pour une urgence, appelez avant de vous déplacer.",
+                    a: "Lundi à jeudi 9h–16h30, vendredi 9h–13h et 15h–16h30, samedi 9h–14h. Pour une urgence, appelez avant de vous déplacer.",
                   },
                   {
                     q: "Acceptez-vous les IPM et assurances ?",

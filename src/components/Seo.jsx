@@ -5,7 +5,7 @@ const defaultSite = {
   name: "Clinique Dentaire DABIA",
   siteLabel: "Clinique Dentaire DABIA - Dakar",
   domain: "https://www.cliniquedentairedabia.com",
-  logo: "/logo192.png",
+  logo: "/logo.jpg",
   locale: "fr_SN",
   phone: "+221777039393",
   sameAs: [
@@ -62,9 +62,10 @@ export default function Seo({
     name: defaultSite.name,
     url: defaultSite.domain,
     image: finalImage,
+    logo: makeAbs(defaultSite.logo),
     telephone: defaultSite.phone,
     address: { "@type": "PostalAddress", ...defaultSite.address },
-    openingHours: ["Mo-Fr 09:00-19:00", "Sa 09:00-13:00"],
+    openingHours: ["Mo-Th 09:00-16:30", "Fr 09:00-13:00", "Fr 15:00-16:30", "Sa 09:00-14:00"],
     areaServed: ["Dakar", "Liberté 6", "Sicap Foire", "Parcelles Assainies"],
     sameAs: defaultSite.sameAs,
   };
