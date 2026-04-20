@@ -146,11 +146,22 @@ export default function BlogPost() {
 
   const articleJsonLd = useMemo(() => {
     if (!post) return null;
+    const wordCount = Math.max(400, (post.content || "").split(/\s+/).length);
+    const articleBody = (post.content || "")
+      .replace(/[#*`_>~]/g, "")
+      .slice(0, 500)
+      .trim();
     return {
       "@context": "https://schema.org",
-      "@type": "Article",
+      "@type": "BlogPosting",
+      "@id": `https://www.cliniquedentairedabia.com/blog/${post.slug}#article`,
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": `https://www.cliniquedentairedabia.com/blog/${post.slug}`,
+      },
       headline: post.title,
       description: post.description,
+      articleBody,
       image: [
         {
           "@type": "ImageObject",
@@ -161,15 +172,22 @@ export default function BlogPost() {
       ],
       datePublished: post.date,
       dateModified: post.date,
-      wordCount: Math.max(400, (post.content || "").split(/\s+/).length),
+      wordCount,
+      keywords: (post.tags || []).join(", "),
+      inLanguage: "fr-SN",
       author: {
         "@type": "Person",
         name: post?.author?.name || "Clinique Dentaire DABIA",
+        url: "https://www.cliniquedentairedabia.com/a-propos",
       },
       publisher: {
         "@type": "Organization",
         name: "Clinique Dentaire DABIA",
-        logo: { "@type": "ImageObject", url: "/logo.jpg" },
+        logo: {
+          "@type": "ImageObject",
+          url: "https://www.cliniquedentairedabia.com/logo.jpg",
+        },
+        url: "https://www.cliniquedentairedabia.com",
       },
     };
   }, [post]);

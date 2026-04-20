@@ -32,6 +32,17 @@ export default function LocaliteScatUrbam() {
       ],
       openingHours: ["Mo-Th 09:00-16:30", "Fr 09:00-13:00", "Fr 15:00-16:30", "Sa 09:00-14:00"],
       priceRange: "CFA",
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 14.7319,
+        longitude: -17.4572,
+      },
+      "@id": url + "#local",
+      sameAs: [
+        "https://www.facebook.com/cliniquedentairedabia/?locale=fr_FR",
+        "https://www.instagram.com/clinique_dentaire_dabia/",
+        "https://sn.linkedin.com/company/clinique-dentaire-dabia",
+      ],
     },
   ];
 
