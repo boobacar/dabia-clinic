@@ -42,8 +42,8 @@ export default function LocaliteMermoz() {
   return (
     <section className="py-20 px-4 max-w-6xl mx-auto mt-20">
       <Seo
-        title="Dentiste à Mermoz (proche) – Clinique DABIA"
-        description="Dentiste proche de Mermoz : urgences, soins, esthétique, orthodontie. Accès simple depuis Sicap Foire (Liberté 6)."
+        title="Dentiste à Mermoz Dakar – Urgences, Implants & Orthodontie | DABIA"
+        description="Cabinet dentaire proche de Mermoz (Sicap Foire, Liberté 6) : urgences le jour même, détartrage, implants, orthodontie et facettes. Accès facile, RDV en ligne disponible."
         url={url}
         canonical={url}
         jsonLd={jsonLd}

@@ -41,8 +41,8 @@ export default function LocaliteFann() {
   return (
     <section className="py-20 px-4 max-w-6xl mx-auto mt-20">
       <Seo
-        title="Dentiste à Fann (proche) – Clinique DABIA"
-        description="Dentiste proche de Fann : urgences, prévention, esthétique, orthodontie, implantologie."
+        title="Dentiste à Fann & UCAD Dakar – Urgences, Implants, RDV rapide | DABIA"
+        description="Près de Fann-Résidence ou de l'UCAD ? Clinique DABIA (Sicap Foire, 10 min) : urgences le jour même, implants, orthodontie, blanchiment. Devis transparent, RDV en ligne."
         url={url}
         canonical={url}
         jsonLd={jsonLd}

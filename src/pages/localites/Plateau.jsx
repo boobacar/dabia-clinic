@@ -41,8 +41,8 @@ export default function LocalitePlateau() {
   return (
     <section className="py-20 px-4 max-w-6xl mx-auto mt-20">
       <Seo
-        title="Dentiste au Plateau (proche) – Clinique DABIA"
-        description="Dentiste proche de Dakar Plateau : urgences, prévention, esthétique, orthodontie, implantologie."
+        title="Dentiste Plateau Dakar – Urgences, Implants & Esthétique | DABIA"
+        description="Travaillez au Plateau de Dakar ? Clinique DABIA (Sicap Foire) : urgences, soins conservateurs, facettes, implants et orthodontie. Équipe qualifiée, devis clair, RDV en ligne."
         url={url}
         canonical={url}
         jsonLd={jsonLd}

@@ -41,8 +41,8 @@ export default function LocaliteOuakam() {
   return (
     <section className="py-20 px-4 max-w-6xl mx-auto mt-20">
       <Seo
-        title="Dentiste à Ouakam (proche) – Clinique DABIA"
-        description="Dentiste proche d’Ouakam : urgences, prévention, esthétique, orthodontie, implantologie."
+        title="Dentiste à Ouakam Dakar – Urgences, Orthodontie & Implants | DABIA"
+        description="Dentiste à Ouakam : la Clinique DABIA (Sicap Foire) assure urgences le jour même, implants, orthodontie et blanchiment. Accès facile depuis Ouakam, devis transparent, RDV rapide."
         url={url}
         canonical={url}
         jsonLd={jsonLd}

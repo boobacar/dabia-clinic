@@ -42,8 +42,8 @@ export default function LocalitePointE() {
   return (
     <section className="py-20 px-4 max-w-6xl mx-auto mt-20">
       <Seo
-        title="Dentiste à Point E (proche) – Clinique DABIA"
-        description="Dentiste proche du Point E: urgences, détartrage, esthétique, orthodontie, implants à la Clinique DABIA."
+        title="Dentiste au Point E Dakar – Urgences, Détartrage & Implants | DABIA"
+        description="Vous cherchez un dentiste au Point E ou à Mermoz ? Clinique DABIA (Sicap Foire) : urgences, détartrage, implants, orthodontie et esthétique. Devis clair, RDV en ligne rapide."
         url={url}
         canonical={url}
         jsonLd={jsonLd}

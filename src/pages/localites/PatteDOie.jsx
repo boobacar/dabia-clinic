@@ -42,8 +42,8 @@ export default function LocalitePatteDOie() {
   return (
     <section className="py-20 px-4 max-w-6xl mx-auto mt-20">
       <Seo
-        title="Dentiste à Patte d’Oie (proche) – Clinique DABIA"
-        description="Dentiste proche de Patte d’Oie : urgences, prévention, esthétique, orthodontie, implantologie."
+        title="Dentiste à Patte d’Oie Dakar – Urgences & Soins complets | DABIA"
+        description="Vous habitez Patte d’Oie ou Grand Yoff ? Clinique DABIA (Sicap Foire, 5 min) : consultation, détartrage, implants, orthodontie et urgences dentaires. RDV en ligne aujourd’hui."
         url={url}
         canonical={url}
         jsonLd={jsonLd}

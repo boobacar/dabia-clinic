@@ -41,8 +41,8 @@ export default function LocaliteNgor() {
   return (
     <section className="py-20 px-4 max-w-6xl mx-auto mt-20">
       <Seo
-        title="Dentiste à Ngor (proche) – Clinique DABIA"
-        description="Dentiste proche de Ngor : urgences, prévention, esthétique, orthodontie, implantologie."
+        title="Dentiste à Ngor & Almadies Dakar – Urgences dentaires, Implants | DABIA"
+        description="Vous habitez Ngor, Almadies ou Yoff ? Clinique DABIA (Sicap Foire) prend en charge urgences, implants, détartrage et soins esthétiques. Prise en charge rapide, RDV en ligne."
         url={url}
         canonical={url}
         jsonLd={jsonLd}
