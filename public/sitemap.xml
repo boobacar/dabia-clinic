@@ -2,22 +2,26 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>https://www.cliniquedentairedabia.com/sitemaps/sitemap-static.xml</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-20</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://www.cliniquedentairedabia.com/sitemaps/sitemap-competences.xml</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-20</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://www.cliniquedentairedabia.com/sitemaps/sitemap-blog.xml</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-20</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.cliniquedentairedabia.com/sitemaps/sitemap-tags.xml</loc>
+    <lastmod>2026-04-20</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://www.cliniquedentairedabia.com/sitemaps/sitemap-technologies.xml</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-20</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://www.cliniquedentairedabia.com/sitemaps/sitemap-images.xml</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-20</lastmod>
   </sitemap>
 </sitemapindex>
