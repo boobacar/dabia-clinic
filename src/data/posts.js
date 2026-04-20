@@ -127,6 +127,477 @@ export const TAGS = [
 
 export const POSTS = [
   {
+    slug: "douleur-machoire-atm-bruxisme-dakar-causes-traitements-2026",
+    title:
+      "Douleur de la mâchoire à Dakar : ATM, bruxisme ou dent ? Comment faire la différence",
+    description:
+      "Mâchoire douloureuse, craquements, maux de tête au réveil : guide complet pour identifier l’origine (ATM, bruxisme, dent) et choisir le bon traitement à Dakar.",
+    date: "2026-04-19",
+    category: "Conseils",
+    tags: [
+      "douleur machoire",
+      "atm",
+      "bruxisme",
+      "dentiste dakar",
+      "douleur dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: cbctCover,
+    pinned: true,
+    readingMinutes: 11,
+    content: `Vous avez une **douleur de la mâchoire** à Dakar, surtout le matin ou en fin de journée ? Beaucoup de patients pensent d’abord à une carie. En réalité, la source peut être **l’articulation temporo-mandibulaire (ATM)**, le **bruxisme** (grincement des dents), une dent fissurée, ou un mélange des trois.
+
+Ce guide vous aide à comprendre les signaux utiles avant la consultation.
+
+## ATM, bruxisme ou dent : les signes qui orientent
+
+### 1) Plutôt ATM (articulation)
+- Douleur près de l’oreille
+- Craquement/claquement à l’ouverture de bouche
+- Sensation de blocage en bâillant
+- Fatigue des muscles de la mâchoire en parlant longtemps
+
+### 2) Plutôt bruxisme (grincement/serrement)
+- Douleur ou tension au réveil
+- Maux de tête temporaux matinaux
+- Dents usées/plates
+- Sensibilité diffuse sur plusieurs dents
+
+### 3) Plutôt douleur dentaire locale
+- Douleur déclenchée par le froid, le chaud ou la mastication
+- Douleur sur une dent précise
+- Gonflement gingival localisé
+- Douleur pulsatile en continu
+
+## Pourquoi ne pas attendre
+Une ATM inflammatoire non prise en charge peut entretenir des douleurs chroniques. Le bruxisme non traité accélère l’usure dentaire et peut fissurer des dents. Une douleur dentaire infectieuse peut, elle, évoluer en urgence.
+
+## Le bilan recommandé à la clinique
+Le diagnostic utile combine :
+1. interrogatoire ciblé (horaire de la douleur, habitudes de serrage, stress, sommeil) ;
+2. examen clinique des dents, muscles et articulation ;
+3. imagerie selon besoin (radio panoramique, parfois CBCT).
+
+À la Clinique DABIA, l’objectif est de séparer ce qui relève de l’occlusion, du muscle, de l’articulation et de la dent.
+
+## Solutions de traitement selon la cause
+
+### Si ATM / tension musculaire
+- mesures anti-inflammatoires et repos articulaire temporaire ;
+- adaptation alimentaire sur quelques jours (textures souples) ;
+- exercices de relâchement et hygiène mandibulaire.
+
+### Si bruxisme
+- gouttière nocturne personnalisée ;
+- ajustements occlusaux si indiqués ;
+- stratégie de réduction des facteurs aggravants (stress, caféine tardive, manque de sommeil).
+
+### Si cause dentaire
+- traitement ciblé de la dent (carie, fissure, endodontie, extraction selon cas) ;
+- gestion rapide de la douleur et prévention de l’infection.
+
+## Signes d’alerte = consultation rapide
+- douleur qui s’aggrave malgré antalgiques ;
+- difficulté à ouvrir la bouche ;
+- gonflement, fièvre, douleur pulsatile nocturne ;
+- traumatisme récent de la mâchoire ou dentaire.
+
+En cas de doute, vous pouvez passer par la page **[urgence dentaire à Dakar](/urgence-dentaire-dakar)**.
+
+## Budget et plan de soins
+Le coût dépend du diagnostic final : une gouttière, une prise en charge ATM simple et un traitement dentaire n’ont pas le même devis. L’important est de poser le bon diagnostic en premier, pour éviter des actes inutiles.
+
+## À retenir
+- La douleur de mâchoire n’est pas toujours “une dent”.
+- ATM, bruxisme et douleur dentaire peuvent coexister.
+- Un bilan structuré permet un traitement plus rapide et plus durable.
+
+Besoin d’un diagnostic précis ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Comment savoir si je grince des dents la nuit ?",
+        a: "Les signes fréquents sont les douleurs matinales de mâchoire, les céphalées temporales et l’usure des dents. L’examen clinique permet de confirmer.",
+      },
+      {
+        q: "Une douleur ATM peut-elle disparaître seule ?",
+        a: "Parfois oui, mais les récidives sont fréquentes sans correction des facteurs déclenchants. Une évaluation précoce réduit le risque de chronicité.",
+      },
+      {
+        q: "Faut-il une radio systématique en cas de douleur de mâchoire ?",
+        a: "Pas toujours. L’imagerie est demandée selon l’examen clinique et la suspicion diagnostique.",
+      },
+    ],
+  },
+  {
+    slug: "saignement-gencives-brossage-dakar-causes-plan-action-2026",
+    title:
+      "Saignement des gencives au brossage à Dakar : 9 causes fréquentes et plan d’action",
+    description:
+      "Vos gencives saignent quand vous vous brossez les dents ? Causes les plus fréquentes, erreurs à corriger et protocole concret sur 30 jours pour stabiliser vos gencives.",
+    date: "2026-04-19",
+    category: "Prévention",
+    tags: [
+      "gingivite",
+      "saignement gencives",
+      "détartrage",
+      "dentiste dakar",
+      "prévention",
+    ],
+    author: AUTHORS.sao,
+    cover: gingiviteTraitementCover,
+    readingMinutes: 12,
+    content: `Un **saignement des gencives** au brossage n’est pas “normal”. C’est souvent un signal d’inflammation débutante. La bonne nouvelle : pris tôt, ce problème se corrige très bien.
+
+## Les 9 causes les plus fréquentes
+1. Plaque dentaire accumulée au collet des dents  
+2. Tartre sous-gingival non retiré  
+3. Technique de brossage agressive  
+4. Brosse trop dure ou usée  
+5. Fil dentaire mal utilisé (traumatisme)  
+6. Tabac  
+7. Diabète mal équilibré  
+8. Variations hormonales (grossesse, post-partum)  
+9. Gingivite évoluant vers parodontite
+
+## Ce qu’il faut faire immédiatement
+- Continuer l’hygiène (arrêter de brosser aggrave l’inflammation)
+- Passer à une brosse souple
+- Brosser 2 fois/jour pendant 2 minutes
+- Nettoyer les espaces interdentaires quotidiennement
+- Programmer un bilan gingival si le saignement persiste > 7 jours
+
+## Les erreurs fréquentes qui entretiennent le problème
+- “J’attends que ça passe”
+- Brossage horizontal trop fort
+- Rinçages antiseptiques prolongés sans suivi
+- Détartrages trop espacés malgré facteurs de risque
+
+## Plan d’action 30 jours (simple et efficace)
+
+### Semaine 1
+- brossage doux matin/soir
+- fil/brossettes chaque soir
+- diminution du sucre collant entre les repas
+
+### Semaine 2
+- correction de technique avec un professionnel
+- évaluation de la sensibilité et des zones qui saignent
+
+### Semaine 3
+- détartrage si indiqué
+- adaptation de fréquence de maintenance (3, 6, 9 ou 12 mois)
+
+### Semaine 4
+- contrôle : disparition du saignement ? stabilité ?  
+- ajustement personnalisé du protocole
+
+## Quand suspecter une parodontite
+- mauvaise haleine persistante
+- mobilité dentaire
+- sensation de dents qui “s’allongent”
+- saignement spontané (sans brossage)
+
+Dans ce cas, un traitement parodontal précoce protège durablement vos dents.
+
+## Impact sur le budget santé
+Traiter tôt une gingivite coûte nettement moins que gérer une parodontite avancée (soins multiples, restaurations, perte dentaire). En SEO local, c’est souvent la requête “détartrage prix Dakar” qui amène au diagnostic gingival réel.
+
+## À retenir
+- Le saignement gingival est un signal d’alerte utile.
+- Une routine correcte + détartrage au bon rythme changent tout.
+- Plus on agit tôt, plus la prise en charge est simple.
+
+Pour un bilan personnalisé, **[prenez rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Mes gencives saignent seulement quand je passe le fil, est-ce grave ?",
+        a: "C’est souvent un signe d’inflammation locale. Une technique adaptée et un contrôle clinique permettent d’éviter l’aggravation.",
+      },
+      {
+        q: "Le bain de bouche suffit-il à arrêter le saignement ?",
+        a: "Non. Il peut aider temporairement, mais le fond du problème reste la plaque/tartre et la technique d’hygiène.",
+      },
+      {
+        q: "À quelle fréquence faire un détartrage si mes gencives sont fragiles ?",
+        a: "Selon votre risque, souvent tous les 3 à 6 mois au début, puis espacement progressif après stabilisation.",
+      },
+    ],
+  },
+  {
+    slug: "couronne-ceramique-zircone-dakar-differences-prix-2026",
+    title:
+      "Couronne céramique ou zircone à Dakar : différences, durée de vie et prix en 2026",
+    description:
+      "Quelle couronne choisir à Dakar : céramique, zircone ou métal-céramique ? Comparatif clair sur l’esthétique, la solidité, les indications cliniques et le budget réel.",
+    date: "2026-04-19",
+    category: "Conseils",
+    tags: [
+      "couronne dentaire",
+      "zircone",
+      "prothèse fixe",
+      "prix",
+      "dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: protheseCover,
+    readingMinutes: 10,
+    content: `Vous devez poser une **couronne dentaire** et vous hésitez entre céramique et zircone ? Le bon choix dépend de la dent concernée, de votre occlusion, de vos attentes esthétiques et de votre budget.
+
+## Les options les plus utilisées
+
+### 1) Céramique (tout céramique)
+- excellente esthétique (translucidité naturelle)
+- très adaptée aux dents visibles (incisives/prémolaires)
+- nécessite une préparation rigoureuse
+
+### 2) Zircone
+- très haute résistance mécanique
+- bonne esthétique (surtout zircone multicouche récente)
+- souvent privilégiée sur secteurs postérieurs ou contraintes fortes
+
+### 3) Métal-céramique
+- solution éprouvée et robuste
+- esthétique correcte mais parfois moins naturelle au collet
+- option parfois retenue selon contexte clinique/économique
+
+## Comment décider intelligemment
+Le praticien évalue :
+1. position de la dent (zone très visible ou non) ;
+2. intensité des forces de mastication ;
+3. présence de bruxisme ;
+4. état de la dent support (volume, vitalité, antécédents endodontiques).
+
+## Durée de vie : ce qui change vraiment
+Une couronne peut durer de nombreuses années si :
+- l’adaptation marginale est précise ;
+- l’hygiène est régulière (brosse + nettoyage interdentaire) ;
+- les contrôles sont faits au bon rythme ;
+- le bruxisme est protégé (gouttière si besoin).
+
+Ce n’est pas seulement le “matériau” qui détermine la durée, mais surtout l’indication et la maintenance.
+
+## Prix des couronnes à Dakar : pourquoi ça varie
+Le devis dépend de :
+- type de matériau ;
+- complexité de la préparation ;
+- besoin éventuel de reconstitution préalable ;
+- exigences esthétiques ;
+- laboratoire et protocole de fabrication.
+
+Le plus rentable reste d’éviter les reprises : une couronne bien indiquée et bien entretenue coûte moins à long terme.
+
+## Couronne et dent dévitalisée
+Après traitement canalaire, la dent est plus fragile. Une couronne peut être recommandée pour réduire le risque de fracture, selon la perte de substance.
+
+## Signes qu’il faut recontrôler rapidement
+- douleur à la mastication persistante ;
+- sensation de couronne “haute” ;
+- saignement gingival au collet ;
+- mauvaise haleine localisée ;
+- douleur thermique inhabituelle.
+
+## À retenir
+- Céramique : priorité esthétique.
+- Zircone : priorité résistance (avec bonne esthétique moderne).
+- Le bon choix est clinique, pas marketing.
+
+Besoin d’un avis personnalisé et d’un devis clair ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "La zircone est-elle toujours meilleure que la céramique ?",
+        a: "Pas systématiquement. Elle est souvent plus résistante, mais le choix dépend surtout de la localisation et des contraintes occlusales.",
+      },
+      {
+        q: "Une couronne peut-elle être posée en une seule séance ?",
+        a: "Selon la technique et le cas clinique, il faut généralement au moins une séance de préparation puis une pose finale.",
+      },
+      {
+        q: "Puis-je manger normalement avec une couronne ?",
+        a: "Oui, après adaptation. Il faut cependant éviter les habitudes traumatiques (croquer objets durs, bruxisme non protégé).",
+      },
+    ],
+  },
+  {
+    slug: "appareil-dentaire-enfant-dakar-age-ideal-options-cout-2026",
+    title:
+      "Appareil dentaire enfant à Dakar : âge idéal, options et coût réel en 2026",
+    description:
+      "À quel âge commencer l’orthodontie chez l’enfant à Dakar ? Appareils interceptifs, bagues, aligneurs et facteurs de coût expliqués simplement pour les parents.",
+    date: "2026-04-19",
+    category: "Pédiatrie",
+    tags: [
+      "dentiste enfant dakar",
+      "orthodontie enfant",
+      "appareil dentaire",
+      "prix appareil dentaire dakar",
+      "dentiste pediatrique dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: premierRdvCover,
+    readingMinutes: 12,
+    content: `Chez l’enfant, l’orthodontie ne commence pas toujours par des bagues. Le vrai sujet est **le bon moment** et **le bon type d’appareil** selon la croissance.
+
+## Âge idéal : ce que recommandent les praticiens
+Un premier bilan orthodontique est utile vers **7 ans**.  
+Pourquoi si tôt ? Parce que certaines anomalies se corrigent mieux pendant la croissance (mâchoire étroite, décalage de morsure, habitudes oro-faciales).
+
+## Les principales options
+
+### 1) Orthodontie interceptive (enfant)
+- appareils d’expansion ;
+- guides de croissance ;
+- correction précoce de certaines malocclusions.
+
+### 2) Appareil fixe (adolescent)
+- bagues métalliques ou céramiques ;
+- corrections précises en denture permanente.
+
+### 3) Aligneurs (cas sélectionnés)
+- option discrète ;
+- nécessite une excellente observance.
+
+## Comment savoir si un bilan est nécessaire
+Signes fréquents :
+- dents très chevauchées ;
+- incisives très en avant ;
+- morsure croisée ;
+- respiration buccale chronique ;
+- succion pouce/tétine prolongée ;
+- difficultés de mastication ou d’élocution.
+
+## Coût à Dakar : de quoi dépend le devis
+- type d’appareil ;
+- complexité du cas ;
+- durée estimée du traitement ;
+- fréquence des contrôles ;
+- phases de contention en fin de traitement.
+
+Le budget est mieux maîtrisé quand on anticipe tôt, avant que les corrections deviennent plus lourdes.
+
+## Durée moyenne d’un traitement
+- phase interceptive : souvent 6 à 12 mois ;
+- phase multi-attaches/aligneurs : souvent 12 à 24 mois ;
+- contention : indispensable pour stabiliser.
+
+## Le rôle des parents (facteur clé de réussite)
+- présence aux rendez-vous ;
+- hygiène stricte avec appareil ;
+- respect des consignes alimentaires ;
+- surveillance du port des dispositifs amovibles.
+
+## Erreurs à éviter
+- attendre la dentition complète malgré des signes précoces ;
+- arrêter le traitement dès “amélioration visible” ;
+- négliger la contention après dépose.
+
+## À retenir
+- Un dépistage à 7 ans peut éviter des traitements plus complexes.
+- Tous les enfants n’ont pas besoin de bagues immédiatement.
+- La réussite dépend autant du suivi que de l’appareil choisi.
+
+Pour un bilan enfant/adolescent, **[prenez rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Mon enfant est jeune, faut-il déjà consulter en orthodontie ?",
+        a: "Oui, un bilan précoce permet surtout de dépister. Il ne signifie pas qu’un appareil sera posé tout de suite.",
+      },
+      {
+        q: "Les bagues sont-elles plus efficaces que les aligneurs chez l’enfant ?",
+        a: "Cela dépend du cas. Certaines malocclusions répondent mieux aux bagues, d’autres peuvent être traitées avec aligneurs si l’observance est bonne.",
+      },
+      {
+        q: "Combien de fois faut-il venir en contrôle ?",
+        a: "En général toutes les 4 à 8 semaines selon la phase de traitement.",
+      },
+    ],
+  },
+  {
+    slug: "implant-dentaire-fumeur-dakar-risques-conditions-succes-2026",
+    title:
+      "Implant dentaire chez le fumeur à Dakar : risques, conditions de succès et alternatives",
+    description:
+      "Peut-on poser un implant dentaire quand on fume ? Risques réels, protocole de sécurisation et solutions alternatives expliqués clairement pour les patients à Dakar.",
+    date: "2026-04-19",
+    category: "Implantologie",
+    tags: [
+      "implant dentaire",
+      "fumeur",
+      "chirurgie orale",
+      "dentiste dakar",
+      "devis dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: implantCover,
+    readingMinutes: 11,
+    content: `La question revient souvent : **“Je fume, puis-je faire un implant dentaire ?”**  
+Oui, c’est possible dans certains cas, mais le tabac augmente les risques biologiques. Le succès dépend alors d’un protocole plus strict.
+
+## Pourquoi le tabac complique l’implantologie
+Le tabac peut :
+- ralentir la cicatrisation ;
+- réduire la vascularisation locale ;
+- augmenter l’inflammation gingivale ;
+- majorer le risque de péri-implantite à moyen/long terme.
+
+En pratique, le risque n’est pas “tout ou rien” : il varie selon la consommation, l’hygiène et la qualité du suivi.
+
+## Évaluation pré-implantaire chez un fumeur
+Avant décision, il faut :
+1. bilan clinique gingival/parodontal ;
+2. imagerie 3D (si nécessaire) pour évaluer volume osseux ;
+3. estimation du risque personnalisé (quantité de tabac, stabilité gingivale, antécédents).
+
+## Conditions qui améliorent le pronostic
+- réduction du tabac avant/après chirurgie ;
+- hygiène bucco-dentaire rigoureuse ;
+- traitement des inflammations gingivales avant implant ;
+- visites de maintenance régulières ;
+- gouttière nocturne si bruxisme associé.
+
+## Période critique autour de l’intervention
+Les jours avant et après la pose sont stratégiques. Une diminution nette, voire un arrêt temporaire, améliore la cicatrisation et la stabilité initiale.
+
+## Alternatives si le risque est jugé élevé
+Selon le cas, on peut discuter :
+- bridge (sur dents adjacentes) ;
+- prothèse partielle ;
+- temporisation avant implantation après stabilisation gingivale.
+
+L’objectif est toujours le même : **solution durable**, pas seulement rapide.
+
+## Signes d’alerte après pose d’implant
+- saignement gingival persistant ;
+- douleur croissante au-delà de la période attendue ;
+- mauvaise haleine localisée ;
+- mobilité/sensation inhabituelle.
+
+Une réaction précoce permet souvent d’éviter une complication plus lourde.
+
+## Coût global : penser long terme
+Un implant mal indiqué ou mal maintenu coûte plus cher qu’un plan bien préparé. Chez le fumeur, la qualité du suivi est aussi importante que l’acte lui-même.
+
+## À retenir
+- Fumer n’interdit pas toujours l’implant, mais augmente le niveau d’exigence.
+- Le succès repose sur sélection des cas + discipline post-opératoire.
+- Un plan alternatif doit toujours être discuté.
+
+Pour une évaluation personnalisée, **[prenez rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Dois-je arrêter totalement de fumer pour poser un implant ?",
+        a: "L’arrêt complet est idéal, mais une réduction encadrée avant/après chirurgie améliore déjà le pronostic. La décision dépend de votre profil clinique.",
+      },
+      {
+        q: "Le risque d’échec est-il immédiat ou tardif ?",
+        a: "Les deux existent : échec précoce d’ostéo-intégration et complications tardives (péri-implantite). D’où l’importance du suivi.",
+      },
+      {
+        q: "Existe-t-il une alternative moins risquée si je fume beaucoup ?",
+        a: "Oui, selon le cas : bridge, solution amovible ou traitement différé après stabilisation parodontale.",
+      },
+    ],
+  },
+  {
     slug: "dentiste-dakar-prix-consultation-que-comprend-votre-premiere-visite-2026",
     title: "Dentiste à Dakar : prix consultation et ce que comprend votre 1re visite",
     description:
