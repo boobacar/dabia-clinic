@@ -427,6 +427,19 @@ export default function BlogPost() {
                 <p className="text-xs text-gray-500">{post.author?.title}</p>
               </div>
             </div>
+            {(post.tags || []).length > 0 && (
+              <div className="flex flex-wrap gap-2 mt-4 text-xs">
+                {(post.tags || []).slice(0, 6).map((t) => (
+                  <Link
+                    key={t}
+                    to={`/blog/tag/${slugify(t)}`}
+                    className="px-2 py-1 bg-gray-100 rounded-full hover:bg-[#bb2988] hover:text-white transition"
+                  >
+                    #{t}
+                  </Link>
+                ))}
+              </div>
+            )}
             <div
               className="w-full rounded-xl mt-6 overflow-hidden"
               style={{ aspectRatio: "16/9" }}

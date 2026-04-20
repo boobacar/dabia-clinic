@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import Seo from "../components/Seo";
 import Breadcrumbs from "../components/Breadcrumbs";
 import { POSTS, CATEGORIES, TAGS } from "../data/posts";
+import { slugify } from "../utils/slugify";
 
 function useQuery() {
   return new URLSearchParams(useLocation().search);
@@ -147,12 +148,13 @@ export default function Blog() {
                   <p className="text-gray-600 text-sm mb-3">{p.description}</p>
                   <div className="flex flex-wrap gap-2 text-xs">
                     {(p.tags || []).slice(0, 4).map((t) => (
-                      <span
+                      <Link
                         key={t}
-                        className="px-2 py-1 bg-gray-100 rounded-full"
+                        to={`/blog/tag/${slugify(t)}`}
+                        className="px-2 py-1 bg-gray-100 rounded-full hover:bg-gray-200 transition"
                       >
                         #{t}
-                      </span>
+                      </Link>
                     ))}
                   </div>
                 </div>

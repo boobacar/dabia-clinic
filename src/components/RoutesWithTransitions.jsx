@@ -39,6 +39,7 @@ const LocalitePatteDOie = lazy(() => import("../pages/localites/PatteDOie"));
 const LocaliteFann = lazy(() => import("../pages/localites/Fann"));
 const LocalitePlateau = lazy(() => import("../pages/localites/Plateau"));
 const Galerie = lazy(() => import("../pages/Galerie"));
+const BlogTag = lazy(() => import("../pages/BlogTag"));
 const NotFound = lazy(() => import("../pages/NotFound"));
 
 export default function RoutesWithTransitions() {
@@ -62,6 +63,7 @@ export default function RoutesWithTransitions() {
     <Routes location={displayLocation} key={displayLocation.pathname}>
       <Route path="/" element={<Home />} />
       <Route path="/blog" element={<Blog />} />
+      <Route path="/blog/tag/:tagSlug" element={<BlogTag />} />
       <Route path="/apropos" element={<APropos />} />
       <Route path="/blog/:slug" element={<BlogPost />} />
       <Route path="/rendez-vous" element={<RendezVous />} />
