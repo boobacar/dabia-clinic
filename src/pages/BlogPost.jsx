@@ -378,6 +378,9 @@ export default function BlogPost() {
 
   return (
     <section className="py-20 px-4 max-w-7xl mx-auto mt-20">
+      {post.cover && (
+        <link rel="preload" as="image" href={post.cover} fetchPriority="high" />
+      )}
       <ReadingProgress />
       <Seo
         title={post.title}

@@ -29,48 +29,48 @@ import onlayCover from "../assets/blog/onlay.webp";
 import cbctCover from "../assets/technologie/tech-cbct.webp";
 import traumaEnfantCover from "../assets/blog/trauma-enfant.webp";
 import diabeteCover from "../assets/blog/diabete.webp";
-import detartragePrixCover from "../assets/blog/detartrage_prix.png";
-import protheseAmovibleCover from "../assets/blog/prothese_amovible.png";
-import radioPanoramiqueCover from "../assets/blog/radio_panoramique_prix.png";
-import devisDentaireCover from "../assets/blog/devis_dentaire.png";
-import soinCariePrixCover from "../assets/blog/soin_carie_prix.png";
+import detartragePrixCover from "../assets/blog/detartrage_prix.avif";
+import protheseAmovibleCover from "../assets/blog/prothese_amovible.avif";
+import radioPanoramiqueCover from "../assets/blog/radio_panoramique_prix.avif";
+import devisDentaireCover from "../assets/blog/devis_dentaire.avif";
+import soinCariePrixCover from "../assets/blog/soin_carie_prix.avif";
 
 // Nouveaux imports pour les 10 articles ajoutés
-import prixSoinsCover from "../assets/blog/prix_soins_dentaires_dakar.png";
-import urgenceActionCover from "../assets/blog/urgence_dentaire_action.png";
+import prixSoinsCover from "../assets/blog/prix_soins_dentaires_dakar.avif";
+import urgenceActionCover from "../assets/blog/urgence_dentaire_action.avif";
 // TODO: Restore correct paths after manually copying images
-import choisirDentisteCover from "../assets/blog/choisir_bon_dentiste_dakar.png";
-import blanchimentEfficaceCover from "../assets/blog/blanchiment_efficace_senegal.png";
-import implantSourireCover from "../assets/blog/implant_retrouver_sourire.png";
-import remedeRageCover from "../assets/blog/remede_rage_dent.png";
-import gingiviteTraitementCover from "../assets/blog/gingivite_traitement.png";
-import orthoAdulteCover from "../assets/blog/orthodontie_adulte_choix.png";
-import santeEnfantCover from "../assets/blog/sante_dentaire_enfants_senegal.png";
-import detartragePreventifCover from "../assets/blog/detartrage_preventif.png";
+import choisirDentisteCover from "../assets/blog/choisir_bon_dentiste_dakar.avif";
+import blanchimentEfficaceCover from "../assets/blog/blanchiment_efficace_senegal.avif";
+import implantSourireCover from "../assets/blog/implant_retrouver_sourire.avif";
+import remedeRageCover from "../assets/blog/remede_rage_dent.avif";
+import gingiviteTraitementCover from "../assets/blog/gingivite_traitement.avif";
+import orthoAdulteCover from "../assets/blog/orthodontie_adulte_choix.avif";
+import santeEnfantCover from "../assets/blog/sante_dentaire_enfants_senegal.avif";
+import detartragePreventifCover from "../assets/blog/detartrage_preventif.avif";
 
 // Nouveaux imports pour les articles GSC (Jan 2026)
-import guideTarifsCover from "../assets/blog/guide_tarifs_2025.png";
-import appareilPrixCover from "../assets/blog/appareil_dentaire_prix.png";
-import implantCoutCover from "../assets/blog/implant_dentaire_cout.png";
-import blanchimentEclatCover from "../assets/blog/blanchiment_dentaire_eclat.png";
-// import cliniqueDabiaCover from "../assets/blog/clinique_dabia_expertise.png"; // Replaced by existing asset
-import cliniqueDabiaCover from "../assets/dabia.webp";
+import guideTarifsCover from "../assets/blog/guide_tarifs_2025.avif";
+import appareilPrixCover from "../assets/blog/appareil_dentaire_prix.avif";
+import implantCoutCover from "../assets/blog/implant_dentaire_cout.avif";
+import blanchimentEclatCover from "../assets/blog/blanchiment_dentaire_eclat.avif";
+// import cliniqueDabiaCover from "../assets/blog/clinique_dabia_expertise.avif"; // Replaced by existing asset
+import cliniqueDabiaCover from "../assets/dabia.avif";
 
 // Nouveaux imports pour les articles pédiatriques existants
-import scellantsCover from "../assets/blog/scellants_sillons_enfant.png";
-import premierRdvCover from "../assets/blog/dentiste_enfant_premier_rdv.png";
+import scellantsCover from "../assets/blog/scellants_sillons_enfant.avif";
+import premierRdvCover from "../assets/blog/dentiste_enfant_premier_rdv.avif";
 
 // Nouveaux imports pour la stratégie SEO "Dentiste Dakar" (Jan 2026 - V2)
-import protheseFixeAmovibleCover from "../assets/blog/prothese_fixe_vs_amovible.png";
-import appareilGuideCover from "../assets/blog/appareil_dentaire_guide.png";
-import cliniqueExpertCover from "../assets/blog/clinique_dabia_expert.png";
+import protheseFixeAmovibleCover from "../assets/blog/prothese_fixe_vs_amovible.avif";
+import appareilGuideCover from "../assets/blog/appareil_dentaire_guide.avif";
+import cliniqueExpertCover from "../assets/blog/clinique_dabia_expert.avif";
 
 // Nouveaux imports pour les articles Ramadan (2026)
-import ramadanSoinsCover from "../assets/blog/ramadan_soins.png";
-import ramadanHaleineCover from "../assets/blog/ramadan_haleine.png";
-import ramadanBrossageCover from "../assets/blog/ramadan_brossage.png";
-import ramadanRdvCover from "../assets/blog/ramadan_rdv.png";
-import ramadanUrgenceCover from "../assets/blog/ramadan_urgence.png";
+import ramadanSoinsCover from "../assets/blog/ramadan_soins.avif";
+import ramadanHaleineCover from "../assets/blog/ramadan_haleine.avif";
+import ramadanBrossageCover from "../assets/blog/ramadan_brossage.avif";
+import ramadanRdvCover from "../assets/blog/ramadan_rdv.avif";
+import ramadanUrgenceCover from "../assets/blog/ramadan_urgence.avif";
 
 export const AUTHORS = {
   sao: {
