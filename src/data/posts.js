@@ -72,6 +72,13 @@ import ramadanBrossageCover from "../assets/blog/ramadan_brossage.avif";
 import ramadanRdvCover from "../assets/blog/ramadan_rdv.avif";
 import ramadanUrgenceCover from "../assets/blog/ramadan_urgence.avif";
 
+// Nouveaux imports pour les 5 articles SEO (Avril 2026)
+import couronneDentaireCover from "../assets/blog/blanchiment_dentaire_eclat.avif";
+import dentsSensiblesCover from "../assets/blog/soin_carie_prix.avif";
+import tartrePlaqueCover from "../assets/blog/detartrage_prix.avif";
+import dentCasseeCover from "../assets/blog/urgence_dentaire_action.avif";
+import parodontiteCover from "../assets/blog/gingivite_traitement.avif";
+
 export const AUTHORS = {
   sao: {
     name: "Dr Fatoumata SAO",
@@ -7956,6 +7963,523 @@ Venez consulter immédiatement. Le dentiste vous soulagera (geste d'urgence). Si
       {
         q: "Une extraction dentaire oblige-t-elle à rompre le jeûne ?",
         a: "Non, pas l'acte en lui-même. Mais si vous avez besoin d'antidouleurs juste après, il faudra peut-être rompre le jeûne ce jour-là.",
+      },
+    ],
+  },
+  // ─── 5 nouveaux articles SEO – Avril 2026 ──────────────────────────────────
+  {
+    slug: "couronne-dentaire-dakar-prix-pose-duree-vie",
+    title: "Couronne dentaire à Dakar : prix, pose et durée de vie (guide 2026)",
+    description:
+      "Tout savoir sur la couronne dentaire à Dakar : quand en poser une, types (zircone, métal-céramique, tout-céramique), prix réels et durée de vie. Guide complet par la Clinique DABIA.",
+    date: "2026-04-26",
+    category: "Conseils",
+    tags: [
+      "couronne dentaire dakar",
+      "couronne dentaire prix",
+      "prothèse dentaire fixe",
+      "dentiste dakar",
+      "zircone dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: couronneDentaireCover,
+    readingMinutes: 10,
+    content: `La **couronne dentaire** est l'une des restaurations les plus posées en dentisterie. À Dakar, de nombreux patients la demandent après une dévitalisation, une fracture ou une carie trop étendue pour un simple plombage. Ce guide répond aux questions les plus fréquentes.
+
+## Qu'est-ce qu'une couronne dentaire ?
+
+Une couronne est une prothèse fixe en forme de « chapeau » qui recouvre entièrement la dent naturelle ou l'implant. Elle restaure la morphologie, la résistance mécanique et l'esthétique de la dent.
+
+### Quand est-elle nécessaire ?
+
+- **Après une dévitalisation** : la dent devient fragile et peut se fissurer sans protection.
+- **Carie étendue** : quand il ne reste pas assez de tissu sain pour un composite.
+- **Dent fissurée ou fracturée** : pour maintenir l'ensemble et éviter l'extraction.
+- **Sur un implant** : la couronne sur implant remplace une dent manquante de façon fixe.
+- **Bruxisme sévère** : pour protéger les dents très usées.
+
+## Types de couronnes disponibles à Dakar
+
+### 1. Couronne tout-céramique (Zircone ou E-max)
+La référence esthétique actuelle. La zircone est extrêmement résistante et ne contient pas de métal. Couleur naturelle garantie, compatible IRM, idéale pour les dents visibles.
+
+### 2. Couronne métal-céramique
+Un armature métallique recouvert de céramique. Résistance maximale mais un liseré gris peut apparaître au niveau de la gencive avec le temps. Souvent plus abordable.
+
+### 3. Couronne métallique (alliage ou or)
+Quasi invisible (arrière de la bouche), très durable, usure minimale de la dent antagoniste. Moins demandée pour des raisons esthétiques.
+
+## Prix d'une couronne dentaire à Dakar
+
+| Type de couronne | Fourchette de prix |
+|---|---|
+| Métal-céramique | 80 000 – 120 000 FCFA |
+| Tout-céramique (zircone) | 130 000 – 200 000 FCFA |
+| Sur implant (couronne seule) | 120 000 – 180 000 FCFA |
+
+> Ces fourchettes sont indicatives. Le tarif final dépend du laboratoire, du nombre de dents et des actes préparatoires (empreinte, temporaire, etc.).
+
+## Étapes de la pose d'une couronne
+
+1. **Consultation et bilan** : radio panoramique ou CBCT pour évaluer la racine et l'os.
+2. **Préparation** : mise en forme de la dent sous anesthésie locale (quelques millimètres retirés sur chaque face).
+3. **Empreinte** : numérique (scanner intra-oral) ou classique ; envoi au laboratoire.
+4. **Temporaire** : une couronne provisoire protège la dent pendant 1 à 2 semaines.
+5. **Pose définitive** : la couronne est scellée ou vissée ; vérification de l'occlusion.
+
+## Combien de temps dure une couronne ?
+
+Avec un entretien correct (brossage, fil dentaire, contrôles annuels), une couronne en zircone peut durer **15 à 20 ans**. La métal-céramique dure généralement 10 à 15 ans. Les facteurs qui réduisent la durée : bruxisme non traité, hygiène insuffisante, traumatismes.
+
+## Entretien et conseils post-pose
+
+- Évitez les aliments très durs (os, glaçons) les premières 48h après la pose.
+- Passez le fil dentaire chaque jour, y compris autour de la couronne.
+- Portez votre gouttière nocturne si vous bruxez.
+- Consultez tous les 6 à 12 mois pour un contrôle.
+
+## Clinique DABIA : couronnes en zircone à Dakar
+
+À la Clinique DABIA (Liberté 6), nos prothèses fixes sont réalisées avec des matériaux de haute qualité. Nous utilisons l'empreinte numérique pour plus de précision et de confort. Prenez rendez-vous pour un bilan et un devis sans engagement.`,
+    faq: [
+      {
+        q: "Combien de rendez-vous faut-il pour poser une couronne ?",
+        a: "En général 2 à 3 rendez-vous : préparation + empreinte, pose du temporaire, puis pose définitive une à deux semaines plus tard.",
+      },
+      {
+        q: "La pose d'une couronne est-elle douloureuse ?",
+        a: "Non, la préparation se fait sous anesthésie locale. Des sensibilités légères peuvent apparaître les premiers jours, puis disparaissent.",
+      },
+      {
+        q: "L'assurance ou l'IPM rembourse-t-elle les couronnes au Sénégal ?",
+        a: "Certaines mutuelles et IPM couvrent une partie des prothèses fixes. Demandez une entente préalable à votre assureur avant la pose.",
+      },
+      {
+        q: "Peut-on poser une couronne sur une dent dévitalisée ?",
+        a: "Oui, c'est même recommandé. La dévitalisation fragilise la dent ; la couronne la protège des fractures.",
+      },
+    ],
+  },
+  {
+    slug: "dents-sensibles-froid-chaud-dakar-causes-traitements",
+    title: "Dents sensibles au froid et au chaud à Dakar : causes et traitements efficaces",
+    description:
+      "Vous souffrez de dents sensibles à Dakar ? Découvrez les causes (dentine exposée, gencive rétractée, bruxisme) et les solutions pour retrouver le plaisir de manger sans douleur.",
+    date: "2026-04-25",
+    category: "Prévention",
+    tags: [
+      "dents sensibles",
+      "sensibilité dentaire dakar",
+      "dentine exposée",
+      "dentiste dakar",
+      "gencive rétractée",
+    ],
+    author: AUTHORS.sao,
+    cover: dentsSensiblesCover,
+    readingMinutes: 8,
+    content: `Boire un verre d'eau glacée ou manger une cuillère de thiébou dieun brûlant et ressentir une **douleur électrique dans les dents** : c'est le quotidien de millions de personnes. Cette hypersensibilité dentinaire est très fréquente et souvent traitable simplement.
+
+## Pourquoi les dents deviennent-elles sensibles ?
+
+La dent est composée de plusieurs couches. L'émail, couche externe dure, protège la **dentine**, un tissu percé de milliers de micro-canaux (tubules dentinaires) qui communiquent avec le nerf. Quand l'émail s'amincit ou que la gencive recule, ces tubules se retrouvent exposés et chaque variation de température ou de sucre déclenche une douleur vive.
+
+### Causes principales
+
+| Cause | Mécanisme |
+|---|---|
+| Brossage trop vigoureux | Érosion de l'émail et récession gingivale |
+| Bruxisme (grincement des dents) | Usure de l'émail par friction |
+| Alimentation acide (jus de bissap, sodas) | Dissolution de l'émail |
+| Carie ou fissure | Dentine exposée directement |
+| Récession gingivale | Racine non protégée par l'émail exposée |
+| Traitement de blanchiment | Sensibilité transitoire liée aux produits |
+| Traitement orthodontique | Légère sensibilité au début du traitement |
+
+## Comment reconnaître une dent sensible vs une dent malade ?
+
+- **Douleur courte et vive au froid/chaud qui s'arrête rapidement** = hypersensibilité dentinaire.
+- **Douleur longue, pulsatile, nocturne** = possible atteinte du nerf (pulpite) → urgence à traiter.
+- **Douleur à la pression uniquement** = fissure ou carie → consultation rapide.
+
+> En cas de doute, consultez : une hypersensibilité non traitée peut évoluer en carie ou nécessiter une dévitalisation.
+
+## Traitements des dents sensibles à Dakar
+
+### 1. Dentifrices désensibilisants
+Les dentifrices au **nitrate de potassium** ou à l'**arginine** obturent progressivement les tubules dentinaires. Résultats en 2 à 4 semaines d'utilisation quotidienne. À utiliser en cure ou durablement si la cause persiste.
+
+### 2. Vernis au fluor et agents désensibilisants au cabinet
+Le dentiste applique un vernis fluoré concentré ou un agent à base de diamine fluorure directement sur les zones sensibles. Effet rapide (48h) et durable plusieurs mois.
+
+### 3. Traitement de la cause
+- Bruxisme → **gouttière nocturne** pour stopper l'usure.
+- Récession gingivale sévère → **greffe gingivale** pour recouvrir la racine.
+- Brossage trop fort → rééducation à la technique de Bass, brosse souple.
+- Carie ou fissure → **composite ou couronne** pour refermer l'accès dentinaire.
+
+### 4. Modifications alimentaires
+Réduisez les aliments et boissons acides (sodas, jus de citron, tamarin). Rincez à l'eau après consommation. Attendez 30 minutes avant de vous brosser les dents après un repas acide.
+
+## Prévention au quotidien
+
+- Brosse à dents **souple** et technique circulaire ou de Bass.
+- Dentifrice fluoré (1 000 à 1 450 ppm de fluor) adapté aux dents sensibles.
+- Contrôle dentaire tous les 6 mois pour détecter précocement récessions et usures.
+- Gouttière nocturne si vous serrez ou grincez des dents pendant le sommeil.
+
+## Quand consulter ?
+
+Consultez dès que la sensibilité :
+- Dure plus de quelques secondes après le stimulus.
+- Concerne plusieurs dents sans raison apparente.
+- S'accompagne d'une douleur nocturne spontanée.
+- Revient malgré 4 semaines de dentifrice désensibilisant.
+
+À la Clinique DABIA à Dakar, nous réalisons un bilan complet pour identifier la cause exacte et choisir le traitement le plus adapté à votre situation.`,
+    faq: [
+      {
+        q: "Le dentifrice pour dents sensibles est-il efficace ?",
+        a: "Oui, à condition de l'utiliser régulièrement pendant au moins 3 à 4 semaines. Il ne traite pas la cause mais obture les tubules et réduit la douleur.",
+      },
+      {
+        q: "Les dents sensibles guérissent-elles seules ?",
+        a: "Rarement. Si la cause persiste (bruxisme, acidité, brossage inadapté), la sensibilité s'aggrave. Un traitement adapté est nécessaire.",
+      },
+      {
+        q: "Le blanchiment dentaire aggrave-t-il les dents sensibles ?",
+        a: "Le blanchiment peut provoquer une sensibilité transitoire. Nous déconseillons les blanchiments chez les patients avec une sensibilité sévère non traitée.",
+      },
+    ],
+  },
+  {
+    slug: "tartre-plaque-dentaire-dakar-comment-eliminer",
+    title: "Tartre et plaque dentaire à Dakar : différences, risques et comment les éliminer",
+    description:
+      "Plaque dentaire ou tartre : quelle différence ? Comment se forment-ils et comment les éliminer efficacement à Dakar ? Guide complet sur la prévention et le détartrage professionnel.",
+    date: "2026-04-24",
+    category: "Prévention",
+    tags: [
+      "tartre dent dakar",
+      "plaque dentaire",
+      "détartrage dakar",
+      "hygiène dentaire",
+      "dentiste dakar",
+      "détartrage dentaire dakar prix",
+    ],
+    author: AUTHORS.sao,
+    cover: tartrePlaqueCover,
+    readingMinutes: 9,
+    content: `La **plaque dentaire** et le **tartre** sont les deux ennemis numéro un de la santé bucco-dentaire. Pourtant, beaucoup de patients confondent les deux ou ignorent leurs conséquences réelles. Voici tout ce que vous devez savoir pour protéger vos dents et vos gencives à Dakar.
+
+## Plaque dentaire : qu'est-ce que c'est ?
+
+La plaque dentaire est un **biofilm bactérien** invisible qui se forme en permanence sur les surfaces dentaires. Elle est composée de bactéries, de salive et de débris alimentaires. Douce au toucher, blanche ou légèrement jaunâtre, elle apparaît dès 4 à 12 heures après le brossage.
+
+### Pourquoi est-elle dangereuse ?
+Les bactéries de la plaque produisent des acides en dégradant les sucres. Ces acides :
+- **Attaquent l'émail** → caries.
+- **Irritent les gencives** → gingivite, puis parodontite si non traitée.
+
+La bonne nouvelle : la plaque s'élimine par un **brossage efficace deux fois par jour** et l'usage du fil dentaire.
+
+## Tartre : comment se forme-t-il ?
+
+Le tartre se forme quand la plaque dentaire non éliminée se **minéralise sous l'effet des sels de calcium de la salive**. En 24 à 72 heures, la plaque se durcit et devient du tartre. Contrairement à la plaque, le tartre ne peut pas être retiré par le brossage seul.
+
+### Tartre supra-gingival vs sous-gingival
+
+| | Tartre supra-gingival | Tartre sous-gingival |
+|---|---|---|
+| Localisation | Visible, au-dessus de la gencive | Caché sous la gencive |
+| Couleur | Blanc-jaunâtre à brun | Brun foncé ou noir |
+| Risque | Gingivite, mauvaise haleine | Parodontite, déchaussement |
+| Traitement | Détartrage manuel ou ultrasonique | Curetage / surfaçage radiculaire |
+
+## Les facteurs qui favorisent le tartre
+
+- Alimentation riche en sucres et amidons (riz, pain, sodas).
+- Tabagisme : la nicotine favorise un tartre brun très adhérent.
+- Consommation de café, thé, attaya : taches et tartre pigmenté.
+- Bouche sèche (xérostomie) : moins de salive = moins de rinçage naturel.
+- Brossage insuffisant ou technique incorrecte.
+- Salive riche en calcium (facteur génétique).
+
+## Conséquences d'un tartre non traité
+
+1. **Gingivite** : gencives rouges, gonflées, qui saignent au brossage.
+2. **Mauvaise haleine** (halitose) : les bactéries anaérobies logées dans le tartre dégagent des composés soufrés.
+3. **Parodontite** : infection profonde qui détruit l'os autour des dents. Peut mener au déchaussement et à la perte de dents.
+4. **Caries inter-dentaires** : le tartre retient la plaque dans les espaces difficiles à nettoyer.
+
+## Comment éliminer le tartre ? Le détartrage professionnel
+
+Seul un dentiste ou hygiéniste dentaire peut retirer le tartre. À la Clinique DABIA, nous utilisons :
+
+### Détartrage ultrasonique
+Les ultrasons vibrent à haute fréquence et fragmentent le tartre sans abîmer l'émail. Un jet d'eau accompagne le soin pour rincer et refroidir.
+
+### Détartrage manuel (curettes)
+Pour les zones difficiles d'accès et le tartre sous-gingival, des curettes précises complètent le soin.
+
+### AirFlow (polissage)
+Après le détartrage, un jet de poudre de bicarbonate élimine les taches pigmentées (café, thé, attaya) et polit les surfaces pour retarder la reformation du tartre.
+
+## Fréquence recommandée
+
+- **Tous les 6 mois** pour la majorité des patients.
+- **Tous les 3 à 4 mois** pour les patients avec antécédents de parodontite, fumeurs ou diabétiques.
+
+## Prix d'un détartrage à Dakar
+
+Le détartrage simple coûte généralement **entre 15 000 et 35 000 FCFA** à Dakar selon la quantité de tartre et le cabinet. L'AirFlow est souvent proposé en complément.
+
+## Conseils pour limiter la formation du tartre
+
+- Brossez-vous les dents **2 minutes, 2 fois par jour**, avec une brosse souple.
+- Utilisez le **fil dentaire** ou des brossettes inter-dentaires chaque soir.
+- Réduisez les boissons sucrées et la fréquence des grignotages.
+- Rincez à l'eau après le café ou l'attaya.
+- Consultez **régulièrement** : un tartre dépisté tôt est plus facile à traiter.`,
+    faq: [
+      {
+        q: "Peut-on enlever le tartre soi-même à la maison ?",
+        a: "Non. Le tartre est minéralisé et seul un instrument professionnel (ultrason ou curette) peut le retirer sans abîmer l'émail ou les gencives.",
+      },
+      {
+        q: "Le bicarbonate de soude enlève-t-il le tartre ?",
+        a: "Il peut atténuer certaines taches de surface mais ne dissout pas le tartre. Un usage abusif abrase l'émail et peut aggraver la situation.",
+      },
+      {
+        q: "Combien de temps dure un détartrage ?",
+        a: "Entre 30 et 60 minutes selon la quantité de tartre. La séance est généralement indolore ; une anesthésie topique peut être appliquée si nécessaire.",
+      },
+      {
+        q: "Le détartrage affaiblit-il les dents ?",
+        a: "Non, c'est un mythe répandu. Le détartrage retire uniquement le tartre sans toucher à l'émail sain. Vos dents sont plus propres, pas plus fragiles.",
+      },
+    ],
+  },
+  {
+    slug: "dent-cassee-dakar-urgence-quoi-faire-solutions",
+    title: "Dent cassée à Dakar : quoi faire en urgence et quelles sont les solutions ?",
+    description:
+      "Vous venez de vous casser une dent à Dakar ? Gestes d'urgence immédiats, ce qu'il faut éviter, et solutions de reconstruction (composite, couronne, implant) expliqués par la Clinique DABIA.",
+    date: "2026-04-23",
+    category: "Urgences",
+    tags: [
+      "dent cassée dakar",
+      "urgence dentaire dakar",
+      "fracture dentaire",
+      "dentiste dakar",
+      "douleur dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: dentCasseeCover,
+    readingMinutes: 7,
+    content: `Une chute, un accident de sport, un os dans le thiébou yapp, une dent dévitalisée qui lâche : les causes d'une **dent cassée** à Dakar sont nombreuses. Que la fracture soit légère (éclat d'émail) ou sévère (couronne ou racine), voici comment réagir vite et bien.
+
+## Évaluer la gravité de la fracture
+
+Toutes les fractures dentaires ne se valent pas. Un praticien classe généralement les fractures en plusieurs niveaux :
+
+| Type de fracture | Description | Urgence |
+|---|---|---|
+| Fissure d'émail | Petite ligne sans douleur | Faible – consultation dans la semaine |
+| Éclat d'émail/dentine | Coin cassé, parfois sensible | Modérée – consultation dans 48h |
+| Fracture atteignant le nerf | Douleur vive, saignement | Élevée – urgence le jour même |
+| Fracture radiculaire | Dent qui bouge, douleur profonde | Très élevée – urgence immédiate |
+| Dent expulsée (avulsion) | Dent complètement sortie | Critique – agir dans les 30 minutes |
+
+## Gestes d'urgence immédiats
+
+### Si la dent est ébréchée ou cassée (fragment retrouvé)
+1. Récupérez le fragment et **conservez-le dans du lait ou de la salive** (jamais dans l'eau du robinet).
+2. Rincez délicatement votre bouche à l'eau tiède.
+3. Couvrez la zone avec de la **paraffine dentaire** ou du chewing-gum sans sucre si le bord tranchant blesse la joue ou la langue.
+4. Appelez votre dentiste pour un rendez-vous urgent.
+
+### Si la dent est complètement expulsée (avulsion)
+C'est la situation la plus critique :
+1. **Ne touchez jamais la racine** – tenez la dent par la couronne (la partie blanche visible).
+2. Si la dent est sale, rincez-la **une seconde** à l'eau propre sans frotter.
+3. Tentez de **remettre la dent dans son alvéole** et mordez doucement sur un tissu propre.
+4. Si impossible, placez-la dans **du lait entier** ou sous la langue (entre joue et gencive).
+5. **Consultez dans les 30 à 60 minutes maximum** : passé ce délai, les chances de réimplantation chutent drastiquement.
+
+### Ce qu'il ne faut surtout pas faire
+- Ne faites pas tremper la dent dans de l'eau du robinet.
+- N'utilisez pas d'antiseptique concentré sur la plaie.
+- Ne recousez pas vous-même avec du fil ou du scotch.
+- N'ignorez pas une dent "qui ne fait pas mal" : une fracture radiculaire peut être silencieuse.
+
+## Douleur : comment la soulager en attendant ?
+
+- **Ibuprofène** (400 mg) ou **paracétamol** (1 000 mg) : calment efficacement.
+- **Clou de girofle** (eugénol) ou huile essentielle de clou de girofle : calme temporairement la pulpe exposée.
+- Évitez les températures extrêmes (boissons très froides ou chaudes).
+
+## Solutions de reconstruction après une fracture
+
+### 1. Composite (résine)
+Pour les fractures légères à modérées. Le dentiste reconstitue le bord ou la forme manquante avec une résine collée de la couleur de la dent. Rapide (une séance), économique.
+
+### 2. Couronne dentaire
+Indiquée quand une grande partie de la couronne est perdue ou que la dent est fragilisée. Protège la dent dans sa totalité.
+
+### 3. Pivot et couronne
+Si la fracture a touché le nerf (traitement canalaire nécessaire), un pivot en fibre de verre ancre la future couronne dans la racine.
+
+### 4. Implant dentaire
+Si la dent ne peut pas être sauvée, l'implant est la solution fixe la plus proche d'une dent naturelle. Pose possible après cicatrisation.
+
+### 5. Réimplantation
+En cas d'avulsion, si la dent est arrivée dans les temps, le dentiste peut la réimplanter et la solidariser aux dents voisines le temps de la cicatrisation.
+
+## Prévention des fractures dentaires à Dakar
+
+- Portez un **protège-dents** lors de sports de contact (football, lutte, arts martiaux).
+- Traitez le **bruxisme** avec une gouttière nocturne avant que l'usure ne fragilise les dents.
+- Évitez de croquer des aliments ultra-durs (glaçons, os, boutons de carapace).
+- Consultez régulièrement : une carie ou une fissure détectée tôt évite la fracture.
+
+La Clinique DABIA à Dakar prend en charge les urgences dentaires. Contactez-nous dès que possible en cas de fracture.`,
+    faq: [
+      {
+        q: "Une dent cassée sans douleur est-elle une urgence ?",
+        a: "Pas nécessairement une urgence absolue, mais consultez dans les 48h. Une fracture silencieuse peut cacher une atteinte de la racine ou permettre à une carie de progresser rapidement.",
+      },
+      {
+        q: "Peut-on coller soi-même un éclat de dent ?",
+        a: "Non. Les colles grand public ne résistent pas aux forces de mastication et peuvent blesser la gencive. Seul un composite dentaire collé par un praticien est fiable.",
+      },
+      {
+        q: "Une dent dévitalisée casse-t-elle plus facilement ?",
+        a: "Oui. Sans apport sanguin et nerveux, la dent devient plus fragile. C'est pourquoi une couronne est recommandée après toute dévitalisation.",
+      },
+      {
+        q: "Le prix d'une urgence dent cassée à Dakar ?",
+        a: "La consultation d'urgence est généralement comprise entre 10 000 et 20 000 FCFA. Le coût du traitement dépend de la solution choisie (composite, couronne, implant).",
+      },
+    ],
+  },
+  {
+    slug: "parodontite-dakar-symptomes-traitement-prevention",
+    title: "Parodontite à Dakar : symptômes, traitement et prévention du déchaussement des dents",
+    description:
+      "La parodontite est la principale cause de perte de dents après 40 ans. Découvrez les signes d'alerte, les traitements disponibles à Dakar et comment stopper le déchaussement dentaire.",
+    date: "2026-04-22",
+    category: "Prévention",
+    tags: [
+      "parodontite dakar",
+      "déchaussement des dents",
+      "gencives dakar",
+      "parodontologie dakar",
+      "dentiste dakar",
+      "gingivite",
+    ],
+    author: AUTHORS.sao,
+    cover: parodontiteCover,
+    readingMinutes: 11,
+    content: `La **parodontite** (aussi appelée maladie parodontale ou maladie des gencives) est une infection chronique qui détruit progressivement les tissus qui maintiennent les dents en place : la gencive, le ligament alvéolo-dentaire et l'os. Elle est souvent silencieuse au début, ce qui explique pourquoi elle est découverte tard et représente la **première cause de perte de dents chez l'adulte de plus de 40 ans** au Sénégal comme ailleurs.
+
+## Gingivite vs Parodontite : quelle différence ?
+
+La gingivite est une inflammation réversible de la gencive. La parodontite est son évolution non traitée : l'infection descend sous la gencive, forme des **poches parodontales** et détruit l'os.
+
+| | Gingivite | Parodontite |
+|---|---|---|
+| Atteinte | Gencive uniquement | Gencive + ligament + os |
+| Réversibilité | Totalement réversible | Partiellement irréversible |
+| Douleur | Souvent absente | Rare sauf abcès |
+| Traitement | Détartrage + hygiène | Surfaçage ± chirurgie |
+
+## Symptômes : comment reconnaître une parodontite ?
+
+### Signes précoces (souvent ignorés)
+- Gencives qui saignent au brossage ou spontanément.
+- Gencives rouges, gonflées ou qui s'éloignent du collet de la dent.
+- Mauvaise haleine persistante malgré le brossage.
+
+### Signes avancés
+- **Dents qui bougent** ou changent de position.
+- **Espaces qui s'élargissent** entre les dents (diastèmes nouveaux).
+- Gencives qui descendent (récession) : les dents « paraissent plus longues ».
+- **Abcès parodontal** : gonflement douloureux au niveau de la gencive.
+- Sensation de dents décollées lors de la mastication.
+- Perte de dents spontanée dans les cas très évolués.
+
+> **Attention** : la parodontite évolue par poussées. Entre deux poussées, la douleur peut disparaître complètement, créant une fausse impression de guérison.
+
+## Facteurs de risque à Dakar
+
+- **Tabac** : le tabagisme (y compris chicha et cigare) est le facteur de risque le plus important. Il masque les signes inflammatoires et réduit la réponse au traitement.
+- **Diabète** : le diabète mal équilibré aggrave la parodontite, et la parodontite aggrave le diabète. Lien bidirectionnel démontré.
+- **Stress chronique** : réduit les défenses immunitaires locales.
+- **Génétique** : certaines familles sont plus susceptibles.
+- **Hygiène insuffisante** : accumulation de plaque et tartre.
+- **Grossesse** : les hormones peuvent aggraver une gingivite latente.
+
+## Diagnostic : le sondage parodontal
+
+Le diagnostic de parodontite nécessite un **sondage parodontal** : le dentiste ou parodontologue mesure avec une sonde millimétrique la profondeur des poches autour de chaque dent. Une poche ≥ 4 mm indique une atteinte parodontale. Une radio panoramique ou CBCT complète le bilan pour évaluer la perte osseuse.
+
+## Traitements de la parodontite à Dakar
+
+### Phase 1 : Traitement initial non chirurgical
+
+**Détartrage-surfaçage radiculaire (DSR)**
+C'est le traitement de référence. Sous anesthésie locale, le praticien nettoie en profondeur les poches parodontales avec des curettes ultrasoniques et manuelles pour éliminer le tartre sous-gingival et les bactéries adhérentes à la racine. Souvent réalisé en 2 à 4 séances.
+
+**Réévaluation à 6–8 semaines**
+Le praticien mesure à nouveau les poches pour évaluer la réponse au traitement.
+
+### Phase 2 : Chirurgie parodontale (si nécessaire)
+
+Quand les poches restent profondes malgré le surfaçage :
+- **Chirurgie d'accès (lambeau)** : incision gingivale pour accéder et décontaminer la racine sous vision directe.
+- **Greffe osseuse ou régénération tissulaire guidée (RTG)** : comblement de la perte osseuse avec des substituts osseux et membranes.
+- **Greffe gingivale** : recouvre les racines exposées par la récession.
+
+### Phase 3 : Maintenance parodontale
+
+La parodontite ne guérit pas définitivement : elle se contrôle. Après traitement, le patient entre en **maintenance tous les 3 à 4 mois** avec des séances de détartrage et sondage. L'arrêt de la maintenance est la principale cause de récidive.
+
+## Lien entre parodontite et santé générale
+
+Des études robustes montrent des associations entre la parodontite et :
+- **Diabète** : contrôle glycémique plus difficile.
+- **Maladies cardiovasculaires** : athérosclérose accélérée.
+- **Accouchement prématuré** : risque accru chez la femme enceinte atteinte.
+- **Pneumonies d'aspiration** : chez les personnes âgées.
+
+Soigner ses gencives, c'est aussi protéger sa santé générale.
+
+## Prévention de la parodontite
+
+1. **Brossage 2 fois par jour** avec brosse souple, technique de Bass.
+2. **Fil dentaire ou brossettes** inter-dentaires chaque soir.
+3. **Détartrage professionnel** tous les 6 mois.
+4. **Arrêt du tabac** : amélioration visible en quelques mois.
+5. **Contrôle du diabète** si concerné.
+6. **Consultation précoce** dès les premiers saignements.
+
+À la Clinique DABIA à Dakar, nous réalisons le bilan parodontal complet et la prise en charge non chirurgicale des parodontites. N'attendez pas que vos dents bougent pour consulter.`,
+    faq: [
+      {
+        q: "Peut-on guérir complètement d'une parodontite ?",
+        a: "On ne guérit pas à proprement parler : l'os perdu ne repousse pas totalement. Mais un traitement adapté suivi d'une maintenance régulière stoppe la progression et stabilise la maladie.",
+      },
+      {
+        q: "Quel est le prix d'un traitement parodontal à Dakar ?",
+        a: "Le détartrage-surfaçage radiculaire complet coûte généralement entre 60 000 et 150 000 FCFA selon la sévérité et le nombre de séances. Un devis vous est remis après le bilan.",
+      },
+      {
+        q: "La parodontite est-elle contagieuse ?",
+        a: "Les bactéries parodontopathogènes peuvent se transmettre dans les couples via la salive. Cela ne signifie pas que la maladie se déclenche automatiquement chez le partenaire.",
+      },
+      {
+        q: "Peut-on poser des implants avec une parodontite ?",
+        a: "Non. La parodontite active doit être traitée et stabilisée avant toute pose d'implant. Un implant posé dans un contexte parodontal non maîtrisé risque de développer une péri-implantite.",
       },
     ],
   },

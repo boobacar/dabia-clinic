@@ -918,4 +918,34 @@
       <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/ramadan_urgence.avif</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/couronne-dentaire-dakar-prix-pose-duree-vie</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/blanchiment_dentaire_eclat.avif</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/dents-sensibles-froid-chaud-dakar-causes-traitements</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/soin_carie_prix.avif</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/tartre-plaque-dentaire-dakar-comment-eliminer</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/detartrage_prix.avif</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/dent-cassee-dakar-urgence-quoi-faire-solutions</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/urgence_dentaire_action.avif</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cliniquedentairedabia.com/blog/parodontite-dakar-symptomes-traitement-prevention</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.cliniquedentairedabia.com/../assets/blog/gingivite_traitement.avif</image:loc>
+    </image:image>
+  </url>
 </urlset>
