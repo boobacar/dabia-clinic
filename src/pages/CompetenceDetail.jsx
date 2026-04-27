@@ -305,6 +305,18 @@ const MONEY_PAGE_CONTENT = {
   },
 };
 
+const MONEY_PAGE_LINKS = {
+  "esthétique-dentaire": { tagPath: "/blog/tag/blanchiment-des-dents" },
+  parodontologie: { tagPath: "/blog/tag/gingivite" },
+  implantologie: { tagPath: "/blog/tag/implant-dentaire" },
+  endodontie: { tagPath: "/blog/tag/douleur-dentaire" },
+  "facettes-dentaires": { tagPath: "/blog/tag/blanchiment-des-dents" },
+  orthodontie: { tagPath: "/blog/tag/orthodontie" },
+  "greffe-osseuse": { tagPath: "/blog/tag/implant-dentaire" },
+  "blanchiment-dentaire": { tagPath: "/blog/tag/blanchiment-des-dents" },
+  pedodontie: { tagPath: "/blog/tag/dentiste-pediatrique-dakar" },
+};
+
 const RELATED_KEYWORDS = {
   "esthétique-dentaire": ["esthétique", "blanchiment", "facettes", "sourire"],
   parodontologie: ["gingivite", "parodontite", "détartrage", "saignement"],
@@ -447,6 +459,10 @@ const CompetenceDetail = () => {
   const url = `${origin}/competences/${slug}`;
   const description = (competence?.description || "").slice(0, 155);
   const moneyContent = MONEY_PAGE_CONTENT[slug];
+  const moneyLinks = MONEY_PAGE_LINKS[slug] || null;
+  const whatsappHref = `https://wa.me/221777039393?text=${encodeURIComponent(
+    `Bonjour Clinique DABIA, je souhaite un rendez-vous pour ${competence?.titre || "un soin dentaire"}.`
+  )}`;
   const faqEntities =
     moneyContent?.faq?.map((item) => ({
       "@type": "Question",
@@ -646,6 +662,46 @@ const CompetenceDetail = () => {
                     <p className="text-gray-700 mt-1 leading-relaxed">{item.a}</p>
                   </article>
                 ))}
+              </div>
+            </section>
+
+            <section className="bg-[#f8f6ef] rounded-xl border border-[#e8e2cc] p-5 md:p-6">
+              <h2 className="text-2xl font-bold text-[#ad9d64] mb-3">
+                Devis, prise en charge et rendez-vous rapide
+              </h2>
+              <ul className="list-disc pl-5 space-y-2 text-gray-700 mb-5">
+                <li>Un devis détaillé est remis après examen clinique et plan de traitement.</li>
+                <li>
+                  Nous vous aidons à préparer votre dossier IPM/mutuelle sur la page
+                  {" "}
+                  <Link to="/infos/assurances" className="text-blue-700 hover:underline">
+                    Assurances
+                  </Link>
+                  .
+                </li>
+                <li>
+                  Besoin d’une réponse rapide ? Contactez-nous par téléphone ou WhatsApp pour être orienté selon l’urgence.
+                </li>
+              </ul>
+
+              <div className="flex flex-wrap gap-3">
+                <Link to={`/rendez-vous?motif=${encodeURIComponent(slug)}`} className="btn-cta">
+                  Prendre rendez-vous
+                </Link>
+                <a
+                  href={whatsappHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-cta"
+                  aria-label={`Contacter la clinique sur WhatsApp pour ${competence.titre}`}
+                >
+                  WhatsApp rapide
+                </a>
+                {moneyLinks?.tagPath && (
+                  <Link to={moneyLinks.tagPath} className="btn-cta">
+                    Conseils liés ({competence.titre})
+                  </Link>
+                )}
               </div>
             </section>
           </motion.div>
