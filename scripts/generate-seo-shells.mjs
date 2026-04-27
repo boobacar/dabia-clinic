@@ -9,6 +9,24 @@ const POSTS_SOURCE_PATH = join(ROOT, "src", "data", "posts.js");
 const COMPETENCES_PATH = join(ROOT, "src", "data", "competences.js");
 const TECHNOLOGIES_PATH = join(ROOT, "src", "data", "technologies.js");
 
+const TAG_SLUGS = [
+  "dentiste-dakar",
+  "urgence-dentaire",
+  "implant-dentaire",
+  "orthodontie",
+  "blanchiment-des-dents",
+  "prix",
+  "tarif-dentiste-dakar",
+  "prevention",
+  "douleur-dentaire",
+  "detartrage",
+  "gingivite",
+  "mauvaise-haleine",
+  "invisalign-dakar",
+  "caries",
+  "dentiste-pediatrique-dakar",
+];
+
 const STATIC_PATHS = [
   "/",
   "/blog",
@@ -300,6 +318,18 @@ function buildRouteCatalog({ posts, competences, technologies }) {
       h1: item.title,
       intro: `Technologie utilisée à la Clinique Dentaire DABIA pour améliorer votre prise en charge.`,
       type: "article",
+    });
+  }
+
+  for (const slug of TAG_SLUGS) {
+    const label = toTitleCase(slug.replaceAll("-", " "));
+    routes.push({
+      path: `/blog/tag/${slug}`,
+      title: `${label} – Articles & conseils | Clinique Dentaire DABIA`,
+      description: `Articles du blog de la Clinique Dentaire DABIA à Dakar sur le thème « ${label} ».`,
+      h1: label,
+      intro: `Retrouvez nos articles et conseils pratiques sur ${label.toLowerCase()} à Dakar.`,
+      type: "website",
     });
   }
 
