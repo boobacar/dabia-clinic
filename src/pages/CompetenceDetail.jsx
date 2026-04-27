@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { useParams, Link } from "react-router-dom";
 import { POSTS } from "../data/posts"; // ← articles du blog pour les "Articles liés"
@@ -474,6 +474,23 @@ const CompetenceDetail = () => {
   const moneyLinks = MONEY_PAGE_LINKS[slug] || null;
   const [ctaVariant, setCtaVariant] = useState("balanced");
   const pagePath = `/competences/${slug}`;
+  const scrollMilestonesRef = useRef(new Set());
+  const timedMilestonesRef = useRef(new Set());
+  const sectionSeenRef = useRef(new Set());
+  const faqSectionRef = useRef(null);
+  const conversionSectionRef = useRef(null);
+
+  const trackCompetenceEvent = useCallback(
+    (eventName, extra = {}) => {
+      sendEvent(eventName, {
+        page_path: pagePath,
+        competence_slug: slug,
+        cta_variant: ctaVariant,
+        ...extra,
+      });
+    },
+    [pagePath, slug, ctaVariant]
+  );
 
   useEffect(() => {
     if (!moneyContent) return;
@@ -486,6 +503,80 @@ const CompetenceDetail = () => {
       cta_variant: variant,
     });
   }, [moneyContent, pagePath, slug]);
+
+  useEffect(() => {
+    if (!moneyContent || typeof window === "undefined") return;
+
+    scrollMilestonesRef.current = new Set();
+
+    const thresholds = [25, 50, 75, 90];
+    const onScroll = () => {
+      const doc = document.documentElement;
+      const maxScroll = doc.scrollHeight - window.innerHeight;
+      if (maxScroll <= 0) return;
+      const scrolled = (window.scrollY / maxScroll) * 100;
+
+      thresholds.forEach((threshold) => {
+        if (scrolled >= threshold && !scrollMilestonesRef.current.has(threshold)) {
+          scrollMilestonesRef.current.add(threshold);
+          trackCompetenceEvent("competence_scroll_depth", {
+            scroll_threshold: threshold,
+          });
+        }
+      });
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [moneyContent, trackCompetenceEvent]);
+
+  useEffect(() => {
+    if (!moneyContent || typeof window === "undefined") return;
+
+    timedMilestonesRef.current = new Set();
+    const milestones = [30, 90];
+
+    const timers = milestones.map((seconds) =>
+      window.setTimeout(() => {
+        if (timedMilestonesRef.current.has(seconds)) return;
+        timedMilestonesRef.current.add(seconds);
+        trackCompetenceEvent("competence_engaged_time", {
+          engaged_seconds: seconds,
+        });
+      }, seconds * 1000)
+    );
+
+    return () => timers.forEach((t) => window.clearTimeout(t));
+  }, [moneyContent, trackCompetenceEvent]);
+
+  useEffect(() => {
+    if (!moneyContent || typeof window === "undefined") return;
+    if (!faqSectionRef.current && !conversionSectionRef.current) return;
+
+    sectionSeenRef.current = new Set();
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          const sectionName = entry.target.getAttribute("data-section-name");
+          if (!sectionName || sectionSeenRef.current.has(sectionName)) return;
+          sectionSeenRef.current.add(sectionName);
+          trackCompetenceEvent("competence_section_view", {
+            section_name: sectionName,
+          });
+        });
+      },
+      { threshold: 0.35 }
+    );
+
+    if (faqSectionRef.current) observer.observe(faqSectionRef.current);
+    if (conversionSectionRef.current) observer.observe(conversionSectionRef.current);
+
+    return () => observer.disconnect();
+  }, [moneyContent, trackCompetenceEvent]);
 
   const ctaLabels = {
     rdv:
@@ -717,7 +808,11 @@ const CompetenceDetail = () => {
               </ol>
             </section>
 
-            <section className="bg-white rounded-xl border p-5 md:p-6">
+            <section
+              ref={faqSectionRef}
+              data-section-name="faq"
+              className="bg-white rounded-xl border p-5 md:p-6"
+            >
               <h2 className="text-2xl font-bold text-[#ad9d64] mb-4">
                 Questions fréquentes
               </h2>
@@ -731,7 +826,11 @@ const CompetenceDetail = () => {
               </div>
             </section>
 
-            <section className="bg-[#f8f6ef] rounded-xl border border-[#e8e2cc] p-5 md:p-6">
+            <section
+              ref={conversionSectionRef}
+              data-section-name="conversion"
+              className="bg-[#f8f6ef] rounded-xl border border-[#e8e2cc] p-5 md:p-6"
+            >
               <h2 className="text-2xl font-bold text-[#ad9d64] mb-3">
                 Devis, prise en charge et rendez-vous rapide
               </h2>
@@ -740,7 +839,11 @@ const CompetenceDetail = () => {
                 <li>
                   Nous vous aidons à préparer votre dossier IPM/mutuelle sur la page
                   {" "}
-                  <Link to="/infos/assurances" className="text-blue-700 hover:underline">
+                  <Link
+                    to="/infos/assurances"
+                    className="text-blue-700 hover:underline"
+                    onClick={() => onConversionClick("assurances_link")}
+                  >
                     Assurances
                   </Link>
                   .
@@ -806,6 +909,18 @@ const CompetenceDetail = () => {
             to="/rendez-vous"
             className="btn-cta"
             aria-label="Prendre rendez-vous à la Clinique Dentaire DABIA"
+            onClick={() => {
+              trackCompetenceEvent("competence_primary_cta_click", {
+                cta_position: "bottom",
+                cta_type: "rdv",
+              });
+              sendEvent("cta_rendez_vous_click", {
+                page_path: pagePath,
+                cta_type: "rdv_bottom_competence",
+                cta_variant: ctaVariant,
+                competence_slug: slug,
+              });
+            }}
           >
             Prendre un rendez-vous
           </Link>
@@ -819,6 +934,12 @@ const CompetenceDetail = () => {
                 to={`/competences/${prevSlug}`}
                 className="text-blue-700 hover:underline"
                 aria-label="Compétence précédente"
+                onClick={() =>
+                  trackCompetenceEvent("competence_navigation_click", {
+                    direction: "prev",
+                    target_slug: prevSlug,
+                  })
+                }
               >
                 ← {competencesData[prevSlug].titre}
               </Link>
@@ -830,6 +951,12 @@ const CompetenceDetail = () => {
                 to={`/competences/${nextSlug}`}
                 className="text-blue-700 hover:underline"
                 aria-label="Compétence suivante"
+                onClick={() =>
+                  trackCompetenceEvent("competence_navigation_click", {
+                    direction: "next",
+                    target_slug: nextSlug,
+                  })
+                }
               >
                 {competencesData[nextSlug].titre} →
               </Link>
@@ -849,7 +976,15 @@ const CompetenceDetail = () => {
                   key={p.slug}
                   className="bg-white rounded-xl overflow-hidden border hover:shadow-lg transition"
                 >
-                  <Link to={`/blog/${p.slug}`}>
+                  <Link
+                    to={`/blog/${p.slug}`}
+                    onClick={() =>
+                      trackCompetenceEvent("competence_related_article_click", {
+                        article_slug: p.slug,
+                        click_zone: "image",
+                      })
+                    }
+                  >
                     <img
                       src={p.cover}
                       alt={p.title}
@@ -867,6 +1002,12 @@ const CompetenceDetail = () => {
                       <Link
                         className="hover:text-[#bb2988]"
                         to={`/blog/${p.slug}`}
+                        onClick={() =>
+                          trackCompetenceEvent("competence_related_article_click", {
+                            article_slug: p.slug,
+                            click_zone: "title",
+                          })
+                        }
                       >
                         {p.title}
                       </Link>
