@@ -77,6 +77,134 @@ const competencesData = {
 // ------------------------------------------------------------
 //  Mots-clés par compétence → sélection des articles liés
 // ------------------------------------------------------------
+const MONEY_PAGE_CONTENT = {
+  implantologie: {
+    accroche:
+      "L’implantologie est indiquée lorsqu’une dent manquante gêne la mastication, l’esthétique du sourire ou la stabilité des dents voisines.",
+    pointsForts: [
+      "Bilan clinique + imagerie pour confirmer la quantité d’os disponible.",
+      "Plan de traitement personnalisé (1 dent, plusieurs dents ou réhabilitation complète).",
+      "Suivi post-opératoire structuré pour sécuriser la cicatrisation.",
+    ],
+    deroule: [
+      "Consultation de diagnostic: examen, radio/CBCT et discussion des objectifs.",
+      "Phase chirurgicale: pose de l’implant sous anesthésie locale.",
+      "Phase prothétique: couronne/bridge après intégration osseuse.",
+      "Contrôles réguliers et maintenance pour la durabilité.",
+    ],
+    faq: [
+      {
+        q: "Combien de temps dure un traitement implantaire ?",
+        a: "La durée dépend du volume osseux, du nombre d’implants et de la cicatrisation. Après le bilan, un calendrier clair vous est remis.",
+      },
+      {
+        q: "Peut-on poser un implant si la dent est absente depuis longtemps ?",
+        a: "Oui, dans de nombreux cas. Un examen précis permet d’évaluer si une préparation osseuse est nécessaire avant la pose.",
+      },
+    ],
+  },
+  orthodontie: {
+    accroche:
+      "L’orthodontie améliore l’alignement dentaire, l’occlusion et facilite l’hygiène quotidienne, chez l’adolescent comme chez l’adulte.",
+    pointsForts: [
+      "Choix thérapeutique selon votre profil: aligneurs transparents ou appareils conventionnels.",
+      "Objectifs fonctionnels et esthétiques définis avant le début du traitement.",
+      "Contrôles réguliers pour ajuster le mouvement dentaire en douceur.",
+    ],
+    deroule: [
+      "Bilan orthodontique complet et photos cliniques.",
+      "Simulation du plan de traitement et validation des étapes.",
+      "Pose des dispositifs et visites de contrôle programmées.",
+      "Phase de contention pour stabiliser le résultat.",
+    ],
+    faq: [
+      {
+        q: "Un adulte peut-il commencer un traitement orthodontique ?",
+        a: "Oui. L’orthodontie adulte est fréquente et peut être adaptée aux contraintes esthétiques et professionnelles.",
+      },
+      {
+        q: "Combien de temps faut-il porter une contention ?",
+        a: "La contention est indispensable pour maintenir les résultats. La durée varie selon les cas et vous est expliquée dès le plan initial.",
+      },
+    ],
+  },
+  "blanchiment-dentaire": {
+    accroche:
+      "Le blanchiment dentaire professionnel vise à éclaircir la teinte des dents tout en respectant l’émail et la sensibilité individuelle.",
+    pointsForts: [
+      "Vérification préalable: absence de caries actives et contrôle gingival.",
+      "Protocole encadré médicalement pour limiter la sensibilité.",
+      "Conseils personnalisés pour prolonger l’éclat du sourire.",
+    ],
+    deroule: [
+      "Consultation préalable avec diagnostic de teinte.",
+      "Nettoyage/détartrage si nécessaire avant le protocole.",
+      "Séance de blanchiment au cabinet ou protocole mixte selon indication.",
+      "Suivi et recommandations alimentaires/hygiène post-traitement.",
+    ],
+    faq: [
+      {
+        q: "Le blanchiment abîme-t-il les dents ?",
+        a: "Réalisé au cabinet et sur bonne indication, le blanchiment respecte l’émail. Le protocole est ajusté pour votre confort.",
+      },
+      {
+        q: "Le résultat est-il durable ?",
+        a: "Le résultat dépend des habitudes (tabac, café, thé) et de l’hygiène. Un entretien périodique peut être proposé.",
+      },
+    ],
+  },
+  "facettes-dentaires": {
+    accroche:
+      "Les facettes dentaires corrigent couleur, forme et petits défauts d’alignement pour un rendu harmonieux et naturel.",
+    pointsForts: [
+      "Analyse esthétique du sourire avant toute préparation.",
+      "Choix de la teinte et de la forme en cohérence avec votre visage.",
+      "Approche conservatrice pour préserver un maximum de structure dentaire.",
+    ],
+    deroule: [
+      "Bilan initial et définition du projet esthétique.",
+      "Préparation minimale des dents selon indication.",
+      "Essayage puis collage des facettes avec ajustements précis.",
+      "Contrôle de l’occlusion et conseils d’entretien.",
+    ],
+    faq: [
+      {
+        q: "Les facettes ont-elles un rendu naturel ?",
+        a: "Oui, quand la planification est personnalisée. Le choix de la teinte et de la translucidité est adapté à votre sourire.",
+      },
+      {
+        q: "Combien de temps durent les facettes ?",
+        a: "Avec une bonne hygiène et des contrôles réguliers, les facettes peuvent durer de nombreuses années.",
+      },
+    ],
+  },
+  endodontie: {
+    accroche:
+      "L’endodontie permet de traiter la douleur liée à l’infection pulpaire et de conserver la dent quand cela est possible.",
+    pointsForts: [
+      "Diagnostic précis de la cause (carie profonde, fissure, infection).",
+      "Traitement canalaire avec protocole de désinfection rigoureux.",
+      "Restauration finale pour protéger la dent traitée.",
+    ],
+    deroule: [
+      "Examen clinique + imagerie pour confirmer l’indication.",
+      "Anesthésie locale puis nettoyage des canaux.",
+      "Obturation étanche et contrôle radiographique.",
+      "Reconstitution de la dent (composite/couronne selon le cas).",
+    ],
+    faq: [
+      {
+        q: "Le traitement canalaire est-il douloureux ?",
+        a: "Le traitement est réalisé sous anesthésie locale. L’objectif est précisément de soulager la douleur et d’éliminer l’infection.",
+      },
+      {
+        q: "Faut-il toujours poser une couronne après ?",
+        a: "Pas systématiquement. Cela dépend de la quantité de dent restante et du risque de fracture après traitement.",
+      },
+    ],
+  },
+};
+
 const RELATED_KEYWORDS = {
   "esthétique-dentaire": ["esthétique", "blanchiment", "facettes", "sourire"],
   parodontologie: ["gingivite", "parodontite", "détartrage", "saignement"],
@@ -218,6 +346,16 @@ const CompetenceDetail = () => {
     : `${origin}/og-image.webp`;
   const url = `${origin}/competences/${slug}`;
   const description = (competence?.description || "").slice(0, 155);
+  const moneyContent = MONEY_PAGE_CONTENT[slug];
+  const faqEntities =
+    moneyContent?.faq?.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    })) || [];
 
   const jsonLdService = competence
     ? {
@@ -261,24 +399,27 @@ const CompetenceDetail = () => {
     ? {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        mainEntity: [
-          {
-            "@type": "Question",
-            name: `Combien de temps dure un traitement de ${competence.titre.toLowerCase()} ?`,
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "La durée dépend du diagnostic et du plan de traitement personnalisé. Un devis clair et un planning vous sont remis après l’examen clinique.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: `Le traitement de ${competence.titre.toLowerCase()} est-il douloureux ?`,
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Les soins sont réalisés sous anesthésie locale et avec des protocoles modernes pour maximiser le confort. Des conseils post-soins vous sont donnés.",
-            },
-          },
-        ],
+        mainEntity:
+          faqEntities.length > 0
+            ? faqEntities
+            : [
+                {
+                  "@type": "Question",
+                  name: `Combien de temps dure un traitement de ${competence.titre.toLowerCase()} ?`,
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "La durée dépend du diagnostic et du plan de traitement personnalisé. Un devis clair et un planning vous sont remis après l’examen clinique.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: `Le traitement de ${competence.titre.toLowerCase()} est-il douloureux ?`,
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Les soins sont réalisés sous anesthésie locale et avec des protocoles modernes pour maximiser le confort. Des conseils post-soins vous sont donnés.",
+                  },
+                },
+              ],
       }
     : null;
 
@@ -362,6 +503,53 @@ const CompetenceDetail = () => {
         >
           {competence.description}
         </motion.p>
+
+        {moneyContent && (
+          <motion.div variants={childVariant} className="space-y-8 mb-10">
+            <section className="bg-white rounded-xl border p-5 md:p-6">
+              <h2 className="text-2xl font-bold text-[#ad9d64] mb-3">
+                {competence.titre}: prise en charge à Dakar
+              </h2>
+              <p className="text-gray-700 leading-relaxed">{moneyContent.accroche}</p>
+            </section>
+
+            <section className="bg-white rounded-xl border p-5 md:p-6">
+              <h2 className="text-2xl font-bold text-[#ad9d64] mb-3">
+                Points clés du traitement
+              </h2>
+              <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                {moneyContent.pointsForts.map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </ul>
+            </section>
+
+            <section className="bg-white rounded-xl border p-5 md:p-6">
+              <h2 className="text-2xl font-bold text-[#ad9d64] mb-3">
+                Comment se déroule le traitement ?
+              </h2>
+              <ol className="list-decimal pl-5 space-y-2 text-gray-700">
+                {moneyContent.deroule.map((step) => (
+                  <li key={step}>{step}</li>
+                ))}
+              </ol>
+            </section>
+
+            <section className="bg-white rounded-xl border p-5 md:p-6">
+              <h2 className="text-2xl font-bold text-[#ad9d64] mb-4">
+                Questions fréquentes
+              </h2>
+              <div className="space-y-4">
+                {moneyContent.faq.map((item) => (
+                  <article key={item.q}>
+                    <h3 className="font-semibold text-gray-900">{item.q}</h3>
+                    <p className="text-gray-700 mt-1 leading-relaxed">{item.a}</p>
+                  </article>
+                ))}
+              </div>
+            </section>
+          </motion.div>
+        )}
 
         <motion.div className="text-center" variants={childVariant}>
           <Link

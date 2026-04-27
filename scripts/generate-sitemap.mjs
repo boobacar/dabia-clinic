@@ -87,7 +87,8 @@ const readFileSafe = async (p) => {
 };
 
 const iso = (d = new Date()) => new Date(d).toISOString().slice(0, 10);
-const abs = (p) => `${SITE_URL}${p.startsWith("/") ? p : `/${p}`}`;
+const abs = (p) =>
+  encodeURI(`${SITE_URL}${p.startsWith("/") ? p : `/${p}`}`);
 
 const urlNode = ({ loc, lastmod, changefreq = "weekly", priority = "0.7" }) =>
   `
