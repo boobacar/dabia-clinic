@@ -149,6 +149,33 @@ export default function Galerie() {
         </div>
       </div>
 
+      <div className="grid md:grid-cols-3 gap-4 mb-8">
+        <article className="bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+          <h2 className="font-bold text-[#bb2988] mb-2">Transparence des résultats</h2>
+          <p className="text-sm text-gray-700 leading-relaxed">
+            Les visuels publiés illustrent des cas réels, dans le respect de la
+            confidentialité et avec consentement. Chaque situation clinique reste
+            unique et nécessite un bilan personnalisé.
+          </p>
+        </article>
+        <article className="bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+          <h2 className="font-bold text-[#bb2988] mb-2">Objectif pédagogique</h2>
+          <p className="text-sm text-gray-700 leading-relaxed">
+            La galerie permet de mieux comprendre les possibilités thérapeutiques :
+            alignement, esthétique, restauration fonctionnelle et amélioration du
+            sourire dans la durée.
+          </p>
+        </article>
+        <article className="bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+          <h2 className="font-bold text-[#bb2988] mb-2">Parcours sur mesure</h2>
+          <p className="text-sm text-gray-700 leading-relaxed">
+            Avant tout traitement, nous réalisons une évaluation complète (clinique,
+            photos, imagerie) afin de proposer un plan réaliste, progressif et
+            adapté à vos priorités médicales et esthétiques.
+          </p>
+        </article>
+      </div>
+
       {tab === "aa" && (
         <>
           <h2 className="text-2xl font-semibold text-[#ad9d64] mb-4">

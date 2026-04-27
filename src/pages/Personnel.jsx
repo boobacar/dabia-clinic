@@ -2,13 +2,13 @@ import React from "react";
 import StaffCard from "../components/StaffCard";
 import Seo from "../components/Seo";
 import Breadcrumbs from "../components/Breadcrumbs";
+import { Link } from "react-router-dom";
 
 // Importation des images
 import admin from "../assets/admin.webp";
 import assistanteDent from "../assets/assistanteDent.webp";
 import assistante from "../assets/assistante.webp";
 import sao from "../assets/sao.webp";
-import { Link } from "react-router-dom";
 
 const personnel = [
   {
@@ -20,9 +20,9 @@ const personnel = [
   {
     nom: "Moustapha FALL",
     poste: "Office Manager – Administrateur de la clinique dentaire DABIA",
-    bio: `Il veille au bon fonctionnement global de la clinique, en supervisant à la fois l’équipe administrative et l’organisation des services. Grâce à son sens aigu de la gestion et son engagement constant envers la qualité des soins, il s’assure que chaque patient bénéficie d’une expérience fluide, accueillante et professionnelle. 
-    
-  Pilier de notre structure, Moustapha coordonne les opérations quotidiennes, gère les ressources humaines et veille à l’amélioration continue des processus internes, dans le respect des standards les plus élevés.`,
+    bio: `Il veille au bon fonctionnement global de la clinique, en supervisant à la fois l’équipe administrative et l’organisation des services. Grâce à son sens aigu de la gestion et son engagement constant envers la qualité des soins, il s’assure que chaque patient bénéficie d’une expérience fluide, accueillante et professionnelle.
+
+Pilier de notre structure, Moustapha coordonne les opérations quotidiennes, gère les ressources humaines et veille à l’amélioration continue des processus internes, dans le respect des standards les plus élevés.`,
     photo: admin,
   },
   {
@@ -41,7 +41,7 @@ const personnel = [
 
 const Personnel = () => {
   return (
-    <section className="py-35 px-4 max-w-7xl mx-auto mt-5">
+    <section className="py-28 px-4 max-w-7xl mx-auto mt-5">
       <Seo
         title="Notre équipe – Clinique Dentaire DABIA (Dakar)"
         description="Découvrez l’équipe de la Clinique Dentaire DABIA : chirurgiens-dentistes, assistantes et personnel administratif au service de votre sourire."
@@ -52,11 +52,20 @@ const Personnel = () => {
       <Breadcrumbs
         items={[{ label: "Accueil", href: "/" }, { label: "Notre équipe" }]}
       />
-      <h1 className="text-4xl font-bold text-center mb-10 text-[#ad9d64]">
+
+      <h1 className="text-4xl font-bold text-center mb-6 text-[#ad9d64]">
         Notre Équipe
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
+      <p className="text-center text-gray-700 max-w-4xl mx-auto mb-10 leading-relaxed">
+        La qualité d’un traitement dentaire repose autant sur l’expertise du praticien
+        que sur la coordination de toute l’équipe. À la Clinique Dentaire DABIA,
+        chaque professionnel a un rôle précis : vous accueillir, vous informer,
+        sécuriser vos soins et assurer un suivi sérieux après votre passage au
+        cabinet.
+      </p>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {personnel.map((membre, index) => (
           <StaffCard
             key={index}
@@ -66,6 +75,39 @@ const Personnel = () => {
             photo={membre.photo}
           />
         ))}
+      </div>
+
+      <div className="mt-12 grid md:grid-cols-2 gap-8">
+        <article className="bg-white shadow rounded-xl p-6 border border-gray-100">
+          <h2 className="text-xl font-bold mb-3 text-[#bb2988]">Notre méthode de travail</h2>
+          <ul className="list-disc ml-5 text-gray-700 space-y-2">
+            <li>Pré-consultation structurée avec collecte des antécédents médicaux.</li>
+            <li>Explication claire du diagnostic et des options de traitement.</li>
+            <li>Planification des rendez-vous par priorités (urgence, confort, esthétique).</li>
+            <li>Protocoles d’hygiène, stérilisation et traçabilité des instruments.</li>
+            <li>Contrôle post-soin pour vérifier l’évolution et ajuster si besoin.</li>
+          </ul>
+        </article>
+
+        <article className="bg-white shadow rounded-xl p-6 border border-gray-100">
+          <h2 className="text-xl font-bold mb-3 text-[#bb2988]">Pourquoi les patients nous choisissent</h2>
+          <p className="text-gray-700 leading-relaxed mb-3">
+            Nos patients recherchent une équipe disponible, une communication simple
+            et des soins fiables dans la durée. Nous prenons le temps de détailler
+            les bénéfices, les limites et l’entretien de chaque traitement afin de
+            vous aider à faire un choix éclairé.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            Cette transparence améliore la confiance, l’adhésion au plan de soins et
+            les résultats à long terme.
+          </p>
+        </article>
+      </div>
+
+      <div className="mt-10 text-center">
+        <Link to="/rendez-vous" className="btn-cta">
+          Prendre rendez-vous avec notre équipe
+        </Link>
       </div>
     </section>
   );
