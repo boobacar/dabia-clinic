@@ -1,8 +1,9 @@
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { useParams, Link } from "react-router-dom";
 import { POSTS } from "../data/posts"; // ← articles du blog pour les "Articles liés"
 import Seo from "../components/Seo";
+import { sendEvent } from "../analytics/ga4";
 
 import esthetique from "../assets/competences/esthetique.webp";
 import parodontologie from "../assets/competences/parodontologie.webp";
@@ -431,6 +432,17 @@ const childVariant = {
   animate: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5 } },
 };
 
+const CTA_VARIANTS = ["balanced", "whatsapp-first", "rdv-first"];
+
+function pickCompetenceCtaVariant(storageKey) {
+  if (typeof window === "undefined") return "balanced";
+  const existing = localStorage.getItem(storageKey);
+  if (existing && CTA_VARIANTS.includes(existing)) return existing;
+  const chosen = CTA_VARIANTS[Math.floor(Math.random() * CTA_VARIANTS.length)];
+  localStorage.setItem(storageKey, chosen);
+  return chosen;
+}
+
 // ------------------------------------------------------------
 // Composant
 // ------------------------------------------------------------
@@ -460,6 +472,60 @@ const CompetenceDetail = () => {
   const description = (competence?.description || "").slice(0, 155);
   const moneyContent = MONEY_PAGE_CONTENT[slug];
   const moneyLinks = MONEY_PAGE_LINKS[slug] || null;
+  const [ctaVariant, setCtaVariant] = useState("balanced");
+  const pagePath = `/competences/${slug}`;
+
+  useEffect(() => {
+    if (!moneyContent) return;
+    const storageKey = `dabia_competence_cta_ab:${slug}`;
+    const variant = pickCompetenceCtaVariant(storageKey);
+    setCtaVariant(variant);
+    sendEvent("competence_cta_ab_impression", {
+      page_path: pagePath,
+      competence_slug: slug,
+      cta_variant: variant,
+    });
+  }, [moneyContent, pagePath, slug]);
+
+  const ctaLabels = {
+    rdv:
+      ctaVariant === "rdv-first"
+        ? "Je prends RDV maintenant"
+        : ctaVariant === "whatsapp-first"
+          ? "Réserver ma consultation"
+          : "Prendre rendez-vous",
+    whatsapp:
+      ctaVariant === "whatsapp-first"
+        ? "WhatsApp (réponse rapide)"
+        : "WhatsApp rapide",
+    advice:
+      ctaVariant === "balanced"
+        ? `Voir les conseils liés (${competence?.titre || "soin"})`
+        : `Conseils liés (${competence?.titre || "soin"})`,
+  };
+
+  const ctaOrder =
+    ctaVariant === "whatsapp-first"
+      ? ["whatsapp", "rdv", "advice"]
+      : ctaVariant === "rdv-first"
+        ? ["rdv", "whatsapp", "advice"]
+        : ["rdv", "advice", "whatsapp"];
+
+  const onConversionClick = (ctaType) => {
+    sendEvent("competence_cta_ab_click", {
+      page_path: pagePath,
+      competence_slug: slug,
+      cta_variant: ctaVariant,
+      cta_type: ctaType,
+    });
+    sendEvent("cta_rendez_vous_click", {
+      page_path: pagePath,
+      cta_type: `${ctaType}_competence_ab`,
+      cta_variant: ctaVariant,
+      competence_slug: slug,
+    });
+  };
+
   const whatsappHref = `https://wa.me/221777039393?text=${encodeURIComponent(
     `Bonjour Clinique DABIA, je souhaite un rendez-vous pour ${competence?.titre || "un soin dentaire"}.`
   )}`;
@@ -685,23 +751,51 @@ const CompetenceDetail = () => {
               </ul>
 
               <div className="flex flex-wrap gap-3">
-                <Link to={`/rendez-vous?motif=${encodeURIComponent(slug)}`} className="btn-cta">
-                  Prendre rendez-vous
-                </Link>
-                <a
-                  href={whatsappHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-cta"
-                  aria-label={`Contacter la clinique sur WhatsApp pour ${competence.titre}`}
-                >
-                  WhatsApp rapide
-                </a>
-                {moneyLinks?.tagPath && (
-                  <Link to={moneyLinks.tagPath} className="btn-cta">
-                    Conseils liés ({competence.titre})
-                  </Link>
-                )}
+                {ctaOrder.map((cta) => {
+                  if (cta === "rdv") {
+                    return (
+                      <Link
+                        key="rdv"
+                        to={`/rendez-vous?motif=${encodeURIComponent(slug)}`}
+                        className={`btn-cta ${ctaVariant === "rdv-first" ? "ring-2 ring-[#ad9d64]/40" : ""}`}
+                        onClick={() => onConversionClick("rdv")}
+                      >
+                        {ctaLabels.rdv}
+                      </Link>
+                    );
+                  }
+
+                  if (cta === "whatsapp") {
+                    return (
+                      <a
+                        key="whatsapp"
+                        href={whatsappHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`btn-cta ${ctaVariant === "whatsapp-first" ? "ring-2 ring-green-500/40" : ""}`}
+                        aria-label={`Contacter la clinique sur WhatsApp pour ${competence.titre}`}
+                        onClick={() => onConversionClick("whatsapp")}
+                      >
+                        {ctaLabels.whatsapp}
+                      </a>
+                    );
+                  }
+
+                  if (cta === "advice" && moneyLinks?.tagPath) {
+                    return (
+                      <Link
+                        key="advice"
+                        to={moneyLinks.tagPath}
+                        className="btn-cta"
+                        onClick={() => onConversionClick("advice")}
+                      >
+                        {ctaLabels.advice}
+                      </Link>
+                    );
+                  }
+
+                  return null;
+                })}
               </div>
             </section>
           </motion.div>
