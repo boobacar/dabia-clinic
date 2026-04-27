@@ -203,6 +203,106 @@ const MONEY_PAGE_CONTENT = {
       },
     ],
   },
+  "esthétique-dentaire": {
+    accroche:
+      "La dentisterie esthétique améliore la forme, la teinte et l’harmonie du sourire tout en respectant la santé des dents et des gencives.",
+    pointsForts: [
+      "Bilan esthétique personnalisé (teinte, proportion, ligne du sourire).",
+      "Approche progressive: solutions conservatrices avant les options plus invasives.",
+      "Objectif naturel: résultat cohérent avec votre visage et votre expression.",
+    ],
+    deroule: [
+      "Consultation initiale avec photos et analyse du sourire.",
+      "Choix du plan de traitement (blanchiment, facettes, alignement, restaurations).",
+      "Réalisation des soins selon un calendrier adapté à vos priorités.",
+      "Contrôle final et recommandations pour maintenir le résultat dans le temps.",
+    ],
+    faq: [
+      {
+        q: "Comment choisir entre blanchiment et facettes ?",
+        a: "Le choix dépend de la teinte de départ, de la forme des dents et de vos objectifs. Le bilan esthétique permet de déterminer l’option la plus adaptée.",
+      },
+      {
+        q: "Les résultats esthétiques sont-ils durables ?",
+        a: "Oui, avec une bonne hygiène, des contrôles réguliers et des habitudes alimentaires adaptées, les résultats peuvent être maintenus durablement.",
+      },
+    ],
+  },
+  parodontologie: {
+    accroche:
+      "La parodontologie prend en charge l’inflammation des gencives et du tissu de soutien des dents pour éviter déchaussement, mobilité et pertes dentaires.",
+    pointsForts: [
+      "Diagnostic précoce des saignements, poches parodontales et mobilité.",
+      "Traitement ciblé (détartrage, surfaçage, protocole d’hygiène personnalisé).",
+      "Programme de maintenance pour stabiliser durablement la santé gingivale.",
+    ],
+    deroule: [
+      "Bilan parodontal complet et évaluation du risque individuel.",
+      "Phase thérapeutique initiale pour réduire l’inflammation.",
+      "Réévaluation clinique et adaptation du plan de soins.",
+      "Suivi périodique pour prévenir les récidives.",
+    ],
+    faq: [
+      {
+        q: "Pourquoi mes gencives saignent-elles au brossage ?",
+        a: "Le saignement est souvent un signe d’inflammation gingivale. Un bilan permet d’identifier la cause et de traiter avant aggravation.",
+      },
+      {
+        q: "La parodontite peut-elle être stabilisée ?",
+        a: "Oui, dans de nombreux cas. Avec un traitement adapté et un suivi régulier, on peut contrôler l’évolution de la maladie.",
+      },
+    ],
+  },
+  "greffe-osseuse": {
+    accroche:
+      "La greffe osseuse est proposée lorsque le volume osseux est insuffisant pour assurer une pose d’implant stable et durable.",
+    pointsForts: [
+      "Évaluation radiologique précise pour mesurer le déficit osseux.",
+      "Choix de la technique selon la zone à reconstruire et l’objectif prothétique.",
+      "Sécurisation de la base osseuse avant implantation.",
+    ],
+    deroule: [
+      "Bilan préopératoire et planification 3D.",
+      "Intervention de greffe sous anesthésie locale.",
+      "Phase de cicatrisation avec contrôles cliniques.",
+      "Réévaluation puis pose implantaire quand l’os est mature.",
+    ],
+    faq: [
+      {
+        q: "La greffe osseuse est-elle toujours nécessaire avant un implant ?",
+        a: "Non. Elle est indiquée uniquement quand le volume osseux est insuffisant pour garantir la stabilité de l’implant.",
+      },
+      {
+        q: "Combien de temps faut-il avant la pose de l’implant ?",
+        a: "Cela varie selon la technique et la cicatrisation. Un calendrier prévisionnel est établi dès le début du traitement.",
+      },
+    ],
+  },
+  pedodontie: {
+    accroche:
+      "La pédodontie accompagne les enfants dès le plus jeune âge pour prévenir les caries, rassurer lors des soins et construire de bonnes habitudes d’hygiène.",
+    pointsForts: [
+      "Approche douce et pédagogique adaptée à l’âge de l’enfant.",
+      "Prévention active: fluor, scellements, conseils alimentation/brossage.",
+      "Suivi de croissance dentaire pour intervenir au bon moment.",
+    ],
+    deroule: [
+      "Première consultation de familiarisation et bilan de risque carieux.",
+      "Mise en place d’un plan de prévention personnalisé.",
+      "Soins conservateurs si nécessaire, dans un cadre rassurant.",
+      "Contrôles réguliers pour maintenir des dents saines.",
+    ],
+    faq: [
+      {
+        q: "À quel âge faire la première visite chez le dentiste ?",
+        a: "Idéalement dès l’apparition des premières dents ou avant 1 an, puis avec un suivi régulier selon le risque carieux.",
+      },
+      {
+        q: "Comment éviter les caries chez l’enfant ?",
+        a: "Une routine de brossage adaptée, une alimentation contrôlée en sucres et des visites préventives régulières sont les clés.",
+      },
+    ],
+  },
 };
 
 const RELATED_KEYWORDS = {
