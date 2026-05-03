@@ -16,13 +16,28 @@ const customTailwind = tailwindPlugin.withOptions(() => ({
   },
 }));
 
+// Transforme le <link rel="stylesheet"> généré par Vite en chargement non-bloquant.
+// Le CSS est preloaded (parallèle au JS) puis switché en stylesheet via onload.
+// Élimine les ~160ms de render-blocking sans FOUC grâce au CSS critique inliné dans index.html.
+const deferCss = () => ({
+  name: "defer-non-critical-css",
+  transformIndexHtml(html) {
+    return html.replace(
+      /<link rel="stylesheet" crossorigin href="([^"]+\.css)">/g,
+      (_, href) =>
+        `<link rel="preload" as="style" href="${href}" onload="this.onload=null;this.rel='stylesheet'">` +
+        `<noscript><link rel="stylesheet" href="${href}"></noscript>`
+    );
+  },
+});
+
 export default defineConfig({
   server: {
     proxy: {
       "/api": "http://localhost:3000",
     },
   },
-  plugins: [react()],
+  plugins: [react(), deferCss()],
   base: "/",
   css: {
     postcss: {
