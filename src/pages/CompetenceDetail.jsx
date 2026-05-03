@@ -762,7 +762,9 @@ const CompetenceDetail = () => {
         <motion.img
           src={competence.image}
           alt={`${competence.titre} – Clinique Dentaire DABIA, Dakar`}
-          className="w-[60%] object-cover rounded mb-6 mx-auto shadow-lg"
+          className="w-[60%] aspect-[4/3] object-cover rounded mb-6 mx-auto shadow-lg"
+          width="800"
+          height="600"
           variants={childVariant}
           loading="lazy"
           decoding="async"

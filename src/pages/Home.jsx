@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useMemo, useState } from "react";
+import React, { Suspense, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaCheckCircle } from "react-icons/fa";
@@ -61,8 +61,6 @@ const sortByDateDesc = (a, b) =>
   new Date(b.date).getTime() - new Date(a.date).getTime();
 
 const Home = () => {
-  const [showBeforeAfter, setShowBeforeAfter] = useState(false);
-  const [showAssurance, setShowAssurance] = useState(false);
   const postsSorted = useMemo(() => [...POSTS].sort(sortByDateDesc), []);
   const latest = useMemo(() => postsSorted.slice(0, 6), [postsSorted]);
   const assuranceLogos = useMemo(
@@ -108,17 +106,6 @@ const Home = () => {
     show: { opacity: 1, y: 0, transition: { duration: 0.55, ease: "easeOut" } },
   };
 
-  useEffect(() => {
-    // Compromis UX/perf: galerie affichée vite, mais après la fenêtre LCP la plus critique
-    const id = setTimeout(() => setShowBeforeAfter(true), 2500);
-    return () => clearTimeout(id);
-  }, []);
-
-  useEffect(() => {
-    // Déférer le bandeau assurances pour réduire la concurrence initiale
-    const id = setTimeout(() => setShowAssurance(true), 3500);
-    return () => clearTimeout(id);
-  }, []);
   const cardReveal = {
     hidden: { opacity: 0, y: 16 },
     show: { opacity: 1, y: 0, transition: { duration: 0.45, ease: "easeOut" } },
@@ -176,24 +163,16 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {showBeforeAfter ? (
-        <Suspense fallback={<div className="py-12" aria-hidden="true" />}>
-          <BeforeAfterGallery />
-        </Suspense>
-      ) : (
-        <div className="py-12" aria-hidden="true" />
-      )}
+      <Suspense fallback={<div className="py-12" aria-hidden="true" />}>
+        <BeforeAfterGallery />
+      </Suspense>
       <Suspense fallback={<div className="py-10" aria-hidden="true" />}>
         <StaffPreview />
         <CompetencesGrid />
       </Suspense>
-      {showAssurance ? (
-        <Suspense fallback={<div className="py-6" aria-hidden="true" />}>
-          <AssuranceMarquee className="py-6" speed={45} logos={assuranceLogos} />
-        </Suspense>
-      ) : (
-        <div className="py-6" aria-hidden="true" />
-      )}
+      <Suspense fallback={<div className="py-6" aria-hidden="true" />}>
+        <AssuranceMarquee className="py-6" speed={45} logos={assuranceLogos} />
+      </Suspense>
       {/* Pourquoi nous choisir */}
       <motion.section
         className="py-14 px-4 bg-white"
