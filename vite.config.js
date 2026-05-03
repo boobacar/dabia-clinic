@@ -16,29 +16,14 @@ const customTailwind = tailwindPlugin.withOptions(() => ({
   },
 }));
 
-// Transforme le <link rel="stylesheet"> généré par Vite en chargement non-bloquant.
-// Le CSS est preloaded (parallèle au JS) puis switché en stylesheet via onload.
-// Élimine les ~160ms de render-blocking sans FOUC grâce au CSS critique inliné dans index.html.
-const deferCss = () => ({
-  name: "defer-non-critical-css",
-  transformIndexHtml(html) {
-    return html.replace(
-      /<link rel="stylesheet" crossorigin href="([^"]+\.css)">/g,
-      (_, href) =>
-        `<link rel="preload" as="style" href="${href}" onload="this.onload=null;this.rel='stylesheet'">` +
-        `<noscript><link rel="stylesheet" href="${href}"></noscript>`
-    );
-  },
-});
-
 export default defineConfig({
   server: {
     proxy: {
-      "/api": "http://localhost:3000",
+      "/api": "http://localhost:3000", // si tu lances un petit serveur pour l'API
     },
   },
-  plugins: [react(), deferCss()],
-  base: "/",
+  plugins: [react()],
+  base: "/", // Remplace ici
   css: {
     postcss: {
       plugins: [
@@ -47,24 +32,6 @@ export default defineConfig({
         }),
         autoprefixer(),
       ],
-    },
-  },
-  build: {
-    // Assure la minification même en mode développement accidentel
-    minify: "esbuild",
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          // React core — très stable, long TTL CDN
-          "vendor-react": ["react", "react-dom", "react-router-dom"],
-          // Framer Motion — chargé en parallèle du code app
-          "vendor-motion": ["framer-motion"],
-          // UI libs lourdes — chargées séparément
-          "vendor-ui": ["swiper", "react-compare-slider"],
-          // Libs formulaire/date — uniquement page RDV
-          "vendor-form": ["react-datepicker", "date-fns", "@emailjs/browser"],
-        },
-      },
     },
   },
 });
