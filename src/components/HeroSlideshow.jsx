@@ -1,6 +1,5 @@
 // src/components/HeroSlideshow.jsx
 import { useEffect, useMemo, useRef, useState } from "react";
-import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { Link } from "react-router-dom";
 import heroImages from "../assets/heroImages";
 
@@ -13,9 +12,11 @@ const HeroSlideshow = () => {
   // Démarre le slideshow seulement après le rendu initial pour laisser la LCP se stabiliser
   const [enableLoop, setEnableLoop] = useState(false);
   const [isMobile, setIsMobile] = useState(
-    () => typeof window !== "undefined" && window.matchMedia("(max-width: 768px)").matches
+    () =>
+      typeof window !== "undefined" &&
+      window.matchMedia("(max-width: 768px)").matches,
   );
-  const shouldReduceMotion = useReducedMotion();
+  const [shouldReduceMotion, setShouldReduceMotion] = useState(false);
   const timerRef = useRef(null);
   const startRef = useRef(null);
 
@@ -48,10 +49,17 @@ const HeroSlideshow = () => {
   useEffect(() => {
     if (typeof window === "undefined") return;
     const mq = window.matchMedia("(max-width: 768px)");
+    const motionMq = window.matchMedia("(prefers-reduced-motion: reduce)");
     const apply = () => setIsMobile(mq.matches);
+    const applyMotion = () => setShouldReduceMotion(motionMq.matches);
     apply();
+    applyMotion();
     mq.addEventListener?.("change", apply);
-    return () => mq.removeEventListener?.("change", apply);
+    motionMq.addEventListener?.("change", applyMotion);
+    return () => {
+      mq.removeEventListener?.("change", apply);
+      motionMq.removeEventListener?.("change", applyMotion);
+    };
   }, []);
 
   // Auto-play avec setTimeout (plus fiable que setInterval ici)
@@ -99,8 +107,7 @@ const HeroSlideshow = () => {
       )}
       <section className="relative h-[100svh] min-h-[100svh] overflow-hidden bg-black">
       {isSlideshow ? (
-        <AnimatePresence initial={false}>
-          <motion.img
+          <img
             key={currentObj.desktop}
             src={currentObj.desktop}
             srcSet={`${currentObj.mobile} 640w, ${currentObj.desktop} 1600w`}
@@ -109,18 +116,12 @@ const HeroSlideshow = () => {
             aria-hidden="true"
             width="1600"
             height="900"
-            className="absolute inset-0 w-full h-full object-cover will-change-[opacity]"
+            className={`absolute inset-0 w-full h-full object-cover ${
+              shouldReduceMotion ? "" : "transition-opacity duration-700"
+            }`}
             decoding="sync"
             fetchPriority={index === 0 ? "high" : "auto"}
-            initial={{ opacity: 0, scale: 1 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: shouldReduceMotion || isMobile ? 1 : 0 }}
-            transition={{
-              duration: shouldReduceMotion ? 0 : Math.min(1.2, SLIDE_MS / 1000),
-              ease: "easeOut",
-            }}
           />
-        </AnimatePresence>
       ) : (
         <picture>
           {currentObj.mobileAvif && currentObj.desktopAvif && (
@@ -180,12 +181,9 @@ const HeroSlideshow = () => {
 
       {!isMobile && (
         <div className="pointer-events-none absolute inset-x-0 bottom-15 sm:bottom-40 md:bottom-40 flex flex-col items-center gap-3">
-          <motion.div
+          <div
             aria-hidden="true"
-            initial={{ opacity: 0, y: -8 }}
-            animate={{ opacity: 0.95, y: [0, 42, 0] }}
-            transition={{ duration: 2.3, repeat: Infinity, ease: "easeInOut" }}
-            className="relative flex h-16 w-16 items-center justify-center rounded-full border-2 border-[#ad9d64]/70 bg-gradient-to-b from-white/15 to-white/0 text-[#f2e7b2] shadow-[0_18px_60px_-20px_rgba(0,0,0,0.95)] ring-1 ring-white/30 backdrop-blur-[4px]"
+            className="relative flex h-16 w-16 animate-bounce items-center justify-center rounded-full border-2 border-[#ad9d64]/70 bg-gradient-to-b from-white/15 to-white/0 text-[#f2e7b2] shadow-[0_18px_60px_-20px_rgba(0,0,0,0.95)] ring-1 ring-white/30 backdrop-blur-[4px]"
           >
             <span className="sr-only">Faites défiler pour découvrir</span>
             <svg
@@ -199,7 +197,7 @@ const HeroSlideshow = () => {
             >
               <path d="M6 10l6 6 6-6" />
             </svg>
-          </motion.div>
+          </div>
         </div>
       )}
     </section>

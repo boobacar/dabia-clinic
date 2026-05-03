@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { sendEvent } from "../analytics/ga4";
+import { loadGA, sendEvent } from "../analytics/ga4";
 
 const LS_KEY = "dabia_consent_v1";
 
@@ -18,6 +18,7 @@ function applyConsent(state) {
     functionality_storage: "granted",
     security_storage: "granted",
   });
+  if (state.analytics) loadGA();
 }
 
 export default function CookieConsent() {
@@ -86,7 +87,7 @@ export default function CookieConsent() {
               Tout refuser
             </button>
             <button
-              className="px-3.5 py-1 text-[12px] font-semibold rounded-full bg-[#ad9d64] text-white hover:shadow-sm transition"
+              className="px-3.5 py-1 text-[12px] font-semibold rounded-full bg-[#75642e] text-white hover:shadow-sm transition"
               onClick={() => {
                 const state = { analytics: true };
                 localStorage.setItem(LS_KEY, JSON.stringify(state));

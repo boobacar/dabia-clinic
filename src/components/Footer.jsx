@@ -1,18 +1,15 @@
-import { useState } from "react";
+import { lazy, Suspense, useState } from "react";
 import {
   FaFacebookF,
   FaInstagram,
   FaTiktok,
   FaWhatsapp,
   FaLinkedinIn,
-  FaLinkedin,
 } from "react-icons/fa";
-import { MdLocationPin, MdEmail, MdPhone } from "react-icons/md";
-import { AnimatePresence } from "framer-motion";
-import DevInfoModal from "./DevInfoModal";
-import BlogLinksCompact from "./BlogLinksCompact";
 import NAP from "./NAP";
-import ReviewCTA from "./ReviewCTA";
+
+const BlogLinksCompact = lazy(() => import("./BlogLinksCompact"));
+const DevInfoModal = lazy(() => import("./DevInfoModal"));
 
 const Footer = () => {
   const [showModal, setShowModal] = useState(false);
@@ -109,6 +106,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-black transition"
+          aria-label="Clinique DABIA sur TikTok"
         >
           <FaTiktok className="w-6 h-6" />
         </a>
@@ -117,6 +115,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-[#c24f21] transition"
+          aria-label="Clinique DABIA sur Instagram"
         >
           <FaInstagram className="w-6 h-6" />
         </a>
@@ -125,6 +124,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-[#252ea1] transition"
+          aria-label="Clinique DABIA sur Facebook"
         >
           <FaFacebookF className="w-6 h-6" />
         </a>
@@ -133,6 +133,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-[#4f84c2] transition"
+          aria-label="Clinique DABIA sur LinkedIn"
         >
           <FaLinkedinIn className="w-6 h-6" />
         </a>
@@ -141,13 +142,16 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-[#408a4c] transition"
+          aria-label="Contacter Clinique DABIA sur WhatsApp"
         >
           <FaWhatsapp className="w-6 h-6" />
         </a>
       </div>
 
       <div className="md:col-span-1">
-        <BlogLinksCompact count={8} />
+        <Suspense fallback={<div className="py-6" aria-hidden="true" />}>
+          <BlogLinksCompact count={8} />
+        </Suspense>
       </div>
 
       <div className="text-center mt-6 text-sm text-gray-400">
@@ -163,9 +167,11 @@ const Footer = () => {
         </button>
       </div>
 
-      <AnimatePresence>
-        {showModal && <DevInfoModal onClose={() => setShowModal(false)} />}
-      </AnimatePresence>
+      {showModal && (
+        <Suspense fallback={null}>
+          <DevInfoModal onClose={() => setShowModal(false)} />
+        </Suspense>
+      )}
     </footer>
   );
 };

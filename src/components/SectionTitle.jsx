@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 /**
  * SectionTitle
  * Standardized section heading component matching the "Notre Équipe" style.
@@ -11,19 +9,15 @@ import { motion } from "framer-motion";
  */
 const SectionTitle = ({ title, subtitle, center = true, className = "" }) => {
   return (
-    <motion.div
+    <div
       className={`mb-5 ${center ? "text-center" : ""} ${className}`}
-      initial={{ opacity: 0, y: -20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-      viewport={{ once: true }}
     >
       {subtitle && (
         <span className="text-[#bb2988] font-semibold tracking-wider text-sm uppercase block mb-2">
           {subtitle}
         </span>
       )}
-      <h2 className="text-3xl md:text-4xl text-[#ad9d64] font-bold mt-2">
+      <h2 className="text-3xl md:text-4xl text-[#7d6d34] font-bold mt-2">
         {title}
       </h2>
       <div
@@ -31,7 +25,7 @@ const SectionTitle = ({ title, subtitle, center = true, className = "" }) => {
           center ? "mx-auto" : ""
         }`}
       />
-    </motion.div>
+    </div>
   );
 };
 

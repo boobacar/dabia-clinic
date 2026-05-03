@@ -21,7 +21,7 @@ export default function StickyAppointmentBar() {
           href="https://wa.me/221777039393"
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center justify-center gap-1 rounded-lg bg-green-500 text-white font-semibold py-2"
+          className="inline-flex items-center justify-center gap-1 rounded-lg bg-green-700 text-white font-semibold py-2"
         >
           WhatsApp
         </a>
