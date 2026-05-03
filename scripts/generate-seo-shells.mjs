@@ -8,6 +8,7 @@ const POSTS_META_PATH = join(ROOT, "src", "data", "posts.meta.json");
 const POSTS_SOURCE_PATH = join(ROOT, "src", "data", "posts.js");
 const COMPETENCES_PATH = join(ROOT, "src", "data", "competences.js");
 const TECHNOLOGIES_PATH = join(ROOT, "src", "data", "technologies.js");
+const MANIFEST_PATH = join(DIST, ".vite", "manifest.json");
 
 const TAG_SLUGS = [
   "dentiste-dakar",
@@ -158,12 +159,53 @@ function upsertTag(html, regex, replacement) {
   return html.replace("</head>", `${replacement}\n</head>`);
 }
 
+function removeHomeHeroPreloads(html) {
+  return html.replace(
+    /\n\s*<link\s+rel=["']preload["']\s+as=["']image["']\s+href=["']\/hero1[^"']+["'][^>]*>/gi,
+    "",
+  );
+}
+
+function injectRouteImagePreload(html, cover) {
+  if (!cover) return html;
+  const preload = `    <link rel="preload" as="image" href="${esc(cover)}" media="(min-width: 1024px)" fetchpriority="high" />`;
+  if (html.includes(preload)) return html;
+  const heroPreloadComment = /(\n\s*<!-- Hero image preload[\s\S]*?-->\s*)/i;
+  if (heroPreloadComment.test(html)) {
+    return html.replace(heroPreloadComment, `$1${preload}\n`);
+  }
+  return html.replace("</head>", `${preload}\n</head>`);
+}
+
+function injectModulePreloads(html, files = []) {
+  let out = html;
+  for (const file of files) {
+    if (!file || out.includes(`href="${file}"`)) continue;
+    const preload = `    <link rel="modulepreload" crossorigin href="${esc(file)}" />`;
+    const imagePreload = /(\n\s*<link\s+rel=["']preload["']\s+as=["']image["'][^>]*>\s*)/i;
+    if (imagePreload.test(out)) {
+      out = out.replace(imagePreload, `$1${preload}\n`);
+    } else {
+      out = out.replace("</head>", `${preload}\n</head>`);
+    }
+  }
+  return out;
+}
+
 function injectServerH1(html, route) {
+  const cover = route.cover
+    ? `
+      <style>@media (max-width:1023px){#root .seo-cover{display:none}}</style>
+      <div class="seo-cover" style="margin:24px 0 0;border-radius:12px;overflow:hidden;aspect-ratio:16/9;background:#f3f4f6">
+        <img src="${esc(route.cover)}" alt="${esc(route.h1)}" width="1200" height="675" loading="eager" decoding="async" fetchpriority="high" style="display:block;width:100%;height:100%;object-fit:cover" />
+      </div>`
+    : "";
   const shell = `
     <main style="max-width:880px;margin:40px auto;padding:0 16px;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.5">
       <h1 style="font-size:clamp(1.8rem,4vw,2.6rem);margin:0 0 12px;color:#6b5d34">${esc(route.h1)}</h1>
       <p style="margin:0 0 18px;color:#374151">${esc(route.intro)}</p>
       <p style="margin:0;color:#111827">👉 <a href="/rendez-vous">Prendre rendez-vous</a> · <a href="tel:+221777039393">Appeler</a> · <a href="https://wa.me/221777039393">WhatsApp</a></p>
+      ${cover}
     </main>`;
 
   return html.replace(/<div id="root"><\/div>/i, `<div id="root">${shell}</div>`);
@@ -174,8 +216,10 @@ function renderForRoute(baseHtml, route) {
   const title = route.title;
   const desc = esc(route.description);
   const ogType = route.type || "website";
+  const image = route.cover ? `${DOMAIN}${route.cover}` : "/og-image.webp";
 
   let html = baseHtml;
+  if (route.path !== "/") html = removeHomeHeroPreloads(html);
   html = upsertTag(html, /<title>[\s\S]*?<\/title>/i, `<title>${esc(title)}</title>`);
   html = upsertTag(
     html,
@@ -209,6 +253,11 @@ function renderForRoute(baseHtml, route) {
   );
   html = upsertTag(
     html,
+    /<meta[^>]*property=["']og:image["'][^>]*>/i,
+    `<meta property="og:image" content="${esc(image)}" />`,
+  );
+  html = upsertTag(
+    html,
     /<meta[^>]*name=["']twitter:title["'][^>]*>/i,
     `<meta name="twitter:title" content="${esc(title)}" />`,
   );
@@ -217,8 +266,63 @@ function renderForRoute(baseHtml, route) {
     /<meta[^>]*name=["']twitter:description["'][^>]*>/i,
     `<meta name="twitter:description" content="${desc}" />`,
   );
+  html = upsertTag(
+    html,
+    /<meta[^>]*name=["']twitter:image["'][^>]*>/i,
+    `<meta name="twitter:image" content="${esc(image)}" />`,
+  );
+  html = injectRouteImagePreload(html, route.cover);
+  html = injectModulePreloads(html, route.modulePreloads);
 
   return injectServerH1(html, route);
+}
+
+async function readManifestEntries() {
+  const raw = await readFileSafe(MANIFEST_PATH);
+  if (!raw) return {};
+  try {
+    return JSON.parse(raw);
+  } catch {
+    return {};
+  }
+}
+
+function buildAssetManifest(entries) {
+  const out = new Map();
+  for (const [key, entry] of Object.entries(entries)) {
+    if (!entry?.file) continue;
+    const file = `/${entry.file}`;
+    out.set(key.replace(/^\/+/, ""), file);
+    if (entry.src) out.set(entry.src.replace(/^\/+/, ""), file);
+  }
+  return out;
+}
+
+function normalizePostImportPath(importPath) {
+  if (!importPath) return "";
+  if (importPath.startsWith("../")) return `src/${importPath.slice(3)}`;
+  if (importPath.startsWith("./")) return `src/data/${importPath.slice(2)}`;
+  return importPath.replace(/^\/+/, "");
+}
+
+function resolvePostAsset(importPath, manifest) {
+  const sourcePath = normalizePostImportPath(importPath);
+  return manifest.get(sourcePath) || "";
+}
+
+function extractPostCovers(postsSource, manifest) {
+  const imports = new Map();
+  for (const m of postsSource.matchAll(/import\s+([\w$]+)\s+from\s+["']([^"']+)["'];?/g)) {
+    imports.set(m[1], m[2]);
+  }
+
+  const covers = new Map();
+  for (const m of postsSource.matchAll(/slug:\s*"([^"]+)"[\s\S]*?cover:\s*([\w$]+),/g)) {
+    const importPath = imports.get(m[2]);
+    const cover = resolvePostAsset(importPath, manifest);
+    if (cover) covers.set(m[1], cover);
+  }
+  return covers;
 }
 
 async function readPostsMeta() {
@@ -231,8 +335,9 @@ async function readPostsMeta() {
   }
 }
 
-async function readPostsSource() {
+async function readPostsSource(manifest) {
   const src = await readFileSafe(POSTS_SOURCE_PATH);
+  const covers = extractPostCovers(src, manifest);
   return Array.from(
     src.matchAll(
       /\{[\s\S]*?slug:\s*"([^"]+)",[\s\S]*?title:\s*"([^"]+)",[\s\S]*?description:\s*"([^"]+)",[\s\S]*?date:\s*"([0-9]{4}-[0-9]{2}-[0-9]{2})"/g
@@ -242,6 +347,7 @@ async function readPostsSource() {
     title: m[2],
     description: m[3],
     date: m[4],
+    cover: covers.get(m[1]),
   }));
 }
 
@@ -296,6 +402,7 @@ function buildRouteCatalog({ posts, competences, technologies }) {
         post.description ||
         "Découvrez nos conseils et informations pratiques en santé bucco-dentaire.",
       type: "article",
+      cover: post.cover,
     });
   }
 
@@ -344,15 +451,21 @@ async function main() {
   const indexPath = join(DIST, "index.html");
   const base = await readFile(indexPath, "utf8");
 
+  const manifestEntries = await readManifestEntries();
+  const manifest = buildAssetManifest(manifestEntries);
   const [metaPosts, sourcePosts, competences, technologies] = await Promise.all([
     readPostsMeta(),
-    readPostsSource(),
+    readPostsSource(manifest),
     readCompetences(),
     readTechnologies(),
   ]);
 
   const posts = mergePosts(metaPosts, sourcePosts);
-  const routes = buildRouteCatalog({ posts, competences, technologies });
+  const routes = buildRouteCatalog({
+    posts,
+    competences,
+    technologies,
+  });
 
   for (const route of routes) {
     const html = renderForRoute(base, route);

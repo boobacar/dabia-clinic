@@ -37,6 +37,7 @@ export default defineConfig({
   build: {
     // Assure la minification même en mode développement accidentel
     minify: "esbuild",
+    manifest: true,
     rollupOptions: {
       output: {
         manualChunks: {

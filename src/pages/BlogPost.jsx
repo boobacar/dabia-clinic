@@ -44,7 +44,7 @@ function extractHeadings(markdown) {
   return headings;
 }
 
-export default function BlogPost() {
+export default function BlogPost({ hideHeader = false }) {
   const { slug } = useParams();
   const post = useMemo(() => POSTS.find((p) => p.slug === slug), [slug]);
 
@@ -377,74 +377,106 @@ export default function BlogPost() {
   }
 
   return (
-    <section className="py-20 px-4 max-w-7xl mx-auto mt-20">
-      {post.cover && (
+    <section
+      className={
+        hideHeader
+          ? "pb-20 px-4 max-w-7xl mx-auto"
+          : "py-20 px-4 max-w-7xl mx-auto mt-20"
+      }
+    >
+      {!hideHeader && post.cover && (
         <link rel="preload" as="image" href={post.cover} fetchPriority="high" />
       )}
       <ReadingProgress />
-      <Seo
-        title={post.title}
-        description={post.description}
-        url={canonical}
-        canonical={canonical}
-        type="article"
-        image={post.cover}
-        publishedTime={post.date}
-        modifiedTime={post.date}
-        jsonLd={[
-          articleJsonLd,
-          faqJsonLd,
-          ...(howToJsonLd ? [howToJsonLd] : []),
-        ].filter(Boolean)}
-      />
+      {!hideHeader && (
+        <>
+          <Seo
+            title={post.title}
+            description={post.description}
+            url={canonical}
+            canonical={canonical}
+            type="article"
+            image={post.cover}
+            publishedTime={post.date}
+            modifiedTime={post.date}
+            jsonLd={[
+              articleJsonLd,
+              faqJsonLd,
+              ...(howToJsonLd ? [howToJsonLd] : []),
+            ].filter(Boolean)}
+          />
 
-      <Breadcrumbs
-        items={[
-          { label: "Accueil", href: "/" },
-          { label: "Blog", href: "/blog" },
-          { label: post.title },
-        ]}
-      />
+          <Breadcrumbs
+            items={[
+              { label: "Accueil", href: "/" },
+              { label: "Blog", href: "/blog" },
+              { label: post.title },
+            ]}
+          />
+        </>
+      )}
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
         <article className="lg:col-span-8">
-          <header className="mb-6">
-            <p className="text-xs text-gray-500">
-              {new Date(post.date).toLocaleDateString("fr-FR")} •{" "}
-              {post.category} • {post.readingMinutes} min
-            </p>
-            <h1 className="text-3xl md:text-4xl font-bold text-[#ad9d64] mt-1">
-              {post.title}
-            </h1>
-            <p className="text-gray-600 mt-2">{post.description}</p>
-            <div className="flex items-center gap-3 mt-4">
-              {post.author?.avatar && (
-                <img
-                  src={post.author.avatar}
-                  alt={post.author.name}
-                  className="w-10 h-10 rounded-full object-cover"
-                />
+          {!hideHeader && (
+            <header className="mb-6">
+              <p className="text-xs text-gray-500">
+                {new Date(post.date).toLocaleDateString("fr-FR")} •{" "}
+                {post.category} • {post.readingMinutes} min
+              </p>
+              <h1 className="text-3xl md:text-4xl font-bold text-[#ad9d64] mt-1">
+                {post.title}
+              </h1>
+              <p className="text-gray-600 mt-2">{post.description}</p>
+              <div className="flex items-center gap-3 mt-4">
+                {post.author?.avatar && (
+                  <img
+                    src={post.author.avatar}
+                    alt={post.author.name}
+                    className="w-10 h-10 rounded-full object-cover"
+                  />
+                )}
+                <div>
+                  <p className="text-sm font-medium">{post.author?.name}</p>
+                  <p className="text-xs text-gray-500">{post.author?.title}</p>
+                </div>
+              </div>
+              {(post.tags || []).length > 0 && (
+                <div className="flex flex-wrap gap-2 mt-4 text-xs">
+                  {(post.tags || []).slice(0, 6).map((t) => (
+                    <Link
+                      key={t}
+                      to={`/blog/tag/${slugify(t)}`}
+                      className="px-2 py-1 bg-gray-100 rounded-full hover:bg-[#bb2988] hover:text-white transition"
+                    >
+                      #{t}
+                    </Link>
+                  ))}
+                </div>
               )}
-              <div>
-                <p className="text-sm font-medium">{post.author?.name}</p>
-                <p className="text-xs text-gray-500">{post.author?.title}</p>
+              <div
+                className="hidden lg:block w-full rounded-xl mt-6 overflow-hidden"
+                style={{ aspectRatio: "16/9" }}
+              >
+                <img
+                  src={post.cover}
+                  alt={post.title}
+                  width={1200}
+                  height={675}
+                  className="w-full h-full object-cover"
+                  style={{ viewTransitionName: `post-cover-${post.slug}` }}
+                  decoding="async"
+                  loading="eager"
+                  fetchPriority="high"
+                  sizes="(min-width: 1024px) 820px, calc(100vw - 32px)"
+                />
               </div>
-            </div>
-            {(post.tags || []).length > 0 && (
-              <div className="flex flex-wrap gap-2 mt-4 text-xs">
-                {(post.tags || []).slice(0, 6).map((t) => (
-                  <Link
-                    key={t}
-                    to={`/blog/tag/${slugify(t)}`}
-                    className="px-2 py-1 bg-gray-100 rounded-full hover:bg-[#bb2988] hover:text-white transition"
-                  >
-                    #{t}
-                  </Link>
-                ))}
-              </div>
-            )}
+              {/* vidéos retirées */}
+            </header>
+          )}
+          {hideHeader && (
             <div
-              className="w-full rounded-xl mt-6 overflow-hidden"
+              className="hidden lg:block w-full rounded-xl mb-6 overflow-hidden"
               style={{ aspectRatio: "16/9" }}
             >
               <img
@@ -455,12 +487,12 @@ export default function BlogPost() {
                 className="w-full h-full object-cover"
                 style={{ viewTransitionName: `post-cover-${post.slug}` }}
                 decoding="async"
+                loading="eager"
                 fetchPriority="high"
-                sizes="100vw"
+                sizes="820px"
               />
             </div>
-            {/* vidéos retirées */}
-          </header>
+          )}
 
           <div className="my-8 flex justify-center lg:justify-start">
             <Magnetic>
@@ -476,6 +508,24 @@ export default function BlogPost() {
           {/* TOC mobile */}
           <div className="lg:hidden mb-6">
             <TOC headings={headings} />
+          </div>
+
+          <div
+            className="lg:hidden w-full rounded-xl mb-6 overflow-hidden"
+            style={{ aspectRatio: "16/9" }}
+          >
+            <img
+              src={post.cover}
+              alt={post.title}
+              width={1200}
+              height={675}
+              className="w-full h-full object-cover"
+              style={{ viewTransitionName: `post-cover-${post.slug}` }}
+              decoding="async"
+              loading="lazy"
+              fetchPriority="low"
+              sizes="calc(100vw - 32px)"
+            />
           </div>
 
           <div className="prose prose-gray max-w-none prose-headings:text-[#ad9d64]">

@@ -1,11 +1,11 @@
 import React, { useEffect, useState, lazy } from "react";
 import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import Home from "../pages/Home"; // Static import for LCP
+import BlogPostShell from "../pages/BlogPostShell";
 
 // lazy routes (reuse same imports as App.jsx)
 // removed const Home = lazy...
 const Blog = lazy(() => import("../pages/Blog"));
-const BlogPost = lazy(() => import("../pages/BlogPost"));
 const RendezVous = lazy(() => import("../pages/RendezVous"));
 const Personnel = lazy(() => import("../pages/Personnel"));
 const CompetenceDetail = lazy(() => import("../pages/CompetenceDetail"));
@@ -65,7 +65,7 @@ export default function RoutesWithTransitions() {
       <Route path="/blog" element={<Blog />} />
       <Route path="/blog/tag/:tagSlug" element={<BlogTag />} />
       <Route path="/apropos" element={<APropos />} />
-      <Route path="/blog/:slug" element={<BlogPost />} />
+      <Route path="/blog/:slug" element={<BlogPostShell />} />
       <Route path="/rendez-vous" element={<RendezVous />} />
       <Route path="/dentiste-dakar" element={<DentisteDakar />} />
       <Route
