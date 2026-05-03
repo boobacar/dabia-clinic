@@ -15,6 +15,16 @@
     <meta name="robots" content="index, follow" />
     <!-- canonical is set per route via React Seo; avoid a global root canonical here -->
 
+    <!--
+      CSS critique inliné : empêche le FOUC pendant que Tailwind charge en non-bloquant.
+      Couvre uniquement les styles above-the-fold visibles avant l'exécution de React.
+    -->
+    <style>
+      *,::before,::after{box-sizing:border-box}
+      html,body{margin:0;padding:0;overflow-x:hidden;background:#000;color:#fff}
+      #root{min-height:100svh}
+    </style>
+
     <!-- Préconnexion anticipée aux domaines tiers critiques -->
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link rel="preconnect" href="https://www.google-analytics.com" />
