@@ -19,11 +19,11 @@ const customTailwind = tailwindPlugin.withOptions(() => ({
 export default defineConfig({
   server: {
     proxy: {
-      "/api": "http://localhost:3000",
+      "/api": "http://localhost:3000", // si tu lances un petit serveur pour l'API
     },
   },
   plugins: [react()],
-  base: "/",
+  base: "/", // Remplace ici
   css: {
     postcss: {
       plugins: [
@@ -32,24 +32,6 @@ export default defineConfig({
         }),
         autoprefixer(),
       ],
-    },
-  },
-  build: {
-    // Assure la minification même en mode développement accidentel
-    minify: "esbuild",
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          // React core — très stable, long TTL CDN
-          "vendor-react": ["react", "react-dom", "react-router-dom"],
-          // Framer Motion — chargé en parallèle du code app
-          "vendor-motion": ["framer-motion"],
-          // UI libs lourdes — chargées séparément
-          "vendor-ui": ["swiper", "react-compare-slider"],
-          // Libs formulaire/date — uniquement page RDV
-          "vendor-form": ["react-datepicker", "date-fns", "@emailjs/browser"],
-        },
-      },
     },
   },
 });
