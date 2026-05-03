@@ -15,6 +15,12 @@
     <meta name="robots" content="index, follow" />
     <!-- canonical is set per route via React Seo; avoid a global root canonical here -->
 
+    <!-- Hero image preload – starts before JS parses, critical for LCP -->
+    <link rel="preload" as="image" href="/hero1-mobile.avif" type="image/avif" media="(max-width: 640px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="/hero1-mobile.webp" type="image/webp" media="(max-width: 640px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="/hero1.avif" type="image/avif" media="(min-width: 641px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="/hero1.webp" type="image/webp" media="(min-width: 641px)" fetchpriority="high" />
+
     <!-- Open Graph -->
     <meta property="og:title" content="Clinique Dentaire DABIA à Dakar" />
     <meta property="og:description" content="Votre sourire, notre priorité." />

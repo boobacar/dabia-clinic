@@ -19,6 +19,8 @@ export default function AssuranceMarquee({
             src={src}
             alt="Assurance"
             className="h-10 w-auto object-contain opacity-90"
+            height="40"
+            width="120"
             loading="lazy"
             decoding="async"
           />
