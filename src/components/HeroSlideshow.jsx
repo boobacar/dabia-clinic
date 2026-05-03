@@ -11,7 +11,11 @@ const HeroSlideshow = () => {
   const [index, setIndex] = useState(0);
   // Démarre le slideshow seulement après le rendu initial pour laisser la LCP se stabiliser
   const [enableLoop, setEnableLoop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(
+    () =>
+      typeof window !== "undefined" &&
+      window.matchMedia("(max-width: 768px)").matches,
+  );
   const [shouldReduceMotion, setShouldReduceMotion] = useState(false);
   const timerRef = useRef(null);
   const startRef = useRef(null);
