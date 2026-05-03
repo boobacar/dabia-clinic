@@ -15,6 +15,8 @@ export default function NAP({ compact = false }) {
             className="w-[20%] sm:w-[25%] rounded-full hover:animate-spin"
             src={logo}
             alt="Dentiste Dakar - Clinique dentaire DABIA"
+            width={80}
+            height={80}
           />
           <div>
             <strong
@@ -32,9 +34,9 @@ export default function NAP({ compact = false }) {
             itemScope
             itemType="https://schema.org/PostalAddress"
           >
-            <h4 className="font-semibold mb-2 flex items-center gap-2">
+            <h2 className="font-semibold mb-2 flex items-center gap-2">
               Adresse
-            </h4>
+            </h2>
             <span itemProp="streetAddress" className="flex gap-1">
               <MdLocationPin className="w-5 h-5" />
               Sicap Foire, 2 voies Liberté 6 à 150m du Uno,
@@ -49,9 +51,9 @@ export default function NAP({ compact = false }) {
           </span>
         </div>
         <div className="mx-auto">
-          <h4 className="font-semibold mb-2 flex items-center gap-2">
+          <h2 className="font-semibold mb-2 flex items-center gap-2">
             Contact
-          </h4>
+          </h2>
           <div className="flex justify-center gap-2">
             <MdPhone className="w-5 h-5" />
             <a itemProp="telephone" href="tel:+221777039393">
@@ -71,7 +73,7 @@ export default function NAP({ compact = false }) {
         </div>
       </div>
       {!compact && (
-        <div className="text-center mt-2 text-[13px] text-gray-600">
+        <div className="text-center mt-2 text-[13px] text-gray-200">
           Horaires : Lun–Jeu (9h–16h30) · Ven (9h–13h, 15h–16h30) · Sam (9h–14h) · Dim (fermé)
         </div>
       )}

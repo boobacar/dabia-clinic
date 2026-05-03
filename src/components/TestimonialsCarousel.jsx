@@ -19,7 +19,7 @@ const Star = ({ filled }) => (
 const Stars = ({ rating = 0 }) => {
   const n = Math.round(rating);
   return (
-    <div className="flex gap-1" aria-label={`${n} sur 5`}>
+    <div className="flex gap-1" role="img" aria-label={`${n} sur 5`}>
       {Array.from({ length: 5 }).map((_, i) => (
         <Star key={i} filled={i < n} />
       ))}

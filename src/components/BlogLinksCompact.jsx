@@ -14,7 +14,7 @@ export default function BlogLinksCompact({ count = 8 }) {
   const items = [...POSTS].sort(sortPinnedThenDate).slice(0, count);
   return (
     <div className="p-5">
-      <h4 className="text-base font-semibold mb-3">Dans le blog</h4>
+      <h2 className="text-base font-semibold mb-3">Dans le blog</h2>
       <ul className="space-y-2 text-sm grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-2">
         {items.map((post) => (
           <li key={post.slug} className="truncate">
