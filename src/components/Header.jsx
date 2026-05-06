@@ -19,6 +19,7 @@ const Header = () => {
 
   const navLinks = [
     { name: "Accueil", path: "/" },
+    { name: "Dentiste Dakar", path: "/dentiste-dakar" },
     { name: "Compétences", path: "/all-competences" },
     { name: "Urgence", path: "/urgence-dentaire-dakar" },
     { name: "Galerie", path: "/galerie" },

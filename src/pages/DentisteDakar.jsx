@@ -90,10 +90,16 @@ export default function DentisteDakar() {
     "@context": "https://schema.org",
     "@type": "Dentist",
     "@id": `${canonical}#dentiste-dakar`,
-    name: "Dentiste à Dakar - Clinique Dentaire DABIA",
+    name: "Dentiste Dakar - Clinique Dentaire DABIA",
     url: canonical,
-    image: "/og-image.webp",
+    image: "https://www.cliniquedentairedabia.com/og-image.webp",
     telephone: "+221777039393",
+    medicalSpecialty: [
+      "Dentistry",
+      "Cosmetic dentistry",
+      "Dental implants",
+      "Orthodontics",
+    ],
     address: {
       "@type": "PostalAddress",
       streetAddress: "Sicap Foire, 2 voies Liberté 6 (à 150m du Uno)",
@@ -143,6 +149,40 @@ export default function DentisteDakar() {
       "https://www.instagram.com/clinique_dentaire_dabia/",
       "https://sn.linkedin.com/company/clinique-dentaire-dabia",
     ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Soins dentaires à Dakar",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "MedicalProcedure",
+            name: "Consultation dentiste à Dakar",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "MedicalProcedure",
+            name: "Urgence dentaire à Dakar",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "MedicalProcedure",
+            name: "Implant dentaire à Dakar",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "MedicalProcedure",
+            name: "Orthodontie à Dakar",
+          },
+        },
+      ],
+    },
   };
 
   const jsonLd = [breadcrumbLD, localBusinessLD, faqLD];
@@ -150,8 +190,8 @@ export default function DentisteDakar() {
   return (
     <main className="pt-20 pb-14 px-4 max-w-7xl mx-auto">
       <Seo
-        title="Dentiste à Dakar : consultation, urgence, implant et RDV rapide | Clinique DABIA"
-        description="Dentiste à Dakar (Liberté 6) : consultation, urgence, implants, orthodontie et esthétique. Devis clair + rendez-vous rapide en ligne, appel ou WhatsApp."
+        title="Dentiste Dakar : urgence, consultation et RDV rapide | Clinique DABIA"
+        description="Dentiste Dakar à Liberté 6 : consultation, urgence dentaire, implants, orthodontie et esthétique. Devis clair + rendez-vous rapide par appel, WhatsApp ou formulaire."
         canonical={canonical}
         url={canonical}
         jsonLd={jsonLd}
@@ -169,12 +209,13 @@ export default function DentisteDakar() {
         transition={{ duration: 0.45, ease: "easeOut" }}
       >
         <h1 className="text-3xl md:text-4xl text-[#ad9d64] font-extrabold">
-          Dentiste à Dakar – Cabinet dentaire DABIA
+          Dentiste Dakar – Clinique Dentaire DABIA
         </h1>
         <p className="mt-2 text-gray-700 max-w-3xl">
-          La Clinique Dentaire DABIA vous accueille à Sicap Foire (Liberté 6)
-          pour des soins modernes, confortables et durables, avec un plateau
-          technique de pointe.
+          Vous cherchez un dentiste à Dakar pour une consultation, une urgence
+          dentaire, un implant ou un appareil dentaire ? La Clinique Dentaire
+          DABIA vous accueille à Sicap Foire (Liberté 6) avec un plateau
+          technique moderne, un devis clair et une prise de rendez-vous rapide.
         </p>
         <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
           <motion.div
@@ -393,6 +434,60 @@ export default function DentisteDakar() {
           <Link to="/rendez-vous?motif=esthetique" className="btn-cta btn-cta-sm">
             RDV esthétique
           </Link>
+        </div>
+      </motion.section>
+
+      <motion.section
+        className="mt-10 p-6 rounded-2xl border bg-white shadow-sm"
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.35 }}
+        transition={{ duration: 0.4 }}
+      >
+        <h2 className="text-xl font-bold text-[#ad9d64]">
+          Dentiste Dakar : dans quels cas consulter ?
+        </h2>
+        <div className="mt-4 grid gap-4 md:grid-cols-2 text-sm text-gray-700">
+          <div>
+            <h3 className="font-semibold text-gray-900">
+              Pour un problème urgent
+            </h3>
+            <p className="mt-1">
+              Rage de dent, abcès, dent cassée, gonflement ou douleur qui
+              empêche de dormir : appelez la clinique pour être orienté et
+              obtenir un créneau adapté à votre situation.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-gray-900">
+              Pour un bilan complet
+            </h3>
+            <p className="mt-1">
+              Une consultation permet de vérifier les caries, les gencives,
+              l’occlusion, les restaurations existantes et de prioriser les
+              soins avec un plan clair.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-gray-900">
+              Pour un devis transparent
+            </h3>
+            <p className="mt-1">
+              Implant, couronne, prothèse, orthodontie ou blanchiment : chaque
+              option est expliquée avant le traitement, avec les étapes et les
+              alternatives possibles.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-gray-900">
+              Pour toute la famille
+            </h3>
+            <p className="mt-1">
+              Enfants, adultes, patients anxieux ou patients déjà suivis :
+              l’équipe adapte le rythme de la consultation et les conseils
+              d’hygiène à chaque profil.
+            </p>
+          </div>
         </div>
       </motion.section>
 
