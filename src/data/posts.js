@@ -134,6 +134,123 @@ export const TAGS = [
 
 export const POSTS = [
   {
+    slug: "dentiste-dakar-pres-de-moi-comment-choisir-2026",
+    title:
+      "Dentiste Dakar près de moi : comment choisir le bon cabinet en 2026",
+    description:
+      "Vous cherchez un dentiste à Dakar proche de Liberté 6, Sicap Foire, Parcelles ou VDN ? Critères concrets pour choisir rapidement un cabinet fiable.",
+    date: "2026-05-06",
+    category: "Conseils",
+    tags: [
+      "dentiste dakar",
+      "cabinet dentaire dakar",
+      "meilleur dentiste dakar",
+      "liberté 6",
+      "parcelles assainies",
+    ],
+    author: AUTHORS.sao,
+    cover: choisirDentisteCover,
+    pinned: true,
+    readingMinutes: 7,
+    content: `Quand on tape **dentiste Dakar près de moi**, on veut souvent une réponse rapide : un cabinet accessible, sérieux, disponible et capable d’expliquer clairement le traitement. Mais la proximité seule ne suffit pas. Le bon choix dépend aussi de l’urgence, du type de soin, du plateau technique et de la qualité du suivi.
+
+Ce guide vous aide à choisir un **dentiste à Dakar** avec des critères simples, surtout si vous êtes autour de **Liberté 6**, **Sicap Foire**, **Parcelles Assainies**, **VDN**, **Yoff**, **Ngor** ou **Almadies**.
+
+## 1) Vérifier l’accès réel au cabinet
+
+Un cabinet peut être proche sur Google Maps mais compliqué à rejoindre aux heures de trafic. Avant de réserver, vérifiez :
+
+- le quartier exact ;
+- l’accès en taxi ou transport ;
+- la possibilité de stationner ;
+- les horaires compatibles avec votre disponibilité ;
+- le numéro à appeler en cas de retard ou d’urgence.
+
+La Clinique Dentaire DABIA est située à **Sicap Foire, 2 voies Liberté 6**, à proximité de la VDN et des Parcelles Assainies. La page principale **[Dentiste Dakar](/dentiste-dakar)** détaille l’adresse, les contacts et les accès.
+
+## 2) Adapter le choix au problème dentaire
+
+Tous les rendez-vous ne demandent pas la même organisation.
+
+### Si vous avez mal maintenant
+
+Pour une rage de dent, un abcès, une dent cassée ou un gonflement, l’objectif est d’être orienté rapidement. Consultez la page **[urgence dentaire à Dakar](/urgence-dentaire-dakar)** ou appelez avant de vous déplacer.
+
+### Si vous voulez un bilan
+
+Pour un contrôle, un détartrage, une carie ou un second avis, cherchez surtout un cabinet qui prend le temps d’examiner, d’expliquer et de prioriser les soins.
+
+### Si vous préparez un traitement important
+
+Implant, orthodontie, prothèse, facettes ou blanchiment demandent un plan clair : diagnostic, alternatives, étapes, durée et devis.
+
+## 3) Regarder les preuves de sérieux
+
+Un bon cabinet dentaire à Dakar doit inspirer confiance avant même le premier rendez-vous. Les signaux utiles :
+
+- des horaires et contacts à jour ;
+- des avis Google récents et des réponses du cabinet ;
+- une adresse cohérente sur le site, Google Maps et les annuaires ;
+- des explications claires sur les soins proposés ;
+- des photos réelles du cabinet ou de l’équipe ;
+- une page dédiée aux assurances ou IPM si vous en utilisez une.
+
+## 4) Ne pas choisir uniquement sur le prix
+
+Le prix est important, mais un devis dentaire dépend du diagnostic. Deux douleurs similaires peuvent nécessiter des traitements très différents. Pour comparer correctement, demandez :
+
+1. ce qui est inclus dans la consultation ;
+2. si une radio est nécessaire ;
+3. quelles sont les options possibles ;
+4. combien de séances sont prévues ;
+5. quelles garanties ou contrôles sont inclus après le soin.
+
+Pour préparer votre budget, lisez aussi **[Prix consultation dentiste à Dakar](/blog/dentiste-dakar-prix-consultation-2026)**.
+
+## 5) Penser au suivi après le soin
+
+Le suivi fait souvent la différence. Après une extraction, une couronne, un implant ou un traitement de gencive, vous devez savoir :
+
+- quoi faire si la douleur augmente ;
+- quand revenir au contrôle ;
+- comment entretenir la zone traitée ;
+- quel numéro appeler si un problème apparaît.
+
+Un cabinet fiable ne se limite pas à l’acte technique : il accompagne le patient avant, pendant et après le soin.
+
+## 6) Les quartiers à cibler selon votre position
+
+Si vous cherchez un dentiste proche :
+
+- **Liberté 6 / Sicap Foire** : accès rapide vers la clinique DABIA ;
+- **Parcelles Assainies** : pratique via VDN ;
+- **Yoff / Ngor / Almadies** : accès possible en passant par les grands axes ;
+- **Mermoz / Sacré-Cœur / Point E** : temps de trajet raisonnable selon l’heure ;
+- **Plateau** : anticipez davantage le trafic.
+
+Vous pouvez consulter les pages locales : **[Dentiste Liberté 6](/cabinet-dentaire-liberte-6)** et **[Clinique dentaire Parcelles Assainies](/clinique-dentaire-parcelles-assainies)**.
+
+## À retenir
+
+Pour choisir un **dentiste à Dakar**, ne vous arrêtez pas au résultat le plus proche. Cherchez un cabinet accessible, transparent, bien équipé, avec des avis récents et une vraie capacité de suivi.
+
+Besoin d’un rendez-vous ? Passez par la page **[Dentiste Dakar](/dentiste-dakar)** ou réservez directement via **[prendre rendez-vous](/rendez-vous)**.`,
+    faq: [
+      {
+        q: "Quel dentiste choisir à Dakar si j’ai une urgence ?",
+        a: "Choisissez un cabinet joignable rapidement, avec une adresse claire et une page dédiée aux urgences. Appelez avant de vous déplacer pour être orienté selon vos symptômes.",
+      },
+      {
+        q: "La proximité suffit-elle pour choisir un dentiste ?",
+        a: "Non. La proximité aide, mais il faut aussi regarder l’expérience, les avis récents, le plateau technique, la transparence du devis et le suivi après le soin.",
+      },
+      {
+        q: "Où se situe la Clinique Dentaire DABIA à Dakar ?",
+        a: "La clinique est située à Sicap Foire, sur les 2 voies Liberté 6, à proximité de la VDN et des Parcelles Assainies.",
+      },
+    ],
+  },
+  {
     slug: "douleur-machoire-atm-bruxisme-dakar-causes-traitements-2026",
     title:
       "Douleur de la mâchoire à Dakar : ATM, bruxisme ou dent ? Comment faire la différence",
