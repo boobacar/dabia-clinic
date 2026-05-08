@@ -8,6 +8,57 @@
       "source": "/clinique-dentaire-dakar",
       "destination": "/cabinet-dentaire-dakar",
       "permanent": true
+    },
+    {
+      "source": "/blog/guide-tarifaire-soins-dentaires-dakar-2025-2026",
+      "destination": "/blog/guide-tarifs-dentiste-dakar-2025",
+      "permanent": true
+    },
+    {
+      "source": "/blog/devis-dentaire-dakar-bien-lire-comparer-2026",
+      "destination": "/blog/devis-dentaire-dakar-comprendre-tarifs",
+      "permanent": true
+    },
+    {
+      "source": "/blog/gingivite-causes-symptomes-traitement",
+      "destination": "/blog/gencives-qui-saignent-gingivite-dakar",
+      "permanent": true
+    },
+    {
+      "source": "/blog/detartrage-dentaire-dakar-prix-frequence-bon-timing-2026",
+      "destination": "/blog/detartrage-dentaire-dakar-prix-frequence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/prix-appareil-dentaire-dakar-guide-complet-2025-2026",
+      "destination": "/blog/appareil-dentaire-prix-dakar-guide-complet",
+      "permanent": true
+    },
+    {
+      "source": "/blog/orthodontie-adulte-dakar-quel-appareil-choisir",
+      "destination": "/blog/orthodontie-adulte-invisible-dakar-aligneurs",
+      "permanent": true
+    },
+    {
+      "source": "/blog/bridge-vs-implant-dentaire-que-choisir",
+      "destination": "/blog/bridge-ou-implant-que-choisir-dakar",
+      "permanent": true
+    },
+    {
+      "source": "/blog/remede-rage-de-dent-quoi-faire-immédiatement",
+      "destination": "/blog/mal-de-dents-la-nuit-causes-et-que-faire",
+      "permanent": true
+    },
+    {
+      "source": "/blog/remede-rage-de-dent-quoi-faire-immediatement",
+      "destination": "/blog/mal-de-dents-la-nuit-causes-et-que-faire",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }

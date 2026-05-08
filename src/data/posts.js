@@ -981,8 +981,8 @@ Le prix dépend de la complexité du cas, du temps clinique, des matériaux util
 Le bon choix n’est pas le « moins cher », mais le **meilleur rapport sécurité–durabilité–résultat**.
 
 ### À lire aussi
-- [Guide tarifaire des soins dentaires à Dakar](/blog/guide-tarifaire-soins-dentaires-dakar-2025-2026)
-- [Devis dentaire à Dakar : comment lire et comparer](/blog/devis-dentaire-dakar-bien-lire-comparer-2026)
+- [Guide tarifaire des soins dentaires à Dakar](/blog/guide-tarifs-dentiste-dakar-2025)
+- [Devis dentaire à Dakar : comment lire et comparer](/blog/devis-dentaire-dakar-comprendre-tarifs)
 
 Besoin d’une estimation personnalisée ? **[Prendre rendez-vous](/rendez-vous)**.`,
     faq: [
@@ -1028,8 +1028,8 @@ Le traitement repose sur un détartrage/polissage, des conseils personnalisés d
 Traiter tôt une gingivite évite des soins plus lourds et protège vos dents sur le long terme.
 
 ### À lire aussi
-- [Gingivite : causes, symptômes et traitement](/blog/gingivite-causes-symptomes-traitement)
-- [Détartrage dentaire à Dakar : prix et fréquence](/blog/detartrage-dentaire-dakar-prix-frequence-bon-timing-2026)
+- [Gingivite : causes, symptômes et traitement](/blog/gencives-qui-saignent-gingivite-dakar)
+- [Détartrage dentaire à Dakar : prix et fréquence](/blog/detartrage-dentaire-dakar-prix-frequence)
 
 Pour un bilan gingival complet : **[Prendre rendez-vous](/rendez-vous)**.`,
     faq: [
@@ -1073,8 +1073,8 @@ Ne regardez pas seulement le prix initial. Évaluez aussi la prévisibilité du 
 Le meilleur appareil est celui qui correspond à votre cas clinique, votre mode de vie et votre capacité de suivi.
 
 ### À lire aussi
-- [Prix appareil dentaire à Dakar : guide complet](/blog/prix-appareil-dentaire-dakar-guide-complet-2025-2026)
-- [Orthodontie adulte : quel appareil choisir ?](/blog/orthodontie-adulte-dakar-quel-appareil-choisir)
+- [Prix appareil dentaire à Dakar : guide complet](/blog/appareil-dentaire-prix-dakar-guide-complet)
+- [Orthodontie adulte : quel appareil choisir ?](/blog/orthodontie-adulte-invisible-dakar-aligneurs)
 
 Pour un plan orthodontique personnalisé : **[Prendre rendez-vous](/rendez-vous)**.`,
     faq: [
@@ -1122,7 +1122,7 @@ L’implant est une solution très fiable quand l’indication est bien posée e
 
 ### À lire aussi
 - [Prix des implants dentaires à Dakar : guide complet](/blog/prix-implants-dentaires-dakar-guide-complet-2026)
-- [Bridge ou implant : que choisir ?](/blog/bridge-vs-implant-dentaire-que-choisir)
+- [Bridge ou implant : que choisir ?](/blog/bridge-ou-implant-que-choisir-dakar)
 
 Pour savoir si vous êtes éligible : **[Prendre rendez-vous](/rendez-vous)**.`,
     faq: [
@@ -1174,7 +1174,7 @@ En urgence dentaire, la rapidité de prise en charge limite les complications et
 
 ### À lire aussi
 - [Urgence dentaire à Dakar : que faire ?](/blog/urgence-dentaire-dakar-que-faire)
-- [Que faire en cas de rage de dent la nuit ?](/blog/remede-rage-de-dent-quoi-faire-immédiatement)
+- [Que faire en cas de rage de dent la nuit ?](/blog/mal-de-dents-la-nuit-causes-et-que-faire)
 
 Besoin d’une prise en charge rapide ? **[Prendre rendez-vous](/rendez-vous)**.`,
     faq: [
