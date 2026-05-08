@@ -10,7 +10,7 @@ const COMPETENCES_PATH = join(ROOT, "src", "data", "competences.js");
 const TECHNOLOGIES_PATH = join(ROOT, "src", "data", "technologies.js");
 const MANIFEST_PATH = join(DIST, ".vite", "manifest.json");
 
-const TAG_SLUGS = [
+const PRIORITY_TAG_SLUGS = [
   "dentiste-dakar",
   "urgence-dentaire",
   "implant-dentaire",
@@ -127,6 +127,17 @@ const readFileSafe = async (p) => {
 };
 
 const absUrl = (path) => `${DOMAIN}${path === "/" ? "/" : path}`;
+
+const slugify = (str = "") =>
+  str
+    .toString()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-");
 
 function toTitleCase(text) {
   return text
@@ -351,6 +362,29 @@ async function readPostsSource(manifest) {
   }));
 }
 
+async function readTagSlugs() {
+  const src = await readFileSafe(POSTS_SOURCE_PATH);
+  const slugs = new Set(PRIORITY_TAG_SLUGS);
+
+  for (const block of src.matchAll(/tags:\s*\[([\s\S]*?)\]/g)) {
+    for (const match of block[1].matchAll(/"([^"]+)"|'([^']+)'/g)) {
+      const slug = slugify(match[1] || match[2]);
+      if (slug) slugs.add(slug);
+    }
+  }
+
+  return Array.from(slugs).sort((a, b) => {
+    const ai = PRIORITY_TAG_SLUGS.indexOf(a);
+    const bi = PRIORITY_TAG_SLUGS.indexOf(b);
+    if (ai !== -1 || bi !== -1) {
+      if (ai === -1) return 1;
+      if (bi === -1) return -1;
+      return ai - bi;
+    }
+    return a.localeCompare(b);
+  });
+}
+
 async function readCompetences() {
   const src = await readFileSafe(COMPETENCES_PATH);
   return Array.from(src.matchAll(/titre:\s*"([^"]+)"[\s\S]*?slug:\s*"([^"]+)"/g)).map(
@@ -377,7 +411,7 @@ function mergePosts(metaPosts, sourcePosts) {
   return Array.from(merged.values()).filter((p) => p?.slug);
 }
 
-function buildRouteCatalog({ posts, competences, technologies }) {
+function buildRouteCatalog({ posts, competences, technologies, tagSlugs }) {
   const routes = [];
 
   for (const path of STATIC_PATHS) {
@@ -428,7 +462,7 @@ function buildRouteCatalog({ posts, competences, technologies }) {
     });
   }
 
-  for (const slug of TAG_SLUGS) {
+  for (const slug of tagSlugs) {
     const label = toTitleCase(slug.replaceAll("-", " "));
     routes.push({
       path: `/blog/tag/${slug}`,
@@ -459,12 +493,14 @@ async function main() {
     readCompetences(),
     readTechnologies(),
   ]);
+  const tagSlugs = await readTagSlugs();
 
   const posts = mergePosts(metaPosts, sourcePosts);
   const routes = buildRouteCatalog({
     posts,
     competences,
     technologies,
+    tagSlugs,
   });
 
   for (const route of routes) {
