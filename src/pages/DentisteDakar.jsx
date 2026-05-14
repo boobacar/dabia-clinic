@@ -434,6 +434,9 @@ export default function DentisteDakar() {
           <Link to="/rendez-vous?motif=esthetique" className="btn-cta btn-cta-sm">
             RDV esthétique
           </Link>
+          <Link to="/clinique-dentaire-dakar" className="btn-cta btn-cta-sm">
+            Clinique dentaire Dakar
+          </Link>
         </div>
       </motion.section>
 
@@ -658,6 +661,12 @@ export default function DentisteDakar() {
           </Link>
           <Link className="underline text-[#bb2988]" to="/blog/detartrage-dakar-frequence-gencives-senegal-2026">
             Détartrage à Dakar : fréquence et santé des gencives
+          </Link>
+          <Link className="underline text-[#bb2988]" to="/infos/technologie/airflow-dentaire-prophylaxie">
+            AirFlow dentaire : nettoyage des taches
+          </Link>
+          <Link className="underline text-[#bb2988]" to="/infos/technologie/cone-beam-ct-cbct">
+            CBCT dentaire 3D à Dakar
           </Link>
           <Link className="underline text-[#bb2988]" to="/blog/urgence-dentiste-dakar-24h-que-faire">
             Urgence dentiste Dakar 24h : que faire

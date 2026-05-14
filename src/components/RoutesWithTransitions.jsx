@@ -1,5 +1,5 @@
 import React, { useEffect, useState, lazy } from "react";
-import { Routes, Route, useLocation, Navigate } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "../pages/Home"; // Static import for LCP
 import BlogPostShell from "../pages/BlogPostShell";
 
@@ -20,6 +20,9 @@ const APropos = lazy(() => import("../pages/APropos"));
 const DentisteDakar = lazy(() => import("../pages/DentisteDakar"));
 const CabinetDentaireDakar = lazy(() =>
   import("../pages/CabinetDentaireDakar")
+);
+const CliniqueDentaireDakar = lazy(() =>
+  import("../pages/CliniqueDentaireDakar")
 );
 const LocaliteLiberte6 = lazy(() => import("../pages/LocaliteLiberte6"));
 const LocaliteParcelles = lazy(() => import("../pages/LocaliteParcelles"));
@@ -74,7 +77,7 @@ export default function RoutesWithTransitions() {
       />
       <Route
         path="/clinique-dentaire-dakar"
-        element={<Navigate to="/cabinet-dentaire-dakar" replace />}
+        element={<CliniqueDentaireDakar />}
       />
       <Route path="/personnel" element={<Personnel />} />
       <Route path="/competences/:slug" element={<CompetenceDetail />} />

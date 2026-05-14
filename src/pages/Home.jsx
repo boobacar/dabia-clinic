@@ -157,6 +157,12 @@ const Home = () => {
             <Link to="/clinique-dentaire-dakar" className="btn-cta btn-cta-sm">
               Clinique dentaire Dakar
             </Link>
+            <Link
+              to="/infos/technologie/airflow-dentaire-prophylaxie"
+              className="btn-cta btn-cta-sm"
+            >
+              AirFlow
+            </Link>
             <Link to="/urgence-dentaire-dakar" className="btn-cta btn-cta-sm">
               Urgence
             </Link>

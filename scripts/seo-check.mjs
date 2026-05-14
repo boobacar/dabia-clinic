@@ -49,6 +49,7 @@ async function main() {
     "src/pages/Technologie.jsx",
     "src/pages/APropos.jsx",
     "src/pages/CabinetDentaireDakar.jsx",
+    "src/pages/CliniqueDentaireDakar.jsx",
     "src/pages/DentisteDakar.jsx",
     "src/pages/UrgenceDentaire.jsx",
   ];

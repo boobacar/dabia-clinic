@@ -38,7 +38,7 @@ export default function CabinetDentaireDakar() {
     name: "Cabinet Dentaire DABIA",
     url: canonical,
     telephone: "+221777039393",
-    image: "/og-image.webp",
+      image: "https://www.cliniquedentairedabia.com/og-image.webp",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Sicap Foire, 2 voies Liberté 6 (à 150m du Uno)",
@@ -190,6 +190,12 @@ export default function CabinetDentaireDakar() {
           </Link>
           <Link className="underline text-[#bb2988]" to="/blog/clinique-dentaire-dakar-comment-choisir">
             Bien choisir sa clinique dentaire à Dakar
+          </Link>
+          <Link className="underline text-[#bb2988]" to="/clinique-dentaire-dakar">
+            Clinique dentaire à Dakar : soins et technologies
+          </Link>
+          <Link className="underline text-[#bb2988]" to="/infos/technologie/airflow-dentaire-prophylaxie">
+            AirFlow dentaire : nettoyage et prophylaxie
           </Link>
           <Link className="underline text-[#bb2988]" to="/blog/soins-dentaires-pendant-ramadan-jeune">
             Ramadan : soins dentaires et jeûne

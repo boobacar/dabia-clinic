@@ -39,7 +39,9 @@ export default function Seo({
   nextUrl,
 }) {
   const finalTitle = title
-    ? `${title} | ${defaultSite.name}`
+    ? /dabia/i.test(title)
+      ? title
+      : `${title} | ${defaultSite.name}`
     : defaultSite.name;
   const makeAbs = (u) => {
     if (!u) return undefined;

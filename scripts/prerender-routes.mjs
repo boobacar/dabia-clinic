@@ -19,6 +19,7 @@ const STATIC_ROUTES = [
   "/rendez-vous",
   "/dentiste-dakar",
   "/cabinet-dentaire-dakar",
+  "/clinique-dentaire-dakar",
   "/urgence-dentaire-dakar",
   "/apropos",
   "/personnel",

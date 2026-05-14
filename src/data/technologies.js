@@ -11,6 +11,7 @@ import aspiration from "../assets/technologie/tech-aspiration.webp";
 import autoclave from "../assets/technologie/tech-autoclave.webp";
 import ia from "../assets/technologie/tech-ia.webp";
 import led from "../assets/technologie/tech-led.webp";
+import airflow from "../assets/blog/Airflow.webp";
 
 export const technologies = [
   {
@@ -43,7 +44,11 @@ export const technologies = [
   {
     slug: "cone-beam-ct-cbct",
     titre: "Cone Beam CT (CBCT)",
-    description: "Imagerie 3D ultra-précise pour implants et chirurgie guidée.",
+    seoTitle: "CBCT dentaire à Dakar : radio 3D pour implants",
+    seoDescription:
+      "CBCT dentaire à Dakar : radio 3D pour implants, chirurgie guidée, dents incluses et diagnostics complexes à la Clinique Dentaire DABIA.",
+    description:
+      "CBCT dentaire 3D ultra-précis pour implants, dents incluses et chirurgie guidée.",
     image: cbct,
     details: `Cet équipement révolutionnaire capture des images 3D détaillées de vos dents, mâchoires, nerfs et structures osseuses en quelques secondes.
 
@@ -53,6 +58,26 @@ Dans quels cas l’utilisons-nous ?
 - Diagnostic de pathologies osseuses ou sinusiennes
 - Traitements orthodontiques complexes
 - Chirurgie buccale`,
+  },
+  {
+    slug: "airflow-dentaire-prophylaxie",
+    titre: "AirFlow dentaire",
+    seoTitle: "AirFlow dentaire à Dakar : nettoyage des taches",
+    seoDescription:
+      "AirFlow dentaire à Dakar : nettoyage doux des taches, plaque et colorations avant détartrage, blanchiment ou suivi parodontal.",
+    description:
+      "Nettoyage dentaire doux pour retirer plaque, taches et colorations superficielles.",
+    image: airflow,
+    details: `L’AirFlow projette un mélange contrôlé d’air, d’eau et de poudre fine pour éliminer les colorations superficielles et le biofilm dentaire avec davantage de confort qu’un polissage classique.
+
+Dans quels cas l’utilisons-nous ?
+- Taches de café, thé, attaya ou tabac
+- Préparation avant blanchiment dentaire
+- Maintenance parodontale et suivi des gencives
+- Nettoyage autour des appareils orthodontiques
+- Entretien des implants et prothèses selon indication
+
+L’AirFlow ne remplace pas toujours le détartrage : les deux techniques peuvent être complémentaires selon la quantité de tartre et l’état des gencives.`,
   },
   {
     slug: "laser-dentaire",
@@ -114,4 +139,3 @@ Pour un confort optimisé, une sécurité renforcée et une visibilité parfaite
 ];
 
 export default technologies;
-

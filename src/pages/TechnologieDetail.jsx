@@ -11,37 +11,55 @@ export default function TechnologieDetail() {
 
   if (!tech) {
     return (
-      <section className="py-20 px-4 max-w-5xl mx-auto mt-20">
-        <Breadcrumbs
-          items={[
-            { label: "Accueil", href: "/" },
-            { label: "Technologie", href: "/infos/technologie" },
-            { label: "Introuvable" },
-          ]}
-        />
-        <h1 className="text-3xl font-bold text-red-600 mb-4">Technologie introuvable</h1>
-        <p className="text-gray-600">
-          Retour à la page {" "}
-          <Link className="text-[#bb2988] underline" to="/infos/technologie">
-            Technologies
-          </Link>
-          .
-        </p>
-      </section>
+      <main className="min-h-screen bg-white text-gray-800">
+        <section className="py-20 px-4 max-w-5xl mx-auto mt-20">
+          <Breadcrumbs
+            items={[
+              { label: "Accueil", href: "/" },
+              { label: "Technologie", href: "/infos/technologie" },
+              { label: "Introuvable" },
+            ]}
+          />
+          <h1 className="text-3xl font-bold text-red-600 mb-4">
+            Technologie introuvable
+          </h1>
+          <p className="text-gray-600">
+            Retour à la page{" "}
+            <Link className="text-[#bb2988] underline" to="/infos/technologie">
+              Technologies
+            </Link>
+            .
+          </p>
+        </section>
+      </main>
     );
   }
 
   const canonical = `https://www.cliniquedentairedabia.com/infos/technologie/${tech.slug}`;
 
   return (
-    <section className="py-20 px-4 max-w-5xl mx-auto mt-20">
+    <main className="min-h-screen bg-white text-gray-800">
+      <section className="py-20 px-4 max-w-5xl mx-auto mt-20">
       <Seo
-        title={`${tech.titre} – Technologies dentaires à Dakar`}
-        description={tech.description}
+        title={tech.seoTitle || `${tech.titre} – Technologie dentaire à Dakar`}
+        description={tech.seoDescription || tech.description}
         canonical={canonical}
         url={canonical}
         image={tech.image}
         type="article"
+        jsonLd={[
+          {
+            "@context": "https://schema.org",
+            "@type": "MedicalWebPage",
+            name: tech.seoTitle || `${tech.titre} à Dakar`,
+            description: tech.seoDescription || tech.description,
+            url: canonical,
+            about: {
+              "@type": "MedicalDevice",
+              name: tech.titre,
+            },
+          },
+        ]}
       />
 
       <Breadcrumbs
@@ -81,10 +99,14 @@ export default function TechnologieDetail() {
         <Link to="/infos/technologie" className="btn-cta btn-cta-sm">
           ← Retour aux technologies
         </Link>
+        <Link to="/dentiste-dakar" className="btn-cta btn-cta-sm">
+          Dentiste Dakar
+        </Link>
         <Link to="/rendez-vous" className="btn-cta">
           Prendre rendez-vous
         </Link>
       </div>
-    </section>
+      </section>
+    </main>
   );
 }
