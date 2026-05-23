@@ -8,7 +8,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import imgrv from "../assets/rendezvous-dabia.webp";
 import Seo from "../components/Seo";
 import Breadcrumbs from "../components/Breadcrumbs";
-import { useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { addDays, startOfDay, format } from "date-fns";
 import { sendEvent } from "../analytics/ga4";
 import FancySelect from "../components/FancySelect";
@@ -21,6 +21,12 @@ import("canvas-confetti").then((m) => (confetti = m.default)).catch(() => {});
 
 const minSelectableDate = addDays(startOfDay(new Date()), 2);
 const availableFromLabel = format(minSelectableDate, "dd MMMM", { locale: fr });
+
+const ONLINE_BOOKING_BLOCK_UNTIL = new Date("2026-06-01T00:00:00Z");
+const onlineBookingBlocked = new Date() < ONLINE_BOOKING_BLOCK_UNTIL;
+const onlineBookingResumeLabel = format(ONLINE_BOOKING_BLOCK_UNTIL, "dd MMMM yyyy", {
+  locale: fr,
+});
 
 const HorairesCard = ({ className = "" }) => (
   <div
@@ -128,6 +134,11 @@ const RendezVous = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (onlineBookingBlocked) {
+      setStatus("error");
+      return;
+    }
 
     // Validation supplémentaire : interdire toute date avant J+2
     if (!date || date < minSelectableDate) {
@@ -567,6 +578,47 @@ const RendezVous = () => {
           asJsonLd={false}
           items={faqItems}
         />
+
+        {onlineBookingBlocked && (
+          <div className="fixed inset-0 z-[120] bg-black/70 backdrop-blur-sm flex items-center justify-center px-4">
+            <div className="w-full max-w-lg rounded-3xl border border-[#e7dcbc] bg-white p-6 md:p-8 shadow-2xl text-center">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#bb2988]">
+                Prise de rendez-vous en ligne suspendue
+              </h2>
+              <p className="mt-3 text-gray-700">
+                En raison des fêtes (Tabaski/Pentecôte), les réservations en ligne sont
+                temporairement suspendues jusqu’au <span className="font-semibold">{onlineBookingResumeLabel}</span>.
+              </p>
+              <p className="mt-2 text-sm text-gray-600">
+                Pour les urgences dentaires, contactez-nous immédiatement.
+              </p>
+
+              <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                <a
+                  href="https://wa.me/221777039393?text=Bonjour%20Clinique%20DABIA%2C%20j%27ai%20une%20urgence%20dentaire."
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn-cta inline-flex items-center justify-center gap-2"
+                >
+                  <FaWhatsapp className="text-green-600" /> Urgence WhatsApp
+                </a>
+                <a
+                  href="tel:+221777039393"
+                  className="btn-cta inline-flex items-center justify-center gap-2"
+                >
+                  <FaPhoneAlt /> Appeler la clinique
+                </a>
+              </div>
+
+              <Link
+                to="/"
+                className="mt-4 inline-flex text-sm font-semibold text-[#ad9d64] underline"
+              >
+                Retour à l’accueil
+              </Link>
+            </div>
+          </div>
+        )}
 
         <AnimatePresence>
           {showModal && <SuccessModal onClose={() => setShowModal(false)} />}
