@@ -129,6 +129,7 @@ export default function Seo({
           (finalCanonical
             ? [
                 { lang: "fr-SN", href: finalCanonical },
+                { lang: "fr", href: finalCanonical },
                 { lang: "x-default", href: finalCanonical },
               ]
             : []);

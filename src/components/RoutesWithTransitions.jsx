@@ -24,6 +24,7 @@ const CabinetDentaireDakar = lazy(() =>
 const CliniqueDentaireDakar = lazy(() =>
   import("../pages/CliniqueDentaireDakar")
 );
+const DentalClinicDakarEn = lazy(() => import("../pages/DentalClinicDakarEn"));
 const LocaliteLiberte6 = lazy(() => import("../pages/LocaliteLiberte6"));
 const LocaliteParcelles = lazy(() => import("../pages/LocaliteParcelles"));
 const UrgenceDentaire = lazy(() => import("../pages/UrgenceDentaire"));
@@ -78,6 +79,10 @@ export default function RoutesWithTransitions() {
       <Route
         path="/clinique-dentaire-dakar"
         element={<CliniqueDentaireDakar />}
+      />
+      <Route
+        path="/en/dental-clinic-dakar"
+        element={<DentalClinicDakarEn />}
       />
       <Route path="/personnel" element={<Personnel />} />
       <Route path="/competences/:slug" element={<CompetenceDetail />} />

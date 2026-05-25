@@ -147,6 +147,9 @@ export default function CliniqueDentaireDakar() {
           <Link to="/urgence-dentaire-dakar" className="btn-cta btn-cta-sm">
             Urgence dentaire
           </Link>
+          <Link to="/en/dental-clinic-dakar" className="btn-cta btn-cta-sm">
+            English page
+          </Link>
         </div>
       </motion.section>
 
