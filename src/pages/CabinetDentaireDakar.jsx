@@ -57,8 +57,8 @@ export default function CabinetDentaireDakar() {
   return (
     <section className="py-20 px-4 max-w-7xl mx-auto mt-20">
       <Seo
-        title="Cabinet dentaire à Dakar : devis clair, urgence et RDV rapide | DABIA"
-        description="Cabinet dentaire à Dakar : prévention, soins, implants, orthodontie et urgences. Devis transparent + prise de rendez-vous rapide (appel, WhatsApp ou formulaire)."
+        title="Cabinet dentaire Dakar : urgence, implants, devis transparent | DABIA"
+        description="Cabinet dentaire à Dakar (Liberté 6) : prévention, soins, implants, orthodontie et urgences dentaires. Devis transparent, RDV rapide par téléphone, WhatsApp ou formulaire."
         canonical={canonical}
         url={canonical}
         jsonLd={[lbLD, faqLD]}

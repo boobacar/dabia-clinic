@@ -5,6 +5,12 @@
   "outputDirectory": "dist",
   "redirects": [
     {
+      "source": "/:path*",
+      "missing": [{ "type": "host", "value": "www.cliniquedentairedabia.com" }],
+      "destination": "https://www.cliniquedentairedabia.com/:path*",
+      "permanent": true
+    },
+    {
       "source": "/blog/guide-tarifaire-soins-dentaires-dakar-2025-2026",
       "destination": "/blog/guide-tarifs-dentiste-dakar-2025",
       "permanent": true

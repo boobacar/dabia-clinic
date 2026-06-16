@@ -56,8 +56,8 @@ export default function DentalClinicDakarEn() {
     <main className="min-h-screen bg-white text-gray-800">
       <div className="py-20 px-4 max-w-7xl mx-auto mt-20">
         <Seo
-          title="Dental clinic in Dakar: emergency, implants, orthodontics"
-          description="Looking for a dental clinic in Dakar? DABIA provides consultations, emergency care, implants, orthodontics, cosmetic dentistry, and clear treatment plans."
+          title="Dental Clinic Dakar — Implants, Emergency, Cosmetic Dentistry | DABIA"
+          description="English-speaking dental clinic in Dakar, Senegal. Implants, orthodontics, teeth whitening, emergency dental care. Clear quotes, fast appointments at DABIA Clinic, Liberté 6."
           canonical={canonical}
           url={canonical}
           locale="en_US"

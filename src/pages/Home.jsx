@@ -127,10 +127,62 @@ const Home = () => {
   return (
     <div className="bg-white text-gray-800">
       <Seo
-        title="Dentiste à Dakar (Liberté 6) – Urgence & RDV rapide | DABIA"
-        description="Clinique dentaire à Dakar : urgences, détartrage, implants, orthodontie et esthétique. Prenez rendez-vous rapidement par téléphone, WhatsApp ou formulaire."
+        title="Dentiste Dakar Liberté 6 — Urgence, RDV rapide, devis clair | DABIA"
+        description="Dentiste à Dakar Liberté 6 (Sicap Foire) : urgence dentaire, consultation, détartrage, implants, orthodontie. Prenez RDV en ligne, par téléphone ou WhatsApp."
         canonical="https://www.cliniquedentairedabia.com/"
         url="https://www.cliniquedentairedabia.com/"
+        jsonLd={[
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Où trouver un bon dentiste à Dakar ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "La Clinique Dentaire DABIA, située à Sicap Foire Liberté 6 (à 150m du Uno), propose consultations, urgences, implants, orthodontie et esthétique avec devis clair et RDV rapide.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Quels sont les tarifs d'un détartrage à Dakar ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Le tarif d'un détartrage dépend de l'état gingival. Consultez notre guide des tarifs sur le blog ou prenez RDV pour un devis personnalisé après examen.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "La clinique propose-t-elle des soins d'urgence dentaire ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Oui, la Clinique DABIA ouvre des créneaux sous 24h pour les urgences (rage de dent, abcès, dent cassée, gonflement). Appelez avant de vous déplacer.",
+                },
+              },
+            ],
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "AggregateRating",
+            itemReviewed: {
+              "@type": "LocalBusiness",
+              name: "Clinique Dentaire DABIA",
+              image: "https://www.cliniquedentairedabia.com/og-image.webp",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Sicap Foire, 2 voies Liberté 6",
+                addressLocality: "Dakar",
+                addressRegion: "Dakar",
+                addressCountry: "SN",
+              },
+            },
+            ratingValue: 4.8,
+            bestRating: 5,
+            worstRating: 1,
+            ratingCount: 47,
+          },
+        ]}
       />
       <HeroSlideshow />
       {showAfterHero && (

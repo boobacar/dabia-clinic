@@ -105,8 +105,8 @@ export default function CliniqueDentaireDakar() {
     <main className="min-h-screen bg-white text-gray-800">
       <div className="py-20 px-4 max-w-7xl mx-auto mt-20">
       <Seo
-        title="Clinique dentaire Dakar : soins, implants, urgence"
-        description="Clinique dentaire à Dakar, Sicap Foire Liberté 6 : consultation, urgence, implants, orthodontie, prothèses, blanchiment et devis clair."
+        title="Clinique dentaire Dakar Liberté 6 : urgence, implants, devis | DABIA"
+        description="Clinique dentaire à Dakar Sicap Foire Liberté 6 : urgence dentaire 24h, implants, orthodontie, facettes, blanchiment. Consultation, devis clair, RDV rapide."
         canonical={canonical}
         url={canonical}
         jsonLd={jsonLd}

@@ -37,6 +37,34 @@ export default function BlogPostShell() {
           type="article"
           publishedTime={post.date}
           modifiedTime={post.date}
+          jsonLd={[
+            {
+              "@context": "https://schema.org",
+              "@type": "Article",
+              headline: post.title,
+              description: post.description,
+              datePublished: post.date,
+              dateModified: post.date,
+              author: {
+                "@type": "Person",
+                name: "Dr Fatoumata SAO",
+                jobTitle: "Chirurgienne-dentiste en chef",
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "Clinique Dentaire DABIA",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://www.cliniquedentairedabia.com/logo.jpg",
+                },
+              },
+              image: "https://www.cliniquedentairedabia.com/og-image.webp",
+              mainEntityOfPage: {
+                "@type": "WebPage",
+                "@id": canonical,
+              },
+            },
+          ]}
         />
 
         <Breadcrumbs
