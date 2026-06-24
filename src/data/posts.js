@@ -8600,4 +8600,441 @@ Soigner ses gencives, c'est aussi protéger sa santé générale.
       },
     ],
   },
+
+// === NOUVEAUX ARTICLES SEO — JUIN 2026 ===
+// Ces 5 articles sont insérés à la fin du tableau POSTS dans posts.js
+
+  // Article 1 : Greffe osseuse
+  {
+    slug: "greffe-osseuse-dentaire-dakar-prix-deroule-2026",
+    title:
+      "Greffe osseuse dentaire à Dakar : prix, déroulement et indications en 2026",
+    description:
+      "Vous avez besoin d'une greffe osseuse avant un implant dentaire à Dakar ? Prix, étapes, types de greffe, suites et délais expliqués clairement par la Clinique DABIA.",
+    date: "2026-06-24",
+    category: "Soins",
+    tags: [
+      "greffe osseuse",
+      "implant dentaire",
+      "greffe sinus",
+      "regeneration osseuse",
+      "prix greffe dentaire dakar",
+      "dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: implantCoutCover,
+    readingMinutes: 6,
+    content: `Quand on vous annonce qu'il faut une **greffe osseuse avant un implant dentaire**, deux questions viennent immédiatement : est-ce douloureux et combien ça coûte à Dakar ?
+
+Ce guide complet vous explique **pourquoi** une greffe est parfois nécessaire, **comment** elle se déroule, et **quel budget prévoir à Dakar en 2026**.
+
+## Pourquoi une greffe osseuse avant un implant ?
+
+Quand une dent est perdue, l'os de la mâchoire qui la soutenait commence à se résorber. Sans stimulation par la racine dentaire, l'os diminue progressivement. Après plusieurs mois ou années, le volume osseux peut devenir insuffisant pour poser un implant.
+
+La greffe osseuse permet de **reconstruire le volume osseux** perdu pour offrir une base solide à l'implant.
+
+Situations nécessitant une greffe :
+- Dent manquante depuis plus de 6 mois
+- Maladie parodontale ayant détruit l'os
+- Traumatisme ou infection
+- Sinus maxillaire trop bas (greffe sinusienne)
+
+## Types de greffe osseuse
+
+### Autogreffe (os du patient)
+Prélèvement d'un fragment d'os du patient. Technique de référence, os vivant. Délai : 4-6 mois.
+
+### Xénogreffe (os bovin)
+Os bovin traité servant de matrice. Très utilisé pour les comblements modérés. Délai : 6-9 mois.
+
+### Allogreffe (os humain)
+Os humain de banque. Alternative à l'autogreffe. Délai : 4-8 mois.
+
+### Matériaux synthétiques
+Céramiques de phosphate de calcium. Pour petits comblements.
+
+## Déroulement à Dakar
+
+1. **Bilan pré-opératoire** : examen clinique, CBCT 3D, devis détaillé
+2. **Intervention** sous anesthésie locale (45 min à 1h30)
+3. **Cicatrisation** : 4 à 9 mois selon le type de greffe
+4. **Pose de l'implant** : 3-4 mois supplémentaires avant la couronne finale
+
+## Prix à Dakar
+
+| Type de greffe | Fourchette (FCFA) |
+|---|---|
+| Petit comblement (1-2 dents) | 200 000 – 350 000 |
+| Greffe sinusienne | 350 000 – 500 000 |
+| Greffe étendue | 500 000 – 800 000 |
+| Régénération guidée complète | 600 000 – 1 000 000 |
+
+Devis personnalisé remis après le CBCT.
+
+## Suites opératoires
+
+- Œdème modéré 2-4 jours, contrôlé par antalgiques
+- Alimentation molle 5-7 jours
+- Bains de bouche antiseptiques
+- Arrêt du tabac indispensable
+- Contrôle à 7-10 jours`,
+    faq: [
+      {
+        q: "Une greffe osseuse est-elle douloureuse ?",
+        a: "L'intervention se fait sous anesthésie locale et n'est pas douloureuse. Les suites sont une gêne modérée, bien contrôlée par des antalgiques prescrits.",
+      },
+      {
+        q: "Combien de temps entre la greffe et l'implant ?",
+        a: "En moyenne 4 à 9 mois selon le type de greffe. Le CBCT de contrôle confirme la consolidation avant la pose de l'implant.",
+      },
+      {
+        q: "La greffe est-elle toujours nécessaire avant un implant ?",
+        a: "Non. Si le volume osseux est suffisant (vérifié par CBCT), l'implant peut être posé sans greffe.",
+      },
+    ],
+  },
+
+  // Article 2 : Sensibilité dentaire
+  {
+    slug: "sensibilite-dentaire-causes-traitement-dakar-2026",
+    title:
+      "Dents sensibles à Dakar : causes, traitements et solutions durables en 2026",
+    description:
+      "Vos dents sont sensibles au chaud, au froid ou au sucré ? Découvrez les causes, les traitements disponibles à Dakar et les gestes simples pour retrouver du confort au quotidien.",
+    date: "2026-06-24",
+    category: "Prévention",
+    tags: [
+      "sensibilité dentaire",
+      "dents sensibles",
+      "email dentaire",
+      "recession gingivale",
+      "dentifrice dents sensibles",
+      "dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: dentsSensiblesCover,
+    readingMinutes: 5,
+    content: `Quand un verre d'eau froide devient désagréable, on parle de **sensibilité dentaire**. Ce problème touche de nombreuses personnes à Dakar, souvent sans qu'elles sachent qu'il existe des solutions simples.
+
+## Qu'est-ce que la sensibilité dentaire ?
+
+C'est une douleur brève et vive déclenchée par le froid, le chaud, le sucré ou l'acide. Elle survient quand la **dentine** (couche sous l'émail) est exposée. La dentine contient des micro-tubules qui communiquent avec le nerf.
+
+## Les 7 causes principales
+
+1. **Usure de l'émail** : brossage trop vigoureux ou alimentation acide
+2. **Récession gingivale** : gencives qui se rétractent
+3. **Caries et fissures** : portes d'entrée vers la dentine
+4. **Bruxisme** : grincement nocturne qui use l'émail
+5. **Après un détartrage** : sensibilité temporaire (24-48h)
+6. **Blanchiment dentaire** : ouvre temporairement les tubules
+7. **Alimentation acide** : agrumes, sodas, vinaigre
+
+## Traitements disponibles à Dakar
+
+### Au cabinet
+- **Vernis fluoré** : soulagement immédiat
+- **Résine de comblement** pour les récessions
+- **Laser** pour sceller les tubules
+- **Greffe de gencive** en cas de récession importante
+- **Gouttière anti-bruxisme**
+
+### À la maison
+- Dentifrice pour dents sensibles
+- Brosse à dents souple
+- Bain de bouche au fluor
+- Éviter aliments acides
+
+## Prix indicatifs
+
+| Traitement | Prix (FCFA) |
+|---|---|
+| Vernis fluoré | 10 000 – 20 000 |
+| Résine de comblement | 30 000 – 60 000/dent |
+| Traitement laser | 50 000 – 100 000 |
+| Gouttière anti-bruxisme | 100 000 – 200 000 |
+
+## 5 gestes de prévention
+
+1. Brosse à dents souple + brossage doux
+2. Dentifrice pour dents sensibles
+3. Limiter les aliments acides
+4. Gouttière si bruxisme
+5. Détartrage annuel`,
+    faq: [
+      {
+        q: "Les dents sensibles annoncent-elles une carie ?",
+        a: "Pas toujours. Cela peut être dû à l'usure de l'émail ou une récession. Mais une sensibilité qui s'aggrave ou devient spontanée nécessite une consultation.",
+      },
+      {
+        q: "Combien de temps dure la sensibilité après un détartrage ?",
+        a: "24 à 48 heures. Au-delà, un vernis fluoré peut être appliqué pour la soulager.",
+      },
+    ],
+  },
+
+  // Article 3 : Bridge dentaire
+  {
+    slug: "bridge-dentaire-prix-dakar-indications-2026",
+    title:
+      "Bridge dentaire à Dakar : prix, indications et alternatives en 2026",
+    description:
+      "Il vous manque une ou plusieurs dents ? Bridge traditionnel, cantilever ou sur implant : prix à Dakar, indications, durée de vie et comparaison avec les alternatives.",
+    date: "2026-06-24",
+    category: "Soins",
+    tags: [
+      "bridge dentaire",
+      "prix bridge dakar",
+      "remplacer dent",
+      "prothese dentaire",
+      "implant dentaire",
+      "dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: bridgeImplantCover,
+    readingMinutes: 5,
+    content: `Vous avez perdu une ou plusieurs dents et cherchez une solution fixe ? Le **bridge dentaire** reste une option courante à Dakar, aux côtés des implants.
+
+## Qu'est-ce qu'un bridge dentaire ?
+
+Un bridge (« pont dentaire ») est une prothèse fixe qui remplace une ou plusieurs dents manquantes en s'appuyant sur les dents voisines ou des implants. Comme un pont entre deux piliers.
+
+## Les 3 types de bridges
+
+### Bridge traditionnel
+Les dents adjacentes sont taillées pour recevoir des couronnes qui soutiennent la dent intermédiaire. Pour 1 à 3 dents remplacées.
+
+### Bridge cantilever
+Suspendu à un seul pilier. Réservé aux dents antérieures (faible mastication).
+
+### Bridge sur implant
+S'appuie sur 2 implants ou plus. Ne touche pas aux dents saines. Solution la plus durable.
+
+## Prix à Dakar en 2026
+
+| Type | Prix (FCFA) |
+|---|---|
+| Bridge 3 éléments (1 dent) | 300 000 – 500 000 |
+| Bridge cantilever | 250 000 – 400 000 |
+| Bridge étendu (4-5 éléments) | 500 000 – 800 000 |
+| Bridge sur 2 implants | 1 000 000 – 1 500 000 |
+
+## Déroulement
+
+1. Consultation et bilan (CBCT si nécessaire)
+2. Préparation des piliers sous anesthésie
+3. Empreinte numérique (scanner intra-oral)
+4. Bridge provisoire (1-2 semaines)
+5. Pose du bridge définitif
+
+## Bridge ou implant ?
+
+| Critère | Bridge | Implant |
+|---|---|---|
+| Dents saines touchées | OUI (2 taillées) | NON |
+| Durée de vie | 10-15 ans | 20+ ans |
+| Prix initial | Plus abordable | Plus élevé |
+| Préservation osseuse | NON | OUI |
+
+Le bridge reste pertinent quand le budget est serré, les dents piliers sont déjà abîmées, ou le volume osseux est insuffisant.`,
+    faq: [
+      {
+        q: "Combien de temps dure un bridge ?",
+        a: "10 à 15 ans avec une bonne hygiène et des contrôles réguliers.",
+      },
+      {
+        q: "Le bridge est-il plus économique que l'implant ?",
+        a: "À court terme oui. Mais l'implant préserve l'os et dure plus longtemps. Sur 20 ans, l'implant peut être plus économique.",
+      },
+    ],
+  },
+
+  // Article 4 : Mutuelle / IPM dentiste Dakar
+  {
+    slug: "dentiste-mutuelle-ipm-dakar-prise-en-charge-2026",
+    title:
+      "Dentiste et mutuelle à Dakar : comment être bien remboursé avec l'IPM en 2026",
+    description:
+      "Vous avez une mutuelle ou une IPM ? Découvrez comment optimiser le remboursement de vos soins dentaires à Dakar : démarches, documents nécessaires, plafonds et astuces pratiques.",
+    date: "2026-06-24",
+    category: "Conseils",
+    tags: [
+      "mutuelle dentaire dakar",
+      "ipm dentiste",
+      "assurance dentaire senegal",
+      "remboursement soins dentaires",
+      "dentiste conventionné dakar",
+      "devis dentaire",
+    ],
+    author: AUTHORS.sao,
+    cover: devisDentaireCover,
+    readingMinutes: 5,
+    content: `Vous avez une mutuelle ou une **IPM (Institution de Prévoyance Maladie)** et vous voulez savoir comment optimiser le remboursement de vos soins dentaires à Dakar ? Voici tout ce qu'il faut savoir.
+
+## Comprendre le fonctionnement de l'IPM
+
+Les IPM au Sénégal fonctionnent sur un principe de **tiers payant** ou de **remboursement** :
+- Vous avancez les frais, puis vous êtes remboursé sur présentation des justificatifs
+- Certaines IPM ont des **conventions directes** avec des cliniques partenaires
+- Les plafonds de remboursement varient selon votre formule
+
+## Les documents nécessaires pour le remboursement
+
+Pour chaque soin dentaire, préparez :
+1. **Le devis** avant le traitement (obligatoire pour les soins importants)
+2. **La facture détaillée** après le traitement
+3. **Le formulaire de prise en charge** de votre IPM (si applicable)
+4. **La prescription** du dentiste
+
+## Soins les mieux remboursés
+
+| Type de soin | Taux de remboursement habituel |
+|---|---|
+| Consultation | 70-90% |
+| Détartrage | 70-90% |
+| Extraction | 70-80% |
+| Traitement canalaire | 50-70% |
+| Couronne | 40-60% |
+| Implant | Variable (souvent forfait) |
+| Orthodontie | Forfait annuel |
+| Prothèse | 30-50% |
+
+## 5 astuces pour maximiser votre remboursement
+
+1. **Demandez un devis détaillé** avant tout traitement
+2. **Regroupez les soins** sur une même année civile pour atteindre les plafonds
+3. **Vérifiez les conventions** de votre IPM avec les cliniques
+4. **Gardez tous les justificatifs** (factures, ordonnances, radios)
+5. **Soumettez rapidement** votre dossier (délai de 1 à 3 mois selon l'IPM)
+
+## Principales IPM au Sénégal
+
+La Clinique DABIA vous aide à préparer votre dossier pour :
+- IPM Sonatel
+- IPM Senelec
+- IPM Poste
+- IPM Centif
+- IPM Eiffage
+- IPM King Fahd
+- MSH, AXA, Sunu, Wafa, Amsa, Sanlam, CNSS
+- Et de nombreuses autres mutuelles
+
+## Notre engagement
+
+À la Clinique DABIA, nous remettons **systématiquement un devis clair et détaillé** avant tout traitement, avec les codes CCAM pour faciliter votre prise en charge. Notre équipe vous accompagne dans la constitution de votre dossier de remboursement.`,
+    faq: [
+      {
+        q: "La Clinique DABIA est-elle conventionnée avec mon IPM ?",
+        a: "Nous travaillons avec la plupart des IPM et mutuelles au Sénégal. Appelez-nous pour vérifier votre convention ou venez avec vos documents pour qu'on prépare votre dossier.",
+      },
+      {
+        q: "Faut-il un devis avant les soins ?",
+        a: "Oui, c'est obligatoire pour les soins importants (couronne, implant, prothèse). Nous vous remettons un devis détaillé avec les codes CCAM.",
+      },
+      {
+        q: "Combien de temps pour être remboursé ?",
+        a: "Selon l'IPM, le délai varie de 2 semaines à 2 mois après soumission du dossier complet.",
+      },
+    ],
+  },
+
+  // Article 5 : Première consultation
+  {
+    slug: "premiere-consultation-dentiste-dakar-deroulement-2026",
+    title:
+      "Première consultation chez le dentiste à Dakar : à quoi s'attendre en 2026",
+    description:
+      "Vous avez votre premier rendez-vous chez le dentiste à Dakar ? Déroulement complet : accueil, examen, radiographies, plan de traitement et devis expliqués pas à pas par la Clinique DABIA.",
+    date: "2026-06-24",
+    category: "Conseils",
+    tags: [
+      "consultation dentaire",
+      "premiere visite dentiste",
+      "bilan dentaire dakar",
+      "devis dentaire",
+      "radio dentaire",
+      "dentiste dakar",
+    ],
+    author: AUTHORS.sao,
+    cover: choisirDentisteCover,
+    readingMinutes: 4,
+    content: `C'est votre **premier rendez-vous chez le dentiste à Dakar** et vous vous demandez comment cela va se passer ? Rassurez-vous : une première consultation est avant tout un moment d'échange et de diagnostic, sans douleur. Voici le déroulement complet, étape par étape.
+
+## Étape 1 : L'accueil et le questionnaire médical (5-10 min)
+
+À votre arrivée, on vous remet un **questionnaire médical** à remplir. Il couvre :
+- Vos antécédents médicaux (maladies, allergies, traitements en cours)
+- Vos habitudes (tabac, alimentation)
+- La raison de votre visite (douleur, bilan, esthétique)
+- Vos éventuelles appréhensions
+
+Soyez honnête dans vos réponses : cela permet au dentiste d'adapter sa prise en charge.
+
+## Étape 2 : L'examen clinique (15-20 min)
+
+Le dentiste examine méthodiquement :
+- **Les dents** : caries, usures, fissures, obturations existantes
+- **Les gencives** : inflammation, saignement, récession
+- **L'occlusion** : comment vos dents s'emboîtent
+- **Les muqueuses** : dépistage des lésions buccales
+- **L'hygiène** : présence de tartre, de plaque dentaire
+
+Cet examen est **indolore**. Le dentiste utilise un miroir et une sonde. Il vous explique ce qu'il observe au fur et à mesure.
+
+## Étape 3 : Les radiographies si nécessaires (5-10 min)
+
+Selon votre situation, le dentiste peut prescrire :
+- **Radio panoramique** : vue d'ensemble des 2 mâchoires
+- **Radio rétro-alvéolaire** : zoom sur une ou deux dents spécifiques
+- **CBCT 3D** : image en 3D pour les cas complexes (implant, chirurgie)
+
+À la Clinique DABIA, ces examens sont réalisés sur place, sans rendez-vous supplémentaire.
+
+## Étape 4 : Le diagnostic et le plan de traitement (10-15 min)
+
+C'est le moment clé. Le dentiste :
+1. Vous **explique** ce qu'il a observé (avec les radios à l'appui)
+2. Vous **propose** un plan de traitement priorisé
+3. Vous **détaille** les options (avec leurs avantages/inconvénients)
+4. Répond à **toutes vos questions**
+
+Vous repartez avec :
+- Un **devis clair et détaillé** (chaque acte est listé avec son prix)
+- Un **calendrier de soins** (ordre et espacement des rendez-vous)
+- Des **conseils d'hygiène** personnalisés
+
+## Étape 5 : La suite
+
+- Si c'est une urgence : le premier soin peut être fait le jour même
+- Si c'est un bilan : les rendez-vous sont planifiés selon vos disponibilités
+- Vous pouvez prendre vos rendez-vous en ligne ou par téléphone
+
+## Prix d'une première consultation à Dakar
+
+Une première consultation (examen + diagnostic + devis) coûte généralement entre **15 000 et 25 000 FCFA**. Les radiographies éventuelles sont facturées en supplément (panoramique : 15 000-25 000 FCFA).
+
+## Nos conseils pour bien préparer votre visite
+
+1. Apportez vos anciennes radios ou ordonnances si vous en avez
+2. Notez vos questions à l'avance (vous risquez de les oublier)
+3. Signalez TOUS vos problèmes, même ceux qui vous semblent mineurs
+4. Si vous êtes anxieux(se), dites-le : nous adaptons notre approche
+5. Prévoyez 45 minutes à 1 heure pour une première consultation complète`,
+    faq: [
+      {
+        q: "La première consultation est-elle payante ?",
+        a: "Oui, comme toute consultation médicale. Le tarif inclut l'examen clinique complet, le diagnostic, le plan de traitement et le devis détaillé.",
+      },
+      {
+        q: "Dois-je apporter quelque chose ?",
+        a: "Vos anciennes radios dentaires, ordonnances en cours, et votre carte de mutuelle/IPM si vous en avez une. Et vos questions !",
+      },
+      {
+        q: "Peut-on me soigner le jour même ?",
+        a: "Pour une urgence (douleur, abcès), oui. Pour un bilan de routine, les soins seront planifiés sur des rendez-vous ultérieurs.",
+      },
+    ],
+  },
+
 ];
