@@ -216,33 +216,58 @@ export default function BlogPost({ hideHeader = false }) {
     return unique;
   }, [post, postSlug, postCategory, tags]);
 
-  // Competence links suggestions based on tags
+  // Competence links suggestions based on tags (étendu à 9 compétences + urgence)
   const competenceLinks = useMemo(() => {
     const map = [
       {
-        keys: ["implant", "implantologie"],
+        keys: ["implant", "implantologie", "bridge", "prothèse", "prothese", "all-on-4", "dentier", "edentement"],
         to: "/competences/implantologie",
         label: "Implantologie",
       },
       {
-        keys: ["orthodontie", "aligneurs", "bagues"],
+        keys: ["orthodontie", "aligneur", "bagues", "invisalign", "appareil dentaire", "bracket", "orthodontique"],
         to: "/competences/orthodontie",
         label: "Orthodontie",
       },
       {
-        keys: ["facette", "facettes"],
+        keys: ["facette", "facettes", "hollywood smile", "sourire"],
         to: "/competences/facettes-dentaires",
         label: "Facettes dentaires",
       },
       {
-        keys: ["blanchiment"],
+        keys: ["blanchiment", "blanchir", "eclat", "taches"],
         to: "/competences/blanchiment-dentaire",
         label: "Blanchiment dentaire",
       },
       {
-        keys: ["detartrage", "parodont"],
+        keys: ["detartrage", "parodont", "gingivite", "gencive", "saignement", "tartre", "plaque dentaire", "surfacage"],
         to: "/competences/parodontologie",
         label: "Parodontologie",
+      },
+      {
+        keys: ["devitalisation", "dévitalisation", "canalaire", "canal", "endodontie", "nerf dentaire", "pulpe"],
+        to: "/competences/endodontie",
+        label: "Endodontie",
+      },
+      {
+        keys: ["enfant", "pédodontie", "pedodontie", "pédiatrique", "biberon", "scellant", "première visite"],
+        to: "/competences/pedodontie",
+        label: "Pédodontie (soins enfants)",
+      },
+      {
+        keys: ["greffe", "osseuse", "os", "sinus"],
+        to: "/competences/greffe-osseuse",
+        label: "Greffe osseuse",
+      },
+      {
+        keys: ["esthetique", "esthétique", "sourire", "facette", "blanchiment", "éclat"],
+        to: "/competences/esthétique-dentaire",
+        label: "Esthétique dentaire",
+      },
+      {
+        keys: ["urgence", "douleur", "rage de dent", "abcès", "abces", "dent cassée", "gonflement", "traumatisme", "nuit", "weekend", "24"],
+        to: "/urgence-dentaire-dakar",
+        label: "Urgence dentaire à Dakar",
       },
     ];
     const out = [];
@@ -255,7 +280,15 @@ export default function BlogPost({ hideHeader = false }) {
         }
       }
     }
-    return out;
+    // Always suggest at least the dentiste-dakar page
+    if (!seen.has("/dentiste-dakar")) {
+      out.push({
+        keys: [],
+        to: "/dentiste-dakar",
+        label: "Dentiste à Dakar",
+      });
+    }
+    return out.slice(0, 6);
   }, [tags]);
 
   // Auto‑FAQ hints per tag (fallback generic)
@@ -613,8 +646,35 @@ export default function BlogPost({ hideHeader = false }) {
           <div className="mt-8 p-4 border rounded-lg bg-yellow-50 text-yellow-800 text-sm">
             Les informations de ce blog sont fournies à titre informatif et ne
             remplacent pas une consultation clinique. En cas de douleur ou
-            d’urgence, contactez directement la clinique.
+            d'urgence, contactez directement la clinique.
           </div>
+
+          {/* Articles liés — grille visible sous le contenu */}
+          {related.length > 0 && (
+            <section className="mt-10 pt-8 border-t">
+              <h2 className="text-xl font-bold text-[#ad9d64] mb-4">
+                Ces articles pourraient vous intéresser
+              </h2>
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {related.slice(0, 3).map((p) => (
+                  <Link
+                    key={p.slug}
+                    to={`/blog/${p.slug}`}
+                    className="group block p-4 border rounded-xl hover:shadow-md hover:-translate-y-0.5 transition bg-white"
+                  >
+                    <p className="font-semibold text-sm group-hover:text-[#bb2988] line-clamp-2">
+                      {p.title}
+                    </p>
+                    {p.excerpt && (
+                      <p className="text-xs text-gray-500 mt-1 line-clamp-2">
+                        {p.excerpt}
+                      </p>
+                    )}
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
 
           <div className="mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <ShareButtons title={post.title} url={canonical} />
@@ -627,20 +687,35 @@ export default function BlogPost({ hideHeader = false }) {
 
           <div className="mt-6 text-sm text-gray-700">
             Voir aussi{" "}
-            <Link to="/all-competences" className="text-[#bb2988] underline">
-              nos compétences
-            </Link>
-            ,{" "}
-            <Link to="/dentiste-dakar" className="text-[#bb2988] underline">
-              Dentiste à Dakar
-            </Link>{" "}
-            et{" "}
-            <Link
-              to="/urgence-dentaire-dakar"
-              className="text-[#bb2988] underline"
-            >
-              Urgence dentaire
-            </Link>
+            {competenceLinks.length > 0 ? (
+              <>
+                {competenceLinks.slice(0, 3).map((c, i) => (
+                  <span key={c.to}>
+                    <Link to={c.to} className="text-[#bb2988] underline">
+                      {c.label}
+                    </Link>
+                    {i < Math.min(competenceLinks.length, 3) - 1 && ", "}
+                  </span>
+                ))}
+              </>
+            ) : (
+              <>
+                <Link to="/dentiste-dakar" className="text-[#bb2988] underline">
+                  Dentiste à Dakar
+                </Link>
+                ,{" "}
+                <Link to="/all-competences" className="text-[#bb2988] underline">
+                  nos compétences
+                </Link>
+                ,{" "}
+                <Link
+                  to="/urgence-dentaire-dakar"
+                  className="text-[#bb2988] underline"
+                >
+                  Urgence dentaire
+                </Link>
+              </>
+            )}
             .
           </div>
         </article>

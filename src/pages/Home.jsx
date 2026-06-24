@@ -237,6 +237,30 @@ const Home = () => {
               Liberté 6
             </Link>
           </div>
+          <p className="text-center text-xs text-gray-500 mt-4 mb-2">
+            Nos guides les plus consultés :
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-2 text-xs">
+            <Link to="/blog/guide-tarifs-dentiste-dakar-2025" className="text-[#bb2988] underline hover:text-[#9b2170]">
+              Tarifs dentaires Dakar 2025
+            </Link>
+            <span className="text-gray-300">•</span>
+            <Link to="/blog/appareil-dentaire-prix-dakar-guide-complet" className="text-[#bb2988] underline hover:text-[#9b2170]">
+              Prix appareil dentaire
+            </Link>
+            <span className="text-gray-300">•</span>
+            <Link to="/blog/urgence-dentiste-dakar-24-24-nuit-weekend" className="text-[#bb2988] underline hover:text-[#9b2170]">
+              Urgence dentaire 24/24
+            </Link>
+            <span className="text-gray-300">•</span>
+            <Link to="/blog/blanchiment-dents-prix-conseils-dakar" className="text-[#bb2988] underline hover:text-[#9b2170]">
+              Blanchiment dentaire
+            </Link>
+            <span className="text-gray-300">•</span>
+            <Link to="/blog/tarif-implant-dentaire-dakar-deroulement" className="text-[#bb2988] underline hover:text-[#9b2170]">
+              Prix implant dentaire
+            </Link>
+          </div>
         </div>
       </section>
       {showAfterHero && showBeforeAfter ? (
