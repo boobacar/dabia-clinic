@@ -1,128 +1,32 @@
 import React from "react";
-import Seo from "../../components/Seo";
-import Breadcrumbs from "../../components/Breadcrumbs";
-import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
-import GoogleMapSection from "../../components/GoogleMapSection";
-import Callout from "../../components/Callout";
+import LocalitePage from "../../components/LocalitePage";
+
+const faq = [
+  {
+    q: "Où trouver un dentiste à Mermoz ou à proximité ?",
+    a: "La Clinique Dentaire DABIA, située à Sicap Foire (Liberté 6), est à quelques minutes de Mermoz. Accès facile via la VDN ou la Corniche. L'équipe propose urgences, implants, orthodontie et soins esthétiques.",
+  },
+  {
+    q: "Quels sont les tarifs d'une consultation dentaire près de Mermoz ?",
+    a: "Les tarifs varient selon les soins nécessaires. Un devis détaillé est remis après l'examen clinique, avec explication des options et alternatives. Consultez notre guide des tarifs sur le blog.",
+  },
+  {
+    q: "Puis-je avoir un rendez-vous en urgence depuis Mermoz ?",
+    a: "Oui, des créneaux d'urgence sont ouverts chaque jour. Appelez avant de vous déplacer pour être orienté et obtenir un créneau adapté à votre situation.",
+  },
+];
 
 export default function LocaliteMermoz() {
-  const url = "https://www.cliniquedentairedabia.com/cabinet-dentaire-mermoz";
-  const jsonLd = [
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      name: "Clinique Dentaire DABIA – Mermoz (proche)",
-      url,
-      image: "/og-image.webp",
-      telephone: "+221777039393",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "Sicap Foire, 2 voies Liberté 6 (à 150m du Uno)",
-        addressLocality: "Dakar",
-        addressCountry: "SN",
-      },
-      areaServed: ["Mermoz", "Sicap Foire", "Point E", "Ouakam"],
-      openingHours: ["Mo-Th 09:00-16:30", "Fr 09:00-13:00", "Fr 15:00-16:30", "Sa 09:00-14:00"],
-      priceRange: "CFA",
-      geo: {
-        "@type": "GeoCoordinates",
-        latitude: 14.7319,
-        longitude: -17.4572,
-      },
-      "@id": url + "#local",
-      sameAs: [
-        "https://www.facebook.com/cliniquedentairedabia/?locale=fr_FR",
-        "https://www.instagram.com/clinique_dentaire_dabia/",
-        "https://sn.linkedin.com/company/clinique-dentaire-dabia",
-      ],
-    },
-  ];
-
   return (
-    <section className="py-20 px-4 max-w-6xl mx-auto mt-20">
-      <Seo
-        title="Dentiste à Mermoz Dakar – Urgences, Implants & Orthodontie | DABIA"
-        description="Cabinet dentaire proche de Mermoz (Sicap Foire, Liberté 6) : urgences le jour même, détartrage, implants, orthodontie et facettes. Accès facile, RDV en ligne disponible."
-        url={url}
-        canonical={url}
-        jsonLd={jsonLd}
-      />
-      <Breadcrumbs
-        items={[{ label: "Accueil", href: "/" }, { label: "Dentiste Mermoz" }]}
-      />
-      <motion.h1
-        className="text-3xl md:text-4xl font-bold text-[#ad9d64]"
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4 }}
-      >
-        Dentiste proche de Mermoz
-      </motion.h1>
-      <motion.p
-        className="mt-3 text-gray-700"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.1, duration: 0.4 }}
-      >
-        Notre équipe prend en charge la prévention, les urgences, l’esthétique,
-        l’orthodontie et l’implantologie.
-      </motion.p>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-        <motion.div
-          className="p-5 border rounded-xl bg-white"
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.4 }}
-          transition={{ duration: 0.35 }}
-        >
-          <h2 className="text-xl font-semibold mb-2">Accès & coordonnées</h2>
-          <ul className="space-y-2 text-gray-700 text-sm">
-            <li>Adresse : Sicap Foire, 2 voies Liberté 6 (à 150m du Uno)</li>
-            <li>
-              Téléphone :{" "}
-              <a href="tel:+221777039393" className="text-[#bb2988]">
-                +221 77 703 93 93
-              </a>
-            </li>
-            <li>Horaires : Lun–Jeu 9h–16h30 • Ven 9h–13h et 15h–16h30 • Sam 9h–14h</li>
-            <li>
-              <Link to="/rendez-vous" className="text-[#bb2988] underline">
-                Prendre rendez-vous en ligne
-              </Link>
-            </li>
-          </ul>
-        </motion.div>
-        <motion.div
-          className="p-5 border rounded-xl bg-white"
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.4 }}
-          transition={{ duration: 0.35, delay: 0.05 }}
-        >
-          <h2 className="text-xl font-semibold mb-2">Soins proposés</h2>
-          <ul className="list-disc pl-5 text-gray-700 text-sm space-y-1">
-            <li>Consultation, bilan et plan de traitement</li>
-            <li>Soins conservateurs, endodontie</li>
-            <li>Esthétique (blanchiment, facettes)</li>
-            <li>Orthodontie (aligneurs, brackets)</li>
-            <li>Implants et prothèses</li>
-          </ul>
-        </motion.div>
-      </div>
-
-      <div className="mt-8">
-        <GoogleMapSection />
-      </div>
-
-      <Callout title="Astuces pour venir">
-        <ul className="list-disc pl-5">
-          <li>Arrivez 5 minutes en avance pour le stationnement.</li>
-          <li>Munissez‑vous de vos radios/ordonnances si vous en avez.</li>
-          <li>Urgence: appelez pour organiser un passage prioritaire.</li>
-        </ul>
-      </Callout>
-    </section>
+    <LocalitePage
+      quartier="Mermoz"
+      quartierPreposition="de"
+      slug="cabinet-dentaire-mermoz"
+      areaServed={["Sicap Foire", "Point E", "Ouakam"]}
+      intro="La Clinique Dentaire DABIA reçoit les habitants de Mermoz, Sicap Foire et des quartiers voisins dans un cadre moderne et apaisant. Notre équipe assure les soins du quotidien (détartrage, traitement des caries), les urgences dentaires, l'implantologie, l'orthodontie adulte et enfant, ainsi que l'esthétique du sourire (facettes, blanchiment). Chaque plan de traitement est expliqué avec transparence, du diagnostic au devis."
+      faq={faq}
+      seoTitle="Dentiste Mermoz Dakar – Urgences, Implants & Orthodontie | DABIA"
+      seoDescription="Cabinet dentaire proche de Mermoz (Sicap Foire, Liberté 6) : urgences le jour même, détartrage, implants, orthodontie et facettes. Accès facile, RDV en ligne disponible."
+    />
   );
 }

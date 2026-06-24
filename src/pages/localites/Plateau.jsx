@@ -1,122 +1,32 @@
 import React from "react";
-import Seo from "../../components/Seo";
-import Breadcrumbs from "../../components/Breadcrumbs";
-import { Link } from "react-router-dom";
-import GoogleMapSection from "../../components/GoogleMapSection";
-import Callout from "../../components/Callout";
-import { motion } from "framer-motion";
+import LocalitePage from "../../components/LocalitePage";
+
+const faq = [
+  {
+    q: "Existe-t-il un dentiste au Plateau de Dakar ?",
+    a: "La Clinique Dentaire DABIA est idéalement située à Sicap Foire (Liberté 6), à moins de 15 minutes du Plateau. Nous accueillons les professionnels travaillant au Plateau pour des consultations sur rendez-vous, avec des créneaux adaptés aux emplois du temps chargés.",
+  },
+  {
+    q: "Puis-je venir pendant ma pause déjeuner ?",
+    a: "Oui, nous proposons des créneaux entre 9h et 16h30. Pour une consultation rapide (bilan, détartrage, urgence), prévoyez environ 45 minutes. Appelez pour réserver le créneau qui vous convient.",
+  },
+  {
+    q: "Quels soins proposez-vous aux travailleurs du Plateau ?",
+    a: "Consultation et bilan complet, détartrage, traitement des caries, urgences, implants, couronnes, facettes et blanchiment. Devis clair et transparent remis après examen. Nous accompagnons aussi les dossiers de mutuelle.",
+  },
+];
 
 export default function LocalitePlateau() {
-  const url = "https://www.cliniquedentairedabia.com/cabinet-dentaire-plateau";
-  const jsonLd = [
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      name: "Clinique Dentaire DABIA – Plateau (proche)",
-      url,
-      image: "/og-image.webp",
-      telephone: "+221777039393",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "Sicap Foire, 2 voies Liberté 6 (à 150m du Uno)",
-        addressLocality: "Dakar",
-        addressCountry: "SN",
-      },
-      areaServed: ["Dakar Plateau", "Fann", "Point E"],
-      openingHours: ["Mo-Th 09:00-16:30", "Fr 09:00-13:00", "Fr 15:00-16:30", "Sa 09:00-14:00"],
-      priceRange: "CFA",
-      geo: {
-        "@type": "GeoCoordinates",
-        latitude: 14.7319,
-        longitude: -17.4572,
-      },
-      "@id": url + "#local",
-      sameAs: [
-        "https://www.facebook.com/cliniquedentairedabia/?locale=fr_FR",
-        "https://www.instagram.com/clinique_dentaire_dabia/",
-        "https://sn.linkedin.com/company/clinique-dentaire-dabia",
-      ],
-    },
-  ];
   return (
-    <section className="py-20 px-4 max-w-6xl mx-auto mt-20">
-      <Seo
-        title="Dentiste Plateau Dakar – Urgences, Implants & Esthétique | DABIA"
-        description="Travaillez au Plateau de Dakar ? Clinique DABIA (Sicap Foire) : urgences, soins conservateurs, facettes, implants et orthodontie. Équipe qualifiée, devis clair, RDV en ligne."
-        url={url}
-        canonical={url}
-        jsonLd={jsonLd}
-      />
-      <Breadcrumbs
-        items={[{ label: "Accueil", href: "/" }, { label: "Dentiste Plateau" }]}
-      />
-      <motion.h1
-        className="text-3xl md:text-4xl font-bold text-[#ad9d64]"
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-      >
-        Dentiste proche de Dakar Plateau
-      </motion.h1>
-      <motion.p
-        className="mt-3 text-gray-700"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.1 }}
-      >
-        Prise en charge complète et technologies modernes.
-      </motion.p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-        <motion.div
-          className="p-5 border rounded-xl bg-white"
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="text-xl font-semibold mb-2">Accès & coordonnées</h2>
-          <ul className="space-y-2 text-gray-700 text-sm">
-            <li>Adresse : Sicap Foire, 2 voies Liberté 6</li>
-            <li>
-              Tél :{" "}
-              <a href="tel:+221777039393" className="text-[#bb2988]">
-                +221 77 703 93 93
-              </a>
-            </li>
-            <li>Horaires : Lun–Jeu 9h–16h30 • Ven 9h–13h et 15h–16h30 • Sam 9h–14h</li>
-            <li>
-              <Link to="/rendez-vous" className="text-[#bb2988] underline">
-                Prendre rendez-vous
-              </Link>
-            </li>
-          </ul>
-        </motion.div>
-        <motion.div
-          className="p-5 border rounded-xl bg-white"
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.05 }}
-        >
-          <h2 className="text-xl font-semibold mb-2">Soins proposés</h2>
-          <ul className="list-disc pl-5 text-gray-700 text-sm space-y-1">
-            <li>Consultation, bilan</li>
-            <li>Détartrage, gencives</li>
-            <li>Esthétique (blanchiment, facettes)</li>
-            <li>Orthodontie</li>
-            <li>Implants</li>
-          </ul>
-        </motion.div>
-      </div>
-      <div className="mt-8">
-        <GoogleMapSection />
-      </div>
-
-      <Callout title="Astuces de visite">
-        <ul className="list-disc pl-5">
-          <li>Prévoyez du temps pour le stationnement au Plateau.</li>
-          <li>Apportez radios/ordonnances pour un diagnostic plus rapide.</li>
-          <li>Urgence: contactez‑nous pour être pris en charge en priorité.</li>
-        </ul>
-      </Callout>
-    </section>
+    <LocalitePage
+      quartier="Plateau"
+      quartierPreposition="du"
+      slug="cabinet-dentaire-plateau"
+      areaServed={["Dakar Plateau", "Fann", "Point E", "Médina"]}
+      intro="Vous travaillez au Plateau de Dakar et cherchez un dentiste à proximité ? La Clinique Dentaire DABIA, située à Sicap Foire (Liberté 6), est accessible en quelques minutes depuis le Plateau. Notre équipe prend en charge les consultations de routine, les urgences dentaires, l'implantologie, l'orthodontie, les facettes et le blanchiment. Nous comprenons les contraintes des professionnels et proposons des créneaux adaptés, avec un devis transparent remis après examen."
+      faq={faq}
+      seoTitle="Dentiste Plateau Dakar – Consultation, Urgences & Implants | DABIA"
+      seoDescription="Dentiste proche du Plateau de Dakar (Liberté 6, Sicap Foire) : consultation, urgence, implants, orthodontie, esthétique. Créneaux adaptés aux professionnels. RDV en ligne."
+    />
   );
 }
