@@ -54,6 +54,76 @@
       "source": "/blog/remede-rage-de-dent-quoi-faire-immediatement",
       "destination": "/blog/mal-de-dents-la-nuit-causes-et-que-faire",
       "permanent": true
+    },
+    {
+      "source": "/blog/prix-appareil-dentaire-orthodontie-dakar-enfant-adulte",
+      "destination": "/blog/appareil-dentaire-prix-dakar-guide-complet",
+      "permanent": true
+    },
+    {
+      "source": "/blog/prix-appareil-dentaire-dakar-senegal",
+      "destination": "/blog/appareil-dentaire-prix-dakar-guide-complet",
+      "permanent": true
+    },
+    {
+      "source": "/blog/combien-coute-implant-dentaire-dakar-guide",
+      "destination": "/blog/tarif-implant-dentaire-dakar-deroulement",
+      "permanent": true
+    },
+    {
+      "source": "/blog/prix-implants-dentaires-dakar-guide-complet-2026",
+      "destination": "/blog/tarif-implant-dentaire-dakar-deroulement",
+      "permanent": true
+    },
+    {
+      "source": "/blog/implant-dentaire-dakar-retrouver-sourire",
+      "destination": "/blog/tarif-implant-dentaire-dakar-deroulement",
+      "permanent": true
+    },
+    {
+      "source": "/blog/blanchiment-dentaire-dakar-prix-efficacite",
+      "destination": "/blog/blanchiment-dents-prix-conseils-dakar",
+      "permanent": true
+    },
+    {
+      "source": "/blog/prix-blanchiment-dentaire-dakar-combien-coute-2026",
+      "destination": "/blog/blanchiment-dents-prix-conseils-dakar",
+      "permanent": true
+    },
+    {
+      "source": "/blog/facettes-dentaires-dakar-indications-etapes-prix",
+      "destination": "/blog/facettes-dentaires-dakar-hollywood-smile-prix",
+      "permanent": true
+    },
+    {
+      "source": "/blog/facettes-dentaires-dakar-indications-limites-prix-2026",
+      "destination": "/blog/facettes-dentaires-dakar-hollywood-smile-prix",
+      "permanent": true
+    },
+    {
+      "source": "/blog/urgence-dentaire-nuit-weekend-dakar",
+      "destination": "/blog/urgence-dentiste-dakar-24-24-nuit-weekend",
+      "permanent": true
+    },
+    {
+      "source": "/blog/urgence-dentaire-dakar-que-faire",
+      "destination": "/blog/urgence-dentiste-dakar-24-24-nuit-weekend",
+      "permanent": true
+    },
+    {
+      "source": "/blog/couronne-dentaire-dakar-prix-indications-guide",
+      "destination": "/blog/prix-couronne-dentaire-dakar-materiaux-devis",
+      "permanent": true
+    },
+    {
+      "source": "/blog/couronne-ceramique-zircone-dakar-differences-prix-2026",
+      "destination": "/blog/prix-couronne-dentaire-dakar-materiaux-devis",
+      "permanent": true
+    },
+    {
+      "source": "/blog/prix-prothese-dentaire-dakar-partielle-complete",
+      "destination": "/blog/prothese-dentaire-fixe-prix-senegal-amovible",
+      "permanent": true
     }
   ],
   "rewrites": [

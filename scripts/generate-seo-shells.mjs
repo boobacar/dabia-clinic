@@ -62,12 +62,12 @@ const STATIC_PATHS = [
 
 const STATIC_OVERRIDES = {
   "/": {
-    title: "Dentiste Dakar : Urgence & Soins Sans Douleur | Clinique DABIA",
+    title: "Dentiste à Dakar | Clinique DABIA — Urgences, Implants, Orthodontie",
     description:
-      "Clinique dentaire à Dakar : urgences, détartrage, implants, orthodontie et esthétique. Prenez rendez-vous rapidement par téléphone, WhatsApp ou formulaire.",
+      "Dentiste à Dakar (Liberté 6, Sicap Foire) : urgence dentaire, consultation, implants, orthodontie, blanchiment, prothèses. Devis clair, RDV rapide. Appelez le 77 703 93 93.",
     h1: "Clinique Dentaire DABIA à Dakar",
     intro:
-      "Soins dentaires modernes à Dakar avec une équipe expérimentée et un accompagnement personnalisé.",
+      "Votre dentiste à Dakar — soins modernes, équipe expérimentée et accompagnement personnalisé.",
   },
   "/blog": {
     title: "Blog dentaire à Dakar – Conseils, urgences, prix",
