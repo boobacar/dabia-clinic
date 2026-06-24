@@ -78,12 +78,12 @@ const STATIC_OVERRIDES = {
       "Conseils pratiques, urgences, technologies et guides prix pour mieux prendre soin de votre sourire à Dakar.",
   },
   "/rendez-vous": {
-    title: "Rendez-vous dentiste à Dakar – formulaire express | DABIA",
+    title: "Prendre RDV dentiste à Dakar — Consultation en ligne rapide | DABIA",
     description:
-      "Prenez rendez-vous chez le dentiste à Dakar en 1 minute : formulaire express, appel direct ou WhatsApp.",
-    h1: "Prendre rendez-vous chez le dentiste à Dakar",
+      "Prenez rendez-vous chez le dentiste à Dakar en 1 minute. Consultation, urgence, détartrage, implant ou orthodontie. Formulaire en ligne, appel ou WhatsApp.",
+    h1: "Prendre RDV chez le dentiste à Dakar — Consultation & Urgence",
     intro:
-      "Réservez votre consultation rapidement via formulaire, téléphone ou WhatsApp.",
+      "Formulaire rapide pour réserver votre consultation, urgence ou soin à la Clinique DABIA. Confirmation rapide par l'équipe.",
   },
   "/dentiste-dakar": {
     title: "Dentiste Dakar : urgence, consultation et RDV rapide | Clinique DABIA",

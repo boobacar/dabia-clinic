@@ -91,8 +91,8 @@ const RendezVous = () => {
   }, []);
 
   const variantCopy = {
-    hero: "Prendre un rendez-vous",
-    sub: "Quelques informations suffisent pour réserver votre consultation à la Clinique Dentaire DABIA. Nous vous recontactons rapidement pour confirmer l'horaire exact.",
+    hero: "Prendre RDV chez le dentiste à Dakar — Consultation & Urgence",
+    sub: "Formulaire rapide pour réserver votre consultation, urgence dentaire, détartrage, implant ou orthodontie à la Clinique DABIA. Nous vous recontactons rapidement pour confirmer l'horaire.",
     submit: "Confirmer mon rendez-vous",
   };
 
@@ -218,8 +218,8 @@ const RendezVous = () => {
   return (
     <section className="relative mt-20 overflow-hidden">
       <Seo
-        title="Rendez-vous dentiste à Dakar, Sénégal | Réservation en ligne rapide"
-        description="Prenez rendez-vous avec votre dentiste à Dakar (Sénégal) en moins d’une minute. Réservation en ligne, appel direct ou WhatsApp avec réponse rapide."
+        title="Prendre RDV dentiste à Dakar — Consultation en ligne rapide | Clinique DABIA"
+        description="Prenez rendez-vous chez le dentiste à Dakar en 1 minute. Consultation, urgence, détartrage, implant ou orthodontie. Formulaire en ligne, appel (+221 77 703 93 93) ou WhatsApp. Confirmation rapide par l'équipe."
         canonical="https://www.cliniquedentairedabia.com/rendez-vous"
         url="https://www.cliniquedentairedabia.com/rendez-vous"
         jsonLd={[faqLD]}
@@ -572,6 +572,35 @@ const RendezVous = () => {
             </motion.div>
           </div>
         </motion.div>
+
+        {/* Contenu SEO — liens internes et informations */}
+        <div className="relative max-w-4xl mx-auto mt-10 px-4">
+          <div className="bg-white/85 backdrop-blur-sm rounded-2xl border border-white/60 p-6 md:p-8 shadow-lg">
+            <h2 className="text-2xl font-bold text-[#ad9d64] mb-4">
+              Votre rendez-vous dentaire à Dakar en toute simplicité
+            </h2>
+            <p className="text-gray-700 mb-4">
+              Que vous ayez besoin d'une <strong>consultation de routine</strong>, d'un <strong>détartrage</strong>, d'un <strong>implant dentaire</strong> ou d'une <strong>urgence</strong>, la Clinique DABIA vous accueille à Sicap Foire (Liberté 6) avec des créneaux adaptés à votre emploi du temps. Nos assistantes vous recontactent rapidement pour confirmer l'horaire.
+            </p>
+            <p className="text-sm text-gray-600 mb-4">
+              Avant votre visite, consultez nos guides pour bien préparer votre rendez-vous :
+            </p>
+            <div className="grid gap-2 sm:grid-cols-2 text-sm">
+              <Link to="/blog/guide-tarifs-dentiste-dakar-2025" className="text-[#bb2988] underline hover:text-[#9b2170]">
+                → Guide des tarifs dentaires à Dakar
+              </Link>
+              <Link to="/blog/premiere-consultation-dentiste-dakar-deroulement-2026" className="text-[#bb2988] underline hover:text-[#9b2170]">
+                → Première consultation : à quoi s'attendre
+              </Link>
+              <Link to="/blog/urgence-dentiste-dakar-24-24-nuit-weekend" className="text-[#bb2988] underline hover:text-[#9b2170]">
+                → Urgence dentaire : que faire
+              </Link>
+              <Link to="/dentiste-dakar" className="text-[#bb2988] underline hover:text-[#9b2170]">
+                → Dentiste à Dakar — tous nos soins
+              </Link>
+            </div>
+          </div>
+        </div>
 
         <FAQ
           className="mt-8"
