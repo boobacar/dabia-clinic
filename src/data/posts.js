@@ -9035,6 +9035,100 @@ Une première consultation (examen + diagnostic + devis) coûte généralement e
         a: "Pour une urgence (douleur, abcès), oui. Pour un bilan de routine, les soins seront planifiés sur des rendez-vous ultérieurs.",
       },
     ],
-  },
+  }
+  {
+    slug: "mon-titre-modifie",
+    title: "Mon titre modifié",
+    description: "Capitaliser sur 0 clics organiques mensuels pour amplifier la croissance du trafic Clinique Dentaire Dabia.",
+    date: "2026-07-04",
+    category: "Conseils",
+    tags: ["mot-clé à définir"],
+    author: AUTHORS.sao,
+    readingMinutes: 2,
+    content: `# Mon titre modifié
+
+## Résumé exécutif
+
+
+
+## Sommaire
+- [Audit des pages qui génèrent déjà du trafic](#audit-des-pages-qui-g-n-rent-d-j-du-trafic)
+- [Formats de contenu duplicables et scalables](#formats-de-contenu-duplicables-et-scalables)
+- [Plan de contenu 30 / 60 / 90 jours](#plan-de-contenu-30-60-90-jours)
+- [Indicateurs clés de succès (KPI SEO)](#indicateurs-cl-s-de-succ-s-kpi-seo)
+- [Roadmap exécutive pour l’équipe](#roadmap-ex-cutive-pour-l-quipe)
+
+## Audit des pages qui génèrent déjà du trafic
+
+*Cette section introduit le sujet et contextualise pourquoi "mot-clé à définir" est une thématique clé pour Clinique Dentaire Dabia.*
+
+**Points clés à développer :**
+- Contexte spécifique à Clinique Dentaire Dabia
+- Données chiffrées et tendances du marché
+- Conseils pratiques et recommandations actionnables
+- Pièges à éviter et bonnes pratiques
+
+## Formats de contenu duplicables et scalables
+
+*Développement structuré autour de "mot-clé à définir" — données, conseils pratiques et cas concrets.*
+
+**Points clés à développer :**
+- Contexte spécifique à Clinique Dentaire Dabia
+- Données chiffrées et tendances du marché
+- Conseils pratiques et recommandations actionnables
+- Pièges à éviter et bonnes pratiques
+
+## Plan de contenu 30 / 60 / 90 jours
+
+*Développement structuré autour de "mot-clé à définir" — données, conseils pratiques et cas concrets.*
+
+**Points clés à développer :**
+- Contexte spécifique à Clinique Dentaire Dabia
+- Données chiffrées et tendances du marché
+- Conseils pratiques et recommandations actionnables
+- Pièges à éviter et bonnes pratiques
+
+## Indicateurs clés de succès (KPI SEO)
+
+*Développement structuré autour de "mot-clé à définir" — données, conseils pratiques et cas concrets.*
+
+**Points clés à développer :**
+- Contexte spécifique à Clinique Dentaire Dabia
+- Données chiffrées et tendances du marché
+- Conseils pratiques et recommandations actionnables
+- Pièges à éviter et bonnes pratiques
+
+## Roadmap exécutive pour l’équipe
+
+*Développement structuré autour de "mot-clé à définir" — données, conseils pratiques et cas concrets.*
+
+**Points clés à développer :**
+- Contexte spécifique à Clinique Dentaire Dabia
+- Données chiffrées et tendances du marché
+- Conseils pratiques et recommandations actionnables
+- Pièges à éviter et bonnes pratiques
+
+
+## FAQ
+
+**Q : mot-clé à définir, c'est quoi exactement ?**
+R : Une explication claire et pédagogique pour vos lecteurs.
+
+**Q : Pourquoi est-ce important pour vous ?**
+R : Parce que cela répond directement à un besoin concret de votre audience.
+
+**Q : Quelles sont les prochaines étapes ?**
+R : Contactez-nous pour en savoir plus.
+
+## Conclusion et prochaines étapes
+
+Contactez-nous pour en savoir plus.
+
+---
+
+*Article généré automatiquement depuis le brief SEO Hub. À enrichir avec des données spécifiques, des témoignages et des visuels avant publication.*
+
+*Dernière mise à jour : 2026-07-04*`,
+  },,
 
 ];
