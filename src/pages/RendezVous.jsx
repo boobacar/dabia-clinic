@@ -539,6 +539,31 @@ const RendezVous = () => {
                   <a href="/blog/urgence-dentiste-dakar-24h-que-faire" className="underline text-[#bb2988]">Que faire en urgence dentaire 24h</a>
                 </div>
               </div>
+
+              <div className="rounded-2xl border border-[#e7dcbc] bg-[#fff9ea] p-4 shadow-sm">
+                <p className="text-sm font-semibold text-[#ad9d64]">
+                  Pour les praticiens qui modernisent leur cabinet
+                </p>
+                <p className="mt-2 text-sm text-gray-700">
+                  La qualité des soins repose aussi sur un cabinet bien équipé.
+                  Pour comparer le fauteuil, la stérilisation ou le budget d’installation,
+                  AfriSmile propose des repères clairs avant achat.
+                </p>
+                <div className="mt-3 flex flex-wrap gap-3 text-sm">
+                  <a
+                    href="https://www.afrismile.net/devis-materiel-dentaire"
+                    className="underline text-[#bb2988]"
+                  >
+                    Devis d’équipement dentaire
+                  </a>
+                  <a
+                    href="https://www.afrismile.net/materiel-dentaire-senegal"
+                    className="underline text-[#bb2988]"
+                  >
+                    Matériel dentaire au Sénégal
+                  </a>
+                </div>
+              </div>
             </motion.form>
 
             <motion.div

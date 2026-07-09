@@ -441,6 +441,45 @@ export default function DentisteDakar() {
       </motion.section>
 
       <motion.section
+        className="mt-8 rounded-2xl border border-[#eadfc1] bg-[#fff9ef] p-6 shadow-sm"
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.35 }}
+        transition={{ duration: 0.4 }}
+      >
+        <h2 className="text-xl font-bold text-[#ad9d64]">
+          Un cabinet bien équipé pour des soins plus confortables
+        </h2>
+        <p className="mt-3 text-sm md:text-base text-gray-700 max-w-4xl">
+          La qualité d&apos;un soin dépend aussi de l&apos;environnement technique :
+          fauteuil adapté, chaîne de stérilisation fiable, imagerie précise et
+          organisation fluide du cabinet. Les confrères qui réfléchissent à la
+          modernisation de leur structure peuvent consulter AfriSmile pour
+          comparer les solutions d&apos;équipement les plus utiles au quotidien.
+        </p>
+        <div className="mt-4 flex flex-wrap gap-3 text-sm">
+          <a
+            href="https://www.afrismile.net/equipement-dentaire-dakar"
+            className="btn-cta btn-cta-sm"
+          >
+            Équipement dentaire à Dakar
+          </a>
+          <a
+            href="https://www.afrismile.net/fauteuil-dentaire-senegal"
+            className="btn-cta btn-cta-sm"
+          >
+            Fauteuil dentaire
+          </a>
+          <a
+            href="https://www.afrismile.net/solutions-cabinets"
+            className="btn-cta btn-cta-sm"
+          >
+            Solutions pour équiper un cabinet
+          </a>
+        </div>
+      </motion.section>
+
+      <motion.section
         className="mt-10 p-6 rounded-2xl border bg-white shadow-sm"
         initial={{ opacity: 0, y: 12 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -316,6 +316,41 @@ const Home = () => {
               </div>
             ))}
           </div>
+
+          <div className="mt-8 rounded-2xl border border-[#eadfc1] bg-[#fff9ef] p-6 shadow-sm">
+            <div className="max-w-4xl">
+              <h3 className="text-xl font-bold text-[#ad9d64]">
+                Une clinique moderne repose aussi sur un équipement fiable
+              </h3>
+              <p className="mt-3 text-sm md:text-base text-gray-700">
+                Le confort du patient, la précision du diagnostic et la sécurité
+                de stérilisation dépendent aussi de la qualité du matériel. Pour
+                les chirurgiens-dentistes qui souhaitent comparer des solutions
+                d&apos;équipement, AfriSmile propose des ressources utiles sur le
+                fauteuil, le scanner intra-oral et la stérilisation.
+              </p>
+              <div className="mt-4 flex flex-wrap gap-3 text-sm">
+                <a
+                  href="https://www.afrismile.net/materiel-dentaire-senegal"
+                  className="btn-cta btn-cta-sm"
+                >
+                  Matériel dentaire au Sénégal
+                </a>
+                <a
+                  href="https://www.afrismile.net/autoclave-dentaire-classe-b-senegal"
+                  className="btn-cta btn-cta-sm"
+                >
+                  Autoclave Classe B
+                </a>
+                <a
+                  href="https://www.afrismile.net/scanner-intra-oral-senegal"
+                  className="btn-cta btn-cta-sm"
+                >
+                  Scanner intra-oral
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       {/* FAQ Home */}
