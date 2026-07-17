@@ -5,7 +5,7 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import ReviewCTA from "./ReviewCTA";
 import SectionTitle from "./SectionTitle";
-import { FAKE_GOOGLE_REVIEWS } from "../data/fakeGoogleReviews";
+
 // ... (rest of imports/helpers)
 
 const Star = ({ filled }) => (
@@ -63,24 +63,38 @@ const TestimonialsCarousel = () => {
   const [placeInfo, setPlaceInfo] = useState(null);
 
   useEffect(() => {
-    // Always use local static reviews — no API calls
-    const avg =
-      FAKE_GOOGLE_REVIEWS.reviews.reduce((s, r) => s + (r.rating || 0), 0) /
-      (FAKE_GOOGLE_REVIEWS.reviews.length || 1);
-    setPlaceInfo({
-      name: FAKE_GOOGLE_REVIEWS.name,
-      rating: Number.isFinite(avg) ? Math.round(avg * 10) / 10 : 5,
-      total: FAKE_GOOGLE_REVIEWS.reviews.length,
-    });
-    setReviews(
-      FAKE_GOOGLE_REVIEWS.reviews.map((rv) => ({
-        nom: rv.author_name,
-        photo: rv.profile_photo_url,
-        texte: rv.text,
-        rating: rv.rating,
-        relative: rv.relative_time,
-      }))
-    );
+    let cancelled = false;
+    fetch("/api/google-reviews")
+      .then((response) => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+      })
+      .then((data) => {
+        if (cancelled) return;
+        setPlaceInfo(
+          Number.isFinite(data.rating)
+            ? { name: data.name, rating: data.rating, total: data.user_ratings_total }
+            : null
+        );
+        setReviews(
+          (data.reviews || []).map((rv) => ({
+            nom: rv.author_name,
+            photo: rv.profile_photo_url,
+            texte: rv.text,
+            rating: rv.rating,
+            relative: rv.relative_time,
+          }))
+        );
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setPlaceInfo(null);
+          setReviews([]);
+        }
+      });
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   return (

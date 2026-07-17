@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Seo from "../components/Seo";
 import Breadcrumbs from "../components/Breadcrumbs";
 import { motion } from "framer-motion";
-import AggregateRating from "../components/AggregateRating";
 import FAQ from "../components/FAQ";
 import MobileCtaAB from "../components/MobileCtaAB";
 
@@ -95,9 +94,6 @@ export default function CabinetDentaireDakar() {
       </motion.div>
 
       <section className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-5">
-        <div className="md:col-span-3">
-          <AggregateRating />
-        </div>
         <motion.div
           className="bg-white border rounded-xl p-5 shadow-sm"
           initial={{ opacity: 0, y: 10 }}

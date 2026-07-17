@@ -121,6 +121,16 @@
       "permanent": true
     },
     {
+      "source": "/blog/couronne-dentaire-prix-dakar-2026-guide",
+      "destination": "/blog/prix-couronne-dentaire-dakar-materiaux-devis",
+      "permanent": true
+    },
+    {
+      "source": "/blog/couronne-dentaire-dakar-prix-pose-duree-vie",
+      "destination": "/blog/prix-couronne-dentaire-dakar-materiaux-devis",
+      "permanent": true
+    },
+    {
       "source": "/blog/prix-prothese-dentaire-dakar-partielle-complete",
       "destination": "/blog/prothese-dentaire-fixe-prix-senegal-amovible",
       "permanent": true

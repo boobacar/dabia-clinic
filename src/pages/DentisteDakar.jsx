@@ -15,7 +15,6 @@ import {
 import Seo from "../components/Seo";
 import Breadcrumbs from "../components/Breadcrumbs";
 import { motion } from "framer-motion";
-import AggregateRating from "../components/AggregateRating";
 import FAQ from "../components/FAQ";
 import MobileCtaAB from "../components/MobileCtaAB";
 // NAP non utilisé ici pour alléger le hero
@@ -295,10 +294,6 @@ export default function DentisteDakar() {
             <span>Rendez‑vous sous 24h pour l’urgence</span>
           </div>
         </div>
-        </div>
-
-        <div className="mt-4">
-          <AggregateRating />
         </div>
 
         <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

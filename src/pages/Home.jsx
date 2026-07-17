@@ -162,26 +162,6 @@ const Home = () => {
               },
             ],
           },
-          {
-            "@context": "https://schema.org",
-            "@type": "AggregateRating",
-            itemReviewed: {
-              "@type": "LocalBusiness",
-              name: "Clinique Dentaire DABIA",
-              image: "https://www.cliniquedentairedabia.com/og-image.webp",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "Sicap Foire, 2 voies Liberté 6",
-                addressLocality: "Dakar",
-                addressRegion: "Dakar",
-                addressCountry: "SN",
-              },
-            },
-            ratingValue: 4.8,
-            bestRating: 5,
-            worstRating: 1,
-            ratingCount: 47,
-          },
         ]}
       />
       <HeroSlideshow />

@@ -5914,10 +5914,9 @@ Nombre de facettes, matériau, complexité occlusale/gingivale. **Devis personna
   },
   {
     slug: "detartrage-vs-airflow-difference-prophylaxie-dakar",
-    title:
-      "Détartrage vs AirFlow : quelles différences et quand choisir l’un ou l’autre ?",
+    title: "AirFlow dentaire : taches, plaque, tartre et détartrage",
     description:
-      "Plaque, tartre, taches : comprendre le rôle du détartrage ultrasonique et du jet de poudre AirFlow pour une hygiène optimale.",
+      "AirFlow dentaire à Dakar : découvrez son action sur les taches et la plaque, ses différences avec le détartrage et quand associer les deux soins.",
     date: "2025-07-19",
     category: "Prévention",
     tags: ["détartrage", "hygiène", "prévention"],

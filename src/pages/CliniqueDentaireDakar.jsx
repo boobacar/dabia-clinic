@@ -10,7 +10,6 @@ import {
 } from "react-icons/fa";
 import Seo from "../components/Seo";
 import Breadcrumbs from "../components/Breadcrumbs";
-import AggregateRating from "../components/AggregateRating";
 import FAQ from "../components/FAQ";
 import MobileCtaAB from "../components/MobileCtaAB";
 
@@ -152,10 +151,6 @@ export default function CliniqueDentaireDakar() {
           </Link>
         </div>
       </motion.section>
-
-      <section className="mt-8">
-        <AggregateRating />
-      </section>
 
       <section className="mt-8 grid gap-4 md:grid-cols-3">
         {highlights.map((item, index) => (

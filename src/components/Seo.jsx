@@ -58,35 +58,9 @@ export default function Seo({
     description ||
     "Dentiste à Dakar : clinique dentaire moderne pour implants, orthodontie, urgences et esthétique. Prenez rendez-vous à la Clinique Dentaire DABIA.";
 
-  const orgJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Dentist",
-    name: defaultSite.name,
-    url: defaultSite.domain,
-    image: finalImage,
-    logo: makeAbs(defaultSite.logo),
-    telephone: defaultSite.phone,
-    address: { "@type": "PostalAddress", ...defaultSite.address },
-    openingHours: ["Mo-Th 09:00-16:30", "Fr 09:00-13:00", "Fr 15:00-16:30", "Sa 09:00-14:00"],
-    areaServed: ["Dakar", "Liberté 6", "Sicap Foire", "Parcelles Assainies"],
-    sameAs: defaultSite.sameAs,
-  };
-
-  const websiteJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    // Utiliser le libellé complet (avec Dakar) comme nom de site principal
-    name: defaultSite.siteLabel,
-    // Garder uniquement des variantes proches
-    alternateName: [
-      "Clinique Dentaire DABIA",
-      "Clinique Dentaire Dabia",
-      "Clinique Dentaire DABIA Dakar",
-    ],
-    url: defaultSite.domain,
-  };
-
-  const blocks = [websiteJsonLd, orgJsonLd, ...jsonLd];
+  // WebSite et Dentist sont fournis une seule fois dans index.html. Ici, on
+  // injecte uniquement les données structurées propres à la page courante.
+  const blocks = jsonLd;
 
   // keep simple relative/absolute handling for links below
 
