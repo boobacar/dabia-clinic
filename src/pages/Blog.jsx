@@ -58,8 +58,8 @@ export default function Blog() {
   return (
     <section className="py-10 px-4 max-w-7xl mx-auto mt-20">
       <Seo
-        title="Blog dentaire à Dakar – Conseils, urgences, prix"
-        description="Articles clairs et fiables par la Clinique Dentaire DABIA : urgences dentaires à Dakar, blanchiment, implants, orthodontie, prévention, enfants."
+        title="Blog dentaire à Dakar – Conseils, urgences, tarifs | Clinique DABIA"
+        description="Spécialistes à Dakar, nous partageons nos conseils sur les urgences dentaires, implants, blanchiment et plus. Prenez soin de vos dents avec la Clinique DABIA."
         url={`https://www.cliniquedentairedabia.com/blog${
           page > 1 ? `?page=${page}` : ""
         }`}
