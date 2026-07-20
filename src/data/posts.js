@@ -7309,9 +7309,9 @@ Une prothèse doit être nettoyée chaque jour (hors de la bouche) pour éviter 
   {
     slug: "prix-radio-dentaire-scanner-3d-dakar",
     title:
-      "Prix radio dentaire et scanner 3D (CBCT) à Dakar : pourquoi faire un bilan ?",
+      "Prix Radio Dentaire et Scanner 3D à Dakar en 2025 : Votre Bilan Complet Expliqué",
     description:
-      "Panoramique, rétro-alvéolaire ou Scanner 3D : quel est le coût de ces examens indispensables pour un diagnostic précis ?",
+      "Découvrez les prix 2025 des radios dentaires et scanners 3D à Dakar. Bilan précis et rapide pour un diagnostic fiable. Devis gratuit et personnalisé.",
     date: "2026-01-25",
     category: "Technologie",
     tags: [
