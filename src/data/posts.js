@@ -3946,9 +3946,9 @@ Nous suivons les normes internationales de stérilisation (autoclave classe B, i
   {
     slug: "guide-tarifs-dentiste-dakar-2025",
     title:
-      "Guide des Tarifs Dentaires à Dakar (2025) : transparence et juste prix",
+      "Guide Complet des Tarifs Dentaires à Dakar (2025) – Prix Mis à Jour et Conseils",
     description:
-      "Combien coûte un détartrage, une extraction ou une consultation à Dakar ? Guide complet des tarifs moyens pratiqués et conseils pour votre budget santé.",
+      "Découvrez les tarifs réels pour un détartrage, une extraction ou une consultation à Dakar. Notre guide mis à jour vous aide à planifier votre budget santé et à économiser.",
     date: "2026-01-21",
     category: "Conseils",
     tags: [
