@@ -1,7 +1,7 @@
 export function cleanupPrerenderedSeoHead() {
   const nodes = Array.from(
     document.head.querySelectorAll(
-      'title, meta[name], meta[property], link[rel]',
+      'title, meta[name="description"], meta[name="robots"], meta[name="application-name"], meta[name="apple-mobile-web-app-title"], link[rel="canonical"], link[rel="alternate"], meta[property^="og:"], meta[name^="twitter:"]',
     ),
   );
   const keyFor = (node) => {
@@ -25,5 +25,12 @@ export function cleanupPrerenderedSeoHead() {
     if (node.getAttribute("data-seo-prerender") !== "true") continue;
     if (hydratedKeys.has(keyFor(node))) node.remove();
     else node.removeAttribute("data-seo-prerender");
+  }
+
+  const remaining = nodes.filter((node) => node.isConnected);
+  const lastByKey = new Map();
+  for (const node of remaining) lastByKey.set(keyFor(node), node);
+  for (const node of remaining) {
+    if (lastByKey.get(keyFor(node)) !== node) node.remove();
   }
 }

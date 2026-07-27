@@ -112,6 +112,32 @@ try {
     markers: 0,
   });
 
+  await page.setContent(`<!doctype html><html><head>
+    <title>Shell statique</title><title>React hydraté</title>
+    <meta name="description" content="shell"><meta name="description" content="react">
+    <meta name="application-name" content="shell"><meta name="application-name" content="react">
+    <link rel="alternate" hreflang="fr" href="https://example.com/shell"><link rel="alternate" hreflang="fr" href="https://example.com/react">
+    <link rel="alternate" hreflang="x-default" href="https://example.com/shell"><link rel="alternate" hreflang="x-default" href="https://example.com/react">
+  </head><body></body></html>`);
+  await page.evaluate(cleanupPrerenderedSeoHead);
+  const fallback = await page.evaluate(() => ({
+    titles: Array.from(document.head.querySelectorAll("title"), (node) => node.textContent),
+    descriptions: Array.from(document.head.querySelectorAll('meta[name="description"]'), (node) => node.content),
+    applicationNames: Array.from(document.head.querySelectorAll('meta[name="application-name"]'), (node) => node.content),
+    alternates: Object.fromEntries(
+      Array.from(document.head.querySelectorAll('link[rel="alternate"]'), (node) => [node.hreflang, node.href]),
+    ),
+  }));
+  assert.deepEqual(fallback, {
+    titles: ["React hydraté"],
+    descriptions: ["react"],
+    applicationNames: ["react"],
+    alternates: {
+      fr: "https://example.com/react",
+      "x-default": "https://example.com/react",
+    },
+  });
+
   console.log("✅ Déduplication du head SEO validée");
 } finally {
   await page.close();
