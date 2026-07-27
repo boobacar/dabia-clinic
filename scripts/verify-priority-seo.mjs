@@ -16,6 +16,7 @@ const [
   rendezVous,
   urgency,
   seoComponent,
+  mainEntry,
   prerender,
   vercel,
   sitemapGenerator,
@@ -30,6 +31,7 @@ const [
   read("src/pages/RendezVous.jsx"),
   read("src/pages/UrgenceDentaire.jsx"),
   read("src/components/Seo.jsx"),
+  read("src/main.jsx"),
   read("scripts/prerender-routes.mjs"),
   read("vercel.json"),
   read("scripts/generate-sitemap.mjs"),
@@ -137,6 +139,22 @@ assert.ok(
 assert.ok(
   seoComponent.includes("cleanupPrerenderedSeoHead();"),
   "Seo.jsx doit supprimer les doublons statiques après hydratation",
+);
+assert.ok(
+  shells.includes('import { markSeoShellHead } from "./seo-shell-head.mjs"'),
+  "Le générateur doit marquer les balises SEO de fallback avant écriture",
+);
+assert.ok(
+  shells.includes("markSeoShellHead(injectServerH1(html, route))"),
+  "Chaque shell SEO doit être marqué avant sa sauvegarde",
+);
+assert.ok(
+  mainEntry.includes('import { removeSeoShellHead } from "./utils/seoHead"'),
+  "L’entrée React doit importer le retrait pré-montage des balises shell",
+);
+assert.ok(
+  mainEntry.indexOf("removeSeoShellHead();") < mainEntry.indexOf("ReactDOM.createRoot"),
+  "Les balises shell doivent être retirées avant que React ne prenne possession du head",
 );
 
 console.log("✅ Contrats SEO prioritaires validés");

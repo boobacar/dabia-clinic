@@ -1,5 +1,6 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { join, dirname } from "node:path";
+import { markSeoShellHead } from "./seo-shell-head.mjs";
 
 const ROOT = process.cwd();
 const DIST = join(ROOT, "dist");
@@ -294,7 +295,7 @@ function renderForRoute(baseHtml, route) {
   html = injectRouteImagePreload(html, route.cover);
   html = injectModulePreloads(html, route.modulePreloads);
 
-  return injectServerH1(html, route);
+  return markSeoShellHead(injectServerH1(html, route));
 }
 
 async function readManifestEntries() {

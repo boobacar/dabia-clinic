@@ -1,7 +1,11 @@
 import assert from "node:assert/strict";
 import { chromium } from "playwright-chromium";
 import { dedupeSeoHead } from "./prerender-seo-head.mjs";
-import { cleanupPrerenderedSeoHead } from "../src/utils/seoHead.js";
+import { markSeoShellHead } from "./seo-shell-head.mjs";
+import {
+  cleanupPrerenderedSeoHead,
+  removeSeoShellHead,
+} from "../src/utils/seoHead.js";
 
 const browser = await chromium.launch({ headless: true });
 const page = await browser.newPage();
@@ -112,31 +116,54 @@ try {
     markers: 0,
   });
 
+  const shellHtml = markSeoShellHead(`<!doctype html><html><head>
+    <title>Shell statique</title>
+    <meta name="description" content="shell">
+    <meta name="application-name" content="shell">
+    <meta property="og:title" content="shell">
+    <meta name="twitter:title" content="shell">
+    <link rel="canonical" href="https://example.com/shell">
+    <link rel="alternate" hreflang="fr" href="https://example.com/shell">
+    <link rel="preconnect" href="https://fonts.example.com">
+    <link rel="modulepreload" href="/assets/app.js">
+  </head><body><link rel="canonical" href="https://example.com/body"></body></html>`);
+  assert.equal(
+    (shellHtml.match(/data-seo-shell="true"/g) || []).length,
+    7,
+    "Le générateur doit marquer uniquement les balises SEO statiques du head",
+  );
+  assert.match(shellHtml, /<link rel="preconnect" href="https:\/\/fonts\.example\.com">/);
+  assert.match(shellHtml, /<link rel="modulepreload" href="\/assets\/app\.js">/);
+  assert.match(shellHtml, /<body><link rel="canonical" href="https:\/\/example\.com\/body">/);
+
+  await page.setContent(shellHtml);
+  await page.evaluate(removeSeoShellHead);
+  const shellState = await page.evaluate(() => ({
+    shellMarkers: document.head.querySelectorAll('[data-seo-shell="true"]').length,
+    seoNodes: document.head.querySelectorAll(
+      'title, meta[name="description"], meta[name="application-name"], meta[property="og:title"], meta[name="twitter:title"], link[rel="canonical"], link[rel="alternate"]',
+    ).length,
+    technicalLinks: document.head.querySelectorAll(
+      'link[rel="preconnect"], link[rel="modulepreload"]',
+    ).length,
+  }));
+  assert.deepEqual(shellState, {
+    shellMarkers: 0,
+    seoNodes: 0,
+    technicalLinks: 2,
+  });
+
   await page.setContent(`<!doctype html><html><head>
-    <title>Shell statique</title><title>React hydraté</title>
+    <title>Shell non marqué</title><title>React</title>
     <meta name="description" content="shell"><meta name="description" content="react">
-    <meta name="application-name" content="shell"><meta name="application-name" content="react">
-    <link rel="alternate" hreflang="fr" href="https://example.com/shell"><link rel="alternate" hreflang="fr" href="https://example.com/react">
-    <link rel="alternate" hreflang="x-default" href="https://example.com/shell"><link rel="alternate" hreflang="x-default" href="https://example.com/react">
   </head><body></body></html>`);
   await page.evaluate(cleanupPrerenderedSeoHead);
-  const fallback = await page.evaluate(() => ({
-    titles: Array.from(document.head.querySelectorAll("title"), (node) => node.textContent),
-    descriptions: Array.from(document.head.querySelectorAll('meta[name="description"]'), (node) => node.content),
-    applicationNames: Array.from(document.head.querySelectorAll('meta[name="application-name"]'), (node) => node.content),
-    alternates: Object.fromEntries(
-      Array.from(document.head.querySelectorAll('link[rel="alternate"]'), (node) => [node.hreflang, node.href]),
-    ),
-  }));
-  assert.deepEqual(fallback, {
-    titles: ["React hydraté"],
-    descriptions: ["react"],
-    applicationNames: ["react"],
-    alternates: {
-      fr: "https://example.com/react",
-      "x-default": "https://example.com/react",
-    },
-  });
+  assert.equal(
+    await page.locator("head > title").count(),
+    2,
+    "Le nettoyage post-montage ne doit jamais supprimer des nœuds non marqués que React pourrait gérer",
+  );
+  assert.equal(await page.locator('head > meta[name="description"]').count(), 2);
 
   console.log("✅ Déduplication du head SEO validée");
 } finally {
