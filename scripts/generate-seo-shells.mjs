@@ -63,9 +63,9 @@ const STATIC_PATHS = [
 
 const STATIC_OVERRIDES = {
   "/": {
-    title: "Dentiste à Dakar | Clinique DABIA — Urgences, Implants, Orthodontie",
+    title: "Dentiste à Dakar – RDV rapide, urgence et devis | Clinique DABIA",
     description:
-      "Dentiste à Dakar (Liberté 6, Sicap Foire) : urgence dentaire, consultation, implants, orthodontie, blanchiment, prothèses. Devis clair, RDV rapide. Appelez le 77 703 93 93.",
+      "Dentiste à Dakar, Liberté 6 : consultation, urgence, détartrage, implant, orthodontie et esthétique. Appelez ou prenez rendez-vous en ligne rapidement.",
     h1: "Clinique Dentaire DABIA à Dakar",
     intro:
       "Votre dentiste à Dakar — soins modernes, équipe expérimentée et accompagnement personnalisé.",
@@ -111,10 +111,10 @@ const STATIC_OVERRIDES = {
       "Diagnostic, explication des options, devis détaillé et suivi pour vos soins dentaires à Dakar.",
   },
   "/urgence-dentaire-dakar": {
-    title: "Urgence dentaire à Dakar : rage de dent, abcès, dent cassée | DABIA",
+    title: "SOS dentiste à Dakar : urgence, douleur, abcès | Clinique DABIA",
     description:
-      "Urgence dentaire à Dakar : douleur, gonflement, dent cassée. Conseils immédiats + prise en charge rapide par appel, WhatsApp ou RDV.",
-    h1: "Urgence dentaire à Dakar – prise en charge rapide",
+      "SOS dentiste à Dakar : douleur, abcès, gonflement ou dent cassée. Appelez la Clinique DABIA, contactez-nous sur WhatsApp ou demandez un RDV urgent.",
+    h1: "SOS dentiste à Dakar – urgence dentaire rapide",
     intro:
       "Rage de dent, abcès, gonflement ou dent cassée : contactez la clinique pour une orientation immédiate.",
   },
@@ -440,7 +440,7 @@ function buildRouteCatalog({ posts, competences, technologies, tagSlugs }) {
       description:
         post.description ||
         "Article du blog de la Clinique Dentaire DABIA à Dakar.",
-      h1: post.title || "Article de blog",
+      h1: post.heading || post.title || "Article de blog",
       intro:
         post.description ||
         "Découvrez nos conseils et informations pratiques en santé bucco-dentaire.",

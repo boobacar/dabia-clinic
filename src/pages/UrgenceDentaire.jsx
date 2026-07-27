@@ -84,8 +84,8 @@ export default function UrgenceDentaire() {
   return (
     <section className="py-20 px-4 max-w-7xl mx-auto mt-20">
       <Seo
-        title="Urgence dentaire à Dakar : rage de dent, abcès, dent cassée | DABIA"
-        description="Urgence dentaire à Dakar : douleur intense, abcès, gonflement ou dent cassée. Conseils immédiats + prise en charge rapide par appel, WhatsApp ou RDV en ligne."
+        title="SOS dentiste à Dakar : urgence, douleur, abcès | Clinique DABIA"
+        description="SOS dentiste à Dakar : douleur, abcès, gonflement ou dent cassée. Appelez la Clinique DABIA, contactez-nous sur WhatsApp ou demandez un RDV urgent."
         canonical={canonical}
         url={canonical}
         jsonLd={[faqLD, howToLD]}
@@ -103,7 +103,7 @@ export default function UrgenceDentaire() {
         transition={{ duration: 0.45, ease: "easeOut" }}
       >
         <h1 className="text-3xl md:text-4xl font-extrabold text-[#ad9d64]">
-          Urgence dentaire à Dakar
+          SOS dentiste à Dakar — urgence dentaire
         </h1>
         <p className="mt-2 text-gray-700 max-w-3xl">
           Douleur intense, gonflement, traumatisme ou dent cassée : nous vous

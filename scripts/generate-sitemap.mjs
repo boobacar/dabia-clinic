@@ -226,6 +226,22 @@ async function readRedirectedPostSlugs() {
   }
 }
 
+async function readRedirectedTagSlugs() {
+  try {
+    const config = JSON.parse(await readFile(VERCEL_CONFIG_PATH, "utf8"));
+    return new Set(
+      (config.redirects || [])
+        .map((redirect) =>
+          redirect?.source?.match(/^\/blog\/tag\/([^:*]+)$/)?.[1]
+        )
+        .filter(Boolean)
+    );
+  } catch (e) {
+    console.warn("⚠️ Impossible de lire les redirections de tags :", e?.message);
+    return new Set();
+  }
+}
+
 async function build() {
   await ensureDist();
   await ensurePublic();
@@ -234,8 +250,10 @@ async function build() {
 
   const metaPosts = await readPostsMeta();
   const sourcePosts = await readPostsSource();
-  const tagSlugs = await readTagSlugs();
+  const allTagSlugs = await readTagSlugs();
   const redirectedPostSlugs = await readRedirectedPostSlugs();
+  const redirectedTagSlugs = await readRedirectedTagSlugs();
+  const tagSlugs = allTagSlugs.filter((slug) => !redirectedTagSlugs.has(slug));
   const posts = mergePosts(metaPosts, sourcePosts).filter(
     (post) => !redirectedPostSlugs.has(post.slug)
   );

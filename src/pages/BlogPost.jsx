@@ -11,8 +11,46 @@ import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import { slugify } from "../utils/slugify";
 import ReadingProgress from "../components/ReadingProgress";
+import { sendEvent } from "../analytics/ga4";
 // Video embeds removed per request
 import Magnetic from "../components/Magnetic";
+
+const BLOG_APPOINTMENT_CTA = {
+  "appareil-dentaire-prix-dakar-guide-complet": {
+    label: "Demander un bilan orthodontique",
+    to: "/rendez-vous?soin=Orthodontie",
+  },
+  "guide-tarifs-dentiste-dakar-2025": {
+    label: "Obtenir un devis après consultation",
+    to: "/rendez-vous?soin=Consultation",
+  },
+  "urgence-dentiste-dakar-24-24-nuit-weekend": {
+    label: "Demander une prise en charge urgente",
+    to: "/rendez-vous?motif=urgence&soin=Consultation",
+  },
+  "prothese-dentaire-fixe-prix-senegal-amovible": {
+    label: "Demander un bilan prothétique",
+    to: "/rendez-vous?soin=Prothèse%20dentaire",
+  },
+  "detartrage-vs-airflow-difference-prophylaxie-dakar": {
+    label: "Réserver un bilan et un nettoyage",
+    to: "/rendez-vous?soin=Détartrage%20AirFlow",
+  },
+  "detartrage-dentaire-dakar-prix-frequence": {
+    label: "Réserver un bilan et un nettoyage",
+    to: "/rendez-vous?soin=Détartrage",
+  },
+  "tarif-implant-dentaire-dakar-deroulement": {
+    label: "Demander un bilan implantaire",
+    to: "/rendez-vous?soin=Implantologie",
+  },
+  "cbct-radio-3d-dentaire-a-quoi-sert-dakar": {
+    label: "Prendre rendez-vous pour un bilan 3D",
+    to: "/rendez-vous?soin=CBCT%20dentaire",
+  },
+};
+
+const CLINIC_PHONE = ["+221", "77", "703", "93", "93"].join("");
 
 function textFromChildren(children) {
   if (children == null) return "";
@@ -47,6 +85,26 @@ function extractHeadings(markdown) {
 export default function BlogPost({ hideHeader = false }) {
   const { slug } = useParams();
   const post = useMemo(() => POSTS.find((p) => p.slug === slug), [slug]);
+  const appointmentCta = useMemo(
+    () =>
+      BLOG_APPOINTMENT_CTA[post?.slug] || {
+        label: "Prendre rendez-vous",
+        to: "/rendez-vous?soin=Consultation",
+      },
+    [post?.slug],
+  );
+  const trackBlogCta = ({ cta_position, cta_type = "rdv" }) => {
+    if (!post) return;
+    try {
+      sendEvent("blog_cta_click", {
+        page_path: `/blog/${post.slug}`,
+        article_slug: post.slug,
+        cta_position,
+        cta_type,
+        cta_label: appointmentCta.label,
+      });
+    } catch {}
+  };
 
   const currentSlug = post ? post.slug : "";
   const canonical = post
@@ -424,7 +482,7 @@ export default function BlogPost({ hideHeader = false }) {
       {!hideHeader && (
         <>
           <Seo
-            title={post.title}
+            title={post.seoTitle || post.title}
             description={post.description}
             url={canonical}
             canonical={canonical}
@@ -530,10 +588,11 @@ export default function BlogPost({ hideHeader = false }) {
           <div className="my-8 flex justify-center lg:justify-start">
             <Magnetic>
               <Link
-                to="/rendez-vous"
+                to={appointmentCta.to}
+                onClick={() => trackBlogCta({ cta_position: "top" })}
                 className="ripple btn-cta px-8 py-3 text-lg shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1 block text-center"
               >
-                Prendre un rendez-vous
+                {appointmentCta.label}
               </Link>
             </Magnetic>
           </div>
@@ -620,13 +679,17 @@ export default function BlogPost({ hideHeader = false }) {
                     );
                   }
 
-                  const isRdvLink =
-                    href === "/rendez-vous" || href.endsWith("/rendez-vous");
+                  const isRdvLink = href.startsWith("/rendez-vous");
 
                   if (isRdvLink) {
                     return (
-                      <Link to="/rendez-vous" className="btn-cta btn-cta-sm inline-block" {...props}>
-                        Rendez-vous rapide
+                      <Link
+                        to={href}
+                        onClick={() => trackBlogCta({ cta_position: "inline" })}
+                        className="btn-cta btn-cta-sm inline-block"
+                        {...props}
+                      >
+                        {children || appointmentCta.label}
                       </Link>
                     );
                   }
@@ -641,6 +704,45 @@ export default function BlogPost({ hideHeader = false }) {
             >
               {combinedMarkdown}
             </ReactMarkdown>
+          </div>
+
+          <div className="mt-8 rounded-2xl border border-[#e7dcbc] bg-[#fff9ea] p-5 text-center sm:text-left">
+            <p className="font-semibold text-gray-900">
+              Besoin d’un avis adapté à votre situation ?
+            </p>
+            <p className="mt-1 text-sm text-gray-700">
+              Notre équipe vous explique les prochaines étapes et confirme le soin
+              adapté après votre consultation.
+            </p>
+            <div className="mt-4 flex flex-wrap justify-center gap-3 sm:justify-start">
+              <Link
+                to={appointmentCta.to}
+                onClick={() => trackBlogCta({ cta_position: "mid" })}
+                className="inline-block btn-cta btn-cta-sm"
+              >
+                {appointmentCta.label}
+              </Link>
+              <a
+                href={`tel:${CLINIC_PHONE}`}
+                onClick={() =>
+                  trackBlogCta({ cta_position: "mid", cta_type: "phone" })
+                }
+                className="inline-block btn-cta btn-cta-sm"
+              >
+                Appeler la clinique
+              </a>
+              <a
+                href="https://wa.me/221777039393"
+                target="_blank"
+                rel="noreferrer"
+                onClick={() =>
+                  trackBlogCta({ cta_position: "mid", cta_type: "whatsapp" })
+                }
+                className="inline-block btn-cta btn-cta-sm"
+              >
+                Écrire sur WhatsApp
+              </a>
+            </div>
           </div>
 
           <div className="mt-8 p-4 border rounded-lg bg-yellow-50 text-yellow-800 text-sm">
@@ -679,8 +781,12 @@ export default function BlogPost({ hideHeader = false }) {
           <div className="mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <ShareButtons title={post.title} url={canonical} />
             <Magnetic>
-              <Link to="/rendez-vous" className="ripple btn-cta btn-cta-sm">
-                Prendre rendez-vous
+              <Link
+                to={appointmentCta.to}
+                onClick={() => trackBlogCta({ cta_position: "bottom" })}
+                className="ripple btn-cta btn-cta-sm"
+              >
+                {appointmentCta.label}
               </Link>
             </Magnetic>
           </div>
@@ -759,10 +865,11 @@ export default function BlogPost({ hideHeader = false }) {
               Notre équipe vous répond rapidement.
             </p>
             <Link
-              to="/rendez-vous"
+              to={appointmentCta.to}
+              onClick={() => trackBlogCta({ cta_position: "sidebar" })}
               className="mt-3 inline-block btn-cta btn-cta-sm"
             >
-              Prendre rendez-vous
+              {appointmentCta.label}
             </Link>
           </div>
         </aside>

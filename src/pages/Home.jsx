@@ -127,8 +127,8 @@ const Home = () => {
   return (
     <div className="bg-white text-gray-800">
       <Seo
-        title="Dentiste à Dakar — Urgence, Consultation, RDV rapide | Clinique DABIA"
-        description="Dentiste à Dakar (Liberté 6, Sicap Foire) : urgence dentaire, consultation, implants, orthodontie, blanchiment, prothèses. Devis clair, prise en charge rapide. Prenez RDV en ligne ou par téléphone."
+        title="Dentiste à Dakar – RDV rapide, urgence et devis | Clinique DABIA"
+        description="Dentiste à Dakar, Liberté 6 : consultation, urgence, détartrage, implant, orthodontie et esthétique. Appelez ou prenez rendez-vous en ligne rapidement."
         canonical="https://www.cliniquedentairedabia.com/"
         url="https://www.cliniquedentairedabia.com/"
         jsonLd={[

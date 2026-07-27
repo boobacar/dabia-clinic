@@ -5,6 +5,7 @@ import { readFile, writeFile, stat, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { dirname, extname, join } from "node:path";
 import { chromium } from "playwright-chromium";
+import { dedupeSeoHead } from "./prerender-seo-head.mjs";
 
 const ROOT = process.cwd();
 const DIST_DIR = join(ROOT, "dist");
@@ -138,6 +139,7 @@ async function prerenderRoute(browser, route) {
   await page.goto(url, { waitUntil: "networkidle" });
   // petite pause pour laisser les Suspense/lazy se résoudre
   await page.waitForTimeout(500);
+  await dedupeSeoHead(page);
   const html = await page.content();
   await page.close();
 

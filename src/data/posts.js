@@ -6457,9 +6457,10 @@ Toutes ces méthodes sont encadrées par des protocoles médicaux stricts. Les d
   },
   {
     slug: "cbct-radio-3d-dentaire-a-quoi-sert-dakar",
-    title: "CBCT (radio 3D) en dentaire : à quoi ça sert ?",
+    title: "CBCT dentaire à Dakar : prix, indications et scanner 3D",
+    seoTitle: "CBCT dentaire à Dakar : prix, indications et RDV scanner 3D | DABIA",
     description:
-      "Implants, endodontie, dents incluses : bénéfices, dose, indications et sécurité de l’imagerie 3D.",
+      "CBCT dentaire à Dakar : indications, déroulement, sécurité et prix sur devis. Diagnostic 3D à la Clinique DABIA Liberté 6, rendez-vous rapide.",
     date: "2025-06-10",
     category: "Technologie",
     tags: ["CBCT Dakar", "radio 3D dentaire", "technologie cabinet"],
@@ -6488,6 +6489,11 @@ Toutes ces méthodes sont encadrées par des protocoles médicaux stricts. Les d
 ## Sécurité
 - Dose réduite, adaptée aux enfants si nécessaire.
 - Pas d’injection, pas d’examen invasif.
+
+## Prix et prise de rendez-vous
+Le prix d’un CBCT dépend de la zone à examiner et de l’indication clinique. La Clinique DABIA confirme le tarif adapté après analyse de votre besoin et vous remet une information claire avant l’examen.
+
+Pour un implant, une dent incluse, une douleur inexpliquée ou un bilan 3D, [prenez rendez-vous pour un bilan CBCT](/rendez-vous?soin=CBCT%20dentaire).
 
 ### FAQ
 **Est-ce douloureux ?** Non, examen indolore et rapide.  

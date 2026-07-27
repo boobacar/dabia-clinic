@@ -397,6 +397,16 @@ const RendezVous = () => {
                           },
                           { value: "Parodontologie", label: "Parodontologie" },
                           { value: "Implantologie", label: "Implantologie" },
+                          {
+                            value: "Prothèse dentaire",
+                            label: "Prothèse dentaire",
+                          },
+                          { value: "Détartrage", label: "Détartrage" },
+                          {
+                            value: "Détartrage AirFlow",
+                            label: "Détartrage / AirFlow",
+                          },
+                          { value: "CBCT dentaire", label: "CBCT dentaire 3D" },
                           { value: "Endodontie", label: "Endodontie" },
                           {
                             value: "Facettes dentaires",

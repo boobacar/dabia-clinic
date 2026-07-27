@@ -26,6 +26,8 @@ export default function BlogPostShell() {
     );
   }
 
+  const displayTitle = post.heading || post.title;
+
   return (
     <>
       <section className="pt-20 px-4 max-w-7xl mx-auto mt-20">
@@ -41,7 +43,7 @@ export default function BlogPostShell() {
             {
               "@context": "https://schema.org",
               "@type": "Article",
-              headline: post.title,
+              headline: displayTitle,
               description: post.description,
               datePublished: post.date,
               dateModified: post.date,
@@ -71,7 +73,7 @@ export default function BlogPostShell() {
           items={[
             { label: "Accueil", href: "/" },
             { label: "Blog", href: "/blog" },
-            { label: post.title },
+            { label: displayTitle },
           ]}
         />
 
@@ -83,7 +85,7 @@ export default function BlogPostShell() {
                 {post.category || "Conseils"}
               </p>
               <h1 className="text-3xl md:text-4xl font-bold text-[#ad9d64] mt-1">
-                {post.title}
+                {displayTitle}
               </h1>
               <p className="text-gray-600 mt-2">{post.description}</p>
               <div className="flex items-center gap-3 mt-4">

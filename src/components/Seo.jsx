@@ -1,5 +1,6 @@
 // src/components/Seo.jsx – version React 19 (sans Helmet)
-import React from "react";
+import React, { useEffect } from "react";
+import { cleanupPrerenderedSeoHead } from "../utils/seoHead";
 
 const defaultSite = {
   name: "Clinique Dentaire DABIA",
@@ -63,6 +64,12 @@ export default function Seo({
   const blocks = jsonLd;
 
   // keep simple relative/absolute handling for links below
+
+  // Retire uniquement les balises statiques marquées par le pré-rendu dès que
+  // React 19 a installé leur équivalent hydraté dans le head.
+  useEffect(() => {
+    cleanupPrerenderedSeoHead();
+  });
 
   return (
     <>
