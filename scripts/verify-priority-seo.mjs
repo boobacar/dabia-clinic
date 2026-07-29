@@ -17,6 +17,7 @@ const [
   urgency,
   seoComponent,
   mainEntry,
+  seoHeadUtils,
   prerender,
   vercel,
   sitemapGenerator,
@@ -32,6 +33,7 @@ const [
   read("src/pages/UrgenceDentaire.jsx"),
   read("src/components/Seo.jsx"),
   read("src/main.jsx"),
+  read("src/utils/seoHead.js"),
   read("scripts/prerender-routes.mjs"),
   read("vercel.json"),
   read("scripts/generate-sitemap.mjs"),
@@ -149,12 +151,33 @@ assert.ok(
   "Chaque shell SEO doit être marqué avant sa sauvegarde",
 );
 assert.ok(
-  mainEntry.includes('import { removeSeoShellHead } from "./utils/seoHead"'),
-  "L’entrée React doit importer le retrait pré-montage des balises shell",
+  shells.includes('data-seo-shell-guard="true"') &&
+    shells.includes('data-seo-app-loading","true"'),
+  "Chaque shell SEO doit activer sa garde visuelle avant le rendu navigateur",
 );
 assert.ok(
-  mainEntry.indexOf("removeSeoShellHead();") < mainEntry.indexOf("ReactDOM.createRoot"),
-  "Les balises shell doivent être retirées avant que React ne prenne possession du head",
+  shells.includes("window.setTimeout") &&
+    shells.includes('removeAttribute("data-seo-app-loading")'),
+  "La garde doit se désactiver si le bundle React ne démarre pas",
+);
+assert.ok(
+  shells.includes("<noscript>"),
+  "Le shell SEO doit rester visible lorsque JavaScript est désactivé",
+);
+assert.ok(
+  seoHeadUtils.includes("export function removeSeoShellBody()") &&
+    seoHeadUtils.includes("root.replaceChildren();") &&
+    seoHeadUtils.includes('root.removeAttribute("data-seo-shell-root")'),
+  "Le bundle React doit retirer le shell du body lorsqu’il est prêt",
+);
+assert.ok(
+  mainEntry.includes("removeSeoShellBody, removeSeoShellHead"),
+  "L’entrée React doit importer le retrait pré-montage du head et du body",
+);
+assert.ok(
+  mainEntry.indexOf("removeSeoShellHead();") < mainEntry.indexOf("ReactDOM.createRoot") &&
+    mainEntry.indexOf("removeSeoShellBody();") < mainEntry.indexOf("ReactDOM.createRoot"),
+  "Le shell complet doit être retiré juste avant que React ne prenne possession du DOM",
 );
 
 console.log("✅ Contrats SEO prioritaires validés");

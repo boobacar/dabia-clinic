@@ -4,6 +4,16 @@ export function removeSeoShellHead() {
     .forEach((node) => node.remove());
 }
 
+export function removeSeoShellBody() {
+  const root = document.getElementById("root");
+  if (!root) return null;
+
+  root.replaceChildren();
+  root.removeAttribute("data-seo-shell-root");
+  document.documentElement.removeAttribute("data-seo-app-loading");
+  return root;
+}
+
 export function cleanupPrerenderedSeoHead() {
   const nodes = Array.from(
     document.head.querySelectorAll(

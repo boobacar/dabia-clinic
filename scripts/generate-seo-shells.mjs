@@ -214,6 +214,8 @@ function injectModulePreloads(html, files = []) {
 }
 
 function injectServerH1(html, route) {
+  const guard = `    <script data-seo-shell-guard="true">(function(){var html=document.documentElement;html.setAttribute("data-seo-app-loading","true");window.setTimeout(function(){html.removeAttribute("data-seo-app-loading");},8000);}());</script>\n    <style>html[data-seo-app-loading="true"] #root[data-seo-shell-root="true"]{visibility:hidden}</style>\n    <noscript><style>#root[data-seo-shell-root="true"]{visibility:visible}</style></noscript>`;
+  const guardedHtml = html.replace("</head>", `${guard}\n</head>`);
   const cover = route.cover
     ? `
       <style>@media (max-width:1023px){#root .seo-cover{display:none}}</style>
@@ -229,7 +231,10 @@ function injectServerH1(html, route) {
       ${cover}
     </main>`;
 
-  return html.replace(/<div id="root"><\/div>/i, `<div id="root">${shell}</div>`);
+  return guardedHtml.replace(
+    /<div id="root"><\/div>/i,
+    `<div id="root" data-seo-shell-root="true">${shell}</div>`,
+  );
 }
 
 function renderForRoute(baseHtml, route) {
