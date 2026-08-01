@@ -59,6 +59,7 @@ const STATIC_PATHS = [
   "/cabinet-dentaire-patte-d-oie",
   "/cabinet-dentaire-fann",
   "/cabinet-dentaire-plateau",
+  "/en/dental-clinic-dakar",
   "/galerie",
 ];
 
@@ -70,6 +71,14 @@ const STATIC_OVERRIDES = {
     h1: "Clinique Dentaire DABIA à Dakar",
     intro:
       "Votre dentiste à Dakar — soins modernes, équipe expérimentée et accompagnement personnalisé.",
+  },
+  "/en/dental-clinic-dakar": {
+    title: "Dentist Near Me in Dakar — Accepting New Patients | DABIA",
+    description:
+      "English-speaking dentist near you in Dakar, Senegal. New patients welcome — implants, emergency care, teeth whitening. Clear quotes, fast appointments at DABIA Clinic, Liberté 6.",
+    h1: "Dental clinic in Dakar for complete and modern care",
+    intro:
+      "English-speaking dental care in Dakar: consultations, emergencies, implants, orthodontics and cosmetic dentistry.",
   },
   "/blog": {
     title: "Blog dentaire à Dakar – Conseils, urgences, prix",
