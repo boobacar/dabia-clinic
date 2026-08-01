@@ -54,7 +54,7 @@ for (const [label, source] of [
   );
 }
 
-const cbctTitle = "CBCT dentaire à Dakar : prix, indications et RDV scanner 3D | DABIA";
+const cbctTitle = "CBCT dentaire : c'est quoi, prix et RDV scanner 3D à Dakar | DABIA";
 assert.ok(postsMeta.includes(cbctTitle), "posts.meta.json doit utiliser le title CBCT orienté rendez-vous");
 assert.ok(
   postsMeta.includes('"heading": "CBCT dentaire à Dakar : prix, indications et scanner 3D"'),

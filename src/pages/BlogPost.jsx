@@ -48,6 +48,18 @@ const BLOG_APPOINTMENT_CTA = {
     label: "Prendre rendez-vous pour un bilan 3D",
     to: "/rendez-vous?soin=CBCT%20dentaire",
   },
+  "blanchiment-dents-prix-conseils-dakar": {
+    label: "Réserver une séance de blanchiment",
+    to: "/rendez-vous?soin=Blanchiment%20dentaire",
+  },
+  "facettes-dentaires-dakar-hollywood-smile-prix": {
+    label: "Demander un devis facettes dentaires",
+    to: "/rendez-vous?soin=Facettes%20dentaires",
+  },
+  "prix-couronne-dentaire-dakar-materiaux-devis": {
+    label: "Obtenir un devis couronne dentaire",
+    to: "/rendez-vous?soin=Prothèse%20dentaire",
+  },
 };
 
 const CLINIC_PHONE = ["+221", "77", "703", "93", "93"].join("");

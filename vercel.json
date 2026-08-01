@@ -139,6 +139,41 @@
       "source": "/blog/prix-prothese-dentaire-dakar-partielle-complete",
       "destination": "/blog/prothese-dentaire-fixe-prix-senegal-amovible",
       "permanent": true
+    },
+    {
+      "source": "/blog/prothese-dentaire-complete-partielle-ou-sur-implant-dakar",
+      "destination": "/blog/prothese-dentaire-fixe-prix-senegal-amovible",
+      "permanent": true
+    },
+    {
+      "source": "/blog/blanchiment-dentaire-dakar-efficace-medical",
+      "destination": "/blog/blanchiment-dents-prix-conseils-dakar",
+      "permanent": true
+    },
+    {
+      "source": "/blog/blanchiment-dentaire-dakar-efficace-ou-danger",
+      "destination": "/blog/blanchiment-dents-prix-conseils-dakar",
+      "permanent": true
+    },
+    {
+      "source": "/blog/radio-cbct-dentaire-dakar-quand-la-faire-2026",
+      "destination": "/blog/cbct-radio-3d-dentaire-a-quoi-sert-dakar",
+      "permanent": true
+    },
+    {
+      "source": "/blog/appareil-dentaire-adulte-dakar-options-delais-budget-2026",
+      "destination": "/blog/appareil-dentaire-prix-dakar-guide-complet",
+      "permanent": true
+    },
+    {
+      "source": "/blog/implant-dentaire-dakar-etapes-risques-reussite-2026",
+      "destination": "/blog/tarif-implant-dentaire-dakar-deroulement",
+      "permanent": true
+    },
+    {
+      "source": "/blog/urgence-dentaire-dakar-qui-appeler",
+      "destination": "/blog/urgence-dentiste-dakar-24-24-nuit-weekend",
+      "permanent": true
     }
   ],
   "rewrites": [

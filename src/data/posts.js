@@ -6458,7 +6458,7 @@ Toutes ces méthodes sont encadrées par des protocoles médicaux stricts. Les d
   {
     slug: "cbct-radio-3d-dentaire-a-quoi-sert-dakar",
     title: "CBCT dentaire à Dakar : prix, indications et scanner 3D",
-    seoTitle: "CBCT dentaire à Dakar : prix, indications et RDV scanner 3D | DABIA",
+    seoTitle: "CBCT dentaire : c'est quoi, prix et RDV scanner 3D à Dakar | DABIA",
     description:
       "CBCT dentaire à Dakar : indications, déroulement, sécurité et prix sur devis. Diagnostic 3D à la Clinique DABIA Liberté 6, rendez-vous rapide.",
     date: "2025-06-10",
