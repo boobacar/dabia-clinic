@@ -635,6 +635,9 @@ export default function DentisteDakar() {
           <Link to="/cabinet-dentaire-liberte-6" className="btn-cta btn-cta-sm">
             Dentiste Liberté 6
           </Link>
+          <Link to="/cabinet-dentaire-vdn" className="btn-cta btn-cta-sm">
+            Dentiste VDN
+          </Link>
           <Link
             to="/clinique-dentaire-parcelles-assainies"
             className="btn-cta btn-cta-sm"

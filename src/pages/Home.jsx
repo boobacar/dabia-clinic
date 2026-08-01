@@ -216,6 +216,12 @@ const Home = () => {
             >
               Liberté 6
             </Link>
+            <Link
+              to="/cabinet-dentaire-vdn"
+              className="btn-cta btn-cta-sm"
+            >
+              VDN
+            </Link>
           </div>
           <p className="text-center text-xs text-gray-500 mt-4 mb-2">
             Nos guides les plus consultés :

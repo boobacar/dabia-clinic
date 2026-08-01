@@ -87,6 +87,12 @@ const Footer = () => {
           Yoff
         </a>
         <a
+          href="/cabinet-dentaire-vdn"
+          className="text-white/90 hover:text-white underline-offset-2 hover:underline"
+        >
+          VDN
+        </a>
+        <a
           href="/cabinet-dentaire-hlm-grand-yoff"
           className="text-white/90 hover:text-white underline-offset-2 hover:underline"
         >

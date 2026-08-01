@@ -67,6 +67,7 @@ const STATIC_ROUTES = [
   "/cabinet-dentaire-patte-d-oie",
   "/cabinet-dentaire-fann",
   "/cabinet-dentaire-plateau",
+  "/cabinet-dentaire-vdn",
   "/galerie",
 ];
 
