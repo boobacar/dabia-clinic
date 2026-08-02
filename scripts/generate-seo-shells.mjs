@@ -1,6 +1,7 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { join, dirname } from "node:path";
 import { markSeoShellHead } from "./seo-shell-head.mjs";
+import { competenceContent } from "../src/data/competenceContent.js";
 
 const ROOT = process.cwd();
 const DIST = join(ROOT, "dist");
@@ -137,6 +138,29 @@ const STATIC_OVERRIDES = {
     intro:
       "Rage de dent, abcès, gonflement ou dent cassée : contactez la clinique pour une orientation immédiate.",
   },
+  "/apropos": {
+    title: "À propos – Clinique Dentaire DABIA (Dakar)",
+    description:
+      "Découvrez l’histoire, les valeurs, l’équipe et les engagements qualité de la Clinique Dentaire DABIA à Dakar (Liberté 6).",
+    h1: "À propos de la Clinique Dentaire DABIA",
+    intro:
+      "Située à Sicap Foire (Liberté 6), la Clinique Dentaire DABIA accompagne les patients de Dakar avec des soins précis, des explications claires et un suivi humain : soins du quotidien, urgences, esthétique du sourire, implants, réhabilitations et orthodontie.",
+    jsonLd: [
+      {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        name: "À propos – Clinique Dentaire DABIA (Dakar)",
+        description:
+          "Découvrez l’histoire, les valeurs, l’équipe et les engagements qualité de la Clinique Dentaire DABIA à Dakar (Liberté 6).",
+        url: "https://www.cliniquedentairedabia.com/apropos",
+        mainEntity: {
+          "@type": "Dentist",
+          name: "Clinique Dentaire DABIA",
+          url: "https://www.cliniquedentairedabia.com/",
+        },
+      },
+    ],
+  },
 };
 
 const esc = (s) =>
@@ -234,6 +258,57 @@ function injectModulePreloads(html, files = []) {
 function injectServerH1(html, route) {
   const guard = `    <script data-seo-shell-guard="true">(function(){var html=document.documentElement;html.setAttribute("data-seo-app-loading","true");window.setTimeout(function(){html.removeAttribute("data-seo-app-loading");},8000);}());</script>\n    <style>html[data-seo-app-loading="true"] #root[data-seo-shell-root="true"]{visibility:hidden}</style>\n    <noscript><style>#root[data-seo-shell-root="true"]{visibility:visible}</style></noscript>`;
   const guardedHtml = html.replace("</head>", `${guard}\n</head>`);
+
+  // ── Contenu statique riche pour les crawlers LLM (GPTBot, ClaudeBot…) ──
+  // Ce contenu est visible dans le HTML brut AVANT le rendu JS ; il est
+  // remplacé par l'application React au montage (removeSeoShellBody).
+  const sections = [];
+  if (route.pointsForts?.length) {
+    sections.push(`<h2 style="font-size:1.35rem;margin:26px 0 10px;color:#6b5d34">Points clés du traitement</h2><ul style="margin:0 0 18px;padding-left:22px">${route.pointsForts
+      .map((p) => `<li style="margin:6px 0">${esc(p)}</li>`)
+      .join("")}</ul>`);
+  }
+  if (route.deroule?.length) {
+    sections.push(`<h2 style="font-size:1.35rem;margin:26px 0 10px;color:#6b5d34">Comment se déroule le traitement ?</h2><ol style="margin:0 0 18px;padding-left:22px">${route.deroule
+      .map((d) => `<li style="margin:6px 0">${esc(d)}</li>`)
+      .join("")}</ol>`);
+  }
+  if (route.faq?.length) {
+    sections.push(`<h2 style="font-size:1.35rem;margin:26px 0 10px;color:#6b5d34">Questions fréquentes</h2>${route.faq
+      .map(
+        (f) =>
+          `<div style="margin:0 0 14px"><h3 style="font-size:1.05rem;margin:0 0 4px;color:#111827">${esc(f.q)}</h3><p style="margin:0;color:#374151">${esc(f.a)}</p></div>`
+      )
+      .join("")}`);
+  }
+
+  // FAQPage JSON-LD statique (marqué data-seo-shell → retiré au montage React,
+  // qui réinjecte le même bloc via le composant Seo)
+  let faqJsonLd = "";
+  if (route.faq?.length) {
+    const faq = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: route.faq.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    };
+    faqJsonLd = `\n    <script type="application/ld+json" data-seo-shell="true">${JSON.stringify(faq)}</script>`;
+  }
+
+  // JSON-LD supplémentaires statiques (ex. AboutPage/Person pour l'entity anchor)
+  let extraJsonLd = "";
+  if (route.jsonLd?.length) {
+    extraJsonLd = route.jsonLd
+      .map(
+        (b) =>
+          `\n    <script type="application/ld+json" data-seo-shell="true">${JSON.stringify(b)}</script>`
+      )
+      .join("");
+  }
+
   const cover = route.cover
     ? `
       <style>@media (max-width:1023px){#root .seo-cover{display:none}}</style>
@@ -246,10 +321,15 @@ function injectServerH1(html, route) {
       <h1 style="font-size:clamp(1.8rem,4vw,2.6rem);margin:0 0 12px;color:#6b5d34">${esc(route.h1)}</h1>
       <p style="margin:0 0 18px;color:#374151">${esc(route.intro)}</p>
       <p style="margin:0;color:#111827">👉 <a href="/rendez-vous">Prendre rendez-vous</a> · <a href="tel:+221777039393">Appeler</a> · <a href="https://wa.me/221777039393">WhatsApp</a></p>
+      ${sections.join("\n")}
       ${cover}
     </main>`;
 
-  return guardedHtml.replace(
+  const withFaqHead = guardedHtml.replace(
+    "</head>",
+    `${faqJsonLd}${extraJsonLd}\n</head>`,
+  );
+  return withFaqHead.replace(
     /<div id="root"><\/div>/i,
     `<div id="root" data-seo-shell-root="true">${shell}</div>`,
   );
@@ -474,12 +554,19 @@ function buildRouteCatalog({ posts, competences, technologies, tagSlugs }) {
   }
 
   for (const item of competences) {
+    const content = competenceContent[item.slug] || {};
     routes.push({
       path: `/competences/${item.slug}`,
       title: `${item.title} à Dakar | Clinique Dentaire DABIA`,
       description: `${item.title} à Dakar : indications, bénéfices et prise en charge à la Clinique Dentaire DABIA.`,
       h1: item.title,
-      intro: `Découvrez ${item.title.toLowerCase()} à la Clinique Dentaire DABIA à Dakar.`,
+      intro:
+        content.quickAnswer ||
+        `Découvrez ${item.title.toLowerCase()} à la Clinique Dentaire DABIA à Dakar.`,
+      // Contenu statique supplémentaire (lu par les crawlers LLM avant le rendu JS)
+      pointsForts: content.pointsForts || [],
+      deroule: content.deroule || [],
+      faq: content.faq || [],
       type: "website",
     });
   }
