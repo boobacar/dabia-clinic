@@ -351,6 +351,30 @@ ${[...staticXml, ...competencesXml, ...blogXml, ...tagsXml, ...techXml].join("\n
       .map((p) => abs(`/blog/${p.slug}`)),
   ].join("\n");
   await writeFile(join(DIST_DIR, "reindex-urls.txt"), reindexList, "utf8");
+  // Ping IndexNow (Bing, Yandex, Seznam, Naver…) → crawl sous ~24h
+  // Clé servie à https://www.cliniquedentairedabia.com/indexnow-key.txt
+  try {
+    const key = (
+      await readFile(join(ROOT, "public", "indexnow-key.txt"), "utf8")
+    )
+      .trim();
+    if (key && /^[a-f0-9]{32}$/.test(key)) {
+      const urls = reindexList.split("\n").filter(Boolean);
+      const payload = { host: "www.cliniquedentairedabia.com", key, urlList: urls };
+      const resp = await fetch("https://api.indexnow.org/indexnow", {
+        method: "POST",
+        headers: { "Content-Type": "application/json; charset=utf-8" },
+        body: JSON.stringify(payload),
+      });
+      console.log(
+        `✅ IndexNow pingé: ${urls.length} URLs (HTTP ${resp.status})`
+      );
+    } else {
+      console.log("⚠️ IndexNow: clé invalide ou absente, ping ignoré");
+    }
+  } catch (e) {
+    console.log(`⚠️ IndexNow: ping échoué (${e.message})`);
+  }
   await writeFile(
     join(DIST_DIR, "robots.txt"),
     `User-agent: *

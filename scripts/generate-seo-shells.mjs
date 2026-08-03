@@ -80,7 +80,21 @@ const STATIC_OVERRIDES = {
       "Clinique dentaire à deux pas de la VDN (Voie de Dégagement Nord), Sicap Foire Liberté 6 : urgences, détartrage, implants, orthodontie, esthétique. Prise de rendez-vous rapide.",
     h1: "Clinique dentaire proche de la VDN (Dakar)",
     intro:
-      "La Clinique Dentaire DABIA accueille les patient·es de la VDN, Mermoz, Yoff et Sicap Foire pour tous les soins dentaires.",
+      "La Clinique Dentaire DABIA accueille les patient·es de la VDN, Mermoz, Yoff et Sicap Foire pour tous les soins dentaires. Située à deux pas de la Voie de Dégagement Nord, elle reçoit les urgences et propose détartrage, implants, orthodontie et esthétique avec un devis clair.",
+    faq: [
+      {
+        q: "Où se trouve la clinique dentaire près de la VDN à Dakar ?",
+        a: "La Clinique Dentaire DABIA est située à Sicap Foire, 2 voies Liberté 6 (à 150m du Uno), à deux pas de la VDN, facilement accessible depuis Mermoz, Yoff et les Almadies.",
+      },
+      {
+        q: "Quels soins sont proposés près de la VDN ?",
+        a: "Urgences dentaires, détartrage, soins des caries, implants, orthodontie, facettes et blanchiment, avec devis détaillé et prise de rendez-vous rapide.",
+      },
+      {
+        q: "Comment prendre rendez-vous à la clinique près de la VDN ?",
+        a: "Par téléphone, WhatsApp ou via le formulaire en ligne : confirmation rapide par l'équipe de la Clinique DABIA.",
+      },
+    ],
   },
   "/en/dental-clinic-dakar": {
     title: "Dentist Near Me in Dakar — Accepting New Patients | DABIA",
@@ -151,6 +165,28 @@ const STATIC_OVERRIDES = {
     h1: "SOS dentiste à Dakar – urgence dentaire rapide",
     intro:
       "Rage de dent, abcès, gonflement ou dent cassée : contactez la clinique pour une orientation immédiate.",
+  },
+  "/infos/assurances": {
+    title: "Assurances & IPM à Dakar : prise en charge des soins dentaires | DABIA",
+    description:
+      "IPM, mutuelles et assurances santé au Sénégal : comment sont pris en charge vos soins dentaires à la Clinique DABIA (Dakar). Dossier, remboursement et devis.",
+    h1: "Assurances, IPM et mutuelles : prise en charge à la Clinique DABIA",
+    intro:
+      "Vous avez une IPM (Institution de Prévoyance Maladie), une mutuelle ou une assurance santé ? La Clinique Dentaire DABIA à Dakar vous aide à préparer votre dossier de prise en charge et vous remet un devis détaillé avant tout soin.",
+    faq: [
+      {
+        q: "L'IPM Senelec ou une IPM prend-elle en charge les soins dentaires ?",
+        a: "La plupart des IPM et mutuelles au Sénégal prennent en charge une partie des soins dentaires. La Clinique DABIA vous remet un devis et le dossier nécessaire à votre demande de prise en charge.",
+      },
+      {
+        q: "Comment préparer mon dossier d'assurance pour des soins dentaires ?",
+        a: "Présentez votre carte d'assuré et votre pièce d'identité. La clinique établit un devis détaillé et les documents requis pour votre IPM ou mutuelle avant le début des soins.",
+      },
+      {
+        q: "Les soins esthétiques (blanchiment, facettes) sont-ils remboursés ?",
+        a: "La prise en charge dépend du contrat de votre IPM ou mutuelle. Le devis vous indique clairement les postes couverts et ceux qui restent à votre charge.",
+      },
+    ],
   },
   "/apropos": {
     title: "À propos – Clinique Dentaire DABIA (Dakar)",

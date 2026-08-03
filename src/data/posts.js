@@ -3875,7 +3875,13 @@ Il est impossible de donner un prix ferme par téléphone.
 2.  Le dentiste examine votre bouche (nombre de dents, état des gencives).
 3.  Il vous remet un **devis écrit** et détaillé.
 
-> À la Clinique DABIA, nous proposons des facilités de paiement pour les traitements longs comme l'orthodontie.`,
+> À la Clinique DABIA, nous proposons des facilités de paiement pour les traitements longs comme l'orthodontie.
+
+## Pour aller plus loin
+- **Prix selon l'âge** : [appareil dentaire enfant, ado et adulte à Dakar](/blog/prix-appareil-dentaire-orthodontie-dakar-enfant-adulte) — ce qui fait varier le devis.
+- **Adulte** : [options, délais et budget réaliste](/blog/appareil-dentaire-adulte-dakar-options-delais-budget-2026) pour un traitement orthodontique.
+- **Alignement dentaire** : [comment se déroule l'orthodontie à la Clinique DABIA](/competences/orthodontie).
+- **Remplacer une dent manquante** : [implantologie et prothèses](/competences/implantologie).`,
     faq: [
       {
         q: "Est-ce remboursé par les assurances ?",
@@ -3946,7 +3952,7 @@ Nous suivons les normes internationales de stérilisation (autoclave classe B, i
   {
     slug: "guide-tarifs-dentiste-dakar-2025",
     title:
-      "Guide Complet des Tarifs Dentaires à Dakar (2025) – Prix Mis à Jour et Conseils",
+      "Guide Complet des Tarifs Dentaires à Dakar (2026) – Prix Mis à Jour et Conseils",
     description:
       "Découvrez les tarifs réels pour un détartrage, une extraction ou une consultation à Dakar. Notre guide mis à jour vous aide à planifier votre budget santé et à économiser.",
     date: "2026-01-21",
@@ -3962,11 +3968,13 @@ Nous suivons les normes internationales de stérilisation (autoclave classe B, i
     cover: guideTarifsCover,
     pinned: true,
     readingMinutes: 8,
-    content: `La question du **prix** est souvent la première que l’on se pose avant d'aller chez le dentiste.
+    content: `**Combien coûte une consultation, un détartrage ou une extraction chez le dentiste à Dakar en 2026 ?** Comptez entre 10 000 et 20 000 FCFA pour une consultation simple, entre 25 000 et 40 000 FCFA pour un détartrage et polissage, et à partir de 20 000 FCFA pour une extraction simple. L'orthodontie et l'implantologie se chiffrent en centaines de milliers de FCFA. Le prix exact dépend de l'examen clinique : un devis écrit et détaillé est remis avant tout soin.
+
+La question du **prix** est souvent la première que l’on se pose avant d'aller chez le dentiste.
 
 ✅ Pour un devis clair et rapide : **[prendre rendez-vous](/rendez-vous)** ou consulter notre page **[cabinet dentaire à Dakar](/cabinet-dentaire-dakar)**. Combien coûte un détartrage ? Quel est le tarif d'une couronne ? À Dakar, les prix peuvent varier, mais la transparence est essentielle pour établir une relation de confiance.
 
-## Tarifs moyens observés à Dakar (2025)
+## Tarifs moyens observés à Dakar (2026)
 Voici une fourchette de prix indicative pour les soins courants à Dakar (ces tarifs peuvent varier selon la complexité du cas) :
 
 - **Consultation simple** : entre 10 000 et 20 000 FCFA.
@@ -7319,9 +7327,9 @@ Une prothèse doit être nettoyée chaque jour (hors de la bouche) pour éviter 
   {
     slug: "prix-radio-dentaire-scanner-3d-dakar",
     title:
-      "Prix Radio Dentaire et Scanner 3D à Dakar en 2025 : Votre Bilan Complet Expliqué",
+      "Prix radio dentaire et scanner 3D à Dakar : combien prévoir en 2026 ?",
     description:
-      "Découvrez les prix 2025 des radios dentaires et scanners 3D à Dakar. Bilan précis et rapide pour un diagnostic fiable. Devis gratuit et personnalisé.",
+      "Combien coûte une radio dentaire ou un scanner 3D (CBCT) à Dakar en 2026 ? Tarifs par type d'examen, remboursement et devis à la Clinique DABIA.",
     date: "2026-01-25",
     category: "Technologie",
     tags: [
