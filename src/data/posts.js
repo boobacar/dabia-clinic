@@ -6467,36 +6467,40 @@ Toutes ces méthodes sont encadrées par des protocoles médicaux stricts. Les d
     author: AUTHORS.sao,
     cover: cbctCover,
     readingMinutes: 13,
-    content: `La **CBCT (Cone Beam Computed Tomography)** est une technologie de radiographie 3D dédiée à la dentisterie. Elle fournit des images précises, avec une irradiation plus faible qu’un scanner médical classique.
+    content: `**Qu'est-ce qu'un CBCT dentaire ?** Le CBCT (Cone Beam Computed Tomography) est une radiographie 3D utilisée en dentisterie : en environ 20 secondes, il produit des images millimétriques de la mâchoire avec une irradiation bien plus faible qu'un scanner médical classique. À la Clinique DABIA à Dakar (Liberté 6), le CBCT sert à planifier les implants, détecter les infections et préparer les chirurgies ; son prix est confirmé sur devis après analyse de votre besoin.
 
-## Indications principales
+## Qu'est-ce qu'un CBCT et en quoi diffère-t-il d'une radio classique ?
+La **CBCT (Cone Beam Computed Tomography)** est une technologie de radiographie 3D dédiée à la dentisterie. Elle fournit des images précises, avec une irradiation plus faible qu’un scanner médical classique, en un seul passage de 20 secondes autour de la tête.
+
+## Dans quels cas faire un CBCT dentaire ?
 - **Implantologie** : planification des implants avec précision millimétrique.
 - **Endodontie** : détection de canaux accessoires, fractures radiculaires.
 - **Chirurgie** : dents de sagesse incluses, kystes, lésions osseuses.
 - **Orthodontie** : étude des bases osseuses et éruption des dents.
 
-## Avantages
-- Image tridimensionnelle.
-- Mesures précises de l’os.
-- Diagnostic plus fiable.
+## Quels sont les avantages du CBCT par rapport au scanner ?
+- Image tridimensionnelle complète.
+- Mesures précises de l’os (épaisseur, hauteur, densité).
+- Diagnostic plus fiable, moins de radiographies nécessaires.
 - Faible irradiation (par rapport au scanner).
 
-## Déroulement de l’examen
+## Comment se déroule l'examen ?
 1. Installation assise ou debout.
 2. Rotation de l’appareil autour de la tête (20 sec).
-3. Analyse des images par le dentiste.
+3. Analyse des images par le dentiste, résultats rapides.
 
-## Sécurité
+## Le CBCT est-il sûr ?
 - Dose réduite, adaptée aux enfants si nécessaire.
 - Pas d’injection, pas d’examen invasif.
+- Déconseillé pendant la grossesse sauf urgence.
 
-## Prix et prise de rendez-vous
+## Combien coûte un CBCT à Dakar ?
 Le prix d’un CBCT dépend de la zone à examiner et de l’indication clinique. La Clinique DABIA confirme le tarif adapté après analyse de votre besoin et vous remet une information claire avant l’examen.
 
 Pour un implant, une dent incluse, une douleur inexpliquée ou un bilan 3D, [prenez rendez-vous pour un bilan CBCT](/rendez-vous?soin=CBCT%20dentaire).
 
 ### FAQ
-**Est-ce douloureux ?** Non, examen indolore et rapide.  
+**Est-ce douloureux ?** Non, examen indolore et rapide (20 secondes).  
 **Est-ce remboursé ?** Dépend des indications médicales.  
 **Puis-je le faire enceinte ?** Déconseillé sauf urgence.
 

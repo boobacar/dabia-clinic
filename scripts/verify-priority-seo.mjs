@@ -80,7 +80,10 @@ assert.ok(
   blogPost.includes("title={post.seoTitle || post.title}"),
   "BlogPost doit utiliser le title SEO quand il est défini",
 );
-assert.ok(posts.includes("## Prix et prise de rendez-vous"), "L’article CBCT doit expliquer le prix/devis et la prise de rendez-vous");
+assert.ok(
+  posts.includes("## Combien coûte un CBCT à Dakar ?"),
+  "L'article CBCT doit expliquer le prix/devis et la prise de rendez-vous",
+);
 
 assert.match(vercel, /"source": "\/blog\/tag\/sos-dentiste"[\s\S]*?"destination": "\/urgence-dentaire-dakar"/, "Le tag SOS dentiste doit rediriger vers la page urgence");
 assert.ok(urgency.includes("SOS dentiste à Dakar"), "La page urgence doit cibler explicitement SOS dentiste à Dakar");

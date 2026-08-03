@@ -88,7 +88,21 @@ const STATIC_OVERRIDES = {
       "English-speaking dentist near you in Dakar, Senegal. New patients welcome — implants, emergency care, teeth whitening. Clear quotes, fast appointments at DABIA Clinic, Liberté 6.",
     h1: "Dental clinic in Dakar for complete and modern care",
     intro:
-      "English-speaking dental care in Dakar: consultations, emergencies, implants, orthodontics and cosmetic dentistry.",
+      "Looking for an English-speaking dentist near you in Dakar? DABIA Clinic (Liberté 6, Sicap Foire) welcomes new patients for consultations, emergencies, implants, orthodontics and cosmetic dentistry — with clear quotes and fast appointments by phone or WhatsApp.",
+    faq: [
+      {
+        q: "Is there an English-speaking dentist near me in Dakar?",
+        a: "Yes. DABIA Clinic in Dakar (Sicap Foire, Liberté 6) provides English-speaking dental care and welcomes new patients for consultations, emergencies and treatments.",
+      },
+      {
+        q: "How do I book an appointment at DABIA Clinic?",
+        a: "Book online in about a minute, call directly, or send a WhatsApp message. The team confirms your appointment quickly.",
+      },
+      {
+        q: "Does DABIA Clinic accept new patients?",
+        a: "Yes, DABIA Clinic welcomes new patients for all treatments: check-ups, cleanings, implants, orthodontics and cosmetic dentistry.",
+      },
+    ],
   },
   "/blog": {
     title: "Blog dentaire à Dakar – Conseils, urgences, prix",
@@ -112,7 +126,7 @@ const STATIC_OVERRIDES = {
       "Dentiste Dakar à Liberté 6 : consultation, urgence dentaire, implants, orthodontie et esthétique. Devis clair + rendez-vous rapide par appel, WhatsApp ou formulaire.",
     h1: "Dentiste Dakar – Clinique Dentaire DABIA",
     intro:
-      "Consultations, urgences et soins complets à Dakar avec devis clair, plateau technique moderne et prise de rendez-vous rapide.",
+      "À la recherche d'un dentiste près de chez vous à Dakar ? La Clinique DABIA (Liberté 6, Sicap Foire) est facilement accessible depuis la VDN, Mermoz, Yoff et les Almadies. Consultations, urgences et soins complets avec devis clair et prise de rendez-vous rapide.",
   },
   "/cabinet-dentaire-dakar": {
     title: "Cabinet dentaire à Dakar : devis clair & RDV rapide | DABIA",
@@ -309,6 +323,18 @@ function injectServerH1(html, route) {
       .join("");
   }
 
+  // Liens internes statiques vers les compétences (relie les articles blog
+  // à fort trafic vers les pages compétences sous-exploitées)
+  let competenceLinksSection = "";
+  if (route.competenceLinks?.length) {
+    competenceLinksSection = `<h2 style="font-size:1.35rem;margin:26px 0 10px;color:#6b5d34">Voir aussi</h2><p style="margin:0 0 18px;color:#374151">${route.competenceLinks
+      .map(
+        (c) =>
+          `<a style="color:#bb2988;text-decoration:underline" href="${esc(c.to)}">${esc(c.label)}</a>`
+      )
+      .join(" · ")}</p>`;
+  }
+
   const cover = route.cover
     ? `
       <style>@media (max-width:1023px){#root .seo-cover{display:none}}</style>
@@ -321,7 +347,8 @@ function injectServerH1(html, route) {
       <h1 style="font-size:clamp(1.8rem,4vw,2.6rem);margin:0 0 12px;color:#6b5d34">${esc(route.h1)}</h1>
       <p style="margin:0 0 18px;color:#374151">${esc(route.intro)}</p>
       <p style="margin:0;color:#111827">👉 <a href="/rendez-vous">Prendre rendez-vous</a> · <a href="tel:+221777039393">Appeler</a> · <a href="https://wa.me/221777039393">WhatsApp</a></p>
-      ${sections.join("\n")}
+      ${route.bodyHtml || sections.join("\n")}
+      ${competenceLinksSection}
       ${cover}
     </main>`;
 
@@ -466,13 +493,35 @@ async function readPostsSource(manifest) {
     src.matchAll(
       /\{[\s\S]*?slug:\s*"([^"]+)",[\s\S]*?title:\s*"([^"]+)",[\s\S]*?description:\s*"([^"]+)",[\s\S]*?date:\s*"([0-9]{4}-[0-9]{2}-[0-9]{2})"/g
     )
-  ).map((m) => ({
-    slug: m[1],
-    title: m[2],
-    description: m[3],
-    date: m[4],
-    cover: covers.get(m[1]),
-  }));
+  ).map((m) => {
+    const block = m[0];
+    // Le regex principal s'arrête à `date:` — utilise une fenêtre élargie
+    // autour du slug pour capturer tags + content (jusqu'à 60 KB après)
+    const slugIdx = src.indexOf(`slug: "${m[1]}"`);
+    const window = slugIdx !== -1 ? src.slice(slugIdx, slugIdx + 60000) : block;
+    const tagsMatch = window.match(/tags:\s*\[([\s\S]*?)\]/);
+    const tags = tagsMatch
+      ? Array.from(tagsMatch[1].matchAll(/"([^"]+)"|'([^']+)'/g)).map(
+          (t) => t[1] || t[2]
+        )
+      : [];
+    const contentMatch = window.match(
+      /content:\s*`([\s\S]*?)`\s*,\n|content:\s*`([\s\S]*?)`\s*\n\s*},/
+    );
+    let content = "";
+    if (contentMatch) {
+      content = contentMatch[1] || contentMatch[2] || "";
+    }
+    return {
+      slug: m[1],
+      title: m[2],
+      description: m[3],
+      date: m[4],
+      cover: covers.get(m[1]),
+      tags,
+      content,
+    };
+  });
 }
 
 async function readTagSlugs() {
@@ -524,6 +573,117 @@ function mergePosts(metaPosts, sourcePosts) {
   return Array.from(merged.values()).filter((p) => p?.slug);
 }
 
+// Mapping tags → pages compétences (liens internes statiques dans les shells SSG)
+const COMPETENCE_LINK_MAP = [
+  {
+    keys: ["implant", "implantologie", "bridge", "prothèse", "prothese", "all-on-4", "dentier"],
+    to: "/competences/implantologie",
+    label: "Implantologie",
+  },
+  {
+    keys: ["orthodontie", "aligneur", "bagues", "invisalign", "appareil dentaire", "bracket"],
+    to: "/competences/orthodontie",
+    label: "Orthodontie",
+  },
+  {
+    keys: ["facette", "facettes", "hollywood smile", "sourire"],
+    to: "/competences/facettes-dentaires",
+    label: "Facettes dentaires",
+  },
+  {
+    keys: ["blanchiment", "blanchir", "eclat", "taches"],
+    to: "/competences/blanchiment-dentaire",
+    label: "Blanchiment dentaire",
+  },
+  {
+    keys: ["detartrage", "parodont", "gingivite", "gencive", "saignement", "tartre", "plaque dentaire", "surfacage"],
+    to: "/competences/parodontologie",
+    label: "Parodontologie",
+  },
+  {
+    keys: ["devitalisation", "dévitalisation", "canalaire", "canal", "endodontie", "nerf dentaire", "pulpe"],
+    to: "/competences/endodontie",
+    label: "Endodontie",
+  },
+  {
+    keys: ["enfant", "pédodontie", "pedodontie", "pédiatrique", "biberon", "scellant", "première visite"],
+    to: "/competences/pedodontie",
+    label: "Pédodontie (soins enfants)",
+  },
+  {
+    keys: ["greffe", "osseuse", "os", "sinus"],
+    to: "/competences/greffe-osseuse",
+    label: "Greffe osseuse",
+  },
+  {
+    keys: ["esthetique", "esthétique", "sourire", "facette", "blanchiment", "éclat"],
+    to: "/competences/esthétique-dentaire",
+    label: "Esthétique dentaire",
+  },
+  {
+    keys: ["urgence", "douleur", "rage de dent", "abcès", "abces", "dent cassée", "gonflement", "traumatisme", "nuit", "weekend", "24"],
+    to: "/urgence-dentaire-dakar",
+    label: "Urgence dentaire à Dakar",
+  },
+];
+
+function competenceLinksForPost(post) {
+  if (!post?.tags?.length) return [];
+  // Normalise les accents : « détartrage » == « detartrage » pour le matching
+  const norm = (s) =>
+    String(s || "")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
+  const out = [];
+  const seen = new Set();
+  for (const m of COMPETENCE_LINK_MAP) {
+    if (
+      m.keys.some((k) =>
+        post.tags.some((t) => norm(t).includes(norm(k)))
+      )
+    ) {
+      if (!seen.has(m.to)) {
+        seen.add(m.to);
+        out.push(m);
+      }
+    }
+  }
+  return out.slice(0, 3);
+}
+
+// Convertit le début d'un article markdown en HTML statique simple pour les
+// crawlers LLM : Quick Answer (premier paragraphe) + H2/H3 + listes + FAQ.
+// Limite volontairement à ~1200 mots pour garder des shells raisonnables.
+function markdownToStaticHtml(markdown, maxChars = 7000) {
+  if (!markdown) return "";
+  let out = "";
+  let remaining = markdown;
+  for (const line of remaining.split("\n")) {
+    if (out.length >= maxChars) break;
+    const t = line.trim();
+    if (!t) continue;
+    if (t.startsWith("### ")) {
+      out += `<h3 style="font-size:1.05rem;margin:16px 0 6px;color:#111827">${esc(t.slice(4))}</h3>`;
+    } else if (t.startsWith("## ")) {
+      out += `<h2 style="font-size:1.35rem;margin:22px 0 8px;color:#6b5d34">${esc(t.slice(3))}</h2>`;
+    } else if (t.startsWith("# ")) {
+      out += `<h2 style="font-size:1.35rem;margin:22px 0 8px;color:#6b5d34">${esc(t.slice(2))}</h2>`;
+    } else if (t.startsWith("- ") || t.startsWith("* ")) {
+      out += `<li style="margin:4px 0">${esc(t.slice(2))}</li>`;
+    } else if (/^\d+\.\s/.test(t)) {
+      out += `<li style="margin:4px 0">${esc(t.replace(/^\d+\.\s/, ""))}</li>`;
+    } else if (t.startsWith("> ")) {
+      out += `<p style="margin:12px 0;color:#6b5d34;font-style:italic">${esc(t.slice(2))}</p>`;
+    } else if (t.startsWith("**") && t.endsWith("**")) {
+      out += `<p style="margin:0 0 14px;color:#111827"><strong>${esc(t.slice(2, -2))}</strong></p>`;
+    } else {
+      out += `<p style="margin:0 0 14px;color:#374151">${esc(t)}</p>`;
+    }
+  }
+  return out;
+}
+
 function buildRouteCatalog({ posts, competences, technologies, tagSlugs }) {
   const routes = [];
 
@@ -538,6 +698,8 @@ function buildRouteCatalog({ posts, competences, technologies, tagSlugs }) {
   }
 
   for (const post of posts) {
+    const competenceLinks = competenceLinksForPost(post);
+    const bodyHtml = markdownToStaticHtml(post.content);
     routes.push({
       path: `/blog/${post.slug}`,
       title: post.title || `Article de blog | Clinique Dentaire DABIA`,
@@ -550,6 +712,10 @@ function buildRouteCatalog({ posts, competences, technologies, tagSlugs }) {
         "Découvrez nos conseils et informations pratiques en santé bucco-dentaire.",
       type: "article",
       cover: post.cover,
+      // Contenu statique pour les crawlers LLM (Quick Answer + premières sections)
+      bodyHtml,
+      // Liens internes statiques vers les pages compétences (le sub : links as real HTML)
+      competenceLinks,
     });
   }
 
