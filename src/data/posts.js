@@ -2476,58 +2476,6 @@ Besoin d’orientation rapide : **[Prendre rendez-vous](/rendez-vous)**.`,
   },
 
   {
-    slug: "ipm-mutuelle-dentiste-dakar-prise-en-charge-2026",
-    title: "IPM & mutuelle dentiste à Dakar : comment optimiser votre prise en charge ?",
-    description:
-      "Comment utiliser votre IPM/mutuelle chez le dentiste à Dakar ? Conseils pratiques pour devis, remboursements et planification des soins.",
-    date: "2026-02-28",
-    category: "Conseils",
-    tags: [
-      "ipm dentaire dakar",
-      "mutuelle dentaire dakar",
-      "assurance dentaire senegal",
-      "prix dentiste",
-      "devis dentaire",
-    ],
-    author: AUTHORS.sao,
-    cover: devisDentaireCover,
-    pinned: true,
-    readingMinutes: 7,
-    content: `À Dakar, beaucoup de patients disposent d’une **IPM** ou d’une **mutuelle** mais n’optimisent pas leur remboursement dentaire. Pourtant, quelques bonnes pratiques permettent de mieux gérer le budget.
-
-## 1) Avant le rendez-vous
-- Vérifiez votre plafond annuel,
-- Identifiez les actes couverts,
-- Préparez vos pièces (carte, numéro d’adhérent).
-
-## 2) Demander un devis exploitable
-Un bon devis doit être clair, daté, détaillé, et présenter les actes prioritaires.
-
-## 3) Stratégie budget
-- Traiter d’abord l’urgence,
-- Planifier les soins par étapes,
-- Utiliser les périodes de renouvellement de plafond si possible.
-
-## 4) Pourquoi c’est important
-Un plan de soins phasé évite de retarder les traitements nécessaires et limite les dépenses imprévues.
-
-## En résumé
-Avec une bonne préparation IPM/mutuelle, vous pouvez soigner efficacement tout en maîtrisant vos coûts.
-
-Pour un devis clair : **[Prendre rendez-vous](/rendez-vous)**.`,
-    faq: [
-      {
-        q: "Tous les soins sont-ils remboursés ?",
-        a: "Non, cela dépend du contrat (soins courants, prothèses, implantologie, etc.).",
-      },
-      {
-        q: "Puis-je obtenir un devis avant de commencer ?",
-        a: "Oui, c’est recommandé pour anticiper votre reste à charge.",
-      },
-    ],
-  },
-
-  {
     slug: "invisalign-dakar-prix-adulte-aligneurs-2026",
     title: "Invisalign à Dakar : prix adulte, durée et résultats des aligneurs (2026)",
     description:
@@ -5178,52 +5126,6 @@ Généralement **tous les 6 à 12 mois**, plus rapproché si **facteurs de risqu
   },
 
   {
-    slug: "meilleur-dentiste-dakar-criteres-de-choix",
-    title: "Meilleur dentiste à Dakar ? Les critères pour bien choisir",
-    description:
-      "Comprendre les critères de qualité (écoute, diagnostic, technologie, hygiène, suivi) pour choisir un dentiste ou une clinique dentaire à Dakar, et poser les bonnes questions lors de la première visite.",
-    date: "2025-09-02",
-    category: "Conseils",
-    pinned: true,
-    tags: [
-      "meilleur dentiste dakar",
-      "cabinet dentaire dakar",
-      "dentiste dakar",
-    ],
-    author: AUTHORS.sao,
-    cover: prixCover,
-    readingMinutes: 11,
-    content: `La notion de “**meilleur**” dentiste est **subjective**. En revanche, des **repères concrets** aident à choisir un cabinet ou une **clinique dentaire à Dakar** qui vous convient.
-
-## 7 critères utiles
-1. **Écoute et pédagogie** : le plan de traitement est expliqué, options et priorités sont posées.  
-2. **Diagnostic outillé** : imagerie adaptée (photos, radios, CBCT si nécessaire).  
-3. **Hygiène et traçabilité** : stérilisation et protocole visibles, rassurants.  
-4. **Compétences variées** : gestion des urgences, esthétique, implantologie, orthodontie ou réseau de spécialistes.  
-5. **Devis clair** : transparence des coûts, alternatives éventuelles.  
-6. **Suivi** : contrôles et maintenance programmés.  
-7. **Accès et horaires** : proximité (Liberté 6 / Parcelles / Sicap Foire) et créneaux adaptés.
-
-## Première visite : les bonnes questions
-- Quelles sont mes **priorités** à court terme ?  
-- Quelles **options** existent pour atteindre mon objectif ?  
-- Quels **délais** et **coûts** prévoir ?  
-- Quel **entretien** pour pérenniser le résultat ?
-
-### FAQ – dentiste et clinique dentaire à Dakar
-**Quel est le meilleur dentiste à Dakar ?**  
-Il n’existe pas de “meilleur” dentiste universel, mais des **professionnels sérieux** qui s’appuient sur un diagnostic complet, des explications claires et des équipements modernes. L’important est de trouver un cabinet ou une **clinique dentaire à Dakar** où vous vous sentez écouté et en confiance.
-
-**Comment choisir une clinique dentaire à Dakar ?**  
-Comparez l’**expérience de l’équipe**, la **technologie** (radio 3D, scanner intra‑oral, protocole de stérilisation), la **qualité de l’accueil**, la clarté des **devis** et les possibilités de **suivi**. Visiter les lieux et poser des questions lors de la première consultation est souvent très utile.
-
-**La Clinique Dentaire DABIA accepte‑t‑elle de nouveaux patients ?**  
-Oui. Située à **Liberté 6 / Sicap Foire**, la Clinique Dentaire DABIA est une **clinique dentaire à Dakar** qui accueille de nouveaux patients pour des bilans, urgences, soins courants et plans de traitement complets.
-
-> Découvrez notre page Liberté 6 : [/cabinet-dentaire-liberte-6](/cabinet-dentaire-liberte-6) • Prenez RDV : [/rendez-vous](/rendez-vous).`,
-  },
-
-  {
     slug: "blanchiment-dents-prix-conseils-dakar",
     title:
       "Blanchiment des dents à Dakar : méthodes, indications, prix et conseils",
@@ -6507,12 +6409,21 @@ Le prix d’un CBCT dépend de la zone à examiner et de l’indication clinique
 
 Pour un implant, une dent incluse, une douleur inexpliquée ou un bilan 3D, [prenez rendez-vous pour un bilan CBCT](/rendez-vous?soin=CBCT%20dentaire).
 
-### FAQ
-**Est-ce douloureux ?** Non, examen indolore et rapide (20 secondes).  
-**Est-ce remboursé ?** Dépend des indications médicales.  
-**Puis-je le faire enceinte ?** Déconseillé sauf urgence.
-
 > La Clinique DABIA à Dakar est équipée d’un **CBCT dernière génération** pour des diagnostics et plans de traitement de haute précision.`,
+    faq: [
+      {
+        q: "Est-ce douloureux de faire un CBCT dentaire ?",
+        a: "Non, l'examen est indolore et rapide : environ 20 secondes de rotation autour de la tête, sans injection ni geste invasif.",
+      },
+      {
+        q: "Est-ce que le CBCT est remboursé ?",
+        a: "La prise en charge dépend de votre IPM ou de votre assurance et des indications médicales. La clinique vous remet les documents nécessaires à votre dossier.",
+      },
+      {
+        q: "Puis-je faire un CBCT enceinte ?",
+        a: "Le CBCT est déconseillé pendant la grossesse sauf urgence. Signalez votre situation avant l'examen pour adapter la prise en charge.",
+      },
+    ],
   },
   {
     slug: "urgence-traumatisme-dentaire-enfant-dakar",
@@ -7611,6 +7522,18 @@ La dentisterie moderne s'appuie sur la technologie pour être plus précise et m
 
 ## 4. La Relation de Confiance
 Votre dentiste est un partenaire santé pour le long terme. Choisissez quelqu'un avec qui vous vous sentez à l'aise, qui respecte ses horaires et qui est transparent sur ses honoraires.
+
+## 5. Un Devis Clair
+Un bon cabinet remet un **devis détaillé** avant de commencer les soins : actes prévus, alternatives possibles et reste à charge. La transparence sur les honoraires évite les mauvaises surprises.
+
+## 6. Suivi et Accessibilité
+Privilégiez un cabinet facile d'accès (parking, transports en commun) et qui propose des **créneaux adaptés** à votre emploi du temps, y compris pour les urgences. Un bon suivi après le traitement fait partie de la qualité des soins.
+
+## Première visite : les bonnes questions
+- Quelles sont mes **priorités** de traitement ?
+- Quelles **options** existent pour atteindre mon objectif ?
+- Quels **délais** et **coûts** prévoir ?
+- Quel **entretien** pour pérenniser le résultat ?
 
 > À la Clinique DABIA, nous misons sur l'accueil, la technologie et une hygiène irréprochable pour mériter votre confiance.`,
     faq: [
@@ -8954,7 +8877,7 @@ La Clinique DABIA vous aide à préparer votre dossier pour :
 
 ## Notre engagement
 
-À la Clinique DABIA, nous remettons **systématiquement un devis clair et détaillé** avant tout traitement, avec les codes CCAM pour faciliter votre prise en charge. Notre équipe vous accompagne dans la constitution de votre dossier de remboursement.`,
+À la Clinique DABIA, nous remettons **systématiquement un devis clair et détaillé** avant tout traitement, avec les codes CCAM pour faciliter votre prise en charge. Notre équipe vous accompagne dans la constitution de votre dossier de remboursement. Retrouvez aussi le détail des conventions et des démarches sur notre [page assurances et IPM](/infos/assurances).`,
     faq: [
       {
         q: "La Clinique DABIA est-elle conventionnée avec mon IPM ?",

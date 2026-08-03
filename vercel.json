@@ -21,6 +21,16 @@
       "permanent": true
     },
     {
+      "source": "/blog/ipm-mutuelle-dentiste-dakar-prise-en-charge-2026",
+      "destination": "/blog/dentiste-mutuelle-ipm-dakar-prise-en-charge-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/meilleur-dentiste-dakar-criteres-de-choix",
+      "destination": "/blog/comment-choisir-meilleur-dentiste-dakar",
+      "permanent": true
+    },
+    {
       "source": "/blog/devis-dentaire-dakar-bien-lire-comparer-2026",
       "destination": "/blog/devis-dentaire-dakar-comprendre-tarifs",
       "permanent": true

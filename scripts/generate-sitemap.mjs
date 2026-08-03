@@ -455,6 +455,22 @@ Sitemap: ${abs("/sitemap.xml")}
     wrapImg(imgNodes),
     "utf8"
   );
+  // Miroir des sections dans dist/sitemaps/ : Vite copie public/ au DÉBUT du
+  // build, donc sans cette écriture directe, dist servirait la version de la
+  // génération précédente (ex. article consolidé encore présent dans le sitemap).
+  const DIST_SITEMAPS_DIR = join(DIST_DIR, "sitemaps");
+  await mkdir(DIST_SITEMAPS_DIR, { recursive: true });
+  const sections = {
+    "sitemap-static.xml": wrap(staticXml),
+    "sitemap-competences.xml": wrap(competencesXml),
+    "sitemap-blog.xml": wrap(blogXml),
+    "sitemap-tags.xml": wrap(tagsXml),
+    "sitemap-technologies.xml": wrap(techXml),
+    "sitemap-images.xml": wrapImg(imgNodes),
+  };
+  for (const [name, content] of Object.entries(sections)) {
+    await writeFile(join(DIST_SITEMAPS_DIR, name), content, "utf8");
+  }
   console.log(
     "✅ sitemap index + sections générés dans public/ pour le dev local"
   );

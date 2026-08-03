@@ -548,6 +548,23 @@ async function readPostsSource(manifest) {
     if (contentMatch) {
       content = contentMatch[1] || contentMatch[2] || "";
     }
+    // FAQ de l'article (rendue en statique + FAQPage JSON-LD pour les crawlers LLM)
+    const faqMatch = window.match(
+      /faq:\s*\[([\s\S]*?)\]\s*,?\n\s*(?:author|cover|pinned|readingMinutes|content|date|category|tags|\})/
+    );
+    let faq = [];
+    if (faqMatch) {
+      const qs = Array.from(
+        faqMatch[1].matchAll(/q:\s*"((?:[^"\\]|\\.)*)"/g)
+      ).map((m) => m[1]);
+      const as = Array.from(
+        faqMatch[1].matchAll(/a:\s*"((?:[^"\\]|\\.)*)"/g)
+      ).map((m) => m[1]);
+      faq = qs
+        .map((q, i) => ({ q, a: as[i] || "" }))
+        .filter((f) => f.q && f.a)
+        .slice(0, 6);
+    }
     return {
       slug: m[1],
       title: m[2],
@@ -556,6 +573,7 @@ async function readPostsSource(manifest) {
       cover: covers.get(m[1]),
       tags,
       content,
+      faq,
     };
   });
 }
@@ -750,6 +768,8 @@ function buildRouteCatalog({ posts, competences, technologies, tagSlugs }) {
       cover: post.cover,
       // Contenu statique pour les crawlers LLM (Quick Answer + premières sections)
       bodyHtml,
+      // FAQ statique + FAQPage JSON-LD (mêmes questions que le rendu client)
+      faq: post.faq || [],
       // Liens internes statiques vers les pages compétences (le sub : links as real HTML)
       competenceLinks,
     });

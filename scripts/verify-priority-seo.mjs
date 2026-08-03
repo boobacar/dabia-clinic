@@ -85,6 +85,20 @@ assert.ok(
   "L'article CBCT doit expliquer le prix/devis et la prise de rendez-vous",
 );
 
+// FAQ statique + FAQPage JSON-LD dans les shells blog (couche AEO)
+assert.ok(
+  shells.includes("faq: post.faq || []"),
+  "Le shell SSG doit embarquer la FAQ des articles blog",
+);
+assert.ok(
+  shells.includes("const faqMatch = window.match("),
+  "Le générateur de shells doit extraire la FAQ des articles",
+);
+assert.ok(
+  posts.includes('q: "Est-ce douloureux de faire un CBCT dentaire ?"'),
+  "L'article CBCT doit exposer sa FAQ structurée (FAQPage)",
+);
+
 assert.match(vercel, /"source": "\/blog\/tag\/sos-dentiste"[\s\S]*?"destination": "\/urgence-dentaire-dakar"/, "Le tag SOS dentiste doit rediriger vers la page urgence");
 assert.ok(urgency.includes("SOS dentiste à Dakar"), "La page urgence doit cibler explicitement SOS dentiste à Dakar");
 assert.ok(
