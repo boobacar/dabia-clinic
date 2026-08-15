@@ -1,9 +1,12 @@
 // src/pages/BlogPost.jsx
-import React, { useEffect, useMemo } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Seo from "../components/Seo";
 import Breadcrumbs from "../components/Breadcrumbs";
 import { POSTS } from "../data/posts";
+// Contenu des articles chargé à la demande (1 chunk JSON par slug) pour
+// alléger le bundle initial et réduire le LCP des pages articles.
+const contentModules = import.meta.glob("../data/content/*.json");
 import { ShareButtons } from "../components/ShareButtons";
 import TOC from "../components/TOC";
 import ReactMarkdown from "react-markdown";
@@ -97,6 +100,25 @@ function extractHeadings(markdown) {
 export default function BlogPost({ hideHeader = false }) {
   const { slug } = useParams();
   const post = useMemo(() => POSTS.find((p) => p.slug === slug), [slug]);
+  const [loadedContent, setLoadedContent] = useState("");
+  useEffect(() => {
+    let cancelled = false;
+    const loader = slug ? contentModules[`../data/content/${slug}.json`] : undefined;
+    if (!loader) {
+      setLoadedContent("");
+      return undefined;
+    }
+    loader()
+      .then((m) => {
+        if (!cancelled) setLoadedContent(m?.default?.content ?? m?.content ?? "");
+      })
+      .catch(() => {
+        if (!cancelled) setLoadedContent("");
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [slug]);
   const appointmentCta = useMemo(
     () =>
       BLOG_APPOINTMENT_CTA[post?.slug] || {
@@ -131,7 +153,7 @@ export default function BlogPost({ hideHeader = false }) {
   const postSlug = post ? post.slug : "";
   const postCategory = post ? post.category : "";
   const postFaq = useMemo(() => (post ? post.faq : []), [post]);
-  const postContent = post ? post.content : "";
+  const postContent = loadedContent || (post ? post.content : "");
 
   // Build enriched sections as Markdown to merge with article Markdown for homogeneity
   const enrichedMd = useMemo(() => {
@@ -216,8 +238,8 @@ export default function BlogPost({ hideHeader = false }) {
 
   const articleJsonLd = useMemo(() => {
     if (!post) return null;
-    const wordCount = Math.max(400, (post.content || "").split(/\s+/).length);
-    const articleBody = (post.content || "")
+    const wordCount = Math.max(400, (postContent || "").split(/\s+/).length);
+    const articleBody = (postContent || "")
       .replace(/[#*`_>~]/g, "")
       .slice(0, 500)
       .trim();
@@ -260,7 +282,7 @@ export default function BlogPost({ hideHeader = false }) {
         url: "https://www.cliniquedentairedabia.com",
       },
     };
-  }, [post]);
+  }, [post, postContent]);
 
   // Related posts (based on shared tags/category)
   const related = useMemo(() => {

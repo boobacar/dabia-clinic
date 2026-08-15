@@ -80,10 +80,16 @@ assert.ok(
   blogPost.includes("title={post.seoTitle || post.title}"),
   "BlogPost doit utiliser le title SEO quand il est défini",
 );
-assert.ok(
-  posts.includes("## Combien coûte un CBCT à Dakar ?"),
-  "L'article CBCT doit expliquer le prix/devis et la prise de rendez-vous",
-);
+{
+  // Le contenu des articles est désormais externalisé dans src/data/content/<slug>.json
+  const cbctContentFile = JSON.parse(
+    await read("src/data/content/cbct-radio-3d-dentaire-a-quoi-sert-dakar.json"),
+  );
+  assert.ok(
+    (cbctContentFile.content || "").includes("## Combien coûte un CBCT à Dakar ?"),
+    "L'article CBCT doit expliquer le prix/devis et la prise de rendez-vous",
+  );
+}
 
 // FAQ statique + FAQPage JSON-LD dans les shells blog (couche AEO)
 assert.ok(

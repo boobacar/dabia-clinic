@@ -525,15 +525,18 @@ async function readPostsMeta() {
 async function readPostsSource(manifest) {
   const src = await readFileSafe(POSTS_SOURCE_PATH);
   const covers = extractPostCovers(src, manifest);
-  return Array.from(
+  const matches = Array.from(
     src.matchAll(
       /\{[\s\S]*?slug:\s*"([^"]+)",[\s\S]*?title:\s*"([^"]+)",[\s\S]*?description:\s*"([^"]+)",[\s\S]*?date:\s*"([0-9]{4}-[0-9]{2}-[0-9]{2})"/g
     )
-  ).map((m) => {
+  );
+  const posts = [];
+  for (const m of matches) {
     const block = m[0];
+    const slug = m[1];
     // Le regex principal s'arrête à `date:` — utilise une fenêtre élargie
-    // autour du slug pour capturer tags + content (jusqu'à 60 KB après)
-    const slugIdx = src.indexOf(`slug: "${m[1]}"`);
+    // autour du slug pour capturer tags + faq (jusqu'à 60 KB après)
+    const slugIdx = src.indexOf(`slug: "${slug}"`);
     const window = slugIdx !== -1 ? src.slice(slugIdx, slugIdx + 60000) : block;
     const tagsMatch = window.match(/tags:\s*\[([\s\S]*?)\]/);
     const tags = tagsMatch
@@ -541,12 +544,16 @@ async function readPostsSource(manifest) {
           (t) => t[1] || t[2]
         )
       : [];
-    const contentMatch = window.match(
-      /content:\s*`([\s\S]*?)`\s*,\n|content:\s*`([\s\S]*?)`\s*\n\s*},/
-    );
+    // Le contenu est désormais chargé depuis src/data/content/<slug>.json
+    // (posts.js ne contient plus le markdown, pour alléger le bundle client).
     let content = "";
-    if (contentMatch) {
-      content = contentMatch[1] || contentMatch[2] || "";
+    try {
+      const cf = await readFileSafe(
+        join(ROOT, "src", "data", "content", `${slug}.json`)
+      );
+      if (cf) content = JSON.parse(cf).content || "";
+    } catch {
+      content = "";
     }
     // FAQ de l'article (rendue en statique + FAQPage JSON-LD pour les crawlers LLM)
     const faqMatch = window.match(
@@ -556,26 +563,27 @@ async function readPostsSource(manifest) {
     if (faqMatch) {
       const qs = Array.from(
         faqMatch[1].matchAll(/q:\s*"((?:[^"\\]|\\.)*)"/g)
-      ).map((m) => m[1]);
+      ).map((mm) => mm[1]);
       const as = Array.from(
         faqMatch[1].matchAll(/a:\s*"((?:[^"\\]|\\.)*)"/g)
-      ).map((m) => m[1]);
+      ).map((mm) => mm[1]);
       faq = qs
         .map((q, i) => ({ q, a: as[i] || "" }))
         .filter((f) => f.q && f.a)
         .slice(0, 6);
     }
-    return {
-      slug: m[1],
+    posts.push({
+      slug,
       title: m[2],
       description: m[3],
       date: m[4],
-      cover: covers.get(m[1]),
+      cover: covers.get(slug),
       tags,
       content,
       faq,
-    };
-  });
+    });
+  }
+  return posts;
 }
 
 async function readTagSlugs() {
