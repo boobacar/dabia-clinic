@@ -281,7 +281,7 @@ function removeHomeHeroPreloads(html) {
 
 function injectRouteImagePreload(html, cover) {
   if (!cover) return html;
-  const preload = `    <link rel="preload" as="image" href="${esc(cover)}" media="(min-width: 1024px)" fetchpriority="high" />`;
+  const preload = `    <link rel="preload" as="image" href="${esc(cover)}" fetchpriority="high" />`;
   if (html.includes(preload)) return html;
   const heroPreloadComment = /(\n\s*<!-- Hero image preload[\s\S]*?-->\s*)/i;
   if (heroPreloadComment.test(html)) {
