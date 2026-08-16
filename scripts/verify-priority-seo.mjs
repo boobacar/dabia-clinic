@@ -189,9 +189,8 @@ assert.ok(
 );
 assert.ok(
   seoHeadUtils.includes("export function removeSeoShellBody()") &&
-    seoHeadUtils.includes("root.replaceChildren();") &&
     seoHeadUtils.includes('root.removeAttribute("data-seo-shell-root")'),
-  "Le bundle React doit retirer le shell du body lorsqu’il est prêt",
+  "Le bundle React doit reprendre le shell (retrait data-seo-shell-root) avant le rendu",
 );
 assert.ok(
   mainEntry.includes("removeSeoShellBody, removeSeoShellHead"),

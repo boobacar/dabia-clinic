@@ -306,7 +306,7 @@ function injectModulePreloads(html, files = []) {
 }
 
 function injectServerH1(html, route) {
-  const guard = `    <script data-seo-shell-guard="true">(function(){var html=document.documentElement;html.setAttribute("data-seo-app-loading","true");window.setTimeout(function(){html.removeAttribute("data-seo-app-loading");},8000);}());</script>\n    <style>html[data-seo-app-loading="true"] #root[data-seo-shell-root="true"]{visibility:hidden}</style>\n    <noscript><style>#root[data-seo-shell-root="true"]{visibility:visible}</style></noscript>`;
+  const guard = `    <script data-seo-shell-guard="true">(function(){var html=document.documentElement;html.setAttribute("data-seo-app-loading","true");window.setTimeout(function(){html.removeAttribute("data-seo-app-loading");},8000);}());</script>\n    <style>html[data-seo-app-loading="true"] #root[data-seo-shell-root="true"]{visibility:visible}</style>\n    <noscript><style>#root[data-seo-shell-root="true"]{visibility:visible}</style></noscript>`;
   const guardedHtml = html.replace("</head>", `${guard}\n</head>`);
 
   // ── Contenu statique riche pour les crawlers LLM (GPTBot, ClaudeBot…) ──
