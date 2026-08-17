@@ -26,8 +26,7 @@
     <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
 
     <!-- Hero image preload – starts before JS parses, critical for LCP -->
-    <link rel="preload" as="image" href="/hero4-mobile.webp" type="image/webp" media="(max-width: 640px)" fetchpriority="high" />
-    <link rel="preload" as="image" href="/hero4.webp" type="image/webp" media="(min-width: 641px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="/hero4.webp" imagesrcset="/hero4-mobile.webp 640w, /hero4.webp 1600w" imagesizes="(min-width: 900px) 46vw, 100vw" fetchpriority="high" />
 
     <!-- Open Graph -->
     <meta property="og:title" content="Dentiste à Dakar – RDV rapide, urgence et devis | Clinique DABIA" />
