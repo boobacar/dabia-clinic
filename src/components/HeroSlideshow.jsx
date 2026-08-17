@@ -7,8 +7,6 @@ const HeroSlideshow = () => {
 
   return (
     <>
-      <link rel="preload" as="image" href={hero.mobileAvif || hero.mobile} media="(max-width: 640px)" fetchPriority="high" />
-      <link rel="preload" as="image" href={hero.desktopAvif || hero.desktop} media="(min-width: 641px)" fetchPriority="high" />
       <section className="editorial-hero" aria-labelledby="home-title">
         <div className="editorial-hero__copy">
           <p className="editorial-hero__eyebrow">Clinique dentaire · Sicap Foire, Liberté 6</p>

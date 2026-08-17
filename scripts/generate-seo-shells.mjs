@@ -274,7 +274,7 @@ function upsertTag(html, regex, replacement) {
 
 function removeHomeHeroPreloads(html) {
   return html.replace(
-    /\n\s*<link\s+rel=["']preload["']\s+as=["']image["']\s+href=["']\/hero1[^"']+["'][^>]*>/gi,
+    /\n\s*<link\s+rel=["']preload["']\s+as=["']image["']\s+href=["']\/hero4[^"']+["'][^>]*>/gi,
     "",
   );
 }
