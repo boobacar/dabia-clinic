@@ -1,7 +1,6 @@
 // src/App.jsx
 import { lazy, Suspense, useEffect, useState } from "react";
 import Header from "./components/Header";
-import ScrollManager from "./components/ScrollManager";
 import RouteAnalytics from "./components/RouteAnalytics";
 import CookieConsent from "./components/CookieConsent";
 import ConversionTracker from "./components/ConversionTracker";
@@ -49,7 +48,6 @@ const App = () => {
 
   return (
     <>
-      <ScrollManager />
       <RouteAnalytics />
       <ConversionTracker />
       <CookieConsent />

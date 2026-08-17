@@ -82,7 +82,7 @@ export default function UrgenceDentaire() {
   };
 
   return (
-    <section className="py-20 px-4 max-w-7xl mx-auto mt-20">
+    <section className="page-shell emergency-page px-4 max-w-7xl mx-auto">
       <Seo
         title="SOS dentiste à Dakar : urgence, douleur, abcès | Clinique DABIA"
         description="SOS dentiste à Dakar : douleur, abcès, gonflement ou dent cassée. Appelez la Clinique DABIA, contactez-nous sur WhatsApp ou demandez un RDV urgent."
@@ -270,8 +270,8 @@ export default function UrgenceDentaire() {
           Lire aussi (urgence + Ramadan)
         </h2>
         <div className="mt-3 grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
-          <Link className="underline text-[#bb2988]" to="/blog/urgence-dentiste-dakar-24h-que-faire">
-            Urgence dentiste Dakar 24h : que faire
+          <Link className="underline text-[#bb2988]" to="/blog/urgence-dentaire-nuit-weekend-dakar">
+            Urgence dentaire la nuit ou le week-end : que faire
           </Link>
           <Link className="underline text-[#bb2988]" to="/blog/urgence-dentaire-rompre-jeune-ramadan">
             Urgence dentaire : faut-il rompre le jeûne ?

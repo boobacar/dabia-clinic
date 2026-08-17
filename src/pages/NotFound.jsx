@@ -5,7 +5,7 @@ import Seo from "../components/Seo";
 
 export default function NotFound() {
   return (
-    <main className="min-h-[60vh] flex flex-col items-center justify-center px-4 text-center">
+    <main className="page-shell min-h-[60vh] flex flex-col items-center justify-center px-4 text-center">
       <Seo
         title="Page introuvable"
         description="La page demandée est introuvable. Retournez à l'accueil ou prenez rendez-vous avec la Clinique Dentaire DABIA."

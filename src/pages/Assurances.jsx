@@ -75,7 +75,7 @@ const assurances = [
 
 const Assurances = () => {
   return (
-    <section className="py-20 px-4 max-w-6xl mx-auto mt-20">
+    <section className="page-shell px-4 max-w-6xl mx-auto">
       <Seo
         title="Assurances dentaires partenaires à Dakar – Clinique DABIA"
         description="Liste des assurances et mutuelles partenaires de la Clinique Dentaire DABIA à Dakar, avec conseils pratiques sur la prise en charge et les démarches patient."

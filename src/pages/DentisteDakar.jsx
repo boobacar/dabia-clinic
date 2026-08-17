@@ -187,7 +187,7 @@ export default function DentisteDakar() {
   const jsonLd = [breadcrumbLD, localBusinessLD, faqLD];
 
   return (
-    <main className="pt-20 pb-14 px-4 max-w-7xl mx-auto">
+    <main className="page-shell px-4 max-w-7xl mx-auto">
       <Seo
         title="Dentiste Dakar : Consultation, Urgence & RDV Rapide - Clinique DABIA"
         description="Dentiste Dakar à Liberté 6 : votre clinique dentaire pour des soins de qualité. Urgences, implants, orthodontie. Devis transparent et rendez-vous rapide. Prenez RDV en ligne !"
@@ -687,13 +687,13 @@ export default function DentisteDakar() {
           Guides utiles pour choisir votre dentiste à Dakar
         </h2>
         <div className="mt-3 grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
-          <Link className="underline text-[#bb2988]" to="/blog/dentiste-dakar-prix-consultation-2026">
+          <Link className="underline text-[#bb2988]" to="/blog/prix-consultation-dentiste-dakar-combien-prevoir-2026">
             Prix consultation dentiste à Dakar (2026)
           </Link>
-          <Link className="underline text-[#bb2988]" to="/blog/clinique-dentaire-dakar-comment-choisir">
+          <Link className="underline text-[#bb2988]" to="/blog/comment-choisir-meilleur-dentiste-dakar">
             Comment choisir une clinique dentaire à Dakar
           </Link>
-          <Link className="underline text-[#bb2988]" to="/blog/detartrage-dakar-frequence-gencives-senegal-2026">
+          <Link className="underline text-[#bb2988]" to="/blog/detartrage-dentaire-frequence-dakar-prevention">
             Détartrage à Dakar : fréquence et santé des gencives
           </Link>
           <Link className="underline text-[#bb2988]" to="/infos/technologie/airflow-dentaire-prophylaxie">
@@ -702,8 +702,8 @@ export default function DentisteDakar() {
           <Link className="underline text-[#bb2988]" to="/infos/technologie/cone-beam-ct-cbct">
             CBCT dentaire 3D à Dakar
           </Link>
-          <Link className="underline text-[#bb2988]" to="/blog/urgence-dentiste-dakar-24h-que-faire">
-            Urgence dentiste Dakar 24h : que faire
+          <Link className="underline text-[#bb2988]" to="/blog/urgence-dentaire-nuit-weekend-dakar">
+            Urgence dentaire la nuit ou le week-end : que faire
           </Link>
           <Link className="underline text-[#bb2988]" to="/blog/soins-dentaires-pendant-ramadan-jeune">
             Ramadan : soins dentaires et jeûne

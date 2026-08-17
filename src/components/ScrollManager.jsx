@@ -1,5 +1,5 @@
 // src/components/ScrollManager.jsx
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 /**
@@ -7,19 +7,39 @@ import { useLocation } from "react-router-dom";
  * - Sinon, on scrolle en haut de page.
  * On évite ainsi le conflit entre "hash scroll" et "scroll to top".
  */
-export default function ScrollManager() {
-  const { pathname, hash } = useLocation();
+export default function ScrollManager({ location: displayedLocation }) {
+  const routerLocation = useLocation();
+  const { pathname, hash } = displayedLocation || routerLocation;
 
   useEffect(() => {
+    if (!("scrollRestoration" in window.history)) return undefined;
+    const previous = window.history.scrollRestoration;
+    window.history.scrollRestoration = "manual";
+    return () => {
+      window.history.scrollRestoration = previous;
+    };
+  }, []);
+
+  useLayoutEffect(() => {
+    let cancelled = false;
+    let timeoutId;
+    let frameId;
+
     // Fonction utilitaire: tente de scroller à l'ancre avec quelques retries (DOM async)
     const scrollToHash = (h) => {
       if (!h || h === "#") return false;
-      const id = decodeURIComponent(h.replace("#", ""));
+      let id;
+      try {
+        id = decodeURIComponent(h.replace(/^#/, ""));
+      } catch {
+        id = h.replace(/^#/, "");
+      }
       let tries = 0;
       const maxTries = 10;
 
       const tick = () => {
-        const el = document.getElementById(id) || document.querySelector(h);
+        if (cancelled) return;
+        const el = document.getElementById(id);
         if (el) {
           el.scrollIntoView({ behavior: "smooth", block: "start" });
           return;
@@ -27,12 +47,12 @@ export default function ScrollManager() {
         tries += 1;
         if (tries < maxTries) {
           // attend un peu que le DOM/lazy route se charge
-          setTimeout(tick, 50);
+          timeoutId = window.setTimeout(tick, 50);
         }
       };
 
       // Laisse le temps au DOM de peindre la route
-      requestAnimationFrame(tick);
+      frameId = window.requestAnimationFrame(tick);
       return true;
     };
 
@@ -40,9 +60,15 @@ export default function ScrollManager() {
       // S'il y a une ancre, on ne fait PAS de scrollToTop
       scrollToHash(hash);
     } else {
-      // Pas d'ancre → remonte en haut instantanément
-      window.scrollTo(0, 0);
+      // La route affichée vient réellement de changer : remonte avant la peinture.
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
     }
+
+    return () => {
+      cancelled = true;
+      if (timeoutId) window.clearTimeout(timeoutId);
+      if (frameId) window.cancelAnimationFrame(frameId);
+    };
   }, [pathname, hash]);
 
   return null;

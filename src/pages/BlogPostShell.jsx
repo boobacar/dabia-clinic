@@ -30,7 +30,7 @@ export default function BlogPostShell() {
 
   return (
     <>
-      <section className="pt-20 px-4 max-w-7xl mx-auto mt-20">
+      <section className="page-shell px-4 max-w-7xl mx-auto">
         <Seo
           title={post.title}
           description={post.description}

@@ -440,7 +440,7 @@ export default function BlogPost({ hideHeader = false }) {
 
   if (!post) {
     return (
-      <section className="py-20 px-4 max-w-4xl mx-auto mt-20">
+      <section className="page-shell px-4 max-w-4xl mx-auto">
         <Seo
           title="Article introuvable"
           description="Cet article n’existe pas ou a été déplacé. Consultez le blog de la Clinique Dentaire DABIA."
@@ -472,7 +472,7 @@ export default function BlogPost({ hideHeader = false }) {
       className={
         hideHeader
           ? "pb-20 px-4 max-w-7xl mx-auto"
-          : "py-20 px-4 max-w-7xl mx-auto mt-20"
+          : "page-shell px-4 max-w-7xl mx-auto"
       }
     >
       {!hideHeader && post.cover && (

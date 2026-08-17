@@ -1,100 +1,58 @@
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import {
+  AestheticToothIcon,
+  BoneGraftToothIcon,
+  GumToothIcon,
+  ImplantToothIcon,
+  OrthodonticToothIcon,
+  PediatricToothIcon,
+  RootCanalToothIcon,
+  VeneerToothIcon,
+  WhiteningToothIcon,
+} from "./DentalCareIcons";
 import competences from "../data/competences";
-import SkeletonImage from "./SkeletonImage";
 import SectionTitle from "./SectionTitle";
 
-const container = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.15 } },
-};
-const card = {
-  hidden: { opacity: 0, y: 30 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+const competenceIcons = {
+  "esthétique-dentaire": AestheticToothIcon,
+  parodontologie: GumToothIcon,
+  implantologie: ImplantToothIcon,
+  endodontie: RootCanalToothIcon,
+  "facettes-dentaires": VeneerToothIcon,
+  orthodontie: OrthodonticToothIcon,
+  "greffe-osseuse": BoneGraftToothIcon,
+  "blanchiment-dentaire": WhiteningToothIcon,
+  pedodontie: PediatricToothIcon,
 };
 
 export default function CompetencesGrid() {
-  const origin =
-    typeof window !== "undefined"
-      ? window.location.origin
-      : "https://www.cliniquedentairedabia.com";
-
-  // JSON-LD ItemList (ordre de la grille)
-  const itemList = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    itemListElement: competences.map((item, i) => ({
-      "@type": "ListItem",
-      position: i + 1,
-      url: `${origin}/competences/${item.slug}`,
-      name: item.titre,
-    })),
-  };
+  const origin = typeof window !== "undefined" ? window.location.origin : "https://www.cliniquedentairedabia.com";
+  const itemList = { "@context": "https://schema.org", "@type": "ItemList", itemListElement: competences.map((item, i) => ({ "@type": "ListItem", position: i + 1, url: `${origin}/competences/${item.slug}`, name: item.titre })) };
 
   return (
-    <section
-      id="competences"
-      className="scroll-mt-24 py-16 px-4 max-w-6xl mx-auto"
-    >
-      <SectionTitle
-        title="Nos Compétences"
-        subtitle="Soins Dentaires"
-        className="mb-8"
-      />
+    <section id="competences" className="care-index section-pad scroll-mt-24">
+      <div className="studio-container">
+        <div className="care-index__head">
+          <SectionTitle title="Trouver le bon point de départ." subtitle="Soins & compétences" center={false} />
+          <p>Prévenir, soulager, restaurer ou transformer : chaque parcours commence par un bilan adapté à votre situation.</p>
+        </div>
+        <div className="care-index__list">
+          {competences.map((item, index) => {
+            const Icon = competenceIcons[item.slug] || AestheticToothIcon;
 
-      <p className="max-w-3xl mx-auto text-center text-sm text-gray-600 mb-6">
-        Dans notre clinique dentaire à Dakar, nous proposons une large gamme de
-        soins : prévention, implants, orthodontie, prothèses, traitement des
-        gencives et esthétique du sourire, pour adultes et enfants.
-      </p>
-
-      <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
-        variants={container}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
-      >
-        {competences.map((item, index) => (
-          <motion.div key={item.slug} variants={card}>
-            <Link
-              to={`/competences/${item.slug}`}
-              className="gradient-card glow-hover wow-tilt block rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 focus:outline-none focus:ring-2 focus:ring-[#ad9d64]"
-              title={`${item.titre} à Dakar – en savoir plus`}
-              aria-label={`${item.titre} à Dakar – en savoir plus`}
-            >
-              <div className="relative h-72 group">
-                <SkeletonImage
-                  src={item.image}
-                  alt={`${item.titre} – Clinique Dentaire DABIA, Dakar`}
-                  className="absolute inset-0 w-full h-full"
-                  imgClassName="object-cover group-hover:scale-110 transition-transform duration-500"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition" />
-                <div className="absolute bottom-0 p-4 text-white">
-                  <h3 className="text-lg font-bold">{item.titre}</h3>
-                  <p className="text-sm">
-                    {(item.description || "").slice(0, 80)}…
-                  </p>
-                </div>
-              </div>
-            </Link>
-          </motion.div>
-        ))}
-      </motion.div>
-      <div className="mt-12 text-center">
-        <Link to="/rendez-vous" className="btn-cta">
-          Prendre un rendez-vous
-        </Link>
+            return (
+              <Link key={item.slug} to={`/competences/${item.slug}`} className={`care-row ${index === 0 ? "care-row--featured" : ""}`} title={`${item.titre} à Dakar – en savoir plus`}>
+                <span className="care-row__number">{String(index + 1).padStart(2, "0")}</span>
+                <span className="care-row__icon" aria-hidden="true"><Icon /></span>
+                <div className="care-row__body"><h3>{item.titre}</h3><p>{(item.description || "").slice(0, 125)}{item.description?.length > 125 ? "…" : ""}</p></div>
+                <span className="care-row__arrow" aria-hidden="true">↗</span>
+              </Link>
+            );
+          })}
+        </div>
+        <div className="care-index__cta"><Link to="/all-competences" className="btn-secondary">Voir tous les soins</Link><Link to="/rendez-vous" className="btn-cta">Demander un rendez-vous</Link></div>
       </div>
-
-      {/* Données structurées de la liste */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }} />
     </section>
   );
 }

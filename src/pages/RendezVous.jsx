@@ -216,7 +216,7 @@ const RendezVous = () => {
   };
 
   return (
-    <section className="relative mt-20 overflow-hidden">
+    <section className="page-shell appointment-page relative overflow-hidden">
       <Seo
         title="Prendre RDV dentiste à Dakar — Consultation en ligne rapide | Clinique DABIA"
         description="Prenez rendez-vous chez le dentiste à Dakar en 1 minute. Consultation, urgence, détartrage, implant ou orthodontie. Formulaire en ligne, appel (+221 77 703 93 93) ou WhatsApp. Confirmation rapide par l'équipe."
@@ -543,37 +543,13 @@ const RendezVous = () => {
                   <a href="/dentiste-dakar" className="underline text-[#bb2988]">Dentiste à Dakar (page principale)</a>
                   <a href="/urgence-dentaire-dakar" className="underline text-[#bb2988]">Urgence dentaire à Dakar</a>
                   <a href="/cabinet-dentaire-dakar" className="underline text-[#bb2988]">Cabinet dentaire à Dakar</a>
-                  <a href="/blog/dentiste-dakar-prix-consultation-2026" className="underline text-[#bb2988]">Prix consultation dentiste à Dakar</a>
-                  <a href="/blog/detartrage-dakar-frequence-gencives-senegal-2026" className="underline text-[#bb2988]">Détartrage à Dakar : fréquence recommandée</a>
-                  <a href="/blog/ramadan-dentiste-dakar-jeune-horaires-2026" className="underline text-[#bb2988]">Ramadan et dentiste à Dakar</a>
-                  <a href="/blog/urgence-dentiste-dakar-24h-que-faire" className="underline text-[#bb2988]">Que faire en urgence dentaire 24h</a>
+                  <a href="/blog/prix-consultation-dentiste-dakar-combien-prevoir-2026" className="underline text-[#bb2988]">Prix consultation dentiste à Dakar</a>
+                  <a href="/blog/detartrage-dentaire-frequence-dakar-prevention" className="underline text-[#bb2988]">Détartrage à Dakar : fréquence recommandée</a>
+                  <a href="/blog/dentiste-pendant-ramadan-dakar-soins-faq-2026" className="underline text-[#bb2988]">Ramadan et dentiste à Dakar</a>
+                  <a href="/blog/urgence-dentaire-nuit-weekend-dakar" className="underline text-[#bb2988]">Urgence la nuit ou le week-end : que faire</a>
                 </div>
               </div>
 
-              <div className="rounded-2xl border border-[#e7dcbc] bg-[#fff9ea] p-4 shadow-sm">
-                <p className="text-sm font-semibold text-[#ad9d64]">
-                  Pour les praticiens qui modernisent leur cabinet
-                </p>
-                <p className="mt-2 text-sm text-gray-700">
-                  La qualité des soins repose aussi sur un cabinet bien équipé.
-                  Pour comparer le fauteuil, la stérilisation ou le budget d’installation,
-                  AfriSmile propose des repères clairs avant achat.
-                </p>
-                <div className="mt-3 flex flex-wrap gap-3 text-sm">
-                  <a
-                    href="https://www.afrismile.net/devis-materiel-dentaire"
-                    className="underline text-[#bb2988]"
-                  >
-                    Devis d’équipement dentaire
-                  </a>
-                  <a
-                    href="https://www.afrismile.net/materiel-dentaire-senegal"
-                    className="underline text-[#bb2988]"
-                  >
-                    Matériel dentaire au Sénégal
-                  </a>
-                </div>
-              </div>
             </motion.form>
 
             <motion.div
@@ -627,7 +603,7 @@ const RendezVous = () => {
               <Link to="/blog/premiere-consultation-dentiste-dakar-deroulement-2026" className="text-[#bb2988] underline hover:text-[#9b2170]">
                 → Première consultation : à quoi s'attendre
               </Link>
-              <Link to="/blog/urgence-dentiste-dakar-24-24-nuit-weekend" className="text-[#bb2988] underline hover:text-[#9b2170]">
+              <Link to="/blog/urgence-dentaire-nuit-weekend-dakar" className="text-[#bb2988] underline hover:text-[#9b2170]">
                 → Urgence dentaire : que faire
               </Link>
               <Link to="/dentiste-dakar" className="text-[#bb2988] underline hover:text-[#9b2170]">

@@ -1,8 +1,8 @@
-import h6 from "./hero/hero6.webp";
-import h6m from "./hero/hero6-mobile.webp";
+import h4 from "./hero/hero4.webp";
+import h4m from "./hero/hero4-mobile.webp";
 
 const heroImages = [
-  { desktop: h6, mobile: h6m },
+  { desktop: h4, mobile: h4m },
 ];
 
 export default heroImages;

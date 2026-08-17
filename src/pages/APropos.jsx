@@ -25,7 +25,7 @@ export default function APropos() {
   ];
 
   return (
-    <main className="mt-20 pt-20 pb-14 px-4 max-w-5xl mx-auto">
+    <main className="page-shell about-page px-4 max-w-5xl mx-auto">
       <Seo
         title={title}
         description={description}

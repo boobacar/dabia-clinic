@@ -18,8 +18,24 @@ const customTailwind = tailwindPlugin.withOptions(() => ({
 
 export default defineConfig({
   server: {
+    allowedHosts: ["home-server-1.tail660cfd.ts.net"],
     proxy: {
+      "/api/google-reviews": {
+        target: "https://www.cliniquedentairedabia.com",
+        changeOrigin: true,
+        secure: true,
+      },
       "/api": "http://localhost:3000",
+    },
+  },
+  preview: {
+    allowedHosts: ["home-server-1.tail660cfd.ts.net"],
+    proxy: {
+      "/api/google-reviews": {
+        target: "https://www.cliniquedentairedabia.com",
+        changeOrigin: true,
+        secure: true,
+      },
     },
   },
   plugins: [react()],

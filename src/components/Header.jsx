@@ -1,251 +1,29 @@
-// ... imports ...
-import { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import logo from "../assets/logo.jpg";
-import Magnetic from "./Magnetic";
+
+const navLinks = [{ name: "Accueil", path: "/" }, { name: "Soins", path: "/all-competences" }, { name: "Urgence", path: "/urgence-dentaire-dakar" }, { name: "La clinique", path: "/apropos" }, { name: "Galerie", path: "/galerie" }, { name: "Conseils", path: "/blog" }];
+const infosLinks = [{ name: "Assurances", path: "/infos/assurances" }, { name: "Conseils après visite", path: "/infos/post-visite" }, { name: "Espace enfants", path: "/infos/enfants" }, { name: "Technologie", path: "/infos/technologie" }, { name: "Nous rejoindre", path: "/rejoindre" }];
 
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const closeTimeout = useRef(null);
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const navLinks = [
-    { name: "Accueil", path: "/" },
-    { name: "Dentiste Dakar", path: "/dentiste-dakar" },
-    { name: "Compétences", path: "/all-competences" },
-    { name: "Urgence", path: "/urgence-dentaire-dakar" },
-    { name: "Galerie", path: "/galerie" },
-    { name: "Infos", isDropdown: true },
-    { name: "Blog", path: "/blog" },
-    { name: "Nous Rejoindre", path: "/rejoindre" },
-  ];
-
-  const infosLinks = [
-    { name: "Assurances", path: "/infos/assurances" },
-    {
-      name: "Conseils après visite (Post-opération)",
-      path: "/infos/post-visite",
-    },
-    { name: "Espace Enfants", path: "/infos/enfants" },
-    { name: "Technologie", path: "/infos/technologie" },
-  ];
-
-  const handleMouseEnter = () => {
-    clearTimeout(closeTimeout.current);
-    setDropdownOpen(true);
-  };
-
-  const handleMouseLeave = () => {
-    closeTimeout.current = setTimeout(() => {
-      setDropdownOpen(false);
-    }, 200);
-  };
-
-  const mobileIconClass = open || scrolled ? "text-white" : "text-[#bb2988]";
-
-  return (
-    <header
-      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
-        scrolled
-          ? "bg-black/80 backdrop-blur-md shadow-md"
-          : "bg-black/60 backdrop-blur-md shadow"
-      }`}
-    >
-      {/* Top info bar */}
-      <div className="topbar-glassy text-white text-xs">
-        {/* Mobile: marquee */}
-        <div className="block sm:hidden">
-          <div className="overflow-hidden">
-            <div className="marquee-track flex items-center gap-6 py-1 px-4 whitespace-nowrap">
-              {[0, 1].map((k) => (
-                <div key={k} className="flex items-center gap-4">
-                  <a href="mailto:cliniquedentairedabia@gmail.com" className="underline-offset-2 hover:underline">
-                    cliniquedentairedabia@gmail.com
-                  </a>
-                  <span className="opacity-60">•</span>
-                  <a href="tel:+221777039393" className="underline-offset-2 hover:underline">
-                    +221 77 703 93 93
-                  </a>
-                  <span className="opacity-60">•</span>
-                  <a href="tel:+221338684704" className="underline-offset-2 hover:underline">
-                    +221 33 868 47 04
-                  </a>
-                  <span className="opacity-60">•</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Desktop/tablette: fixe */}
-        <div className="hidden sm:block">
-          <div className="max-w-7xl mx-auto px-4 py-1 flex items-center justify-between gap-4">
-            <a href="mailto:cliniquedentairedabia@gmail.com" className="truncate underline-offset-2 hover:underline">
-              cliniquedentairedabia@gmail.com
-            </a>
-            <div className="flex items-center gap-4 whitespace-nowrap">
-              <a href="tel:+221777039393" className="underline-offset-2 hover:underline">
-                +221 77 703 93 93
-              </a>
-              <a href="tel:+221338684704" className="underline-offset-2 hover:underline">
-                +221 33 868 47 04
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* JSON-LD SiteNavigationElement */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "SiteNavigationElement",
-            name: navLinks.filter((n) => !n.isDropdown).map((n) => n.name),
-            url: navLinks
-              .filter((n) => !n.isDropdown)
-              .map((n) => {
-                const base =
-                  typeof window !== "undefined" && window.location?.origin
-                    ? window.location.origin
-                    : "https://www.cliniquedentairedabia.com";
-                return `${base}${n.path}`;
-              }),
-          }),
-        }}
-      />
-
-      <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-        <Link
-          to="/"
-          className="text-[#ad9d64] text-xl font-bold flex items-center gap-2"
-        >
-          <img
-            className="w-10 h-10 object-contain rounded-full"
-            src={logo}
-            alt="Dentiste Dakar - Clinique dentaire DABIA"
-            width={40}
-            height={40}
-          />
-          <span className="hidden sm:inline">Clinique Dentaire DABIA</span>
-        </Link>
-
-        {/* Desktop nav */}
-        <nav className="hidden md:flex gap-6 items-center">
-          {navLinks.map((link, i) =>
-            link.isDropdown ? (
-              <div
-                key={i}
-                className="relative"
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-              >
-                <button className="text-[#ad9d64] font-bold hover:text-[#bb2988] flex items-center gap-1">
-                  Infos <ChevronDown className="w-4 h-4" />
-                </button>
-                {dropdownOpen && (
-                  <div
-                    className="absolute top-full left-0 mt-2 z-10 w-56 rounded-xl border shadow-lg bg-black/60 backdrop-blur-md"
-                    style={{
-                      WebkitBackdropFilter: "blur(12px) saturate(160%)",
-                    }}
-                  >
-                    {infosLinks.map((sub, j) => (
-                      <Link
-                        to={sub.path}
-                        key={j}
-                        className="block px-4 py-2 text-sm text-white/90 rounded-xl transition-colors duration-150 hover:bg-[#bb2988]/80 hover:text-white"
-                        onClick={() => setDropdownOpen(false)}
-                      >
-                        {sub.name}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ) : (
-              <Link
-                key={i}
-                to={link.path}
-                className="text-[#ad9d64] font-bold hover:text-[#bb2988] transition-all duration-200 hover:underline hover:underline-offset-4"
-              >
-                {link.name}
-              </Link>
-            )
-          )}
-          <Magnetic>
-            <Link to="/rendez-vous" className="ripple btn-cta">
-              RDV rapide
-            </Link>
-          </Magnetic>
-        </nav>
-
-        {/* Mobile button */}
-        <div className="md:hidden">
-          <button
-            onClick={() => setOpen(!open)}
-            className={mobileIconClass}
-            aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
-          >
-            {open ? (
-              <X className={`w-6 h-6 ${mobileIconClass}`} />
-            ) : (
-              <Menu className={`w-6 h-6 ${mobileIconClass}`} />
-            )}
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile nav */}
-      {open && (
-        <div
-          className={`md:hidden px-4 pb-4 shadow-sm backdrop-blur-md ${
-            scrolled ? "bg-black/30" : "bg-black/10"
-          }`}
-        >
-          {navLinks.map((link, i) =>
-            link.isDropdown ? (
-              <div key={i} className="text-white">
-                <span className="block py-2 font-semibold">Infos</span>
-                <div className="pl-4 space-y-1">
-                  {infosLinks.map((sublink, j) => (
-                    <Link
-                      key={j}
-                      to={sublink.path}
-                      onClick={() => setOpen(false)}
-                      className="block py-1 text-sm text-white/80 hover:text-[#bb2988]"
-                    >
-                      {sublink.name}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            ) : (
-              <Link
-                key={i}
-                to={link.path}
-                onClick={() => setOpen(false)}
-                className="block py-2 text-white hover:text-[#bb2988]"
-              >
-                {link.name}
-              </Link>
-            )
-          )}
-          <Link to="/rendez-vous" className="btn-cta">
-            RDV rapide
-          </Link>
-        </div>
-      )}
-    </header>
-  );
+  const location = useLocation();
+  useEffect(() => { const onScroll = () => setScrolled(window.scrollY > 24); onScroll(); window.addEventListener("scroll", onScroll, { passive: true }); return () => window.removeEventListener("scroll", onScroll); }, []);
+  useEffect(() => { setOpen(false); setDropdownOpen(false); }, [location.pathname]);
+  useEffect(() => () => clearTimeout(closeTimeout.current), []);
+  return <header className={`site-header ${scrolled ? "site-header--scrolled" : ""}`}>
+    <div className="site-header__notice"><div className="studio-container"><span>Sicap Foire · Liberté 6</span><span className="site-header__notice-hours">Lun–Jeu 9h–16h30 · Sam 9h–14h</span><a href="tel:+221****9393">+221 77 703 93 93</a></div></div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "SiteNavigationElement", name: navLinks.map(n => n.name), url: navLinks.map(n => `${typeof window !== "undefined" ? window.location.origin : "https://www.cliniquedentairedabia.com"}${n.path}`) }) }} />
+    <div className="studio-container site-header__main">
+      <Link to="/" className="site-logo"><img src={logo} alt="Clinique Dentaire DABIA" width="54" height="54" /><span>Clinique Dentaire <strong>DABIA</strong></span></Link>
+      <nav className="site-nav" aria-label="Navigation principale">{navLinks.map(link => <Link key={link.path} to={link.path} aria-current={location.pathname === link.path ? "page" : undefined}>{link.name}</Link>)}<div className="site-nav__more" onMouseEnter={() => { clearTimeout(closeTimeout.current); setDropdownOpen(true); }} onMouseLeave={() => { closeTimeout.current = setTimeout(() => setDropdownOpen(false), 180); }}><button type="button" onClick={() => setDropdownOpen(v => !v)} aria-expanded={dropdownOpen}>Infos <ChevronDown /></button>{dropdownOpen && <div className="site-nav__dropdown">{infosLinks.map(l => <Link key={l.path} to={l.path}>{l.name}</Link>)}</div>}</div><Link to="/rendez-vous" className="btn-cta btn-cta--nav">Rendez-vous</Link></nav>
+      <button className="menu-toggle" type="button" onClick={() => setOpen(v => !v)} aria-expanded={open} aria-controls="mobile-menu" aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}>{open ? <X /> : <Menu />}</button>
+    </div>
+    {open && <nav id="mobile-menu" className="mobile-nav" aria-label="Navigation mobile"><div className="studio-container">{navLinks.map(l => <Link key={l.path} to={l.path}>{l.name}</Link>)}<p>Informations</p>{infosLinks.map(l => <Link key={l.path} className="mobile-nav__sub" to={l.path}>{l.name}</Link>)}<Link to="/rendez-vous" className="btn-cta">Prendre rendez-vous</Link></div></nav>}
+  </header>;
 };
-
 export default Header;

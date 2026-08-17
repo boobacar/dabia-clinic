@@ -205,7 +205,7 @@ Le prix est important, mais un devis dentaire dépend du diagnostic. Deux douleu
 4. combien de séances sont prévues ;
 5. quelles garanties ou contrôles sont inclus après le soin.
 
-Pour préparer votre budget, lisez aussi **[Prix consultation dentiste à Dakar](/blog/dentiste-dakar-prix-consultation-2026)**.
+Pour préparer votre budget, lisez aussi **[Prix consultation dentiste à Dakar](/blog/prix-consultation-dentiste-dakar-combien-prevoir-2026)**.
 
 ## 5) Penser au suivi après le soin
 
@@ -424,7 +424,7 @@ Besoin d’un diagnostic précis ? **[Prendre rendez-vous](/rendez-vous)**.`,
 Dans ce cas, un traitement parodontal précoce protège durablement vos dents.
 
 ## Impact sur le budget santé
-Traiter tôt une gingivite coûte nettement moins que gérer une parodontite avancée (soins multiples, restaurations, perte dentaire). En SEO local, c’est souvent la requête “détartrage prix Dakar” qui amène au diagnostic gingival réel.
+Traiter tôt une gingivite coûte nettement moins que gérer une parodontite avancée, qui peut nécessiter plusieurs soins et restaurations. Une consultation motivée par un détartrage permet parfois de détecter une inflammation gingivale qui demande une prise en charge plus complète.
 
 ## À retenir
 - Le saignement gingival est un signal d’alerte utile.
@@ -1073,7 +1073,7 @@ Ne regardez pas seulement le prix initial. Évaluez aussi la prévisibilité du 
 Le meilleur appareil est celui qui correspond à votre cas clinique, votre mode de vie et votre capacité de suivi.
 
 ### À lire aussi
-- [Prix appareil dentaire à Dakar : guide complet](/blog/appareil-dentaire-prix-dakar-guide-complet)
+- [Prix appareil dentaire à Dakar : guide complet](/blog/prix-appareil-dentaire-dakar-senegal)
 - [Orthodontie adulte : quel appareil choisir ?](/blog/orthodontie-adulte-invisible-dakar-aligneurs)
 
 Pour un plan orthodontique personnalisé : **[Prendre rendez-vous](/rendez-vous)**.`,
@@ -4304,14 +4304,14 @@ Nous savons que les soins dentaires représentent un budget.
 
   {
     slug: "urgence-dentiste-dakar-24-24-nuit-weekend",
-    title: "Urgence dentiste à Dakar 24/24 : nuit, week-end et jours fériés",
+    title: "Urgence dentaire à Dakar la nuit ou le week-end : que faire ?",
     description:
-      "Douleur pulsatile, gonflement, dent cassée : les gestes immédiats et comment trouver un dentiste d’urgence à Dakar, même la nuit ou le week-end.",
+      "Douleur pulsatile, gonflement ou dent cassée : les gestes immédiats, les signes d’alerte et comment contacter la Clinique DABIA dès que possible.",
     date: "2026-01-15",
     category: "Urgences",
     tags: [
       "urgence dentaire dakar",
-      "dentiste dakar 24/24",
+      "urgence dentaire nuit dakar",
       "dentiste nuit dakar",
       "dentiste weekend dakar",
     ],
@@ -4319,7 +4319,7 @@ Nous savons que les soins dentaires représentent un budget.
     cover: urgenceNuitCover,
     pinned: true,
     readingMinutes: 13,
-    content: `Une **douleur dentaire** à 23 h ou un choc un dimanche ? Voici le guide “**dentiste urgence Dakar 24/24**” pour savoir quoi faire la nuit ou le week-end.
+    content: `Une **douleur dentaire** à 23 h ou un choc un dimanche ? La Clinique DABIA n’assure pas une permanence ouverte 24 h/24. Voici les gestes utiles et les signes qui imposent de contacter un professionnel ou un service hospitalier sans attendre.
 
 ## Signes qui imposent un dentiste en urgence à Dakar
 - Douleur **pulsatile** qui empêche de dormir.
@@ -4334,7 +4334,7 @@ Nous savons que les soins dentaires représentent un budget.
 - Conserver toute dent/fragment dans du **lait** ou du sérum physiologique.
 
 ## Prise en charge à la Clinique DABIA (Dakar)
-- **Accueil téléphonique** pour vous insérer sur le créneau d’urgence disponible (soir, samedi, veille ou lendemain de férié).
+- **Accueil téléphonique pendant les horaires affichés** pour vous orienter et proposer le prochain créneau d’urgence disponible selon la situation.
 - Radios ciblées ou **CBCT** si besoin pour décider : **drainage**, **pulpotomie**, **traitement canalaire** d’urgence, extraction ou contention.
 - **Ordonnance** antalgiques/antibiotiques adaptée et **plan de soins** détaillé pour finaliser ensuite.
 
@@ -4343,12 +4343,7 @@ Nous savons que les soins dentaires représentent un budget.
 - Possibilités d’utiliser votre **IPM/mutuelle** selon le contrat.
 - Les traitements définitifs (couronne, implant, alignement) sont chiffrés à part.
 
-## Pour les cabinets : prévenir les interruptions de service
-Quand un cabinet doit gérer les urgences, la fiabilité de l’équipement fait une vraie différence : stérilisation disponible, fauteuil opérationnel, matériel prêt et organisation claire des actes. C’est un sujet utile pour les praticiens qui veulent sécuriser leur activité au quotidien.
-
-AfriSmile propose justement des ressources sur l’**[équipement de cabinet dentaire](https://www.afrismile.net/solutions-cabinets)** et sur le choix d’un **[autoclave dentaire Classe B](https://www.afrismile.net/autoclave-dentaire-classe-b-senegal)** pour renforcer la continuité de service.
-
-> Gardez ces réflexes si vous tapez “**dentiste 24/24 Dakar**”, “**dentiste de nuit Dakar**” ou “**urgence dentaire week-end Dakar**” : soulagez la douleur, protégez la dent et appelez la **Clinique DABIA** pour une prise en charge prioritaire.`,
+> En cas de douleur la nuit ou le week-end, protégez la dent et contactez la **Clinique DABIA** dès l’ouverture. Si le gonflement gagne le cou, si vous respirez difficilement, si le saignement ne cesse pas ou si votre état général se dégrade, contactez immédiatement les urgences hospitalières.`,
     faq: [
       {
         q: "Puis-je venir sans rendez-vous pour une douleur aiguë ?",

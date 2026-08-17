@@ -99,7 +99,7 @@ export default function Galerie() {
     setLb((s) => ({ open: true, index: (s.index + 1) % images.length }));
 
   return (
-    <section className="py-16 px-4 max-w-7xl mx-auto mt-20">
+    <section className="page-shell gallery-page px-4 max-w-7xl mx-auto">
       <Seo
         title="Galerie photos – Avant/Après et vues de la clinique"
         description="Découvrez des résultats avant/après et des photos de la Clinique Dentaire DABIA à Dakar."

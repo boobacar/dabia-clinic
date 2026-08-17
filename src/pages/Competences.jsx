@@ -47,7 +47,7 @@ const MotionLink = motion(Link);
 
 export default function Competences() {
   return (
-    <section className="mt-20 py-16 px-4 max-w-6xl mx-auto">
+    <section className="page-shell px-4 max-w-6xl mx-auto">
       <p className="text-sm text-gray-600 mb-4">
         Besoin d’un avis ? Consultez notre page {" "}
         <Link className="text-[#bb2988] underline" to="/dentiste-dakar">Dentiste à Dakar</Link>

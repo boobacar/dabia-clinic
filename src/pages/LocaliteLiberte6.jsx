@@ -41,7 +41,7 @@ export default function LocaliteLiberte6() {
   ];
 
   return (
-    <section className="py-20 px-4 max-w-5xl mx-auto mt-20">
+    <section className="page-shell px-4 max-w-5xl mx-auto">
       <Seo
         title="Dentiste Liberté 6 Dakar – RDV rapide & urgences | DABIA"
         description="Cabinet dentaire à Liberté 6 (Sicap Foire) : urgences, détartrage, implants, orthodontie et esthétique. Prise de rendez-vous rapide."

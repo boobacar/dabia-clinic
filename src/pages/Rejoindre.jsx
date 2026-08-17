@@ -29,7 +29,7 @@ const Rejoindre = () => {
   };
 
   return (
-    <section className="py-36 px-4 max-w-6xl mx-auto mt-20">
+    <section className="page-shell px-4 max-w-6xl mx-auto">
       <Seo
         title="Recrutement dentaire à Dakar – Rejoindre la Clinique DABIA"
         description="Envoyez votre candidature à la Clinique Dentaire DABIA à Dakar : postes en dentisterie, assistance, secrétariat et administration."

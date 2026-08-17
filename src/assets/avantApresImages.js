@@ -13,12 +13,13 @@ import avant6 from "../assets/avantApresImages/avant6.webp";
 import apres6 from "../assets/avantApresImages/apres6.webp";
 
 const avantApresImages = [
-  { before: avant1, after: apres1 },
-  { before: avant2, after: apres2 },
-  { before: avant3, after: apres3 },
-  { before: avant4, after: apres4 },
+  // Le couple le plus détaillé ouvre la galerie et supporte le grand format.
   { before: avant5, after: apres5 },
+  { before: avant1, after: apres1 },
+  { before: avant4, after: apres4 },
   { before: avant6, after: apres6 },
+  { before: avant3, after: apres3 },
+  { before: avant2, after: apres2 },
 ];
 
 export default avantApresImages;

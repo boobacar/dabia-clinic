@@ -699,7 +699,7 @@ const CompetenceDetail = () => {
   if (!competence) {
     return (
       <motion.div
-        className="text-center py-20 mt-20"
+        className="page-shell text-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
@@ -724,7 +724,7 @@ const CompetenceDetail = () => {
 
   return (
     <motion.section
-      className="py-16 px-4 max-w-4xl mx-auto mt-20"
+      className="page-shell px-4 max-w-4xl mx-auto"
       variants={pageVariants}
       initial="initial"
       animate="animate"

@@ -7,7 +7,7 @@ import technologies from "../data/technologies";
 
 const Technologie = () => {
   return (
-    <section className="py-20 px-4 max-w-7xl mx-auto mt-20">
+    <section className="page-shell px-4 max-w-7xl mx-auto">
       <Seo
         title="Technologies dentaires à Dakar – Clinique Dentaire DABIA"
         description="Radiographie panoramique, CBCT 3D, scanner intra-oral, laser et autoclave classe B : découvrez le plateau technique de la Clinique Dentaire DABIA à Dakar."

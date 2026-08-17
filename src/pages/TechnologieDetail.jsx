@@ -11,7 +11,7 @@ export default function TechnologieDetail() {
 
   if (!tech) {
     return (
-      <main className="min-h-screen bg-white text-gray-800">
+      <main className="page-shell min-h-screen text-gray-800">
         <section className="py-20 px-4 max-w-5xl mx-auto mt-20">
           <Breadcrumbs
             items={[
@@ -38,7 +38,7 @@ export default function TechnologieDetail() {
   const canonical = `https://www.cliniquedentairedabia.com/infos/technologie/${tech.slug}`;
 
   return (
-    <main className="min-h-screen bg-white text-gray-800">
+    <main className="page-shell min-h-screen text-gray-800">
       <section className="py-20 px-4 max-w-5xl mx-auto mt-20">
       <Seo
         title={tech.seoTitle || `${tech.titre} – Technologie dentaire à Dakar`}

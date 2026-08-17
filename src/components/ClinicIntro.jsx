@@ -1,59 +1,29 @@
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import SectionTitle from "./SectionTitle";
-import aproposAvif from "../assets/apropos.avif";
+import treatmentRoom from "../assets/hero/hero7.webp";
 
-const ClinicIntro = () => {
-  return (
-    <section className="relative overflow-hidden py-16 px-4 bg-gray-100 text-center">
-      {/* ✅ Fond image sur mobile + desktop */}
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-10 sm:opacity-[0.12]"
-        style={{ backgroundImage: `url(${aproposAvif})` }}
-      ></div>
-
-      {/* ✅ Contenu animé */}
-      <motion.div
-        className="relative z-10 max-w-4xl mx-auto"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        viewport={{ once: true }}
-      >
-        {/* ✅ Texte & bouton animés */}
-        <motion.div
-          className="text-left sm:text-left"
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          viewport={{ once: true }}
-        >
-          <SectionTitle
-            title="À propos de la Clinique Dentaire DABIA à Dakar"
-            subtitle="Votre sourire, notre priorité"
-            center={false}
-            className="mb-6"
-          />
-          <p className="text-lg mb-4 text-gray-700">
-            Bienvenue à la Clinique Dentaire DABIA, votre référence pour trouver
-            un excellent dentiste à Dakar. Située à Sicap Foire (Liberté 6),
-            notre structure moderne vous offre une expertise complète : urgences
-            dentaires, implants, orthodontie, et esthétique du sourire.
-          </p>
-          <p className="text-lg mb-6 text-gray-700">
-            En tant que clinique dentaire à Dakar dotée d'un plateau technique
-            de pointe (Scanner 3D, radio panoramique), nous garantissons des
-            soins de haute qualité. Que vous cherchiez un dentiste pour un
-            simple détartrage ou une réhabilitation complexe, notre équipe
-            dévouée vous assure une prise en charge douce et personnalisée.
-          </p>
-          <Link to="/rendez-vous" className="btn-cta">
-            Prendre un rendez-vous
-          </Link>
-        </motion.div>
-      </motion.div>
-    </section>
-  );
-};
+const ClinicIntro = () => (
+  <section className="clinic-intro section-pad">
+    <div className="studio-container clinic-intro__grid">
+      <div className="clinic-intro__copy">
+        <SectionTitle title="D’abord vous écouter. Ensuite, expliquer." subtitle="Votre première visite" center={false} />
+        <p className="clinic-intro__lead">
+          Une douleur, une gêne ou un projet de sourire ne racontent jamais toute l’histoire.
+          La consultation sert à regarder, poser les bonnes questions et hiérarchiser ce qui compte.
+        </p>
+        <ol className="care-steps">
+          <li><span>01</span><div><strong>Faire le point</strong><p>Vos attentes, vos antécédents et ce qui vous amène aujourd’hui.</p></div></li>
+          <li><span>02</span><div><strong>Comprendre le diagnostic</strong><p>Un examen expliqué simplement, avec l’imagerie lorsque nécessaire.</p></div></li>
+          <li><span>03</span><div><strong>Choisir la suite</strong><p>Les priorités, les options et le devis sont présentés avant de commencer.</p></div></li>
+        </ol>
+        <Link to="/apropos" className="text-link">Découvrir la clinique <span aria-hidden="true">→</span></Link>
+      </div>
+      <figure className="clinic-intro__media">
+        <img src={treatmentRoom} alt="Salle de soins de la Clinique DABIA à Dakar" width="1080" height="720" loading="lazy" decoding="async" />
+        <figcaption>Une salle de soins de la clinique, à Sicap Foire.</figcaption>
+      </figure>
+    </div>
+  </section>
+);
 
 export default ClinicIntro;

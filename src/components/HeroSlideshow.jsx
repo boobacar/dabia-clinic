@@ -1,206 +1,40 @@
-// src/components/HeroSlideshow.jsx
-import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import heroImages from "../assets/heroImages";
 
-const SLIDE_MS = 3000; // 5000 ms = 5 s par image
-const LOOP_START_DESKTOP_MS = 1800;
-const LOOP_START_MOBILE_MS = 4500;
-
 const HeroSlideshow = () => {
-  const [index, setIndex] = useState(0);
-  // Démarre le slideshow seulement après le rendu initial pour laisser la LCP se stabiliser
-  const [enableLoop, setEnableLoop] = useState(false);
-  const [isMobile, setIsMobile] = useState(
-    () =>
-      typeof window !== "undefined" &&
-      window.matchMedia("(max-width: 768px)").matches,
-  );
-  const [shouldReduceMotion, setShouldReduceMotion] = useState(false);
-  const timerRef = useRef(null);
-  const startRef = useRef(null);
-
-  // Ne lance l'animation qu'en idle (+ délai) pour protéger la fenêtre LCP
-  useEffect(() => {
-    const cb =
-      (typeof window !== "undefined" && window.requestIdleCallback) ||
-      ((fn) => setTimeout(fn, 350));
-
-    const handle = cb(() => {
-      const startDelay = isMobile ? LOOP_START_MOBILE_MS : LOOP_START_DESKTOP_MS;
-      startRef.current = setTimeout(() => setEnableLoop(true), startDelay);
-    });
-
-    return () => {
-      if (typeof window !== "undefined" && window.cancelIdleCallback) {
-        try {
-          window.cancelIdleCallback(handle);
-        } catch {
-          // noop
-        }
-      } else {
-        clearTimeout(handle);
-      }
-      if (startRef.current) clearTimeout(startRef.current);
-    };
-  }, [isMobile]);
-
-  // Réduit les animations décoratives sur mobile (batch perf prudent)
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    const mq = window.matchMedia("(max-width: 768px)");
-    const motionMq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const apply = () => setIsMobile(mq.matches);
-    const applyMotion = () => setShouldReduceMotion(motionMq.matches);
-    apply();
-    applyMotion();
-    mq.addEventListener?.("change", apply);
-    motionMq.addEventListener?.("change", applyMotion);
-    return () => {
-      mq.removeEventListener?.("change", apply);
-      motionMq.removeEventListener?.("change", applyMotion);
-    };
-  }, []);
-
-  // Auto-play avec setTimeout (plus fiable que setInterval ici)
-  useEffect(() => {
-    if (!enableLoop || isMobile || heroImages.length <= 1) return;
-
-    // Nettoyage de l'ancien timer au changement de vitesse / longueur / index
-    if (timerRef.current) clearTimeout(timerRef.current);
-
-    timerRef.current = setTimeout(() => {
-      setIndex((i) => (i + 1) % heroImages.length);
-    }, SLIDE_MS);
-
-    return () => {
-      if (timerRef.current) clearTimeout(timerRef.current);
-    };
-    // 👉 très important: inclure SLIDE_MS et la longueur
-  }, [index, enableLoop, isMobile]);
-
-  const currentObj = useMemo(() => heroImages[index], [index]);
-  const firstHero = heroImages[0];
-  const isSlideshow = enableLoop && !isMobile && heroImages.length > 1;
-  const heroAlt =
-    "Dentiste Dakar - Clinique dentaire DABIA - Clinique dentaire dakar";
+  const hero = heroImages[0];
+  if (!hero) return null;
 
   return (
     <>
-      {firstHero && (
-        <>
-          <link
-            rel="preload"
-            as="image"
-            href={firstHero.mobileAvif || firstHero.mobile}
-            media="(max-width: 640px)"
-            fetchPriority="high"
-          />
-          <link
-            rel="preload"
-            as="image"
-            href={firstHero.desktopAvif || firstHero.desktop}
-            media="(min-width: 641px)"
-            fetchPriority="high"
-          />
-        </>
-      )}
-      <section className="relative h-[100svh] min-h-[100svh] overflow-hidden bg-black">
-      {isSlideshow ? (
-          <img
-            key={currentObj.desktop}
-            src={currentObj.desktop}
-            srcSet={`${currentObj.mobile} 640w, ${currentObj.desktop} 1600w`}
-            sizes="100vw"
-            alt={heroAlt}
-            aria-hidden="true"
-            width="1600"
-            height="900"
-            className={`absolute inset-0 w-full h-full object-cover ${
-              shouldReduceMotion ? "" : "transition-opacity duration-700"
-            }`}
-            decoding="sync"
-            fetchPriority={index === 0 ? "high" : "auto"}
-          />
-      ) : (
-        <picture>
-          {currentObj.mobileAvif && currentObj.desktopAvif && (
-            <source
-              type="image/avif"
-              srcSet={`${currentObj.mobileAvif} 640w, ${currentObj.desktopAvif} 1600w`}
-              sizes="100vw"
-            />
-          )}
-          <img
-            src={currentObj.desktop}
-            srcSet={`${currentObj.mobile} 640w, ${currentObj.desktop} 1600w`}
-            sizes="100vw"
-            alt={heroAlt}
-            width="1600"
-            height="900"
-            className="absolute inset-0 w-full h-full object-cover"
-            decoding="sync"
-            fetchPriority="high"
-            loading="eager"
-          />
-        </picture>
-      )}
-
-      <div className="absolute inset-0 bg-black/55" />
-
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-        <h2 className="text-[#ad9d64] text-2xl md:text-3xl mb-2">
-          Bienvenue à la Clinique Dentaire
-        </h2>
-
-        {/* <motion.h1
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.35 }}
-          className="text-[#ad9d64] font-bold text-5xl md:text-7xl mb-6"
-        >
-          Dabia
-        </motion.h1> */}
-
-        <h1 className="text-[#ad9d64] font-bold text-7xl md:text-7xl mb-6">
-          DABIA
-        </h1>
-
-        <p className="border-2 border-[#ad9d64]/40 p-2 text-[#ad9d64] max-w-60 text-md text-justify mb-10 sm:max-w-100 rounded-lg">
-          Clinique dentaire moderne à Dakar : implants, orthodontie, urgences et
-          esthétique du sourire, avec un accueil chaleureux et un plateau
-          technique de pointe.
-        </p>
-
-        <div className="flex flex-col items-center gap-6">
-          <Link to="/rendez-vous" className="btn-cta">
-            Prendre un rendez-vous
-          </Link>
-        </div>
-      </div>
-
-      {!isMobile && (
-        <div className="pointer-events-none absolute inset-x-0 bottom-15 sm:bottom-40 md:bottom-40 flex flex-col items-center gap-3">
-          <div
-            aria-hidden="true"
-            className="relative flex h-16 w-16 animate-bounce items-center justify-center rounded-full border-2 border-[#ad9d64]/70 bg-gradient-to-b from-white/15 to-white/0 text-[#f2e7b2] shadow-[0_18px_60px_-20px_rgba(0,0,0,0.95)] ring-1 ring-white/30 backdrop-blur-[4px]"
-          >
-            <span className="sr-only">Faites défiler pour découvrir</span>
-            <svg
-              className="h-7 w-7 drop-shadow-[0_0_14px_rgba(173,157,100,0.8)]"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M6 10l6 6 6-6" />
-            </svg>
+      <link rel="preload" as="image" href={hero.mobileAvif || hero.mobile} media="(max-width: 640px)" fetchPriority="high" />
+      <link rel="preload" as="image" href={hero.desktopAvif || hero.desktop} media="(min-width: 641px)" fetchPriority="high" />
+      <section className="editorial-hero" aria-labelledby="home-title">
+        <div className="editorial-hero__copy">
+          <p className="editorial-hero__eyebrow">Clinique dentaire · Sicap Foire, Liberté 6</p>
+          <h1 id="home-title">Comprendre vos soins.<br /><em>Décider sereinement.</em></h1>
+          <p className="editorial-hero__lead">
+            À Dakar, l’équipe DABIA vous reçoit pour les soins du quotidien,
+            les urgences et les traitements qui demandent un vrai temps d’explication.
+          </p>
+          <div className="editorial-hero__actions">
+            <Link to="/rendez-vous" className="btn-cta">Prendre rendez-vous</Link>
+            <Link to="/urgence-dentaire-dakar" className="btn-secondary">J’ai une urgence</Link>
+          </div>
+          <div className="editorial-hero__proof" aria-label="Horaires d’ouverture">
+            <span><strong>Lun–Jeu</strong> 9h–16h30</span>
+            <span><strong>Vendredi</strong> 9h–13h · 15h–16h30</span>
+            <span><strong>Samedi</strong> 9h–14h</span>
           </div>
         </div>
-      )}
-    </section>
+        <figure className="editorial-hero__media">
+          <picture>
+            {hero.mobileAvif && hero.desktopAvif && <source type="image/avif" srcSet={`${hero.mobileAvif} 640w, ${hero.desktopAvif} 1600w`} sizes="(min-width: 900px) 46vw, 100vw" />}
+            <img src={hero.desktop} srcSet={`${hero.mobile} 640w, ${hero.desktop} 1600w`} sizes="(min-width: 900px) 46vw, 100vw" alt="Accueil de la Clinique Dentaire DABIA à Dakar" width="1600" height="900" decoding="sync" fetchPriority="high" loading="eager" />
+          </picture>
+          <figcaption>Un lieu de soin pensé pour accueillir, écouter et expliquer.</figcaption>
+        </figure>
+      </section>
     </>
   );
 };

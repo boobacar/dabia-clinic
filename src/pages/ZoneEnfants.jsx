@@ -127,7 +127,7 @@ const sections = [
 
 const ZoneEnfants = () => {
   return (
-    <section className="py-16 px-4 max-w-6xl mx-auto mt-20">
+    <section className="page-shell px-4 max-w-6xl mx-auto">
       <Seo
         title="Espace enfants – Conseils d’hygiène et prévention | DABIA"
         description="Conseils pour la santé bucco-dentaire des enfants : brossage, prévention des caries, habitudes alimentaires, orthodontie. Clinique Dentaire DABIA (Dakar)."

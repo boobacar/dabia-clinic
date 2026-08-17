@@ -53,7 +53,7 @@ export default function DentalClinicDakarEn() {
   ];
 
   return (
-    <main className="min-h-screen bg-white text-gray-800">
+    <main className="page-shell min-h-screen text-gray-800">
       <div className="py-20 px-4 max-w-7xl mx-auto mt-20">
         <Seo
           title="Dental Clinic Dakar — Implants, Emergency, Cosmetic Dentistry | DABIA"

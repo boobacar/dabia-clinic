@@ -155,7 +155,7 @@ export default function BlogTag() {
 
   if (posts.length === 0) {
     return (
-      <section className="py-20 px-4 max-w-4xl mx-auto mt-20">
+      <section className="page-shell px-4 max-w-4xl mx-auto">
         <Seo
           title={`Tag introuvable | Clinique Dentaire DABIA`}
           description="Aucun article pour ce tag. Consultez le blog de la Clinique Dentaire DABIA Dakar."
@@ -179,7 +179,7 @@ export default function BlogTag() {
   }
 
   return (
-    <section className="py-10 px-4 max-w-7xl mx-auto mt-20">
+    <section className="page-shell px-4 max-w-7xl mx-auto">
       <Seo
         title={title}
         description={description}

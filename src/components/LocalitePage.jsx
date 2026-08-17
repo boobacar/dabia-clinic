@@ -22,7 +22,6 @@ import Callout from "./Callout";
  */
 export default function LocalitePage({
   quartier,
-  quartierPreposition = "de",
   slug,
   areaServed = [],
   intro,
@@ -31,17 +30,17 @@ export default function LocalitePage({
   seoDescription,
 }) {
   const url = `https://www.cliniquedentairedabia.com/${slug}`;
-  const prep = quartierPreposition === "des" ? "des" : quartierPreposition === "du" ? "du" : "de";
-  const title = seoTitle || `Dentiste à ${quartier} Dakar – Urgences, Implants & Soins | DABIA`;
+
+  const title = seoTitle || `Dentiste près de ${quartier}, Dakar – Accès & soins | DABIA`;
   const description =
     seoDescription ||
-    `Dentiste à ${quartier} (Dakar) : consultation, urgence, détartrage, implants, orthodontie et esthétique. RDV rapide au ${quartier}. Appelez le 77 703 93 93.`;
+    `Vous cherchez un dentiste près de ${quartier} ? La Clinique DABIA vous reçoit à Sicap Foire, Liberté 6, pour consultation, urgence et soins dentaires. Appelez le 77 703 93 93.`;
 
   const jsonLd = [
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      name: `Clinique Dentaire DABIA – ${quartier}`,
+      name: "Clinique Dentaire DABIA",
       url,
       image: "https://www.cliniquedentairedabia.com/og-image.webp",
       telephone: "+221****9393",
@@ -64,7 +63,7 @@ export default function LocalitePage({
         latitude: 14.7319,
         longitude: -17.4572,
       },
-      "@id": url + "#local",
+      "@id": "https://www.cliniquedentairedabia.com/#clinic",
       sameAs: [
         "https://www.facebook.com/cliniquedentairedabia/?locale=fr_FR",
         "https://www.instagram.com/clinique_dentaire_dabia/",
@@ -87,7 +86,7 @@ export default function LocalitePage({
   ];
 
   return (
-    <section className="py-20 px-4 max-w-6xl mx-auto mt-20">
+    <section className="page-shell px-4 max-w-6xl mx-auto">
       <Seo
         title={title}
         description={description}
@@ -98,7 +97,7 @@ export default function LocalitePage({
       <Breadcrumbs
         items={[
           { label: "Accueil", href: "/" },
-          { label: `Dentiste ${quartier}` },
+          { label: `Dentiste près de ${quartier}` },
         ]}
       />
       <motion.h1
@@ -107,7 +106,7 @@ export default function LocalitePage({
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
       >
-        Dentiste {prep} {quartier}
+        Votre dentiste près de {quartier}
       </motion.h1>
       <motion.p
         className="mt-3 text-gray-700 max-w-3xl"
@@ -190,10 +189,10 @@ export default function LocalitePage({
           </Link>
           <span className="text-gray-300">•</span>
           <Link
-            to="/blog/urgence-dentiste-dakar-24-24-nuit-weekend"
+            to="/blog/urgence-dentaire-nuit-weekend-dakar"
             className="text-[#bb2988] underline hover:text-[#9b2170]"
           >
-            Urgence dentaire 24/24
+            Urgence la nuit ou le week-end : les gestes utiles
           </Link>
           <span className="text-gray-300">•</span>
           <Link
@@ -204,7 +203,7 @@ export default function LocalitePage({
           </Link>
           <span className="text-gray-300">•</span>
           <Link
-            to="/blog/appareil-dentaire-prix-dakar-guide-complet"
+            to="/blog/prix-appareil-dentaire-dakar-senegal"
             className="text-[#bb2988] underline hover:text-[#9b2170]"
           >
             Prix appareil dentaire
@@ -220,7 +219,7 @@ export default function LocalitePage({
       {faq.length > 0 && (
         <section className="mt-8">
           <h2 className="text-2xl font-bold text-[#ad9d64] mb-4">
-            Questions fréquentes — Dentiste {prep} {quartier}
+            Questions fréquentes — Dentiste près de {quartier}
           </h2>
           <div className="space-y-3">
             {faq.map((f, i) => (

@@ -186,7 +186,7 @@ const PostVisite = () => {
   ];
 
   return (
-    <section className="py-16 px-4 max-w-6xl mx-auto mt-20">
+    <section className="page-shell px-4 max-w-6xl mx-auto">
       <Seo
         title="Conseils post‑opération – Clinique Dentaire DABIA (Dakar)"
         description="Recommandations après vos soins dentaires : extraction, chirurgie, implant, détartrage, orthodontie, prothèses."

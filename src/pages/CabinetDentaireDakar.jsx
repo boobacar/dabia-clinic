@@ -54,7 +54,7 @@ export default function CabinetDentaireDakar() {
   };
 
   return (
-    <section className="py-20 px-4 max-w-7xl mx-auto mt-20">
+    <section className="page-shell px-4 max-w-7xl mx-auto">
       <Seo
         title="Dentiste à Dakar | Urgences, Implants, Prothèses | DABIA"
         description="Recherchez un dentiste à Dakar ? Cabinet DABIA : urgence dentaire, implants, prothèses. Devis transparent, RDV rapide. Appelez ou réservez en ligne !"
@@ -178,13 +178,13 @@ export default function CabinetDentaireDakar() {
           Ressources pratiques avant votre rendez-vous
         </h2>
         <div className="mt-3 grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
-          <Link className="underline text-[#bb2988]" to="/blog/dentiste-dakar-prix-consultation-2026">
+          <Link className="underline text-[#bb2988]" to="/blog/prix-consultation-dentiste-dakar-combien-prevoir-2026">
             Tarif dentiste Dakar : guide pratique
           </Link>
           <Link className="underline text-[#bb2988]" to="/blog/guide-prix-dentiste-dakar-consultation-soins">
             Guide prix consultation et soins
           </Link>
-          <Link className="underline text-[#bb2988]" to="/blog/clinique-dentaire-dakar-comment-choisir">
+          <Link className="underline text-[#bb2988]" to="/blog/comment-choisir-meilleur-dentiste-dakar">
             Bien choisir sa clinique dentaire à Dakar
           </Link>
           <Link className="underline text-[#bb2988]" to="/clinique-dentaire-dakar">

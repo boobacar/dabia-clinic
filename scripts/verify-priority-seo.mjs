@@ -149,6 +149,23 @@ assert.ok(
   "Chaque shell SEO doit être marqué avant sa sauvegarde",
 );
 assert.ok(
+  shells.includes('data-seo-shell-cleanup="true"'),
+  "Chaque shell SEO doit inclure un nettoyage visuel synchrone",
+);
+assert.ok(
+  shells.includes('data-seo-shell-guard="true"'),
+  "Chaque shell SEO doit être masqué avant le premier rendu navigateur",
+);
+assert.ok(
+  shells.includes("<noscript>"),
+  "Le shell SEO doit rester visible lorsque JavaScript est désactivé",
+);
+assert.ok(
+  shells.includes("root.replaceChildren();") &&
+    shells.includes('root.removeAttribute("data-seo-shell-root")'),
+  "Le shell visible doit être retiré avant le premier rendu React",
+);
+assert.ok(
   mainEntry.includes('import { removeSeoShellHead } from "./utils/seoHead"'),
   "L’entrée React doit importer le retrait pré-montage des balises shell",
 );

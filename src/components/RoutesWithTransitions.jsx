@@ -2,6 +2,7 @@ import React, { useEffect, useState, lazy } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "../pages/Home"; // Static import for LCP
 import BlogPostShell from "../pages/BlogPostShell";
+import ScrollManager from "./ScrollManager";
 
 // lazy routes (reuse same imports as App.jsx)
 // removed const Home = lazy...
@@ -64,8 +65,10 @@ export default function RoutesWithTransitions() {
   }, [location.pathname]);
 
   return (
-    <Routes location={displayLocation} key={displayLocation.pathname}>
-      <Route path="/" element={<Home />} />
+    <>
+      <ScrollManager location={displayLocation} />
+      <Routes location={displayLocation} key={displayLocation.pathname}>
+        <Route path="/" element={<Home />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/blog/tag/:tagSlug" element={<BlogTag />} />
       <Route path="/apropos" element={<APropos />} />
@@ -127,7 +130,8 @@ export default function RoutesWithTransitions() {
       <Route path="/cabinet-dentaire-fann" element={<LocaliteFann />} />
       <Route path="/cabinet-dentaire-plateau" element={<LocalitePlateau />} />
       <Route path="/galerie" element={<Galerie />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </>
   );
 }

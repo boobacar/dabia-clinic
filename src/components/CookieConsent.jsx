@@ -55,7 +55,7 @@ export default function CookieConsent() {
           "pointer-events-auto w-full max-w-[780px] rounded-xl border px-4 py-2 transition-all duration-200 " +
           (showManage
             ? "border-gray-200 bg-white shadow-lg shadow-gray-900/10"
-            : "border-gray-200 bg-white/90 backdrop-blur-md shadow-md shadow-gray-900/5")
+            : "border-[#ded4cc] bg-[#fffdf9] shadow-md shadow-gray-900/5")
         }
       >
         <div className="flex flex-wrap items-center gap-3 justify-between">
@@ -87,7 +87,7 @@ export default function CookieConsent() {
               Tout refuser
             </button>
             <button
-              className="px-3.5 py-1 text-[12px] font-semibold rounded-full bg-[#75642e] text-white hover:shadow-sm transition"
+              className="px-3.5 py-1 text-[12px] font-semibold rounded-full bg-[#d03088] text-white hover:bg-[#a91f6c] transition"
               onClick={() => {
                 const state = { analytics: true };
                 localStorage.setItem(LS_KEY, JSON.stringify(state));
