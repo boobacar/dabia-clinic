@@ -2172,14 +2172,14 @@ export const POSTS = [
 
   {
     slug: "urgence-dentiste-dakar-24-24-nuit-weekend",
-    title: "Urgence dentaire à Dakar la nuit ou le week-end : que faire ?",
+    title: "Urgence dentiste à Dakar 24/24 : nuit, week-end et jours fériés",
     description:
-      "Douleur pulsatile, gonflement ou dent cassée : les gestes immédiats, les signes d’alerte et comment contacter la Clinique DABIA dès que possible.",
+      "Douleur pulsatile, gonflement, dent cassée : les gestes immédiats et comment trouver un dentiste d’urgence à Dakar, même la nuit ou le week-end.",
     date: "2026-01-15",
     category: "Urgences",
     tags: [
       "urgence dentaire dakar",
-      "urgence dentaire nuit dakar",
+      "dentiste dakar 24/24",
       "dentiste nuit dakar",
       "dentiste weekend dakar",
     ],
