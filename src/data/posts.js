@@ -152,89 +152,7 @@ export const POSTS = [
     cover: choisirDentisteCover,
     pinned: true,
     readingMinutes: 7,
-    content: `Quand on tape **dentiste Dakar près de moi**, on veut souvent une réponse rapide : un cabinet accessible, sérieux, disponible et capable d’expliquer clairement le traitement. Mais la proximité seule ne suffit pas. Le bon choix dépend aussi de l’urgence, du type de soin, du plateau technique et de la qualité du suivi.
-
-Ce guide vous aide à choisir un **dentiste à Dakar** avec des critères simples, surtout si vous êtes autour de **Liberté 6**, **Sicap Foire**, **Parcelles Assainies**, **VDN**, **Yoff**, **Ngor** ou **Almadies**.
-
-## 1) Vérifier l’accès réel au cabinet
-
-Un cabinet peut être proche sur Google Maps mais compliqué à rejoindre aux heures de trafic. Avant de réserver, vérifiez :
-
-- le quartier exact ;
-- l’accès en taxi ou transport ;
-- la possibilité de stationner ;
-- les horaires compatibles avec votre disponibilité ;
-- le numéro à appeler en cas de retard ou d’urgence.
-
-La Clinique Dentaire DABIA est située à **Sicap Foire, 2 voies Liberté 6**, à proximité de la VDN et des Parcelles Assainies. La page principale **[Dentiste Dakar](/dentiste-dakar)** détaille l’adresse, les contacts et les accès.
-
-## 2) Adapter le choix au problème dentaire
-
-Tous les rendez-vous ne demandent pas la même organisation.
-
-### Si vous avez mal maintenant
-
-Pour une rage de dent, un abcès, une dent cassée ou un gonflement, l’objectif est d’être orienté rapidement. Consultez la page **[urgence dentaire à Dakar](/urgence-dentaire-dakar)** ou appelez avant de vous déplacer.
-
-### Si vous voulez un bilan
-
-Pour un contrôle, un détartrage, une carie ou un second avis, cherchez surtout un cabinet qui prend le temps d’examiner, d’expliquer et de prioriser les soins.
-
-### Si vous préparez un traitement important
-
-Implant, orthodontie, prothèse, facettes ou blanchiment demandent un plan clair : diagnostic, alternatives, étapes, durée et devis.
-
-## 3) Regarder les preuves de sérieux
-
-Un bon cabinet dentaire à Dakar doit inspirer confiance avant même le premier rendez-vous. Les signaux utiles :
-
-- des horaires et contacts à jour ;
-- des avis Google récents et des réponses du cabinet ;
-- une adresse cohérente sur le site, Google Maps et les annuaires ;
-- des explications claires sur les soins proposés ;
-- des photos réelles du cabinet ou de l’équipe ;
-- une page dédiée aux assurances ou IPM si vous en utilisez une.
-
-## 4) Ne pas choisir uniquement sur le prix
-
-Le prix est important, mais un devis dentaire dépend du diagnostic. Deux douleurs similaires peuvent nécessiter des traitements très différents. Pour comparer correctement, demandez :
-
-1. ce qui est inclus dans la consultation ;
-2. si une radio est nécessaire ;
-3. quelles sont les options possibles ;
-4. combien de séances sont prévues ;
-5. quelles garanties ou contrôles sont inclus après le soin.
-
-Pour préparer votre budget, lisez aussi **[Prix consultation dentiste à Dakar](/blog/prix-consultation-dentiste-dakar-combien-prevoir-2026)**.
-
-## 5) Penser au suivi après le soin
-
-Le suivi fait souvent la différence. Après une extraction, une couronne, un implant ou un traitement de gencive, vous devez savoir :
-
-- quoi faire si la douleur augmente ;
-- quand revenir au contrôle ;
-- comment entretenir la zone traitée ;
-- quel numéro appeler si un problème apparaît.
-
-Un cabinet fiable ne se limite pas à l’acte technique : il accompagne le patient avant, pendant et après le soin.
-
-## 6) Les quartiers à cibler selon votre position
-
-Si vous cherchez un dentiste proche :
-
-- **Liberté 6 / Sicap Foire** : accès rapide vers la clinique DABIA ;
-- **Parcelles Assainies** : pratique via VDN ;
-- **Yoff / Ngor / Almadies** : accès possible en passant par les grands axes ;
-- **Mermoz / Sacré-Cœur / Point E** : temps de trajet raisonnable selon l’heure ;
-- **Plateau** : anticipez davantage le trafic.
-
-Vous pouvez consulter les pages locales : **[Dentiste Liberté 6](/cabinet-dentaire-liberte-6)** et **[Clinique dentaire Parcelles Assainies](/clinique-dentaire-parcelles-assainies)**.
-
-## À retenir
-
-Pour choisir un **dentiste à Dakar**, ne vous arrêtez pas au résultat le plus proche. Cherchez un cabinet accessible, transparent, bien équipé, avec des avis récents et une vraie capacité de suivi.
-
-Besoin d’un rendez-vous ? Passez par la page **[Dentiste Dakar](/dentiste-dakar)** ou réservez directement via **[prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Quel dentiste choisir à Dakar si j’ai une urgence ?",
@@ -269,74 +187,7 @@ Besoin d’un rendez-vous ? Passez par la page **[Dentiste Dakar](/dentiste-daka
     cover: cbctCover,
     pinned: true,
     readingMinutes: 11,
-    content: `Vous avez une **douleur de la mâchoire** à Dakar, surtout le matin ou en fin de journée ? Beaucoup de patients pensent d’abord à une carie. En réalité, la source peut être **l’articulation temporo-mandibulaire (ATM)**, le **bruxisme** (grincement des dents), une dent fissurée, ou un mélange des trois.
-
-Ce guide vous aide à comprendre les signaux utiles avant la consultation.
-
-## ATM, bruxisme ou dent : les signes qui orientent
-
-### 1) Plutôt ATM (articulation)
-- Douleur près de l’oreille
-- Craquement/claquement à l’ouverture de bouche
-- Sensation de blocage en bâillant
-- Fatigue des muscles de la mâchoire en parlant longtemps
-
-### 2) Plutôt bruxisme (grincement/serrement)
-- Douleur ou tension au réveil
-- Maux de tête temporaux matinaux
-- Dents usées/plates
-- Sensibilité diffuse sur plusieurs dents
-
-### 3) Plutôt douleur dentaire locale
-- Douleur déclenchée par le froid, le chaud ou la mastication
-- Douleur sur une dent précise
-- Gonflement gingival localisé
-- Douleur pulsatile en continu
-
-## Pourquoi ne pas attendre
-Une ATM inflammatoire non prise en charge peut entretenir des douleurs chroniques. Le bruxisme non traité accélère l’usure dentaire et peut fissurer des dents. Une douleur dentaire infectieuse peut, elle, évoluer en urgence.
-
-## Le bilan recommandé à la clinique
-Le diagnostic utile combine :
-1. interrogatoire ciblé (horaire de la douleur, habitudes de serrage, stress, sommeil) ;
-2. examen clinique des dents, muscles et articulation ;
-3. imagerie selon besoin (radio panoramique, parfois CBCT).
-
-À la Clinique DABIA, l’objectif est de séparer ce qui relève de l’occlusion, du muscle, de l’articulation et de la dent.
-
-## Solutions de traitement selon la cause
-
-### Si ATM / tension musculaire
-- mesures anti-inflammatoires et repos articulaire temporaire ;
-- adaptation alimentaire sur quelques jours (textures souples) ;
-- exercices de relâchement et hygiène mandibulaire.
-
-### Si bruxisme
-- gouttière nocturne personnalisée ;
-- ajustements occlusaux si indiqués ;
-- stratégie de réduction des facteurs aggravants (stress, caféine tardive, manque de sommeil).
-
-### Si cause dentaire
-- traitement ciblé de la dent (carie, fissure, endodontie, extraction selon cas) ;
-- gestion rapide de la douleur et prévention de l’infection.
-
-## Signes d’alerte = consultation rapide
-- douleur qui s’aggrave malgré antalgiques ;
-- difficulté à ouvrir la bouche ;
-- gonflement, fièvre, douleur pulsatile nocturne ;
-- traumatisme récent de la mâchoire ou dentaire.
-
-En cas de doute, vous pouvez passer par la page **[urgence dentaire à Dakar](/urgence-dentaire-dakar)**.
-
-## Budget et plan de soins
-Le coût dépend du diagnostic final : une gouttière, une prise en charge ATM simple et un traitement dentaire n’ont pas le même devis. L’important est de poser le bon diagnostic en premier, pour éviter des actes inutiles.
-
-## À retenir
-- La douleur de mâchoire n’est pas toujours “une dent”.
-- ATM, bruxisme et douleur dentaire peuvent coexister.
-- Un bilan structuré permet un traitement plus rapide et plus durable.
-
-Besoin d’un diagnostic précis ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Comment savoir si je grince des dents la nuit ?",
@@ -370,68 +221,7 @@ Besoin d’un diagnostic précis ? **[Prendre rendez-vous](/rendez-vous)**.`,
     author: AUTHORS.sao,
     cover: gingiviteTraitementCover,
     readingMinutes: 12,
-    content: `Un **saignement des gencives** au brossage n’est pas “normal”. C’est souvent un signal d’inflammation débutante. La bonne nouvelle : pris tôt, ce problème se corrige très bien.
-
-## Les 9 causes les plus fréquentes
-1. Plaque dentaire accumulée au collet des dents  
-2. Tartre sous-gingival non retiré  
-3. Technique de brossage agressive  
-4. Brosse trop dure ou usée  
-5. Fil dentaire mal utilisé (traumatisme)  
-6. Tabac  
-7. Diabète mal équilibré  
-8. Variations hormonales (grossesse, post-partum)  
-9. Gingivite évoluant vers parodontite
-
-## Ce qu’il faut faire immédiatement
-- Continuer l’hygiène (arrêter de brosser aggrave l’inflammation)
-- Passer à une brosse souple
-- Brosser 2 fois/jour pendant 2 minutes
-- Nettoyer les espaces interdentaires quotidiennement
-- Programmer un bilan gingival si le saignement persiste > 7 jours
-
-## Les erreurs fréquentes qui entretiennent le problème
-- “J’attends que ça passe”
-- Brossage horizontal trop fort
-- Rinçages antiseptiques prolongés sans suivi
-- Détartrages trop espacés malgré facteurs de risque
-
-## Plan d’action 30 jours (simple et efficace)
-
-### Semaine 1
-- brossage doux matin/soir
-- fil/brossettes chaque soir
-- diminution du sucre collant entre les repas
-
-### Semaine 2
-- correction de technique avec un professionnel
-- évaluation de la sensibilité et des zones qui saignent
-
-### Semaine 3
-- détartrage si indiqué
-- adaptation de fréquence de maintenance (3, 6, 9 ou 12 mois)
-
-### Semaine 4
-- contrôle : disparition du saignement ? stabilité ?  
-- ajustement personnalisé du protocole
-
-## Quand suspecter une parodontite
-- mauvaise haleine persistante
-- mobilité dentaire
-- sensation de dents qui “s’allongent”
-- saignement spontané (sans brossage)
-
-Dans ce cas, un traitement parodontal précoce protège durablement vos dents.
-
-## Impact sur le budget santé
-Traiter tôt une gingivite coûte nettement moins que gérer une parodontite avancée, qui peut nécessiter plusieurs soins et restaurations. Une consultation motivée par un détartrage permet parfois de détecter une inflammation gingivale qui demande une prise en charge plus complète.
-
-## À retenir
-- Le saignement gingival est un signal d’alerte utile.
-- Une routine correcte + détartrage au bon rythme changent tout.
-- Plus on agit tôt, plus la prise en charge est simple.
-
-Pour un bilan personnalisé, **[prenez rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Mes gencives saignent seulement quand je passe le fil, est-ce grave ?",
@@ -465,67 +255,7 @@ Pour un bilan personnalisé, **[prenez rendez-vous](/rendez-vous)**.`,
     author: AUTHORS.sao,
     cover: protheseCover,
     readingMinutes: 10,
-    content: `Vous devez poser une **couronne dentaire** et vous hésitez entre céramique et zircone ? Le bon choix dépend de la dent concernée, de votre occlusion, de vos attentes esthétiques et de votre budget.
-
-## Les options les plus utilisées
-
-### 1) Céramique (tout céramique)
-- excellente esthétique (translucidité naturelle)
-- très adaptée aux dents visibles (incisives/prémolaires)
-- nécessite une préparation rigoureuse
-
-### 2) Zircone
-- très haute résistance mécanique
-- bonne esthétique (surtout zircone multicouche récente)
-- souvent privilégiée sur secteurs postérieurs ou contraintes fortes
-
-### 3) Métal-céramique
-- solution éprouvée et robuste
-- esthétique correcte mais parfois moins naturelle au collet
-- option parfois retenue selon contexte clinique/économique
-
-## Comment décider intelligemment
-Le praticien évalue :
-1. position de la dent (zone très visible ou non) ;
-2. intensité des forces de mastication ;
-3. présence de bruxisme ;
-4. état de la dent support (volume, vitalité, antécédents endodontiques).
-
-## Durée de vie : ce qui change vraiment
-Une couronne peut durer de nombreuses années si :
-- l’adaptation marginale est précise ;
-- l’hygiène est régulière (brosse + nettoyage interdentaire) ;
-- les contrôles sont faits au bon rythme ;
-- le bruxisme est protégé (gouttière si besoin).
-
-Ce n’est pas seulement le “matériau” qui détermine la durée, mais surtout l’indication et la maintenance.
-
-## Prix des couronnes à Dakar : pourquoi ça varie
-Le devis dépend de :
-- type de matériau ;
-- complexité de la préparation ;
-- besoin éventuel de reconstitution préalable ;
-- exigences esthétiques ;
-- laboratoire et protocole de fabrication.
-
-Le plus rentable reste d’éviter les reprises : une couronne bien indiquée et bien entretenue coûte moins à long terme.
-
-## Couronne et dent dévitalisée
-Après traitement canalaire, la dent est plus fragile. Une couronne peut être recommandée pour réduire le risque de fracture, selon la perte de substance.
-
-## Signes qu’il faut recontrôler rapidement
-- douleur à la mastication persistante ;
-- sensation de couronne “haute” ;
-- saignement gingival au collet ;
-- mauvaise haleine localisée ;
-- douleur thermique inhabituelle.
-
-## À retenir
-- Céramique : priorité esthétique.
-- Zircone : priorité résistance (avec bonne esthétique moderne).
-- Le bon choix est clinique, pas marketing.
-
-Besoin d’un avis personnalisé et d’un devis clair ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "La zircone est-elle toujours meilleure que la céramique ?",
@@ -559,67 +289,7 @@ Besoin d’un avis personnalisé et d’un devis clair ? **[Prendre rendez-vous]
     author: AUTHORS.sao,
     cover: premierRdvCover,
     readingMinutes: 12,
-    content: `Chez l’enfant, l’orthodontie ne commence pas toujours par des bagues. Le vrai sujet est **le bon moment** et **le bon type d’appareil** selon la croissance.
-
-## Âge idéal : ce que recommandent les praticiens
-Un premier bilan orthodontique est utile vers **7 ans**.  
-Pourquoi si tôt ? Parce que certaines anomalies se corrigent mieux pendant la croissance (mâchoire étroite, décalage de morsure, habitudes oro-faciales).
-
-## Les principales options
-
-### 1) Orthodontie interceptive (enfant)
-- appareils d’expansion ;
-- guides de croissance ;
-- correction précoce de certaines malocclusions.
-
-### 2) Appareil fixe (adolescent)
-- bagues métalliques ou céramiques ;
-- corrections précises en denture permanente.
-
-### 3) Aligneurs (cas sélectionnés)
-- option discrète ;
-- nécessite une excellente observance.
-
-## Comment savoir si un bilan est nécessaire
-Signes fréquents :
-- dents très chevauchées ;
-- incisives très en avant ;
-- morsure croisée ;
-- respiration buccale chronique ;
-- succion pouce/tétine prolongée ;
-- difficultés de mastication ou d’élocution.
-
-## Coût à Dakar : de quoi dépend le devis
-- type d’appareil ;
-- complexité du cas ;
-- durée estimée du traitement ;
-- fréquence des contrôles ;
-- phases de contention en fin de traitement.
-
-Le budget est mieux maîtrisé quand on anticipe tôt, avant que les corrections deviennent plus lourdes.
-
-## Durée moyenne d’un traitement
-- phase interceptive : souvent 6 à 12 mois ;
-- phase multi-attaches/aligneurs : souvent 12 à 24 mois ;
-- contention : indispensable pour stabiliser.
-
-## Le rôle des parents (facteur clé de réussite)
-- présence aux rendez-vous ;
-- hygiène stricte avec appareil ;
-- respect des consignes alimentaires ;
-- surveillance du port des dispositifs amovibles.
-
-## Erreurs à éviter
-- attendre la dentition complète malgré des signes précoces ;
-- arrêter le traitement dès “amélioration visible” ;
-- négliger la contention après dépose.
-
-## À retenir
-- Un dépistage à 7 ans peut éviter des traitements plus complexes.
-- Tous les enfants n’ont pas besoin de bagues immédiatement.
-- La réussite dépend autant du suivi que de l’appareil choisi.
-
-Pour un bilan enfant/adolescent, **[prenez rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Mon enfant est jeune, faut-il déjà consulter en orthodontie ?",
@@ -653,59 +323,7 @@ Pour un bilan enfant/adolescent, **[prenez rendez-vous](/rendez-vous)**.`,
     author: AUTHORS.sao,
     cover: implantCover,
     readingMinutes: 11,
-    content: `La question revient souvent : **“Je fume, puis-je faire un implant dentaire ?”**  
-Oui, c’est possible dans certains cas, mais le tabac augmente les risques biologiques. Le succès dépend alors d’un protocole plus strict.
-
-## Pourquoi le tabac complique l’implantologie
-Le tabac peut :
-- ralentir la cicatrisation ;
-- réduire la vascularisation locale ;
-- augmenter l’inflammation gingivale ;
-- majorer le risque de péri-implantite à moyen/long terme.
-
-En pratique, le risque n’est pas “tout ou rien” : il varie selon la consommation, l’hygiène et la qualité du suivi.
-
-## Évaluation pré-implantaire chez un fumeur
-Avant décision, il faut :
-1. bilan clinique gingival/parodontal ;
-2. imagerie 3D (si nécessaire) pour évaluer volume osseux ;
-3. estimation du risque personnalisé (quantité de tabac, stabilité gingivale, antécédents).
-
-## Conditions qui améliorent le pronostic
-- réduction du tabac avant/après chirurgie ;
-- hygiène bucco-dentaire rigoureuse ;
-- traitement des inflammations gingivales avant implant ;
-- visites de maintenance régulières ;
-- gouttière nocturne si bruxisme associé.
-
-## Période critique autour de l’intervention
-Les jours avant et après la pose sont stratégiques. Une diminution nette, voire un arrêt temporaire, améliore la cicatrisation et la stabilité initiale.
-
-## Alternatives si le risque est jugé élevé
-Selon le cas, on peut discuter :
-- bridge (sur dents adjacentes) ;
-- prothèse partielle ;
-- temporisation avant implantation après stabilisation gingivale.
-
-L’objectif est toujours le même : **solution durable**, pas seulement rapide.
-
-## Signes d’alerte après pose d’implant
-- saignement gingival persistant ;
-- douleur croissante au-delà de la période attendue ;
-- mauvaise haleine localisée ;
-- mobilité/sensation inhabituelle.
-
-Une réaction précoce permet souvent d’éviter une complication plus lourde.
-
-## Coût global : penser long terme
-Un implant mal indiqué ou mal maintenu coûte plus cher qu’un plan bien préparé. Chez le fumeur, la qualité du suivi est aussi importante que l’acte lui-même.
-
-## À retenir
-- Fumer n’interdit pas toujours l’implant, mais augmente le niveau d’exigence.
-- Le succès repose sur sélection des cas + discipline post-opératoire.
-- Un plan alternatif doit toujours être discuté.
-
-Pour une évaluation personnalisée, **[prenez rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Dois-je arrêter totalement de fumer pour poser un implant ?",
@@ -739,28 +357,7 @@ Pour une évaluation personnalisée, **[prenez rendez-vous](/rendez-vous)**.`,
     cover: prixSoinsCover,
     pinned: true,
     readingMinutes: 8,
-    content: `Vous prenez rendez-vous pour une première consultation chez un **dentiste à Dakar** ? Le vrai enjeu est de comprendre ce que vous payez et ce que vous obtenez.
-
-## Ce que comprend généralement la première visite
-- Examen clinique complet
-- Évaluation de la douleur ou du motif principal
-- Vérification gencives/dents/occlusion
-- Prescription ou réalisation de radio si nécessaire
-- Plan de traitement priorisé
-
-## Pourquoi le tarif peut varier
-Le prix dépend du niveau de complexité, du besoin d’imagerie et du temps clinique requis.
-
-## Le bon réflexe avant de commencer les soins
-Demandez un plan clair en 3 étapes :
-1. urgence à traiter,
-2. soins indispensables,
-3. soins de confort/esthétique.
-
-## En résumé
-Une bonne consultation n’est pas seulement un “prix”, c’est un diagnostic précis qui vous évite des dépenses mal orientées.
-
-Besoin d’un bilan personnalisé ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       { q: "Le prix inclut-il toujours la radio ?", a: "Pas forcément. L’imagerie est souvent facturée selon le type d’examen nécessaire." },
       { q: "Peut-on repartir avec un devis détaillé ?", a: "Oui, c’est recommandé pour comparer et planifier sereinement les soins." },
@@ -783,29 +380,7 @@ Besoin d’un bilan personnalisé ? **[Prendre rendez-vous](/rendez-vous)**.`,
     author: AUTHORS.sao,
     cover: urgenceNuitCover,
     readingMinutes: 7,
-    content: `En cas de **rage de dent** ou d’**abcès**, chaque heure compte. Le bon objectif est de limiter la douleur sans aggraver la situation.
-
-## Les bons réflexes immédiats
-- Prendre un antalgique adapté
-- Rincer doucement à l’eau tiède salée
-- Appliquer du froid sur la joue
-- Éviter de mâcher du côté douloureux
-
-## Signes qui imposent une consultation rapide
-- Gonflement visible de la joue
-- Fièvre associée
-- Douleur qui empêche de dormir
-- Difficulté à ouvrir la bouche
-
-## Ce qu’il faut éviter
-- Antibiotiques sans prescription
-- Poser de l’aspirine sur la gencive
-- Reporter de plusieurs jours
-
-## En résumé
-Une urgence dentaire bien gérée tôt évite souvent un traitement plus lourd et plus coûteux.
-
-Besoin d’une prise en charge rapide ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       { q: "Une douleur qui baisse peut-elle cacher un problème grave ?", a: "Oui. L’infection peut continuer malgré une accalmie temporaire." },
       { q: "Dois-je aller aux urgences générales ?", a: "En cas de fièvre élevée, malaise ou gonflement important, oui. Sinon un cabinet dentaire urgent est prioritaire." },
@@ -829,26 +404,7 @@ Besoin d’une prise en charge rapide ? **[Prendre rendez-vous](/rendez-vous)**.
     cover: detartragePreventifCover,
     pinned: true,
     readingMinutes: 8,
-    content: `Le **détartrage** est l’un des soins les plus rentables en prévention : il coûte peu comparé à une parodontite avancée.
-
-## Quelle fréquence selon votre profil ?
-- Risque faible : tous les 12 mois
-- Risque modéré : tous les 6 à 9 mois
-- Risque élevé : tous les 3 à 6 mois
-
-## Facteurs de risque à surveiller
-- Saignement des gencives
-- Tabac
-- Diabète mal équilibré
-- Tendance au tartre rapide
-
-## Pourquoi le prix varie
-La durée du soin et la profondeur de l’inflammation gingivale influencent le devis.
-
-## En résumé
-Le “bon timing” du détartrage n’est pas standard : il doit être personnalisé.
-
-Pour un bilan prévention : **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       { q: "Le détartrage abîme-t-il les dents ?", a: "Non, réalisé correctement, il retire le tartre sans endommager l’émail." },
       { q: "Faut-il attendre d’avoir mal ?", a: "Non, le détartrage est un soin préventif, pas un soin de crise." },
@@ -871,29 +427,7 @@ Pour un bilan prévention : **[Prendre rendez-vous](/rendez-vous)**.`,
     author: AUTHORS.sao,
     cover: implantCoutCover,
     readingMinutes: 9,
-    content: `Le prix d’un **implant dentaire** ne se résume pas à “la vis”. Le coût final dépend surtout de la qualité du diagnostic et du suivi.
-
-## Les 4 blocs d’un devis implant
-1. Bilan clinique + imagerie 3D
-2. Chirurgie implantaire
-3. Pilier + couronne
-4. Contrôles et maintenance
-
-## Pourquoi deux devis peuvent être très différents
-- Marque/qualité des composants
-- Besoin (ou non) de greffe osseuse
-- Complexité du cas
-- Niveau de suivi inclus
-
-## Erreurs à éviter
-- Choisir uniquement le prix le plus bas
-- Ignorer ce qui est inclus/exclu
-- Négliger les contrôles post-op
-
-## En résumé
-Un implant durable est un investissement de qualité, pas une simple course au tarif le plus bas.
-
-Pour savoir si vous êtes éligible : **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       { q: "Peut-on poser un implant à tout le monde ?", a: "Non. Un bilan osseux et médical est indispensable avant décision." },
       { q: "Combien de temps dure le traitement complet ?", a: "Selon le cas, de quelques semaines à plusieurs mois." },
@@ -916,25 +450,7 @@ Pour savoir si vous êtes éligible : **[Prendre rendez-vous](/rendez-vous)**.`,
     author: AUTHORS.sao,
     cover: enfantCover,
     readingMinutes: 8,
-    content: `La prévention dentaire chez l’enfant commence tôt. À Dakar, beaucoup de caries peuvent être évitées avec trois habitudes simples.
-
-## Quand faire la première visite ?
-Idéalement vers 1 an, puis un suivi régulier selon le risque carieux.
-
-## Les 3 leviers les plus efficaces
-- Brossage 2x/jour avec dentifrice fluoré adapté
-- Limiter grignotages et boissons sucrées
-- Contrôle périodique même sans douleur
-
-## Signes d’alerte chez l’enfant
-- Taches blanches/brunes
-- Douleur au froid ou au sucré
-- Mauvaise haleine persistante
-
-## En résumé
-Plus la prévention démarre tôt, moins les soins seront lourds ensuite.
-
-Pour un bilan pédiatrique : **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       { q: "Les dents de lait doivent-elles être soignées ?", a: "Oui, elles guident les dents définitives et évitent douleur/infection." },
       { q: "Mon enfant n’a pas mal, faut-il quand même consulter ?", a: "Oui, beaucoup de caries débutent sans douleur visible." },
@@ -958,33 +474,7 @@ Pour un bilan pédiatrique : **[Prendre rendez-vous](/rendez-vous)**.`,
     cover: guideTarifsCover,
     pinned: true,
     readingMinutes: 9,
-    content: `Quand on cherche un **dentiste à Dakar**, la première question est souvent : « combien ça coûte ? ». Ce guide vous aide à comprendre les principaux postes de dépense et à mieux préparer votre plan de soins.
-
-## Quels actes influencent le budget ?
-- Consultation initiale et bilan
-- Radiographie (panoramique/CBCT selon le cas)
-- Détartrage et prévention
-- Soin de carie ou dévitalisation
-- Extraction simple ou complexe
-- Prothèse/implant selon les besoins
-
-## Pourquoi les tarifs varient ?
-Le prix dépend de la complexité du cas, du temps clinique, des matériaux utilisés et des examens nécessaires au diagnostic.
-
-## Comment payer moins cher à long terme
-- Consulter tôt au lieu d’attendre l’urgence
-- Faire un contrôle régulier
-- Respecter les plans d’entretien
-- Demander un devis détaillé avant les actes importants
-
-## En résumé
-Le bon choix n’est pas le « moins cher », mais le **meilleur rapport sécurité–durabilité–résultat**.
-
-### À lire aussi
-- [Guide tarifaire des soins dentaires à Dakar](/blog/guide-tarifs-dentiste-dakar-2025)
-- [Devis dentaire à Dakar : comment lire et comparer](/blog/devis-dentaire-dakar-comprendre-tarifs)
-
-Besoin d’une estimation personnalisée ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       { q: "Un devis est-il obligatoire ?", a: "Oui pour les plans de soins importants, il est fortement recommandé d’avoir un devis écrit et expliqué." },
       { q: "Une urgence coûte-t-elle plus cher ?", a: "Souvent oui, car elle nécessite des actes immédiats et parfois plus complexes qu’un soin précoce." },
@@ -1008,30 +498,7 @@ Besoin d’une estimation personnalisée ? **[Prendre rendez-vous](/rendez-vous)
     cover: gingiviteCover,
     pinned: true,
     readingMinutes: 8,
-    content: `Des **gencives qui saignent** ne sont jamais « normales ». À Dakar, ce symptôme est le plus souvent lié à une inflammation gingivale (gingivite) qui peut évoluer vers une atteinte plus profonde si elle n’est pas traitée.
-
-## Causes les plus fréquentes
-- Plaque dentaire et tartre accumulés
-- Brossage insuffisant ou technique inadaptée
-- Tabac, stress, variations hormonales
-- Maladies générales (ex. diabète mal équilibré)
-
-## Quand consulter rapidement
-- Saignement quotidien > 7 jours
-- Gencives gonflées, douloureuses ou mauvaise haleine persistante
-- Mobilité dentaire ou sensibilité anormale
-
-## Traitement en cabinet
-Le traitement repose sur un détartrage/polissage, des conseils personnalisés d’hygiène et un suivi de contrôle.
-
-## En résumé
-Traiter tôt une gingivite évite des soins plus lourds et protège vos dents sur le long terme.
-
-### À lire aussi
-- [Gingivite : causes, symptômes et traitement](/blog/gencives-qui-saignent-gingivite-dakar)
-- [Détartrage dentaire à Dakar : prix et fréquence](/blog/detartrage-dentaire-dakar-prix-frequence)
-
-Pour un bilan gingival complet : **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       { q: "Le saignement peut-il disparaître seul ?", a: "Parfois temporairement, mais la cause persiste souvent sans traitement professionnel." },
       { q: "Le détartrage fait-il mal ?", a: "Il est généralement bien toléré. Une légère sensibilité transitoire peut apparaître." },
@@ -1054,29 +521,7 @@ Pour un bilan gingival complet : **[Prendre rendez-vous](/rendez-vous)**.`,
     author: AUTHORS.sao,
     cover: appareilPrixCover,
     readingMinutes: 9,
-    content: `Il n’y a pas d’âge pour aligner son sourire. L’**orthodontie adulte à Dakar** propose aujourd’hui plusieurs solutions selon vos objectifs esthétiques et fonctionnels.
-
-## Les options principales
-- Bagues métalliques : robustes et efficaces
-- Bagues céramiques : plus discrètes
-- Aligneurs transparents : confort et esthétique
-
-## Ce qui détermine la durée
-- Complexité du décalage dentaire
-- Régularité du port des dispositifs
-- Qualité du suivi clinique
-
-## Budget : comment raisonner
-Ne regardez pas seulement le prix initial. Évaluez aussi la prévisibilité du résultat, la fréquence des contrôles et la contention finale.
-
-## En résumé
-Le meilleur appareil est celui qui correspond à votre cas clinique, votre mode de vie et votre capacité de suivi.
-
-### À lire aussi
-- [Prix appareil dentaire à Dakar : guide complet](/blog/prix-appareil-dentaire-dakar-senegal)
-- [Orthodontie adulte : quel appareil choisir ?](/blog/orthodontie-adulte-invisible-dakar-aligneurs)
-
-Pour un plan orthodontique personnalisé : **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       { q: "Un adulte peut-il obtenir un bon résultat ?", a: "Oui, avec un diagnostic précis et une bonne observance, les résultats sont excellents." },
       { q: "Les aligneurs sont-ils toujours possibles ?", a: "Non, certains cas complexes nécessitent des bagues classiques." },
@@ -1099,32 +544,7 @@ Pour un plan orthodontique personnalisé : **[Prendre rendez-vous](/rendez-vous)
     author: AUTHORS.sao,
     cover: implantCoutCover,
     readingMinutes: 10,
-    content: `Un **implant dentaire** remplace la racine d’une dent absente et permet de retrouver confort masticatoire et stabilité sur le long terme.
-
-## Les étapes clés
-1. Consultation et bilan radiologique
-2. Planification (souvent avec imagerie 3D)
-3. Pose implantaire
-4. Cicatrisation osseuse
-5. Pose de la prothèse définitive
-
-## Les risques à connaître
-Comme tout acte chirurgical, il existe des risques (infection, intégration insuffisante), réduits par un protocole rigoureux et un suivi adapté.
-
-## Facteurs de réussite
-- Qualité de l’os et bilan initial
-- Hygiène bucco-dentaire
-- Arrêt/réduction du tabac
-- Respect des contrôles post-opératoires
-
-## En résumé
-L’implant est une solution très fiable quand l’indication est bien posée et le suivi sérieux.
-
-### À lire aussi
-- [Prix des implants dentaires à Dakar : guide complet](/blog/prix-implants-dentaires-dakar-guide-complet-2026)
-- [Bridge ou implant : que choisir ?](/blog/bridge-ou-implant-que-choisir-dakar)
-
-Pour savoir si vous êtes éligible : **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       { q: "La pose d’implant est-elle douloureuse ?", a: "L’intervention se fait sous anesthésie locale et est généralement bien tolérée." },
       { q: "Combien de temps dure le traitement complet ?", a: "Selon les cas, de quelques semaines à plusieurs mois." },
@@ -1148,35 +568,7 @@ Pour savoir si vous êtes éligible : **[Prendre rendez-vous](/rendez-vous)**.`,
     cover: urgenceNuitCover,
     pinned: true,
     readingMinutes: 7,
-    content: `Une **urgence dentaire** mal gérée peut vite s’aggraver. Voici les actions utiles avant la consultation à Dakar.
-
-## Situations urgentes
-- Douleur pulsatile incontrôlable
-- Gonflement de la joue/gencive
-- Dent cassée après choc
-- Saignement qui persiste
-- Fièvre associée à une douleur dentaire
-
-## Ce qu’il faut faire tout de suite
-- Prendre un antalgique adapté
-- Rincer doucement à l’eau tiède salée
-- Appliquer du froid externe (joue)
-- Éviter de mâcher du côté douloureux
-- Consulter rapidement
-
-## Ce qu’il faut éviter
-- Antibiotiques sans prescription
-- Aspirine posée sur la gencive
-- Retarder la consultation si gonflement/fièvre
-
-## En résumé
-En urgence dentaire, la rapidité de prise en charge limite les complications et la douleur.
-
-### À lire aussi
-- [Urgence dentaire à Dakar : que faire ?](/blog/urgence-dentaire-dakar-que-faire)
-- [Que faire en cas de rage de dent la nuit ?](/blog/mal-de-dents-la-nuit-causes-et-que-faire)
-
-Besoin d’une prise en charge rapide ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       { q: "Dois-je aller aux urgences générales ?", a: "Si fièvre élevée, gonflement important ou malaise, oui. Sinon, un cabinet dentaire urgent est prioritaire." },
       { q: "Un abcès peut-il attendre 2-3 jours ?", a: "Non recommandé : l’infection peut progresser rapidement." },
@@ -1200,32 +592,7 @@ Besoin d’une prise en charge rapide ? **[Prendre rendez-vous](/rendez-vous)**.
     cover: urgenceActionCover,
     pinned: true,
     readingMinutes: 7,
-    content: `Une **dent de sagesse infectée** peut évoluer rapidement. À Dakar, les cas les plus fréquents concernent une dent partiellement sortie qui retient les aliments et bactéries.
-
-## Signes d’alerte
-- Douleur pulsatile au fond de la bouche
-- Gencive gonflée autour de la dent
-- Mauvaise haleine/goût désagréable
-- Difficulté à ouvrir la bouche
-- Fièvre ou fatigue
-
-## Que faire immédiatement ?
-1. Rincer doucement à l’eau tiède salée
-2. Prendre un antalgique adapté
-3. Éviter l’automédication antibiotique
-4. Consulter rapidement
-
-## Traitement en cabinet
-Selon le diagnostic : nettoyage local, traitement anti-infectieux ciblé, puis extraction si l’indication est confirmée.
-
-## En résumé
-Une dent de sagesse infectée est une urgence relative : plus vous consultez tôt, plus le traitement est simple.
-
-### À lire aussi
-- [Urgence dentaire à Dakar : que faire ?](/urgence-dentaire-dakar)
-- [Extraction dentaire à Dakar : prix et suites](/blog/prix-extraction-dentaire-dakar-simple-ou-complexe)
-
-Besoin d’un avis rapide ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       { q: "L’extraction est-elle systématique ?", a: "Non. Elle dépend de la position de la dent, de la fréquence des infections et de votre bilan clinique." },
       { q: "Puis-je attendre que la douleur passe ?", a: "Ce n’est pas recommandé. L’infection peut récidiver ou s’aggraver." },
@@ -1249,30 +616,7 @@ Besoin d’un avis rapide ? **[Prendre rendez-vous](/rendez-vous)**.`,
     cover: blanchimentEclatCover,
     pinned: true,
     readingMinutes: 8,
-    content: `Le coût d’un **blanchiment dentaire à Dakar** dépend de la méthode et de votre situation clinique.
-
-## Ce qui influence le tarif
-- Blanchiment au fauteuil vs gouttières à domicile
-- Nombre de séances nécessaires
-- Sensibilité dentaire initiale
-- Besoin de détartrage préalable
-
-## Pourquoi éviter les recettes maison ?
-Les solutions non médicales peuvent irriter les gencives et fragiliser l’émail. Un protocole encadré donne un résultat plus sûr et plus durable.
-
-## Comment optimiser son budget
-- Faire un bilan préalable
-- Demander un plan de retouche
-- Entretenir avec une hygiène adaptée
-
-## En résumé
-Le bon blanchiment n’est pas juste une question de prix : c’est un équilibre entre sécurité, naturel et durabilité.
-
-### À lire aussi
-- [Blanchiment dentaire à Dakar : techniques et sécurité](/blog/blanchiment-dentaire-dakar-prix-efficacite)
-- [Facettes dentaires à Dakar : indications et limites](/blog/facettes-dentaires-dakar-indications-limites-prix-2026)
-
-Envie d’un sourire plus éclatant ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       { q: "Le blanchiment fait-il mal ?", a: "Une sensibilité transitoire est possible, généralement courte et contrôlable." },
       { q: "Le résultat dure combien de temps ?", a: "Souvent 1 à 3 ans selon vos habitudes (café, thé, tabac) et l’entretien." },
@@ -1295,28 +639,7 @@ Envie d’un sourire plus éclatant ? **[Prendre rendez-vous](/rendez-vous)**.`,
     author: AUTHORS.sao,
     cover: cbctCover,
     readingMinutes: 7,
-    content: `La **radio CBCT** offre une vision 3D très précise des dents, racines et structures osseuses.
-
-## Indications fréquentes
-- Planification d’implant
-- Dents de sagesse incluses
-- Infections persistantes
-- Endodontie complexe
-
-## Avantage concret pour le patient
-Un diagnostic plus précis permet de réduire les imprévus et d’adapter le traitement à votre anatomie réelle.
-
-## Est-ce systématique ?
-Non. Le CBCT est prescrit uniquement quand la 3D apporte une vraie valeur clinique.
-
-## En résumé
-Le CBCT est un outil de précision qui sécurise les actes complexes.
-
-### À lire aussi
-- [Radio panoramique dentaire à Dakar : pourquoi la faire](/blog/radio-panoramique-dentaire-dakar-pourquoi-quand-2026)
-- [Implant dentaire à Dakar : guide complet](/blog/prix-implants-dentaires-dakar-guide-complet-2026)
-
-Pour savoir si vous en avez besoin : **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       { q: "Le CBCT remplace-t-il la radio panoramique ?", a: "Pas toujours. La panoramique suffit dans de nombreux cas simples." },
       { q: "L’examen est-il long ?", a: "Non, il est rapide et généralement réalisé en quelques minutes." },
@@ -1339,29 +662,7 @@ Pour savoir si vous en avez besoin : **[Prendre rendez-vous](/rendez-vous)**.`,
     author: AUTHORS.sao,
     cover: protheseFixeAmovibleCover,
     readingMinutes: 8,
-    content: `La **prothèse fixe sur implant** remplace une ou plusieurs dents absentes avec une excellente stabilité.
-
-## Pourquoi les patients la préfèrent
-- Sensation proche des dents naturelles
-- Mastication plus confortable
-- Pas de retrait quotidien
-
-## Conditions pour être éligible
-- Bilan osseux satisfaisant (ou greffe si nécessaire)
-- Hygiène bucco-dentaire régulière
-- Suivi clinique sérieux
-
-## Différence avec prothèse amovible
-La solution fixe offre plus de confort au quotidien, mais demande un investissement initial plus important.
-
-## En résumé
-C’est souvent la meilleure option de confort et de durabilité quand l’indication est bonne.
-
-### À lire aussi
-- [Prothèse fixe ou amovible à Dakar : comment choisir](/blog/prothese-fixe-vs-amovible-dakar-comment-choisir)
-- [Prix des implants dentaires à Dakar : guide 2026](/blog/prix-implants-dentaires-dakar-guide-complet-2026)
-
-Besoin d’un plan personnalisé ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       { q: "Peut-on poser une prothèse fixe rapidement ?", a: "Le délai dépend du cas, surtout du temps de cicatrisation implantaire." },
       { q: "L’entretien est-il compliqué ?", a: "Non, mais il doit être rigoureux avec brossage et contrôles réguliers." },
@@ -1385,31 +686,7 @@ Besoin d’un plan personnalisé ? **[Prendre rendez-vous](/rendez-vous)**.`,
     cover: santeEnfantCover,
     pinned: true,
     readingMinutes: 8,
-    content: `Chez l’enfant, une carie peut évoluer vite. Plus elle est détectée tôt, plus le soin est simple.
-
-## 8 signes d’alerte
-1. Tache blanche ou brune sur une dent
-2. Douleur au sucré ou au froid
-3. Refus de mâcher d’un côté
-4. Mauvaise haleine persistante
-5. Réveil nocturne lié à la douleur
-6. Gencive gonflée localement
-7. Alimentation très sucrée fréquente
-8. Brossage irrégulier
-
-## Ce que les parents peuvent faire
-- Brossage 2x/jour avec dentifrice fluoré adapté
-- Réduire les grignotages sucrés
-- Faire un contrôle régulier
-
-## En résumé
-Une surveillance simple à la maison évite souvent des soins plus lourds et stressants.
-
-### À lire aussi
-- [Dentiste enfant à Dakar : première visite et prévention](/blog/dentiste-enfant-dakar-premiere-visite-conseils-2026)
-- [Scellants des sillons chez l’enfant : quand et pourquoi ?](/blog/scellants-sillons-enfants-dakar)
-
-Pour un bilan pédiatrique : **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       { q: "À partir de quel âge consulter ?", a: "Idéalement dès la première année ou dès l’apparition des premières dents." },
       { q: "Une dent de lait cariée doit-elle être soignée ?", a: "Oui, pour éviter douleur, infection et impact sur les dents définitives." },
@@ -1434,43 +711,7 @@ Pour un bilan pédiatrique : **[Prendre rendez-vous](/rendez-vous)**.`,
     cover: implantCoutCover,
     pinned: true,
     readingMinutes: 8,
-    content: `L’**implant dentaire** est souvent la solution la plus durable pour remplacer une dent absente. À Dakar, les patients posent tous la même question : **combien ça coûte réellement ?**
-
-## 1) Pourquoi le prix varie autant ?
-Le tarif dépend de plusieurs éléments :
-- La qualité de l’implant et de la prothèse
-- Le niveau de difficulté chirurgicale
-- L’état de l’os (avec ou sans greffe)
-- Les examens nécessaires (radio panoramique / CBCT)
-- Le suivi post-opératoire
-
-Un prix "trop bas" cache parfois des compromis sur les matériaux, la planification ou le suivi.
-
-## 2) Les étapes qui influencent le budget
-1. **Bilan initial** : examen clinique + imagerie
-2. **Pose de l’implant** (phase chirurgicale)
-3. **Période d’ostéointégration** (cicatrisation osseuse)
-4. **Pose de la couronne** sur implant
-5. **Contrôles** pour sécuriser le résultat
-
-Chaque étape est importante. Vouloir sauter des contrôles augmente le risque d’échec à moyen terme.
-
-## 3) Implant, bridge ou prothèse amovible ?
-- **Implant** : plus stable, protège l’os, confort élevé
-- **Bridge** : rapide dans certains cas, mais implique souvent les dents voisines
-- **Amovible** : option économique, confort variable
-
-Le bon choix dépend de votre bouche, pas seulement du prix affiché.
-
-## 4) Comment payer le juste prix à Dakar
-- Demandez un **devis détaillé** (actes, matériaux, suivi)
-- Vérifiez ce qui est inclus (imagerie, contrôles, retouches)
-- Évitez les promesses "implant express" sans vraie planification
-
-## En résumé
-Le coût d’un implant à Dakar doit être évalué avec une logique de **durabilité**. Un traitement bien planifié vous évite des reprises coûteuses.
-
-Besoin d’un plan clair et personnalisé ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Un implant dentaire est-il douloureux ?",
@@ -1499,36 +740,7 @@ Besoin d’un plan clair et personnalisé ? **[Prendre rendez-vous](/rendez-vous
     author: AUTHORS.sao,
     cover: radioPanoramiqueCover,
     readingMinutes: 7,
-    content: `La **radio panoramique** donne une vue globale de vos dents, de vos racines et des structures osseuses. C’est un outil clé pour éviter les diagnostics incomplets.
-
-## Pourquoi ne pas se limiter à l’examen visuel ?
-Certaines lésions ne se voient pas à l’œil nu :
-- Infection au bout de la racine
-- Dent incluse (notamment dent de sagesse)
-- Kyste débutant
-- Perte osseuse autour des dents
-
-La radio permet d’anticiper au lieu de traiter trop tard.
-
-## Quand la radio panoramique est utile ?
-- Avant une extraction complexe
-- Avant la pose d’un implant
-- En bilan orthodontique
-- En cas de douleurs diffuses non expliquées
-- En contrôle global chez l’adulte
-
-## Est-ce dangereux ?
-La dose est faible et l’examen est rapide. Il est réalisé uniquement quand il apporte une vraie valeur médicale.
-
-## Ce que vous gagnez
-- Un plan de traitement plus précis
-- Moins d’imprévus pendant les soins
-- Une estimation budgétaire plus fiable
-
-## En résumé
-À Dakar, la radio panoramique est souvent la base d’une dentisterie moderne et prévisible.
-
-Vous souhaitez un bilan complet ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "La radio panoramique remplace-t-elle toutes les autres radios ?",
@@ -1557,36 +769,7 @@ Vous souhaitez un bilan complet ? **[Prendre rendez-vous](/rendez-vous)**.`,
     author: AUTHORS.sao,
     cover: gingiviteTraitementCover,
     readingMinutes: 8,
-    content: `La **parodontite** est une infection des tissus de soutien de la dent. Elle progresse parfois sans forte douleur au début, ce qui la rend dangereuse.
-
-## 7 signes d’alerte fréquents
-1. Gencives qui saignent au brossage
-2. Mauvaise haleine persistante
-3. Sensation de dents plus longues
-4. Mobilité dentaire légère
-5. Gencives rouges ou gonflées
-6. Espaces qui s’ouvrent entre les dents
-7. Sensibilité au froid/chaud inhabituelle
-
-## Pourquoi agir tôt ?
-Une gingivite est souvent réversible. Une parodontite avancée peut entraîner une perte osseuse irréversible.
-
-## Traitement à Dakar : comment ça se passe
-- Bilan clinique + imagerie
-- Détartrage et assainissement en profondeur
-- Contrôle de la plaque et techniques de brossage personnalisées
-- Maintenance régulière (tous les 3 à 6 mois selon risque)
-
-## Facteurs aggravants au Sénégal
-- Tabac
-- Diabète mal équilibré
-- Hygiène irrégulière
-- Retard de consultation par manque de douleur
-
-## En résumé
-Plus la prise en charge est précoce, plus vous gardez vos dents longtemps et avec moins de coûts globaux.
-
-Besoin d’un bilan gencives ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "La parodontite se guérit-elle totalement ?",
@@ -1615,36 +798,7 @@ Besoin d’un bilan gencives ? **[Prendre rendez-vous](/rendez-vous)**.`,
     author: AUTHORS.sao,
     cover: appareilGuideCover,
     readingMinutes: 9,
-    content: `De plus en plus d’adultes à Dakar démarrent un traitement orthodontique. L’objectif n’est pas seulement esthétique : un bon alignement améliore aussi l’hygiène et la stabilité des dents.
-
-## Les options principales
-- **Bagues métalliques** : robustes, souvent plus économiques
-- **Bagues céramiques** : plus discrètes
-- **Aligneurs transparents** : confort et esthétique, demande de la discipline
-
-## Quel délai prévoir ?
-Selon la complexité :
-- Cas légers : 6 à 12 mois
-- Cas modérés : 12 à 18 mois
-- Cas complexes : 18 à 24 mois (ou plus)
-
-La régularité des contrôles influence fortement la durée.
-
-## Ce qui fait varier le prix
-- Type d’appareil choisi
-- Complexité du déplacement dentaire
-- Besoin d’extractions ou d’actes complémentaires
-- Fréquence des rendez-vous de suivi
-
-## Erreurs fréquentes
-- Choisir uniquement selon le prix
-- Négliger la contention de fin de traitement
-- Manquer les rendez-vous de contrôle
-
-## En résumé
-Le bon appareil est celui qui correspond à votre situation clinique, votre mode de vie et votre budget global.
-
-Envie d’un plan orthodontique clair ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Peut-on poser un appareil à 30 ou 40 ans ?",
@@ -1673,37 +827,7 @@ Envie d’un plan orthodontique clair ? **[Prendre rendez-vous](/rendez-vous)**.
     author: AUTHORS.sao,
     cover: blanchimentVsFacettesCover,
     readingMinutes: 8,
-    content: `Les **facettes dentaires** permettent d’améliorer rapidement l’esthétique du sourire (forme, couleur, légers défauts d’alignement). Mais elles ne conviennent pas à tout le monde.
-
-## Quand les facettes sont pertinentes ?
-- Dents tachées résistantes au blanchiment
-- Petites fractures de l’émail
-- Espaces modérés entre les dents
-- Besoin esthétique sur les dents visibles du sourire
-
-## Quand éviter ou reporter ?
-- Caries actives ou gencives inflammatoires
-- Bruxisme non pris en charge
-- Mauvaise hygiène bucco-dentaire
-
-Dans ces cas, on traite d’abord la santé, ensuite l’esthétique.
-
-## Facettes vs blanchiment : quelle différence ?
-- **Blanchiment** : agit sur la couleur naturelle
-- **Facettes** : modifient couleur + forme + aspect de surface
-
-Les deux peuvent être complémentaires selon l’objectif final.
-
-## Ce qui influence le coût à Dakar
-- Nombre de dents concernées
-- Matériau choisi
-- Niveau de personnalisation esthétique
-- Expérience clinique et qualité du laboratoire
-
-## En résumé
-Une facette réussie, c’est un résultat naturel, durable et cohérent avec votre visage — pas juste des dents plus blanches.
-
-Besoin d’un diagnostic esthétique sérieux ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Les facettes abîment-elles les dents ?",
@@ -1734,32 +858,7 @@ Besoin d’un diagnostic esthétique sérieux ? **[Prendre rendez-vous](/rendez-
     cover: detartragePreventifCover,
     pinned: true,
     readingMinutes: 7,
-    content: `Le **détartrage** n’est pas un soin “optionnel” : c’est un acte de prévention essentiel pour garder des gencives saines et éviter des traitements plus lourds.
-
-## Pourquoi le détartrage est important
-La plaque dentaire se minéralise en tartre, surtout près de la gencive. Ce tartre entretient l’inflammation : saignements, mauvaise haleine, puis parfois parodontite si rien n’est fait.
-
-## Quelle fréquence selon votre profil ?
-- **Risque faible** (bonne hygiène, peu de tartre) : tous les **12 mois**
-- **Risque modéré** (saignements occasionnels, tartre qui revient vite) : tous les **6 à 9 mois**
-- **Risque élevé** (tabac, diabète, antécédents parodontaux, appareil) : tous les **3 à 6 mois**
-
-## Signes qui imposent un contrôle rapide
-- Gencives qui saignent au brossage
-- Mauvaise haleine persistante
-- Dépôts de tartre visibles près des incisives
-- Sensibilité gingivale ou gonflement
-
-## Comment prolonger les bénéfices entre deux séances
-- Brossage 2x/jour avec brosse souple
-- Nettoyage interdentaire (fil/brossettes)
-- Réduction des sucres fréquents
-- Contrôle régulier selon votre profil
-
-## En résumé
-À Dakar comme ailleurs au Sénégal, la bonne fréquence de détartrage est **personnalisée**. Un suivi adapté protège vos gencives, votre sourire et votre budget santé.
-
-Besoin d’un bilan prévention ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Un détartrage abîme-t-il l’émail ?",
@@ -1790,32 +889,7 @@ Besoin d’un bilan prévention ? **[Prendre rendez-vous](/rendez-vous)**.`,
     cover: urgenceActionCover,
     pinned: true,
     readingMinutes: 7,
-    content: `Un **abcès dentaire** est une infection qui ne guérit pas seule. Plus vous attendez, plus le risque de complications augmente (douleur intense, propagation de l’infection, fièvre).
-
-## 1) Les signes qui doivent alerter
-- Douleur pulsatile qui empêche de dormir
-- Gonflement de la gencive, de la joue ou sous la mâchoire
-- Goût/pus dans la bouche
-- Fièvre, fatigue, difficulté à ouvrir la bouche
-
-## 2) Que faire immédiatement ?
-- Prenez un antalgique compatible avec votre état de santé
-- Rincez doucement à l’eau tiède salée
-- Évitez de percer vous-même le gonflement
-- Consultez rapidement un dentiste
-
-## 3) Ce que fait le dentiste en urgence
-Selon le cas : drainage, traitement de la dent causale (endodontie), extraction si nécessaire, puis suivi.
-
-## 4) Ce qu’il ne faut pas faire
-- Automédication antibiotique sans avis médical
-- Reporter la consultation « parce que la douleur a baissé »
-- Appliquer des produits agressifs sur la gencive
-
-## En résumé
-Un abcès dentaire est une **urgence réelle**. Une prise en charge rapide évite les complications et réduit la douleur durablement.
-
-Besoin d’une prise en charge rapide ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Un abcès dentaire peut-il disparaître tout seul ?",
@@ -1846,30 +920,7 @@ Besoin d’une prise en charge rapide ? **[Prendre rendez-vous](/rendez-vous)**.
     cover: traumaEnfantCover,
     pinned: false,
     readingMinutes: 6,
-    content: `Une **dent cassée** doit être évaluée rapidement, même si la douleur semble modérée. Une fissure non traitée peut évoluer vers une infection ou une fragilité durable.
-
-## 1) Les premiers gestes
-- Récupérer le fragment si possible
-- Rincer la bouche à l’eau claire
-- Appliquer du froid sur la joue (10 min)
-- Éviter de mâcher du côté atteint
-
-## 2) En cas de saignement
-Comprimez doucement avec une compresse propre pendant quelques minutes.
-
-## 3) Pourquoi consulter vite ?
-Le dentiste vérifie si la fracture touche l’émail, la dentine ou le nerf. Plus la prise en charge est précoce, meilleures sont les chances de conserver la dent.
-
-## 4) Les solutions possibles
-- Composite esthétique
-- Facette ou onlay
-- Couronne si perte de structure importante
-- Traitement canalaire si la pulpe est atteinte
-
-## En résumé
-En cas de dent cassée, la rapidité d’action fait la différence entre une réparation simple et un traitement plus lourd.
-
-Besoin d’un avis rapide ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Puis-je attendre quelques jours si je n’ai pas mal ?",
@@ -1900,32 +951,7 @@ Besoin d’un avis rapide ? **[Prendre rendez-vous](/rendez-vous)**.`,
     cover: protheseCover,
     pinned: false,
     readingMinutes: 8,
-    content: `La **couronne dentaire** protège une dent fragilisée (carie étendue, fracture, dent dévitalisée) et restaure la fonction de mastication.
-
-## 1) Dans quels cas poser une couronne ?
-- Dent très abîmée
-- Après traitement canalaire
-- Dent fissurée à risque de fracture
-- Réhabilitation esthétique/fonctionnelle
-
-## 2) Les étapes du traitement
-1. Bilan clinique et radiologique
-2. Préparation de la dent
-3. Empreinte/scan
-4. Pose de la couronne définitive
-
-## 3) Quels matériaux choisir ?
-- Céramique : très esthétique
-- Métallo-céramique : compromis résistance/esthétique
-- Zircone : haute résistance et rendu naturel
-
-## 4) Ce qui influence le budget
-Complexité du cas, matériau choisi, état de la dent, actes complémentaires éventuels.
-
-## En résumé
-La bonne couronne n’est pas seulement une question de prix : c’est surtout un choix médical personnalisé pour durer dans le temps.
-
-Pour un plan clair : **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Une couronne dentaire est-elle douloureuse ?",
@@ -1956,29 +982,7 @@ Pour un plan clair : **[Prendre rendez-vous](/rendez-vous)**.`,
     cover: detartragePreventifCover,
     pinned: false,
     readingMinutes: 6,
-    content: `Le **détartrage** retire les dépôts minéralisés que la brosse à dents ne peut pas éliminer. C’est un geste clé pour prévenir gingivite, saignements et mauvaise haleine.
-
-## 1) Fréquence standard
-Pour beaucoup de patients : un contrôle + détartrage tous les 6 à 12 mois.
-
-## 2) Cas nécessitant un suivi rapproché
-- Antécédents de gingivite/parodontite
-- Tabac
-- Appareil orthodontique
-- Diabète mal équilibré
-
-## 3) Signes qu’il faut consulter
-- Gencives qui saignent
-- Haleine persistante
-- Sensation de tartre derrière les incisives
-
-## 4) Bonnes habitudes entre deux séances
-Brossage 2x/jour, fil dentaire/brossettes, hydratation et contrôle des sucres.
-
-## En résumé
-La bonne fréquence dépend de votre risque parodontal. Un suivi personnalisé permet d’éviter des soins plus lourds ensuite.
-
-Besoin d’un bilan prévention ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Un détartrage abîme-t-il l’émail ?",
@@ -2009,31 +1013,7 @@ Besoin d’un bilan prévention ? **[Prendre rendez-vous](/rendez-vous)**.`,
     cover: protheseFixeAmovibleCover,
     pinned: false,
     readingMinutes: 7,
-    content: `En cas de dents manquantes, le choix entre **prothèse fixe** et **prothèse amovible** dépend de trois critères : stabilité, entretien et budget global.
-
-## 1) Prothèse fixe : pour qui ?
-- Recherche de confort maximal
-- Mastication plus naturelle
-- Solution durable (bridge/implant selon indication)
-
-## 2) Prothèse amovible : quand c’est pertinent ?
-- Budget initial plus limité
-- Plusieurs dents absentes
-- Solution transitoire ou de long terme selon le cas
-
-## 3) Ce qui doit guider votre décision
-- État osseux et dentaire
-- Objectif esthétique
-- Habitudes de vie
-- Capacité d’entretien quotidien
-
-## 4) L’importance du devis comparatif
-Un devis clair doit présenter les options, les avantages et les limites de chaque solution.
-
-## En résumé
-Il n’existe pas de « meilleure prothèse » universelle. La meilleure est celle qui correspond à votre situation clinique et à vos priorités.
-
-Besoin d’un plan adapté ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Une prothèse amovible est-elle forcément inconfortable ?",
@@ -2064,26 +1044,7 @@ Besoin d’un plan adapté ? **[Prendre rendez-vous](/rendez-vous)**.`,
     cover: devisDentaireCover,
     pinned: false,
     readingMinutes: 6,
-    content: `Le **prix d’une consultation dentaire à Dakar** dépend du motif de visite et des examens nécessaires.
-
-## 1) Consultation simple vs bilan complet
-- Consultation simple : douleur localisée, contrôle ciblé
-- Bilan complet : examen global + plan de traitement
-
-## 2) Ce qui peut faire varier le coût
-- Besoin d’une radio (rétro-alvéolaire ou panoramique)
-- Urgence ou non
-- Complexité clinique
-
-## 3) Comment bien préparer son budget
-- Demander un devis écrit si des soins sont prévus
-- Vérifier la prise en charge IPM/mutuelle
-- Prioriser les soins urgents et planifier le reste
-
-## En résumé
-Une consultation bien cadrée permet de poser un diagnostic fiable et d’éviter des dépenses imprévues plus tard.
-
-Pour une estimation personnalisée : **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Le prix de consultation inclut-il toujours la radio ?",
@@ -2114,27 +1075,7 @@ Pour une estimation personnalisée : **[Prendre rendez-vous](/rendez-vous)**.`,
     cover: sagesseCover,
     pinned: false,
     readingMinutes: 7,
-    content: `Le coût d’une **extraction dentaire à Dakar** varie selon la difficulté : dent mobile, cassée, incluse ou proche de structures sensibles.
-
-## 1) Extraction simple vs complexe
-- Simple : dent accessible, geste rapide
-- Complexe : dent incluse/cassée, chirurgie plus technique
-
-## 2) Comment se déroule l’intervention ?
-Anesthésie locale, extraction, contrôle du saignement, puis consignes de cicatrisation.
-
-## 3) Suites normales après extraction
-- Gêne légère à modérée 24-72h
-- Sensibilité à la mastication
-- Amélioration progressive avec les consignes
-
-## 4) Signes qui imposent de reconsulter
-Douleur qui augmente après 2-3 jours, saignement prolongé, fièvre, mauvaise odeur persistante.
-
-## En résumé
-Un diagnostic précis permet d’anticiper le niveau de complexité, le budget et les suites opératoires.
-
-Besoin d’un avis rapide ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Le prix est-il le même pour une dent de sagesse ?",
@@ -2165,28 +1106,7 @@ Besoin d’un avis rapide ? **[Prendre rendez-vous](/rendez-vous)**.`,
     cover: endoCover,
     pinned: false,
     readingMinutes: 8,
-    content: `La **dévitalisation** (traitement canalaire) permet de conserver une dent infectée au lieu de l’extraire.
-
-## 1) Quand faut-il dévitaliser ?
-- Douleur intense au chaud/froid
-- Carie profonde avec atteinte pulpaire
-- Infection autour de la racine
-
-## 2) Pourquoi le prix varie-t-il ?
-- Nombre de canaux (incisive vs molaire)
-- Niveau d’infection
-- Besoin d’une reconstruction/couronne ensuite
-
-## 3) Une ou plusieurs séances ?
-Selon la dent et l’infection, le traitement peut se faire en une ou plusieurs séances.
-
-## 4) Après la dévitalisation
-Une dent dévitalisée est plus fragile : une couronne peut être recommandée pour la protéger durablement.
-
-## En résumé
-La dévitalisation est souvent la meilleure option pour sauver une dent douloureuse et éviter l’extraction.
-
-Pour un plan complet : **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Une dévitalisation fait-elle mal ?",
@@ -2217,30 +1137,7 @@ Pour un plan complet : **[Prendre rendez-vous](/rendez-vous)**.`,
     cover: cliniqueDabiaCover,
     pinned: false,
     readingMinutes: 6,
-    content: `Quand on vit à **Liberté 6** ou aux **Parcelles Assainies**, le choix d’un dentiste ne doit pas se limiter à la distance.
-
-## 1) Proximité utile, mais pas suffisante
-Un cabinet proche fait gagner du temps, surtout en cas d’urgence.
-
-## 2) Vérifier les horaires réels
-Disponibilité en soirée ou le week-end : un vrai plus pour les actifs.
-
-## 3) Examiner l’offre de soins
-Prévention, urgences, esthétique, prothèse, pédiatrie : mieux vaut un cabinet complet.
-
-## 4) Exiger de la transparence
-Devis clair, explications simples, étapes du traitement bien détaillées.
-
-## 5) Regarder la qualité du suivi
-Rappels de contrôle, ajustements, disponibilité post-soin.
-
-## 6) Évaluer l’hygiène et l’organisation
-Un environnement propre et structuré est non négociable.
-
-## En résumé
-Le bon cabinet est celui qui combine **proximité + qualité médicale + suivi sérieux**.
-
-Besoin d’un bilan près de chez vous ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "La proximité doit-elle être mon premier critère ?",
@@ -2271,32 +1168,7 @@ Besoin d’un bilan près de chez vous ? **[Prendre rendez-vous](/rendez-vous)**
     cover: prixCover,
     pinned: false,
     readingMinutes: 7,
-    content: `Beaucoup de patients perdent du temps (et de l’argent) faute d’informations claires sur la **prise en charge IPM/mutuelle** des soins dentaires.
-
-## 1) Ce qui est souvent pris en charge
-- Consultation
-- Détartrage
-- Soins conservateurs
-- Certains actes prothétiques selon contrat
-
-## 2) Documents à préparer
-- Carte IPM/mutuelle à jour
-- Pièce d’identité
-- Devis (quand nécessaire)
-- Feuilles de soin/factures
-
-## 3) Pourquoi un devis est important
-Il permet de valider le remboursement avant de lancer des soins coûteux.
-
-## 4) Erreurs fréquentes à éviter
-- Commencer sans vérifier les plafonds
-- Oublier de demander l’entente préalable
-- Dépasser les délais de dépôt des pièces
-
-## En résumé
-Une bonne organisation administrative simplifie vos soins et sécurise votre budget.
-
-Pour établir un plan compatible avec votre couverture : **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Tous les soins dentaires sont-ils remboursés ?",
@@ -2327,31 +1199,7 @@ Pour établir un plan compatible avec votre couverture : **[Prendre rendez-vous]
     cover: guideTarifsCover,
     pinned: true,
     readingMinutes: 7,
-    content: `Le coût d’un soin dentaire à Dakar dépend de plusieurs éléments : type de soin, niveau de complexité, matériaux utilisés et éventuelle prise en charge par assurance/IPM.
-
-## 1) Quels facteurs font varier le prix ?
-- L’acte concerné (consultation, détartrage, soin de carie, urgence, prothèse, etc.)
-- Le nombre de dents à traiter
-- Les examens nécessaires (radio, bilan)
-- Les matériaux choisis (standard vs premium)
-
-## 2) Fourchettes de prix : comment les lire ?
-Les tarifs publiés en ligne sont souvent indicatifs. Le bon réflexe est de demander un devis personnalisé après examen clinique.
-
-## 3) Comment optimiser son budget dentaire ?
-- Prioriser les urgences et la douleur
-- Planifier les soins par étapes
-- Vérifier votre couverture IPM/mutuelle
-- Demander un plan de traitement clair
-
-## 4) Erreurs à éviter
-- Reporter trop longtemps un soin simple (le coût augmente ensuite)
-- Choisir uniquement sur le prix sans vérifier la qualité du suivi
-
-## En résumé
-Pour estimer correctement vos soins dentaires à Dakar, il faut un diagnostic précis + un devis transparent. C’est la meilleure manière d’éviter les surprises et de protéger votre santé bucco-dentaire.
-
-Besoin d’une estimation adaptée à votre cas ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Pourquoi deux patients paient-ils des montants différents pour un même type de soin ?",
@@ -2382,33 +1230,7 @@ Besoin d’une estimation adaptée à votre cas ? **[Prendre rendez-vous](/rende
     cover: choisirDentisteCover,
     pinned: true,
     readingMinutes: 6,
-    content: `Trouver un **dentiste à Dakar** ne se limite pas à la proximité. Pour des soins durables, il faut surtout vérifier la qualité, la transparence et le suivi.
-
-## 1) Qualifications et expérience
-Vérifiez la formation du praticien et son expérience sur les soins dont vous avez besoin (prévention, esthétique, urgence, prothèse).
-
-## 2) Hygiène et stérilisation
-Un cabinet sérieux applique des protocoles stricts : matériel stérilisé, environnement propre, organisation rigoureuse.
-
-## 3) Avis patients et réputation locale
-Consultez les retours récents : accueil, clarté des explications, ponctualité, qualité du suivi.
-
-## 4) Clarté du diagnostic
-Un bon dentiste explique le problème, les options de traitement et les priorités sans jargon inutile.
-
-## 5) Transparence des tarifs
-Demandez un devis clair avant les actes importants pour éviter les surprises et planifier votre budget.
-
-## 6) Accessibilité à Dakar
-Horaires, localisation et disponibilité en cas d’urgence comptent autant que la qualité technique.
-
-## 7) Suivi après soin
-Le suivi (contrôles, conseils d’entretien, ajustements) est un vrai marqueur de qualité.
-
-## En résumé
-Le bon choix repose sur un équilibre : **compétence + hygiène + écoute + transparence + suivi**.
-
-Besoin d’un avis personnalisé ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Comment savoir si un cabinet dentaire est fiable à Dakar ?",
@@ -2439,30 +1261,7 @@ Besoin d’un avis personnalisé ? **[Prendre rendez-vous](/rendez-vous)**.`,
     cover: urgenceNuitCover,
     pinned: true,
     readingMinutes: 8,
-    content: `Une douleur dentaire qui démarre la nuit ou le week-end peut vite devenir ingérable. À Dakar, il faut d’abord soulager correctement, puis consulter rapidement pour éviter les complications.
-
-## 1) Premiers gestes utiles
-- Antalgique adapté selon notice,
-- Froid externe par sessions courtes,
-- Rinçage doux à l’eau tiède,
-- Repos, tête légèrement surélevée.
-
-## 2) Urgence vraie : quand ne pas attendre
-- Gonflement facial,
-- Fièvre,
-- Difficulté à avaler,
-- Douleur pulsatile persistante,
-- Dent cassée après traumatisme.
-
-## 3) Erreurs fréquentes à éviter
-- Automédication antibiotique,
-- Applications irritantes sur la gencive,
-- Reporter la consultation jusqu’au lundi.
-
-## En résumé
-En cas d’urgence dentaire la nuit/week-end à Dakar, le bon réflexe est : soulager, surveiller les signes d’alerte et consulter sans délai.
-
-Besoin d’orientation rapide : **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Puis-je attendre le lendemain si la douleur baisse ?",
@@ -2471,58 +1270,6 @@ Besoin d’orientation rapide : **[Prendre rendez-vous](/rendez-vous)**.`,
       {
         q: "Le froid remplace-t-il le traitement ?",
         a: "Non, il soulage temporairement seulement. La cause doit être traitée au cabinet.",
-      },
-    ],
-  },
-
-  {
-    slug: "ipm-mutuelle-dentiste-dakar-prise-en-charge-2026",
-    title: "IPM & mutuelle dentiste à Dakar : comment optimiser votre prise en charge ?",
-    description:
-      "Comment utiliser votre IPM/mutuelle chez le dentiste à Dakar ? Conseils pratiques pour devis, remboursements et planification des soins.",
-    date: "2026-02-28",
-    category: "Conseils",
-    tags: [
-      "ipm dentaire dakar",
-      "mutuelle dentaire dakar",
-      "assurance dentaire senegal",
-      "prix dentiste",
-      "devis dentaire",
-    ],
-    author: AUTHORS.sao,
-    cover: devisDentaireCover,
-    pinned: true,
-    readingMinutes: 7,
-    content: `À Dakar, beaucoup de patients disposent d’une **IPM** ou d’une **mutuelle** mais n’optimisent pas leur remboursement dentaire. Pourtant, quelques bonnes pratiques permettent de mieux gérer le budget.
-
-## 1) Avant le rendez-vous
-- Vérifiez votre plafond annuel,
-- Identifiez les actes couverts,
-- Préparez vos pièces (carte, numéro d’adhérent).
-
-## 2) Demander un devis exploitable
-Un bon devis doit être clair, daté, détaillé, et présenter les actes prioritaires.
-
-## 3) Stratégie budget
-- Traiter d’abord l’urgence,
-- Planifier les soins par étapes,
-- Utiliser les périodes de renouvellement de plafond si possible.
-
-## 4) Pourquoi c’est important
-Un plan de soins phasé évite de retarder les traitements nécessaires et limite les dépenses imprévues.
-
-## En résumé
-Avec une bonne préparation IPM/mutuelle, vous pouvez soigner efficacement tout en maîtrisant vos coûts.
-
-Pour un devis clair : **[Prendre rendez-vous](/rendez-vous)**.`,
-    faq: [
-      {
-        q: "Tous les soins sont-ils remboursés ?",
-        a: "Non, cela dépend du contrat (soins courants, prothèses, implantologie, etc.).",
-      },
-      {
-        q: "Puis-je obtenir un devis avant de commencer ?",
-        a: "Oui, c’est recommandé pour anticiper votre reste à charge.",
       },
     ],
   },
@@ -2545,28 +1292,7 @@ Pour un devis clair : **[Prendre rendez-vous](/rendez-vous)**.`,
     cover: invisalignCover,
     pinned: true,
     readingMinutes: 8,
-    content: `Les aligneurs transparents type **Invisalign** séduisent de plus en plus d’adultes à Dakar. Ils permettent d’aligner les dents discrètement, avec un vrai confort au quotidien.
-
-## 1) Pour quels cas ?
-- Chevauchements légers à modérés,
-- Espaces entre les dents,
-- Corrections orthodontiques esthétiques adultes.
-
-## 2) Durée moyenne
-Selon la complexité, le traitement dure souvent entre 6 et 18 mois.
-
-## 3) Prix Invisalign à Dakar (repères 2026)
-Le coût dépend du nombre d’aligneurs, du suivi et des corrections nécessaires. Un devis personnalisé est indispensable après bilan.
-
-## 4) Points clés pour de bons résultats
-- Porter les aligneurs 20–22h/jour,
-- Suivre les contrôles,
-- Respecter les consignes d’hygiène.
-
-## En résumé
-Invisalign est une solution premium pour les adultes qui veulent aligner leur sourire sans bagues visibles.
-
-Pour un bilan orthodontique : **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Invisalign est-il toujours plus cher que les bagues ?",
@@ -2597,33 +1323,7 @@ Pour un bilan orthodontique : **[Prendre rendez-vous](/rendez-vous)**.`,
     cover: sagesseCover,
     pinned: true,
     readingMinutes: 8,
-    content: `L’extraction d’une **dent de sagesse** est fréquente à Dakar, surtout en cas de douleur, infection ou manque de place. Une prise en charge adaptée limite la gêne et accélère la cicatrisation.
-
-## 1) Quand faut-il extraire ?
-- Douleur répétée au fond de la mâchoire,
-- Infection de gencive (péricoronarite),
-- Dent incluse ou mal positionnée,
-- Risque pour la dent voisine.
-
-## 2) Prix extraction dent de sagesse à Dakar
-Le tarif dépend de la difficulté :
-- extraction simple,
-- extraction chirurgicale (dent incluse).
-Un devis précis suit l’examen et l’imagerie.
-
-## 3) Douleur et suites opératoires
-L’intervention se fait sous anesthésie locale. La gêne post-op est généralement contrôlée avec un protocole simple (antalgiques, froid, repos).
-
-## 4) Conseils cicatrisation
-- Glace externe le premier jour,
-- Alimentation molle 24–48h,
-- Hygiène douce selon consignes,
-- Éviter tabac/efforts intenses au début.
-
-## En résumé
-Un diagnostic précoce et un protocole post-op bien suivi permettent une récupération rapide.
-
-Pour une évaluation : **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "L’extraction est-elle douloureuse ?",
@@ -2654,33 +1354,7 @@ Pour une évaluation : **[Prendre rendez-vous](/rendez-vous)**.`,
     cover: urgenceCover,
     pinned: true,
     readingMinutes: 7,
-    content: `Un **mal de dent** peut vite devenir insupportable, surtout la nuit. À Dakar, le plus important est de **soulager rapidement** sans aggraver la situation, puis de consulter pour traiter la cause.
-
-## 1) Les bons gestes immédiats
-- Prenez un antalgique adapté (selon notice).
-- Appliquez du froid sur la joue par sessions courtes.
-- Rincez doucement la bouche à l’eau tiède.
-- Évitez de mâcher du côté douloureux.
-
-## 2) Ce qu’il faut éviter
-- Poser de l’aspirine directement sur la gencive.
-- Prendre des antibiotiques sans examen.
-- Retarder la consultation plusieurs jours.
-
-## 3) Quand consulter en urgence à Dakar
-Consultez sans tarder si vous avez :
-- gonflement de la joue,
-- fièvre,
-- douleur qui empêche de dormir,
-- dent cassée après traumatisme.
-
-## 4) Pourquoi agir tôt change tout
-Une consultation précoce permet souvent un soin plus simple et moins coûteux qu’un traitement tardif.
-
-## En résumé
-Le mal de dent n’est pas “normal”. Soulagez vite, évitez l’automédication hasardeuse et consultez rapidement pour traiter la cause.
-
-Pour une prise en charge rapide : **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Dois-je attendre que la douleur passe toute seule ?",
@@ -2711,31 +1385,7 @@ Pour une prise en charge rapide : **[Prendre rendez-vous](/rendez-vous)**.`,
     cover: enfantCover,
     pinned: true,
     readingMinutes: 8,
-    content: `La santé bucco-dentaire commence tôt. À Dakar, beaucoup de parents attendent la douleur avant de consulter, alors qu’une première visite précoce évite les urgences.
-
-## 1) Âge recommandé pour la première visite
-Idéalement, la première consultation se fait vers **1 an** ou dès l’éruption des premières dents.
-
-## 2) Pourquoi consulter tôt ?
-- Détecter les caries débutantes,
-- Corriger les habitudes à risque (biberon sucré, grignotage),
-- Habituer l’enfant au cabinet sans peur.
-
-## 3) Signes d’alerte à ne pas ignorer
-- Taches blanches/brunes sur les dents,
-- Douleur au froid ou au sucré,
-- Mauvaise haleine persistante,
-- Saignement gingival.
-
-## 4) Prévention à la maison
-- Brossage 2 fois/jour avec dentifrice fluoré adapté,
-- Limiter les boissons sucrées,
-- Contrôle dentaire régulier.
-
-## En résumé
-La première visite précoce protège le sourire de votre enfant et évite des soins lourds plus tard.
-
-Pour un bilan enfant : **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Mon enfant n’a pas mal, faut-il quand même consulter ?",
@@ -2766,31 +1416,7 @@ Pour un bilan enfant : **[Prendre rendez-vous](/rendez-vous)**.`,
     cover: gingiviteCover,
     pinned: true,
     readingMinutes: 7,
-    content: `Des **gencives qui saignent** au brossage ne sont jamais anodines. À Dakar, ce symptôme est souvent lié à une inflammation gingivale débutante.
-
-## 1) Causes les plus fréquentes
-- Plaque et tartre accumulés,
-- Brossage insuffisant ou inadapté,
-- Tabac,
-- Déséquilibres métaboliques (ex : diabète mal contrôlé).
-
-## 2) Quand faut-il s’inquiéter ?
-Consultez si le saignement dure plus de quelques jours, s’accompagne de mauvaise haleine ou d’une sensibilité des gencives.
-
-## 3) Traitements possibles
-- Détartrage professionnel,
-- Surfaçage radiculaire si nécessaire,
-- Rééducation de l’hygiène bucco-dentaire.
-
-## 4) Prévenir la récidive
-- Brosse souple + gestes adaptés,
-- Nettoyage interdentaire,
-- Contrôles réguliers.
-
-## En résumé
-Traiter tôt une gingivite évite l’évolution vers une parodontite plus coûteuse et plus difficile à stabiliser.
-
-Besoin d’un bilan gingival : **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Le saignement disparaît parfois, est-ce grave ?",
@@ -2821,28 +1447,7 @@ Besoin d’un bilan gingival : **[Prendre rendez-vous](/rendez-vous)**.`,
     cover: onlayCover,
     pinned: true,
     readingMinutes: 8,
-    content: `La **couronne dentaire** protège une dent fragilisée et restaure sa fonction. À Dakar, le coût varie selon le matériau et la complexité du cas.
-
-## 1) Quand poser une couronne ?
-- Dent dévitalisée,
-- Dent très reconstruite,
-- Fracture importante,
-- Besoin esthétique/fonctionnel durable.
-
-## 2) Types de couronnes les plus utilisées
-- **Céramo-métal** : robuste, coût intermédiaire.
-- **Zircone** : esthétique premium, excellente résistance.
-
-## 3) Prix d’une couronne à Dakar (repères 2026)
-Le tarif dépend du matériau, du laboratoire et de la préparation préalable (inlay-core, soins associés). Un devis personnalisé est indispensable.
-
-## 4) Durée de vie et entretien
-Avec une bonne hygiène et des contrôles réguliers, une couronne peut durer de nombreuses années.
-
-## En résumé
-Le bon choix de couronne dépend de votre situation clinique et de votre budget. Un plan clair permet de décider sereinement.
-
-Pour un devis personnalisé : **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "La zircone est-elle meilleure que la céramo-métal ?",
@@ -2874,57 +1479,7 @@ Pour un devis personnalisé : **[Prendre rendez-vous](/rendez-vous)**.`,
     cover: prixSoinsCover,
     pinned: true,
     readingMinutes: 8,
-    content: `Vous cherchez des repères fiables sur les **tarifs dentaires à Dakar** en 2026 ? Voici un guide clair pour les 3 actes les plus demandés : **détartrage**, **soin de carie** et **extraction**.
-
-> Important : ces montants restent des **fourchettes indicatives**. Le prix exact dépend toujours d’un examen clinique et, si besoin, d’une radio.
-
-## 1) Détartrage à Dakar : combien prévoir ?
-En pratique, un détartrage peut varier selon l’état des gencives et la quantité de tartre.
-
-**Repère indicatif 2026** :
-- Détartrage simple : souvent entre **25 000 et 45 000 FCFA**
-- Si inflammation plus marquée (soin plus long) : tarif ajusté après bilan
-
-Le coût dépend surtout du **temps clinique** et du niveau d’inflammation gingivale.
-
-## 2) Soin de carie : quel budget moyen ?
-Le tarif d’une carie varie selon la **profondeur** de la lésion et la **taille** de la reconstruction.
-
-**Repère indicatif 2026** :
-- Carie simple (petite à moyenne) : environ **25 000 à 60 000 FCFA**
-- Carie profonde : peut nécessiter des actes complémentaires (protection pulpaire, voire traitement canalaire), avec devis séparé
-
-Intervenir tôt reste la meilleure façon de limiter les coûts.
-
-## 3) Extraction dentaire : prix selon la difficulté
-Le prix dépend principalement de la position de la dent et de la difficulté opératoire.
-
-**Repère indicatif 2026** :
-- Extraction simple : souvent dès **20 000 FCFA**
-- Extraction complexe/chirurgicale : tarif supérieur après imagerie et évaluation
-
-En cas de gonflement, fièvre ou douleur intense, la priorité est la prise en charge rapide.
-
-## 4) Pourquoi les tarifs varient-ils d’un patient à l’autre ?
-Plusieurs facteurs influencent le devis :
-1. complexité du cas,
-2. imagerie nécessaire (radio/CBCT),
-3. durée du soin,
-4. matériaux utilisés,
-5. besoin de séances supplémentaires.
-
-Un bon cabinet remet un **devis clair** avant les actes importants.
-
-## 5) Comment réduire son budget dentaire sans sacrifier la qualité
-- Ne pas attendre la douleur sévère
-- Faire un contrôle régulier (6 à 12 mois)
-- Demander un plan de traitement par priorités
-- Vérifier sa couverture IPM/mutuelle
-
-## En résumé
-À Dakar en 2026, les tarifs d’un détartrage, d’une carie ou d’une extraction dépendent surtout du **diagnostic**. La meilleure stratégie reste : consultation précoce + devis transparent + plan de soins progressif.
-
-Besoin d’un chiffrage personnalisé ? **[Prendre rendez-vous](/rendez-vous)**.`,
+    content: `""`,
     faq: [
       {
         q: "Peut-on connaître le prix exact par téléphone ?",
@@ -2959,60 +1514,7 @@ Besoin d’un chiffrage personnalisé ? **[Prendre rendez-vous](/rendez-vous)**.
     cover: prixSoinsCover,
     pinned: true,
     readingMinutes: 7,
-    content: `Si vous recherchez un **dentiste à Mermoz**, l’objectif est simple : obtenir un diagnostic clair, un plan de soins réaliste et une prise en charge rapide. Ce guide vous aide à choisir sans perdre de temps.
-
-Pour un contact direct, vous pouvez **[prendre rendez-vous ici](/rendez-vous)**.
-
-## 1) Prix consultation dentiste à Dakar : ce qui influence le tarif
-Le coût varie selon :
-- le motif de consultation,
-- la complexité clinique,
-- les examens nécessaires (radio, contrôle complémentaire),
-- le type de soin à prévoir.
-
-Une bonne consultation doit vous donner une vision claire : urgence à traiter, soins à planifier, options possibles selon budget.
-
-> Bon réflexe : demander un devis détaillé par étape pour éviter les surprises.
-
-## 2) Soins les plus demandés autour de Mermoz
-Les patients consultent souvent pour :
-- **douleurs dentaires aiguës**,
-- **détartrage** et prévention gingivale,
-- **caries** et reconstruction,
-- **prothèses** (fixes ou amovibles),
-- **soins esthétiques** du sourire.
-
-Consulter tôt permet en général de réduire la durée et le coût du traitement.
-
-## 3) Avant de valider un plan de soins, vérifiez ces 5 points
-1. le diagnostic est-il expliqué simplement ?
-2. les actes prioritaires sont-ils identifiés ?
-3. le nombre de séances est-il estimé ?
-4. y a-t-il des alternatives thérapeutiques ?
-5. le suivi post-soin est-il prévu ?
-
-La transparence du cabinet est un excellent indicateur de qualité.
-
-## 4) Pourquoi choisir un cabinet accessible depuis Mermoz
-Une clinique facilement accessible depuis **Mermoz**, **Sacré-Cœur** ou **Point E** facilite :
-- le respect des rendez-vous,
-- les contrôles réguliers,
-- la gestion rapide d’une gêne imprévue.
-
-Le suivi est un facteur clé de résultats durables.
-
-## 5) RDV rapide : Appel ou WhatsApp
-Pour accélérer votre orientation, préparez :
-- votre symptôme principal,
-- depuis quand la gêne dure,
-- vos disponibilités.
-
-Contact direct :
-- **Appel :** [77 703 93 93](tel:+221777039393)
-- **WhatsApp :** [Prendre RDV](https://wa.me/221777039393?text=Bonjour%20Clinique%20DABIA%2C%20je%20souhaite%20prendre%20un%20rendez-vous.)
-
-## En résumé
-Pour choisir un dentiste à Mermoz, privilégiez un cabinet qui combine **proximité, clarté du devis et suivi sérieux**. C’est la meilleure base pour des soins efficaces et durables.`,
+    content: `""`,
     faq: [
       {
         q: "Quel est le prix d’une consultation dentaire à Mermoz ?",
@@ -3047,59 +1549,7 @@ Pour choisir un dentiste à Mermoz, privilégiez un cabinet qui combine **proxim
     cover: prixSoinsCover,
     pinned: true,
     readingMinutes: 7,
-    content: `Vous cherchez un **dentiste à Point E** avec un bon équilibre entre qualité de soin, clarté des tarifs et disponibilité ? Voici un guide pratique pour prendre la bonne décision à Dakar.
-
-Pour une prise en charge rapide, vous pouvez **[prendre rendez-vous ici](/rendez-vous)**.
-
-## 1) Prix consultation dentiste à Dakar : comment ça se structure
-Le coût dépend surtout de :
-- votre motif de consultation,
-- la nécessité ou non d’une radio,
-- le plan de traitement proposé.
-
-Une consultation sérieuse doit inclure un diagnostic expliqué, des priorités de soins et un devis clair si des actes sont nécessaires.
-
-> Conseil : demandez un plan en plusieurs étapes (urgence, fonctionnel, esthétique) pour mieux gérer le budget.
-
-## 2) Soins les plus fréquents pour les patients de Point E
-Les consultations concernent souvent :
-- **douleurs dentaires** et urgences,
-- **détartrage** et santé des gencives,
-- **caries** et restaurations,
-- **prothèses dentaires** (fixes/amovibles),
-- **esthétique du sourire** (blanchiment, alignement).
-
-Prendre en charge tôt évite l’aggravation et réduit les coûts globaux.
-
-## 3) Ce qu’il faut vérifier avant de valider votre devis
-Avant de commencer, assurez-vous que le cabinet précise :
-1. les actes indispensables,
-2. le nombre de séances estimé,
-3. les alternatives possibles,
-4. les consignes de suivi.
-
-Un devis transparent vous aide à décider sans stress.
-
-## 4) Pourquoi la proximité Point E compte vraiment
-Un cabinet accessible depuis **Point E**, **Fann** ou **Mermoz** facilite :
-- la ponctualité des rendez-vous,
-- le suivi après soin,
-- la gestion rapide d’une gêne imprévue.
-
-En dentaire, le suivi régulier améliore la stabilité des résultats.
-
-## 5) Prise de RDV immédiate : Appel ou WhatsApp
-Préparez ces infos avant de contacter la clinique :
-- symptôme principal,
-- ancienneté de la douleur,
-- créneau souhaité.
-
-Contact direct :
-- **Appel :** [77 703 93 93](tel:+221777039393)
-- **WhatsApp :** [Prendre RDV](https://wa.me/221777039393?text=Bonjour%20Clinique%20DABIA%2C%20je%20souhaite%20prendre%20un%20rendez-vous.)
-
-## En résumé
-Pour trouver un dentiste à Point E, privilégiez un cabinet qui combine **diagnostic clair, devis transparent et disponibilité réelle**. C’est la meilleure approche pour traiter efficacement et durablement.`,
+    content: `""`,
     faq: [
       {
         q: "Quel est le prix d’une consultation dentaire à Point E ?",
@@ -3134,61 +1584,7 @@ Pour trouver un dentiste à Point E, privilégiez un cabinet qui combine **diagn
     cover: prixSoinsCover,
     pinned: true,
     readingMinutes: 7,
-    content: `Si vous habitez aux **Parcelles Assainies**, trouver un dentiste fiable repose souvent sur 3 critères : **accès facile**, **devis clair** et **rendez-vous rapide**. Voici un guide pratique pour vous orienter à Dakar.
-
-Pour un avis personnalisé, vous pouvez **[prendre rendez-vous ici](/rendez-vous)**.
-
-## 1) Prix d’une consultation dentaire à Dakar : l’essentiel
-Le tarif dépend du motif de consultation, des examens complémentaires (radio si nécessaire) et du traitement envisagé.
-
-Une consultation utile doit inclure :
-- un examen clinique complet,
-- une explication simple du diagnostic,
-- un plan de soins priorisé,
-- un devis transparent avant les actes plus coûteux.
-
-> Astuce budget : demandez toujours une stratégie par étapes (urgent, nécessaire, esthétique).
-
-## 2) Soins les plus demandés par les patients des Parcelles
-Les motifs de consultation les plus fréquents sont :
-- **douleur dentaire / urgence**,
-- **détartrage** et prévention gingivale,
-- **caries** et reconstitution de dent,
-- **prothèse dentaire** (fixe ou amovible),
-- **soins esthétiques** (blanchiment, harmonisation du sourire).
-
-Plus on intervient tôt, plus le traitement est simple et maîtrisable financièrement.
-
-## 3) Comment comparer deux cabinets sans se tromper
-Avant de valider votre RDV, vérifiez :
-1. la clarté du diagnostic,
-2. le détail des actes proposés,
-3. le nombre de séances prévues,
-4. les alternatives possibles selon votre budget,
-5. le suivi après le soin.
-
-Un bon cabinet vous laisse comprendre et décider, sans pression.
-
-## 4) Parcelles Assainies : l’intérêt d’un cabinet accessible
-Choisir une clinique facilement accessible depuis les **Parcelles Assainies** permet de :
-- respecter le calendrier des soins,
-- revenir vite en cas de gêne,
-- maintenir un suivi régulier (prévention, contrôle, détartrage).
-
-En santé bucco-dentaire, la régularité améliore fortement les résultats.
-
-## 5) Prise de RDV rapide : Appel ou WhatsApp
-Pour accélérer votre prise en charge, préparez :
-- votre symptôme principal,
-- la durée de la douleur,
-- votre disponibilité.
-
-Contact direct :
-- **Appel :** [77 703 93 93](tel:+221777039393)
-- **WhatsApp :** [Prendre RDV](https://wa.me/221777039393?text=Bonjour%20Clinique%20DABIA%2C%20je%20souhaite%20prendre%20un%20rendez-vous.)
-
-## En résumé
-Pour un dentiste aux Parcelles Assainies, privilégiez la combinaison **proximité + devis clair + suivi sérieux**. C’est la meilleure voie pour traiter efficacement, au bon rythme, et éviter les complications coûteuses.`,
+    content: `""`,
     faq: [
       {
         q: "Quel est le tarif d’une consultation dentiste aux Parcelles Assainies ?",
@@ -3223,58 +1619,7 @@ Pour un dentiste aux Parcelles Assainies, privilégiez la combinaison **proximit
     cover: prixSoinsCover,
     pinned: true,
     readingMinutes: 7,
-    content: `Trouver un **dentiste à Liberté 6** est souvent une question de 3 choses : **proximité**, **prix clair** et **prise en charge rapide**. Voici un guide concret pour Dakar, avec les informations utiles avant de réserver.
-
-Si vous souhaitez un avis direct, vous pouvez **[prendre rendez-vous ici](/rendez-vous)**.
-
-## 1) Prix consultation dentiste à Dakar : ce qu’il faut savoir
-Les tarifs varient selon la complexité du cas, l’imagerie nécessaire et le plan de traitement. En pratique, un rendez-vous sérieux comprend :
-- examen clinique,
-- explication du diagnostic,
-- plan de soins priorisé,
-- devis clair avant actes coûteux.
-
-> Le bon réflexe : demander un plan en étapes (urgent, nécessaire, optionnel) pour maîtriser le budget.
-
-## 2) Soins les plus demandés autour de Liberté 6
-Les demandes les plus fréquentes en cabinet sont :
-- **douleur/urgence dentaire** (rage de dent, gonflement),
-- **détartrage** et prévention gingivale,
-- **soins de carie** et reconstruction,
-- **prothèses** (fixe ou amovible),
-- **blanchiment** et esthétique du sourire.
-
-Pour un cas urgent, n’attendez pas que la douleur augmente : un traitement précoce coûte souvent moins cher qu’une intervention tardive.
-
-## 3) Comment éviter les mauvaises surprises sur le devis
-Avant de commencer, vérifiez :
-1. si des radios sont nécessaires,
-2. le nombre de séances prévu,
-3. les alternatives possibles (et leur coût),
-4. les consignes post-soin.
-
-Un devis lisible permet de décider vite, sans stress.
-
-## 4) Localité + accessibilité : pourquoi c’est important
-Choisir une clinique proche de **Liberté 6**, **Sicap**, **Mermoz** ou **Point E** aide à :
-- réduire les retards et rendez-vous manqués,
-- faciliter le suivi,
-- réagir plus vite en cas de douleur.
-
-La continuité des soins fait souvent la différence sur le résultat final.
-
-## 5) CTA rapide : Appel ou WhatsApp
-Pour gagner du temps, préparez 3 infos avant contact :
-- votre symptôme principal,
-- depuis quand la douleur gêne,
-- disponibilité (matin/après-midi).
-
-Ensuite, contactez la clinique via :
-- **Appel :** [77 703 93 93](tel:+221777039393)
-- **WhatsApp :** [Prendre RDV](https://wa.me/221777039393?text=Bonjour%20Clinique%20DABIA%2C%20je%20souhaite%20prendre%20un%20rendez-vous.)
-
-## En résumé
-Si vous cherchez un dentiste à Liberté 6, priorisez un cabinet qui propose **diagnostic clair + devis transparent + accès simple**. C’est la meilleure stratégie pour soigner vite, bien, et au bon coût.`,
+    content: `""`,
     faq: [
       {
         q: "Quel est le prix d’une consultation dentiste à Dakar ?",
@@ -3309,45 +1654,7 @@ Si vous cherchez un dentiste à Liberté 6, priorisez un cabinet qui propose **d
     cover: detartragePreventifCover,
     pinned: true,
     readingMinutes: 8,
-    content: `Le **détartrage** n’est pas un simple soin esthétique : c’est un pilier de la prévention pour garder des gencives saines et éviter des traitements plus lourds.
-
-À Dakar comme ailleurs, la bonne fréquence dépend de votre profil (hygiène, tabac, diabète, antécédents de gingivite/parodontite). Si vous voulez un avis personnalisé, vous pouvez **[prendre rendez-vous](/rendez-vous)**.
-
-## À quelle fréquence faire un détartrage au Sénégal ?
-- **Profil faible risque** (bonne hygiène, pas de saignement) : en général tous les **12 mois**.
-- **Profil moyen risque** (tartre qui revient vite, saignement occasionnel) : tous les **6 à 9 mois**.
-- **Profil élevé** (tabac, diabète, antécédents parodontaux, appareil orthodontique) : souvent tous les **3 à 6 mois**.
-
-> L’intervalle exact se décide après examen clinique des gencives.
-
-## Signes qui montrent qu’il faut consulter sans attendre
-- Gencives qui saignent au brossage
-- Mauvaise haleine persistante
-- Sensibilité gingivale ou gonflement
-- Dépôts jaunâtres/brunâtres près de la gencive
-- Impression de dents “plus longues” (récession)
-
-## Détartrage simple ou soin plus profond ?
-Un détartrage classique suffit quand l’inflammation est superficielle. Si des poches parodontales sont présentes, un **surfaçage radiculaire** peut être indiqué pour assainir en profondeur.
-
-## Et le prix du détartrage à Dakar ?
-Le tarif varie selon :
-1. la quantité de tartre,
-2. l’état des gencives,
-3. la nécessité d’un soin simple ou approfondi.
-
-Un devis clair est expliqué avant tout acte.
-
-## Conseils pour prolonger les résultats
-- Brossage 2 à 3 fois/jour avec brosse souple
-- Nettoyage interdentaire (fil/brossettes)
-- Limiter tabac et sucre fréquent
-- Contrôle régulier selon votre profil
-
-## En résumé
-Faire un détartrage au bon rythme coûte toujours moins cher que traiter une parodontite avancée. La prévention reste votre meilleur investissement santé.
-
-> À la Clinique DABIA, chaque patient repart avec un plan d’entretien personnalisé (fréquence + gestes d’hygiène adaptés).`,
+    content: `""`,
     faq: [
       {
         q: "Le détartrage abîme-t-il les dents ?",
@@ -3382,38 +1689,7 @@ Faire un détartrage au bon rythme coûte toujours moins cher que traiter une pa
     cover: ramadanUrgenceCover,
     pinned: true,
     readingMinutes: 6,
-    content: `Une douleur dentaire pendant le **Ramadan** peut vite devenir difficile à supporter : fatigue, manque de sommeil, et peur de prendre la mauvaise décision pendant le jeûne.
-
-Si la douleur est forte, ne restez pas seul : **[Prendre rendez-vous](/rendez-vous)** ou consulter la page **[urgence dentaire à Dakar](/urgence-dentaire-dakar)**.
-
-## Les 5 premiers gestes à faire immédiatement
-1. **Rincer doucement la bouche** avec de l'eau tiède (sans avaler).
-2. **Nettoyer la zone** avec une brosse souple pour retirer les résidus alimentaires.
-3. **Appliquer du froid externe** (joue) 10 min pour réduire gonflement et douleur.
-4. **Éviter de mâcher** du côté douloureux.
-5. **Noter les symptômes** (douleur pulsatile, fièvre, gonflement, saignement) pour les expliquer au dentiste.
-
-## Ce qu'il faut éviter absolument
-- Mettre de l'aspirine directement sur la gencive
-- Poser des remèdes maison irritants sur la dent
-- Attendre plusieurs jours avec un gonflement ou de la fièvre
-- Prendre des antibiotiques sans avis médical
-
-## Quand consulter en urgence à Dakar ?
-Consultez rapidement si vous avez :
-- douleur qui empêche de dormir
-- gonflement de la joue ou de la gencive
-- fièvre
-- dent cassée après choc
-- difficulté à ouvrir la bouche ou à avaler
-
-## Ramadan et jeûne : que retenir ?
-Une consultation d'urgence est prioritaire pour éviter les complications. Le protocole est adapté au patient à jeûn et le praticien vous explique clairement chaque étape.
-
-## En résumé
-Une urgence dentaire ne doit pas être repoussée. Plus la prise en charge est rapide, plus le traitement est simple et le soulagement durable.
-
-> À la Clinique DABIA, les urgences dentaires sont évaluées rapidement avec un plan d'action clair pour soulager la douleur en sécurité.`,
+    content: `""`,
     faq: [
       {
         q: "Dois-je attendre la rupture du jeûne avant de consulter ?",
@@ -3448,38 +1724,7 @@ Une urgence dentaire ne doit pas être repoussée. Plus la prise en charge est r
     cover: ramadanSoinsCover,
     pinned: true,
     readingMinutes: 7,
-    content: `En plein **Ramadan à Dakar**, beaucoup de patients reportent leurs soins dentaires par peur de "casser" leur jeûne. Pourtant, dans la plupart des cas, il est possible de se faire soigner en toute sérénité.
-
-Besoin d'un créneau adapté ? **[Prendre rendez-vous](/rendez-vous)**.
-
-## Peut-on aller chez le dentiste pendant le jeûne ?
-Oui, en règle générale. Une consultation, un examen, un détartrage prudent, un soin de carie ou une anesthésie locale peuvent être réalisés, tant que rien n'est avalé volontairement.
-
-## Soins possibles pendant Ramadan
-- Consultation et diagnostic
-- Détartrage avec aspiration renforcée
-- Soin de carie
-- Anesthésie locale
-- Extraction si nécessaire
-
-## Précautions importantes
-1. Signaler au praticien que vous jeûnez.
-2. Préférer un rinçage minimal et recracher immédiatement.
-3. Planifier les soins longs en fin de journée ou après le ftour.
-4. Ne pas retarder une infection ou une douleur intense.
-
-## Urgence dentaire : ne pas attendre
-Si vous avez douleur pulsatile, gonflement, fièvre, difficulté à mâcher ou à dormir, il faut consulter rapidement. La santé passe avant tout et un retard de prise en charge peut compliquer le traitement.
-
-## Quel horaire choisir à Dakar ?
-- **Matin (9h-12h)** : souvent plus confortable pour les soins courts
-- **Fin d'après-midi** : pratique si vous préférez enchaîner avec la rupture
-- **Après ftour** : idéal pour certains actes plus longs
-
-## En résumé
-Le Ramadan n'empêche pas de se soigner. Avec une bonne organisation et des précautions simples, vous pouvez préserver votre santé bucco-dentaire sans stress.
-
-> À la Clinique DABIA, les protocoles sont adaptés aux patients qui jeûnent pour garantir confort, sécurité et clarté sur chaque étape du soin.`,
+    content: `""`,
     faq: [
       {
         q: "L'anesthésie locale annule-t-elle le jeûne ?",
@@ -3514,37 +1759,7 @@ Le Ramadan n'empêche pas de se soigner. Avec une bonne organisation et des pré
     cover: prixSoinsCover,
     pinned: true,
     readingMinutes: 7,
-    content: `Vous travaillez ou habitez au **Plateau à Dakar** et vous cherchez un dentiste fiable, avec des horaires flexibles et une prise en charge claire ?
-
-**[RDV rapide](/rendez-vous)**
-
-## Ce que recherchent les patients du Plateau
-- Un accès rapide avant/après le travail
-- Un devis transparent avant les soins
-- Une solution rapide en cas de douleur
-
-## Quels soins sont les plus demandés ?
-- Consultation + bilan
-- Détartrage et soins de carie
-- Urgence dentaire (douleur, gonflement, dent cassée)
-- Devis pour couronne, implant ou orthodontie
-
-## Repères pratiques
-- En cas de douleur aiguë : voir la page **[urgence dentaire à Dakar](/urgence-dentaire-dakar)**
-- Pour les soins programmés : page **[dentiste dakar](/dentiste-dakar)**
-- Pour un devis rapide : **[prendre rendez-vous](/rendez-vous)**
-
-## FAQ (Plateau Dakar)
-### Peut-on avoir un RDV rapide le même jour ?
-Oui, selon les disponibilités, surtout pour les urgences.
-
-### Le devis est-il expliqué avant les soins ?
-Oui, un plan de traitement clair est présenté avant intervention.
-
-### La clinique est-elle accessible depuis le Plateau ?
-Oui, l’accès est rapide depuis le centre-ville via les axes principaux de Dakar.
-
-> Objectif : vous offrir une prise en charge simple, rapide et transparente, même avec un agenda chargé.`,
+    content: `""`,
     faq: [
       {
         q: "Je suis au Plateau, puis-je avoir un RDV en fin de journée ?",
@@ -3575,28 +1790,7 @@ Oui, l’accès est rapide depuis le centre-ville via les axes principaux de Dak
     cover: ramadanRdvCover,
     pinned: true,
     readingMinutes: 6,
-    content: `Pendant le mois de Ramadan, beaucoup de patients à Dakar se posent la même question : **peut-on consulter un dentiste sans invalider le jeûne ?**
-
-Besoin d’un créneau adapté Ramadan ? **[Prendre rendez-vous](/rendez-vous)** ou consulter notre page **[urgence dentaire à Dakar](/urgence-dentaire-dakar)**.
-
-## Peut-on aller chez le dentiste en jeûnant ?
-Oui. Une consultation, un diagnostic, un détartrage léger ou des soins locaux sont généralement possibles. L'important est d'éviter d'avaler volontairement de l'eau ou des produits.
-
-## Quels créneaux privilégier ?
-- **Fin de journée (avant la rupture)** : pratique si une gêne survient après le soin
-- **Soirée (après ftour)** : idéal pour certains actes plus longs
-- **Matin** : possible pour un contrôle rapide
-
-## Et pour une urgence dentaire ?
-En cas de douleur intense, gonflement, fièvre ou dent cassée, il faut consulter rapidement. La priorité reste la santé.
-
-## Conseils pratiques pendant Ramadan
-1. Hydratation correcte entre le ftour et le shour
-2. Brossage doux après les repas
-3. Ne pas retarder un soin urgent
-4. Demander un plan de traitement adapté au rythme du jeûne
-
-À la Clinique DABIA, nous adaptons les rendez-vous pendant Ramadan pour plus de confort et de sérénité.`,
+    content: `""`,
     faq: [
       {
         q: "Une consultation dentaire annule-t-elle le jeûne ?",
@@ -3626,31 +1820,7 @@ En cas de douleur intense, gonflement, fièvre ou dent cassée, il faut consulte
     cover: prixSoinsCover,
     pinned: true,
     readingMinutes: 8,
-    content: `Vous cherchez un **dentiste à Dakar** et vous voulez connaître les tarifs avant de prendre rendez-vous ? C'est normal. Voici un guide clair pour estimer votre budget et éviter les mauvaises surprises.
-
-📍 Commencez par une visite sur **[Dentiste Dakar](/dentiste-dakar)** puis réservez en 1 minute via **[/rendez-vous](/rendez-vous)**.
-
-## Prix indicatifs à Dakar (selon le cas)
-- **Consultation** : selon l'examen clinique et les besoins d'imagerie
-- **Détartrage** : selon la quantité de tartre et l'état gingival
-- **Soin de carie** : dépend de la profondeur et du matériau utilisé
-- **Urgence dentaire** : variable selon la cause (douleur, infection, fracture)
-
-> Un tarif précis ne peut être confirmé qu'après examen. À la Clinique DABIA, un plan de traitement clair est expliqué avant toute intervention.
-
-## Pourquoi les prix varient ?
-1. Complexité du cas
-2. Matériaux utilisés
-3. Besoin d'imagerie (radio, scanner)
-4. Nombre de séances nécessaires
-
-## Comment payer moins cher sur le long terme
-- Faire un contrôle régulier
-- Traiter tôt une carie ou une gingivite
-- Demander un plan de soins par étapes
-- Vérifier votre prise en charge IPM/assurance
-
-Pour une estimation adaptée à votre situation, le plus simple est de demander une consultation et un devis personnalisé.`,
+    content: `""`,
     faq: [
       {
         q: "Combien coûte une consultation dentiste à Dakar ?",
@@ -3679,27 +1849,7 @@ Pour une estimation adaptée à votre situation, le plus simple est de demander 
     cover: cliniqueExpertCover,
     pinned: true,
     readingMinutes: 7,
-    content: `Trouver une **clinique dentaire à Dakar** ne se résume pas au prix. Le bon choix combine sécurité, qualité des soins et confiance.
-
-## 5 critères essentiels
-1. **Compétence médicale** : équipe formée, expérience documentée
-2. **Plateau technique** : imagerie moderne, scanner intra-oral, protocoles à jour
-3. **Hygiène et stérilisation** : normes strictes, traçabilité
-4. **Transparence** : devis clair, options expliquées, pas de surprise
-5. **Suivi patient** : conseils post-soins, contrôles, disponibilité en cas de gêne
-
-## Signaux de qualité d'une bonne clinique
-- Explications pédagogiques avant de commencer
-- Plan de traitement par étapes
-- Temps d'écoute réel pendant la consultation
-- Communication simple (téléphone, WhatsApp, formulaire)
-
-## Erreurs fréquentes à éviter
-- Choisir uniquement sur le tarif affiché
-- Reporter un soin nécessaire
-- Ignorer les avis et la qualité du suivi
-
-Vous pouvez commencer par une consultation bilan, poser vos questions, puis comparer la clarté des réponses reçues.`,
+    content: `""`,
     faq: [
       {
         q: "Comment savoir si une clinique est fiable ?",
@@ -3728,30 +1878,7 @@ Vous pouvez commencer par une consultation bilan, poser vos questions, puis comp
     cover: urgenceActionCover,
     pinned: true,
     readingMinutes: 6,
-    content: `Une **urgence dentaire à Dakar** peut vite devenir très douloureuse. Voici les actions à faire tout de suite en attendant votre prise en charge.
-
-## Réflexes immédiats
-- Prenez un antalgique compatible (évitez l'automédication risquée)
-- Rincez doucement à l'eau tiède salée
-- Évitez de mâcher du côté douloureux
-- Contactez rapidement votre clinique
-
-## Cas fréquents
-### 1) Rage de dent
-Douleur pulsatile, parfois insomniante. Une consultation rapide évite l'aggravation.
-
-### 2) Gonflement / infection
-Si gonflement important ou fièvre, priorité élevée.
-
-### 3) Dent cassée
-Conservez le fragment si possible et consultez sans tarder.
-
-## Quand aller aux urgences hospitalières ?
-- Difficulté à respirer/avaler
-- Fièvre persistante avec altération de l'état général
-- Gonflement qui s'étend vers l'œil ou le cou
-
-En cas de doute, appelez immédiatement. Un triage téléphonique permet de vous orienter vers la bonne prise en charge.`,
+    content: `""`,
     faq: [
       {
         q: "Une rage de dent est-elle une urgence ?",
@@ -3781,40 +1908,7 @@ En cas de doute, appelez immédiatement. Un triage téléphonique permet de vous
     cover: protheseFixeAmovibleCover,
     pinned: true,
     readingMinutes: 8,
-    content: `Perdre une ou plusieurs dents est une épreuve, mais les solutions pour retrouver le sourire sont nombreuses. À Dakar, on distingue principalement deux familles de prothèses : les **fixes** (qu'on ne retire pas) et les **amovibles** (qu'on retire pour nettoyer).
-    
-## 1. La Prothèse Fixe (Couronnes et Bridges)
-C'est la solution la plus confortable et la plus esthétique. Elle imite parfaitement la sensation des dents naturelles.
-
-### La Couronne
-Elle vient "coiffer" une dent abîmée ou dévitalisée pour la renforcer.
-- **Prix moyen au Sénégal** : Entre 150 000 et 350 000 FCFA selon le matériau (Céramo-métal ou Zircone).
-- **Durée de vie** : 10 à 20 ans avec une bonne hygiène.
-
-### Le Bridge
-Il remplace une dent manquante en prenant appui sur les dents voisines.
-- **Avantage** : fixe et solide.
-- **Inconvénient** : nécessite de tailler les dents saines à côté.
-- **Prix** : Multipliez le prix d'une couronne par le nombre d'éléments (généralement 3 pour remplacer 1 dent).
-
-## 2. La Prothèse Amovible (Le "Dentier")
-C'est la solution la plus économique, souvent utilisée quand il manque beaucoup de dents.
-
-### Partielle (stellite ou résine)
-Elle remplace quelques dents et tient grâce à des crochets.
-- **Prix moyen** : À partir de 75 000 - 150 000 FCFA selon le nombre de dents.
-- **Avantage** : Rapide à réaliser et peu coûteux.
-
-### Complète
-Quand il n'y a plus de dents. Elle tient par effet ventouse.
-- **Prix** : Sur devis, généralement plus abordable que les implants.
-
-## 3. Le "Must" : La Prothèse sur Implants
-C'est une prothèse fixe (couronne ou bridge) qui repose sur une racine artificielle (l'implant) au lieu des dents voisines.
-- **Le top du confort** : On ne touche pas aux autres dents.
-- **Prix** : Comptez le prix de l'implant + le prix de la couronne. (Voir notre article sur les implants).
-
-> **Conseil du Dr SAO** : "Le choix dépend de votre budget, mais aussi de l'état de votre os et de vos autres dents. Ne restez pas avec un trou : les dents voisines vont bouger et cela coûtera plus cher à réparer plus tard !"`,
+    content: `""`,
     faq: [
       {
         q: "Quelle est la prothèse la moins chère ?",
@@ -3844,38 +1938,7 @@ C'est une prothèse fixe (couronne ou bridge) qui repose sur une racine artifici
     cover: appareilGuideCover,
     pinned: true,
     readingMinutes: 10,
-    content: `L'expression "appareil dentaire" peut désigner deux choses très différentes : les **bagues** pour aligner les dents (orthodontie) ou les **dentiers** pour remplacer les dents (prothèse). Voici un guide clair des prix pratiqués à Dakar en 2026 pour vous y retrouver.
-
-## 1. Appareil pour aligner les dents (Orthodontie)
-C'est le traitement pour avoir un sourire droit, pour enfants et adultes.
-
-### Les Bagues Métalliques
-- **Description** : Des petits carrés en métal collés sur les dents.
-- **Prix moyen** : Le traitement complet coûte souvent entre 600 000 et 1 200 000 FCFA, étalé sur 1 ou 2 ans.
-- **Efficacité** : Maximale.
-
-### Les Aligneurs Invisibles (type Invisalign)
-- **Description** : Des gouttières transparentes amovibles.
-- **Prix moyen** : À partir de 1 500 000 FCFA. C'est plus cher car c'est une technologie numérique importée.
-
-## 2. Appareil pour remplacer les dents (Prothèse amovible)
-C'est ce qu'on appelle communément le dentier.
-
-### L'appareil partiel
-- **Pour qui ?** Il vous manque quelques dents.
-- **Prix** : Dépend du nombre de dents. Comptez environ 15 000 à 25 000 FCFA par dent remplacée sur une base résine (prix indicatif variable selon les cabinets).
-
-### L'appareil complet
-- **Pour qui ?** Toutes les dents de l'arcade sont absentes.
-- **Prix** : Un complet haut ou bas coûte généralement entre 150 000 et 300 000 FCFA selon la qualité des dents choisies et de la résine.
-
-## Comment obtenir un prix exact ?
-Il est impossible de donner un prix ferme par téléphone.
-1.  Prenez rendez-vous pour une **consultation**.
-2.  Le dentiste examine votre bouche (nombre de dents, état des gencives).
-3.  Il vous remet un **devis écrit** et détaillé.
-
-> À la Clinique DABIA, nous proposons des facilités de paiement pour les traitements longs comme l'orthodontie.`,
+    content: `""`,
     faq: [
       {
         q: "Est-ce remboursé par les assurances ?",
@@ -3906,32 +1969,7 @@ Il est impossible de donner un prix ferme par téléphone.
     cover: cliniqueExpertCover,
     pinned: true,
     readingMinutes: 6,
-    content: `Si vous cherchez un **dentiste de confiance à Dakar**, la Clinique Dentaire DABIA est devenue une référence pour la qualité de ses soins et son approche humaine. Située stratégiquement pour être accessible depuis **Liberté 6**, **Sicap Foire** et les **Parcelles Assainies**, nous accueillons patients locaux et expatriés.
-
-## Pourquoi nous choisir ?
-
-### 1. Une technologie de pointe
-Nous ne faisons pas de compromis sur le diagnostic.
-- **Radio Panoramique & 3D** sur place : Pas besoin de courir dans un centre de radiologie.
-- **Scanner Intra-oral** : Fini la pâte à empreinte qui donne la nausée ! Vos dents sont scannées en 3D.
-
-### 2. Transparence totale sur les tarifs
-C'est souvent le point noir des soins dentaires. Chez DABIA :
-- Pas de "prix à la tête du client".
-- Un **devis clair** est remis avant chaque soin coûteux.
-- Nous vous expliquons la différence entre les options (ex: couronne métal vs zircone) pour que vous choisissiez selon votre budget.
-
-### 3. Hygiène irréprochable
-Nous suivons les normes internationales de stérilisation (autoclave classe B, instruments sous sachets). Votre sécurité est notre priorité absolue.
-
-## Nos spécialités
-- **Implantologie** : Remplacer vos dents durablement.
-- **Esthétique** : Facettes et blanchiment pour un sourire de star.
-- **Orthodontie** : Pour aligner les dents des enfants et des adultes.
-- **Urgences** : Nous gardons des créneaux pour vous soulager rapidement.
-
-> **L'avis de nos patients** : "Enfin un dentiste qui prend le temps d'expliquer et qui ne fait pas mal !"
-> Venez vérifier par vous-même. Prenez rendez-vous en ligne en quelques clics.`,
+    content: `""`,
     faq: [
       {
         q: "Où se trouve la clinique ?",
@@ -3946,7 +1984,7 @@ Nous suivons les normes internationales de stérilisation (autoclave classe B, i
   {
     slug: "guide-tarifs-dentiste-dakar-2025",
     title:
-      "Guide Complet des Tarifs Dentaires à Dakar (2025) – Prix Mis à Jour et Conseils",
+      "Guide Complet des Tarifs Dentaires à Dakar (2026) – Prix Mis à Jour et Conseils",
     description:
       "Découvrez les tarifs réels pour un détartrage, une extraction ou une consultation à Dakar. Notre guide mis à jour vous aide à planifier votre budget santé et à économiser.",
     date: "2026-01-21",
@@ -3962,35 +2000,7 @@ Nous suivons les normes internationales de stérilisation (autoclave classe B, i
     cover: guideTarifsCover,
     pinned: true,
     readingMinutes: 8,
-    content: `La question du **prix** est souvent la première que l’on se pose avant d'aller chez le dentiste.
-
-✅ Pour un devis clair et rapide : **[prendre rendez-vous](/rendez-vous)** ou consulter notre page **[cabinet dentaire à Dakar](/cabinet-dentaire-dakar)**. Combien coûte un détartrage ? Quel est le tarif d'une couronne ? À Dakar, les prix peuvent varier, mais la transparence est essentielle pour établir une relation de confiance.
-
-## Tarifs moyens observés à Dakar (2025)
-Voici une fourchette de prix indicative pour les soins courants à Dakar (ces tarifs peuvent varier selon la complexité du cas) :
-
-- **Consultation simple** : entre 10 000 et 20 000 FCFA.
-- **Détartrage et polissage** : entre 25 000 et 40 000 FCFA.
-- **Extraction dentaire simple** : à partir de 20 000 FCFA.
-- **Plombage (Composite)** : entre 25 000 et 45 000 FCFA selon la taille.
-- **Dévitalisation (Traitement de racine)** : de 40 000 à 90 000 FCFA selon la dent (incisive vs molaire).
-
-## Pourquoi les prix varient-ils ?
-1. **La technologie utilisée** : L'utilisation de radios numériques, de scanners 3D ou de lasers a un coût, mais garantit un diagnostic plus précis et des soins moins douloureux.
-2. **La qualité des matériaux** : Entre un composite standard et un composite esthétique haut de gamme, ou entre une couronne métal et une couronne Zircone, le prix diffère logiquement.
-3. **L'expertise du praticien** : La formation continue et la spécialisation (orthodontie, implantologie) sont des investissements au service de votre santé.
-
-## Comment maîtriser son budget dentaire ?
-- **Demandez toujours un devis clair** : Avant tout soin onéreux (prothèse, implant), votre dentiste doit vous fournir un devis détaillé.
-- **N'attendez pas l'urgence** : Un petit soin de carie coûte 3 à 4 fois moins cher qu'une dévitalisation avec couronne.
-- **La prévention est rentable** : Un détartrage annuel à 30 000 FCFA évite souvent des maladies des gencives qui coûtent des centaines de milliers de francs à traiter plus tard.
-
-## Pourquoi les prix peuvent varier d’un cabinet à l’autre ?
-Au-delà de l’acte lui-même, le prix reflète aussi le niveau d’équipement disponible au cabinet : qualité du fauteuil, fiabilité de la stérilisation, précision de l’imagerie et organisation des étapes de soin. Ce sont des éléments qui améliorent le confort, la sécurité et la prévisibilité du traitement.
-
-Si vous êtes chirurgien-dentiste ou porteur de projet, AfriSmile propose aussi des ressources pour comparer un **[devis matériel dentaire](https://www.afrismile.net/devis-materiel-dentaire)**, évaluer un **[fauteuil dentaire au Sénégal](https://www.afrismile.net/fauteuil-dentaire-senegal)** ou mieux comprendre la chaîne de **[stérilisation avec autoclave Classe B](https://www.afrismile.net/autoclave-dentaire-classe-b-senegal)**.
-
-> À la **Clinique DABIA**, nous nous engageons sur la **transparence**. Un devis vous est remis avant le début des soins, sans surprise. N'hésitez pas à nous demander le détail de nos honoraires.`,
+    content: `""`,
     faq: [
       {
         q: "Le devis est-il payant ?",
@@ -4021,45 +2031,7 @@ Si vous êtes chirurgien-dentiste ou porteur de projet, AfriSmile propose aussi 
     cover: appareilPrixCover,
     pinned: true,
     readingMinutes: 10,
-    content: `Avoir un sourire aligné est un atout charme et santé indéniable.
-
-Vous pouvez aussi consulter nos pages money : **[Dentiste Dakar](/dentiste-dakar)** et **[Cabinet dentaire Dakar](/cabinet-dentaire-dakar)** avant de réserver votre bilan **[ici](/rendez-vous)**. Mais quel est le **prix d'un appareil dentaire à Dakar** ? C'est une question fréquente de nos patients, qu'il s'agisse de parents pour leurs enfants ou d'adultes souhaitant améliorer leur sourire.
-
-## Les différents types d'appareils et leurs coûts
-Le budget dépend de la technique choisie et de la durée du traitement.
-
-### 1. Les bagues métalliques (Le classique)
-C'est la solution la plus économique et très efficace.
-*   **Budget estimatif** : Souvent entre 600 000 et 1 200 000 FCFA pour un traitement complet (payables souvent par semestre ou trimestre).
-*   **Pour qui ?** Les adolescents principalement, mais aussi les adultes qui privilégient l'efficacité au coût.
-
-### 2. Les bagues céramiques (Le discret)
-Plus discrètes, elles se fondent avec la couleur des dents.
-*   **Budget** : Comptez environ 20% à 30% de plus que le métal.
-*   **Avantage** : Esthétique soignée tout en gardant la mécanique éprouvée des bagues.
-
-### 3. Les aligneurs invisibles (Type Invisalign)
-La révolution pour les adultes ! Des gouttières transparentes amovibles.
-*   **Budget** : Variable selon le nombre de gouttières, souvent à partir de 1 500 000 FCFA et jusqu'à 2 500 000 FCFA+ pour les cas complexes.
-*   **Avantage** : Invisible, confortable, hygiène facilitée.
-
-## Ce qui est inclus dans le prix
-Lorsqu'on vous annonce un tarif, vérifiez qu'il comprend :
-- La pose de l'appareil.
-- Les rendez-vous de suivi mensuels (activations).
-- La dépose en fin de traitement.
-- La **contention** (le fil collé derrière les dents pour maintenir le résultat). C'est crucial pour ne pas que les dents rebougent !
-
-## Peut-on payer en plusieurs fois ?
-Oui, c'est la norme en orthodontie. Contrairement à un soin unique, l'orthodontie dure de 6 à 24 mois.
-À la Clinique DABIA, nous proposons des **échéanciers de paiement** : un acompte initial pour le matériel, puis des mensualités ou trimestrialités adaptées à votre budget.
-
-## Les technologies qui améliorent le confort et la précision
-Les traitements orthodontiques et prothétiques sont plus fluides quand le cabinet travaille avec des outils numériques fiables. Un **scanner intra-oral** permet par exemple d’éviter certaines empreintes inconfortables et d’obtenir un suivi plus précis des mouvements dentaires ou des restaurations.
-
-Pour les praticiens qui souhaitent comparer ces solutions côté équipement, AfriSmile propose des repères utiles sur le **[scanner intra-oral au Sénégal](https://www.afrismile.net/scanner-intra-oral-senegal)**, les **[solutions pour moderniser un cabinet dentaire](https://www.afrismile.net/solutions-cabinets)** et la possibilité de **[demander un devis d’équipement](https://www.afrismile.net/devis-materiel-dentaire)** avant un investissement.
-
-> **Conseil de pro** : Ne choisissez pas votre orthodontiste uniquement sur le prix. La réussite du traitement dépend du suivi rigoureux et de l'expérience du praticien. Un traitement "pas cher" mais raté coûtera beaucoup plus cher à reprendre.`,
+    content: `""`,
     faq: [
       {
         q: "Combien de temps dure le traitement ?",
@@ -4089,36 +2061,7 @@ Pour les praticiens qui souhaitent comparer ces solutions côté équipement, Af
     cover: implantCoutCover,
     pinned: true,
     readingMinutes: 12,
-    content: `Perdre une dent peut affecter votre sourire, mais aussi votre capacité à mâcher et la santé de votre mâchoire.
-
-📞 Pour un plan de traitement personnalisé, prenez un créneau via **[rendez-vous](/rendez-vous)** (ou voyez d’abord **[urgence dentaire à Dakar](/urgence-dentaire-dakar)** en cas de douleur). L'**implant dentaire** est aujourd'hui la solution de référence pour remplacer une racine naturelle. Mais quel est le **tarif d'un implant dentaire à Dakar** ? Décryptage.
-
-## Qu'est-ce qu'un implant dentaire ?
-C'est une petite vis en titane (ou zircone) insérée dans l'os de la mâchoire, sur laquelle on vient fixer une couronne. C'est comme une "racine artificielle".
-
-## Combien ça coûte à Dakar ?
-Le prix d'un implant "complet" (Implant + Pilier + Couronne) varie généralement entre **400 000 FCFA et 800 000 FCFA** par dent au Sénégal.
-Ce tarif comprend :
-1.  **La phase chirurgicale** : Pose de l'implant dans l'os.
-2.  **La phase prothétique** : Fabrication et pose de la couronne (la dent visible).
-
-Attention aux prix d'appel trop bas : vérifiez la marque de l'implant (les marques reconnues mondialement offrent des pièces détachées disponibles à vie) et la qualité de la couronne (Céramo-métal vs Zircone).
-
-## Pourquoi est-ce si coûteux ?
-- **Matériel de haute technologie** : Le titane médical est onéreux et biocompatible.
-- **Stérilité absolue** : La pose demande un bloc ou une salle dédiée avec un niveau d'asepsie chirurgicale.
-- **Expertise** : C'est un acte chirurgical qui demande une formation avancée.
-
-## Les étapes du traitement à la Clinique DABIA
-1.  **Bilan 3D (Scanner/CBCT)** : Indispensable pour vérifier le volume osseux.
-2.  **Pose de l'implant** : Intervention sous anesthésie locale, totalement indolore. Durée : environ 30-45 minutes.
-3.  **Cicatrisation (Ostéointégration)** : On attend 2 à 4 mois que l'os "soude" l'implant.
-4.  **Pose de la couronne** : Une fois solide, on visse la nouvelle dent.
-
-## Est-ce remboursé ?
-Les implants sont considérés comme du "hors nomenclature" par la plupart des IPM et assurances classiques au Sénégal. Cependant, certaines assurances internationales ou mutuelles haut de gamme proposent des forfaits annuels pour l'implantologie.
-
-> Retrouvez le plaisir de croquer la vie à pleines dents. L'implant est un investissement durable pour votre santé et votre confiance en vous.`,
+    content: `""`,
     faq: [
       {
         q: "Est-ce que ça fait mal ?",
@@ -4148,32 +2091,7 @@ Les implants sont considérés comme du "hors nomenclature" par la plupart des I
     cover: blanchimentEclatCover,
     pinned: true,
     readingMinutes: 7,
-    content: `Le thé, le café, le tabac ou simplement le temps... nos dents ont tendance à jaunir. Vous cherchez un **blanchiment dentaire à Dakar** ? Voici ce qu'il faut savoir pour éclaircir votre sourire sans danger.
-
-## Pourquoi faire un blanchiment chez le dentiste ?
-On voit beaucoup de "bars à sourire" ou de produits miracles sur Internet (charbon, kits UV...). Attention !
-- **Sécurité** : Le dentiste protège vos gencives. Les produits non contrôlés peuvent causer des brûlures chimiques graves.
-- **Efficacité** : Les produits professionnels sont plus concentrés et agissent en profondeur, là où les dentifrices "blancheur" ne font que rayer la surface.
-- **Diagnostic préalable** : On ne blanchit jamais sur des caries ou du tartre ! Un détartrage préalable est obligatoire.
-
-## Les techniques proposées
-1.  **Le blanchiment au fauteuil (Cabinet)** :
-    *   Résultat immédiat en une séance (1h - 1h30).
-    *   Utilisation d'un gel activé par une lampe spécifique.
-    *   Idéal pour un événement (mariage, shooting).
-2.  **Le blanchiment ambulatoire (Gouttières maison)** :
-    *   Le dentiste fabrique des gouttières sur mesure.
-    *   Vous appliquez le produit chez vous pendant 10-15 jours (souvent la nuit).
-    *   Résultat souvent plus durable et stable dans le temps.
-
-## Quel est le prix d'un blanchiment à Dakar ?
-Le tarif varie selon la technique, généralement entre **150 000 FCFA et 300 000 FCFA** pour un traitement complet professionnel.
-C'est un acte esthétique, donc non pris en charge par les assurances.
-
-## Et le résultat ?
-On gagne en moyenne 2 à 3 teintes. Attention, les couronnes et les plombages ne blanchissent pas ! Si vous en avez sur les dents de devant, il faudra peut-être les changer après le blanchiment pour harmoniser la couleur.
-
-> **Le conseil Dabia** : Commencez toujours par un **détartrage-polissage** complet. Parfois, cela suffit à redonner un éclat naturel suffisant en enlevant les taches externes !`,
+    content: `""`,
     faq: [
       {
         q: "Est-ce que ça abîme l'émail ?",
@@ -4204,31 +2122,7 @@ On gagne en moyenne 2 à 3 teintes. Attention, les couronnes et les plombages ne
     cover: cliniqueDabiaCover,
     pinned: true,
     readingMinutes: 6,
-    content: `Choisir son dentiste n'est pas anodin. C'est une relation de confiance qui touche à votre intimité et votre santé. Si vous cherchez " **Clinique Dentaire DABIA** " ou un dentiste de confiance à Dakar, voici qui nous sommes et ce qui nous anime.
-
-## Une approche moderne et humaine
-Chez DABIA, nous avons banni l'image du dentiste "arracheur de dents". Notre priorité : **votre confort**.
-- **Gestion de la douleur** : Anesthésie systématique, douceur dans les gestes.
-- **Écoute** : Nous prenons le temps de vous expliquer le "pourquoi" et le "comment" de chaque acte.
-
-## Un plateau technique complet
-Pour bien soigner, il faut bien voir et bien diagnostiquer. La clinique est équipée de :
-- **Radio Panoramique & 3D (CBCT)** : Pour voir ce qui se passe sous la gencive et dans l'os.
-- **Caméra Intra-orale** : Pour vous montrer l'état de vos dents sur écran en temps réel.
-- **Moteurs d'endodontie** : Pour des dévitalisations précises et rapides.
-
-## Hygiène et Stérilisation : Notre Obsession
-C'est le point non-négociable. Nous suivons des protocoles draconiens :
-- Chaîne de stérilisation aux normes internationales (Autoclave classe B).
-- Instruments sous sachets stériles ouverts devant vous.
-- Désinfection des surfaces entre chaque patient.
-
-## Notre engagement tarifaire
-Nous savons que les soins dentaires représentent un budget.
-- **Transparence** : Aucun soin n'est commencé sans votre accord sur le devis.
-- **Juste prix** : Nous calculons nos honoraires au plus juste pour offrir la meilleure qualité de matériel tout en restant accessibles.
-
-> **Votre sourire est notre meilleure carte de visite.** Rejoignez les centaines de patients qui nous ont fait confiance pour retrouver le plaisir de sourire.`,
+    content: `""`,
     faq: [
       {
         q: "Où êtes-vous situés ?",
@@ -4259,33 +2153,7 @@ Nous savons que les soins dentaires représentent un budget.
     cover: prixCover,
     pinned: true,
     readingMinutes: 14,
-    content: `Vous cherchez un **dentiste à Dakar**, à **Liberté 6**, aux **Parcelles Assainies** ou à **Sicap Foire** ? La Clinique DABIA centralise les recherches “cabinet dentaire Dakar”, “dentiste Liberté 6”, “dentiste Parcelles Assainies” avec imagerie 3D et plateau technique complet.
-
-## Requêtes fréquentes des patients
-- **Dentiste Dakar** pour un contrôle, un **détartrage** ou une douleur.
-- **Clinique dentaire Liberté 6** pour rester proche de la VDN et des Parcelles.
-- **Cabinet dentaire Sicap Foire** équipé en **CBCT** et **scanner intra-oral**.
-- **Dentiste Parcelles Assainies** pour les urgences, la pédiatrie ou l’orthodontie.
-
-## Ce que propose la Clinique DABIA (Liberté 6 / Sicap Foire)
-- **Urgence dentaire à Dakar** : douleur, abcès, dent cassée, traumatisme.
-- **Implant dentaire** et **prothèse** (bridge, couronne) planifiés en 3D.
-- **Orthodontie** (bagues, aligneurs) adulte/enfant + suivi **dentiste pédiatrique**.
-- **Esthétique** : **blanchiment des dents à Dakar**, facettes, corrections de sourire.
-- **Prévention** : bilans, **AirFlow**, coaching d’hygiène personnalisé.
-
-## Parcours patient clair
-1. **Prise de rendez-vous** en ligne ou par téléphone.
-2. **Bilan complet** : photos, radios, éventuel **CBCT**, devis expliqué.
-3. Plan de traitement **priorisé** (urgence → soins → esthétique) avec calendrier.
-4. **Suivi** : rappels et contrôle de la cicatrisation/occlusion.
-
-## Accès et horaires
-- Clinique située à **Liberté 6 / Sicap Foire**, accès rapide depuis les **Parcelles** et la **VDN**.
-- **Horaires étendus** en semaine, créneaux le **samedi** selon disponibilités.
-- Stationnement et transports faciles pour les quartiers voisins.
-
-> Pour trouver rapidement un **cabinet dentaire à Dakar** (Liberté 6, Parcelles Assainies, Sicap Foire), contactez la **Clinique DABIA** : un devis clair est remis avant chaque soin.`,
+    content: `""`,
     faq: [
       {
         q: "Le cabinet de Liberté 6 prend-il les urgences dentaires ?",
@@ -4319,31 +2187,7 @@ Nous savons que les soins dentaires représentent un budget.
     cover: urgenceNuitCover,
     pinned: true,
     readingMinutes: 13,
-    content: `Une **douleur dentaire** à 23 h ou un choc un dimanche ? La Clinique DABIA n’assure pas une permanence ouverte 24 h/24. Voici les gestes utiles et les signes qui imposent de contacter un professionnel ou un service hospitalier sans attendre.
-
-## Signes qui imposent un dentiste en urgence à Dakar
-- Douleur **pulsatile** qui empêche de dormir.
-- **Gonflement** de la joue/cou, fièvre, trismus.
-- **Dent cassée** ou expulsée après traumatisme (sport, chute).
-- Saignement qui ne s’arrête pas après extraction ou choc.
-
-## Gestes immédiats avant de consulter un dentiste de nuit
-- **Paracétamol** selon la notice (éviter l’aspirine en cas de saignement).
-- **Froid externe** 20 min on/20 min off.
-- **Rinçage eau tiède salée** si suppuration qui draine.
-- Conserver toute dent/fragment dans du **lait** ou du sérum physiologique.
-
-## Prise en charge à la Clinique DABIA (Dakar)
-- **Accueil téléphonique pendant les horaires affichés** pour vous orienter et proposer le prochain créneau d’urgence disponible selon la situation.
-- Radios ciblées ou **CBCT** si besoin pour décider : **drainage**, **pulpotomie**, **traitement canalaire** d’urgence, extraction ou contention.
-- **Ordonnance** antalgiques/antibiotiques adaptée et **plan de soins** détaillé pour finaliser ensuite.
-
-## Budget et couverture
-- Devis expliqué avant chaque acte d’urgence.
-- Possibilités d’utiliser votre **IPM/mutuelle** selon le contrat.
-- Les traitements définitifs (couronne, implant, alignement) sont chiffrés à part.
-
-> En cas de douleur la nuit ou le week-end, protégez la dent et contactez la **Clinique DABIA** dès l’ouverture. Si le gonflement gagne le cou, si vous respirez difficilement, si le saignement ne cesse pas ou si votre état général se dégrade, contactez immédiatement les urgences hospitalières.`,
+    content: `""`,
     faq: [
       {
         q: "Puis-je venir sans rendez-vous pour une douleur aiguë ?",
@@ -4378,29 +2222,7 @@ Nous savons que les soins dentaires représentent un budget.
     cover: prixCover,
     pinned: true,
     readingMinutes: 12,
-    content: `Vous recherchez un **dentiste pas cher à Dakar** ou un **cabinet dentaire** qui explique clairement les **tarifs** ? La clé est de disposer d’un **diagnostic complet**, d’un **devis** transparent et d’un **plan de traitement en phases**.
-
-## Actes fréquents et ce qui influence le prix
-- **Consultation + radios** : nécessaire pour établir un devis fiable.
-- **Détartrage / AirFlow** : dépend du temps clinique et de l’inflammation.
-- **Caries / composites** : taille et localisation de la lésion.
-- **Couronne / prothèse / implant** : matériaux, laboratoire, temps opératoire.
-
-## Astuces pour payer moins sans sacrifier la qualité
-- **Prioriser** : urgences (douleur, infection) → soins → esthétique.
-- Étaler en **phases** : provisoires puis définitifs quand la biologie est stabilisée.
-- Activer votre **IPM / mutuelle** : demander un devis daté et signé.
-- Miser sur la **prévention** (contrôles, hygiène) pour éviter les gros traitements.
-- Discuter des **alternatives** : onlay vs couronne, bridge vs implant selon le cas.
-
-## Comment se passe un devis à la Clinique DABIA ?
-1. **Bilan** (photos, radios, parfois **CBCT**).
-2. **Plan de traitement** écrit avec priorités et options.
-3. **Devis détaillé** remis pour la **mutuelle/IPM** ou la planification budgétaire.
-4. Calendrier des séances pour lisser les coûts si besoin.
-
-> Un “**dentiste pas cher à Dakar**” doit surtout fournir un **diagnostic** précis et des **explications**. Un devis clair vous permet de comparer en connaissance de cause.
-`,
+    content: `""`,
     faq: [
       {
         q: "Peut-on obtenir un devis sans se déplacer ?",
@@ -4433,27 +2255,7 @@ Nous savons que les soins dentaires représentent un budget.
     author: AUTHORS.sao,
     cover: implantCover,
     readingMinutes: 11,
-    content: `Les expatriés et voyageurs recherchent un **dentiste à Dakar** capable d’expliquer clairement le traitement, d’anticiper un retour rapide et de préparer des **devis** pour les assurances internationales.
-
-## Les demandes les plus fréquentes
-- **Urgence dentaire à Dakar** avant un vol : douleur, fracture, infection.
-- **Check-up** rapide avec radios/CBCT et plan écrit de façon claire et détaillée.
-- **Implant / couronne / facette** : devis détaillé pour remboursement.
-- **Blanchiment** ou **aligners** pour des séjours courts.
-
-## Parcours adapté aux expatriés
-1. **RDV rapide** (souvent < 72 h) pour établir le diagnostic.
-2. **Compte-rendu détaillé** avec radios et plan de traitement.
-3. **Soins priorisés** selon la durée du séjour (urgence → provisoire → définitif).
-4. Factures et documents prêts pour votre **assurance internationale**.
-
-## Bonnes pratiques avant de venir
-- Envoyer vos **radios** si vous en avez déjà pour gagner du temps.
-- Préciser la **date de départ** pour organiser les séances.
-- Apporter vos **contrats d’assurance** ou formulaires à faire tamponner.
-
-> Si vous cherchez un **cabinet dentaire pour expatriés à Dakar**, la **Clinique DABIA** peut fournir un devis détaillé et un plan de soins compatible avec votre planning.
-`,
+    content: `""`,
     faq: [
       {
         q: "Acceptez-vous les assurances internationales ?",
@@ -4487,27 +2289,7 @@ Nous savons que les soins dentaires représentent un budget.
     author: AUTHORS.sao,
     cover: cbctCover,
     readingMinutes: 13,
-    content: `Un **bilan dentaire complet à Dakar** permet d’éviter les surprises et de prioriser les soins. À la **Clinique DABIA**, le check-up combine **examen clinique**, **imagerie** (panoramique ou **CBCT**), **photos** et **scanner intra-oral** pour un plan de traitement clair.
-
-## Ce qui est évalué
-- **Gencives** : dépistage gingivite/parodontite.
-- **Carie** : lésions visibles et caries débutantes entre les dents.
-- **Occlusion et usure** : bruxisme, fractures, articulations.
-- **Esthétique** : teinte, alignement, volume gingival.
-
-## Technologies utilisées au cabinet dentaire
-- **Panoramique** ou **CBCT 3D** selon l’indication (implant, dents incluses, canaux complexes).
-- **Scanner intra-oral** pour empreintes numériques (implants, onlays, aligneurs).
-- **Photographies** haute définition pour le suivi et les simulations.
-
-## Livrables et plan de traitement
-1. **Diagnostic** détaillé en français.
-2. **Devis** et calendrier : urgences → soins → prothèse/esthétique.
-3. Conseils d’**hygiène personnalisés** (AirFlow, brossettes, fluor).
-4. Programmation des contrôles (6–12 mois) et rappels.
-
-> Pour un **bilan dentaire à Dakar** avec technologie **CBCT** et **scanner intra-oral**, prenez rendez-vous à la **Clinique DABIA** : un plan de soins priorisé et chiffré vous est remis.
-`,
+    content: `""`,
     faq: [
       {
         q: "Combien de temps dure un check-up complet ?",
@@ -4540,32 +2322,7 @@ Nous savons que les soins dentaires représentent un budget.
     cover: gingiviteCover,
     pinned: true,
     readingMinutes: 14,
-    content: `Les **gencives qui saignent**, une **mauvaise haleine** persistante ou des dents qui s’allongent sont souvent les premiers signes d’une **parodontite**. À Dakar, une prise en charge précoce évite la perte osseuse et la mobilité des dents.
-
-## Signes d’alerte à surveiller
-- Saignement au brossage ou au fil dentaire, gencives gonflées.
-- Sensation de dents qui bougent ou d’espaces qui apparaissent.
-- Goût métallique, haleine désagréable malgré un brossage correct.
-- Rétraction gingivale et racines sensibles au froid.
-
-## Bilan parodontal complet
-- Entretien médical (tabac, diabète, grossesse) et photos intra-orales.
-- **Sondage** des poches autour de chaque dent pour mesurer la profondeur.
-- Radiographies 2D ou **CBCT** ciblé pour évaluer la perte osseuse.
-- Analyse occlusale/bruxisme pour identifier les facteurs mécaniques.
-
-## Phases du traitement parodontal
-1. **Phase initiale** : motivation à l’hygiène, choix des brosses/brossettes, détartrage complet.
-2. **Surfaçage radiculaire** quadrant par quadrant sous anesthésie locale pour éliminer plaque, tartre et toxines. Antibiothérapie locale ou systémique si nécessaire.
-3. **Phase correctrice** : micro-chirurgie ou greffe gingivale lorsque les pertes sont importantes, ajustements occlusaux, éventuelle gouttière de bruxisme.
-4. **Maintenance** : contrôles tous les 3 à 4 mois pour stabiliser les résultats, réévaluation des poches.
-
-## Prix et prise en charge
-- Le devis dépend du nombre de séances de surfaçage, des greffes et du suivi radiologique.
-- Les **IPM** ou **mutuelles dentaires à Dakar** remboursent parfois une partie du traitement parodontal sur présentation d’un devis.
-- Un **plan écrit** est remis pour anticiper le budget et organiser les rendez-vous.
-
-> Une parodontite stabilisée permet de garder ses dents longtemps. Dès les premiers saignements, prenez rendez-vous avec la Clinique DABIA pour un bilan complet.`,
+    content: `""`,
     faq: [
       {
         q: "Le surfaçage radiculaire est-il douloureux ?",
@@ -4589,30 +2346,7 @@ Nous savons que les soins dentaires représentent un budget.
     author: AUTHORS.sao,
     cover: nuitCover,
     readingMinutes: 12,
-    content: `Le **ronflement** régulier n’est pas seulement gênant : il peut révéler une **apnée du sommeil légère**. À Dakar, l’orthèse d’avancée mandibulaire (OAM) fabriquée par un dentiste du sommeil libère les voies respiratoires sans appareil encombrant.
-
-## Ronflement simple ou apnée ?
-- Ronflement simple : bruit sans pauses respiratoires, fatigue modérée.
-- **SAS léger** : pauses de respiration (apnées), somnolence diurne, maux de tête au réveil.
-- Facteurs aggravants : surpoids, alcool tardif, obstruction nasale, mâchoire reculée.
-
-## Parcours de soins à la Clinique DABIA
-1. **Entretien** et examen de l’occlusion pour vérifier la faisabilité de l’OAM.
-2. Orientation vers un **ORL** ou un médecin du sommeil pour une polygraphie/polysomnographie si besoin.
-3. Scanner intra-oral, empreintes et enregistrement de la protrusion mandibulaire.
-4. Livraison de la gouttière, réglages progressifs et contrôles réguliers.
-
-## Comment fonctionne l’orthèse mandibulaire ?
-- Deux gouttières relient les arcades et avancent légèrement la mâchoire inférieure.
-- Cette avance augmente le volume pharyngé et limite les vibrations responsables du ronflement.
-- Portée uniquement la nuit, elle reste discrète et durable.
-
-## Conseils d’hygiène du sommeil
-- Dormir sur le côté, limiter alcool/tabac en soirée.
-- Traiter allergie ou nez bouché, garder un poids stable.
-- Faire vérifier l’usure de l’orthèse, surtout en cas de bruxisme.
-
-> Si vous cherchez une **gouttière anti-ronflement à Dakar**, prenez rendez-vous : un diagnostic précis détermine si l’OAM est la bonne solution.`,
+    content: `""`,
     faq: [
       {
         q: "Une orthèse remplace-t-elle le CPAP ?",
@@ -4641,33 +2375,7 @@ Nous savons que les soins dentaires représentent un budget.
     author: AUTHORS.sao,
     cover: enfantCover,
     readingMinutes: 13,
-    content: `Entre **6 et 10 ans**, la croissance faciale est malléable : c’est la période idéale pour une **orthodontie interceptive**. À Dakar, elle corrige les mâchoires étroites, les suctions digitales ou les décalages osseux avant qu’ils ne se figent.
-
-## Quand consulter ?
-- Respiration buccale, ronflements, lèvres qui ne se ferment pas.
-- Succion du pouce/tétine persistante.
-- Dents très en avant ou en arrière.
-- Manque de place évident dès l’éruption des incisives permanentes.
-- Troubles fonctionnels (déglutition infantile, interposition de la langue).
-
-## Appareils interceptifs possibles
-- **Plaques amovibles** avec vérin d’expansion pour élargir le palais.
-- **Quad-Helix / disjoncteur** collé pour corriger une arcade trop étroite.
-- **Masque facial** ou traction inversée pour stimuler la croissance maxillaire.
-- **Pistes fonctionnelles** et gouttières myofonctionnelles pour rééduquer respiration et posture linguale.
-
-## Déroulé à la Clinique DABIA
-1. Bilan orthodontique complet (photos, empreinte numérique, téléradiographie).
-2. Plan individualisé expliqué aux parents avec durée estimée et devis.
-3. Séances d’activation et de contrôle toutes les 4 à 8 semaines.
-4. Phase de contention légère ou relais avec un traitement multi-bagues/aligneurs à l’adolescence si nécessaire.
-
-## Rôle des parents
-- Aider au port quotidien de l’appareil et au carnet de suivi.
-- Surveiller l’hygiène : brossage + tablette révélatrice si besoin.
-- Coordonner orthophonie/ORL lorsque des troubles fonctionnels sont identifiés.
-
-> Plus l’orthodontie interceptive commence tôt, moins elle nécessite des extractions ou un traitement lourd plus tard. Contactez notre équipe pédiatrique à **Liberté 6**.`,
+    content: `""`,
     faq: [
       {
         q: "Un appareil interceptif fait-il mal ?",
@@ -4692,32 +2400,7 @@ Nous savons que les soins dentaires représentent un budget.
     author: AUTHORS.sao,
     cover: fluorCover,
     readingMinutes: 11,
-    content: `Une **récession gingivale** correspond à une gencive qui recule et laisse apparaître la racine. Outre l’aspect esthétique, elle expose aux sensibilités et augmente le risque de carie cervicale. À Dakar, nous combinons diagnostic précis et techniques de greffe pour restaurer le tissu perdu.
-
-## Quelles sont les causes ?
-- Brossage trop appuyé ou brosse dure.
-- Maladies parodontales non stabilisées.
-- Bruxisme, occlusion traumatique ou mouvement orthodontique mal contrôlé.
-- Piercing labial, frein trop court, biotype gingival fragile.
-
-## Bilan nécessaire
-- Mesure millimétrique de la récession (classification de Miller ou Cairo).
-- Analyse des habitudes d’hygiène, du type de brosse et du geste.
-- Radios pour vérifier la hauteur osseuse.
-- Observation des freins et de la quantité de gencive kératinisée.
-
-## Traitements possibles
-1. **Correction des causes** : brosse souple, technique de Bass, gouttière si bruxisme.
-2. **Traitement parodontal** si inflammation (détartrage + surfaçage).
-3. **Greffe gingivale** (conjonctif, épithélio-conjonctif ou matrices collagéniques) associée à un lambeau de translation coronale pour recouvrir la racine.
-4. **Composites cervicaux** pour protéger la racine si la greffe n’est pas indiquée.
-
-## Prévention des récidives
-- Coaching d’hygiène personnalisé, brosse électrique avec capteur de pression.
-- Contrôles tous les 6 mois pour surveiller la stabilité.
-- Ajustements orthodontiques/occlusaux lorsque les dents subissent une surcharge.
-
-> Vous remarquez des dents plus longues ou sensibles ? Prenez rendez-vous pour discuter des options de **greffe gingivale à Dakar**.`,
+    content: `""`,
     faq: [
       {
         q: "Une greffe gingivale est-elle obligatoire ?",
@@ -4743,31 +2426,7 @@ Nous savons que les soins dentaires représentent un budget.
     cover: halitoseCover,
     pinned: true,
     readingMinutes: 10,
-    content: `> En jeûne, priorisez les **soins urgents** (douleur, abcès, trauma). Pour les soins programmés, privilégiez les **rendez-vous après la rupture** du jeûne ou tôt le matin pour rester à l’aise.
-
-## Ce qui ne rompt pas le jeûne
-- **Examen clinique** et conseil préventif.  
-- **Détartrage** doux (sans ingestion).  
-- **Anesthésie locale** (piqûre).  
-- **Radio** (CBCT/panoramique) si nécessaire.  
-> Si vous craignez d’avaler de l’eau ou du gel, planifiez après l’iftar.
-
-## Douleurs et médicaments
-- **Paracétamol** : attendre l’iftar/suhoor pour le prendre.  
-- **Antibiotiques** : respectez les horaires fixés par le dentiste (souvent après iftar + suhoor).  
-- Éviter **anti-inflammatoires** en automédication (risque gastrique).
-
-## Haleine et bouche sèche pendant le jeûne
-- Brosse **douce** + pâte fluorée au suhoor et avant l’iftar.  
-- **Gratte-langue** doux le matin.  
-- Boire suffisamment la nuit, limiter **attaya/café** très sucrés.  
-- Si port d’**aligneurs/gouttières** : bien rincer et nettoyer au suhoor/iftar.
-
-## Quand consulter en urgence pendant le Ramadan
-- **Douleur pulsatile** qui empêche de dormir.  
-- **Gonflement** ou fièvre.  
-- **Traumatisme** (dent cassée/expulsée).  
-> En cas de doute, appelez la Clinique DABIA : une prise en charge rapide évite la rupture du jeûne à cause d’une aggravation.`,
+    content: `""`,
   },
 
   {
@@ -4787,29 +2446,7 @@ Nous savons que les soins dentaires représentent un budget.
     cover: prixCover,
     pinned: true,
     readingMinutes: 11,
-    content: `Beaucoup de patients de la **diaspora** planifient leurs soins à Dakar. Avec une bonne préparation, il est possible de concentrer les étapes sur **7–10 jours** (hors cicatrisations implantaires).
-
-## Avant de voyager
-- Demandez un **appel vidéo** ou un pré-devis si vous avez déjà des radios.  
-- Préparez vos **ordonnances** et antécédents (allergies, traitements).  
-- Bloquez un **créneau large** les premiers jours pour le bilan + imagerie 3D.
-
-## Exemple de planning
-- **Jour 1** : bilan complet + photos + radios/CBCT + plan de traitement.  
-- **Jour 2–3** : soins prioritaires (caries, détartrage, urgences).  
-- **Jour 4–6** : étapes prothétiques/esthétiques (empreintes, provisoires).  
-- **Jour 7–10** : ajustements, pose provisoire/définitive selon l’acte.  
-> Pour les **implants**, la pose peut se faire pendant le séjour, la prothèse définitive nécessite un retour après cicatrisation.
-
-## Budget et prise en charge
-- Un **devis clair** vous est remis avant chaque étape.  
-- Les **assurances/IPM** peuvent couvrir certaines parties : apportez vos documents.  
-- Possibilité d’étaler certaines phases (urgence → provisoire, puis définitif au prochain séjour).
-
-## Astuces pratiques
-- Prévoir un **jour tampon** si vous êtes serré en timing.  
-- Éviter les aliments **très épicés** juste après les soins.  
-- Utiliser une **brosse souple** de voyage + bain de bouche doux si indiqué.`,
+    content: `""`,
   },
 
   {
@@ -4829,25 +2466,7 @@ Nous savons que les soins dentaires représentent un budget.
     cover: enfantCover,
     pinned: true,
     readingMinutes: 9,
-    content: `La **carie du biberon** apparaît très tôt, surtout avec les biberons **sucrés** (lait concentré, jus, attaya) pris la nuit.
-
-## Signes d’alerte
-- Taches **brunes/blanches** sur les incisives de lait.  
-- **Haleine** anormale, irritabilité au biberon.  
-- Aliments qui se coincent, douleur au froid.
-
-## Prévenir à la maison
-- Pas de **biberon sucré** la nuit ; privilégier **eau** ou lait non sucré.  
-- Nettoyer les **gencives** avec une compresse humide après les repas, puis brosse souple dès la première dent.  
-- Dentifrice **fluoré** dès que l’enfant sait cracher (dose pois chiche).  
-- Limiter les **grignotages** sucrés (biscuits, jus, attaya répété).
-
-## À la clinique DABIA
-- Bilan pédiatrique **dès 1 an** ou apparition des premières dents.  
-- **Vernis fluoré** et conseils personnalisés.  
-- Soins précoces pour éviter la propagation aux molaires définitives.
-
-> Une carie de lait non soignée peut toucher la **dent définitive** en dessous. Consultez tôt pour éviter la douleur et les extractions.`,
+    content: `""`,
   },
 
   {
@@ -4868,26 +2487,7 @@ Nous savons que les soins dentaires représentent un budget.
     cover: blanchimentCover,
     pinned: true,
     readingMinutes: 10,
-    content: `Certaines recettes virales (charbon, citron, poudre de brique, bicarbonate pur) **abrasent** ou **acidifient** l’émail. Résultat : dents plus sensibles, gencives irritées, teinte qui jaunit à long terme.
-
-## Pourquoi c’est risqué ?
-- **Citron/vinaigre** : attaques acides répétées ⟶ émail fragilisé.  
-- **Poudre de brique/charbon** : abrasifs qui creusent des **micro-rayures**.  
-- **Bicarbonate pur** : abrasivité élevée, gencives irritées.
-
-## Comment éclaircir sans danger ?
-- **Bilan** pour vérifier caries/fissures avant tout éclaircissement.  
-- **Détartrage + AirFlow** pour enlever les taches (attaya, café, kola).  
-- **Blanchiment médical** encadré, gels dosés + protections gingivales.  
-- Entretien : brossage doux, retouches légères avec gouttières si indiqué.
-
-## Bons réflexes à Dakar
-- Ne pas mélanger **recettes maison** sans avis pro.  
-- Privilégier des **dentifrices peu abrasifs** (RDA contrôlé).  
-- Espacer café/attaya ou rincer à l’eau ensuite.  
-- Prendre rendez-vous si **sensibilité** ou taches persistantes.
-
-> Le vrai “sourire blanc” se construit avec une **émail sain**, des soins adaptés et un entretien régulier, pas avec des recettes agressives.`,
+    content: `""`,
   },
 
   {
@@ -4901,49 +2501,7 @@ Nous savons que les soins dentaires représentent un budget.
     author: AUTHORS.sao,
     cover: urgenceCover,
     readingMinutes: 11,
-    content: `> **Résumé rapide – urgence dentaire à Dakar** — En cas de douleur aiguë, gonflement ou traumatisme : prenez du **paracétamol** (pas d’aspirine si saignement), appliquez du **froid** sur la joue 20 min on/20 min off, **rincez** à l’eau tiède salée si suppuration, **gardez** tout fragment de dent dans du sérum ou du lait, et **appelez la Clinique Dentaire DABIA à Dakar** pour une prise en charge rapide : [/rendez-vous](/rendez-vous).
-
-## Quand faut-il consulter en urgence ?
-Certains signes ne doivent pas attendre, quel que soit le **dentiste à Dakar** ou la **clinique dentaire** que vous consultez :
-- **Douleur nocturne** ou pulsatile qui empêche de dormir  
-- **Gonflement** de la joue ou du cou  
-- **Fièvre**, mauvais goût en bouche (éventuelle suppuration)  
-- **Dent cassée**, expulsion partielle après choc  
-- **Saignement** qui ne s’arrête pas  
-- **Hypersensibilité** chaude/froide persistante
-
-> En présence de **difficulté à ouvrir la bouche**, d’**œdème qui s’étend** ou de **fièvre élevée**, contactez-nous immédiatement. 
-
-## Premiers gestes à la maison (secours)
-- **Antalgique :** paracétamol selon notice. *Éviter l’aspirine* si saignement.  
-- **Froid externe :** poche froide enroulée dans un linge, 20 min on/off.  
-- **Rinçage :** eau tiède salée (1/2 c. à café de sel/verre) 2–3×/jour si abcès qui draine.  
-- **Dent cassée :** conservez le fragment dans du sérum physiologique (ou du lait UHT).  
-- **Hygiène douce :** brossage délicat + brossettes si toléré.  
-- **Évitez :** alcool, tabac, aliments très chauds/sucrés, automédication antibiotique.
-
-## Que va faire le dentiste ?
-À la clinique DABIA, la prise en charge suit un protocole clair :
-1. **Interrogatoire ciblé + radio** (CBCT ou rétro-alvéolaire selon cas).  
-2. **Soulagement immédiat** : médication adaptée, drainage si nécessaire.  
-3. **Traitement causal** : pansement calmant, ouverture de chambre pulpaire, suture, collage provisoire, etc.  
-4. **Plan complet** remis par écrit, avec rendez-vous de contrôle.
-
-Voir nos équipements d’imagerie et de planification : [/infos/technologie](/infos/technologie).
-
-## Traumatismes chez l’adulte et l’enfant
-- **Dent expulsée (avulsion)** : remettre en place *si possible* dans les 30 min (sans frotter la racine), sinon conserver dans du lait et venir immédiatement.  
-- **Fracture coronaire** : le collage du fragment est souvent possible.  
-- **Luxation** : contention après repositionnement.
-
-> Chaque urgence est unique : **l’examen clinique** est indispensable pour un diagnostic fiable. Prenez rendez-vous : [/rendez-vous](/rendez-vous).
-
-### FAQ
-**Puis-je prendre des antibiotiques sans ordonnance ?** Non, ils peuvent masquer les symptômes et retarder le bon geste.  
-**Le clou du mal la nuit ?** Surélevez la tête, froid externe, paracétamol, et consultez vite.  
-**Et si je suis enceinte ?** Signalez-le : on adapte imagerie et médication.
-
-*Ce contenu est informatif et ne remplace pas une consultation individuelle.*`,
+    content: `""`,
   },
 
   // NOUVEAUX ARTICLES
@@ -4958,7 +2516,7 @@ Voir nos équipements d’imagerie et de planification : [/infos/technologie](/i
     author: AUTHORS.sao,
     cover: scellantsCover,
     readingMinutes: 8,
-    content: `Les **scellants** (ou sealants) protègent les **sillons des molaires** de l’enfant. Ils forment une fine **barrière** contre la plaque et les sucres.\n\n## Quand les poser ?\n- À l’éruption des **molaires définitives** (vers 6–7 ans),\n- Chez les enfants à **risque carieux** élevé (taches, habitudes sucrées).\n\n## Déroulé rapide\nNettoyage – isolation – application du matériau – **photopolymérisation**. Indolore et réversible.\n\n> Couplé à une **hygiène fluorée** et des contrôles, c’est une des meilleures stratégies de **prévention**.`,
+    content: `""`,
   },
 
   {
@@ -4979,49 +2537,7 @@ Voir nos équipements d’imagerie et de planification : [/infos/technologie](/i
     cover: premierRdvCover,
     readingMinutes: 12,
     pinned: true,
-    content: `Un **dentiste pour enfants** (pédodontiste ou chirurgien‑dentiste formé à la pédiatrie) accompagne les familles dès les premières dents de lait. À Dakar et dans tout le Sénégal, une prise en charge précoce permet d’**éviter les grosses caries**, la peur du dentiste et les urgences douloureuses.
-
-## À quel âge emmener son enfant chez le dentiste ?
-- **Dès 1 an** si possible, ou à l’éruption des premières molaires de lait.  
-- Au plus tard vers **2–3 ans**, même sans douleur, pour un **bilan de prévention**.  
-- Ensuite, un contrôle tous les **6 à 12 mois** selon le risque carieux.
-
-> Plus l’enfant découvre tôt le **cabinet dentaire** dans un contexte calme, moins il associe le dentiste à la douleur.
-
-## Comment se passe une première visite à la Clinique DABIA ?
-1. **Accueil rassurant** : explication simple de ce qui va se passer, sans termes anxiogènes.  
-2. **Examen bucco‑dentaire** : dents de lait, gencives, frein de langue, habitudes (sucette, pouce).  
-3. **Conseils personnalisés** aux parents : brossage, alimentation, rythme des visites.  
-4. Si nécessaire, **radios ciblées** pour vérifier les contacts entre molaires ou une carie débutante.  
-
-L’objectif est d’installer une **relation de confiance** : l’enfant repart avec des gestes simples à appliquer à la maison.
-
-## Prévenir les caries chez l’enfant au Sénégal
-- **Brossage 2×/jour** avec un **dentifrice fluoré adapté à l’âge**.  
-- Éviter le grignotage sucré (bonbons, biscuits, boissons sucrées, attaya répété).  
-- Limiter le biberon ou la tétine sucrée la nuit.  
-- Faire contrôler les **molaires définitives** dès leur éruption (vers 6–7 ans) et envisager des **scellants de sillons** si besoin.  
-- Surveiller la respiration buccale, les ronflements ou le **serrage de dents** chez l’enfant.
-
-## Quand consulter en urgence pour un enfant ?
-- Douleur qui réveille la nuit ou empêche de manger.  
-- Dent cassée après chute ou choc (gardez le fragment dans du **lait** ou du sérum).  
-- Gencive gonflée, fièvre, mauvaise haleine persistante.  
-- Chute sur les dents de devant avec changement de couleur ou mobilité.
-
-Dans ces situations, contactez rapidement un **dentiste pédiatrique à Dakar** pour éviter la propagation de l’infection et sauver la dent quand c’est possible.
-
-## Questions fréquentes des parents
-**Et si mon enfant a peur du dentiste ?**  
-Parlez‑lui de la visite comme d’un **contrôle de routine**, sans insister sur la douleur. À la clinique, nous prenons le temps de l’apprivoiser et d’expliquer avec des mots simples.
-
-**Les dents de lait, est‑ce vraiment important ?**  
-Oui : elles servent à **manger**, à **parler** et à garder la place des futures dents définitives. Une carie de dent de lait peut faire très mal et infecter la dent permanente.
-
-**Peut‑on faire du fluor au Sénégal ?**  
-Oui, sous contrôle du dentiste : vernis fluorés, conseils sur le dentifrice et la fréquence d’utilisation.
-
-> Pour une première visite en douceur chez un **dentiste pour enfants à Dakar**, prenez rendez‑vous en ligne : [/rendez-vous](/rendez-vous) • Découvrez aussi nos conseils dédiés : [/infos/enfants](/infos/enfants).`,
+    content: `""`,
     faq: [
       {
         q: "À partir de quel âge un enfant doit-il voir un dentiste ?",
@@ -5053,7 +2569,7 @@ Oui, sous contrôle du dentiste : vernis fluorés, conseils sur le dentifrice et
     author: AUTHORS.sao,
     cover: nuitCover,
     readingMinutes: 9,
-    content: `Le **bruxisme** est un **serrement/grincement** involontaire, surtout la nuit. Il peut user l’**émail** et donner des **douleurs** musculaires.\n\n## Signes\nUsure dentaire, réveils douloureux, craquements temporo‑mandibulaires.\n\n## Solutions\n- **Gouttière** de protection sur‑mesure,\n- Gestion du **stress**, posture, kiné maxillo‑faciale,\n- Contrôles réguliers.`,
+    content: `""`,
   },
 
   {
@@ -5067,7 +2583,7 @@ Oui, sous contrôle du dentiste : vernis fluorés, conseils sur le dentifrice et
     author: AUTHORS.sao,
     cover: implantCover,
     readingMinutes: 11,
-    content: `Le concept **All‑on‑4** permet de **fixer une prothèse complète** sur **4 implants** (parfois 6 selon les cas).\n\n## Indications\nÉdentement complet, volume osseux suffisant/optimisé (greffe possible).\n\n## Étapes\nBilan 3D – planification – chirurgie – prothèse provisoire – prothèse définitive.\n\n## Entretien\nHygiène rigoureuse, irrigateur, contrôles.`,
+    content: `""`,
   },
 
   {
@@ -5081,7 +2597,7 @@ Oui, sous contrôle du dentiste : vernis fluorés, conseils sur le dentifrice et
     author: AUTHORS.sao,
     cover: fluorCover,
     readingMinutes: 8,
-    content: `La **sensibilité** survient quand les tubules dentinaires sont **exposés** (collets, érosion, usure).\n\n## Causes\nBrossage abrasif, déchaussement, bruxisme, acides.\n\n## Solutions\nVernis désensibilisant, **dentifrices** spécifiques, **collets** traités, gouttière si bruxisme.`,
+    content: `""`,
   },
   {
     slug: "tarif-implant-dentaire-dakar-facteurs-devis",
@@ -5096,36 +2612,7 @@ Oui, sous contrôle du dentiste : vernis fluorés, conseils sur le dentifrice et
     author: AUTHORS.sao,
     cover: implantCover,
     readingMinutes: 12,
-    content: `> Résumé — Le **prix d’un implant dentaire à Dakar** dépend du **diagnostic 3D**, des **biomatériaux**, de la **complexité** (greffe, chirurgie guidée) et du **type de couronne**. Un **devis clair** est toujours remis après examen.
-
-## Les postes qui composent un devis d’implant
-- **Bilan initial** : consultation, photos, empreintes/scan, **CBCT** si besoin pour mesurer volumes et trajets nerveux.  
-- **Planification** : choix dimensionnel, **guide chirurgical** si indiqué.  
-- **Chirurgie** : pose de l’implant (titane/zircone), vis de cicatrisation.  
-- **Temps prothétique** : pilier + **couronne** (céramique/zircone), ajustements.  
-- **Contrôles** : visites de suivi, maintenance.
-
-## Ce qui fait varier le tarif
-- **Complexité osseuse** : greffe (sinus lift, apposition, RPF) si volume insuffisant.  
-- **Nombre d’implants** et **localisation** (esthétique/secteur postérieur).  
-- **Marque d’implant** et **type de pilier**.  
-- **Matériaux de la couronne** : céramique stratifiée, zircone monolithique, etc.  
-- **Chirurgie guidée** pour plus de précision selon indications.
-
-## Parcours patient à DABIA
-1. **Entretien + examen clinique**  
-2. **CBCT** et planification numérique  
-3. **Pose** (anesthésie locale) — suites confort gérées  
-4. **Cicatrisation** 6–12 semaines selon biologie  
-5. **Couronne** sur pilier, réglages occlusaux  
-6. **Maintenance** : hygiène, contrôles
-
-### FAQ
-**C’est douloureux ?** Modéré, contrôlé par antalgiques.  
-**Fumeur(se) ?** Le sevrage améliore nettement la cicatrisation.  
-**Alternatives ?** Bridge, prothèse amovible — discutées au cas par cas.
-
-> Pour un chiffrage précis et transparent, prenez rendez-vous : [/rendez-vous](/rendez-vous).`,
+    content: `""`,
   },
 
   {
@@ -5141,73 +2628,7 @@ Oui, sous contrôle du dentiste : vernis fluorés, conseils sur le dentifrice et
     author: AUTHORS.sao,
     cover: airflowCover,
     readingMinutes: 10,
-    content: `Le **détartrage** élimine la plaque minéralisée responsable des **gingivites** et aide à prévenir la **parodontite**. À Dakar, le prix varie selon l’**état gingival**, la **durée** et la **technique** utilisée (ultrasons classiques, **AirFlow** pour la prophylaxie, ou **surfaçage** si inflammation profonde).
-
-## Comment se déroule un détartrage ?
-1. **Bilan gingival** (saignement, poches, mobilités)  
-2. **Détartrage aux ultrasons** + polissage  
-3. Selon indication, **AirFlow** pour éliminer les colorations  
-4. **Conseils d’hygiène** personnalisés (brosse, brossettes, bain de bouche)
-
-## AirFlow, pour qui ?
-Technique douce qui projette une poudre spécifique : idéale pour **taches** et **biofilm** supra-gingival, complémentaire des ultrasons.
-
-## De quoi dépend le prix ?
-- **Temps clinique** (durée, nombre de séances)  
-- **Diagnostic** : simple prophylaxie vs **surfaçage** si poches  
-- **Technologie** : utilisation de l’AirFlow  
-- **Suivi** : contrôles et rappel d’hygiène
-
-### À quelle fréquence ?
-Généralement **tous les 6 à 12 mois**, plus rapproché si **facteurs de risque** (tabac, diabète, antécédents parodontaux).
-
-> Besoin d’une évaluation et d’un devis ? Prenez rendez-vous : [/rendez-vous](/rendez-vous).`,
-  },
-
-  {
-    slug: "meilleur-dentiste-dakar-criteres-de-choix",
-    title: "Meilleur dentiste à Dakar ? Les critères pour bien choisir",
-    description:
-      "Comprendre les critères de qualité (écoute, diagnostic, technologie, hygiène, suivi) pour choisir un dentiste ou une clinique dentaire à Dakar, et poser les bonnes questions lors de la première visite.",
-    date: "2025-09-02",
-    category: "Conseils",
-    pinned: true,
-    tags: [
-      "meilleur dentiste dakar",
-      "cabinet dentaire dakar",
-      "dentiste dakar",
-    ],
-    author: AUTHORS.sao,
-    cover: prixCover,
-    readingMinutes: 11,
-    content: `La notion de “**meilleur**” dentiste est **subjective**. En revanche, des **repères concrets** aident à choisir un cabinet ou une **clinique dentaire à Dakar** qui vous convient.
-
-## 7 critères utiles
-1. **Écoute et pédagogie** : le plan de traitement est expliqué, options et priorités sont posées.  
-2. **Diagnostic outillé** : imagerie adaptée (photos, radios, CBCT si nécessaire).  
-3. **Hygiène et traçabilité** : stérilisation et protocole visibles, rassurants.  
-4. **Compétences variées** : gestion des urgences, esthétique, implantologie, orthodontie ou réseau de spécialistes.  
-5. **Devis clair** : transparence des coûts, alternatives éventuelles.  
-6. **Suivi** : contrôles et maintenance programmés.  
-7. **Accès et horaires** : proximité (Liberté 6 / Parcelles / Sicap Foire) et créneaux adaptés.
-
-## Première visite : les bonnes questions
-- Quelles sont mes **priorités** à court terme ?  
-- Quelles **options** existent pour atteindre mon objectif ?  
-- Quels **délais** et **coûts** prévoir ?  
-- Quel **entretien** pour pérenniser le résultat ?
-
-### FAQ – dentiste et clinique dentaire à Dakar
-**Quel est le meilleur dentiste à Dakar ?**  
-Il n’existe pas de “meilleur” dentiste universel, mais des **professionnels sérieux** qui s’appuient sur un diagnostic complet, des explications claires et des équipements modernes. L’important est de trouver un cabinet ou une **clinique dentaire à Dakar** où vous vous sentez écouté et en confiance.
-
-**Comment choisir une clinique dentaire à Dakar ?**  
-Comparez l’**expérience de l’équipe**, la **technologie** (radio 3D, scanner intra‑oral, protocole de stérilisation), la **qualité de l’accueil**, la clarté des **devis** et les possibilités de **suivi**. Visiter les lieux et poser des questions lors de la première consultation est souvent très utile.
-
-**La Clinique Dentaire DABIA accepte‑t‑elle de nouveaux patients ?**  
-Oui. Située à **Liberté 6 / Sicap Foire**, la Clinique Dentaire DABIA est une **clinique dentaire à Dakar** qui accueille de nouveaux patients pour des bilans, urgences, soins courants et plans de traitement complets.
-
-> Découvrez notre page Liberté 6 : [/cabinet-dentaire-liberte-6](/cabinet-dentaire-liberte-6) • Prenez RDV : [/rendez-vous](/rendez-vous).`,
+    content: `""`,
   },
 
   {
@@ -5222,48 +2643,7 @@ Oui. Située à **Liberté 6 / Sicap Foire**, la Clinique Dentaire DABIA est une
     author: AUTHORS.sao,
     cover: blanchimentCover,
     readingMinutes: 12,
-    content: `Le blanchiment dentaire vise à **éclaircir la teinte** des dents en agissant sur les pigments. À la Clinique DABIA, nous proposons des protocoles **sécurisés** et **personnalisés** après un examen préalable.
-
-## Quelles méthodes ?
-### 1) Blanchiment en cabinet (lampe/LED)
-- **Séance unique** ~(45–60 min) avec protection des gencives.  
-- **Indication** : recherche d’un résultat rapide et homogène.  
-- **Avantage** : encadrement médical, contrôle de la sensibilité.
-
-### 2) Blanchiment à domicile (gouttières sur-mesure)
-- **Gel dosé** + **port quotidien** (10–14 jours).  
-- **Indication** : évolution douce, retouches maîtrisées.  
-- **Avantage** : confort à la maison, entretien plus facile dans le temps.
-
-> Dans certains cas, un **protocole combiné** (cabinet + domicile) offre le meilleur ratio **efficacité/confort**.
-
-## Est-ce fait pour moi ?
-Un **bilan** s’impose pour vérifier :  
-- l’absence de **caries** actives et de **lésions** cervicales,  
-- le contrôle d’une **sensibilité** existante,  
-- la **teinte initiale** et les attentes réalistes.  
-**Contre-indications relatives** : grossesse/allaitement, hypersensibilité non contrôlée, gros travaux à prévoir.
-
-## Déroulé d’un traitement en cabinet
-1. **Polissage/hygiénisation** préalable.  
-2. **Isolation gingivale** et application du gel.  
-3. **Activation/temps de pose** selon protocole.  
-4. **Rinçage**, contrôle de la teinte, conseils personnalisés.
-
-## Entretien du résultat
-- **48 h post-traitement :** éviter café/thé/tabac/curry, privilégier “aliments blancs”.  
-- **Hygiène** : dentifrice pour dents sensibles si besoin, brossage 2–3×/jour.  
-- **Retouche** : légère, 1–2 jours avec gouttières si la teinte se ternit.
-
-## Prix indicatifs
-Les tarifs dépendent de la **méthode**, de la **sensibilité** et des **objectifs esthétiques**. Demandez un **devis personnalisé** après examen.
-
-### FAQ
-**Le blanchiment abîme-t-il l’émail ?** Non si le protocole est médical et les doses contrôlées.  
-**Les couronnes/composites blanchissent-ils ?** Non, seule la dent naturelle change de teinte.  
-**J’ai une soirée ce week-end ?** Une séance en cabinet offre un rendu plus rapide.
-
-> Découvrez nos autres actes d’esthétique : [/all-competences](/all-competences) • Prenez RDV : [/rendez-vous](/rendez-vous).`,
+    content: `""`,
   },
 
   {
@@ -5278,39 +2658,7 @@ Les tarifs dépendent de la **méthode**, de la **sensibilité** et des **object
     author: AUTHORS.sao,
     cover: implantCover,
     readingMinutes: 14,
-    content: `L’implant dentaire remplace une racine absente pour porter une **couronne**, un **bridge** ou stabiliser une **prothèse**. Nous privilégions une approche **prédictible** grâce à l’imagerie **3D (CBCT)** et à la planification guidée.
-
-## Les grandes étapes
-1. **Bilan et CBCT** : analyse osseuse/nerveuse, choix dimensionnel.  
-2. **Planification** : guide chirurgical si indiqué, simulation occlusale.  
-3. **Chirurgie** (anesthésie locale) : pose de l’implant (titane/zircone).  
-4. **Cicatrisation** : 6–12 semaines en moyenne (selon site/biologie).  
-5. **Prothèse** : pilier + couronne sur-mesure (céramique/zircone).
-
-## Durée, confort, suites
-- **Durée opératoire** : souvent < 1 h par implant.  
-- **Douleurs** : modérées, contrôlées par antalgiques.  
-- **Vie quotidienne** : reprise rapide avec précautions d’hygiène.
-
-## Quand greffer ?
-En cas de volume osseux insuffisant : **greffe d’apposition**, **élévation sinusienne** ou **RPF** (régénération). Décision après CBCT.
-
-## Coût : de quoi dépend le devis ?
-- **Biomatériaux** et marque d’implant,  
-- **Complexité** (greffes, guide),  
-- **Type de couronne** et étendue (unitaire vs plurale).  
-Un **devis détaillé** vous est remis avant tout acte.
-
-## Alternatives si l’implant n’est pas indiqué
-- **Bridge** sur dents adjacentes,  
-- **Prothèse amovible** partielle ou complète.
-
-### FAQ
-**L’implant est-il définitif ?** Très durable avec hygiène/contrôles.  
-**Faut-il arrêter de fumer ?** Vivement recommandé : la cicatrisation est meilleure.  
-**Puis-je manger tout de suite ?** Alimentation molle au début, consignes personnalisées.
-
-> Voir nos équipements 3D et technologie : [/infos/technologie](/infos/technologie) • RDV : [/rendez-vous](/rendez-vous).`,
+    content: `""`,
   },
 
   {
@@ -5325,33 +2673,7 @@ Un **devis détaillé** vous est remis avant tout acte.
     author: AUTHORS.sao,
     cover: orthodontieCover,
     readingMinutes: 11,
-    content: `L’orthodontie aligne les dents et harmonise l’occlusion. Chez DABIA, nous proposons des **aligneurs** et des **brackets** en fonction de l’âge, de la complexité et du mode de vie.
-
-## Quand consulter ?
-- **Chevauchements**, **diastèmes**, rotations, dents incluses  
-- **Mauvaise occlusion** (classe II/III, articulations bruyantes)  
-- **Préparation prothétique** (implants, bridges)
-
-## Aligneurs transparents
-**Avantages :** discrets, hygiène simplifiée, alimentation libre.  
-**Exigences :** port ~22 h/j, changements réguliers, discipline.  
-**Indications :** cas légers à modérés, certaines corrections complexes possibles avec attachements.
-
-## Brackets (bagues)
-**Avantages :** très **polyvalents** pour cas complexes, contrôle précis.  
-**Inconvénients :** visibles, hygiène plus exigeante, possibles irritations.
-
-## Durée, confort, hygiène
-- **Durée** : la plupart des traitements vont de 6 à 24 mois.  
-- **Confort** : sensibilités transitoires surtout au démarrage.  
-- **Hygiène** : brossage soigneux, brossettes, bains de bouche adaptés.
-
-### FAQ
-**Puis-je faire du sport ?** Oui, avec protection si contacts.  
-**Les aligneurs modifient la diction ?** Parfois au début, adaptation rapide.  
-**Et après ?** **Contention** (fils/stellites/gouttières) indispensable pour stabiliser.
-
-> Parents : consultez aussi notre [/infos/enfants](/infos/enfants) • RDV : [/rendez-vous](/rendez-vous).`,
+    content: `""`,
   },
 
   // --- Nouveaux articles orientés "prix" ---
@@ -5367,32 +2689,7 @@ Un **devis détaillé** vous est remis avant tout acte.
     cover: onlayCover,
     pinned: true,
     readingMinutes: 13,
-    content: `La **couronne dentaire** protège une dent fragilisée (grosse carie, **dé-vitalisation**, fracture) ou améliore l’**esthétique**. Son **prix** dépend de plusieurs paramètres cliniques et techniques. Un **devis personnalisé** est remis après examen.
-
-## Quand poser une couronne ?
-- Dent **très reconstituée** ou fissurée  
-- Après **traitement canalaire** (protection contre la fracture)  
-- Correction **esthétique** (forme/teinte) quand l’option **facette** n’est pas indiquée
-
-## Matériaux et impact sur le coût
-- **Zircone monolithique** : très solide, esthétique correcte sur secteurs postérieurs.  
-- **Céramique stratifiée** (sur zircone ou métal) : rendu esthétique supérieur pour le **secteur antérieur**.  
-- **Métal‑céramique** : robuste, esthétique intermédiaire.  
-Le choix se fait selon la **position**, l’**occlusion**, le **sourire** et le budget.
-
-## Étapes clés au cabinet
-1. Bilan et **photos** (éventuel CBCT si contexte complexe)  
-2. Préparation de la dent + **empreinte/scan**  
-3. **Couronne provisoire** (protection esthétique et fonctionnelle)  
-4. Essai/ajustement de la **couronne définitive**, collage ou scellement
-
-## Ce qui fait varier le prix
-- Complexité clinique (attaque carieuse profonde, **inlay‑core**, gencive)  
-- **Matériau** et protocole de **laboratoire**  
-- Teinte et **stratification** esthétique  
-- Rendez‑vous d’essai/ajustements
-
-> Chez DABIA, nous expliquons les **options** et remettons un **devis clair** avec les matériaux proposés. Demandez une évaluation : [/rendez-vous](/rendez-vous).`,
+    content: `""`,
     faq: [
       {
         q: "Couronne ou onlay : que choisir ?",
@@ -5430,30 +2727,7 @@ Le choix se fait selon la **position**, l’**occlusion**, le **sourire** et le 
     cover: endoCover,
     pinned: true,
     readingMinutes: 12,
-    content: `Le **traitement canalaire** (dé-vitalisation) consiste à **désinfecter** et **obturer** les canaux d’une dent dont le **nerf** est atteint (carie profonde, fissure, traumatisme). Il **soulage** la douleur et évite la propagation de l’infection.
-
-## Quand est-ce indiqué ?
-- **Douleur** pulsatile ou nocturne (pulpite)  
-- **Abcès** / fistule, sensibilité à la **mastication**  
-- Fracture/carie profonde exposant la pulpe  
-- Préparation prothétique (pilier de **couronne**)
-
-## Étapes du soin
-1. **Anesthésie** et isolement  
-2. Accès aux **canaux** puis mise en forme/désinfection  
-3. **Obturation** à chaud/froid selon protocole  
-4. **Reconstruction** (provisoire ou définitive)
-
-## Facteurs qui influencent le prix
-- Nombre de **canaux** (incisive ⟶ molaire)  
-- **Courbures**/calcifications, reprise d’un ancien traitement  
-- Nécessité d’un **inlay‑core** et d’une **couronne** de protection  
-- Imagerie **3D (CBCT)** et temps opératoire
-
-## Après la dévitalisation
-Une dent traitée canalaires est **plus fragile** : une **couronne** est souvent recommandée pour la protéger durablement.
-
-> Pour connaître le **budget exact** dans votre cas, un **examen clinique** est indispensable. Prenez rendez‑vous : [/rendez-vous](/rendez-vous).`,
+    content: `""`,
     faq: [
       {
         q: "Est‑ce douloureux ?",
@@ -5492,49 +2766,7 @@ Une dent traitée canalaires est **plus fragile** : une **couronne** est souvent
     cover: orthodontieCover,
     pinned: true,
     readingMinutes: 13,
-    content: `Un **appareil dentaire** permet de réaligner les dents, d’améliorer l’occlusion et parfois de préparer d’autres traitements (implants, prothèses, esthétique). À Dakar, le **prix** dépend du **type d’appareil**, de la **durée** du traitement et de la **complexité** du cas. Le montant exact ne peut être fixé qu’après un **bilan orthodontique** complet.
-
-## Quand envisager un traitement orthodontique ?
-- Chevauchement, dents tournées ou espacées  
-- Occlusion modifiée (surplomb, béance, décalage des mâchoires)  
-- Préparation à un implant ou une prothèse  
-- Motif esthétique avec impact fonctionnel (mastication, phonation)
-
-Chez l’enfant et l’ado, l’orthodontie participe au bon **développement** des arcades. Chez l’adulte, elle vise souvent une **amélioration fonctionnelle** et esthétique, parfois en lien avec des douleurs ou une usure dentaire.
-
-## Types d’appareils et impact sur le budget
-### Bagues (brackets) métalliques ou esthétiques
-- Très **polyvalentes** pour les cas complexes.  
-- Versions **métalliques** : robustes, visibles.  
-- Versions **esthétiques** (céramique, saphir) : plus discrètes mais plus exigeantes en entretien.  
-> Le prix varie selon le **matériau** et la **durée** de traitement.
-
-### Aligneurs transparents
-- Gouttières successives, presque **invisibles**.  
-- Exigent un port ~**22 h/jour** et des changements réguliers.  
-- Confort et hygiène facilités (on retire pour manger et se brosser).  
-> Le devis dépend du **nombre de gouttières** nécessaires, du suivi et du niveau de complexité.
-
-## Déroulé d’un traitement à la Clinique DABIA
-1. **Bilan orthodontique complet** : photos, empreintes/scan, radios (CBCT ou panoramique selon besoin).  
-2. **Plan de traitement** expliqué (objectifs, durée, options techniques).  
-3. Mise en place de l’appareil (bagues ou aligneurs) et **contrôles réguliers**.  
-4. Phase de **contention** (fils collés/gouttières) pour stabiliser le résultat.
-
-## Ce qui fait varier le prix d’un appareil dentaire
-- **Durée** du traitement (6 à 24 mois ou plus)  
-- **Type d’appareil** (aligneurs, bagues métal, céramique)  
-- Port éventuel d’**auxiliaires** (mini-vis, élastiques, expansion)  
-- Nombre et **fréquence** des rendez-vous de contrôle  
-
-> Le devis prend en compte l’ensemble du **parcours orthodontique** (bilan, appareillage, suivis, contention). Un **devis détaillé** vous est remis avant toute décision.
-
-### FAQ
-**Peut-on donner un prix sans voir le patient ?** Non, le tarif dépend du **diagnostic** et des objectifs.  
-**Les traitements adultes sont-ils plus chers ?** Ils sont souvent plus longs et nécessitent des matériaux plus esthétiques, ce qui peut influencer le devis.  
-**Les aligneurs sont-ils toujours plus chers ?** Pas forcément : tout dépend du **nombre de gouttières** et de la complexité du cas.  
-
-> Pour discuter des options (aligneurs ou bagues) et obtenir un devis personnalisé : [/rendez-vous](/rendez-vous).`,
+    content: `""`,
   },
 
   {
@@ -5553,40 +2785,7 @@ Chez l’enfant et l’ado, l’orthodontie participe au bon **développement** 
     cover: urgenceNuitCover,
     pinned: true,
     readingMinutes: 11,
-    content: `Une **urgence dentaire** doit d’abord être **soulagée** et sécurisée sur le plan médical. Le **prix** varie selon la **nature du problème** (pulpite, abcès, traumatisme) et les **gestes réalisés** lors de la consultation. À la Clinique DABIA, un **devis** est expliqué avant chaque acte.
-
-## Qu’est-ce qu’une vraie urgence dentaire ?
-- Douleur **aiguë**, réveils nocturnes  
-- **Gonflement** de la joue ou du cou, fièvre  
-- Traumatisme : dent cassée, déplacée ou expulsée  
-- Saignement qui ne s’arrête pas  
-- Douleur après extraction ou chirurgie, non contrôlée
-
-Dans ces situations, le but est de **soulager**, **stopper l’infection** et éviter les complications.
-
-## Consultation d’urgence : que se passe-t-il ?
-1. **Examen clinique ciblé** + imagerie (radio, parfois CBCT).  
-2. Mise en place de **mesures antalgiques** et/ou antibiotiques si indiqué.  
-3. Geste de **soulagement** : ouverture de la dent, incision-drainage, réalignement ou suture, ajustement d’une prothèse, etc.  
-4. Proposition d’un **plan de traitement** pour finaliser (ex. traitement canalaire, extraction, couronne…).
-
-## De quoi dépend le prix d’une urgence ?
-- Type de **geste** réalisé (simple consultation vs acte technique)  
-- Durée de la séance et **matériel** utilisé (anesthésie, sutures, imagerie 3D…)  
-- Complexité : dent déjà traitée, infection étendue, traumatisme important  
-- Horaires : intervention **en journée** ou en mode **hors horaires** / nuit selon l’organisation du cabinet
-
-> L’objectif est de **stabiliser** la situation le plus vite possible, puis d’organiser les soins définitifs avec un budget maîtrisé.
-
-### Urgence et soins ultérieurs
-La consultation d’urgence couvre les **gestes immédiats**. Les traitements complets (traitement canalaire, couronne, implant, etc.) font l’objet d’un **devis séparé** détaillant les options.
-
-### FAQ
-**Puis-je demander uniquement à être soulagé ?** Oui, la priorité est de calmer la douleur et de sécuriser la situation ; la suite est planifiée ensuite.  
-**Les urgences de nuit sont-elles plus chères ?** Les interventions en **dehors des horaires habituels** peuvent impliquer des honoraires spécifiques ; ils sont expliqués avant l’acte.  
-**Puis-je payer en plusieurs fois ?** Selon les cas, une organisation est possible : n’hésitez pas à en parler lors du devis.
-
-> En cas de douleur aiguë ou de doute, contactez la clinique au plus vite et prenez rendez-vous : [/rendez-vous](/rendez-vous).`,
+    content: `""`,
   },
 
   {
@@ -5606,48 +2805,7 @@ La consultation d’urgence couvre les **gestes immédiats**. Les traitements co
     cover: protheseCover,
     pinned: true,
     readingMinutes: 13,
-    content: `Les **prothèses dentaires** remplacent une ou plusieurs dents manquantes pour retrouver **fonction** (mastication, phonation) et **esthétique**. Entre prothèse amovible, bridge ou prothèse sur implants, le **prix** dépend du type de solution, des matériaux et du contexte clinique.
-
-## Les grands types de prothèses
-### Prothèse amovible partielle
-- Remplace plusieurs dents manquantes sur une arcade.  
-- S’enlève pour le nettoyage.  
-- Option souvent plus **accessible** financièrement, mais nécessite une adaptation.
-
-### Prothèse complète (dentier)
-- Quand toutes les dents d’une arcade sont absentes.  
-- Peut être **stabilisée** par des implants (attachements).  
-- Demande un suivi et des ajustements (réajustage, rebasage).
-
-### Bridge sur dents naturelles
-- Appuyé sur les dents voisines préparées.  
-- Solution **fixe**, esthétique et confortable.  
-- Nécessite de **préparer** (tailler) les dents piliers.
-
-### Prothèse sur implants
-- Implique la pose de **racines artificielles** (implants) puis une prothèse fixée ou clipsée.  
-- Confort et stabilité supérieurs, préservation de l’os.  
-- Investissement plus important, planifié sur plusieurs mois.
-
-## Facteurs qui influencent le prix
-- Nombre de **dents à remplacer** et type de prothèse  
-- Choix des **matériaux** (résine, métal, céramique, zircone)  
-- Travail du **laboratoire de prothèse** (stratification, personnalisation)  
-- Besoin éventuel d’**implants**, de greffes ou d’autres soins préalables  
-- Nombre de rendez-vous d’essai et d’ajustement
-
-## Comment se déroule la prise en charge à DABIA ?
-1. **Bilan** complet (radio, examen clinique, photos).  
-2. Discussion des **options** : prothèse amovible, bridge, implants… avec avantages/inconvénients.  
-3. **Devis détaillé** incluant les différentes solutions possibles quand cela est indiqué.  
-4. Essais, ajustements, conseils d’entretien et **suivi**.
-
-### FAQ
-**La prothèse amovible est-elle forcément provisoire ?** Non, elle peut être une solution durable, avec des contrôles réguliers.  
-**La prothèse sur implants est-elle toujours possible ?** Elle dépend du **volume osseux**, de l’état général et des attentes du patient ; un bilan 3D est souvent nécessaire.  
-**Les prix sont-ils remboursés par les assurances ?** Selon les contrats ; un devis vous permet d’interroger votre assurance ou votre mutuelle.
-
-> Pour discuter des différentes options prothétiques et recevoir un devis personnalisé, prenez rendez-vous : [/rendez-vous](/rendez-vous).`,
+    content: `""`,
   },
 
   {
@@ -5662,30 +2820,7 @@ La consultation d’urgence couvre les **gestes immédiats**. Les traitements co
     author: AUTHORS.sao,
     cover: gingiviteCover,
     readingMinutes: 10,
-    content: `Le saignement au brossage est le **premier signal** d’une inflammation gingivale. Bien traitée, la gingivite **régresse** vite ; négligée, elle peut évoluer vers une **maladie parodontale**.
-
-## Reconnaître les signes
-- Gencives **rouges**, **gonflées**, **sensibles**, qui saignent  
-- Mauvaise haleine, parfois **mobilité** des dents à un stade avancé
-
-## Détartrage simple vs “profond”
-- **Détartrage prophylactique** : élimine plaque et tartre **supra-gingival**.  
-- **Surfaçage radiculaire** (détartrage “profond”) : quand des **poches** parodontales existent ; on lisse la racine sous anesthésie locale.
-
-## À la maison : l’hygiène qui marche
-- Brossage **2–3×/jour** (technique Bass modifiée),  
-- **Brossettes interdentaires**/fil selon espace,  
-- Bain de bouche **en cure** si indiqué.
-
-## Facteurs aggravants
-Tabac, diabète non équilibré, stress, hygiène insuffisante, bagues non nettoyées, etc.
-
-### FAQ
-**Le surfaçage est-il douloureux ?** Réalisé sous anesthésie locale, il est **bien toléré**.  
-**Puis-je saigner après ?** Oui, transitoire — suivez les consignes.  
-**Tous les combien ?** Contrôles tous les **6–12 mois** selon profil de risque.
-
-> Après votre séance, lisez nos [/infos/post-visite](/infos/post-visite) • Prenez RDV : [/rendez-vous](/rendez-vous).`,
+    content: `""`,
   },
 
   {
@@ -5700,33 +2835,7 @@ Tabac, diabète non équilibré, stress, hygiène insuffisante, bagues non netto
     author: AUTHORS.sao,
     cover: enfantCover,
     readingMinutes: 10,
-    content: `Une première visite positive crée une **confiance** durable. Chez DABIA, nous adaptons la consultation à l’âge et au tempérament de l’enfant.
-
-## Quand commencer ?
-- **Dès 3 ans**, plus tôt si tache suspecte, chute ou douleur.  
-- Bilan **préventif** annuel conseillé.
-
-## Préparer à la maison
-- Parlez d’une **rencontre** et non d’“injection” ou de “douleur”.  
-- Choisissez un **créneau matin** (enfant reposé).  
-- Apportez **doudou**/biberon d’eau.
-
-## À la clinique : déroulé
-1. Accueil rassurant, vocabulaire adapté.  
-2. Examen doux, conseils d’hygiène, vernis fluor si indiqué.  
-3. Plan de prévention personnalisé.
-
-## Caries : prévenir plutôt que guérir
-- Limiter grignotages sucrés/boissons sucrées,  
-- Brossage **fluoré** 2×/jour (dose adaptée à l’âge),  
-- Étanchéité des sillons (sealants) si risque élevé.
-
-### FAQ
-**Tétine/biberon ?** À sevrer progressivement ; attention aux biberons sucrés nocturnes.  
-**Mon enfant a peur ?** Nous avançons à son rythme, parfois en plusieurs petites étapes.  
-**Quand l’orthodontie ?** Dépistage **précoce** si encombrement ou déglutition atypique.
-
-> Ressource parents : [/infos/enfants](/infos/enfants) • RDV : [/rendez-vous](/rendez-vous).`,
+    content: `""`,
   },
 
   {
@@ -5741,30 +2850,7 @@ Tabac, diabète non équilibré, stress, hygiène insuffisante, bagues non netto
     author: AUTHORS.sao,
     cover: nuitCover,
     readingMinutes: 9,
-    content: `Les douleurs nocturnes sont souvent liées à une **inflammation pulpaire** ou à une **carie profonde**. Parfois, un **bruxisme** (serrement/grincement) aggrave la perception douloureuse.
-
-## Causes possibles
-- **Carie/pulpite** (douleur pulsatile, chaleur)  
-- **Bruxisme** (douleur diffuse au réveil, fatigue musculaire)  
-- **Fissures**/fractures  
-- **Gingivite** ou abcès
-
-## Que faire en attendant ?
-- **Paracétamol** selon notice (pas d’aspirine en cas de saignement).  
-- **Froid externe**, tête **surélevée** la nuit.  
-- Éviter **sucré/chaud**, rincer à l’eau tiède salée si suppuration.
-
-## Quand consulter d’urgence ?
-- Démarrage brutal + gonflement/fièvre,  
-- Douleur **non calmée** par les mesures ci-dessus,  
-- Traumatisme.
-
-### FAQ
-**Le clou de girofle ?** À éviter en automédication, irritation possible.  
-**Et si ça passe le matin ?** Le problème reste — faites contrôler.  
-**Je serre les dents la nuit ?** Parlez-nous d’une **gouttière** si indiqué.
-
-> Prenez rendez-vous : [/rendez-vous](/rendez-vous).`,
+    content: `""`,
   },
 
   {
@@ -5779,42 +2865,7 @@ Tabac, diabète non équilibré, stress, hygiène insuffisante, bagues non netto
     author: AUTHORS.sao,
     cover: prixCover,
     readingMinutes: 12,
-    content: `> **Transparence** — Les prix d’un **dentiste à Dakar** dépendent du **diagnostic**, de la **complexité** et des **matériaux**. Dans notre **clinique dentaire à Dakar** (Clinique Dentaire DABIA), un **devis personnalisé** vous est remis avant tout acte.
-
-## Dentiste à Dakar : comprendre les prix en clinique dentaire
-
-## Ce qui influence un tarif
-- **Temps clinique** (durée, nombre de séances)  
-- **Technique** (matériaux, laboratoire, imagerie)  
-- **Complexité** (urgence, greffe, chirurgie guidée)  
-- **Garanties et contrôles** (suivi, maintenance)
-
-## Exemples indicatifs (ordre de grandeur)
-- **Consultation** : bilan + plan de traitement  
-- **Détartrage** : prophylaxie ou surfaçage selon diagnostic  
-- **Composite** : selon taille, localisation et esthétisme  
-- **Extraction** : simple vs difficile (incluse)  
-- **Esthétique** : blanchiment, facettes (sur devis)
-
-> Les actes prothétiques/implantaires nécessitent des **prises d’empreinte**, parfois une **imagerie 3D**. Voir : [/infos/technologie](/infos/technologie).
-
-## Optimiser son budget dentaire
-- **Prévention** : contrôles réguliers, hygiène adaptée  
-- **Planification** : étaler certaines étapes si possible  
-- **Priorisation** : traiter les urgences/inflammations d’abord
-
-### FAQ
-**Les assurances couvrent-elles ?** Selon contrat et plafonds.  
-**Puis-je avoir plusieurs devis ?** Oui, nous expliquons chaque option.  
-**Existe-t-il des alternatives moins coûteuses ?** Parfois : **bridge**, **prothèse amovible**, temporisations.
-
-**Quel type de dentiste à Dakar choisir pour optimiser le budget ?**  
-Pour certains actes simples, un cabinet de **proximité** peut suffire ; pour des traitements plus complexes (implantologie, orthodontie, réhabilitation complète), une **clinique dentaire à Dakar** bien équipée (imagerie 3D, scanner intra‑oral, stérilisation structurée) permet souvent un plan plus précis et mieux structuré.
-
-**La Clinique Dentaire DABIA est‑elle une clinique dentaire à Dakar orientée transparence sur les prix ?**  
-Oui, nous détaillons le **plan de traitement**, les **options** possibles et remettons un **devis clair** avant les soins. L’objectif est que chaque patient comprenne ce qu’il paie et pourquoi.
-
-> Pour un devis précis après examen : [/rendez-vous](/rendez-vous).`,
+    content: `""`,
   },
 
   {
@@ -5829,39 +2880,7 @@ Oui, nous détaillons le **plan de traitement**, les **options** possibles et re
     author: AUTHORS.sao,
     cover: endoCover,
     readingMinutes: 13,
-    content: `Le **traitement canalaire** vise à nettoyer et désinfecter les **canaux** d’une dent dont la pulpe est infectée/inflammée (carie profonde, fracture, choc). Objectif : **soulager**, **prévenir** la réinfection et **conserver** la dent.
-
-## Quand faut-il dévitaliser ?
-- Douleur **pulsatile**, réveils nocturnes
-- Sensibilités au chaud/froid qui persistent
-- **Abcès**, fistule, gonflement
-- Fracture/carie profonde atteignant la pulpe
-
-## Étapes du traitement à la Clinique DABIA
-1. **Diagnostic** : examen + imagerie (rétro-alvéolaire/CBCT).  
-2. **Anesthésie locale** et isolement par **digue**.  
-3. **Accès** aux canaux, **mise en forme** mécanique/ultrasons.  
-4. **Irrigation** désinfectante activée.  
-5. **Obturation** tridimensionnelle à chaud (gutta percha).  
-6. **Étanchéité coronaire** (inlay-core/composite) et **couronne** si nécessaire.
-
-## Douleur et suites
-- Pendant : procédure **indolore** sous anesthésie.  
-- Après : **sensibilité** 24–72h contrôlée par antalgiques.  
-- **Antibiotiques** seulement si tableau infectieux systémique.
-
-## Faut-il une couronne après ?
-Souvent oui sur les molaires/premolaires fragilisées pour **empêcher la fracture** et garantir l’étanchéité.
-
-## Échecs et retraitements
-Une lésion persistante, un canal supplémentaire, une fuite coronaires peuvent nécessiter un **retraitement**.
-
-### FAQ
-**Combien de séances ?** 1 à 2 selon l’infection.  
-**Peut-on travailler après ?** Oui, sauf cas particuliers.  
-**Et si je suis enceinte ?** On adapte l’imagerie et les médications.
-
-> Prenez rendez-vous : [/rendez-vous](/rendez-vous) • Voir nos équipements : [/infos/technologie](/infos/technologie).`,
+    content: `""`,
   },
   {
     slug: "facettes-dentaires-dakar-indications-etapes-prix",
@@ -5875,37 +2894,7 @@ Une lésion persistante, un canal supplémentaire, une fuite coronaires peuvent 
     author: AUTHORS.sao,
     cover: facettesCover,
     readingMinutes: 14,
-    content: `Les **facettes dentaires** corrigent couleur, **forme** et légers **désalignements** visibles du sourire. À Dakar, dans une **clinique dentaire** comme la Clinique Dentaire DABIA, elles préservent la biologie si l’indication est respectée.
-
-## Pour qui ?
-- Teinte non corrigeable au blanchiment
-- Dents **usées**, **fendillées**, diastèmes
-- Harmonisation du **smile design**
-
-## Matériaux
-- **Composite** : direct/indirect, coût plus doux, retouches faciles, longévité moindre.  
-- **Céramique** (lithium-disilicate/zircone stratifiée) : **esthétique** et stabilité supérieures.
-
-## Étapes du traitement
-1. **Photographies, empreintes/scan**, simulation (mock-up).  
-2. **Préparation minimale** (ou no-prep selon cas).  
-3. **Empreinte/scan** pour le laboratoire.  
-4. **Pose**/collage adhésif sous champ isolé.  
-5. **Ajustements** et conseils d’entretien.
-
-## Entretien et longévité
-- Hygiène soigneuse, gouttière de **bruxisme** si besoin.  
-- Éviter ouvrir des emballages avec les dents (!).
-
-## Prix : de quoi dépend le devis ?
-Nombre de facettes, matériau, complexité occlusale/gingivale. **Devis personnalisé** après bilan, souvent précédé d’un **blanchiment**.
-
-### FAQ
-**Facettes ou orthodontie/aligneurs ?** Selon l’axe/déplacements souhaités.  
-**Durée de vie ?** Plusieurs années si hygiène et occlusion stables.  
-**Réversible ?** Pas toujours (préparation).
-
-> Découvrez l’esthétique dentaire : [/all-competences](/all-competences) • RDV : [/rendez-vous](/rendez-vous).`,
+    content: `""`,
   },
   {
     slug: "detartrage-vs-airflow-difference-prophylaxie-dakar",
@@ -5918,29 +2907,7 @@ Nombre de facettes, matériau, complexité occlusale/gingivale. **Devis personna
     author: AUTHORS.sao,
     cover: airflowCover,
     readingMinutes: 12,
-    content: `**Détartrage** et **AirFlow** sont complémentaires pour maintenir des gencives saines et une surface dentaire propre.
-
-## Détartrage ultrasonique
-- Casse le **tartre** supra/sous-gingival.  
-- Permet le **surfaçage** en cas de poches parodontales.  
-- Ressenti : vibration + irrigation.
-
-## AirFlow (jet poudre + eau)
-- Élimine **biofilm** et **taches** (café, thé, tabac).  
-- **Moins abrasif** sur l’émail quand bien utilisé.  
-- Idéal en **entretien** entre deux détartrages.
-
-## Notre protocole
-1. **Bilan** parodontal (indices, sondage).  
-2. **Séquence personnalisée** : AirFlow → ultrason/hand-scaler selon besoin.  
-3. **Polissage**, instruction d’hygiène, contrôle périodique (6–12 mois).
-
-### FAQ
-**AirFlow remplace le détartrage ?** Non, il **complète**.  
-**Après bagues/aligneurs ?** Oui, utile pour **zones difficiles**.  
-**Puis-je le faire enceinte ?** Oui, protocole adapté.
-
-> Conseils post-visite : [/infos/post-visite](/infos/post-visite) • RDV : [/rendez-vous](/rendez-vous).`,
+    content: `""`,
   },
   {
     slug: "halitose-mauvaise-haleine-causes-bilan-traitements-dakar",
@@ -5954,27 +2921,7 @@ Nombre de facettes, matériau, complexité occlusale/gingivale. **Devis personna
     author: AUTHORS.sao,
     cover: halitoseCover,
     readingMinutes: 11,
-    content: `La **mauvaise haleine** est le plus souvent d’origine **bucco-dentaire** (langue chargée, gingivite, caries). Parfois, la cause est **ORL** ou digestive.
-
-## Causes fréquentes
-- **Langue** : enduit riche en composés sulfurés volatils.  
-- **Gencives** : inflammation, poches parodontales.  
-- **Carie**, restauration infiltrée, **stagnation alimentaire**.  
-- **Xérostomie** (bouche sèche), tabac, certains médicaments.
-
-## Le parcours à DABIA
-1. **Anamnèse** + examen dentaire/parodontal.  
-2. **Dépistage** des causes (langue, saignements, caries).  
-3. **Plan** : hygiénisation, traitement parodontal, soin des lésions.  
-4. **Conseils** : gratte-langue, hydratation, xylitol, bains de bouche en cure.  
-5. **Orientation ORL/Gastro** si suspicion extra-orale.
-
-### FAQ
-**Dentifrices miracle ?** Méfiance : privilégier **hygiène** + traitement des causes.  
-**Bain de bouche permanent ?** Non : **cures** courtes pour éviter l’**altération du microbiote**.  
-**Je jeûne souvent :** hydrate-toi bien, xylitol, contrôle régulier.
-
-> Pour un bilan : [/rendez-vous](/rendez-vous) • Voir prévention : “Détartrage vs AirFlow”.`,
+    content: `""`,
   },
   {
     slug: "carie-dentaire-symptomes-traitement-prevention-dakar",
@@ -5992,35 +2939,7 @@ Nombre de facettes, matériau, complexité occlusale/gingivale. **Devis personna
     author: AUTHORS.sao,
     cover: carieCover,
     readingMinutes: 12,
-    content: `La **carie** est une maladie infectieuse de la dent, favorisée par la **plaque** et les **sucres**. Plus elle est traitée tôt, plus le soin est **simple**, **indolore** et **durable**.
-
-## Reconnaître une carie tôt
-- **Tache** blanche ou brune qui s’élargit  
-- **Sensibilité** au froid/sucré qui **persiste** après l’arrêt du stimulus  
-- **Mauvais goût** ou **haleine** anormale  
-- **Aliment qui se coince** dans une cavité
-
-> L’absence de douleur **ne veut pas dire** absence de carie. Beaucoup de lésions sont **silencieuses**.
-
-## Prise en charge à la Clinique DABIA
-1. **Bilan** et radiographies ciblées.  
-2. **Anesthésie locale** si nécessaire.  
-3. **Nettoyage** de la lésion et **restauration** (composite esthétique).  
-4. **Contrôle** de l’occlusion et polissage.
-
-## Carie profonde : que se passe-t-il ?
-Si la carie touche la **pulpe**, il faut parfois un **traitement canalaire** (dévitalisation) pour sauver la dent, puis une **protection coronaires** (inlay/onlay/couronne).
-
-## Prévention efficace
-- **Brossage** 2–3×/jour fluoré, **brossettes**/fil le soir  
-- Réduire les **boissons sucrées** et le **grignotage**  
-- **Détartrage** et contrôle **tous les 6–12 mois**  
-- **Scellement des sillons** chez l’enfant si risque élevé
-
-### FAQ
-**La carie se soigne sans fraise ?** Pour les **micro-lésions**, des techniques de **réminéralisation** ou infiltration existent.  
-**Grossesse ?** Bilan et soins possibles avec précautions.  
-**Douleur la nuit ?** Consultez rapidement : [/rendez-vous](/rendez-vous).`,
+    content: `""`,
   },
 
   {
@@ -6039,32 +2958,7 @@ Si la carie touche la **pulpe**, il faut parfois un **traitement canalaire** (d�
     author: AUTHORS.sao,
     cover: sagesseCover,
     readingMinutes: 11,
-    content: `Les **dents de sagesse** manquent parfois de place et s’inclinent, provoquant **douleur**, **infections** (péricoronarites) et **dommages** aux dents voisines.
-
-## Symptômes fréquents
-- Douleur au **fond de la bouche** (souvent en bas)  
-- **Gencive gonflée**, parfois **mauvais goût**  
-- Difficulté à **ouvrir** la bouche, irradiation vers l’oreille
-
-## Consultation et examens
-- **Panoramique** ou **CBCT** pour position, nerfs et sinus.  
-- Décision : **surveillance**, **désinfection** locale, ou **extraction**.
-
-## Extraction : comment ça se passe ?
-1. **Anesthésie locale**, parfois sédation légère.  
-2. **Dégagement** de la dent incluse, **section** si besoin.  
-3. **Sutures** résorbables, consignes post-op (froid, repos, hygiène).
-
-## Suites normales
-- **Œdème** 48–72 h, **sensibilité** maîtrisée par antalgiques.  
-- Éviter tabac, paille et bains de bouche agressifs les 24 premières heures.
-
-### FAQ
-**Toutes les enlever ?** Non : décision **au cas par cas**.  
-**Nerf du bas** ? Le CBCT aide à prévenir les risques.  
-**Travail le lendemain ?** Selon la difficulté chirurg., prévoyez 1–2 jours.
-
-> Besoin d’un avis ? [/rendez-vous](/rendez-vous) • Technologie : [/infos/technologie](/infos/technologie).`,
+    content: `""`,
   },
 
   {
@@ -6083,29 +2977,7 @@ Si la carie touche la **pulpe**, il faut parfois un **traitement canalaire** (d�
     author: AUTHORS.sao,
     cover: protheseCover,
     readingMinutes: 13,
-    content: `Perte de dents ? Les prothèses **modernes** permettent de restaurer **mastication**, **phonation** et **esthétique**. À Dakar, une **clinique dentaire** comme la Clinique Dentaire DABIA vous aide à choisir la solution adaptée selon le **nombre de dents manquantes**, le **volume osseux** et le **budget**.
-
-## Les grandes familles
-- **Partielle amovible** : clipsée, économie et facilité d’entretien.  
-- **Complète amovible** : lorsque toutes les dents manquent.  
-- **Fixe sur dents** : bridges collés ou conventionnels.  
-- **Fixe sur implants** : confort et stabilité supérieurs.
-
-## Parcours à DABIA
-1. **Bilan global** (gencives, os, occlusion, attentes).  
-2. **Plan** personnalisé : temporaires → définitives.  
-3. **Essayages** esthétiques/occlusaux, **validation** finale.  
-4. **Maintenance** et contrôles réguliers.
-
-## Prothèse sur implant : pour qui ?
-Besoin de **stabilité** et d’**esthétique** ; conditions osseuses évaluées par **CBCT**. Possibilité d’arcade complète fixée (All-on-X) selon indications.
-
-### FAQ
-**On s’y habitue ?** Quelques jours/semaines, coaching et ajustements.  
-**Manger avec une complète ?** Oui, en progressif, mastication bilatérale.  
-**Budget ?** Devis détaillé après bilan, étapes possibles.
-
-> Discutez des options : [/rendez-vous](/rendez-vous) • Voir implantologie : “Implant dentaire – Guide”.`,
+    content: `""`,
   },
 
   {
@@ -6119,30 +2991,7 @@ Besoin de **stabilité** et d’**esthétique** ; conditions osseuses évaluées
     author: AUTHORS.sao,
     cover: urgenceNuitCover,
     readingMinutes: 9,
-    content: `Une **douleur aiguë** ou une **dent cassée** la nuit/le week-end nécessite des **gestes simples** pour **stabiliser** la situation jusqu’à la consultation.
-
-## Ce qui soulage vraiment
-- **Paracétamol** selon notice (éviter aspirine si saignement).  
-- **Froid** externe 20 min on/off.  
-- **Tête surélevée** pour réduire la pression.  
-- **Rinçage eau tiède salée** si suppuration qui draine.
-
-## À éviter absolument
-- **Chaleur locale**, alcool, tabac  
-- Automédication **antibiotique** sans examen  
-- **Bains de bouche** agressifs prolongés
-
-## Cas fréquents
-- **Pulpite** (douleur pulsatile) → analgésie + RDV rapide  
-- **Abcès** (gonflement + fièvre) → consultation **prioritaire**  
-- **Traumatisme** → conserver fragment/dent dans **lait** et venir vite
-
-### FAQ
-**Peut-on m’endormir ?** Anesthésie locale + sédation possible selon cas.  
-**Je suis enceinte** : protocoles adaptés, signalez-le.  
-**Rayons X la nuit ?** Selon urgence, un cliché ciblé suffit souvent.
-
-> Prenez rendez-vous : [/rendez-vous](/rendez-vous) • Conseils post-visite : [/infos/post-visite](/infos/post-visite).`,
+    content: `""`,
   },
 
   {
@@ -6157,30 +3006,7 @@ Besoin de **stabilité** et d’**esthétique** ; conditions osseuses évaluées
     author: AUTHORS.sao,
     cover: blanchimentVsFacettesCover,
     readingMinutes: 11,
-    content: `Pour **éclaircir** la teinte, on pense au **blanchiment** ; pour corriger **forme**, **alignement léger** et **teinte réfractaire**, on envisage des **facettes**. Dans une **clinique dentaire à Dakar** comme DABIA, les deux solutions peuvent être **complémentaires**.
-
-## Blanchiment : quand et comment ?
-- Idéal si **teinte uniforme** à éclaircir  
-- Cabinet (rapide) ou gouttières (progressif)  
-- **Ne modifie pas** la forme/alignement  
-- Entretien : retouches légères si besoin
-
-## Facettes : pour quel résultat ?
-- Corrige **couleur**, **forme**, **proportions**, petits **alignements**  
-- Composite (direct/indirect) vs **céramique** (esthétique durable)  
-- Préparation **minimale** ou no-prep selon cas
-
-## Choisir intelligemment
-- **Cas simple** : blanchiment seul  
-- **Usure/diastèmes/alignement** : facettes (parfois après blanchiment)  
-- **Budget & longévité** : discutés au devis personnalisé
-
-### FAQ
-**Les facettes blanchissent-elles ?** Non, elles gardent leur teinte.  
-**Blanchiment sur dents sensibles ?** Protocole doux + dentifrice désensibilisant.  
-**Réversible ?** Les facettes ne le sont pas toujours.
-
-> Esthétique dentaire : [/all-competences](/all-competences) • RDV : [/rendez-vous](/rendez-vous).`,
+    content: `""`,
   },
   {
     slug: "grossesse-et-dents-soins-conseils-dakar",
@@ -6193,37 +3019,7 @@ Besoin de **stabilité** et d’**esthétique** ; conditions osseuses évaluées
     author: AUTHORS.sao,
     cover: grossesseCover,
     readingMinutes: 15,
-    content: `La grossesse est une période unique qui s’accompagne de nombreux changements hormonaux et physiologiques. Ces bouleversements touchent aussi la **santé bucco-dentaire** et nécessitent une attention particulière.
-
-## Pourquoi les dents changent-elles pendant la grossesse ?
-Les hormones (progestérone et œstrogènes) modifient la réaction des gencives face à la plaque dentaire. Résultat : un risque accru de **gingivite gravidique** (inflammation des gencives chez 60 à 70 % des femmes enceintes).
-
-### Les problèmes fréquents
-- **Gencives qui saignent** au brossage.
-- **Mauvaise haleine** liée à l’inflammation.
-- **Érosion acide** à cause des nausées et vomissements répétés.
-- **Caries** favorisées par les grignotages sucrés ou acides.
-
-## Soins dentaires possibles pendant la grossesse
-Contrairement aux idées reçues, la grande majorité des soins dentaires sont **sans danger** pour la maman et le bébé :
-- **Consultation de contrôle** chaque trimestre.
-- **Détartrage** et soins conservateurs : recommandés pour limiter infections et inflammations.
-- **Radiographies** : possibles uniquement en cas d’urgence, avec protections adaptées.
-- **Antalgiques et antibiotiques** : certains sont compatibles avec la grossesse (toujours prescrits par le praticien).
-
-## Conseils pratiques pour les futures mamans
-- Brossez vos dents **2 à 3 fois/jour** avec un dentifrice fluoré.
-- Utilisez le **fil dentaire** pour limiter les gingivites.
-- Après les nausées, rincez la bouche avec de l’eau bicarbonatée plutôt que de brosser directement.
-- Limitez les collations sucrées ou acides.
-- Consultez dès l’apparition d’une douleur ou d’un saignement inhabituel.
-
-## Foire aux questions
-**Puis-je me faire arracher une dent enceinte ?** Oui, si l’infection menace la santé de la maman.  
-**Puis-je blanchir mes dents ?** Non, les traitements esthétiques sont reportés après l’accouchement.  
-**Que faire si je ressens une douleur forte la nuit ?** Contactez immédiatement la **Clinique DABIA** : [/rendez-vous](/rendez-vous).
-
-> Une bonne santé bucco-dentaire contribue au bien-être de la maman et du bébé. À Dakar, la Clinique DABIA accompagne les femmes enceintes avec douceur et sécurité.`,
+    content: `""`,
   },
   {
     slug: "fluoration-vernis-fluore-enfant-adulte-dakar",
@@ -6237,38 +3033,7 @@ Contrairement aux idées reçues, la grande majorité des soins dentaires sont *
     author: AUTHORS.sao,
     cover: fluorCover,
     readingMinutes: 14,
-    content: `Le **fluor** est l’un des moyens les plus efficaces pour renforcer l’émail et lutter contre les caries. À la Clinique DABIA, nous proposons des **applications de vernis fluoré** pour les enfants comme pour les adultes à risque.
-
-## Pourquoi le fluor est-il essentiel ?
-Le fluor a deux actions majeures :
-- Il **renforce** l’émail en le rendant plus résistant aux attaques acides.
-- Il aide à **réparer** les lésions débutantes avant qu’elles n’évoluent en carie.
-
-## Quand utiliser le vernis fluoré ?
-- Chez l’enfant dès l’apparition des premières molaires.
-- En cas de risque carieux élevé (grignotage, boissons sucrées, hygiène insuffisante).
-- Pour les adultes présentant une **sécheresse buccale** ou porteurs d’appareils orthodontiques.
-- Après certains traitements (parodontite, radiothérapie tête/cou).
-
-## Comment se déroule l’application ?
-1. Séchage de la dent.
-2. Application du vernis fluoré avec un pinceau.
-3. Recommandation de ne pas manger/boire pendant 2 heures.
-
-## Est-ce sûr ?
-Oui. Les produits sont faiblement dosés, adaptés à l’âge et validés par l’OMS. Le risque de toxicité est **quasi nul** dans le cadre d’une utilisation professionnelle.
-
-## Prévention à la maison
-- Dentifrice fluoré 2 à 3 fois par jour.
-- Éviter les bains de bouche fluorés répétés sans indication.
-- Consulter tous les 6 mois pour évaluer le besoin d’une réapplication.
-
-### FAQ
-**Est-ce douloureux ?** Non, l’application est rapide et indolore.  
-**Combien de fois par an ?** Tous les 3 à 6 mois selon le risque carieux.  
-**Est-ce que ça remplace le brossage ?** Non, c’est un complément.
-
-> À Dakar, la Clinique DABIA accompagne les familles pour protéger le sourire de leurs enfants et adultes grâce au **fluor**.`,
+    content: `""`,
   },
   {
     slug: "sedation-dentaire-peur-du-dentiste-dakar",
@@ -6281,34 +3046,7 @@ Oui. Les produits sont faiblement dosés, adaptés à l’âge et validés par l
     author: AUTHORS.sao,
     cover: sedationCover,
     readingMinutes: 15,
-    content: `La **peur du dentiste** touche environ 1 patient sur 3. Elle entraîne souvent des retards de soins, aggravant les problèmes dentaires. À Dakar, la Clinique DABIA met en place des solutions de **sédation douce et sécurisée** pour soigner tous les patients, y compris les plus anxieux.
-
-## Quelles techniques de sédation existent ?
-1. **Anesthésie locale** classique, quasi indolore grâce aux aiguilles fines et gels anesthésiants.  
-2. **MEOPA (gaz hilarant)** : mélange d’oxygène et protoxyde d’azote, respiré par un masque. Effet rapide, anxiété diminuée.  
-3. **Sédation orale** : comprimés prescrits avant le rendez-vous (adultes uniquement).  
-4. **Sédation intraveineuse** (cas complexes) : réalisée en collaboration avec un anesthésiste.
-
-## Pour qui est-ce indiqué ?
-- Les enfants très anxieux ou agités.
-- Les adultes phobiques.
-- Les patients devant subir des soins longs (implants, extractions multiples).
-- Les personnes avec un réflexe nauséeux important.
-
-## Avantages de la sédation
-- Réduit le stress et la douleur perçue.
-- Permet de réaliser plusieurs soins en une seule séance.
-- Améliore la coopération chez les enfants.
-
-## Sécurité
-Toutes ces méthodes sont encadrées par des protocoles médicaux stricts. Les doses sont ajustées en fonction de l’âge, du poids et de l’état de santé du patient.
-
-### FAQ
-**Vais-je dormir complètement ?** Non, la sédation n’est pas une anesthésie générale. Vous restez conscient mais détendu.  
-**Y a-t-il des effets secondaires ?** Très rares, parfois une légère somnolence passagère.  
-**Puis-je rentrer seul après une sédation ?** Après MEOPA, oui. Après une sédation orale ou IV, il faut être accompagné.
-
-> La peur du dentiste ne doit plus être un frein. La Clinique DABIA à Dakar vous propose des solutions adaptées pour vous soigner en toute confiance.`,
+    content: `""`,
   },
   {
     slug: "invisalign-aligneurs-prix-duree-entretien-dakar",
@@ -6322,47 +3060,7 @@ Toutes ces méthodes sont encadrées par des protocoles médicaux stricts. Les d
     author: AUTHORS.sao,
     cover: invisalignCover,
     readingMinutes: 16,
-    content: `Les **aligneurs transparents**, comme Invisalign, représentent une révolution en orthodontie. Ils permettent de corriger l’alignement des dents de manière discrète et confortable. À Dakar, de plus en plus d’adultes et d’adolescents optent pour cette solution.
-
-## Comment fonctionnent les aligneurs ?
-- Série de gouttières transparentes fabriquées sur mesure.
-- Chaque aligneur déplace progressivement les dents.
-- À changer toutes les 1 à 2 semaines.
-
-## Indications
-- Dents qui se chevauchent.
-- Espaces entre les dents (diastèmes).
-- Rechutes après un ancien traitement orthodontique.
-- Cas esthétiques modérés.
-
-## Avantages
-- Discrétion : quasi invisibles.
-- Confort : pas de brackets qui blessent.
-- Hygiène facile : retrait pour le brossage et les repas.
-- Suivi numérique : simulation avant/après.
-
-## Contraintes
-- Discipline stricte : port 20–22h par jour.
-- Prix supérieur aux traitements classiques.
-- Non adaptés aux cas très complexes (chirurgie parfois nécessaire).
-
-## Déroulement du traitement
-1. Scanner 3D et photos.
-2. Planification numérique du mouvement dentaire.
-3. Fabrication des gouttières.
-4. Suivi toutes les 6–8 semaines.
-5. Contention finale obligatoire.
-
-## Prix et durée
-- Durée moyenne : 6 à 18 mois.
-- Prix : dépend du nombre de gouttières et de la complexité.
-
-### FAQ
-**Est-ce douloureux ?** Une gêne temporaire 2–3 jours après chaque changement.  
-**Puis-je manger avec ?** Non, il faut les retirer.  
-**Résultats durables ?** Oui, avec contention (fil ou gouttière de nuit).
-
-> La Clinique DABIA propose des traitements par aligneurs avec un suivi personnalisé à Dakar.`,
+    content: `""`,
   },
   {
     slug: "bridge-ou-implant-que-choisir-dakar",
@@ -6375,37 +3073,7 @@ Toutes ces méthodes sont encadrées par des protocoles médicaux stricts. Les d
     author: AUTHORS.sao,
     cover: bridgeImplantCover,
     readingMinutes: 15,
-    content: `Lorsqu’une dent est perdue, deux options principales existent pour la remplacer : le **bridge** ou l’**implant**. Le choix dépend de la situation clinique, de l’âge et du budget.
-
-## Le bridge
-- Repose sur les dents voisines, taillées pour servir de piliers.
-- Indiqué quand ces dents sont déjà abîmées ou couronnées.
-- Réalisation rapide (2–3 séances).
-- Moins coûteux qu’un implant.
-
-## Les inconvénients du bridge
-- Nécessite de réduire des dents parfois saines.
-- Ne préserve pas l’os (qui se résorbe sous l’édentement).
-- Durée de vie moyenne : 10 à 15 ans.
-
-## L’implant
-- Racine artificielle en titane intégrée dans l’os.
-- Préserve les dents voisines et l’os.
-- Durée de vie supérieure (20+ ans si bonne hygiène).
-- Indiqué pour une solution durable.
-
-## Comparatif rapide
-- **Durée** : bridge = rapide, implant = plus long (cicatrisation osseuse).  
-- **Esthétique** : implant plus naturel.  
-- **Entretien** : implant = brossage + fil spécifique.  
-- **Prix** : implant généralement plus cher, mais durable.
-
-### FAQ
-**Un bridge peut-il être remplacé par un implant plus tard ?** Oui.  
-**Implant et diabète ?** Possible si équilibre glycémique.  
-**Douleur ?** Pose indolore, cicatrisation maîtrisée.
-
-> La Clinique DABIA à Dakar accompagne les patients pour choisir la solution la plus adaptée : bridge ou implant.`,
+    content: `""`,
   },
   {
     slug: "couronne-ou-onlay-difference-prix-dakar",
@@ -6418,42 +3086,12 @@ Toutes ces méthodes sont encadrées par des protocoles médicaux stricts. Les d
     author: AUTHORS.sao,
     cover: onlayCover,
     readingMinutes: 14,
-    content: `Lorsque la dent est abîmée, plusieurs solutions existent. Les plus connues sont la **couronne** et l’**onlay**. Ces restaurations indirectes offrent résistance et esthétique.
-
-## L’onlay
-- Recouvre partiellement la dent.
-- Conserve plus de structure dentaire saine.
-- Réalisé en composite ou en céramique.
-- Indiqué pour les caries ou fractures moyennes.
-
-## La couronne
-- Recouvre la totalité de la dent.
-- Indiquée sur dents dévitalisées ou très fragiles.
-- Réalisée en céramique, métal-céramique ou zircone.
-- Protège la dent sur le long terme.
-
-## Étapes communes
-1. Préparation de la dent.
-2. Empreinte ou scan numérique.
-3. Réalisation au laboratoire.
-4. Pose provisoire, puis définitive.
-
-## Prix et durabilité
-- Onlay : coût moyen inférieur, durée 8–12 ans.
-- Couronne : plus cher, mais durée 15–20 ans.
-- Dans tous les cas : entretien rigoureux indispensable.
-
-### FAQ
-**Quelle est la différence esthétique ?** Les deux sont invisibles en céramique.  
-**Est-ce douloureux ?** Non, anesthésie locale.  
-**Peut-on refaire une couronne ?** Oui, mais il faut parfois retraiter la dent.
-
-> À Dakar, la Clinique DABIA propose couronnes et onlays sur mesure, associant solidité et esthétique.`,
+    content: `""`,
   },
   {
     slug: "cbct-radio-3d-dentaire-a-quoi-sert-dakar",
     title: "CBCT dentaire à Dakar : prix, indications et scanner 3D",
-    seoTitle: "CBCT dentaire à Dakar : prix, indications et RDV scanner 3D | DABIA",
+    seoTitle: "CBCT dentaire : c'est quoi, prix et RDV scanner 3D à Dakar | DABIA",
     description:
       "CBCT dentaire à Dakar : indications, déroulement, sécurité et prix sur devis. Diagnostic 3D à la Clinique DABIA Liberté 6, rendez-vous rapide.",
     date: "2025-06-10",
@@ -6462,40 +3100,21 @@ Toutes ces méthodes sont encadrées par des protocoles médicaux stricts. Les d
     author: AUTHORS.sao,
     cover: cbctCover,
     readingMinutes: 13,
-    content: `La **CBCT (Cone Beam Computed Tomography)** est une technologie de radiographie 3D dédiée à la dentisterie. Elle fournit des images précises, avec une irradiation plus faible qu’un scanner médical classique.
-
-## Indications principales
-- **Implantologie** : planification des implants avec précision millimétrique.
-- **Endodontie** : détection de canaux accessoires, fractures radiculaires.
-- **Chirurgie** : dents de sagesse incluses, kystes, lésions osseuses.
-- **Orthodontie** : étude des bases osseuses et éruption des dents.
-
-## Avantages
-- Image tridimensionnelle.
-- Mesures précises de l’os.
-- Diagnostic plus fiable.
-- Faible irradiation (par rapport au scanner).
-
-## Déroulement de l’examen
-1. Installation assise ou debout.
-2. Rotation de l’appareil autour de la tête (20 sec).
-3. Analyse des images par le dentiste.
-
-## Sécurité
-- Dose réduite, adaptée aux enfants si nécessaire.
-- Pas d’injection, pas d’examen invasif.
-
-## Prix et prise de rendez-vous
-Le prix d’un CBCT dépend de la zone à examiner et de l’indication clinique. La Clinique DABIA confirme le tarif adapté après analyse de votre besoin et vous remet une information claire avant l’examen.
-
-Pour un implant, une dent incluse, une douleur inexpliquée ou un bilan 3D, [prenez rendez-vous pour un bilan CBCT](/rendez-vous?soin=CBCT%20dentaire).
-
-### FAQ
-**Est-ce douloureux ?** Non, examen indolore et rapide.  
-**Est-ce remboursé ?** Dépend des indications médicales.  
-**Puis-je le faire enceinte ?** Déconseillé sauf urgence.
-
-> La Clinique DABIA à Dakar est équipée d’un **CBCT dernière génération** pour des diagnostics et plans de traitement de haute précision.`,
+    content: `""`,
+    faq: [
+      {
+        q: "Est-ce douloureux de faire un CBCT dentaire ?",
+        a: "Non, l'examen est indolore et rapide : environ 20 secondes de rotation autour de la tête, sans injection ni geste invasif.",
+      },
+      {
+        q: "Est-ce que le CBCT est remboursé ?",
+        a: "La prise en charge dépend de votre IPM ou de votre assurance et des indications médicales. La clinique vous remet les documents nécessaires à votre dossier.",
+      },
+      {
+        q: "Puis-je faire un CBCT enceinte ?",
+        a: "Le CBCT est déconseillé pendant la grossesse sauf urgence. Signalez votre situation avant l'examen pour adapter la prise en charge.",
+      },
+    ],
   },
   {
     slug: "urgence-traumatisme-dentaire-enfant-dakar",
@@ -6508,36 +3127,7 @@ Pour un implant, une dent incluse, une douleur inexpliquée ou un bilan 3D, [pre
     author: AUTHORS.sao,
     cover: traumaEnfantCover,
     readingMinutes: 14,
-    content: `Les enfants sont particulièrement exposés aux **traumatismes dentaires** lors des jeux, du sport ou des chutes. Savoir réagir vite permet souvent de sauver la dent.
-
-## Types de traumatismes
-- **Fracture de la couronne** (dent cassée).
-- **Luxation** (dent déplacée).
-- **Avulsion** (dent complètement sortie).
-- **Traumatisme des dents de lait** (choc fréquent chez les 2–5 ans).
-
-## Gestes d’urgence
-- Conserver le fragment ou la dent dans du **lait** ou du sérum physiologique.
-- Ne pas brosser ni frotter la racine.
-- Consulter dans les 30–60 minutes.
-- En cas de saignement, appliquer une compresse propre.
-
-## Prise en charge en cabinet
-- Radiographie pour évaluer les racines.
-- Collage du fragment ou reconstitution avec résine.
-- Réimplantation possible d’une dent définitive expulsée.
-- Suivi régulier pendant plusieurs mois.
-
-## Cas particulier des dents de lait
-- On ne réimplante jamais une dent de lait.
-- Surveillance pour éviter de léser la dent définitive sous-jacente.
-
-### FAQ
-**Est-ce douloureux ?** Oui, mais une prise en charge rapide limite la douleur.  
-**Que faire la nuit ou le week-end ?** Contacter immédiatement un service d’urgence dentaire.  
-**Peut-on sauver une dent expulsée ?** Oui, si elle est réimplantée rapidement.
-
-> À Dakar, la Clinique DABIA reçoit les enfants en urgence pour tout traumatisme dentaire.`,
+    content: `""`,
   },
   {
     slug: "diabete-et-sante-buccale-risques-prevention-dakar",
@@ -6550,34 +3140,7 @@ Pour un implant, une dent incluse, une douleur inexpliquée ou un bilan 3D, [pre
     author: AUTHORS.sao,
     cover: diabeteCover,
     readingMinutes: 15,
-    content: `Le **diabète** affecte la santé générale mais aussi la santé bucco-dentaire. Les patients diabétiques présentent un risque accru de maladies parodontales et de complications post-opératoires.
-
-## Quels risques pour les dents ?
-- **Parodontite** plus fréquente et plus sévère.
-- **Retard de cicatrisation** après extraction ou chirurgie.
-- **Sécheresse buccale** favorisant les caries et mycoses.
-- Risque accru d’**infections**.
-
-## Pourquoi ?
-Un diabète mal équilibré fragilise le système immunitaire et diminue la capacité de défense face aux bactéries buccales.
-
-## Prévention recommandée
-- Contrôle glycémique strict.
-- Consultation dentaire tous les 6 mois.
-- Hygiène rigoureuse (brossage + fil).
-- Nettoyage professionnel régulier.
-
-## Soins adaptés à la Clinique DABIA
-- Protocoles spécifiques pour limiter les risques infectieux.
-- Prescription d’antibiotiques si nécessaire.
-- Surveillance rapprochée après les extractions et implants.
-
-### FAQ
-**Puis-je avoir un implant avec un diabète ?** Oui, si le diabète est bien équilibré.  
-**Dois-je prévenir mon dentiste ?** Absolument, pour adapter les soins.  
-**Quels signes doivent alerter ?** Gencives qui saignent, dents qui bougent, mauvaise haleine persistante.
-
-> La Clinique DABIA accompagne les patients diabétiques à Dakar pour préserver leur sourire et leur santé globale.`,
+    content: `""`,
   },
 
   {
@@ -6598,48 +3161,7 @@ Un diabète mal équilibré fragilise le système immunitaire et diminue la capa
     cover: prixCover,
     readingMinutes: 13,
     pinned: true,
-    content: `Au Sénégal, de nombreux patients sont couverts par une **IPM**, une **mutuelle** ou une **assurance privée**. Comprendre comment fonctionne la **prise en charge dentaire** permet d’anticiper son budget et d’éviter les mauvaises surprises.
-
-## IPM, mutuelle, assurance : quelles différences ?
-- **IPM** (Institution de Prévoyance Maladie) : rattachée à un employeur (SENELEC, SONATEL, EIFFAGE, etc.).  
-- **Mutuelle** : structure qui regroupe plusieurs adhérents (fonctionnaires, entreprises, professions libérales…).  
-- **Assurance santé privée** : contrat individuel ou collectif, souvent avec un plafond annuel.
-
-Chaque organisme applique ses propres **taux de remboursement** et plafonds pour les soins dentaires.
-
-## Quels soins dentaires sont le plus souvent pris en charge ?
-- **Consultations** et **détartrage** de prévention.  
-- **Soins conservateurs** : caries, dévitalisations.  
-- Certaines **prothèses** (couronnes, prothèses amovibles) et actes d’**implantologie** selon les contrats.  
-- Les **urgences dentaires** (douleur aiguë, abcès) avec devis lorsque des soins complémentaires sont nécessaires.
-
-> Les actes esthétiques purs (blanchiment, facettes) sont rarement remboursés ; ils sont expliqués séparément.
-
-## Comment se passe la prise en charge à la Clinique DABIA ?
-1. **Consultation** et examen clinique.  
-2. Élaboration d’un **plan de traitement** détaillé.  
-3. Remise d’un **devis** avec les informations utiles pour votre organisme.  
-4. Selon le contrat : **tiers payant** partiel/total ou remboursement après règlement.
-
-Nous travaillons avec de nombreuses **IPM et assurances** (Sunu, AXA, Sonam, Sanlam, etc.) présentées sur notre page dédiée : [/infos/assurances](/infos/assurances).
-
-## Conseils pratiques avant de venir
-- Apportez votre **carte IPM/mutuelle** à jour.  
-- Renseignez-vous sur votre **plafond annuel dentaire**.  
-- Demandez si une **entente préalable** est nécessaire pour les prothèses ou implants.  
-- Gardez les **factures** et devis signés pour le remboursement.
-
-## FAQ rapide
-**Peut-on connaître le montant remboursé avant les soins ?**  
-Souvent oui : votre organisme peut donner une estimation sur la base du devis.
-
-**Les implants sont-ils remboursés ?**  
-Cela dépend des contrats. Certains remboursent une partie, d’autres pas du tout.
-
-**Puis-je être soigné si ma carte n’est pas à jour ?**  
-Oui, mais les soins seront facturés directement au patient, avec possibilité de remboursement ultérieur si votre organisme l’accepte.
-
-> Pour toute question sur la prise en charge, contactez la Clinique DABIA ou présentez votre carte d’assurance à l’accueil avant la consultation.`,
+    content: `""`,
   },
 
   {
@@ -6659,41 +3181,7 @@ Oui, mais les soins seront facturés directement au patient, avec possibilité d
     cover: halitoseCover,
     readingMinutes: 12,
     pinned: true,
-    content: `Au Sénégal, l’**attaya**, le **café** et la **kola** font partie du quotidien. Ces habitudes conviviales ont toutefois un **impact réel** sur les dents, les gencives et l’haleine.
-
-## Taches et coloration des dents
-- L’**attaya** (thé vert très infusé) contient des **tanins** qui se fixent sur l’émail.  
-- Le **café** et certaines boissons foncées accentuent ces taches.  
-- La **kola** colore parfois la muqueuse et laisse des dépôts.
-
-Résultat : un sourire plus **jaune** ou **taché**, surtout si le brossage est insuffisant ou irrégulier.
-
-## Caries et gencives : quel risque ?
-- Attaya souvent préparé **très sucré** ⟶ risque de **caries** élevé si pris plusieurs fois par jour.  
-- Sucre + acides = terrain favorable pour les **bactéries** responsables de la plaque.  
-- Consommation tardive (le soir, après le brossage) ⟶ attaques prolongées sur l’émail.
-
-## Comment limiter les conséquences sans tout arrêter ?
-- Réduire le **sucre** ajouté (goûter progressivement moins sucré).  
-- Boire de l’**eau** après l’attaya ou le café pour rincer la bouche.  
-- Éviter d’enchaîner plusieurs verres sucrés sur la journée.  
-- Maintenir un **brossage 2–3×/jour** avec un dentifrice fluoré.
-
-## Détartrage, AirFlow et blanchiment
-Un **détartrage régulier** associé à un **AirFlow** permet d’enlever les colorations superficielles liées à l’attaya, au café et à la kola.  
-Si la teinte reste foncée, un **blanchiment dentaire** peut être envisagé après un bilan.
-
-## FAQ rapide
-**Dois-je arrêter complètement l’attaya ?**  
-Non, mais il est préférable de le consommer moins sucré et d’intensifier l’hygiène et les contrôles.
-
-**Le citron dans le thé “nettoie” les dents ?**  
-Non, l’acidité du citron fragilise l’émail s’il est utilisé trop souvent ; il faut éviter de garder la boisson en bouche.
-
-**Un simple dentifrice “blancheur” suffit-il ?**  
-Il peut aider pour les petites taches, mais ne remplace ni le détartrage, ni l’AirFlow, ni un éventuel blanchiment professionnel.
-
-> La Clinique DABIA à Dakar vous conseille pour garder un sourire lumineux tout en profitant de vos habitudes locales.`,
+    content: `""`,
   },
 
   {
@@ -6714,39 +3202,7 @@ Il peut aider pour les petites taches, mais ne remplace ni le détartrage, ni l�
     cover: carieCover,
     readingMinutes: 11,
     pinned: true,
-    content: `Beaucoup de patients consultent pour des dents abîmées alors qu’ils ont l’impression de “bien faire”. Certaines **mauvaises habitudes** sont pourtant très fréquentes – et faciles à corriger.
-
-## Erreur 1 : se brosser trop fort
-Un brossage **agressif** avec une brosse dure peut user l’émail et abîmer les gencives.
-- Préférer une **brosse souple**.  
-- Effectuer des **mouvements doux** de la gencive vers la dent.
-
-## Erreur 2 : grignoter sucré toute la journée
-Biscuits, jus, bonbons, attaya très sucré… Chaque prise relance l’**attaque acide** sur les dents.
-- Limiter le **nombre de prises sucrées**.  
-- Boire de l’eau et se brosser les dents après les repas principaux.
-
-## Erreur 3 : utiliser des remèdes maison agressifs
-Citron pur, bicarbonate, charbon abrasif : ils peuvent **décaper** l’émail et rendre les dents sensibles.
-- Toujours demander **l’avis du dentiste** avant un “truc de grand-mère”.
-
-## Erreur 4 : ignorer les saignements des gencives
-Des gencives qui saignent sont **anormales**.
-- Consulter pour un **bilan parodontal** et envisager un détartrage ou un surfaçage.
-
-## Erreur 5 : repousser les contrôles
-Attendre d’avoir “trop mal” conduit souvent à des soins plus lourds (dé-vitalisations, extractions, prothèses).
-- Prévoir une visite tous les **6 à 12 mois**.
-
-## Erreur 6 : fumer sans contrôle dentaire
-Le **tabac** masque le saignement, favorise parodontite, taches et mauvaise haleine.
-- Un suivi régulier permet de limiter les risques et de dépister tôt.
-
-## Erreur 7 : s’automédiquer avec des antibiotiques
-Les antibiotiques sans prescription peuvent masquer les symptômes sans traiter la cause.
-- Seul un examen permet de poser le **bon diagnostic** et le bon traitement.
-
-> En corrigeant ces habitudes et en consultant régulièrement, vous protégez durablement vos dents et vos gencives. La Clinique DABIA à Dakar vous accompagne avec des conseils personnalisés.`,
+    content: `""`,
   },
   // --- Nouveaux articles ajoutés (SEO & Contenu riche) ---
   {
@@ -6768,7 +3224,7 @@ Les antibiotiques sans prescription peuvent masquer les symptômes sans traiter 
     cover: sagesseCover,
     pinned: true,
     readingMinutes: 13,
-    content: `Les **dents de sagesse** (ou troisièmes molaires) sont souvent source de **douleur**, d'infections (**péricoronarite**) et de chevauchement dentaire. À Dakar, leur **extraction** est une intervention courante, réalisée sans douleur grâce aux techniques modernes d'anesthésie.\n\n## Pourquoi extraire les dents de sagesse ?\nL'extraction n'est pas systématique. Elle est recommandée si :\n- **Manque de place** : la dent pousse de travers (enclavée ou incluse) et abîme la dent voisine.\n- **Infection récurrente** : douleur, gonflement de la gencive, difficultés à ouvrir la bouche.\n- **Kyste** ou lésion osseuse visible à la radio.\n- **Carie** impossible à soigner correctement à cause de la position.\n\n## Prix extraction dent de sagesse à Dakar\nLe **prix** varie selon la complexité :\n- **Extraction simple** (dent sortie) : tarif standard.\n- **Extraction chirurgicale** (dent incluse/sous la gencive) : nécessite une petite incision, des sutures et parfois une imagerie 3D (**CBCT**). Le coût est légèrement supérieur.\nUn **devis clair** est toujours établi avant l'intervention.\n\n## Déroulement de l'intervention\n1. **Bilan Radiographique** : Panoramique ou Scanner 3D pour visualiser les racines et le nerf mandibulaire.\n2. **Anesthésie Locale** : Intervention totalement **indolore**.\n3. **Extraction** : Rapide et précise.\n4. **Sutures** : Fils résorbables pour une meilleure cicatrisation.\n\n## Conseils post-opératoires pour éviter le gonflement\n- **Froid** : Appliquer une poche de glace sur la joue (20 min toutes les heures) le premier jour.\n- **Alimentation** : Molle et tiède/froide pendant 48h (biogourts, glaces, purées).\n- **Hygiène** : Pas de bains de bouche le jour même. Brossage doux dès le lendemain.\n- **Repos** : Éviter le sport intense pendant 3-4 jours.\n\n> Vous ressentez une douleur au fond de la mâchoire ? Prenez rendez-vous pour une évaluation : [/rendez-vous](/rendez-vous).`,
+    content: `""`,
     faq: [
       {
         q: "Est-ce que ça fait mal ?",
@@ -6802,7 +3258,7 @@ Les antibiotiques sans prescription peuvent masquer les symptômes sans traiter 
     cover: facettesCover,
     pinned: true,
     readingMinutes: 14,
-    content: `Le **Hollywood Smile** n'est plus réservé aux stars. Grâce aux **facettes dentaires**, vous pouvez corriger la forme, la teinte et l'alignement de vos dents de manière durable et spectaculaire. À Dakar, la Clinique DABIA propose des facettes haut de gamme en **céramique** et en **composite**.\n\n## Qu'est-ce qu'une facette dentaire ?\nC'est une fine pellicule (comme une lentille de contact) collée sur la face visible de la dent. Elle permet de masquer :\n- Des dents **tachées** ou jaunes (résistantes au blanchiment).\n- Des dents **cassées** ou usées.\n- Des **écarts** (diastèmes) entre les dents.\n- De légers **chevauchements**.\n\n## Facette Céramique vs Composite : Prix et Différences\n### Facettes Céramique (Emax / Zircone)\n- **Esthétique** : Résultat ultra-naturel, translucidité parfaite.\n- **Durabilité** : Très résistantes, ne changent pas de couleur (15-20 ans).\n- **Prix** : Investissement plus important.\n### Facettes Composite\n- **Esthétique** : Très beau résultat, réalisé directement au fauteuil.\n- **Durabilité** : Moins résistantes que la céramique, peuvent se ternir (5-7 ans).\n- **Prix** : Plus abordable.\n\n## Comment obtenir un Hollywood Smile à Dakar ?\n1. **Consultation Esthétique** : Photos, analyse du sourire (Smile Design).\n2. **Mock-up** : Essai du futur sourire en résine provisoire (sans toucher vos dents) pour valider la forme.\n3. **Préparation** : Légère préparation de l'émail (parfois sans préparation "No-Prep").\n4. **Pose** : Collage minutieux des facettes définitives.\n\n## Entretien\nComme vos dents naturelles : brossage soigné, fil dentaire et visite de contrôle annuelle.\n\n> Envie de sublimer votre sourire ? Demandez votre consultation esthétique : [/rendez-vous](/rendez-vous).`,
+    content: `""`,
     faq: [
       {
         q: "Est-ce que ça abîme les dents ?",
@@ -6836,7 +3292,7 @@ Les antibiotiques sans prescription peuvent masquer les symptômes sans traiter 
     cover: invisalignCover,
     pinned: true,
     readingMinutes: 15,
-    content: `Vous rêvez de dents alignées mais refusez de porter des bagues métalliques ? L'**orthodontie invisible** par aligneurs (type **Invisalign**) est la solution idéale pour les adultes et adolescents actifs à Dakar.\n\n## Pourquoi choisir Invisalign à Dakar ?\n- **Discrétion Absolue** : Les gouttières sont transparentes et quasi-invisibles.\n- **Confort** : Pas de métal, pas de blessures aux joues ou aux lèvres.\n- **Hygiène Facilitée** : Les aligneurs sont amovibles. Vous les retirez pour manger et vous brosser les dents.\n- **Visualisation** : Grâce au scanner 3D, vous voyez le résultat final virtuel avant même de commencer.\n\n## Pour quels problèmes ?\nInvisalign est efficace pour corriger :\n- Chevauchements dentaires.\n- Espacements (dents écartées).\n- Problèmes d'occlusion (articulé croisé, supraclusion).\n\n## Durée et Prix du traitement\nLa durée varie de **6 à 18 mois** selon la complexité. Le **prix** dépend du nombre d'aligneurs nécessaires. Bien que souvent plus coûteux que les bagues traditionnelles, le confort et l'esthétique justifient l'investissement pour de nombreux patients.\n\n## Déroulement\n1. **Scan 3D** : Empreinte numérique de vos dents (fini la pâte à empreinte !).\n2. **ClinCheck** : Planification vidéo du mouvement de vos dents.\n3. **Pose** : Remise de vos premiers aligneurs.\n4. **Suivi** : Visites de contrôle toutes les 6 à 8 semaines.\n\n> Prêt à transformer votre sourire en toute discrétion ? Prenez rendez-vous pour un scan 3D : [/rendez-vous](/rendez-vous).`,
+    content: `""`,
     faq: [
       {
         q: "Dois-je les porter tout le temps ?",
@@ -6869,7 +3325,7 @@ Les antibiotiques sans prescription peuvent masquer les symptômes sans traiter 
     author: AUTHORS.sao,
     cover: bridgeImplantCover,
     readingMinutes: 12,
-    content: `Perdre une dent n'est pas une fatalité. Pour la remplacer, deux solutions principales s'offrent à vous à Dakar : l'**implant dentaire** et le **bridge**. Comment choisir la meilleure option ? Voici un comparatif détaillé.\n\n## L'Implant Dentaire : La référence\nC'est une racine artificielle en titane insérée dans l'os.\n- **Avantages** : Solution la plus **durable** (à vie souvent), préserve les dents voisines, stimule l'os, sensation identique à une dent naturelle.\n- **Inconvénients** : Nécessite une petite chirurgie, délai de cicatrisation (3-4 mois), coût initial plus élevé.\n\n## Le Bridge Dentaire : L'alternative classique\nC'est un pont de 3 dents qui s'appuie sur les dents voisines.\n- **Avantages** : Rapide (réalisé en 2-3 semaines), esthétique, moins cher que l'implant dans certains cas.\n- **Inconvénients** : Oblige à **tailler** (mutiler) les dents voisines, risque de carie sous les piliers, l'os continue de fondre sous la dent remplacée.\n\n## Comparatif Prix à Dakar\nÀ première vue, le **bridge** semble moins cher. Cependant, si l'on considère la durée de vie et le fait qu'il faille souvent le refaire après 10-15 ans, l'**implant** est souvent plus économique sur le long terme.\n\n## Le verdict du dentiste\nNous privilégions l'**implant dentaire** car il est plus conservateur (on ne touche pas aux autres dents). Le bridge reste une bonne option si les dents voisines sont déjà abîmées ou si l'implant est contre-indiqué (manque d'os sévère, problèmes de santé).\n\n> Une dent manquante ? N'attendez pas que les autres dents bougent. Demandez conseil : [/rendez-vous](/rendez-vous).`,
+    content: `""`,
     faq: [
       {
         q: "L'implant est-il remboursé ?",
@@ -6902,7 +3358,7 @@ Les antibiotiques sans prescription peuvent masquer les symptômes sans traiter 
     author: AUTHORS.sao,
     cover: grossesseCover,
     readingMinutes: 10,
-    content: `**"Je suis enceinte, puis-je aller chez le dentiste ?"** La réponse est **OUI**, c'est même fortement recommandé ! Les changements hormonaux pendant la grossesse fragilisent les dents et les gencives. À Dakar, nous accompagnons les futures mamans pour une grossesse sereine.\n\n## Gingivite de grossesse : Attention !\nLes hormones augmentent la réaction des gencives à la plaque dentaire. Résultat : gencives rouges, gonflées qui saignent (**gingivite gravidique**). Si elle n'est pas traitée, elle peut évoluer vers une parodontite, qui est un facteur de risque pour l'**accouchement prématuré**.\n\n## Quels soins sont autorisés ?\n- **Détartrage** : Indispensable pour calmer l'inflammation gingivale.\n- **Soins de caries** : Une carie non soignée est un nid à bactéries dangereux pour maman et bébé.\n- **Anesthésie** : Nous utilisons des anesthésiants compatibles et sans danger pour le fœtus.\n- **Radiographies** : Évitées par précaution, mais possibles en cas d'urgence absolue avec un tablier de plomb.\n\n## Le meilleur moment pour consulter\nLe **2ème trimestre** est idéal pour les soins courants. En cas d'urgence (douleur, infection), il faut consulter **immédiatement**, quel que soit le stade de la grossesse.\n\n## Conseils pour les futures mamans\n1. **Hygiène irréprochable** : Brossage 2x/jour + fil dentaire.\n2. **Nausées/Vomissements** : Rincez-vous la bouche à l'eau (ne brossez pas tout de suite pour ne pas abîmer l'émail fragilisé par l'acide).\n3. **Alimentation** : Attention aux fringales sucrées !\n\n> Prenez soin de vous et de votre bébé. Programmez votre contrôle dentaire : [/rendez-vous](/rendez-vous).`,
+    content: `""`,
     faq: [
       {
         q: "L'anesthésie est-elle dangereuse pour le bébé ?",
@@ -6932,7 +3388,7 @@ Les antibiotiques sans prescription peuvent masquer les symptômes sans traiter 
     author: AUTHORS.sao,
     cover: sedationCover,
     readingMinutes: 11,
-    content: `La **peur du dentiste** (ou stomatophobie) empêche de nombreux patients de se soigner, aggravant souvent leur état dentaire. À Dakar, la Clinique DABIA a mis en place une approche "Zero Douleur" et bienveillante pour vous réconcilier avec les soins.\n\n## Une approche bienveillante\nTout commence par l'**écoute**. Nous prenons le temps de comprendre vos peurs (douleur, bruit, piqûre...). Vous gardez le contrôle pendant le soin : un simple geste de la main et nous arrêtons tout.\n\n## Solutions techniques contre la douleur\n- **Anesthésie locale topique** : Un gel anesthésiant est appliqué sur la gencive *avant* la piqûre. Vous ne sentez quasiment rien.\n- **Anesthésie efficace** : Nous attendons que la dent soit *totalement* endormie avant de commencer. Aucune douleur n'est tolérée.\n\n## La Sédation Consciente (MEOPA) / Gaz Hilarant\nPour les patients très anxieux ou les enfants, nous pouvons utiliser une sédation légère. Vous respirez un mélange gazeux relaxant. Vous restez éveillé mais **totalement détendu**, l'anxiété disparaît et la perception du temps est modifiée.\n\n## Conseils pour les phobiques\n1. **Venez tôt** (mais pas trop) pour ne pas stresser en salle d'attente.\n2. **Écoutez de la musique** : Apportez vos écouteurs pour vous isoler des bruits.\n3. **Commencez petit** : Un simple détartrage ou contrôle pour reprendre confiance.\n\n> Ne laissez pas la peur gâcher votre sourire. Venez nous rencontrer pour une discussion sans engagement : [/rendez-vous](/rendez-vous).`,
+    content: `""`,
     faq: [
       {
         q: "La sédation est-elle une anesthésie générale ?",
@@ -6962,29 +3418,7 @@ Les antibiotiques sans prescription peuvent masquer les symptômes sans traiter 
     author: AUTHORS.sao,
     cover: implantCover,
     readingMinutes: 15,
-    content: `Perdre une dent peut affecter le sourire et la mastication. L'**implant dentaire** est aujourd'hui la solution de référence à Dakar pour remplacer une dent de façon fixe et durable, sans abîmer les dents voisines.
-
-## Qu'est-ce qu'un implant dentaire ?
-C'est une racine artificielle en titane insérée dans l'os de la mâchoire. Une fois cicatrisée (ostéointégration), on y visse une couronne en céramique pour redonner l'apparence et la fonction d'une dent naturelle.
-
-## Déroulement de la pose à la Clinique DABIA
-1. **Bilan 3D (CBCT)** : Indispensable pour vérifier le volume osseux et choisir la taille de l'implant.
-2. **Pose chirurgicale** : Intervention sous anesthésie locale, totalement **indolore**. Durée : 30 à 60 min.
-3. **Cicatrisation** : Période de 3 à 4 mois pour que l'os fusionne avec l'implant. Une prothèse provisoire peut être posée pour l'esthétique.
-4. **Pose de la couronne** : Prise d'empreinte (souvent numérique) et fixation de la dent définitive.
-
-## Prix d'un implant dentaire à Dakar
-Le tarif varie selon la marque de l'implant, la nécessité d'une greffe osseuse et le type de couronne (Zircone ou Céramo-métal). À la Clinique DABIA, nous proposons un devis détaillé incluant :
-- La chirurgie (pose de l'implant)
-- L'accastillage (pilier)
-- La couronne définitive
-
-> **Bon à savoir** : C'est un investissement sur le long terme. Contrairement à un bridge (qui mutile les dents voisines) ou un appareil amovible, l'implant préserve votre capital osseux.
-
-## Est-ce douloureux ?
-Non. La pose se fait sous anesthésie locale efficace. Les suites opératoires sont généralement simples (léger gonflement), bien gérées avec des antalgiques classiques et de la glace.
-
-Prenez rendez-vous pour un **bilan implant** et retrouvez le plaisir de croquer la vie à pleines dents : [/rendez-vous](/rendez-vous).`,
+    content: `""`,
     faq: [
       {
         q: "Quelle est la durée de vie d'un implant ?",
@@ -7014,33 +3448,7 @@ Prenez rendez-vous pour un **bilan implant** et retrouvez le plaisir de croquer 
     author: AUTHORS.sao,
     cover: invisalignCover,
     readingMinutes: 12,
-    content: `Il n'est jamais trop tard pour aligner ses dents ! L'**orthodontie adulte** est en plein essor à Dakar. Fini les sourires métalliques "de collégien", place à des solutions discrètes et efficaces.
-
-## Les options pour adultes
-### 1. Les Aligneurs Invisibles (type Invisalign)
-C'est la solution préférée des actifs.
-- **Invisible** : Des gouttières transparentes quasi-imperceptibles.
-- **Amovible** : On les retire pour manger et se brosser les dents (hygiène top !).
-- **Confortable** : Pas de fils qui piquent.
-- **Efficace** : Traite des cas simples à complexes.
-
-### 2. Les Bagues Céramiques
-Des attaches collées sur les dents, mais de couleur "dent" ou transparentes.
-- **Discret**, bien que visible de près.
-- **Fixe** : Agit en continu, ne demande pas de discipline de port.
-- **Prix** : Souvent un peu plus économique que les aligneurs.
-
-## Pourquoi aligner ses dents adulte ?
-Au-delà de l'esthétique, des dents alignées :
-- Facilitent le brossage (moins de risque de déchaussement).
-- Améliorent l'occlusion (moins d'usure des dents).
-- Préviennent les douleurs articulaires.
-
-## Durée et Prix
-Un traitement adulte dure entre **6 et 24 mois** selon la complexité. Le coût dépend de la technique et de la durée.
-À la Clinique DABIA, nous réalisons un **bilan orthodontique** complet (photos, radio, empreinte numérique) pour vous proposer la solution la plus adaptée à votre vie sociale et professionnelle.
-
-> Envie d'un sourire aligné sans que ça se voie ? Demandez une simulation **scanner intra-oral** lors de votre consultation.`,
+    content: `""`,
     faq: [
       {
         q: "Est-ce douloureux ?",
@@ -7069,28 +3477,7 @@ Un traitement adulte dure entre **6 et 24 mois** selon la complexité. Le coût 
     author: AUTHORS.sao,
     cover: blanchimentCover,
     readingMinutes: 10,
-    content: `Café, thé, attaya, épices... Avec le temps, nos dents jaunissent. Pour retrouver de l'éclat en toute sécurité, le **blanchiment dentaire médical** réalisé par un chirurgien-dentiste à Dakar est la seule option fiable qui préserve votre émail.
-
-## Blanchiment au cabinet (Fauteuil) vs "Bars à sourire"
-Il est crucial de distinguer le soin médical des produits en vente libre ou instituts non médicaux.
-- **Le Dentiste** utilise des produits (peroxyde) à des concentrations efficaces, uniquement autorisées aux professionnels de santé. Il protège vos gencives avec une barrière spéciale.
-- **Le Résultat** est immédiat et contrôlé.
-
-## Le Protocole Clinique DABIA
-1. **Bilan préalable** : On vérifie l'absence de caries ou de contre-indications (gencives saines obligatoires !).
-2. **Détartrage + Polissage** : Pour enlever le tartre et les taches de surface (tabac, attaya).
-3. **Séance de Blanchiment** : Application du gel éclaircissant activé par une lampe spécifique. Durée : environ 1h.
-4. **Kit ambulatoire (optionnel)** : Des gouttières sur mesure pour entretenir le résultat à la maison.
-
-## Est-ce que ça abîme l'émail ?
-**Non**, si c'est fait par un professionnel. Le produit agit en profondeur sur les pigments sans "rayer" l'émail (contrairement au charbon ou citron).
-
-## Sensibilité ?
-Une sensibilité au froid peut survenir pendant 24 à 48h. Nous appliquons des gels désensibilisants pour votre confort.
-
-> **Conseil** : Évitez les aliments colorés (curry, vin rouge, café) pendant 2-3 jours après le soin pour stabiliser la teinte.
-
-Redonnez de l'éclat à votre sourire avant un événement ou simplement pour vous faire plaisir.`,
+    content: `""`,
     faq: [
       {
         q: "Combien de teintes peut-on gagner ?",
@@ -7119,24 +3506,7 @@ Redonnez de l'éclat à votre sourire avant un événement ou simplement pour vo
     author: AUTHORS.sao,
     cover: endoCover,
     readingMinutes: 14,
-    content: `"Il faut dévitaliser la dent". Cette phrase fait souvent peur. Pourtant, le **traitement de canal** (endodontie) est un acte conservateur qui permet de **garder votre dent** plutôt que de l'extraire.
-
-## Quand doit-on dévitaliser ?
-Lorsque la carie est trop profonde et a atteint le nerf (pulpe), ou après un choc violent. Le nerf s'infecte ou se nécrose, provoquant souvent une douleur aiguë (la fameuse rage de dent) ou un abcès.
-
-## Les étapes du traitement à la Clinique DABIA
-Grâce aux technologies modernes (localisateur d'apex, instruments rotatifs), ce soin est aujourd'hui rapide et sûr :
-1. **Anesthésie** : La dent est totalement endormie.
-2. **Nettoyage** : On retire le nerf infecté et on désinfecte l'intérieur des racines.
-3. **Obturation** : On rebouche les canaux de manière étanche pour éviter toute réinfection.
-4. **Reconstitution** : La dent dévitalisée est plus fragile. Il est souvent indispensable de poser une **couronne** ou un **onlay** pour la consolider et éviter qu'elle ne casse.
-
-## Est-ce que ça fait mal ?
-C'est souvent le contraire ! La dévitalisation **soulage** la douleur de l'infection. L'acte lui-même se fait sous anesthésie et est indolore. Une légère sensibilité à la pression peut durer quelques jours après.
-
-> **Sauver sa dent naturelle** est toujours la meilleure option. L'implant ne vient qu'en dernier recours.
-
-Si vous ressentez une douleur au froid, au chaud ou à la mastication, ne tardez pas. Une prise en charge rapide évite l'abcès et l'extraction.`,
+    content: `""`,
     faq: [
       {
         q: "Une dent dévitalisée est-elle morte ?",
@@ -7165,28 +3535,7 @@ Si vous ressentez une douleur au froid, au chaud ou à la mastication, ne tardez
     author: AUTHORS.sao,
     cover: sagesseCover,
     readingMinutes: 11,
-    content: `Les **dents de sagesse** (3èmes molaires) apparaissent souvent entre 17 et 25 ans. Elles manquent parfois de place, provoquant douleurs ou infections. À Dakar, nous évaluons la nécessité de les extraire au cas par cas grâce à la radiographie panoramique.
-
-## Pourquoi les enlever ?
-- **Manque de place** : Elles poussent les autres dents et peuvent perturber un alignement orthodontique.
-- **Infection (Péricoronarite)** : La gencive recouvre partiellement la dent, créant une poche où les bactéries prolifèrent (douleur, gonflement).
-- **Carie** : Positionnées très loin, elles sont difficiles à brosser et se carient vite.
-- **Kyste** : Parfois autour d'une dent incluse.
-
-## L'intervention à la Clinique DABIA
-- **Anesthésie locale** efficace.
-- Extraction douce (parfois en fractionnant la dent pour préserver l'os).
-- Points de suture (souvent résorbables).
-- Durée : De 20 min à 1h selon la difficulté.
-
-## Suites opératoires (Après l'extraction)
-- **Gonflement** : Fréquent ("joue de hamster"), il diminue après 3 jours. Glacez bien !
-- **Alimentation** : Molle et tiède/froide pendant 48h (yaourts, purées, glaces). Pas d'épices, pas d'alcool.
-- **Hygiène** : Brossage doux, bains de bouche prescrits à commencer le lendemain.
-
-> **Faut-il les enlever préventivement ?** Pas systématiquement. Si elles sont saines, bien positionnées et fonctionnelles, on les garde !
-
-Une radio panoramique permet de trancher. Si vous avez mal au fond de la mâchoire, consultez pour éviter l'infection.`,
+    content: `""`,
     faq: [
       {
         q: "Peut-on enlever les 4 d'un coup ?",
@@ -7214,27 +3563,7 @@ Une radio panoramique permet de trancher. Si vous avez mal au fond de la mâchoi
     author: AUTHORS.sao,
     cover: detartragePrixCover,
     readingMinutes: 8,
-    content: `Le **détartrage** est le soin dentaire le plus courant, et pourtant, beaucoup de patients attendent d'avoir mal aux gencives pour consulter. À Dakar, le **prix d'un détartrage** est accessible et reste le meilleur investissement pour éviter des soins lourds (et chers) plus tard.
-
-## Pourquoi le tartre est-il dangereux ?
-Le tartre est une plaque dentaire calcifiée que la brosse à dents ne peut plus enlever. S'il s'accumule :
-- **Gingivite** : La gencive gonfle et saigne (très fréquent).
-- **Mauvaise haleine** : Les bactéries logées dans le tartre libèrent des odeurs.
-- **Déchaussement** : À long terme, l'os se résorbe et les dents bougent.
-
-## Combien coûte un détartrage à Dakar ?
-Le **prix** varie selon la complexité :
-1. **Détartrage simple** : Si réalisé régulièrement (tous les 6 mois), c'est un acte rapide.
-2. **Détartrage approfondi / Surfaçage** : Si le tartre est sous la gencive depuis longtemps, le soin demande plus de temps et parfois une anesthésie. Le tarif sera logiquement plus élevé.
-
-> En moyenne, le coût d'un détartrage est bien inférieur à celui de soigner une carie ou de poser une dent !
-
-## Comment ça se passe à la Clinique DABIA ?
-1. **Ultrasons** : Pour décoller le tartre sans abîmer l'émail.
-2. **Polissage / AirFlow** : Pour enlever les taches (thé, café, cigarette) et rendre les dents lisses.
-3. **Conseils** : On vous montre les zones que vous brossez moins bien.
-
-> Ne laissez pas le tartre s'installer. Prenez rendez-vous pour un sourire propre et sain.`,
+    content: `""`,
     faq: [
       {
         q: "Est-ce que le détartrage fait mal ?",
@@ -7264,37 +3593,7 @@ Le **prix** varie selon la complexité :
     author: AUTHORS.sao,
     cover: protheseAmovibleCover,
     readingMinutes: 10,
-    content: `Remplacer des dents manquantes est essentiel pour manger et sourire. Si l'implant reste la solution "idéale", la **prothèse amovible** (le "dentier") est une option plus économique et très courante à Dakar.
-
-## Les différents types de prothèses
-Le **prix** dépend du matériau et du nombre de dents à remplacer :
-
-### 1. La prothèse en résine (Partielle ou Complète)
-- C'est la solution la plus **économique**.
-- Idéale comme appareil provisoire après une extraction, ou définitif si le budget est serré.
-- Elle repose sur la gencive.
-
-### 2. Le Stellite (Métal + Résine)
-- Plus **fin**, plus **solide** et plus stable.
-- Une armature en métal s'appuie sur les dents restantes avec des crochets discrets.
-- Plus confortable que la résine pure car il encombre moins le palais.
-
-### 3. La prothèse flex (Valplast)
-- Une résine souple et incassable, sans crochets métalliques visibles.
-- Très esthétique pour remplacer quelques dents.
-
-## Quel est le prix à Dakar ?
-Le tarif se calcule souvent selon :
-- Le type (Résine simple vs Stellite).
-- Le nombre de dents (Appareil 1 dent vs Complet).
-- L'origine des dents (Qualité standard vs Dents haut de gamme).
-
-Un devis précis est remis après l'examen clinique, car il faut vérifier l'état des dents supports.
-
-## L'entretien
-Une prothèse doit être nettoyée chaque jour (hors de la bouche) pour éviter les infections (candidoses). À la Clinique DABIA, nous vous expliquons comment la garder neuve longtemps.
-
-> Vous hésitez entre un appareil et des implants ? Venez en discuter pour comparer les devis et le confort.`,
+    content: `""`,
     faq: [
       {
         q: "Combien de temps faut-il pour faire un appareil ?",
@@ -7310,9 +3609,9 @@ Une prothèse doit être nettoyée chaque jour (hors de la bouche) pour éviter 
   {
     slug: "prix-radio-dentaire-scanner-3d-dakar",
     title:
-      "Prix Radio Dentaire et Scanner 3D à Dakar en 2025 : Votre Bilan Complet Expliqué",
+      "Prix radio dentaire et scanner 3D à Dakar : combien prévoir en 2026 ?",
     description:
-      "Découvrez les prix 2025 des radios dentaires et scanners 3D à Dakar. Bilan précis et rapide pour un diagnostic fiable. Devis gratuit et personnalisé.",
+      "Combien coûte une radio dentaire ou un scanner 3D (CBCT) à Dakar en 2026 ? Tarifs par type d'examen, remboursement et devis à la Clinique DABIA.",
     date: "2026-01-25",
     category: "Technologie",
     tags: [
@@ -7324,33 +3623,7 @@ Une prothèse doit être nettoyée chaque jour (hors de la bouche) pour éviter 
     author: AUTHORS.sao,
     cover: radioPanoramiqueCover,
     readingMinutes: 7,
-    content: `"Pourquoi faire une radio alors que je vois le trou ?" C'est une question fréquente. Pourtant, ce qui se passe **sous** la dent (la racine, l'os) est invisible à l'œil nu. À Dakar, la Clinique DABIA est équipée pour réaliser tous vos examens sur place.
-
-## Les types de radios et leurs prix
-Les tarifs varient selon la technologie :
-
-1. **La radio rétro-alvéolaire (Petite radio)**
-   - Cible 1 ou 2 dents.
-   - Idéal pour une rage de dent, vérifier une carie profonde ou un traitement de racine.
-   - **Coût** : Très accessible.
-
-2. **La radio Panoramique**
-   - Donne une vue d'ensemble de toute la mâchoire (dents de sagesse, infections silencieuses, niveau d'os).
-   - Indispensable pour un premier bilan complet.
-   - **Coût** : Moyen.
-
-3. **Le Scanner 3D (CBCT)**
-   - Une image en 3 dimensions.
-   - **Obligatoire** pour poser des implants en sécurité ou comprendre une douleur complexe.
-   - **Coût** : Plus élevé qu'une radio classique, mais évite des erreurs graves.
-
-## Pourquoi payer pour un diagnostic ?
-Un devis basé uniquement sur un "coup d'œil" est un devis risqué. 
-- La radio révèle l'ampleur réelle des dégâts.
-- Elle permet de savoir si la dent est **récupérable** ou non.
-- Elle évite de commencer un soin inutile.
-
-> Chez nous, le prix de la consultation et de l'imagerie est transparent. C'est l'assurance d'un plan de traitement fiable.`,
+    content: `""`,
     faq: [
       {
         q: "Les rayons X sont-ils dangereux ?",
@@ -7380,27 +3653,7 @@ Un devis basé uniquement sur un "coup d'œil" est un devis risqué.
     author: AUTHORS.sao,
     cover: devisDentaireCover,
     readingMinutes: 9,
-    content: `Recevoir un **devis dentaire** peut parfois surprendre. Pourquoi une couronne coûte-t-elle ce prix ? Pourquoi y a-t-il des écarts entre deux cabinets à Dakar ? Voici les clés pour lire votre devis.
-
-## De quoi est composé le prix ?
-Quand vous payez un soin, vous payez pour :
-1. **L'expertise du praticien** : Sa formation continue, sa spécialisation.
-2. **La technologie** : Scanner 3D, Caméra optique, Moteurs d'endodontie...
-3. **La stérilisation** : Un poste de dépense énorme mais CRUCIAL pour votre sécurité (autoclaves classe B, traçabilité).
-4. **Les matériaux** : Une résine composite de haute qualité ou un implant de marque reconnue coûte plus cher qu'un produit générique.
-5. **Le laboratoire** : La prothèse est-elle faite par un prothésiste artisan qualifié ?
-
-## Le devis "Low Cost" vs Le devis "Juste"
-Attention aux prix d'appel trop bas. 
-- Un détartrage fait en 5 minutes n'est pas le même qu'un détartrage complet de 30 minutes. 
-- Une couronne qui s'adapte mal créera une carie en dessous dans 2 ans.
-
-## La transparence à la Clinique DABIA
-- Avant de commencer, nous vous remettons un **plan de traitement écrit**.
-- Nous expliquons chaque ligne : "Pourquoi cette dent a besoin d'une couronne et pas juste d'un plombage ?".
-- Nous proposons des **options** quand c'est possible (ex: Bridge vs Implant).
-
-> Un bon patient est un patient informé. N'hésitez jamais à poser des questions sur votre devis !`,
+    content: `""`,
     faq: [
       {
         q: "Le devis est-il payant ?",
@@ -7425,25 +3678,7 @@ Attention aux prix d'appel trop bas.
     author: AUTHORS.sao,
     cover: soinCariePrixCover,
     readingMinutes: 8,
-    content: `"J'ai juste un petit trou". C'est souvent ce qu'on pense, mais la carie est comme un iceberg. Le **prix pour la soigner à Dakar** dépend directement du stade où vous venez consulter.
-
-## Stade 1 : La carie débutante (Prix : € / FCFA le moins cher)
-- La carie touche juste l'émail ou un peu la dentine.
-- **Le soin** : On nettoie et on pose un **composite** (plombage blanc esthétique).
-- C'est rapide, indolore et économique.
-
-## Stade 2 : La carie profonde (Prix : Moyen)
-- La dent est très abîmée mais le nerf est vivant.
-- Un simple plombage risque de casser.
-- **Le soin** : On peut proposer un **Onlay** (une pièce en céramique fabriquée sur mesure) pour consolider la dent durablement.
-
-## Stade 3 : La rage de dent (Prix : Élevé)
-- La carie a atteint le nerf. Il faut **dévitaliser** (traitement de racine).
-- C'est un acte long, technique et minutieux.
-- Après la dévitalisation, la dent est fragile et nécessite souvent une **couronne** pour ne pas casser.
-- **Coût total** : Dévitalisation + Reconstruction + Couronne = Beaucoup plus cher qu'un simple soin du stade 1.
-
-> **Le conseil économique** : Plus vous attendez, plus le trou grandit, et plus la facture monte. Soigner une carie dès qu'elle est petite est la meilleure façon de faire des économies !`,
+    content: `""`,
     faq: [
       {
         q: "Les plombages gris (amalgame) sont-ils moins chers ?",
@@ -7475,27 +3710,7 @@ Attention aux prix d'appel trop bas.
     author: AUTHORS.sao,
     cover: prixSoinsCover,
     readingMinutes: 7,
-    content: `La question du **prix des soins dentaires à Dakar** est souvent source d'inquiétude. Entre les variations de tarifs et la crainte de la facture finale, beaucoup repoussent leurs soins. Voici un guide pour comprendre les coûts et l'importance de la transparence.
-
-## Les tarifs moyens observés à Dakar
-Bien que chaque cas soit unique, voici une fourchette de prix pour les actes courants :
-- **Consultation** : Souvent entre 10 000 et 20 000 FCFA selon le cabinet.
-- **Détartrage** : Indispensable pour la santé, il varie selon la complexité.
-- **Extraction** : Dépend de la difficulté (dent de sagesse incluse ou dent simple).
-
-## Pourquoi les prix varient-ils ?
-Le tarif d'un soin dentaire inclut bien plus que le temps passé sur le fauteuil :
-1. **La technologie** : Un cabinet équipé de radio panoramique ou 3D investit pour un meilleur diagnostic.
-2. **L'hygiène** : La chaîne de stérilisation (autoclaves, sachets) a un coût incompressible pour votre sécurité.
-3. **Les matériaux** : Utiliser des composites de marque ou des implants certifiés influence le prix final.
-
-## L'importance du devis écrit
-À la Clinique DABIA, nous nous engageons à la transparence totale.
-- Avant tout soin onéreux (prothèse, chirurgie), un **devis détaillé** vous est remis.
-- Il explique le plan de traitement : pourquoi ce soin, combien de séances, et le coût exact.
-- Pas de surprise à la caisse : tout est clair dès le départ.
-
-> **Conseil** : Ne choisissez pas votre dentiste uniquement sur le prix. La qualité du diagnostic et de la stérilisation sont garants de votre santé à long terme.`,
+    content: `""`,
     faq: [
       {
         q: "Les soins sont-ils remboursés par les assurances ?",
@@ -7525,25 +3740,7 @@ Le tarif d'un soin dentaire inclut bien plus que le temps passé sur le fauteuil
     author: AUTHORS.sao,
     cover: urgenceActionCover,
     readingMinutes: 6,
-    content: `Une **urgence dentaire** prévient rarement. Que ce soit un samedi soir ou en plein travail, la douleur peut être paralysante. Voici les bons réflexes à avoir à Dakar.
-
-## Identifier l'urgence
-Toutes les douleurs ne sont pas des urgences vitales, mais nécessitent une attention rapide :
-- **Douleur pulsatile** (qui tape) : Souvent une pulpite (rage de dent).
-- **Gonflement (Chique)** : Signe d'infection ou d'abcès. Consultez rapidement pour éviter la propagation.
-- **Traumatisme** : Dent expulsée ou cassée après une chute.
-
-## Gestes de premiers secours
-En attendant d'arriver au cabinet :
-1. **Rage de dent** : Prenez du Paracétamol. Évitez l'anti-inflammatoire en automédication si vous suspectez une infection. Restez assis ou la tête surélevée.
-2. **Dent expulsée** : Récupérez la dent par la couronne (pas la racine). Conservez-la dans du lait ou de la salive. Venez au cabinet dans l'heure !
-3. **Abcès** : Ne mettez pas de chaud (ça active l'infection). Mettez une poche de glace sur la joue.
-
-## Où aller à Dakar ?
-La Clinique DABIA reçoit les urgences sur rendez-vous prioritaire. Contactez-nous dès l'ouverture ou via notre numéro d'urgence si disponible.
-Ne restez pas avec la douleur, une infection dentaire peut avoir des répercussions sur la santé générale.
-
-> **Important** : Si vous avez du mal à respirer, à avaler ou si la fièvre est très élevée, rendez-vous aux urgences de l'hôpital le plus proche.`,
+    content: `""`,
     faq: [
       {
         q: "Puis-je venir sans rendez-vous pour une urgence ?",
@@ -7572,30 +3769,7 @@ Ne restez pas avec la douleur, une infection dentaire peut avoir des répercussi
     author: AUTHORS.sao,
     cover: choisirDentisteCover,
     readingMinutes: 8,
-    content: `Avec les nombreux cabinets qui ouvrent, trouver le **meilleur dentiste à Dakar** pour vous peut sembler complexe. Au-delà du bouche-à-oreille, voici des critères objectifs pour faire votre choix.
-
-## 1. L'Hygiène et la Stérilisation
-C'est le critère N°1. Un cabinet moderne doit avoir une chaîne de stérilisation stricte.
-- Les instruments sont-ils sous sachets stériles ?
-- Le praticien porte-t-il des gants et un masque ?
-- L'environnement semble-t-il propre et entretenu ?
-
-## 2. L'Écoute et la Pédagogie
-Un bon dentiste prend le temps de vous expliquer.
-- Il ne se contente pas de soigner, il vous montre (caméra intra-orale, radios).
-- Il vous présente les différentes options de traitement.
-- Il est à l'écoute de votre peur ou de votre douleur.
-
-## 3. Le Plateau Technique
-La dentisterie moderne s'appuie sur la technologie pour être plus précise et moins douloureuse.
-- Radio panoramique sur place (évite de courir ailleurs).
-- Fauteuils confortables.
-- Matériel d'endodontie mécanisé pour des soins de racine plus sûrs.
-
-## 4. La Relation de Confiance
-Votre dentiste est un partenaire santé pour le long terme. Choisissez quelqu'un avec qui vous vous sentez à l'aise, qui respecte ses horaires et qui est transparent sur ses honoraires.
-
-> À la Clinique DABIA, nous misons sur l'accueil, la technologie et une hygiène irréprochable pour mériter votre confiance.`,
+    content: `""`,
     faq: [
       {
         q: "Est-ce important d'avoir un dentiste proche de chez soi ?",
@@ -7624,23 +3798,7 @@ Votre dentiste est un partenaire santé pour le long terme. Choisissez quelqu'un
     author: AUTHORS.sao,
     cover: blanchimentEfficaceCover,
     readingMinutes: 7,
-    content: `Avoir un sourire éclatant est un signe de beauté et de santé très prisé au Sénégal. Mais attention, toutes les méthodes de **blanchiment dentaire** ne se valent pas, et certaines sont dangereuses.
-
-## Les "Astuces" à éviter
-Sur les réseaux sociaux, on voit tout et n'importe quoi :
-- **Le Bicarbonate et Citron** : Très acide et abrasif, ce mélange use l'émail de vos dents de manière irréversible. Vos dents deviendront plus jaunes (car la dentine sous l'émail est jaune) et plus sensibles.
-- **Le Charbon actif** : Il enlève les taches de surface par abrasion, mais raye l'émail à long terme. À utiliser avec grande modération.
-
-## Le Blanchiment Professionnel au fauteuil
-C'est la seule méthode sûre et vraiment efficace pour éclaircir la teinte de la dent.
-- **Le principe** : On utilise un gel à base de peroxyde d'hydrogène (eau oxygénée) concentré.
-- **La sécurité** : On protège vos gencives avec une barrière étanche pour éviter les brûlures.
-- **Le résultat** : Un éclaircissement visible en une séance, durable si l'entretien est bon.
-
-## Le Préalable indispensable : Le Détartrage
-On ne peut pas blanchir des dents sales ! Un détartrage-polissage complet est obligatoire avant tout blanchiment pour retirer le tartre et les colorations superficielles (thé, café, tabac).
-
-> Vous voulez des dents blanches en toute sécurité à Dakar ? Demandez conseil à votre dentiste avant de tester des produits miracles.`,
+    content: `""`,
     faq: [
       {
         q: "Le blanchiment abîme-t-il les dents ?",
@@ -7670,25 +3828,7 @@ On ne peut pas blanchir des dents sales ! Un détartrage-polissage complet est o
     author: AUTHORS.sao,
     cover: implantSourireCover,
     readingMinutes: 9,
-    content: `Perdre une dent peut être un complexe esthétique mais aussi un handicap pour manger. L'**implant dentaire** est aujourd'hui la solution de référence à Dakar pour remplacer une dent manquante.
-
-## Qu'est-ce qu'un implant ?
-C'est une petite racine artificielle en titane (matériau biocompatible) que l'on insère dans l'os de la mâchoire. Une fois cicatrisé, on vient visser une couronne dessus.
-C'est comme si vous aviez une nouvelle dent naturelle !
-
-## Les avantages par rapport au bridge ou au dentier
-1. **Préservation des dents voisines** : Contrairement au bridge, on ne touche pas aux dents d'à côté.
-2. **Confort absolu** : C'est fixe. Rien ne bouge quand vous parlez ou mangez.
-3. **Esthétique** : Le résultat est invisible.
-4. **Préservation de l'os** : L'implant stimule l'os et évite qu'il ne se résorbe (visage qui se creuse).
-
-## Comment ça se passe à la Clinique DABIA ?
-1. **Bilan 3D (Scanner)** : Pour vérifier si vous avez assez d'os.
-2. **Pose de l'implant** : Une intervention rapide sous anesthésie locale (totalement indolore).
-3. **Cicatrisation** : On attend 3 à 4 mois que l'os "soude" l'implant.
-4. **Pose de la couronne** : Vous retrouvez votre sourire !
-
-> C'est un investissement pour votre santé et votre qualité de vie. Manger des pommes, sourire à pleines dents... ça n'a pas de prix !`,
+    content: `""`,
     faq: [
       {
         q: "Est-ce que ça fait mal ?",
@@ -7717,23 +3857,7 @@ C'est comme si vous aviez une nouvelle dent naturelle !
     author: AUTHORS.sao,
     cover: remedeRageCover,
     readingMinutes: 6,
-    content: `La **rage de dent** est une douleur intense, souvent nocturne, qui pousse à tout essayer pour être soulagé. Au Sénégal, les remèdes traditionnels sont nombreux, mais sont-ils efficaces ?
-
-## Ce qui peut soulager (temporairement)
-- **Le Clou de Girofle** : Il contient de l'eugénol, un anesthésiant naturel puissant. En huile essentielle ou écrasé sur la dent, il apaise.
-- **La poche de glace** : Le froid anesthésie et réduit l'inflammation.
-- **L'eau salée** : En bain de bouche, elle désinfecte légèrement.
-
-## Ce qu'il ne faut JAMAIS faire
-- **Mettre de l'aspirine ou du tabac directement sur la dent** : Cela brûle la gencive et aggrave la situation (ulcère chimique).
-- **Prendre des antibiotiques au hasard** : Inutile si ce n'est pas une infection bactérienne, et dangereux pour votre santé future (résistance).
-- **Attendre que "ça passe"** : Une dent ne guérit jamais toute seule. Si la douleur s'arrête brutalement, c'est souvent que le nerf est mort (nécrosé)... et l'infection va suivre (abcès).
-
-## Pourquoi aller chez le dentiste ?
-Le remède calme le symptôme (la douleur), le dentiste soigne la cause (la carie, l'infection).
-À Dakar, la Clinique DABIA peut vous recevoir en urgence pour traiter l'origine du mal et vous éviter une extraction.
-
-> Utilisez les remèdes naturels pour tenir jusqu'au rendez-vous, pas pour le remplacer !`,
+    content: `""`,
     faq: [
       {
         q: "Pourquoi la douleur est-elle plus forte la nuit ?",
@@ -7763,25 +3887,7 @@ Le remède calme le symptôme (la douleur), le dentiste soigne la cause (la cari
     author: AUTHORS.sao,
     cover: gingiviteTraitementCover,
     readingMinutes: 7,
-    content: `"C'est normal, j'ai les gencives sensibles". **FAUX**.
-Une gencive saine ne saigne JAMAIS, même en brossant fort. Le saignement est le signal d'alarme d'une inflammation : la **gingivite**.
-
-## Pourquoi ça saigne ?
-C'est la réponse de votre corps aux bactéries. La plaque dentaire et le tartre s'accumulent au bord de la gencive. Pour se défendre, la gencive gonfle, rougit et saigne au moindre contact.
-
-## Les conséquences si on ne fait rien
-Si la gingivite n'est pas soignée, elle évolue en **Parodontite** (déchaussement).
-- L'os qui tient la dent est attaqué.
-- Les dents deviennent mobiles (elles bougent).
-- À terme, les dents tombent, même si elles n'ont pas de carie !
-- C'est aussi la cause n°1 de la **mauvaise haleine** (halitose).
-
-## Le Traitement à Dakar
-Il est simple et efficace s'il est pris à temps :
-1. **Le Détartrage Professionnel** : Seul le dentiste peut enlever le tartre durci.
-2. **L'Hygiène à la maison** : Nous vous apprendrons à utiliser le fil dentaire ou les brossettes interdentaires. C'est là que tout se joue !
-
-> N'ayez pas peur de brosser parce que ça saigne. Au contraire, c'est en nettoyant bien que l'inflammation va disparaître.`,
+    content: `""`,
     faq: [
       {
         q: "Quel dentifrice utiliser pour les gencives ?",
@@ -7810,23 +3916,7 @@ Il est simple et efficace s'il est pris à temps :
     author: AUTHORS.sao,
     cover: orthoAdulteCover,
     readingMinutes: 8,
-    content: `Il n'est jamais trop tard pour avoir un beau sourire. De plus en plus d'adultes à Dakar consultent pour aligner leurs dents. Fini le "sourire d'enfer" métallique, place à la discrétion !
-
-## Pourquoi faire de l'orthodontie adulte ?
-- **Esthétique** : Corriger un chevauchement ou des dents avancées.
-- **Santé** : Des dents alignées sont plus faciles à brosser (moins de caries et de tartre).
-- **Fonction** : Améliorer l'emboîtement des dents pour éviter l'usure prématurée.
-
-## La Révolution des Aligneurs Invisibles (Gouttières)
-C'est la solution préférée des adultes actifs.
-- **Invisible** : Ce sont des coquilles en plastique transparent moulées sur vos dents.
-- **Amovible** : Vous les enlevez pour manger et pour vous brosser les dents. Aucune contrainte alimentaire !
-- **Confortable** : Pas de bague qui blesse la joue, pas de fil qui pique.
-
-## Et les bagues ?
-Les bagues "classiques" restent très performantes pour les cas complexes. Aujourd'hui, elles existent en **céramique transparente** pour être beaucoup plus discrètes que les bagues en métal.
-
-> À la Clinique DABIA, nous étudions votre sourire pour vous proposer la solution la plus adaptée à votre vie sociale et professionnelle.`,
+    content: `""`,
     faq: [
       {
         q: "Combien de temps dure le traitement ?",
@@ -7855,23 +3945,7 @@ Les bagues "classiques" restent très performantes pour les cas complexes. Aujou
     author: AUTHORS.sao,
     cover: santeEnfantCover,
     readingMinutes: 7,
-    content: `Les caries de la petite enfance sont un fléau au Sénégal, causant douleurs et infections précoces. Pourtant, elles sont 100% évitables. Voici comment protéger le capital sourire de vos enfants.
-
-## La Première Visite : Quand ?
-L'idéal est de venir **dès l'apparition des premières dents** (vers 1 an) ou au plus tard à 3 ans.
-- **Le but** : Vérifier que tout va bien, donner des conseils aux parents, et habituer l'enfant à l'environnement du cabinet AVANT qu'il n'ait mal.
-- Si vous attendez que l'enfant ait mal pour venir, il associera le dentiste à la douleur.
-
-## Attention au sucre !
-- **Le biberon du soir** : C'est l'ennemi n°1. Ne donnez jamais de lait sucré, de jus ou de bouillie sucrée avant le dodo sans brossage ensuite. Le sucre reste toute la nuit sur les dents.
-- **Les bonbons et biscuits** : À limiter aux repas, pas en grignotage toute la journée.
-
-## Le Brossage
-- **Dès la première dent** : Avec une compresse ou une brosse adaptée.
-- **Le dentifrice** : Fluoré, adapté à l'âge (dose grain de riz, puis petit pois).
-- **Aider l'enfant** : Jusqu'à 6-8 ans, l'enfant n'a pas la dextérité manuelle pour bien faire seul. Les parents doivent repasser derrière !
-
-> Un enfant sans carie est un enfant qui grandit bien, mange bien et dort bien. La prévention est le plus beau cadeau que vous puissiez lui faire.`,
+    content: `""`,
     faq: [
       {
         q: "Faut-il soigner les dents de lait puisqu'elles vont tomber ?",
@@ -7900,27 +3974,7 @@ L'idéal est de venir **dès l'apparition des premières dents** (vers 1 an) ou 
     author: AUTHORS.sao,
     cover: detartragePreventifCover,
     readingMinutes: 5,
-    content: `Si vous cherchez le moyen le moins cher de garder vos dents toute la vie, la réponse est simple : **le détartrage régulier**.
-Beaucoup de patients à Dakar attendent d'avoir mal pour consulter. C'est une erreur qui coûte cher.
-
-## Qu'est-ce que le détartrage ?
-C'est l'élimination de la plaque dentaire (bactéries moues) et du tartre (bactéries dures calcifiées) que la brosse à dents ne peut plus enlever.
-C'est un soin indolore réalisé avec des ultrasons (vibrations d'eau).
-
-## Pourquoi est-ce rentable ?
-- **Coût d'un détartrage** : Faible (et souvent remboursé).
-- **Coût de ce qu'il évite** :
-    - Soins de caries (le tartre cache les caries).
-    - Dévitalisations et couronnes.
-    - Soins de gencives (parodontite) et perte de dents.
-    - Implants (très coûteux) pour remplacer les dents perdues.
-
-En investissant dans 1 ou 2 détartrages par an, vous économisez des centaines de milliers de francs de prothèses futures !
-
-## Le bonus esthétique
-En plus de la santé, le détartrage enlève les colorations (café, thé, tabac). Vous ressortez avec une sensation de fraîcheur et des dents plus nettes.
-
-> N'attendez pas la douleur. Prenez rendez-vous pour votre bilan annuel à la Clinique DABIA.`,
+    content: `""`,
     faq: [
       {
         q: "Est-ce que le détartrage abîme l'émail ?",
@@ -7943,21 +3997,7 @@ En plus de la santé, le détartrage enlève les colorations (café, thé, tabac
     author: AUTHORS.sao,
     cover: ramadanSoinsCover,
     readingMinutes: 6,
-    content: `Le Ramadan est une période de spiritualité, mais c'est aussi le moment où beaucoup de patients hésitent à aller chez le dentiste par peur de rompre leur jeûne.
-    
-## Les soins dentaires et le jeûne
-La majorité des savants s'accordent à dire que les soins dentaires **ne rompent pas le jeûne**, à condition de ne rien avaler volontairement.
-
-### Ce qui est autorisé :
-1.  **L'anesthésie locale** : La piqûre n'est pas nutritive, elle ne casse donc pas le jeûne.
-2.  **Le détartrage** : L'eau utilisée pour nettoyer les dents est aspirée par la pompe à salive. Tant que vous n'avalez pas d'eau, c'est bon.
-3.  **Les soins de carie et extractions** : Idem, tant que le sang ou les débris ne sont pas avalés.
-4.  **Le Siwak** : Son utilisation est recommandée et purifiante.
-
-### Les précautions à prendre
-Si vous avez peur d'avaler de l'eau par mégarde, signalez-le à votre dentiste ! À la Clinique DABIA, nous redoublons de vigilance avec une aspiration chirurgicale puissante pour éviter tout risque.
-
-> **Notre conseil** : Ne repoussez pas un soin urgent. Une infection dentaire fatigue le corps et rend le jeûne plus difficile. Soignez-vous sans crainte.`,
+    content: `""`,
     faq: [
       {
         q: "L'anesthésie coupe-t-elle le jeûne ?",
@@ -7980,19 +4020,7 @@ Si vous avez peur d'avaler de l'eau par mégarde, signalez-le à votre dentiste 
     author: AUTHORS.sao,
     cover: ramadanHaleineCover,
     readingMinutes: 5,
-    content: `La mauvaise haleine (halitose) est fréquente pendant le Ramadan. C'est gênant pour soi et pour les autres, mais ce n'est pas une fatalité !
-
-## Pourquoi a-t-on mauvaise haleine en jeûnant ?
-La cause principale est la **sécheresse on buccale** (xérostomie).
-Quand on ne mange pas et ne boit pas, on produit moins de salive. Or, la salive nettoie naturellement la bouche. Moins de salive = plus de bactéries qui stagnent = mauvaises odeurs.
-
-## Les Solutions Efficaces
-1.  **Hydratez-vous bien la nuit** : Buvez beaucoup d'eau entre la rupture (Worgou) et le Kheoud pour faire des réserves.
-2.  **Le brossage de la langue** : 80% des bactéries responsables des odeurs sont sur la langue. Brossez-la doucement !
-3.  **Le Siwak** : Utilisé par le Prophète (PSL), il a des propriétés antibactériennes reconnues scientifiquement.
-4.  **L'Hygiène rigoureuse** : Brossez vos dents après le Kheoud (avant l'aube) pour éliminer tous les résidus alimentaires de la nuit.
-
-> Une haleine fraîche passe d'abord par une bouche propre. Un détartrage avant le Ramadan est l'idéal pour partir sur de bonnes bases.`,
+    content: `""`,
     faq: [
       {
         q: "Le bain de bouche est-il autorisé ?",
@@ -8012,20 +4040,7 @@ Quand on ne mange pas et ne boit pas, on produit moins de salive. Or, la salive 
     author: AUTHORS.sao,
     cover: ramadanBrossageCover,
     readingMinutes: 4,
-    content: `C'est une question qui revient chaque année : "Est-ce que je peux me brosser les dents le matin sans casser mon jeûne ?"
-LA RÉPONSE EST **OUI**.
-
-## L'avis religieux et médical
-L'Islam valorise la propreté. Se laver les dents est autorisé et même encouragé pour l'hygiène sociale.
-Le seul interdit est d'avaler le produit ou l'eau.
-
-## Comment se brosser les dents sans risque ?
-1.  **Utilisez peu de dentifrice** : Une quantité de la taille d'un grain de riz suffit.
-2.  **Ne gargarisez pas au fond de la gorge** : Rincez délicatement et recrachez tout de suite.
-3.  **Privilégiez le Siwak** en journée si le goût du dentifrice vous fait peur. C'est la brosse à dents naturelle par excellence !
-
-## Le moment idéal
-Pour être tranquille, faites un brossage complet et minutieux (3 minutes) **après le repas du matin (Kheoud)**, juste avant l'heure de l'Imssak. Comme ça, vous démarrez la journée avec des dents propres et l'esprit serein.`,
+    content: `""`,
     faq: [
       {
         q: "Le goût du dentifrice rompt-il le jeûne ?",
@@ -8045,21 +4060,7 @@ Pour être tranquille, faites un brossage complet et minutieux (3 minutes) **apr
     author: AUTHORS.sao,
     cover: ramadanRdvCover,
     readingMinutes: 4,
-    content: `Pendant le Ramadan, notre rythme biologique change. Pour vos soins dentaires à Dakar, le choix de l'heure est stratégique pour votre confort.
-
-## 1. Le Matin (De 9h à 12h) : L'idéal
-C'est le meilleur moment pour les soins techniques (caries, couronnes).
-*   **Pourquoi ?** Vous avez encore de l'énergie du repas du matin. Votre taux de sucre est stable.
-*   **Avantage** : Vous êtes moins stressé et le dentiste est aussi plus frais !
-
-## 2. L'après-midi : À éviter pour les gros soins
-Vers 14h-16h, la fatigue et la soif se font sentir. L'hypoglycémie peut rendre le rendez-vous désagréable (tête qui tourne). Réservez ces créneaux pour des contrôles simples ou des urgences.
-
-## 3. Après la rupture (Le soir)
-Certains cabinets ouvrent tard ou le samedi. C'est le moment "confort" : vous avez mangé, bu, et vous pouvez avaler votre salive sans stress.
-À la Clinique DABIA, nous aménageons nos horaires pour vous recevoir dans les meilleures conditions.
-
-> **Conseil** : Si vous êtes diabétique, parlez-en absolument à votre dentiste avant de venir à jeûn !`,
+    content: `""`,
     faq: [
       {
         q: "Faites-vous des nocturnes pendant le Ramadan ?",
@@ -8078,19 +4079,7 @@ Certains cabinets ouvrent tard ou le samedi. C'est le moment "confort" : vous av
     author: AUTHORS.sao,
     cover: ramadanUrgenceCover,
     readingMinutes: 6,
-    content: `La douleur dentaire est l'une des plus intenses qui soit. L'Islam est une religion de facilité qui préserve la santé avant tout.
-
-## Quand la douleur devient insupportable
-Si vous avez une "rage de dent" (pulpite) ou un abcès avec fièvre :
-1.  **La souffrance n'est pas méritoire** : Rester dans une douleur extrême peut faire monter votre tension et vous mettre en danger.
-2.  **La prise de médicaments** : Si vous devez absolument prendre des antibiotiques ou des antidouleurs puissants en journée, cela rompt le jeûne.
-3.  **L'avis religieux** : Le malade est exempté de jeûne. Une infection dentaire aiguë EST une maladie. Vous pouvez rompre votre jeûne pour vous soigner et rattraper le jour plus tard.
-
-## Que faire en cas d'urgence ?
-Ne restez pas chez vous à souffrir en attendant le coucher du soleil.
-Venez consulter immédiatement. Le dentiste vous soulagera (geste d'urgence). Si cela nécessite de boire ou de prendre un médicament, votre santé prime.
-
-> Dieu veut pour vous la facilité, Il ne veut pas pour vous la difficulté (Coran 2:185).`,
+    content: `""`,
     faq: [
       {
         q: "Une extraction dentaire oblige-t-elle à rompre le jeûne ?",
@@ -8116,63 +4105,7 @@ Venez consulter immédiatement. Le dentiste vous soulagera (geste d'urgence). Si
     author: AUTHORS.sao,
     cover: couronneDentaireCover,
     readingMinutes: 10,
-    content: `La **couronne dentaire** est l'une des restaurations les plus posées en dentisterie. À Dakar, de nombreux patients la demandent après une dévitalisation, une fracture ou une carie trop étendue pour un simple plombage. Ce guide répond aux questions les plus fréquentes.
-
-## Qu'est-ce qu'une couronne dentaire ?
-
-Une couronne est une prothèse fixe en forme de « chapeau » qui recouvre entièrement la dent naturelle ou l'implant. Elle restaure la morphologie, la résistance mécanique et l'esthétique de la dent.
-
-### Quand est-elle nécessaire ?
-
-- **Après une dévitalisation** : la dent devient fragile et peut se fissurer sans protection.
-- **Carie étendue** : quand il ne reste pas assez de tissu sain pour un composite.
-- **Dent fissurée ou fracturée** : pour maintenir l'ensemble et éviter l'extraction.
-- **Sur un implant** : la couronne sur implant remplace une dent manquante de façon fixe.
-- **Bruxisme sévère** : pour protéger les dents très usées.
-
-## Types de couronnes disponibles à Dakar
-
-### 1. Couronne tout-céramique (Zircone ou E-max)
-La référence esthétique actuelle. La zircone est extrêmement résistante et ne contient pas de métal. Couleur naturelle garantie, compatible IRM, idéale pour les dents visibles.
-
-### 2. Couronne métal-céramique
-Un armature métallique recouvert de céramique. Résistance maximale mais un liseré gris peut apparaître au niveau de la gencive avec le temps. Souvent plus abordable.
-
-### 3. Couronne métallique (alliage ou or)
-Quasi invisible (arrière de la bouche), très durable, usure minimale de la dent antagoniste. Moins demandée pour des raisons esthétiques.
-
-## Prix d'une couronne dentaire à Dakar
-
-| Type de couronne | Fourchette de prix |
-|---|---|
-| Métal-céramique | 80 000 – 120 000 FCFA |
-| Tout-céramique (zircone) | 130 000 – 200 000 FCFA |
-| Sur implant (couronne seule) | 120 000 – 180 000 FCFA |
-
-> Ces fourchettes sont indicatives. Le tarif final dépend du laboratoire, du nombre de dents et des actes préparatoires (empreinte, temporaire, etc.).
-
-## Étapes de la pose d'une couronne
-
-1. **Consultation et bilan** : radio panoramique ou CBCT pour évaluer la racine et l'os.
-2. **Préparation** : mise en forme de la dent sous anesthésie locale (quelques millimètres retirés sur chaque face).
-3. **Empreinte** : numérique (scanner intra-oral) ou classique ; envoi au laboratoire.
-4. **Temporaire** : une couronne provisoire protège la dent pendant 1 à 2 semaines.
-5. **Pose définitive** : la couronne est scellée ou vissée ; vérification de l'occlusion.
-
-## Combien de temps dure une couronne ?
-
-Avec un entretien correct (brossage, fil dentaire, contrôles annuels), une couronne en zircone peut durer **15 à 20 ans**. La métal-céramique dure généralement 10 à 15 ans. Les facteurs qui réduisent la durée : bruxisme non traité, hygiène insuffisante, traumatismes.
-
-## Entretien et conseils post-pose
-
-- Évitez les aliments très durs (os, glaçons) les premières 48h après la pose.
-- Passez le fil dentaire chaque jour, y compris autour de la couronne.
-- Portez votre gouttière nocturne si vous bruxez.
-- Consultez tous les 6 à 12 mois pour un contrôle.
-
-## Clinique DABIA : couronnes en zircone à Dakar
-
-À la Clinique DABIA (Liberté 6), nos prothèses fixes sont réalisées avec des matériaux de haute qualité. Nous utilisons l'empreinte numérique pour plus de précision et de confort. Prenez rendez-vous pour un bilan et un devis sans engagement.`,
+    content: `""`,
     faq: [
       {
         q: "Combien de rendez-vous faut-il pour poser une couronne ?",
@@ -8209,65 +4142,7 @@ Avec un entretien correct (brossage, fil dentaire, contrôles annuels), une cour
     author: AUTHORS.sao,
     cover: dentsSensiblesCover,
     readingMinutes: 8,
-    content: `Boire un verre d'eau glacée ou manger une cuillère de thiébou dieun brûlant et ressentir une **douleur électrique dans les dents** : c'est le quotidien de millions de personnes. Cette hypersensibilité dentinaire est très fréquente et souvent traitable simplement.
-
-## Pourquoi les dents deviennent-elles sensibles ?
-
-La dent est composée de plusieurs couches. L'émail, couche externe dure, protège la **dentine**, un tissu percé de milliers de micro-canaux (tubules dentinaires) qui communiquent avec le nerf. Quand l'émail s'amincit ou que la gencive recule, ces tubules se retrouvent exposés et chaque variation de température ou de sucre déclenche une douleur vive.
-
-### Causes principales
-
-| Cause | Mécanisme |
-|---|---|
-| Brossage trop vigoureux | Érosion de l'émail et récession gingivale |
-| Bruxisme (grincement des dents) | Usure de l'émail par friction |
-| Alimentation acide (jus de bissap, sodas) | Dissolution de l'émail |
-| Carie ou fissure | Dentine exposée directement |
-| Récession gingivale | Racine non protégée par l'émail exposée |
-| Traitement de blanchiment | Sensibilité transitoire liée aux produits |
-| Traitement orthodontique | Légère sensibilité au début du traitement |
-
-## Comment reconnaître une dent sensible vs une dent malade ?
-
-- **Douleur courte et vive au froid/chaud qui s'arrête rapidement** = hypersensibilité dentinaire.
-- **Douleur longue, pulsatile, nocturne** = possible atteinte du nerf (pulpite) → urgence à traiter.
-- **Douleur à la pression uniquement** = fissure ou carie → consultation rapide.
-
-> En cas de doute, consultez : une hypersensibilité non traitée peut évoluer en carie ou nécessiter une dévitalisation.
-
-## Traitements des dents sensibles à Dakar
-
-### 1. Dentifrices désensibilisants
-Les dentifrices au **nitrate de potassium** ou à l'**arginine** obturent progressivement les tubules dentinaires. Résultats en 2 à 4 semaines d'utilisation quotidienne. À utiliser en cure ou durablement si la cause persiste.
-
-### 2. Vernis au fluor et agents désensibilisants au cabinet
-Le dentiste applique un vernis fluoré concentré ou un agent à base de diamine fluorure directement sur les zones sensibles. Effet rapide (48h) et durable plusieurs mois.
-
-### 3. Traitement de la cause
-- Bruxisme → **gouttière nocturne** pour stopper l'usure.
-- Récession gingivale sévère → **greffe gingivale** pour recouvrir la racine.
-- Brossage trop fort → rééducation à la technique de Bass, brosse souple.
-- Carie ou fissure → **composite ou couronne** pour refermer l'accès dentinaire.
-
-### 4. Modifications alimentaires
-Réduisez les aliments et boissons acides (sodas, jus de citron, tamarin). Rincez à l'eau après consommation. Attendez 30 minutes avant de vous brosser les dents après un repas acide.
-
-## Prévention au quotidien
-
-- Brosse à dents **souple** et technique circulaire ou de Bass.
-- Dentifrice fluoré (1 000 à 1 450 ppm de fluor) adapté aux dents sensibles.
-- Contrôle dentaire tous les 6 mois pour détecter précocement récessions et usures.
-- Gouttière nocturne si vous serrez ou grincez des dents pendant le sommeil.
-
-## Quand consulter ?
-
-Consultez dès que la sensibilité :
-- Dure plus de quelques secondes après le stimulus.
-- Concerne plusieurs dents sans raison apparente.
-- S'accompagne d'une douleur nocturne spontanée.
-- Revient malgré 4 semaines de dentifrice désensibilisant.
-
-À la Clinique DABIA à Dakar, nous réalisons un bilan complet pour identifier la cause exacte et choisir le traitement le plus adapté à votre situation.`,
+    content: `""`,
     faq: [
       {
         q: "Le dentifrice pour dents sensibles est-il efficace ?",
@@ -8301,77 +4176,7 @@ Consultez dès que la sensibilité :
     author: AUTHORS.sao,
     cover: tartrePlaqueCover,
     readingMinutes: 9,
-    content: `La **plaque dentaire** et le **tartre** sont les deux ennemis numéro un de la santé bucco-dentaire. Pourtant, beaucoup de patients confondent les deux ou ignorent leurs conséquences réelles. Voici tout ce que vous devez savoir pour protéger vos dents et vos gencives à Dakar.
-
-## Plaque dentaire : qu'est-ce que c'est ?
-
-La plaque dentaire est un **biofilm bactérien** invisible qui se forme en permanence sur les surfaces dentaires. Elle est composée de bactéries, de salive et de débris alimentaires. Douce au toucher, blanche ou légèrement jaunâtre, elle apparaît dès 4 à 12 heures après le brossage.
-
-### Pourquoi est-elle dangereuse ?
-Les bactéries de la plaque produisent des acides en dégradant les sucres. Ces acides :
-- **Attaquent l'émail** → caries.
-- **Irritent les gencives** → gingivite, puis parodontite si non traitée.
-
-La bonne nouvelle : la plaque s'élimine par un **brossage efficace deux fois par jour** et l'usage du fil dentaire.
-
-## Tartre : comment se forme-t-il ?
-
-Le tartre se forme quand la plaque dentaire non éliminée se **minéralise sous l'effet des sels de calcium de la salive**. En 24 à 72 heures, la plaque se durcit et devient du tartre. Contrairement à la plaque, le tartre ne peut pas être retiré par le brossage seul.
-
-### Tartre supra-gingival vs sous-gingival
-
-| | Tartre supra-gingival | Tartre sous-gingival |
-|---|---|---|
-| Localisation | Visible, au-dessus de la gencive | Caché sous la gencive |
-| Couleur | Blanc-jaunâtre à brun | Brun foncé ou noir |
-| Risque | Gingivite, mauvaise haleine | Parodontite, déchaussement |
-| Traitement | Détartrage manuel ou ultrasonique | Curetage / surfaçage radiculaire |
-
-## Les facteurs qui favorisent le tartre
-
-- Alimentation riche en sucres et amidons (riz, pain, sodas).
-- Tabagisme : la nicotine favorise un tartre brun très adhérent.
-- Consommation de café, thé, attaya : taches et tartre pigmenté.
-- Bouche sèche (xérostomie) : moins de salive = moins de rinçage naturel.
-- Brossage insuffisant ou technique incorrecte.
-- Salive riche en calcium (facteur génétique).
-
-## Conséquences d'un tartre non traité
-
-1. **Gingivite** : gencives rouges, gonflées, qui saignent au brossage.
-2. **Mauvaise haleine** (halitose) : les bactéries anaérobies logées dans le tartre dégagent des composés soufrés.
-3. **Parodontite** : infection profonde qui détruit l'os autour des dents. Peut mener au déchaussement et à la perte de dents.
-4. **Caries inter-dentaires** : le tartre retient la plaque dans les espaces difficiles à nettoyer.
-
-## Comment éliminer le tartre ? Le détartrage professionnel
-
-Seul un dentiste ou hygiéniste dentaire peut retirer le tartre. À la Clinique DABIA, nous utilisons :
-
-### Détartrage ultrasonique
-Les ultrasons vibrent à haute fréquence et fragmentent le tartre sans abîmer l'émail. Un jet d'eau accompagne le soin pour rincer et refroidir.
-
-### Détartrage manuel (curettes)
-Pour les zones difficiles d'accès et le tartre sous-gingival, des curettes précises complètent le soin.
-
-### AirFlow (polissage)
-Après le détartrage, un jet de poudre de bicarbonate élimine les taches pigmentées (café, thé, attaya) et polit les surfaces pour retarder la reformation du tartre.
-
-## Fréquence recommandée
-
-- **Tous les 6 mois** pour la majorité des patients.
-- **Tous les 3 à 4 mois** pour les patients avec antécédents de parodontite, fumeurs ou diabétiques.
-
-## Prix d'un détartrage à Dakar
-
-Le détartrage simple coûte généralement **entre 15 000 et 35 000 FCFA** à Dakar selon la quantité de tartre et le cabinet. L'AirFlow est souvent proposé en complément.
-
-## Conseils pour limiter la formation du tartre
-
-- Brossez-vous les dents **2 minutes, 2 fois par jour**, avec une brosse souple.
-- Utilisez le **fil dentaire** ou des brossettes inter-dentaires chaque soir.
-- Réduisez les boissons sucrées et la fréquence des grignotages.
-- Rincez à l'eau après le café ou l'attaya.
-- Consultez **régulièrement** : un tartre dépisté tôt est plus facile à traiter.`,
+    content: `""`,
     faq: [
       {
         q: "Peut-on enlever le tartre soi-même à la maison ?",
@@ -8408,73 +4213,7 @@ Le détartrage simple coûte généralement **entre 15 000 et 35 000 FCFA** à D
     author: AUTHORS.sao,
     cover: dentCasseeCover,
     readingMinutes: 7,
-    content: `Une chute, un accident de sport, un os dans le thiébou yapp, une dent dévitalisée qui lâche : les causes d'une **dent cassée** à Dakar sont nombreuses. Que la fracture soit légère (éclat d'émail) ou sévère (couronne ou racine), voici comment réagir vite et bien.
-
-## Évaluer la gravité de la fracture
-
-Toutes les fractures dentaires ne se valent pas. Un praticien classe généralement les fractures en plusieurs niveaux :
-
-| Type de fracture | Description | Urgence |
-|---|---|---|
-| Fissure d'émail | Petite ligne sans douleur | Faible – consultation dans la semaine |
-| Éclat d'émail/dentine | Coin cassé, parfois sensible | Modérée – consultation dans 48h |
-| Fracture atteignant le nerf | Douleur vive, saignement | Élevée – urgence le jour même |
-| Fracture radiculaire | Dent qui bouge, douleur profonde | Très élevée – urgence immédiate |
-| Dent expulsée (avulsion) | Dent complètement sortie | Critique – agir dans les 30 minutes |
-
-## Gestes d'urgence immédiats
-
-### Si la dent est ébréchée ou cassée (fragment retrouvé)
-1. Récupérez le fragment et **conservez-le dans du lait ou de la salive** (jamais dans l'eau du robinet).
-2. Rincez délicatement votre bouche à l'eau tiède.
-3. Couvrez la zone avec de la **paraffine dentaire** ou du chewing-gum sans sucre si le bord tranchant blesse la joue ou la langue.
-4. Appelez votre dentiste pour un rendez-vous urgent.
-
-### Si la dent est complètement expulsée (avulsion)
-C'est la situation la plus critique :
-1. **Ne touchez jamais la racine** – tenez la dent par la couronne (la partie blanche visible).
-2. Si la dent est sale, rincez-la **une seconde** à l'eau propre sans frotter.
-3. Tentez de **remettre la dent dans son alvéole** et mordez doucement sur un tissu propre.
-4. Si impossible, placez-la dans **du lait entier** ou sous la langue (entre joue et gencive).
-5. **Consultez dans les 30 à 60 minutes maximum** : passé ce délai, les chances de réimplantation chutent drastiquement.
-
-### Ce qu'il ne faut surtout pas faire
-- Ne faites pas tremper la dent dans de l'eau du robinet.
-- N'utilisez pas d'antiseptique concentré sur la plaie.
-- Ne recousez pas vous-même avec du fil ou du scotch.
-- N'ignorez pas une dent "qui ne fait pas mal" : une fracture radiculaire peut être silencieuse.
-
-## Douleur : comment la soulager en attendant ?
-
-- **Ibuprofène** (400 mg) ou **paracétamol** (1 000 mg) : calment efficacement.
-- **Clou de girofle** (eugénol) ou huile essentielle de clou de girofle : calme temporairement la pulpe exposée.
-- Évitez les températures extrêmes (boissons très froides ou chaudes).
-
-## Solutions de reconstruction après une fracture
-
-### 1. Composite (résine)
-Pour les fractures légères à modérées. Le dentiste reconstitue le bord ou la forme manquante avec une résine collée de la couleur de la dent. Rapide (une séance), économique.
-
-### 2. Couronne dentaire
-Indiquée quand une grande partie de la couronne est perdue ou que la dent est fragilisée. Protège la dent dans sa totalité.
-
-### 3. Pivot et couronne
-Si la fracture a touché le nerf (traitement canalaire nécessaire), un pivot en fibre de verre ancre la future couronne dans la racine.
-
-### 4. Implant dentaire
-Si la dent ne peut pas être sauvée, l'implant est la solution fixe la plus proche d'une dent naturelle. Pose possible après cicatrisation.
-
-### 5. Réimplantation
-En cas d'avulsion, si la dent est arrivée dans les temps, le dentiste peut la réimplanter et la solidariser aux dents voisines le temps de la cicatrisation.
-
-## Prévention des fractures dentaires à Dakar
-
-- Portez un **protège-dents** lors de sports de contact (football, lutte, arts martiaux).
-- Traitez le **bruxisme** avec une gouttière nocturne avant que l'usure ne fragilise les dents.
-- Évitez de croquer des aliments ultra-durs (glaçons, os, boutons de carapace).
-- Consultez régulièrement : une carie ou une fissure détectée tôt évite la fracture.
-
-La Clinique DABIA à Dakar prend en charge les urgences dentaires. Contactez-nous dès que possible en cas de fracture.`,
+    content: `""`,
     faq: [
       {
         q: "Une dent cassée sans douleur est-elle une urgence ?",
@@ -8512,90 +4251,7 @@ La Clinique DABIA à Dakar prend en charge les urgences dentaires. Contactez-nou
     author: AUTHORS.sao,
     cover: parodontiteCover,
     readingMinutes: 11,
-    content: `La **parodontite** (aussi appelée maladie parodontale ou maladie des gencives) est une infection chronique qui détruit progressivement les tissus qui maintiennent les dents en place : la gencive, le ligament alvéolo-dentaire et l'os. Elle est souvent silencieuse au début, ce qui explique pourquoi elle est découverte tard et représente la **première cause de perte de dents chez l'adulte de plus de 40 ans** au Sénégal comme ailleurs.
-
-## Gingivite vs Parodontite : quelle différence ?
-
-La gingivite est une inflammation réversible de la gencive. La parodontite est son évolution non traitée : l'infection descend sous la gencive, forme des **poches parodontales** et détruit l'os.
-
-| | Gingivite | Parodontite |
-|---|---|---|
-| Atteinte | Gencive uniquement | Gencive + ligament + os |
-| Réversibilité | Totalement réversible | Partiellement irréversible |
-| Douleur | Souvent absente | Rare sauf abcès |
-| Traitement | Détartrage + hygiène | Surfaçage ± chirurgie |
-
-## Symptômes : comment reconnaître une parodontite ?
-
-### Signes précoces (souvent ignorés)
-- Gencives qui saignent au brossage ou spontanément.
-- Gencives rouges, gonflées ou qui s'éloignent du collet de la dent.
-- Mauvaise haleine persistante malgré le brossage.
-
-### Signes avancés
-- **Dents qui bougent** ou changent de position.
-- **Espaces qui s'élargissent** entre les dents (diastèmes nouveaux).
-- Gencives qui descendent (récession) : les dents « paraissent plus longues ».
-- **Abcès parodontal** : gonflement douloureux au niveau de la gencive.
-- Sensation de dents décollées lors de la mastication.
-- Perte de dents spontanée dans les cas très évolués.
-
-> **Attention** : la parodontite évolue par poussées. Entre deux poussées, la douleur peut disparaître complètement, créant une fausse impression de guérison.
-
-## Facteurs de risque à Dakar
-
-- **Tabac** : le tabagisme (y compris chicha et cigare) est le facteur de risque le plus important. Il masque les signes inflammatoires et réduit la réponse au traitement.
-- **Diabète** : le diabète mal équilibré aggrave la parodontite, et la parodontite aggrave le diabète. Lien bidirectionnel démontré.
-- **Stress chronique** : réduit les défenses immunitaires locales.
-- **Génétique** : certaines familles sont plus susceptibles.
-- **Hygiène insuffisante** : accumulation de plaque et tartre.
-- **Grossesse** : les hormones peuvent aggraver une gingivite latente.
-
-## Diagnostic : le sondage parodontal
-
-Le diagnostic de parodontite nécessite un **sondage parodontal** : le dentiste ou parodontologue mesure avec une sonde millimétrique la profondeur des poches autour de chaque dent. Une poche ≥ 4 mm indique une atteinte parodontale. Une radio panoramique ou CBCT complète le bilan pour évaluer la perte osseuse.
-
-## Traitements de la parodontite à Dakar
-
-### Phase 1 : Traitement initial non chirurgical
-
-**Détartrage-surfaçage radiculaire (DSR)**
-C'est le traitement de référence. Sous anesthésie locale, le praticien nettoie en profondeur les poches parodontales avec des curettes ultrasoniques et manuelles pour éliminer le tartre sous-gingival et les bactéries adhérentes à la racine. Souvent réalisé en 2 à 4 séances.
-
-**Réévaluation à 6–8 semaines**
-Le praticien mesure à nouveau les poches pour évaluer la réponse au traitement.
-
-### Phase 2 : Chirurgie parodontale (si nécessaire)
-
-Quand les poches restent profondes malgré le surfaçage :
-- **Chirurgie d'accès (lambeau)** : incision gingivale pour accéder et décontaminer la racine sous vision directe.
-- **Greffe osseuse ou régénération tissulaire guidée (RTG)** : comblement de la perte osseuse avec des substituts osseux et membranes.
-- **Greffe gingivale** : recouvre les racines exposées par la récession.
-
-### Phase 3 : Maintenance parodontale
-
-La parodontite ne guérit pas définitivement : elle se contrôle. Après traitement, le patient entre en **maintenance tous les 3 à 4 mois** avec des séances de détartrage et sondage. L'arrêt de la maintenance est la principale cause de récidive.
-
-## Lien entre parodontite et santé générale
-
-Des études robustes montrent des associations entre la parodontite et :
-- **Diabète** : contrôle glycémique plus difficile.
-- **Maladies cardiovasculaires** : athérosclérose accélérée.
-- **Accouchement prématuré** : risque accru chez la femme enceinte atteinte.
-- **Pneumonies d'aspiration** : chez les personnes âgées.
-
-Soigner ses gencives, c'est aussi protéger sa santé générale.
-
-## Prévention de la parodontite
-
-1. **Brossage 2 fois par jour** avec brosse souple, technique de Bass.
-2. **Fil dentaire ou brossettes** inter-dentaires chaque soir.
-3. **Détartrage professionnel** tous les 6 mois.
-4. **Arrêt du tabac** : amélioration visible en quelques mois.
-5. **Contrôle du diabète** si concerné.
-6. **Consultation précoce** dès les premiers saignements.
-
-À la Clinique DABIA à Dakar, nous réalisons le bilan parodontal complet et la prise en charge non chirurgicale des parodontites. N'attendez pas que vos dents bougent pour consulter.`,
+    content: `""`,
     faq: [
       {
         q: "Peut-on guérir complètement d'une parodontite ?",
@@ -8639,61 +4295,7 @@ Soigner ses gencives, c'est aussi protéger sa santé générale.
     author: AUTHORS.sao,
     cover: implantCoutCover,
     readingMinutes: 6,
-    content: `Quand on vous annonce qu'il faut une **greffe osseuse avant un implant dentaire**, deux questions viennent immédiatement : est-ce douloureux et combien ça coûte à Dakar ?
-
-Ce guide complet vous explique **pourquoi** une greffe est parfois nécessaire, **comment** elle se déroule, et **quel budget prévoir à Dakar en 2026**.
-
-## Pourquoi une greffe osseuse avant un implant ?
-
-Quand une dent est perdue, l'os de la mâchoire qui la soutenait commence à se résorber. Sans stimulation par la racine dentaire, l'os diminue progressivement. Après plusieurs mois ou années, le volume osseux peut devenir insuffisant pour poser un implant.
-
-La greffe osseuse permet de **reconstruire le volume osseux** perdu pour offrir une base solide à l'implant.
-
-Situations nécessitant une greffe :
-- Dent manquante depuis plus de 6 mois
-- Maladie parodontale ayant détruit l'os
-- Traumatisme ou infection
-- Sinus maxillaire trop bas (greffe sinusienne)
-
-## Types de greffe osseuse
-
-### Autogreffe (os du patient)
-Prélèvement d'un fragment d'os du patient. Technique de référence, os vivant. Délai : 4-6 mois.
-
-### Xénogreffe (os bovin)
-Os bovin traité servant de matrice. Très utilisé pour les comblements modérés. Délai : 6-9 mois.
-
-### Allogreffe (os humain)
-Os humain de banque. Alternative à l'autogreffe. Délai : 4-8 mois.
-
-### Matériaux synthétiques
-Céramiques de phosphate de calcium. Pour petits comblements.
-
-## Déroulement à Dakar
-
-1. **Bilan pré-opératoire** : examen clinique, CBCT 3D, devis détaillé
-2. **Intervention** sous anesthésie locale (45 min à 1h30)
-3. **Cicatrisation** : 4 à 9 mois selon le type de greffe
-4. **Pose de l'implant** : 3-4 mois supplémentaires avant la couronne finale
-
-## Prix à Dakar
-
-| Type de greffe | Fourchette (FCFA) |
-|---|---|
-| Petit comblement (1-2 dents) | 200 000 – 350 000 |
-| Greffe sinusienne | 350 000 – 500 000 |
-| Greffe étendue | 500 000 – 800 000 |
-| Régénération guidée complète | 600 000 – 1 000 000 |
-
-Devis personnalisé remis après le CBCT.
-
-## Suites opératoires
-
-- Œdème modéré 2-4 jours, contrôlé par antalgiques
-- Alimentation molle 5-7 jours
-- Bains de bouche antiseptiques
-- Arrêt du tabac indispensable
-- Contrôle à 7-10 jours`,
+    content: `""`,
     faq: [
       {
         q: "Une greffe osseuse est-elle douloureuse ?",
@@ -8730,53 +4332,7 @@ Devis personnalisé remis après le CBCT.
     author: AUTHORS.sao,
     cover: dentsSensiblesCover,
     readingMinutes: 5,
-    content: `Quand un verre d'eau froide devient désagréable, on parle de **sensibilité dentaire**. Ce problème touche de nombreuses personnes à Dakar, souvent sans qu'elles sachent qu'il existe des solutions simples.
-
-## Qu'est-ce que la sensibilité dentaire ?
-
-C'est une douleur brève et vive déclenchée par le froid, le chaud, le sucré ou l'acide. Elle survient quand la **dentine** (couche sous l'émail) est exposée. La dentine contient des micro-tubules qui communiquent avec le nerf.
-
-## Les 7 causes principales
-
-1. **Usure de l'émail** : brossage trop vigoureux ou alimentation acide
-2. **Récession gingivale** : gencives qui se rétractent
-3. **Caries et fissures** : portes d'entrée vers la dentine
-4. **Bruxisme** : grincement nocturne qui use l'émail
-5. **Après un détartrage** : sensibilité temporaire (24-48h)
-6. **Blanchiment dentaire** : ouvre temporairement les tubules
-7. **Alimentation acide** : agrumes, sodas, vinaigre
-
-## Traitements disponibles à Dakar
-
-### Au cabinet
-- **Vernis fluoré** : soulagement immédiat
-- **Résine de comblement** pour les récessions
-- **Laser** pour sceller les tubules
-- **Greffe de gencive** en cas de récession importante
-- **Gouttière anti-bruxisme**
-
-### À la maison
-- Dentifrice pour dents sensibles
-- Brosse à dents souple
-- Bain de bouche au fluor
-- Éviter aliments acides
-
-## Prix indicatifs
-
-| Traitement | Prix (FCFA) |
-|---|---|
-| Vernis fluoré | 10 000 – 20 000 |
-| Résine de comblement | 30 000 – 60 000/dent |
-| Traitement laser | 50 000 – 100 000 |
-| Gouttière anti-bruxisme | 100 000 – 200 000 |
-
-## 5 gestes de prévention
-
-1. Brosse à dents souple + brossage doux
-2. Dentifrice pour dents sensibles
-3. Limiter les aliments acides
-4. Gouttière si bruxisme
-5. Détartrage annuel`,
+    content: `""`,
     faq: [
       {
         q: "Les dents sensibles annoncent-elles une carie ?",
@@ -8809,50 +4365,7 @@ C'est une douleur brève et vive déclenchée par le froid, le chaud, le sucré 
     author: AUTHORS.sao,
     cover: bridgeImplantCover,
     readingMinutes: 5,
-    content: `Vous avez perdu une ou plusieurs dents et cherchez une solution fixe ? Le **bridge dentaire** reste une option courante à Dakar, aux côtés des implants.
-
-## Qu'est-ce qu'un bridge dentaire ?
-
-Un bridge (« pont dentaire ») est une prothèse fixe qui remplace une ou plusieurs dents manquantes en s'appuyant sur les dents voisines ou des implants. Comme un pont entre deux piliers.
-
-## Les 3 types de bridges
-
-### Bridge traditionnel
-Les dents adjacentes sont taillées pour recevoir des couronnes qui soutiennent la dent intermédiaire. Pour 1 à 3 dents remplacées.
-
-### Bridge cantilever
-Suspendu à un seul pilier. Réservé aux dents antérieures (faible mastication).
-
-### Bridge sur implant
-S'appuie sur 2 implants ou plus. Ne touche pas aux dents saines. Solution la plus durable.
-
-## Prix à Dakar en 2026
-
-| Type | Prix (FCFA) |
-|---|---|
-| Bridge 3 éléments (1 dent) | 300 000 – 500 000 |
-| Bridge cantilever | 250 000 – 400 000 |
-| Bridge étendu (4-5 éléments) | 500 000 – 800 000 |
-| Bridge sur 2 implants | 1 000 000 – 1 500 000 |
-
-## Déroulement
-
-1. Consultation et bilan (CBCT si nécessaire)
-2. Préparation des piliers sous anesthésie
-3. Empreinte numérique (scanner intra-oral)
-4. Bridge provisoire (1-2 semaines)
-5. Pose du bridge définitif
-
-## Bridge ou implant ?
-
-| Critère | Bridge | Implant |
-|---|---|---|
-| Dents saines touchées | OUI (2 taillées) | NON |
-| Durée de vie | 10-15 ans | 20+ ans |
-| Prix initial | Plus abordable | Plus élevé |
-| Préservation osseuse | NON | OUI |
-
-Le bridge reste pertinent quand le budget est serré, les dents piliers sont déjà abîmées, ou le volume osseux est insuffisant.`,
+    content: `""`,
     faq: [
       {
         q: "Combien de temps dure un bridge ?",
@@ -8885,59 +4398,7 @@ Le bridge reste pertinent quand le budget est serré, les dents piliers sont dé
     author: AUTHORS.sao,
     cover: devisDentaireCover,
     readingMinutes: 5,
-    content: `Vous avez une mutuelle ou une **IPM (Institution de Prévoyance Maladie)** et vous voulez savoir comment optimiser le remboursement de vos soins dentaires à Dakar ? Voici tout ce qu'il faut savoir.
-
-## Comprendre le fonctionnement de l'IPM
-
-Les IPM au Sénégal fonctionnent sur un principe de **tiers payant** ou de **remboursement** :
-- Vous avancez les frais, puis vous êtes remboursé sur présentation des justificatifs
-- Certaines IPM ont des **conventions directes** avec des cliniques partenaires
-- Les plafonds de remboursement varient selon votre formule
-
-## Les documents nécessaires pour le remboursement
-
-Pour chaque soin dentaire, préparez :
-1. **Le devis** avant le traitement (obligatoire pour les soins importants)
-2. **La facture détaillée** après le traitement
-3. **Le formulaire de prise en charge** de votre IPM (si applicable)
-4. **La prescription** du dentiste
-
-## Soins les mieux remboursés
-
-| Type de soin | Taux de remboursement habituel |
-|---|---|
-| Consultation | 70-90% |
-| Détartrage | 70-90% |
-| Extraction | 70-80% |
-| Traitement canalaire | 50-70% |
-| Couronne | 40-60% |
-| Implant | Variable (souvent forfait) |
-| Orthodontie | Forfait annuel |
-| Prothèse | 30-50% |
-
-## 5 astuces pour maximiser votre remboursement
-
-1. **Demandez un devis détaillé** avant tout traitement
-2. **Regroupez les soins** sur une même année civile pour atteindre les plafonds
-3. **Vérifiez les conventions** de votre IPM avec les cliniques
-4. **Gardez tous les justificatifs** (factures, ordonnances, radios)
-5. **Soumettez rapidement** votre dossier (délai de 1 à 3 mois selon l'IPM)
-
-## Principales IPM au Sénégal
-
-La Clinique DABIA vous aide à préparer votre dossier pour :
-- IPM Sonatel
-- IPM Senelec
-- IPM Poste
-- IPM Centif
-- IPM Eiffage
-- IPM King Fahd
-- MSH, AXA, Sunu, Wafa, Amsa, Sanlam, CNSS
-- Et de nombreuses autres mutuelles
-
-## Notre engagement
-
-À la Clinique DABIA, nous remettons **systématiquement un devis clair et détaillé** avant tout traitement, avec les codes CCAM pour faciliter votre prise en charge. Notre équipe vous accompagne dans la constitution de votre dossier de remboursement.`,
+    content: `""`,
     faq: [
       {
         q: "La Clinique DABIA est-elle conventionnée avec mon IPM ?",
@@ -8974,68 +4435,7 @@ La Clinique DABIA vous aide à préparer votre dossier pour :
     author: AUTHORS.sao,
     cover: choisirDentisteCover,
     readingMinutes: 4,
-    content: `C'est votre **premier rendez-vous chez le dentiste à Dakar** et vous vous demandez comment cela va se passer ? Rassurez-vous : une première consultation est avant tout un moment d'échange et de diagnostic, sans douleur. Voici le déroulement complet, étape par étape.
-
-## Étape 1 : L'accueil et le questionnaire médical (5-10 min)
-
-À votre arrivée, on vous remet un **questionnaire médical** à remplir. Il couvre :
-- Vos antécédents médicaux (maladies, allergies, traitements en cours)
-- Vos habitudes (tabac, alimentation)
-- La raison de votre visite (douleur, bilan, esthétique)
-- Vos éventuelles appréhensions
-
-Soyez honnête dans vos réponses : cela permet au dentiste d'adapter sa prise en charge.
-
-## Étape 2 : L'examen clinique (15-20 min)
-
-Le dentiste examine méthodiquement :
-- **Les dents** : caries, usures, fissures, obturations existantes
-- **Les gencives** : inflammation, saignement, récession
-- **L'occlusion** : comment vos dents s'emboîtent
-- **Les muqueuses** : dépistage des lésions buccales
-- **L'hygiène** : présence de tartre, de plaque dentaire
-
-Cet examen est **indolore**. Le dentiste utilise un miroir et une sonde. Il vous explique ce qu'il observe au fur et à mesure.
-
-## Étape 3 : Les radiographies si nécessaires (5-10 min)
-
-Selon votre situation, le dentiste peut prescrire :
-- **Radio panoramique** : vue d'ensemble des 2 mâchoires
-- **Radio rétro-alvéolaire** : zoom sur une ou deux dents spécifiques
-- **CBCT 3D** : image en 3D pour les cas complexes (implant, chirurgie)
-
-À la Clinique DABIA, ces examens sont réalisés sur place, sans rendez-vous supplémentaire.
-
-## Étape 4 : Le diagnostic et le plan de traitement (10-15 min)
-
-C'est le moment clé. Le dentiste :
-1. Vous **explique** ce qu'il a observé (avec les radios à l'appui)
-2. Vous **propose** un plan de traitement priorisé
-3. Vous **détaille** les options (avec leurs avantages/inconvénients)
-4. Répond à **toutes vos questions**
-
-Vous repartez avec :
-- Un **devis clair et détaillé** (chaque acte est listé avec son prix)
-- Un **calendrier de soins** (ordre et espacement des rendez-vous)
-- Des **conseils d'hygiène** personnalisés
-
-## Étape 5 : La suite
-
-- Si c'est une urgence : le premier soin peut être fait le jour même
-- Si c'est un bilan : les rendez-vous sont planifiés selon vos disponibilités
-- Vous pouvez prendre vos rendez-vous en ligne ou par téléphone
-
-## Prix d'une première consultation à Dakar
-
-Une première consultation (examen + diagnostic + devis) coûte généralement entre **15 000 et 25 000 FCFA**. Les radiographies éventuelles sont facturées en supplément (panoramique : 15 000-25 000 FCFA).
-
-## Nos conseils pour bien préparer votre visite
-
-1. Apportez vos anciennes radios ou ordonnances si vous en avez
-2. Notez vos questions à l'avance (vous risquez de les oublier)
-3. Signalez TOUS vos problèmes, même ceux qui vous semblent mineurs
-4. Si vous êtes anxieux(se), dites-le : nous adaptons notre approche
-5. Prévoyez 45 minutes à 1 heure pour une première consultation complète`,
+    content: `""`,
     faq: [
       {
         q: "La première consultation est-elle payante ?",

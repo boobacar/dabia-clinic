@@ -5,13 +5,15 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./index.css";
 import { initGA } from "./analytics/ga4";
-import { removeSeoShellHead } from "./utils/seoHead";
+import { removeSeoShellBody, removeSeoShellHead } from "./utils/seoHead";
 
-// Les shells statiques sont utiles aux robots, mais doivent disparaître avant
-// que React 19 ne prenne possession du head pour éviter tout removeChild invalide.
+// Les shells statiques restent disponibles jusqu’au chargement du bundle,
+// puis disparaissent juste avant que React 19 ne prenne possession du DOM.
 removeSeoShellHead();
+const root = removeSeoShellBody();
+if (!root) throw new Error("React root introuvable");
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(root).render(
   <BrowserRouter>
     <App />
   </BrowserRouter>,

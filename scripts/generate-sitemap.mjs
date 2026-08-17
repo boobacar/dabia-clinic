@@ -67,6 +67,7 @@ const STATIC_ROUTES = [
   "/cabinet-dentaire-patte-d-oie",
   "/cabinet-dentaire-fann",
   "/cabinet-dentaire-plateau",
+  "/cabinet-dentaire-vdn",
   "/galerie",
 ];
 
@@ -350,6 +351,30 @@ ${[...staticXml, ...competencesXml, ...blogXml, ...tagsXml, ...techXml].join("\n
       .map((p) => abs(`/blog/${p.slug}`)),
   ].join("\n");
   await writeFile(join(DIST_DIR, "reindex-urls.txt"), reindexList, "utf8");
+  // Ping IndexNow (Bing, Yandex, Seznam, Naver…) → crawl sous ~24h
+  // Clé servie à https://www.cliniquedentairedabia.com/indexnow-key.txt
+  try {
+    const key = (
+      await readFile(join(ROOT, "public", "indexnow-key.txt"), "utf8")
+    )
+      .trim();
+    if (key && /^[a-f0-9]{32}$/.test(key)) {
+      const urls = reindexList.split("\n").filter(Boolean);
+      const payload = { host: "www.cliniquedentairedabia.com", key, urlList: urls };
+      const resp = await fetch("https://api.indexnow.org/indexnow", {
+        method: "POST",
+        headers: { "Content-Type": "application/json; charset=utf-8" },
+        body: JSON.stringify(payload),
+      });
+      console.log(
+        `✅ IndexNow pingé: ${urls.length} URLs (HTTP ${resp.status})`
+      );
+    } else {
+      console.log("⚠️ IndexNow: clé invalide ou absente, ping ignoré");
+    }
+  } catch (e) {
+    console.log(`⚠️ IndexNow: ping échoué (${e.message})`);
+  }
   await writeFile(
     join(DIST_DIR, "robots.txt"),
     `User-agent: *
@@ -430,6 +455,22 @@ Sitemap: ${abs("/sitemap.xml")}
     wrapImg(imgNodes),
     "utf8"
   );
+  // Miroir des sections dans dist/sitemaps/ : Vite copie public/ au DÉBUT du
+  // build, donc sans cette écriture directe, dist servirait la version de la
+  // génération précédente (ex. article consolidé encore présent dans le sitemap).
+  const DIST_SITEMAPS_DIR = join(DIST_DIR, "sitemaps");
+  await mkdir(DIST_SITEMAPS_DIR, { recursive: true });
+  const sections = {
+    "sitemap-static.xml": wrap(staticXml),
+    "sitemap-competences.xml": wrap(competencesXml),
+    "sitemap-blog.xml": wrap(blogXml),
+    "sitemap-tags.xml": wrap(tagsXml),
+    "sitemap-technologies.xml": wrap(techXml),
+    "sitemap-images.xml": wrapImg(imgNodes),
+  };
+  for (const [name, content] of Object.entries(sections)) {
+    await writeFile(join(DIST_SITEMAPS_DIR, name), content, "utf8");
+  }
   console.log(
     "✅ sitemap index + sections générés dans public/ pour le dev local"
   );

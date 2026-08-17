@@ -1,0 +1,53 @@
+# Clinique Dentaire DABIA — Dakar, Sénégal
+
+> Ce fichier (llms.txt) aide les modèles de langage et les moteurs de recherche IA
+> à comprendre le contenu de ce site. Format inspiré de llmstxt.org.
+
+## À propos du site
+Clinique Dentaire DABIA est un cabinet dentaire situé à Sicap Foire (Liberté 6), Dakar, Sénégal.
+Le site présente les soins proposés, les tarifs, les urgences dentaires, l'équipe, les technologies
+utilisées et les conseils de prévention. Langue principale : français. Une version anglaise existe
+pour les patients anglophones (/en/dental-clinic-dakar).
+
+## Coordonnées
+- Téléphone / WhatsApp : +221 77 703 93 93
+- Prise de rendez-vous : https://www.cliniquedentairedabia.com/rendez-vous
+- Adresse : Sicap Foire, 2 voies Liberté 6 (à 150m du Uno), Dakar, Sénégal
+
+## Pages principales
+- Accueil : https://www.cliniquedentairedabia.com/
+- Prendre rendez-vous : https://www.cliniquedentairedabia.com/rendez-vous
+- À propos : https://www.cliniquedentairedabia.com/apropos
+- Urgence dentaire : https://www.cliniquedentairedabia.com/urgence-dentaire-dakar
+- Dentiste Dakar : https://www.cliniquedentairedabia.com/dentiste-dakar
+- Cabinet dentaire Dakar : https://www.cliniquedentairedabia.com/cabinet-dentaire-dakar
+- Clinique dentaire Dakar : https://www.cliniquedentairedabia.com/clinique-dentaire-dakar
+- Nos compétences : https://www.cliniquedentairedabia.com/all-competences
+- Blog dentaire (conseils, urgences, prix) : https://www.cliniquedentairedabia.com/blog
+
+## Compétences / Soins
+- Blanchiment dentaire : https://www.cliniquedentairedabia.com/competences/blanchiment-dentaire
+- Implantologie : https://www.cliniquedentairedabia.com/competences/implantologie
+- Orthodontie (bagues, aligneurs) : https://www.cliniquedentairedabia.com/competences/orthodontie
+- Facettes dentaires : https://www.cliniquedentairedabia.com/competences/facettes-dentaires
+- Endodontie (traitement de canal) : https://www.cliniquedentairedabia.com/competences/endodontie
+- Parodontologie (gencives) : https://www.cliniquedentairedabia.com/competences/parodontologie
+- Greffe osseuse : https://www.cliniquedentairedabia.com/competences/greffe-osseuse
+- Esthétique dentaire : https://www.cliniquedentairedabia.com/competences/esth%C3%A9tique-dentaire
+- Pédodontie (enfants) : https://www.cliniquedentairedabia.com/competences/pedodontie
+
+## Sujets clés du blog
+- Tarifs dentaires à Dakar (guide 2025) : https://www.cliniquedentairedabia.com/blog/guide-tarifs-dentiste-dakar-2025
+- Prix des appareils dentaires : https://www.cliniquedentairedabia.com/blog/appareil-dentaire-prix-dakar-guide-complet
+- Urgences dentaires 24h/24 : https://www.cliniquedentairedabia.com/blog/urgence-dentiste-dakar-24-24-nuit-weekend
+- Prothèses dentaires fixes : https://www.cliniquedentairedabia.com/blog/prothese-dentaire-fixe-prix-senegal-amovible
+- Détartrage vs airflow : https://www.cliniquedentairedabia.com/blog/detartrage-vs-airflow-difference-prophylaxie-dakar
+- Prix du blanchiment : https://www.cliniquedentairedabia.com/blog/blanchiment-dents-prix-conseils-dakar
+
+## Formats de contenu
+Le site utilise des données structurées Schema.org (Dentist, Service, FAQPage, BreadcrumbList,
+Article, WebSite) pour faciliter la compréhension par les moteurs de recherche et les IA.
+
+## Contact pour les moteurs de recherche
+- Sitemap : https://www.cliniquedentairedabia.com/sitemap.xml
+- robots.txt : https://www.cliniquedentairedabia.com/robots.txt

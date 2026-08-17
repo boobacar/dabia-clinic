@@ -21,6 +21,16 @@
       "permanent": true
     },
     {
+      "source": "/blog/ipm-mutuelle-dentiste-dakar-prise-en-charge-2026",
+      "destination": "/blog/dentiste-mutuelle-ipm-dakar-prise-en-charge-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/meilleur-dentiste-dakar-criteres-de-choix",
+      "destination": "/blog/comment-choisir-meilleur-dentiste-dakar",
+      "permanent": true
+    },
+    {
       "source": "/blog/devis-dentaire-dakar-bien-lire-comparer-2026",
       "destination": "/blog/devis-dentaire-dakar-comprendre-tarifs",
       "permanent": true
@@ -138,6 +148,116 @@
     {
       "source": "/blog/prix-prothese-dentaire-dakar-partielle-complete",
       "destination": "/blog/prothese-dentaire-fixe-prix-senegal-amovible",
+      "permanent": true
+    },
+    {
+      "source": "/blog/prothese-dentaire-complete-partielle-ou-sur-implant-dakar",
+      "destination": "/blog/prothese-dentaire-fixe-prix-senegal-amovible",
+      "permanent": true
+    },
+    {
+      "source": "/blog/blanchiment-dentaire-dakar-efficace-medical",
+      "destination": "/blog/blanchiment-dents-prix-conseils-dakar",
+      "permanent": true
+    },
+    {
+      "source": "/blog/blanchiment-dentaire-dakar-efficace-ou-danger",
+      "destination": "/blog/blanchiment-dents-prix-conseils-dakar",
+      "permanent": true
+    },
+    {
+      "source": "/blog/radio-cbct-dentaire-dakar-quand-la-faire-2026",
+      "destination": "/blog/cbct-radio-3d-dentaire-a-quoi-sert-dakar",
+      "permanent": true
+    },
+    {
+      "source": "/blog/appareil-dentaire-adulte-dakar-options-delais-budget-2026",
+      "destination": "/blog/appareil-dentaire-prix-dakar-guide-complet",
+      "permanent": true
+    },
+    {
+      "source": "/blog/implant-dentaire-dakar-etapes-risques-reussite-2026",
+      "destination": "/blog/tarif-implant-dentaire-dakar-deroulement",
+      "permanent": true
+    },
+    {
+      "source": "/blog/urgence-dentaire-dakar-qui-appeler",
+      "destination": "/blog/urgence-dentiste-dakar-24-24-nuit-weekend",
+      "permanent": true
+    },
+    {
+      "source": "/blog/appareil-dentaire-enfant-dakar-age-ideal-options-cout-2026",
+      "destination": "/blog/appareil-dentaire-prix-dakar-guide-complet",
+      "permanent": true
+    },
+    {
+      "source": "/blog/orthodontie-interceptive-enfant-dakar-appareils",
+      "destination": "/blog/appareil-dentaire-prix-dakar-guide-complet",
+      "permanent": true
+    },
+    {
+      "source": "/blog/appareil-dentaire-dakar-adulte-options-prix-2026",
+      "destination": "/blog/appareil-dentaire-prix-dakar-guide-complet",
+      "permanent": true
+    },
+    {
+      "source": "/blog/orthodontie-adulte-enfant-dakar-aligneurs-brackets",
+      "destination": "/blog/appareil-dentaire-prix-dakar-guide-complet",
+      "permanent": true
+    },
+    {
+      "source": "/blog/appareil-dentaire-adulte-dakar-invisalign",
+      "destination": "/blog/invisalign-aligneurs-prix-duree-entretien-dakar",
+      "permanent": true
+    },
+    {
+      "source": "/blog/invisalign-dakar-orthodontie-invisible-adulte",
+      "destination": "/blog/invisalign-aligneurs-prix-duree-entretien-dakar",
+      "permanent": true
+    },
+    {
+      "source": "/blog/orthodontie-adulte-invisible-dakar-aligneurs",
+      "destination": "/blog/invisalign-aligneurs-prix-duree-entretien-dakar",
+      "permanent": true
+    },
+    {
+      "source": "/blog/invisalign-dakar-prix-adulte-aligneurs-2026",
+      "destination": "/blog/invisalign-aligneurs-prix-duree-entretien-dakar",
+      "permanent": true
+    },
+    {
+      "source": "/blog/implant-dentaire-dakar-prix-avis",
+      "destination": "/blog/tarif-implant-dentaire-dakar-deroulement",
+      "permanent": true
+    },
+    {
+      "source": "/blog/implant-dentaire-ou-bridge-choisir-dakar",
+      "destination": "/blog/tarif-implant-dentaire-dakar-deroulement",
+      "permanent": true
+    },
+    {
+      "source": "/blog/prix-implant-dentaire-dakar-comment-eviter-les-mauvaises-surprises-2026",
+      "destination": "/blog/tarif-implant-dentaire-dakar-deroulement",
+      "permanent": true
+    },
+    {
+      "source": "/blog/all-on-4-prothese-implants-dakar",
+      "destination": "/blog/tarif-implant-dentaire-dakar-deroulement",
+      "permanent": true
+    },
+    {
+      "source": "/blog/prothese-fixe-sur-implant-dakar-avantages-2026",
+      "destination": "/blog/tarif-implant-dentaire-dakar-deroulement",
+      "permanent": true
+    },
+    {
+      "source": "/blog/prothese-fixe-vs-amovible-dakar-comment-choisir",
+      "destination": "/blog/prothese-dentaire-fixe-prix-senegal-amovible",
+      "permanent": true
+    },
+    {
+      "source": "/blog/couronne-ou-onlay-difference-prix-dakar",
+      "destination": "/blog/prix-couronne-dentaire-dakar-materiaux-devis",
       "permanent": true
     }
   ],

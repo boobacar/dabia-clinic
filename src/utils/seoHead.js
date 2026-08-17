@@ -4,6 +4,17 @@ export function removeSeoShellHead() {
     .forEach((node) => node.remove());
 }
 
+export function removeSeoShellBody() {
+  const root = document.getElementById("root");
+  if (!root) return null;
+
+  // Le shell statique reste visible jusqu'au commit React : createRoot().render()
+  // remplace les enfants du conteneur au montage (pas de vide intermédiaire).
+  root.removeAttribute("data-seo-shell-root");
+  document.documentElement.removeAttribute("data-seo-app-loading");
+  return root;
+}
+
 export function cleanupPrerenderedSeoHead() {
   const nodes = Array.from(
     document.head.querySelectorAll(

@@ -17,6 +17,7 @@ const [
   urgency,
   seoComponent,
   mainEntry,
+  seoHeadUtils,
   prerender,
   vercel,
   sitemapGenerator,
@@ -32,6 +33,7 @@ const [
   read("src/pages/UrgenceDentaire.jsx"),
   read("src/components/Seo.jsx"),
   read("src/main.jsx"),
+  read("src/utils/seoHead.js"),
   read("scripts/prerender-routes.mjs"),
   read("vercel.json"),
   read("scripts/generate-sitemap.mjs"),
@@ -52,7 +54,7 @@ for (const [label, source] of [
   );
 }
 
-const cbctTitle = "CBCT dentaire à Dakar : prix, indications et RDV scanner 3D | DABIA";
+const cbctTitle = "CBCT dentaire : c'est quoi, prix et RDV scanner 3D à Dakar | DABIA";
 assert.ok(postsMeta.includes(cbctTitle), "posts.meta.json doit utiliser le title CBCT orienté rendez-vous");
 assert.ok(
   postsMeta.includes('"heading": "CBCT dentaire à Dakar : prix, indications et scanner 3D"'),
@@ -78,7 +80,30 @@ assert.ok(
   blogPost.includes("title={post.seoTitle || post.title}"),
   "BlogPost doit utiliser le title SEO quand il est défini",
 );
-assert.ok(posts.includes("## Prix et prise de rendez-vous"), "L’article CBCT doit expliquer le prix/devis et la prise de rendez-vous");
+{
+  // Le contenu des articles est désormais externalisé dans src/data/content/<slug>.json
+  const cbctContentFile = JSON.parse(
+    await read("src/data/content/cbct-radio-3d-dentaire-a-quoi-sert-dakar.json"),
+  );
+  assert.ok(
+    (cbctContentFile.content || "").includes("## Combien coûte un CBCT à Dakar ?"),
+    "L'article CBCT doit expliquer le prix/devis et la prise de rendez-vous",
+  );
+}
+
+// FAQ statique + FAQPage JSON-LD dans les shells blog (couche AEO)
+assert.ok(
+  shells.includes("faq: post.faq || []"),
+  "Le shell SSG doit embarquer la FAQ des articles blog",
+);
+assert.ok(
+  shells.includes("const faqMatch = window.match("),
+  "Le générateur de shells doit extraire la FAQ des articles",
+);
+assert.ok(
+  posts.includes('q: "Est-ce douloureux de faire un CBCT dentaire ?"'),
+  "L'article CBCT doit exposer sa FAQ structurée (FAQPage)",
+);
 
 assert.match(vercel, /"source": "\/blog\/tag\/sos-dentiste"[\s\S]*?"destination": "\/urgence-dentaire-dakar"/, "Le tag SOS dentiste doit rediriger vers la page urgence");
 assert.ok(urgency.includes("SOS dentiste à Dakar"), "La page urgence doit cibler explicitement SOS dentiste à Dakar");
@@ -149,29 +174,32 @@ assert.ok(
   "Chaque shell SEO doit être marqué avant sa sauvegarde",
 );
 assert.ok(
-  shells.includes('data-seo-shell-cleanup="true"'),
-  "Chaque shell SEO doit inclure un nettoyage visuel synchrone",
+  shells.includes('data-seo-shell-guard="true"') &&
+    shells.includes('data-seo-app-loading","true"'),
+  "Chaque shell SEO doit activer sa garde visuelle avant le rendu navigateur",
 );
 assert.ok(
-  shells.includes('data-seo-shell-guard="true"'),
-  "Chaque shell SEO doit être masqué avant le premier rendu navigateur",
+  shells.includes("window.setTimeout") &&
+    shells.includes('removeAttribute("data-seo-app-loading")'),
+  "La garde doit se désactiver si le bundle React ne démarre pas",
 );
 assert.ok(
   shells.includes("<noscript>"),
   "Le shell SEO doit rester visible lorsque JavaScript est désactivé",
 );
 assert.ok(
-  shells.includes("root.replaceChildren();") &&
-    shells.includes('root.removeAttribute("data-seo-shell-root")'),
-  "Le shell visible doit être retiré avant le premier rendu React",
+  seoHeadUtils.includes("export function removeSeoShellBody()") &&
+    seoHeadUtils.includes('root.removeAttribute("data-seo-shell-root")'),
+  "Le bundle React doit reprendre le shell (retrait data-seo-shell-root) avant le rendu",
 );
 assert.ok(
-  mainEntry.includes('import { removeSeoShellHead } from "./utils/seoHead"'),
-  "L’entrée React doit importer le retrait pré-montage des balises shell",
+  mainEntry.includes("removeSeoShellBody, removeSeoShellHead"),
+  "L’entrée React doit importer le retrait pré-montage du head et du body",
 );
 assert.ok(
-  mainEntry.indexOf("removeSeoShellHead();") < mainEntry.indexOf("ReactDOM.createRoot"),
-  "Les balises shell doivent être retirées avant que React ne prenne possession du head",
+  mainEntry.indexOf("removeSeoShellHead();") < mainEntry.indexOf("ReactDOM.createRoot") &&
+    mainEntry.indexOf("removeSeoShellBody();") < mainEntry.indexOf("ReactDOM.createRoot"),
+  "Le shell complet doit être retiré juste avant que React ne prenne possession du DOM",
 );
 
 console.log("✅ Contrats SEO prioritaires validés");
