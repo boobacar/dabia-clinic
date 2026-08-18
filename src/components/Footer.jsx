@@ -70,7 +70,9 @@ const Footer = () => {
           ))}
         </div>
         <p>© {new Date().getFullYear()} Clinique DABIA</p>
-        <button onClick={() => setShowModal(true)}>Site par Fallcon Tech</button>
+        <button onClick={() => setShowModal(true)}>
+          Designed by <span className="font-bold text-[#bb2988]">Fallcon Tech</span>
+        </button>
       </div>
 
       {showModal && (
