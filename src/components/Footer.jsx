@@ -1,5 +1,6 @@
 import { lazy, Suspense, useState } from "react";
 import { Link } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import { FaFacebookF, FaInstagram, FaTiktok, FaWhatsapp, FaLinkedinIn } from "react-icons/fa";
 import NAP from "./NAP";
 import BlogLinksCompact from "./BlogLinksCompact";
@@ -75,11 +76,13 @@ const Footer = () => {
         </button>
       </div>
 
-      {showModal && (
-        <Suspense fallback={null}>
-          <DevInfoModal onClose={() => setShowModal(false)} />
-        </Suspense>
-      )}
+      <AnimatePresence>
+        {showModal && (
+          <Suspense fallback={null}>
+            <DevInfoModal onClose={() => setShowModal(false)} />
+          </Suspense>
+        )}
+      </AnimatePresence>
     </footer>
   );
 };

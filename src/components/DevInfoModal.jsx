@@ -5,54 +5,88 @@ import { FaPhone, FaEnvelope, FaGlobe, FaCode } from "react-icons/fa";
 const DevInfoModal = ({ onClose }) => {
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.95 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.95 }}
-      className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center px-4"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.18 }}
+      className="dev-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Fallcon Tech"
+      onClick={onClose}
     >
-      <div className="bg-white rounded-lg p-6 max-w-sm w-full text-center relative shadow-xl">
+      <motion.div
+        initial={{ opacity: 0, y: 16, scale: 0.96 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        exit={{ opacity: 0, y: 10, scale: 0.97 }}
+        transition={{ type: "spring", stiffness: 340, damping: 30 }}
+        onClick={(e) => e.stopPropagation()}
+        className="dev-modal__card"
+      >
         {/* Bouton de fermeture */}
         <button
+          type="button"
           onClick={onClose}
-          className="absolute top-3 right-3 text-gray-400 hover:text-gray-700"
+          className="dev-modal__close"
+          aria-label="Fermer"
         >
-          <X />
+          <X size={18} />
         </button>
 
-        {/* Icône code au lieu de la photo */}
-        <div className="w-24 h-24 rounded-full mx-auto mb-4 bg-[#ad9d64]/10 flex items-center justify-center">
-          <FaCode className="text-[#ad9d64]" size={40} aria-label="Code" />
+        {/* Icône code dans une puce façon care-row */}
+        <div className="dev-modal__icon">
+          <FaCode size={26} aria-label="Code" />
         </div>
+
+        <p className="dev-modal__kicker">Conception &amp; développement</p>
+        <h3 className="dev-modal__title">Fallcon Tech</h3>
 
         {/* Contacts directs */}
-        <div className="mt-4 space-y-2 text-sm text-gray-700">
-          <div className="flex items-center justify-center gap-2">
-            <FaPhone className="text-[#ad9d64]" />
-            <a href="tel:+221776260020" className="hover:underline">
-              +221 77 626 00 20
-            </a>
-          </div>
-          <div className="flex items-center justify-center gap-2">
-            <FaEnvelope className="text-[#ad9d64]" />
-            <a href="mailto:info@fallcontech.com" className="hover:underline">
-              info@fallcontech.com
-            </a>
-          </div>
-          <div className="flex items-center justify-center gap-2">
-            <FaGlobe className="text-[#ad9d64]" />
-            <a
-              href="https://www.fallcontech.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline"
-            >
-              www.fallcontech.com
-            </a>
-          </div>
+        <div className="dev-modal__list">
+          <a href="tel:+221776260020" className="dev-modal__row">
+            <span className="dev-modal__row-icon">
+              <FaPhone size={15} />
+            </span>
+            <span className="dev-modal__row-text">
+              <span className="dev-modal__row-label">Téléphone</span>
+              <span className="dev-modal__row-value">+221 77 626 00 20</span>
+            </span>
+          </a>
+          <a href="mailto:info@fallcontech.com" className="dev-modal__row">
+            <span className="dev-modal__row-icon">
+              <FaEnvelope size={15} />
+            </span>
+            <span className="dev-modal__row-text">
+              <span className="dev-modal__row-label">Email</span>
+              <span className="dev-modal__row-value">info@fallcontech.com</span>
+            </span>
+          </a>
+          <a
+            href="https://www.fallcontech.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="dev-modal__row"
+          >
+            <span className="dev-modal__row-icon">
+              <FaGlobe size={15} />
+            </span>
+            <span className="dev-modal__row-text">
+              <span className="dev-modal__row-label">Site web</span>
+              <span className="dev-modal__row-value">www.fallcontech.com</span>
+            </span>
+          </a>
         </div>
 
-        {/* Liens externes supprimés sur demande */}
-      </div>
+        {/* CTA principal charte */}
+        <a
+          href="https://www.fallcontech.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="dev-modal__cta"
+        >
+          Visiter fallcontech.com
+        </a>
+      </motion.div>
     </motion.div>
   );
 };
