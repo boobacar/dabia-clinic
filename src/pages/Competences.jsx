@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import competences from "../data/competences";
 import Seo from "../components/Seo";
 import Breadcrumbs from "../components/Breadcrumbs";
+import { GEO_COUNTRIES } from "../data/geoData";
 
 /**
  * Animated "Compétences" gallery
@@ -126,6 +127,45 @@ export default function Competences() {
             </div>
           </MotionLink>
         ))}
+      </motion.div>
+
+      {/* Patients de la sous-région & diaspora */}
+      <motion.div
+        className="mt-14 bg-white rounded-2xl border border-[#ded4cc] p-6 md:p-8"
+        variants={titleVariants}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <p className="section-kicker text-center mb-2">🌍 Patients internationaux</p>
+        <h2 className="text-2xl md:text-3xl font-bold text-center text-[#ad9d64] mb-3">
+          Soins dentaires à Dakar pour les patients de la sous-région
+        </h2>
+        <p className="text-center text-gray-700 mb-6 max-w-3xl mx-auto">
+          De nombreux patients d'Afrique de l'Ouest, d'Afrique centrale et de la
+          diaspora choisissent la Clinique DABIA à Dakar : devis clair avant le
+          voyage, soins planifiés selon la durée du séjour et suivi à distance.
+        </p>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+          {GEO_COUNTRIES.map((c) => (
+            <Link
+              key={c.slug}
+              to={`/pays/${c.slug}`}
+              className="flex items-center gap-2 rounded-xl border border-[#ded4cc] px-3 py-2.5 text-sm text-gray-800 hover:border-[#d03088] hover:text-[#d03088] transition-colors"
+            >
+              <span aria-hidden="true">{c.flag}</span>
+              <span>{c.name}</span>
+            </Link>
+          ))}
+        </div>
+        <p className="text-center mt-6">
+          <Link
+            to="/pays"
+            className="font-semibold text-[#d03088] hover:underline"
+          >
+            Voir toutes les informations pour les patients internationaux →
+          </Link>
+        </p>
       </motion.div>
 
       {/* Données structurées ItemList pour la page complète */}

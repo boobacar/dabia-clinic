@@ -3,6 +3,7 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { join } from "node:path";
 import process from "node:process";
+import { getAllGeoPages, geoSeoForPath } from "../src/data/geoData.js";
 
 const SITE_URL =
   process.env.SITE_URL?.replace(/\/+$/, "") ||
@@ -333,12 +334,32 @@ async function build() {
     })
   );
 
+  // 6) Pages géo (usine à pages : pays × compétences + pays × filières + hubs)
+  const geoPages = getAllGeoPages();
+  const geoXml = geoPages.map((p) => {
+    const seo = geoSeoForPath(p.path) || {};
+    return urlNode({
+      loc: abs(p.path),
+      lastmod: today,
+      changefreq: seo.changefreq || "weekly",
+      priority: seo.priority || "0.7",
+    });
+  });
+  // Index des hubs pays
+  const geoIndexXml = urlNode({
+    loc: abs("/pays"),
+    lastmod: today,
+    changefreq: "weekly",
+    priority: "0.8",
+  });
+  console.log(`🌍 Pages géo ajoutées: ${geoXml.length} + /pays`);
+
   const xml = `<?xml version=\"1.0\" encoding=\"UTF-8\"?>
 <urlset
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
 >
-${[...staticXml, ...competencesXml, ...blogXml, ...tagsXml, ...techXml].join("\n")}
+${[...staticXml, ...competencesXml, ...blogXml, ...tagsXml, ...techXml, geoIndexXml, ...geoXml].join("\n")}
 </urlset>`;
 
   await writeFile(join(DIST_DIR, "sitemap.xml"), xml, "utf8");
@@ -390,7 +411,7 @@ Sitemap: ${abs("/sitemap.xml")}
   );
 
   // Generate public sitemap index + section files for local dev (Vite)
-  const indexXml = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <sitemap>\n    <loc>${SITE_URL}/sitemaps/sitemap-static.xml</loc>\n    <lastmod>${today}</lastmod>\n  </sitemap>\n  <sitemap>\n    <loc>${SITE_URL}/sitemaps/sitemap-competences.xml</loc>\n    <lastmod>${today}</lastmod>\n  </sitemap>\n  <sitemap>\n    <loc>${SITE_URL}/sitemaps/sitemap-blog.xml</loc>\n    <lastmod>${today}</lastmod>\n  </sitemap>\n  <sitemap>\n    <loc>${SITE_URL}/sitemaps/sitemap-tags.xml</loc>\n    <lastmod>${today}</lastmod>\n  </sitemap>\n  <sitemap>\n    <loc>${SITE_URL}/sitemaps/sitemap-technologies.xml</loc>\n    <lastmod>${today}</lastmod>\n  </sitemap>\n  <sitemap>\n    <loc>${SITE_URL}/sitemaps/sitemap-images.xml</loc>\n    <lastmod>${today}</lastmod>\n  </sitemap>\n</sitemapindex>`;
+  const indexXml = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <sitemap>\n    <loc>${SITE_URL}/sitemaps/sitemap-static.xml</loc>\n    <lastmod>${today}</lastmod>\n  </sitemap>\n  <sitemap>\n    <loc>${SITE_URL}/sitemaps/sitemap-competences.xml</loc>\n    <lastmod>${today}</lastmod>\n  </sitemap>\n  <sitemap>\n    <loc>${SITE_URL}/sitemaps/sitemap-blog.xml</loc>\n    <lastmod>${today}</lastmod>\n  </sitemap>\n  <sitemap>\n    <loc>${SITE_URL}/sitemaps/sitemap-tags.xml</loc>\n    <lastmod>${today}</lastmod>\n  </sitemap>\n  <sitemap>\n    <loc>${SITE_URL}/sitemaps/sitemap-technologies.xml</loc>\n    <lastmod>${today}</lastmod>\n  </sitemap>\n  <sitemap>\n    <loc>${SITE_URL}/sitemaps/sitemap-geo.xml</loc>\n    <lastmod>${today}</lastmod>\n  </sitemap>\n  <sitemap>\n    <loc>${SITE_URL}/sitemaps/sitemap-images.xml</loc>\n    <lastmod>${today}</lastmod>\n  </sitemap>\n</sitemapindex>`;
   await writeFile(join(PUBLIC_DIR, "sitemap.xml"), indexXml, "utf8");
   const wrap = (nodes) =>
     `<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n${nodes.join(
@@ -419,6 +440,11 @@ Sitemap: ${abs("/sitemap.xml")}
   await writeFile(
     join(PUBLIC_SITEMAPS_DIR, "sitemap-technologies.xml"),
     wrap(techXml),
+    "utf8"
+  );
+  await writeFile(
+    join(PUBLIC_SITEMAPS_DIR, "sitemap-geo.xml"),
+    wrap([geoIndexXml, ...geoXml]),
     "utf8"
   );
   // Images sitemap
@@ -466,6 +492,7 @@ Sitemap: ${abs("/sitemap.xml")}
     "sitemap-blog.xml": wrap(blogXml),
     "sitemap-tags.xml": wrap(tagsXml),
     "sitemap-technologies.xml": wrap(techXml),
+    "sitemap-geo.xml": wrap([geoIndexXml, ...geoXml]),
     "sitemap-images.xml": wrapImg(imgNodes),
   };
   for (const [name, content] of Object.entries(sections)) {

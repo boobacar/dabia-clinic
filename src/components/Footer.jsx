@@ -18,6 +18,7 @@ const links = [
   ["Assurances", "/infos/assurances"],
   ["Technologie", "/infos/technologie"],
   ["Cabinet dentaire Dakar", "/cabinet-dentaire-dakar"],
+  ["Patients de la sous-région", "/pays"],
   ["Liberté 6", "/cabinet-dentaire-liberte-6"],
   ["Parcelles Assainies", "/clinique-dentaire-parcelles-assainies"],
   ["Sacré-Cœur", "/cabinet-dentaire-sacre-coeur"],

@@ -46,6 +46,7 @@ const LocalitePlateau = lazy(() => import("../pages/localites/Plateau"));
 const LocaliteVdn = lazy(() => import("../pages/LocaliteVdn"));
 const Galerie = lazy(() => import("../pages/Galerie"));
 const BlogTag = lazy(() => import("../pages/BlogTag"));
+const GeoPage = lazy(() => import("../pages/GeoPage"));
 const NotFound = lazy(() => import("../pages/NotFound"));
 
 export default function RoutesWithTransitions() {
@@ -132,6 +133,10 @@ export default function RoutesWithTransitions() {
       <Route path="/cabinet-dentaire-plateau" element={<LocalitePlateau />} />
       <Route path="/cabinet-dentaire-vdn" element={<LocaliteVdn />} />
       <Route path="/galerie" element={<Galerie />} />
+      <Route path="/pays" element={<GeoPage />} />
+      <Route path="/pays/:countrySlug" element={<GeoPage />} />
+      <Route path="/soins/:geoSlug" element={<GeoPage />} />
+      <Route path="/parcours/:filiereSlug" element={<GeoPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

@@ -2,6 +2,7 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { join, dirname } from "node:path";
 import { markSeoShellHead } from "./seo-shell-head.mjs";
 import { competenceContent } from "../src/data/competenceContent.js";
+import { getAllGeoPages } from "../src/data/geoData.js";
 
 const ROOT = process.cwd();
 const DIST = join(ROOT, "dist");
@@ -313,6 +314,9 @@ function injectServerH1(html, route) {
   // Ce contenu est visible dans le HTML brut AVANT le rendu JS ; il est
   // remplacé par l'application React au montage (removeSeoShellBody).
   const sections = [];
+  if (route.quickAnswer) {
+    sections.push(`<p style="margin:0 0 18px;padding:14px 16px;background:#fffaf0;border:1px solid #ded4cc;border-radius:12px;color:#374151">${esc(route.quickAnswer)}</p>`);
+  }
   if (route.pointsForts?.length) {
     sections.push(`<h2 style="font-size:1.35rem;margin:26px 0 10px;color:#6b5d34">Points clés du traitement</h2><ul style="margin:0 0 18px;padding-left:22px">${route.pointsForts
       .map((p) => `<li style="margin:6px 0">${esc(p)}</li>`)
@@ -758,6 +762,34 @@ function buildRouteCatalog({ posts, competences, technologies, tagSlugs }) {
       type: "website",
     });
   }
+
+  // Pages géo (usine à pages : pays × compétences, pays × filières, hubs pays)
+  for (const page of getAllGeoPages()) {
+    routes.push({
+      path: page.path,
+      title: page.title,
+      description: page.description,
+      h1: page.h1,
+      intro: page.intro || page.quickAnswer || "",
+      // Contenu statique pour les crawlers LLM
+      pointsForts: page.pointsForts || [],
+      deroule: page.deroule || [],
+      faq: page.faq || [],
+      quickAnswer: page.quickAnswer || "",
+      type: "website",
+    });
+  }
+  // Index des hubs pays
+  routes.push({
+    path: "/pays",
+    title: "Soins dentaires à Dakar pour les patients de la sous-région | DABIA",
+    description:
+      "La Clinique DABIA à Dakar accueille les patients d'Afrique de l'Ouest, d'Afrique centrale et de la diaspora : devis clair, planning de séjour et suivi après le retour.",
+    h1: "Soins dentaires à Dakar pour les patients de la sous-région",
+    intro:
+      "De nombreux patients d'Afrique de l'Ouest, d'Afrique centrale et de la diaspora choisissent la Clinique DABIA à Dakar pour leurs soins dentaires.",
+    type: "website",
+  });
 
   for (const post of posts) {
     const competenceLinks = competenceLinksForPost(post);
