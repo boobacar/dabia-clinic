@@ -102,7 +102,7 @@ export default function BlogPostShell() {
                     <Link
                       key={tag}
                       to={`/blog/tag/${slugify(tag)}`}
-                      className="px-2 py-1 bg-gray-100 rounded-full hover:bg-[#bb2988] hover:text-white transition"
+                      className="blog-tag"
                     >
                       #{tag}
                     </Link>

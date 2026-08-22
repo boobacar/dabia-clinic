@@ -797,7 +797,7 @@ const CompetenceDetail = () => {
                       {(p.tags || []).slice(0, 3).map((t) => (
                         <span
                           key={t}
-                          className="px-2 py-0.5 bg-gray-100 rounded-full"
+                          className="blog-tag blog-tag--soft blog-tag--sm"
                         >
                           #{t}
                         </span>

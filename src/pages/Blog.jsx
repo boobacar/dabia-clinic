@@ -151,7 +151,7 @@ export default function Blog() {
                       <Link
                         key={t}
                         to={`/blog/tag/${slugify(t)}`}
-                        className="px-2 py-1 bg-gray-100 rounded-full hover:bg-gray-200 transition"
+                        className="blog-tag blog-tag--soft"
                       >
                         #{t}
                       </Link>
@@ -211,7 +211,7 @@ export default function Blog() {
               {TAGS.map((t) => (
                 <span
                   key={t}
-                  className="px-2 py-1 bg-gray-100 rounded-full text-xs"
+                  className="blog-tag blog-tag--soft blog-tag--sm"
                 >
                   #{t}
                 </span>

@@ -572,7 +572,7 @@ export default function BlogPost({ hideHeader = false }) {
                     <Link
                       key={t}
                       to={`/blog/tag/${slugify(t)}`}
-                      className="px-2 py-1 bg-gray-100 rounded-full hover:bg-[#bb2988] hover:text-white transition"
+                      className="blog-tag"
                     >
                       #{t}
                     </Link>

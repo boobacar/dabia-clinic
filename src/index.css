@@ -248,6 +248,30 @@ main, body > #root > section { color: var(--ink); }
 .gradient-card, .glow-hover, .wow-tilt { transform: none; box-shadow: none; }
 .gradient-card::before { display: none; }
 .callout { padding: 14px 16px; border-left: 3px solid var(--magenta); background: var(--sand-light); }
+
+/* Pills de tags (blog, articles, fiches) — centrage vertical garanti par flexbox.
+   Remplace les classes Tailwind px/py/bg-* qui, combinées au min-height:44px global
+   des <a>, collaient le texte en haut de la pilule (rendu "pas net"). */
+.blog-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 5px 14px;
+  border-radius: 999px;
+  background: var(--magenta);
+  color: var(--white);
+  font-size: .8rem;
+  font-weight: 650;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s ease, color .2s ease, transform .2s ease;
+}
+.blog-tag:hover { background: var(--magenta-dark); transform: translateY(-1px); }
+.blog-tag--soft { background: var(--sand-light); color: var(--magenta-dark); }
+.blog-tag--soft:hover { background: var(--magenta); color: var(--white); }
+.blog-tag--sm { min-height: 28px; padding: 3px 12px; font-size: .72rem; }
 .before-after-wrapper { touch-action: pan-y; }
 .react-datepicker.dabia-datepicker { overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--paper); box-shadow: var(--shadow-soft); font-family: var(--font-body); }
 .dabia-datepicker .react-datepicker__header { border-bottom: 1px solid var(--line); background: var(--sand-light); }

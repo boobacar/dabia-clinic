@@ -245,11 +245,7 @@ export default function BlogTag() {
                   <Link
                     key={t}
                     to={`/blog/tag/${slugify(t)}`}
-                    className={`px-2 py-1 rounded-full transition ${
-                      slugify(t) === tagSlug
-                        ? "bg-[#bb2988] text-white"
-                        : "bg-gray-100 hover:bg-gray-200"
-                    }`}
+                    className={`blog-tag ${slugify(t) === tagSlug ? "" : "blog-tag--soft"}`}
                   >
                     #{t}
                   </Link>
