@@ -340,6 +340,59 @@ function buildHomeHeroHtml() {
     </section>`;
 }
 
+function isGeoPath(p) {
+  // Pages géo (compétence × pays, hubs pays, secteurs/équipements) dont le LCP
+  // est le hero React-rendu (`p.text-lg` + h1) — on pré-rend ce hero dans le
+  // shell pour que le LCP soit saisi au FCP au lieu d'attendre l'hydratation.
+  return /^\/(soins|pays|secteurs|equipements)(\/|$)/.test(p);
+}
+
+function buildGeoHeroHtml(route, sections) {
+  // Rendu statique du hero des pages géo — strictement identique au composant
+  // React GeoPage (h1 `text-3xl md:text-4xl ... text-[#ad9d64]` et paragraphe
+  // `text-lg text-gray-700 ... leading-relaxed` qui est l'élément LCP). Le CSS
+  // tailwind index-*.css est render-blocking (chargé avant le paint), donc ces
+  // classes sont déjà stylées au premier rendu → le hero est peint au FCP.
+  // React remplace ce shell au montage sans flash ni décalage (mêmes classes).
+  const h1 = esc(route.h1);
+  // Paragraphe lead : le hero React scinde l'intro en plusieurs <p> selon
+  // qu'il y a 1 ou 2 phrases. On garde le contenu défini (intro) en un seul
+  // <p> text-lg — le LCP est ce paragraphe, la taille compte plus que le
+  // découpage exact.
+  const intro = esc(route.intro);
+  const body = route.bodyHtml || sections.join("\n") || "";
+  return `
+    <main style="max-width:880px;margin:40px auto;padding:0 16px;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.5">
+      <h1 class="text-3xl md:text-4xl font-bold text-center text-[#ad9d64] mb-6" style="margin:0 0 24px;color:#ad9d64">${h1}</h1>
+      <p class="text-lg text-gray-700 mb-8 leading-relaxed" style="font-size:1.125rem;line-height:1.625;color:#374151;margin:0 0 32px">${intro}</p>
+      <p style="margin:0;color:#111827">👉 <a href="/rendez-vous">Prendre rendez-vous</a> · <a href="tel:+221777039393">Appeler</a> · <a href="https://wa.me/221777039393">WhatsApp</a></p>
+      ${body}
+      ${compLinksFor(route)}
+      ${coverForRoute(route)}
+    </main>`;
+}
+
+function compLinksFor(route) {
+  return route.competenceLinks?.length
+    ? `<h2 style="font-size:1.35rem;margin:26px 0 10px;color:#6b5d34">Voir aussi</h2><p style="margin:0 0 18px;color:#374151">${route.competenceLinks
+        .map(
+          (c) =>
+            `<a style="color:#bb2988;text-decoration:underline" href="${esc(c.to)}">${esc(c.label)}</a>`,
+        )
+        .join(" · ")}</p>`
+    : "";
+}
+
+function coverForRoute(route) {
+  return route.cover
+    ? `
+      <style>@media (max-width:1023px){#root .seo-cover{display:none}}</style>
+      <div class="seo-cover" style="margin:24px 0 0;border-radius:12px;overflow:hidden;aspect-ratio:16/9;background:#f3f4f6">
+        <img src="${esc(route.cover)}" alt="${esc(route.h1)}" width="1200" height="675" loading="eager" decoding="async" fetchpriority="high" style="display:block;width:100%;height:100%;object-fit:cover" />
+      </div>`
+    : "";
+}
+
 function injectServerH1(html, route) {
   const guard = `    <script data-seo-shell-guard="true">(function(){var html=document.documentElement;html.setAttribute("data-seo-app-loading","true");window.setTimeout(function(){html.removeAttribute("data-seo-app-loading");},8000);}());</script>\n    <style>html[data-seo-app-loading="true"] #root[data-seo-shell-root="true"]{visibility:visible}</style>\n    <noscript><style>#root[data-seo-shell-root="true"]{visibility:visible}</style></noscript>`;
   const guardedHtml = html.replace("</head>", `${guard}\n</head>`);
@@ -424,11 +477,14 @@ function injectServerH1(html, route) {
         <img src="${esc(route.cover)}" alt="${esc(route.h1)}" width="1200" height="675" loading="eager" decoding="async" fetchpriority="high" style="display:block;width:100%;height:100%;object-fit:cover" />
       </div>`
     : "";
+  const geoHero = isGeoPath(route.path) && route.intro ? buildGeoHeroHtml(route, sections) : "";
   const shell = homeHero
     ? `\n    ${homeHero}\n    <main style="max-width:880px;margin:32px auto 0;padding:0 16px;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.5">
       ${route.bodyHtml || sections.join("\n")}
     </main>`
-    : `
+    : geoHero
+      ? geoHero
+      : `
     <main style="max-width:880px;margin:40px auto;padding:0 16px;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.5">
       <h1 style="font-size:clamp(1.8rem,4vw,2.6rem);margin:0 0 12px;color:#6b5d34">${esc(route.h1)}</h1>
       <p style="margin:0 0 18px;color:#374151">${esc(route.intro)}</p>
