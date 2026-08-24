@@ -306,9 +306,51 @@ function injectModulePreloads(html, files = []) {
   return out;
 }
 
+function buildHomeHeroHtml() {
+  // Rendu statique du hero éditorial de la homepage — strictement identique au
+  // composant React HeroSlideshow (mêmes classes, mêmes textes, même image
+  // préchargée à fetchpriority=high). heroImages n'a pas de champ avif, donc le
+  // <picture> ne garde que l'<img> — DOM 100 % déterministe. Au commit React
+  // remplace ce shell par le même contenant sans flash (CSS déjà chargé).
+  return `
+    <section class="editorial-hero" aria-labelledby="home-title">
+      <div class="editorial-hero__copy">
+        <p class="editorial-hero__eyebrow">Clinique dentaire · Sicap Foire, Liberté 6</p>
+        <h1 id="home-title">Comprendre vos soins.<br /><em>Décider sereinement.</em></h1>
+        <p class="editorial-hero__lead">
+          À Dakar, l’équipe DABIA vous reçoit pour les soins du quotidien,
+          les urgences et les traitements qui demandent un vrai temps d’explication.
+        </p>
+        <div class="editorial-hero__actions">
+          <a href="/rendez-vous" class="btn-cta">Prendre rendez-vous</a>
+          <a href="/urgence-dentaire-dakar" class="btn-secondary">J’ai une urgence</a>
+        </div>
+        <div class="editorial-hero__proof" aria-label="Horaires d’ouverture">
+          <span><strong>Lun–Jeu</strong> 9h–16h30</span>
+          <span><strong>Vendredi</strong> 9h–13h · 15h–16h30</span>
+          <span><strong>Samedi</strong> 9h–14h</span>
+        </div>
+      </div>
+      <figure class="editorial-hero__media">
+        <picture>
+          <img src="/hero4.webp" srcset="/hero4-mobile.webp 640w, /hero4.webp 1600w" sizes="(min-width: 900px) 46vw, 100vw" alt="Accueil de la Clinique Dentaire DABIA à Dakar" width="1600" height="900" decoding="sync" fetchpriority="high" loading="eager" />
+        </picture>
+        <figcaption>Un lieu de soin pensé pour accueillir, écouter et expliquer.</figcaption>
+      </figure>
+    </section>`;
+}
+
 function injectServerH1(html, route) {
   const guard = `    <script data-seo-shell-guard="true">(function(){var html=document.documentElement;html.setAttribute("data-seo-app-loading","true");window.setTimeout(function(){html.removeAttribute("data-seo-app-loading");},8000);}());</script>\n    <style>html[data-seo-app-loading="true"] #root[data-seo-shell-root="true"]{visibility:visible}</style>\n    <noscript><style>#root[data-seo-shell-root="true"]{visibility:visible}</style></noscript>`;
   const guardedHtml = html.replace("</head>", `${guard}\n</head>`);
+
+  // ── LCP homepage : pré-rendre le VRAI hero éditorial (celui que HeroSlideshow
+  // rend côté client) pour qu'il soit peint au FCP au lieu d'attendre l'hydratation.
+  // Le markup est identique au composant React (mêmes classes .editorial-hero,
+  // même H1, même <img> préchargé) → au commit React remplace le shell sans
+  // flash ni décalage (le CSS index-*.css, render-blocking, est déjà chargé).
+  // heroImages n'a pas de champ avif → le <picture> ne garde que l'<img>.
+  const homeHero = route.path === "/" ? buildHomeHeroHtml() : "";
 
   // ── Contenu statique riche pour les crawlers LLM (GPTBot, ClaudeBot…) ──
   // Ce contenu est visible dans le HTML brut AVANT le rendu JS ; il est
@@ -382,7 +424,11 @@ function injectServerH1(html, route) {
         <img src="${esc(route.cover)}" alt="${esc(route.h1)}" width="1200" height="675" loading="eager" decoding="async" fetchpriority="high" style="display:block;width:100%;height:100%;object-fit:cover" />
       </div>`
     : "";
-  const shell = `
+  const shell = homeHero
+    ? `\n    ${homeHero}\n    <main style="max-width:880px;margin:32px auto 0;padding:0 16px;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.5">
+      ${route.bodyHtml || sections.join("\n")}
+    </main>`
+    : `
     <main style="max-width:880px;margin:40px auto;padding:0 16px;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.5">
       <h1 style="font-size:clamp(1.8rem,4vw,2.6rem);margin:0 0 12px;color:#6b5d34">${esc(route.h1)}</h1>
       <p style="margin:0 0 18px;color:#374151">${esc(route.intro)}</p>
