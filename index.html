@@ -15,10 +15,14 @@
     <meta name="robots" content="index, follow" />
     <!-- canonical is set per route via React Seo; avoid a global root canonical here -->
 
-    <!-- Typographie éditoriale : serif de titres + sans humaniste, chargées en swap -->
+    <!-- Typographie éditoriale : serif de titres + sans humaniste, chargées en swap.
+         Chargées de façon ASYNC (non render-blocking) : textes peints en fallback
+         puis swapés → retire ~1s de render-blocking sur toutes les pages. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,560&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,560&family=Source+Sans+3:wght@400;600;700&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,560&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,560&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" /></noscript>
 
     <!-- Préconnexion anticipée aux domaines tiers critiques -->
     <link rel="preconnect" href="https://www.googletagmanager.com" />
