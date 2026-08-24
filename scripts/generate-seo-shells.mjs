@@ -349,27 +349,24 @@ function isGeoPath(p) {
 
 function buildGeoHeroHtml(route, sections) {
   // Rendu statique du hero des pages géo — strictement identique au composant
-  // React GeoPage (h1 `text-3xl md:text-4xl ... text-[#ad9d64]` et paragraphe
-  // `text-lg text-gray-700 ... leading-relaxed` qui est l'élément LCP). Le CSS
+  // React GeoPage (conteneur `page-shell px-4 max-w-4xl mx-auto`, h1
+  // `text-3xl md:text-4xl ... text-[#ad9d64] mb-6`, paragraphe
+  // `text-lg text-gray-700 mb-8 leading-relaxed` qui est l'élément LCP). Le CSS
   // tailwind index-*.css est render-blocking (chargé avant le paint), donc ces
-  // classes sont déjà stylées au premier rendu → le hero est peint au FCP.
-  // React remplace ce shell au montage sans flash ni décalage (mêmes classes).
+  // classes sont déjà stylées au premier rendu → le hero est peint au FCP et
+  // React le remplace au montage sans flash ni décalage (mêmes classes).
   const h1 = esc(route.h1);
-  // Paragraphe lead : le hero React scinde l'intro en plusieurs <p> selon
-  // qu'il y a 1 ou 2 phrases. On garde le contenu défini (intro) en un seul
-  // <p> text-lg — le LCP est ce paragraphe, la taille compte plus que le
-  // découpage exact.
   const intro = esc(route.intro);
   const body = route.bodyHtml || sections.join("\n") || "";
   return `
-    <main style="max-width:880px;margin:40px auto;padding:0 16px;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.5">
-      <h1 class="text-3xl md:text-4xl font-bold text-center text-[#ad9d64] mb-6" style="margin:0 0 24px;color:#ad9d64">${h1}</h1>
-      <p class="text-lg text-gray-700 mb-8 leading-relaxed" style="font-size:1.125rem;line-height:1.625;color:#374151;margin:0 0 32px">${intro}</p>
+    <section class="page-shell px-4 max-w-4xl mx-auto">
+      <h1 class="text-3xl md:text-4xl font-bold text-center text-[#ad9d64] mb-6">${h1}</h1>
+      <p class="text-lg text-gray-700 mb-8 leading-relaxed">${intro}</p>
       <p style="margin:0;color:#111827">👉 <a href="/rendez-vous">Prendre rendez-vous</a> · <a href="tel:+221777039393">Appeler</a> · <a href="https://wa.me/221777039393">WhatsApp</a></p>
       ${body}
       ${compLinksFor(route)}
       ${coverForRoute(route)}
-    </main>`;
+    </section>`;
 }
 
 function compLinksFor(route) {
