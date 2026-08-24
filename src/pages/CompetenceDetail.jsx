@@ -504,7 +504,7 @@ const CompetenceDetail = () => {
     <motion.section
       className="page-shell px-4 max-w-4xl mx-auto"
       variants={pageVariants}
-      initial="initial"
+      initial={false}
       animate="animate"
       exit="exit"
     >

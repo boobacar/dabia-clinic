@@ -47,7 +47,7 @@ export function GeoPaysIndex() {
     <motion.section
       className="page-shell px-4 max-w-5xl mx-auto"
       variants={pageVariants}
-      initial="initial"
+      initial={false}
       animate="animate"
       exit="exit"
     >
@@ -246,7 +246,7 @@ export default function GeoPage() {
     <motion.section
       className="page-shell px-4 max-w-4xl mx-auto"
       variants={pageVariants}
-      initial="initial"
+      initial={false}
       animate="animate"
       exit="exit"
     >
