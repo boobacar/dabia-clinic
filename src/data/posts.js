@@ -3960,7 +3960,9 @@ export const POSTS = [
 
   {
     slug: "detartrage-preventif-dakar-investissement",
-    title: "Le détartrage préventif : Pourquoi c'est le soin le plus rentable",
+    title: "Détartrage préventif à Dakar : pourquoi le faire chaque année",
+    seoTitle:
+      "Détartrage préventif à Dakar : pourquoi le faire chaque année | DABIA",
     description:
       "Pourquoi faire un détartrage tous les ans ? Ce soin simple vous évite des traitements coûteux et douloureux. Explications.",
     date: "2026-01-20",

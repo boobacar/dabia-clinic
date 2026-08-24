@@ -46,6 +46,8 @@ const competences = [
   },
   {
     titre: "Orthodontie",
+    seoTitle:
+      "Orthodontiste à Dakar : bagues, aligneurs et rendez-vous | Clinique Dentaire DABIA",
     description:
       "L’orthodontie est la spécialité qui corrige les malpositions des dents et des mâchoires pour améliorer la fonction et l’esthétique du sourire. Elle utilise des appareils fixes (comme les bagues) ou amovibles (comme les aligneurs transparents - Invisalign). Ces traitements favorisent une bonne occlusion et facilitent l’hygiène bucco-dentaire. L’orthodontie s’adresse aussi bien aux enfants qu’aux adultes.",
     image: orthodontie,

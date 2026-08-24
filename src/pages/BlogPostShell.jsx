@@ -32,7 +32,7 @@ export default function BlogPostShell() {
     <>
       <section className="page-shell px-4 max-w-7xl mx-auto">
         <Seo
-          title={post.title}
+          title={post.seoTitle || post.title}
           description={post.description}
           url={canonical}
           canonical={canonical}

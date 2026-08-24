@@ -620,6 +620,12 @@ async function readCompetences() {
   );
 }
 
+// Réécritures de titres par compétence (boucle GSC hebdo) — mêmes valeurs que seoTitle dans competences.js
+const COMPETENCE_TITLE_OVERRIDES = {
+  orthodontie:
+    "Orthodontiste à Dakar : bagues, aligneurs et rendez-vous | Clinique Dentaire DABIA",
+};
+
 async function readTechnologies() {
   const src = await readFileSafe(TECHNOLOGIES_PATH);
   return Array.from(src.matchAll(/slug:\s*"([^"]+)"[\s\S]*?titre:\s*"([^"]+)"/g)).map(
@@ -819,7 +825,9 @@ function buildRouteCatalog({ posts, competences, technologies, tagSlugs }) {
     const content = competenceContent[item.slug] || {};
     routes.push({
       path: `/competences/${item.slug}`,
-      title: `${item.title} à Dakar | Clinique Dentaire DABIA`,
+      title:
+        COMPETENCE_TITLE_OVERRIDES[item.slug] ||
+        `${item.title} à Dakar | Clinique Dentaire DABIA`,
       description: `${item.title} à Dakar : indications, bénéfices et prise en charge à la Clinique Dentaire DABIA.`,
       h1: item.title,
       intro:

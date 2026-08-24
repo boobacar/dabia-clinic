@@ -52,6 +52,8 @@ const competencesData = {
   },
   orthodontie: {
     titre: "Orthodontie",
+    seoTitle:
+      "Orthodontiste à Dakar : bagues, aligneurs et rendez-vous | Clinique Dentaire DABIA",
     description:
       "Correction des malpositions dentaires et des mâchoires (aligneurs transparents, brackets) pour une bonne occlusion, une meilleure hygiène et un sourire aligné.",
     image: orthodontie,
@@ -507,7 +509,7 @@ const CompetenceDetail = () => {
       exit="exit"
     >
       <Seo
-        title={`${competence.titre} à Dakar`}
+        title={competence.seoTitle || `${competence.titre} à Dakar`}
         description={description}
         canonical={url}
         url={url}
