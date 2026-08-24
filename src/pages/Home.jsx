@@ -3,14 +3,17 @@ import { Link } from "react-router-dom";
 import HeroSlideshow from "../components/HeroSlideshow";
 import Seo from "../components/Seo";
 import ClinicIntro from "../components/ClinicIntro";
-import KeyMetrics from "../components/KeyMetrics";
-import StaffPreview from "../components/StaffPreview";
-import CompetencesGrid from "../components/CompetencesGrid";
-import LatestBlogCards from "../components/LatestBlogCards";
-import BeforeAfterGallery from "../components/BeforeAfterGallery";
-import FAQ from "../components/FAQ";
-import AssuranceMarquee from "../components/AssuranceMarquee";
 
+// Sections sous la ligne de flottaison chargées en LAZY : elles ne doivent pas
+// gonfler le bundle critique (index-*.js) qui bloque l'hydratation du hero (LCP).
+// Retirer ~90Ko du shell → hydratation + LCP plus rapides sur toutes les pages.
+const KeyMetrics = React.lazy(() => import("../components/KeyMetrics"));
+const CompetencesGrid = React.lazy(() => import("../components/CompetencesGrid"));
+const StaffPreview = React.lazy(() => import("../components/StaffPreview"));
+const BeforeAfterGallery = React.lazy(() => import("../components/BeforeAfterGallery"));
+const AssuranceMarquee = React.lazy(() => import("../components/AssuranceMarquee"));
+const LatestBlogCards = React.lazy(() => import("../components/LatestBlogCards"));
+const FAQ = React.lazy(() => import("../components/FAQ"));
 const TestimonialsCarousel = React.lazy(() => import("../components/TestimonialsCarousel"));
 const GoogleMapSection = React.lazy(() => import("../components/GoogleMapSection"));
 
@@ -40,7 +43,7 @@ export default function Home() {
     <Seo title="Dentiste à Dakar – RDV rapide, urgence et devis | Clinique DABIA" description="Dentiste à Dakar, Liberté 6 : consultation, urgence, détartrage, implant, orthodontie et esthétique. Appelez ou prenez rendez-vous en ligne rapidement." canonical="https://www.cliniquedentairedabia.com/" url="https://www.cliniquedentairedabia.com/" jsonLd={[{ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqItems.map(item => ({ "@type": "Question", name: item.q, acceptedAnswer: { "@type": "Answer", text: item.a } })) }]} />
     <HeroSlideshow />
     <ClinicIntro />
-    <KeyMetrics />
+    <Suspense fallback={null}><KeyMetrics /></Suspense>
 
     <section className="decision-path section-pad">
       <div className="studio-container">
@@ -53,17 +56,17 @@ export default function Home() {
       </div>
     </section>
 
-    <CompetencesGrid />
-    <StaffPreview />
-    <BeforeAfterGallery />
+    <Suspense fallback={null}><CompetencesGrid /></Suspense>
+    <Suspense fallback={null}><StaffPreview /></Suspense>
+    <Suspense fallback={null}><BeforeAfterGallery /></Suspense>
 
     <section className="insurance-section">
       <div className="studio-container insurance-section__head"><div><p className="section-kicker">Prise en charge</p><h2>Assurances & IPM</h2></div><p>Nous vous aidons à préparer votre dossier à partir d’un devis détaillé.</p><Link to="/infos/assurances" className="text-link">Voir les informations →</Link></div>
-      <AssuranceMarquee className="py-6" speed={45} logos={assuranceLogos} />
+      <Suspense fallback={null}><AssuranceMarquee className="py-6" speed={45} logos={assuranceLogos} /></Suspense>
     </section>
 
-    <LatestBlogCards />
-    <section className="home-faq section-pad"><div className="studio-container home-faq__grid"><div><p className="section-kicker">Avant votre visite</p><h2>Les réponses utiles, sans détour.</h2><p>Pour toute situation urgente ou spécifique, appelez directement l’équipe.</p><a href="tel:+221****9393" className="btn-secondary">Appeler la clinique</a></div><FAQ asJsonLd={false} title="Questions fréquentes" items={faqItems} /></div></section>
+    <Suspense fallback={null}><LatestBlogCards /></Suspense>
+    <section className="home-faq section-pad"><div className="studio-container home-faq__grid"><div><p className="section-kicker">Avant votre visite</p><h2>Les réponses utiles, sans détour.</h2><p>Pour toute situation urgente ou spécifique, appelez directement l’équipe.</p><a href="tel:+221****9393" className="btn-secondary">Appeler la clinique</a></div><Suspense fallback={null}><FAQ asJsonLd={false} title="Questions fréquentes" items={faqItems} /></Suspense></div></section>
     <Suspense fallback={<div className="py-12" aria-hidden="true" />}><TestimonialsCarousel /><GoogleMapSection /></Suspense>
 
     <nav className="seo-pathways" aria-label="Accès directs"><div className="studio-container"><Link to="/dentiste-dakar">Dentiste Dakar</Link><Link to="/cabinet-dentaire-dakar">Cabinet dentaire Dakar</Link><Link to="/clinique-dentaire-dakar">Clinique dentaire Dakar</Link><Link to="/en/dental-clinic-dakar">Dental clinic Dakar (EN)</Link><Link to="/cabinet-dentaire-liberte-6">Liberté 6</Link><Link to="/cabinet-dentaire-vdn">VDN</Link><Link to="/urgence-dentaire-dakar">Urgence dentaire</Link><Link to="/all-competences">Nos compétences</Link><Link to="/infos/assurances">Assurances</Link><Link to="/infos/technologie">Technologie</Link></div></nav>
