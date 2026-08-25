@@ -66,8 +66,8 @@ export default function NAP({ compact = false }) {
           </div>
           <div className="flex gap-2">
             <MdEmail className="w-5 h-5" />
-            <a itemProp="email" href="mailto:cliniquedentairedabia@gmail.com">
-              cliniquedentairedabia@gmail.com
+            <a itemProp="email" href="mailto:contact@cliniquedentairedabia.com">
+              contact@cliniquedentairedabia.com
             </a>
           </div>
         </div>

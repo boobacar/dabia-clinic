@@ -262,8 +262,8 @@ export default function DentisteDakar() {
             transition={{ duration: 0.35, delay: 0.1 }}
           >
             <FaEnvelope className="w-5 h-5 text-[#bb2988]" />
-            <a href="mailto:cliniquedentairedabia@gmail.com">
-              cliniquedentairedabia@gmail.com
+            <a href="mailto:contact@cliniquedentairedabia.com">
+              contact@cliniquedentairedabia.com
             </a>
           </motion.div>
         </div>

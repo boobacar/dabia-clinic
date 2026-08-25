@@ -21,7 +21,7 @@ const Rejoindre = () => {
     const subject = `Candidature : ${formData.poste}`;
     const body = `Nom : ${formData.nom}%0D%0AEmail : ${formData.email}%0D%0APoste souhaité : ${formData.poste}%0D%0A%0D%0AMessage :%0D%0A${formData.message}%0D%0A%0D%0A(CV à joindre manuellement)`;
 
-    const mailtoLink = `mailto:cliniquedentairedabia@gmail.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:contact@cliniquedentairedabia.com?subject=${encodeURIComponent(
       subject
     )}&body=${body}`;
 
