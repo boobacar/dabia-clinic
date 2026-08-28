@@ -114,7 +114,7 @@ export function GeoPaysIndex() {
               Prendre rendez-vous
             </Link>
             <a
-              href="https://wa.me/221774837576?text=Bonjour%2C%20je%20souhaite%20un%20devis%20dentaire%20%C3%A0%20Dakar%20depuis%20l%27%C3%A9tranger."
+              href="https://wa.me/221777039393?text=Bonjour%2C%20je%20souhaite%20un%20devis%20dentaire%20%C3%A0%20Dakar%20depuis%20l%27%C3%A9tranger."
               target="_blank"
               rel="noopener noreferrer"
               className="btn-cta !bg-[#25D366] hover:!bg-[#1da851]"
@@ -438,7 +438,7 @@ export default function GeoPage() {
               Prendre rendez-vous
             </Link>
             <a
-              href="https://wa.me/221774837576?text=Bonjour%2C%20je%20viens%20de%20l%27%C3%A9tranger%20et%20je%20souhaite%20un%20devis%20dentaire%20%C3%A0%20Dakar."
+              href="https://wa.me/221777039393?text=Bonjour%2C%20je%20viens%20de%20l%27%C3%A9tranger%20et%20je%20souhaite%20un%20devis%20dentaire%20%C3%A0%20Dakar."
               target="_blank"
               rel="noopener noreferrer"
               className="btn-cta !bg-[#25D366] hover:!bg-[#1da851]"
