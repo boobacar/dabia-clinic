@@ -401,6 +401,33 @@ ${[...staticXml, ...competencesXml, ...blogXml, ...tagsXml, ...techXml, geoIndex
     `User-agent: *
 Allow: /
 
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
 Sitemap: ${abs("/sitemap.xml")}
 `,
     "utf8"

@@ -2680,6 +2680,7 @@ export const POSTS = [
   {
     slug: "prix-couronne-dentaire-dakar-materiaux-devis",
     title: "Prix d’une couronne dentaire à Dakar : matériaux, étapes et devis",
+    seoTitle: "Couronne dentaire à Dakar : prix, pose, matériaux et devis",
     description:
       "Céramique, zircone, métal-céramique : ce qui influence le coût d’une couronne à Dakar, comment se déroule la pose et quand la préférer à un onlay.",
     date: "2025-08-21",
@@ -3844,8 +3845,9 @@ export const POSTS = [
   {
     slug: "rage-de-dent-remede-grand-mere-dakar",
     title: "Rage de dent : Remèdes de grand-mère vs visite chez le dentiste",
+    seoTitle: "Rage de dent, abcès : remèdes de grand-mère ou dentiste ?",
     description:
-      "Peut-on soigner une rage de dent avec des plantes ? Ce qui marche pour soulager et pourquoi il faut consulter un dentiste à Dakar.",
+      "Rage de dent ou abcès : ce qui marche pour soulager, ce qui ne suffit pas, et pourquoi consulter un dentiste à Dakar rapidement.",
     date: "2026-02-02",
     category: "Urgences",
     tags: [
@@ -3866,6 +3868,10 @@ export const POSTS = [
       {
         q: "Une dent dévitalisée peut-elle refaire mal ?",
         a: "Oui, si elle s'est réinfectée au bout de la racine. Une radio de contrôle est nécessaire.",
+      },
+      {
+        q: "Un abcès dentaire peut-il se soigner avec des remèdes de grand-mère ?",
+        a: "Non : les remèdes maison peuvent calmer la douleur quelques heures, mais l'infection reste. Un abcès se traite par un soin de la racine, un drainage ou une extraction selon le cas, parfois avec un antibiotique prescrit. Consultez rapidement, surtout en cas de gonflement qui s'étend ou de fièvre.",
       },
     ],
   },
