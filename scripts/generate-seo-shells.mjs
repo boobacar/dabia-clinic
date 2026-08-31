@@ -723,6 +723,8 @@ async function readCompetences() {
 const COMPETENCE_TITLE_OVERRIDES = {
   orthodontie:
     "Orthodontiste à Dakar : bagues, aligneurs et rendez-vous | Clinique Dentaire DABIA",
+  "facettes-dentaires":
+    "Facettes dentaires à Dakar : rendu naturel, pose et RDV | Clinique Dentaire DABIA",
 };
 
 async function readTechnologies() {

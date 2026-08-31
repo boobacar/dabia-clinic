@@ -2842,7 +2842,7 @@ export const POSTS = [
   {
     slug: "mal-de-dents-la-nuit-causes-et-que-faire",
     title:
-      "Mal de dents la nuit : causes fréquentes et que faire jusqu’au rendez-vous",
+      "Mal de dents la nuit à Dakar : causes et que faire avant de consulter",
     description:
       "Pulpites, carie profonde, bruxisme, hypersensibilités — gestes utiles, ce qu’il faut éviter et quand consulter.",
     date: "2025-07-31",
@@ -3756,7 +3756,7 @@ export const POSTS = [
 
   {
     slug: "comment-choisir-meilleur-dentiste-dakar",
-    title: "Comment choisir le meilleur dentiste à Dakar pour vos besoins ?",
+    title: "Meilleur dentiste à Dakar : comment choisir et prendre rendez-vous",
     description:
       "Critères essentiels pour trouver un bon cabinet dentaire à Dakar : hygiène, écoute, équipements et localisation.",
     date: "2026-02-10",

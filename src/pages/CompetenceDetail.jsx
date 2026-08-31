@@ -46,6 +46,8 @@ const competencesData = {
   },
   "facettes-dentaires": {
     titre: "Facettes dentaires",
+    seoTitle:
+      "Facettes dentaires à Dakar : rendu naturel, pose et RDV | Clinique Dentaire DABIA",
     description:
       "Fines pellicules en céramique ou composite collées sur la face visible des dents pour corriger couleur, forme, petits défauts d’alignement. Résultat naturel et rapide.",
     image: facette,
