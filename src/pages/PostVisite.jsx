@@ -188,8 +188,8 @@ const PostVisite = () => {
   return (
     <section className="page-shell px-4 max-w-6xl mx-auto">
       <Seo
-        title="Conseils post‑opération – Clinique Dentaire DABIA (Dakar)"
-        description="Recommandations après vos soins dentaires : extraction, chirurgie, implant, détartrage, orthodontie, prothèses."
+        title="Après une extraction dentaire ou une opération : conseils | DABIA"
+        description="Que faire après une extraction de dent de sagesse, une chirurgie ou une opération dentaire : compresses, glace, alimentation, hygiène. Recommandations de la Clinique DABIA (Dakar)."
         canonical="https://www.cliniquedentairedabia.com/infos/post-visite"
         url="https://www.cliniquedentairedabia.com/infos/post-visite"
       />

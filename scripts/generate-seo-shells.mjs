@@ -97,6 +97,94 @@ const STATIC_OVERRIDES = {
       },
     ],
   },
+  "/cabinet-dentaire-mermoz": {
+    title: "Dentiste Mermoz Dakar – Urgences, Implants & Orthodontie | DABIA",
+    description:
+      "Cabinet dentaire proche de Mermoz (Sicap Foire, Liberté 6) : urgences le jour même, détartrage, implants, orthodontie et facettes. Accès facile, RDV en ligne disponible.",
+    h1: "Votre dentiste près de Mermoz",
+    intro:
+      "La Clinique Dentaire DABIA reçoit les habitants de Mermoz, Sicap Foire et des quartiers voisins dans un cadre moderne et apaisant : urgences dentaires, implantologie, orthodontie adulte et enfant, esthétique du sourire. Chaque plan de traitement est expliqué avec transparence, du diagnostic au devis.",
+    faq: [
+      {
+        q: "Où trouver un dentiste à Mermoz ou à proximité ?",
+        a: "La Clinique Dentaire DABIA, située à Sicap Foire (Liberté 6), est à quelques minutes de Mermoz. Accès facile via la VDN ou la Corniche. L'équipe propose urgences, implants, orthodontie et soins esthétiques.",
+      },
+      {
+        q: "Quels sont les tarifs d'une consultation dentaire près de Mermoz ?",
+        a: "Les tarifs varient selon les soins nécessaires. Un devis détaillé est remis après l'examen clinique, avec explication des options et alternatives. Consultez notre guide des tarifs sur le blog.",
+      },
+      {
+        q: "Puis-je avoir un rendez-vous en urgence depuis Mermoz ?",
+        a: "Oui, des créneaux d'urgence sont ouverts chaque jour. Appelez avant de vous déplacer pour être orienté et obtenir un créneau adapté à votre situation.",
+      },
+    ],
+  },
+  "/cabinet-dentaire-fann": {
+    title: "Dentiste Fann Dakar – consultation, urgences et RDV | DABIA",
+    description:
+      "Dentiste proche de Fann, Point E et du Plateau (Sicap Foire, Liberté 6) : consultation, urgences, implants, orthodontie, facettes. Devis clair, rendez-vous rapide.",
+    h1: "Votre dentiste près de Fann",
+    intro:
+      "La Clinique Dentaire DABIA accueille les patients de Fann, Point E et du Plateau à Sicap Foire (Liberté 6). Notre équipe propose des soins dentaires complets : de la consultation de routine aux traitements avancés (implants, orthodontie, facettes), avec un accompagnement personnalisé et un devis clair.",
+    faq: [
+      {
+        q: "Où trouver un dentiste à Fann ?",
+        a: "La Clinique Dentaire DABIA est à quelques minutes de Fann, à Sicap Foire (Liberté 6). Consultations, urgences dentaires, implants, orthodontie et soins esthétiques avec devis transparent.",
+      },
+    ],
+  },
+  "/cabinet-dentaire-almadies": {
+    title: "Dentiste Almadies Dakar – Cabinet dentaire proche, RDV rapide | DABIA",
+    description:
+      "Dentiste proche des Almadies à Dakar (Liberté 6, Sicap Foire) : urgence, consultation, implants, orthodontie, blanchiment. Accès facile par la VDN. RDV en ligne ou au 77 703 93 93.",
+    h1: "Votre dentiste près des Almadies",
+    intro:
+      "La Clinique Dentaire DABIA accueille les patients des Almadies, de Ngor et d'Ouakam à quelques minutes en voiture. Située à Sicap Foire (Liberté 6), facilement accessible par la VDN, notre équipe propose des soins dentaires complets : de la consultation de routine à l'implantologie avancée, en passant par l'orthodontie et l'esthétique du sourire.",
+    faq: [
+      {
+        q: "Y a-t-il un bon dentiste proche des Almadies ?",
+        a: "Oui, la Clinique Dentaire DABIA est située à Sicap Foire (Liberté 6), à quelques minutes en voiture des Almadies. L'équipe prend en charge urgences, implants, orthodontie et esthétique avec un plateau technique moderne.",
+      },
+      {
+        q: "Puis-je prendre rendez-vous rapidement depuis les Almadies ?",
+        a: "Absolument. Les créneaux sont disponibles en ligne ou par téléphone, avec des plages adaptées aux urgences sous 24h. La clinique est facilement accessible depuis la VDN et la Corniche.",
+      },
+      {
+        q: "Quels soins sont proposés pour les résidents des Almadies ?",
+        a: "Consultation, bilan complet, détartrage, traitement des caries, implants, prothèses, facettes, blanchiment, orthodontie (aligneurs/bagues) et urgences dentaires. Devis clair remis après examen.",
+      },
+    ],
+  },
+  "/cabinet-dentaire-plateau": {
+    title: "Dentiste Plateau Dakar – Consultation, Urgences & Implants | DABIA",
+    description:
+      "Dentiste proche du Plateau de Dakar (Liberté 6, Sicap Foire) : consultation, urgence, implants, orthodontie, esthétique. Créneaux adaptés aux professionnels. RDV en ligne.",
+    h1: "Votre dentiste près du Plateau",
+    intro:
+      "Vous travaillez au Plateau de Dakar et cherchez un dentiste à proximité ? La Clinique Dentaire DABIA, située à Sicap Foire (Liberté 6), est accessible en quelques minutes depuis le Plateau : consultations de routine, urgences dentaires, implantologie, orthodontie, facettes et blanchiment, avec des créneaux adaptés et un devis transparent.",
+    faq: [
+      {
+        q: "Existe-t-il un dentiste au Plateau de Dakar ?",
+        a: "La Clinique Dentaire DABIA est idéalement située à Sicap Foire (Liberté 6), à moins de 15 minutes du Plateau. Nous accueillons les professionnels travaillant au Plateau pour des consultations sur rendez-vous, avec des créneaux adaptés aux emplois du temps chargés.",
+      },
+      {
+        q: "Puis-je venir pendant ma pause déjeuner ?",
+        a: "Oui, nous proposons des créneaux entre 9h et 16h30. Pour une consultation rapide (bilan, détartrage, urgence), prévoyez environ 45 minutes. Appelez pour réserver le créneau qui vous convient.",
+      },
+      {
+        q: "Quels soins proposez-vous aux travailleurs du Plateau ?",
+        a: "Consultation et bilan complet, détartrage, traitement des caries, urgences, implants, couronnes, facettes et blanchiment. Devis clair et transparent remis après examen. Nous accompagnons aussi les dossiers de mutuelle.",
+      },
+    ],
+  },
+  "/infos/post-visite": {
+    title: "Après une extraction dentaire ou une opération : conseils | DABIA",
+    description:
+      "Que faire après une extraction de dent de sagesse, une chirurgie ou une opération dentaire : compresses, glace, alimentation, hygiène. Recommandations de la Clinique DABIA (Dakar).",
+    h1: "Conseils après visite (Post-opération)",
+    intro:
+      "Ces recommandations vous permettent de bien récupérer après vos soins dentaires à la Clinique Dentaire DABIA : extraction, chirurgie, implant, détartrage, orthodontie, prothèses. En cas de doute, n'hésitez pas à nous contacter.",
+  },
   "/en/dental-clinic-dakar": {
     title: "Dentist Near Me in Dakar — Accepting New Patients | DABIA",
     description:
