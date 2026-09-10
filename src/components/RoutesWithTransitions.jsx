@@ -47,6 +47,7 @@ const LocaliteVdn = lazy(() => import("../pages/LocaliteVdn"));
 const Galerie = lazy(() => import("../pages/Galerie"));
 const BlogTag = lazy(() => import("../pages/BlogTag"));
 const GeoPage = lazy(() => import("../pages/GeoPage"));
+const TourismeDentaireDakar = lazy(() => import("../pages/TourismeDentaireDakar"));
 const NotFound = lazy(() => import("../pages/NotFound"));
 
 export default function RoutesWithTransitions() {
@@ -137,6 +138,10 @@ export default function RoutesWithTransitions() {
       <Route path="/pays/:countrySlug" element={<GeoPage />} />
       <Route path="/soins/:geoSlug" element={<GeoPage />} />
       <Route path="/parcours/:filiereSlug" element={<GeoPage />} />
+      <Route
+        path="/tourisme-dentaire-dakar"
+        element={<TourismeDentaireDakar />}
+      />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

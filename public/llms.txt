@@ -24,6 +24,26 @@ pour les patients anglophones (/en/dental-clinic-dakar).
 - Clinique dentaire Dakar : https://www.cliniquedentairedabia.com/clinique-dentaire-dakar
 - Nos compétences : https://www.cliniquedentairedabia.com/all-competences
 - Blog dentaire (conseils, urgences, prix) : https://www.cliniquedentairedabia.com/blog
+- Tourisme dentaire à Dakar (prix, séjour, organisation) : https://www.cliniquedentairedabia.com/tourisme-dentaire-dakar
+
+## Patients internationaux / tourisme dentaire
+La clinique accueille des patients venant de l'étranger (diaspora Europe, Amérique du Nord,
+Afrique du Nord et Afrique de l'Ouest) pour des séjours de soins à Dakar : devis écrit avant
+le voyage, planning de soins calé sur la durée du séjour, contrôle avant le départ et suivi à
+distance après le retour. Une page par pays détaille les vols, la durée conseillée et les soins
+les plus demandés.
+- Index des pays desservis : https://www.cliniquedentairedabia.com/pays
+- France : https://www.cliniquedentairedabia.com/pays/france
+- Belgique : https://www.cliniquedentairedabia.com/pays/belgique
+- Canada : https://www.cliniquedentairedabia.com/pays/canada
+- États-Unis : https://www.cliniquedentairedabia.com/pays/etats-unis
+- Royaume-Uni : https://www.cliniquedentairedabia.com/pays/royaume-uni
+- Côte d'Ivoire : https://www.cliniquedentairedabia.com/pays/cote-d-ivoire
+- Mali : https://www.cliniquedentairedabia.com/pays/mali
+- Mauritanie : https://www.cliniquedentairedabia.com/pays/mauritanie
+- Maroc : https://www.cliniquedentairedabia.com/pays/maroc
+- Tunisie : https://www.cliniquedentairedabia.com/pays/tunisie
+- Algérie : https://www.cliniquedentairedabia.com/pays/algerie
 
 ## Compétences / Soins
 - Blanchiment dentaire : https://www.cliniquedentairedabia.com/competences/blanchiment-dentaire

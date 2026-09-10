@@ -529,7 +529,7 @@ export const POSTS = [
   },
   {
     slug: "implant-dentaire-dakar-etapes-risques-reussite-2026",
-    title: "Implant dentaire à Dakar : étapes, risques et taux de réussite",
+    title: "Implant dentaire : étapes, risques et taux de réussite (guide Dakar 2026)",
     description:
       "Bilan osseux, pose, cicatrisation, prothèse finale : un guide pratique pour comprendre la pose d’implant dentaire à Dakar en 2026.",
     date: "2026-04-10",
@@ -2472,9 +2472,9 @@ export const POSTS = [
   {
     slug: "blanchiment-maison-risques-dents-senegal",
     title:
-      "Charbon, citron, poudre de brique : les risques du blanchiment maison au Sénégal",
+      "Bicarbonate, citron, charbon végétal : les dangers du blanchiment maison",
     description:
-      "Produits maison ou réseaux sociaux : ce que ça fait vraiment sur l’émail, comment éclaircir sans abîmer vos dents à Dakar.",
+      "Bicarbonate de soude et citron, charbon végétal, poudre de brique : ce que ces recettes font vraiment à l'émail et comment éclaircir sans abîmer vos dents.",
     date: "2025-10-08",
     category: "Esthétique",
     tags: [
@@ -3132,9 +3132,9 @@ export const POSTS = [
   },
   {
     slug: "diabete-et-sante-buccale-risques-prevention-dakar",
-    title: "Diabète et santé bucco-dentaire : risques et prévention",
+    title: "Diabète et soins dentaires : extraction, anesthésie et prévention des risques",
     description:
-      "Lien parodonte–diabète, cicatrisation, infections : protocole de prévention et suivi en cabinet.",
+      "Diabète et dents : risques d'infection, anesthésie, extraction et cicatrisation. Protocole de prévention et de suivi de la Clinique DABIA à Dakar.",
     date: "2025-06-04",
     category: "Prévention",
     tags: ["diabète et dents", "parodontite diabétique", "prévention dakar"],
@@ -3727,9 +3727,9 @@ export const POSTS = [
   {
     slug: "urgence-dentaire-dakar-qui-appeler",
     title:
-      "Urgence dentaire à Dakar : Qui appeler et quoi faire en attendant ?",
+      "Dentiste de garde à Dakar : qui appeler la nuit ou le week-end",
     description:
-      "Douleur insupportable, dent cassée ou abcès ? Guide de survie pour gérer une urgence dentaire à Dakar avant votre rendez-vous.",
+      "Douleur la nuit, dent cassée ou abcès un jour férié : qui appeler à Dakar, les réflexes utiles en attendant et quand partir aux urgences.",
     date: "2026-02-12",
     category: "Urgences",
     tags: [

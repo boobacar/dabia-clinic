@@ -1,8 +1,8 @@
 // ------------------------------------------------------------------
 //  src/data/geoData.js — Usine à pages géographiques (Clinique DABIA)
 //
-//  Génère ~560 pages : compétence × pays (352), filière × pays (192),
-//  16 hubs pays — toutes au service de l'angle VÉRIDIQUE :
+//  Génère 1190 pages : compétence × pays (748), filière × pays (408),
+//  34 hubs pays — toutes au service de l'angle VÉRIDIQUE :
 //  « soins dentaires à Dakar pour les patients venant de [pays] »
 //  (tourisme dentaire médical + diaspora + patients des régions).
 //
@@ -208,6 +208,237 @@ export const GEO_COUNTRIES = [
       "Vol direct Paris – Dakar (environ 5 h 45), assuré quotidiennement par Air France et Air Sénégal. De nombreuses autres villes françaises sont reliées en saison.",
     hubExtra:
       "La diaspora française est l'une des premières provenances de la Clinique DABIA : soins complets à des tarifs clairs, devis en FCFA avant le voyage et suivi à distance après le retour.",
+  },
+
+  // ---------------------------------------------------------------
+  //  Diaspora Europe / Amérique du Nord (fort volume de recherche,
+  //  impressions GSC déjà mesurées sur le site)
+  // ---------------------------------------------------------------
+  {
+    slug: "belgique",
+    name: "Belgique",
+    prep: "en",
+    gen: "de",
+    capital: "Bruxelles",
+    flag: "🇧🇪",
+    volInfo:
+      "Il n'y a pas de vol direct quotidien Bruxelles – Dakar : comptez une escale (Paris, Madrid ou Casablanca), soit environ 9 à 12 h de voyage selon la correspondance.",
+    hubExtra:
+      "La communauté sénégalaise de Belgique est l'une des plus importantes d'Europe : de nombreux patients regroupent leurs soins dentaires pendant un séjour au pays, avec un devis établi avant le départ.",
+  },
+  {
+    slug: "suisse",
+    name: "Suisse",
+    prep: "en",
+    gen: "de",
+    capital: "Genève",
+    flag: "🇨🇭",
+    volInfo:
+      "Genève – Dakar se fait en général avec une escale (Paris, Madrid ou Casablanca) : environ 9 à 13 h de voyage porte à porte.",
+    hubExtra:
+      "Les patients de Suisse bénéficient d'un devis détaillé en FCFA avant le voyage et d'un planning de soins calé sur la durée de leur séjour à Dakar.",
+  },
+  {
+    slug: "royaume-uni",
+    name: "Royaume-Uni",
+    prep: "au",
+    gen: "du",
+    capital: "Londres",
+    flag: "🇬🇧",
+    volInfo:
+      "Il n'y a pas de vol direct régulier Londres – Dakar : prévoyez une escale (Paris, Casablanca ou Lisbonne), soit environ 10 à 13 h de voyage.",
+    hubExtra:
+      "La clinique accueille les patients du Royaume-Uni en français et en anglais : devis par écrit avant le voyage, planning confirmé et suivi à distance après le retour.",
+  },
+  {
+    slug: "canada",
+    name: "Canada",
+    prep: "au",
+    gen: "du",
+    capital: "Montréal",
+    flag: "🇨🇦",
+    volInfo:
+      "Montréal – Dakar se fait le plus souvent avec une escale (Paris, Bruxelles ou Casablanca) : comptez 14 à 18 h de voyage au total.",
+    hubExtra:
+      "Depuis le Canada, les soins dentaires se planifient sur un séjour de deux à quatre semaines : la clinique regroupe les rendez-vous pour limiter les déplacements.",
+  },
+  {
+    slug: "etats-unis",
+    name: "États-Unis",
+    prep: "aux",
+    gen: "des",
+    capital: "New York",
+    flag: "🇺🇸",
+    volInfo:
+      "Depuis New York, un vol direct vers Dakar est proposé selon la saison ; sinon une escale via Paris ou Casablanca est nécessaire (environ 8 h en direct, 11 à 14 h avec escale).",
+    hubExtra:
+      "La clinique reçoit les patients des États-Unis en français et en anglais, avec devis écrit en FCFA avant le voyage et compte-rendu remis pour le retour.",
+  },
+  {
+    slug: "italie",
+    name: "Italie",
+    prep: "en",
+    gen: "de",
+    genName: "d'Italie",
+    capital: "Rome",
+    flag: "🇮🇹",
+    volInfo:
+      "Rome ou Milan – Dakar demande presque toujours une escale (Casablanca, Paris ou Madrid) : comptez 9 à 13 h de voyage.",
+    hubExtra:
+      "Les patients italiens et la diaspora sénégalaise d'Italie viennent à Dakar pour des soins complets : devis clair avant le départ et suivi après le retour à Rome.",
+  },
+  {
+    slug: "espagne",
+    name: "Espagne",
+    prep: "en",
+    gen: "de",
+    genName: "d'Espagne",
+    capital: "Madrid",
+    flag: "🇪🇸",
+    volInfo:
+      "Madrid – Dakar se fait avec une escale (Casablanca ou Lisbonne) : environ 8 à 11 h de voyage.",
+    hubExtra:
+      "Depuis l'Espagne, la clinique organise le séjour de soins : devis avant le voyage, planning adapté au séjour et suivi à distance après le retour.",
+  },
+  {
+    slug: "allemagne",
+    name: "Allemagne",
+    prep: "en",
+    gen: "de",
+    genName: "d'Allemagne",
+    capital: "Francfort",
+    flag: "🇩🇪",
+    volInfo:
+      "Francfort ou Berlin – Dakar avec une escale (Paris, Bruxelles ou Casablanca) : environ 10 à 13 h de voyage.",
+    hubExtra:
+      "Les patients d'Allemagne bénéficient d'un devis détaillé par écrit avant le voyage, d'un planning regroupé sur leur séjour et d'un suivi après le retour.",
+  },
+  {
+    slug: "pays-bas",
+    name: "Pays-Bas",
+    prep: "aux",
+    gen: "des",
+    genName: "des Pays-Bas",
+    capital: "Amsterdam",
+    flag: "🇳🇱",
+    volInfo:
+      "Amsterdam – Dakar avec une escale (Paris, Madrid ou Casablanca) : environ 9 à 12 h de voyage.",
+    hubExtra:
+      "Depuis les Pays-Bas, les soins dentaires se planifient sur un séjour : la clinique confirme le planning et le devis avant le départ.",
+  },
+  {
+    slug: "portugal",
+    name: "Portugal",
+    prep: "au",
+    gen: "du",
+    capital: "Lisbonne",
+    flag: "🇵🇹",
+    volInfo:
+      "Lisbonne – Dakar avec une escale (Casablanca) ou un vol saisonnier : environ 8 à 11 h de voyage.",
+    hubExtra:
+      "La clinique accueille les patients du Portugal en français et en portugais, avec devis en FCFA avant le voyage et suivi après le retour.",
+  },
+  {
+    slug: "luxembourg",
+    name: "Luxembourg",
+    prep: "au",
+    gen: "du",
+    capital: "Luxembourg",
+    flag: "🇱🇺",
+    volInfo:
+      "Depuis Luxembourg, le trajet passe par une escale (Paris, Bruxelles ou Porto) : environ 9 à 12 h jusqu'à Dakar.",
+    hubExtra:
+      "Les patients du Luxembourg regroupent leurs soins dentaires pendant un séjour à Dakar : devis écrit avant le départ et suivi à distance ensuite.",
+  },
+
+  // ---------------------------------------------------------------
+  //  Afrique du Nord, Afrique centrale et Afrique anglophone
+  // ---------------------------------------------------------------
+  {
+    slug: "maroc",
+    name: "Maroc",
+    prep: "au",
+    gen: "du",
+    capital: "Casablanca",
+    flag: "🇲🇦",
+    volInfo:
+      "Vols directs Casablanca – Dakar (environ 3 h 30), assurés plusieurs fois par semaine.",
+    hubExtra:
+      "Depuis le Maroc, la Clinique DABIA reçoit les patients en français et en arabe pour des soins planifiés : devis détaillé avant le voyage et planning calé sur le séjour.",
+  },
+  {
+    slug: "algerie",
+    name: "Algérie",
+    prep: "en",
+    gen: "de",
+    genName: "d'Algérie",
+    capital: "Alger",
+    flag: "🇩🇿",
+    volInfo:
+      "Alger – Dakar avec une escale (Casablanca ou Tunis) : comptez environ 8 à 11 h de voyage.",
+    hubExtra:
+      "Les patients d'Algérie viennent à Dakar pour des soins complets (implants, prothèses, esthétique) avec devis en FCFA avant le départ et suivi après le retour.",
+  },
+  {
+    slug: "tunisie",
+    name: "Tunisie",
+    prep: "en",
+    gen: "de",
+    capital: "Tunis",
+    flag: "🇹🇳",
+    volInfo:
+      "Tunis – Dakar avec une escale (Casablanca ou Istanbul) : environ 9 à 13 h de voyage.",
+    hubExtra:
+      "Depuis la Tunisie, la clinique organise le séjour de soins : devis détaillé avant le voyage, rendez-vous regroupés et suivi post-traitement à distance.",
+  },
+  {
+    slug: "congo-brazzaville",
+    name: "Congo",
+    nameShort: "Congo",
+    prep: "au",
+    gen: "du",
+    capital: "Brazzaville",
+    flag: "🇨🇬",
+    volInfo:
+      "Brazzaville – Dakar demande une escale (Casablanca, Lomé ou Addis-Abeba) : environ 8 à 13 h de voyage.",
+    hubExtra:
+      "La Clinique DABIA accueille les patients du Congo pour des réhabilitations complètes (implants, All-on-4, prothèses) avec un planning adapté à la durée du séjour.",
+  },
+  {
+    slug: "tchad",
+    name: "Tchad",
+    prep: "au",
+    gen: "du",
+    capital: "N'Djaména",
+    flag: "🇹🇩",
+    volInfo:
+      "N'Djaména – Dakar se fait avec une escale (Casablanca, Abidjan ou Addis-Abeba) : comptez 10 à 14 h de voyage.",
+    hubExtra:
+      "Les patients tchadiens planifient leur séjour de soins à Dakar avec la clinique : devis avant le départ, rendez-vous regroupés et suivi après le retour à N'Djaména.",
+  },
+  {
+    slug: "madagascar",
+    name: "Madagascar",
+    prep: "à",
+    gen: "de",
+    capital: "Antananarivo",
+    flag: "🇲🇬",
+    volInfo:
+      "Antananarivo – Dakar est un long trajet avec une ou deux escales (Addis-Abeba, Nairobi ou Casablanca) : 15 à 20 h au total. Un séjour de soins se planifie alors sur plusieurs semaines.",
+    hubExtra:
+      "Depuis Madagascar, les patients préparent leur séjour longtemps à l'avance : la clinique établit un devis complet à distance et regroupe les soins sur place.",
+  },
+  {
+    slug: "nigeria",
+    name: "Nigeria",
+    prep: "au",
+    gen: "du",
+    capital: "Lagos",
+    flag: "🇳🇬",
+    volInfo:
+      "Lagos – Dakar avec une escale (Abidjan, Lomé ou Casablanca) : environ 7 à 10 h de voyage.",
+    hubExtra:
+      "La clinique accueille les patients du Nigeria en français et en anglais : devis écrit en FCFA avant le voyage, planning confirmé et suivi après le retour à Lagos.",
   },
 ];
 
@@ -1159,6 +1390,9 @@ const paysVars = (pays) => ({
   paysShort: pays.nameShort || pays.name,
   prepPays: pays.prep,
   genPays: pays.gen,
+  // Variantes avec élision (« d'Italie », « des États-Unis ») — sinon « de Italie ».
+  genPaysName: pays.genName || `${pays.gen} ${pays.nameShort || pays.name}`,
+  genPaysFull: pays.genName || `${pays.gen} ${pays.name}`,
   capital: pays.capital,
   deCapital: deCapital(pays),
   aCapital: `à ${pays.capital}`,
@@ -1167,27 +1401,45 @@ const paysVars = (pays) => ({
   hubExtra: pays.hubExtra || "",
 });
 
+// Titles SERP-safe : si la forme complète dépasse ~88 caractères, on passe à
+// une forme courte (le nom du pays est déjà dans le H1 et le body).
+const titleOf = (base, genPaysName) => {
+  const full = `${base} à Dakar pour les patients ${genPaysName} | DABIA`;
+  if (full.length <= 88) return full;
+  return `${base} à Dakar – patients ${genPaysName} | DABIA`;
+};
+
+// Descriptions SERP-safe : ≤ 165 caractères, sinon variante courte.
+const descOf = (titre, longTail, shortTail) => {
+  const d = `${titre}${longTail}`;
+  return d.length <= 165 ? d : `${titre}${shortTail}`;
+};
+
 // ---------------------------------------------------------------
 //  Builders
 // ---------------------------------------------------------------
 const buildCompetencePage = (comp, pays) => {
   const v = { ...paysVars(pays), titre: comp.titre, duree: comp.duree };
   const path = `/soins/${comp.slug}-${pays.slug}`;
-  const titre = `${comp.titre} à Dakar pour les patients ${pays.gen} ${v.paysShort}`;
+  const titre = `${comp.titre} à Dakar pour les patients ${v.genPaysName}`;
   return {
     path,
     family: "competence",
     pays,
     comp,
-    title: `${titre} | DABIA`,
-    description: `${titre} : devis clair, planning de soins adapté au séjour et suivi après le retour ${v.aCapital}.`,
-    h1: `${comp.titre} à Dakar pour les patients ${pays.gen} ${pays.name}`,
+    title: titleOf(comp.titre, v.genPaysName),
+    description: descOf(
+      titre,
+      ` : devis clair, planning de soins adapté au séjour et suivi après le retour ${v.aCapital}.`,
+      ` : devis clair, planning selon votre séjour et suivi après le retour ${v.aCapital}.`
+    ),
+    h1: `${comp.titre} à Dakar pour les patients ${v.genPaysFull}`,
     intro: fill(
-      `Vous venez {prepPays} {pays} ? La Clinique Dentaire DABIA, située à Dakar (Sicap Foire, Liberté 6), accueille les patients internationaux pour {titre} : devis détaillé avant le voyage, planning de soins organisé dans la durée de votre séjour et suivi à distance après votre retour.`,
+      `Vous venez {genPaysFull} ? La Clinique Dentaire DABIA, située à Dakar (Sicap Foire, Liberté 6), accueille les patients internationaux pour {titre} : devis détaillé avant le voyage, planning de soins organisé dans la durée de votre séjour et suivi à distance après votre retour.`,
       v
     ),
     quickAnswer: fill(
-      `{titre} à Dakar pour les patients {genPays} {pays} : la Clinique DABIA (Liberté 6) propose un devis clair avant le voyage, un planning de soins organisé selon la durée du séjour et un suivi après le retour {aCapital}. Contact par téléphone ou WhatsApp dès la prise de rendez-vous.`,
+      `{titre} à Dakar pour les patients {genPaysFull} : la Clinique DABIA (Liberté 6) propose un devis clair avant le voyage, un planning de soins organisé selon la durée du séjour et un suivi après le retour {aCapital}. Contact par téléphone ou WhatsApp dès la prise de rendez-vous.`,
       v
     ),
     pointsForts: comp.pointsForts,
@@ -1230,21 +1482,25 @@ const buildCompetencePage = (comp, pays) => {
 const buildFilierePage = (fil, pays) => {
   const v = { ...paysVars(pays), titre: fil.titre, duree: fil.duree };
   const path = `/parcours/${fil.slug}-${pays.slug}`;
-  const titre = `${fil.titre} à Dakar pour les patients ${pays.gen} ${v.paysShort}`;
+  const titre = `${fil.titre} à Dakar pour les patients ${v.genPaysName}`;
   return {
     path,
     family: "filiere",
     pays,
     fil,
-    title: `${titre} | DABIA`,
-    description: `${titre} : parcours organisé, devis clair et suivi après le séjour ${v.aCapital}.`,
-    h1: `${fil.titre} à Dakar pour les patients ${pays.gen} ${pays.name}`,
+    title: titleOf(fil.titre, v.genPaysName),
+    description: descOf(
+      titre,
+      ` : parcours organisé, devis clair et suivi après le séjour ${v.aCapital}.`,
+      ` : parcours organisé et suivi après le séjour ${v.aCapital}.`
+    ),
+    h1: `${fil.titre} à Dakar pour les patients ${v.genPaysFull}`,
     intro: fill(
-      `Patients {genPays} {pays}, la Clinique Dentaire DABIA à Dakar (Sicap Foire, Liberté 6) organise votre parcours de {titre} : bilan à l'arrivée, devis détaillé, soins planifiés selon votre séjour et suivi après votre retour {aCapital}.`,
+      `Patients {genPaysFull}, la Clinique Dentaire DABIA à Dakar (Sicap Foire, Liberté 6) organise votre parcours de {titre} : bilan à l'arrivée, devis détaillé, soins planifiés selon votre séjour et suivi après votre retour {aCapital}.`,
       v
     ),
     quickAnswer: fill(
-      `{titre} à Dakar pour les patients {genPays} {pays} : la Clinique DABIA structure le parcours (bilan, soins, suivi) avec un devis clair avant le voyage. Durée indicative : {duree}. Prise de contact par téléphone ou WhatsApp.`,
+      `{titre} à Dakar pour les patients {genPaysFull} : la Clinique DABIA structure le parcours (bilan, soins, suivi) avec un devis clair avant le voyage. Durée indicative : {duree}. Prise de contact par téléphone ou WhatsApp.`,
       v
     ),
     pointsForts: fil.pointsForts,
@@ -1253,7 +1509,7 @@ const buildFilierePage = (fil, pays) => {
       ...fil.faqSoin,
       {
         q: fill(
-          `Comment se passe la prise en charge des patients venant {genPays} {pays} ?`,
+          `Comment se passe la prise en charge des patients venant {genPaysFull} ?`,
           v
         ),
         a: fill(
@@ -1287,20 +1543,24 @@ const buildFilierePage = (fil, pays) => {
 const buildCountryHub = (pays) => {
   const v = paysVars(pays);
   const path = `/pays/${pays.slug}`;
-  const titre = `Soins dentaires à Dakar pour les patients ${pays.gen} ${v.paysShort}`;
+  const titre = `Soins dentaires à Dakar pour les patients ${v.genPaysName}`;
   return {
     path,
     family: "pays",
     pays,
-    title: `${titre} | DABIA`,
-    description: `${titre} : implants, orthodontie, prothèses, esthétique. Devis clair, planning de séjour et suivi après le retour ${v.aCapital}.`,
-    h1: `Soins dentaires à Dakar pour les patients ${pays.gen} ${pays.name}`,
+    title: titre.length + 9 <= 88 ? `${titre} | DABIA` : `Soins dentaires à Dakar – patients ${v.genPaysName} | DABIA`,
+    description: descOf(
+      titre,
+      ` : implants, orthodontie, prothèses, esthétique. Devis clair, planning de séjour et suivi après le retour ${v.aCapital}.`,
+      ` : devis clair, planning de séjour et suivi après le retour ${v.aCapital}.`
+    ),
+    h1: `Soins dentaires à Dakar pour les patients ${v.genPaysFull}`,
     intro: fill(
       `Vous habitez {prepPays} {pays} et vous envisagez des soins dentaires à Dakar ? La Clinique Dentaire DABIA (Sicap Foire, Liberté 6) vous accueille : devis détaillé avant le voyage, soins organisés selon la durée de votre séjour et suivi à distance après votre retour {aCapital}. ${pays.hubExtra}`,
       v
     ),
     quickAnswer: fill(
-      `La Clinique DABIA à Dakar accueille les patients {genPays} {pays} pour tous les soins dentaires : implants, orthodontie, prothèses, esthétique et urgences. Devis clair en FCFA avant le voyage, planning adapté au séjour, suivi après le retour {aCapital}. Contact par téléphone ou WhatsApp.`,
+      `La Clinique DABIA à Dakar accueille les patients {genPaysFull} pour tous les soins dentaires : implants, orthodontie, prothèses, esthétique et urgences. Devis clair en FCFA avant le voyage, planning adapté au séjour, suivi après le retour {aCapital}. Contact par téléphone ou WhatsApp.`,
       v
     ),
     faq: [

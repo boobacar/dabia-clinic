@@ -77,6 +77,14 @@ export function GeoPaysIndex() {
           dentaires : devis clair avant le voyage, soins planifiés selon la durée
           du séjour et suivi à distance après le retour.
         </motion.p>
+        <motion.p variants={childVariant} className="text-center mb-8">
+          <Link
+            to="/tourisme-dentaire-dakar"
+            className="font-semibold text-[#d03088] hover:underline"
+          >
+            Voir le guide complet du tourisme dentaire à Dakar (prix, durée du séjour, organisation) →
+          </Link>
+        </motion.p>
 
         <motion.div
           variants={childVariant}
@@ -418,6 +426,14 @@ export default function GeoPage() {
             >
               {page.relatedArticle.titre} →
             </Link>
+            <p className="mt-3 text-sm text-gray-600">
+              <Link
+                to="/tourisme-dentaire-dakar"
+                className="font-semibold text-[#d03088] hover:underline"
+              >
+                Guide du tourisme dentaire à Dakar : prix, durée du séjour et organisation →
+              </Link>
+            </p>
           </motion.div>
         )}
 

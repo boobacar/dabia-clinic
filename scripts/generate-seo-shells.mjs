@@ -63,10 +63,78 @@ const STATIC_PATHS = [
   "/cabinet-dentaire-plateau",
   "/cabinet-dentaire-vdn",
   "/en/dental-clinic-dakar",
+  "/tourisme-dentaire-dakar",
   "/galerie",
 ];
 
 const STATIC_OVERRIDES = {
+  "/tourisme-dentaire-dakar": {
+    title:
+      "Tourisme dentaire à Dakar : prix des soins au Sénégal et séjour | DABIA",
+    description:
+      "Tourisme dentaire à Dakar : tarifs des implants, couronnes et prothèses au Sénégal, durée du séjour, organisation du voyage et suivi après le retour. Devis écrit avant le départ — Clinique DABIA.",
+    h1: "Tourisme dentaire à Dakar : se soigner au Sénégal pendant un séjour",
+    intro:
+      "Implants, couronnes, prothèses, orthodontie ou esthétique du sourire : la Clinique Dentaire DABIA, à Sicap Foire (Liberté 6), reçoit des patients venus de France, de Belgique, de Suisse, du Canada, des États-Unis et de toute l'Afrique de l'Ouest. Vous arrivez avec un devis écrit et un planning de soins ; vous repartez avec un contrôle effectué et un suivi à distance organisé.",
+    quickAnswer:
+      "Un séjour de soins dentaires à Dakar se prépare en trois temps : un devis écrit et un planning établis à distance (avant de réserver les billets), 3 à 10 jours de soins regroupés sur place selon le traitement, puis un contrôle avant le départ et un suivi à distance après le retour. Les tarifs sont annoncés en FCFA et confirmés par devis après l'examen clinique.",
+    pointsForts: [
+      "Consultation (examen + devis) : 10 000 à 20 000 FCFA (15 à 30 €).",
+      "Détartrage et polissage : 25 000 à 40 000 FCFA (38 à 61 €).",
+      "Dévitalisation (traitement de canal) : 40 000 à 90 000 FCFA (61 à 137 €).",
+      "Couronne céramo-métal ou zircone : 150 000 à 350 000 FCFA (229 à 534 €).",
+      "Implant complet (implant + pilier + couronne) : 400 000 à 800 000 FCFA (610 à 1 220 €).",
+      "Orthodontie complète : 600 000 à 1 200 000 FCFA (915 à 1 830 €) ; aligneurs invisibles à partir de 1 500 000 FCFA.",
+      "Conversion au taux fixe du franc CFA : 1 € = 655,957 FCFA.",
+    ],
+    deroule: [
+      "Devis à distance : envoyez vos radios (panoramique ou CBCT) par WhatsApp et recevez un devis écrit en FCFA avec un planning de soins calé sur votre séjour.",
+      "Réservation du voyage en fonction du nombre de rendez-vous confirmés (un second séjour court peut être nécessaire pour la couronne définitive d'un implant).",
+      "Arrivée et bilan sur place (J1) : examen clinique, radiographie ou CBCT 3D si nécessaire, confirmation du plan de traitement.",
+      "Soins regroupés sur le séjour : détartrage, soins des caries, extractions, empreintes, poses d'implants ou de facettes selon le plan.",
+      "Contrôle avant le départ et compte-rendu écrit remis pour votre dentiste ou votre mutuelle.",
+      "Suivi à distance après le retour : téléphone, WhatsApp, coordination avec un praticien local si besoin.",
+    ],
+    faq: [
+      {
+        q: "Combien de jours faut-il prévoir à Dakar pour des soins dentaires ?",
+        a: "Comptez 3 à 5 jours pour un bilan, un détartrage, des soins de caries ou des extractions. Pour un implant, prévoyez 7 à 10 jours lors du premier séjour (la couronne définitive est posée après 3 à 6 mois d'intégration, lors d'un second séjour). Pour des facettes ou une réhabilitation complète, comptez 8 à 12 jours.",
+      },
+      {
+        q: "Peut-on obtenir un devis avant de partir ?",
+        a: "Oui. Décrivez vos besoins et envoyez vos radios par téléphone ou WhatsApp : la clinique transmet un devis écrit en FCFA et un planning de soins avant votre départ, pour que vous sachiez exactement combien de temps rester sur place.",
+      },
+      {
+        q: "Quels moyens de paiement sont acceptés ?",
+        a: "Espèces en FCFA, carte bancaire, virement international et mobile money (Orange Money, Wave, MTN MoMo). Le devis est établi en FCFA ; le taux de conversion est fixe (1 € = 655,957 FCFA).",
+      },
+      {
+        q: "Où loger pendant un séjour de soins à Dakar ?",
+        a: "La clinique est située à Sicap Foire, 2 voies Liberté 6 (à 150 m du Uno), un quartier central proche des Almadies, du Plateau et de l'aéroport. L'équipe peut vous orienter vers des hébergements à proximité pour limiter les trajets entre les rendez-vous.",
+      },
+    ],
+    jsonLd: [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalProcedure",
+        name: "Tourisme dentaire à Dakar — séjour de soins dentaires au Sénégal",
+        procedureType: "https://schema.org/NoninvasiveProcedure",
+        bodyLocation: "Cavité buccale",
+        howPerformed:
+          "Bilan et devis à distance, séjour de soins organisé à Dakar (détartrage, soins des caries, extractions, couronnes, implants, orthodontie, esthétique), contrôle avant le départ et suivi à distance.",
+        provider: {
+          "@type": "Dentist",
+          name: "Clinique Dentaire DABIA",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Sicap Foire, 2 voies Liberté 6 (à 150 m du Uno)",
+            addressLocality: "Dakar",
+            addressCountry: "SN",
+          },
+        },
+      },
+    ],
+  },
   "/": {
     title: "Dentiste à Dakar – RDV rapide, urgence et devis | Clinique DABIA",
     description:
