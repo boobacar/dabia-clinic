@@ -112,6 +112,14 @@ const STATIC_OVERRIDES = {
         q: "Où loger pendant un séjour de soins à Dakar ?",
         a: "La clinique est située à Sicap Foire, 2 voies Liberté 6 (à 150 m du Uno), un quartier central proche des Almadies, du Plateau et de l'aéroport. L'équipe peut vous orienter vers des hébergements à proximité pour limiter les trajets entre les rendez-vous.",
       },
+      {
+        q: "Ma mutuelle ou mon assurance rembourse-t-elle des soins faits à Dakar ?",
+        a: "Cela dépend de votre contrat. Demandez à votre organisme les conditions de prise en charge à l'étranger et faites-vous remettre un devis détaillé puis une facture acquittée : ce sont les documents demandés. Au Sénégal, l'IPM couvre une partie des soins pour les salariés.",
+      },
+      {
+        q: "Faut-il un visa pour venir se faire soigner au Sénégal ?",
+        a: "Les ressortissants de la CEDEAO, de l'Union européenne, des États-Unis, du Canada et du Royaume-Uni n'ont pas besoin de visa pour un séjour touristique court. Vérifiez les conditions à jour auprès du consulat du Sénégal de votre pays avant de réserver.",
+      },
     ],
     jsonLd: [
       {

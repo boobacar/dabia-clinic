@@ -99,16 +99,8 @@ const FAQ_ITEMS = [
 ];
 
 export default function TourismeDentaireDakar() {
-  const faqLD = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: FAQ_ITEMS.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-  };
-
+  // FAQPage est déjà injecté par le composant <FAQ> et BreadcrumbList par
+  // <Breadcrumbs> : ne pas les dupliquer ici.
   const serviceLD = {
     "@context": "https://schema.org",
     "@type": "MedicalProcedure",
@@ -129,15 +121,6 @@ export default function TourismeDentaireDakar() {
     },
   };
 
-  const breadcrumbLD = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Accueil", item: "https://www.cliniquedentairedabia.com/" },
-      { "@type": "ListItem", position: 2, name: "Tourisme dentaire à Dakar", item: CANONICAL },
-    ],
-  };
-
   return (
     <section className="page-shell px-4 max-w-6xl mx-auto">
       <Seo
@@ -145,7 +128,7 @@ export default function TourismeDentaireDakar() {
         description="Tourisme dentaire à Dakar : tarifs des implants, couronnes et prothèses au Sénégal, durée du séjour, organisation du voyage et suivi après le retour. Devis écrit avant le départ — Clinique DABIA."
         canonical={CANONICAL}
         url={CANONICAL}
-        jsonLd={[faqLD, serviceLD, breadcrumbLD]}
+        jsonLd={[serviceLD]}
       />
 
       <Breadcrumbs items={[{ label: "Accueil", href: "/" }, { label: "Tourisme dentaire à Dakar" }]} />
