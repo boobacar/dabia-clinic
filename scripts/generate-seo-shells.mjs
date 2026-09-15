@@ -68,6 +68,136 @@ const STATIC_PATHS = [
 ];
 
 const STATIC_OVERRIDES = {
+  // --- Réécritures GSC (sept. 2026) : ces routes servaient un shell générique
+  //     (« All Competences | Clinique Dentaire DABIA ») → 0,6-2 % de CTR.
+  "/all-competences": {
+    title: "Soins dentaires à Dakar : toutes nos compétences | DABIA",
+    description:
+      "Tous les soins dentaires de la Clinique DABIA à Dakar : consultation, détartrage, soins des caries, implants, orthodontie, facettes, blanchiment et urgences. Devis clair.",
+    h1: "Tous nos soins dentaires à Dakar",
+    intro:
+      "Prévention, soins courants, esthétique, implantologie et orthodontie : retrouvez les compétences de la Clinique Dentaire DABIA, à Liberté 6 (Sicap Foire), avec un devis expliqué avant chaque soin.",
+  },
+  "/cabinet-dentaire-liberte-6": {
+    title: "Dentiste et cabinet dentaire à Liberté 6, Dakar | DABIA",
+    description:
+      "Cabinet dentaire à Liberté 6 (Sicap Foire, 2 voies) : consultation, urgences, détartrage, implants, orthodontie, esthétique. Devis clair, RDV rapide chez DABIA.",
+    h1: "Cabinet dentaire à Liberté 6 (Dakar)",
+    intro:
+      "La Clinique Dentaire DABIA est installée à Sicap Foire, sur les 2 voies de Liberté 6 : consultations, urgences, détartrage, implants, orthodontie et esthétique du sourire, avec un devis détaillé et expliqué.",
+  },
+  "/cabinet-dentaire-ouakam": {
+    title: "Dentiste à Ouakam, Dakar : cabinet proche et RDV rapide | DABIA",
+    description:
+      "Dentiste proche d'Ouakam, des Almadies et de Ngor : consultation, urgences, détartrage, implants, orthodontie, esthétique. Devis clair, RDV rapide à la Clinique DABIA.",
+    h1: "Votre dentiste près d'Ouakam",
+    intro:
+      "Vous cherchez un dentiste à Ouakam ? La Clinique Dentaire DABIA vous reçoit à Sicap Foire (Liberté 6), à quelques minutes en voiture, pour la prévention, les urgences, les implants, l'orthodontie et l'esthétique du sourire.",
+  },
+  "/cabinet-dentaire-sacre-coeur": {
+    title: "Dentiste à Sacré-Cœur, Dakar : clinique dentaire proche | DABIA",
+    description:
+      "Dentiste proche de Sacré-Cœur, de la VDN et de Mermoz : consultation, urgences, détartrage, implants, orthodontie, esthétique. Devis clair, RDV rapide chez DABIA.",
+    h1: "Votre dentiste près de Sacré-Cœur",
+    intro:
+      "Les patients de Sacré-Cœur et du secteur de la VDN sont reçus à la Clinique Dentaire DABIA (Sicap Foire, Liberté 6) : soins courants, urgences dentaires, implants, prothèses, orthodontie et esthétique.",
+  },
+  "/cabinet-dentaire-hlm-grand-yoff": {
+    title: "Dentiste à Grand Yoff et HLM, Dakar : RDV rapide | DABIA",
+    description:
+      "Cabinet dentaire proche de HLM Grand Yoff et des Parcelles Assainies : consultation, urgences, détartrage, implants, orthodontie, esthétique. Devis clair, RDV en ligne.",
+    h1: "Votre dentiste près de HLM Grand Yoff",
+    intro:
+      "La Clinique Dentaire DABIA accueille les habitants de HLM Grand Yoff, de Grand Yoff et des Parcelles Assainies dans un cabinet moderne à Sicap Foire (Liberté 6) : prévention, soins, urgences, implants et orthodontie.",
+  },
+  "/cabinet-dentaire-yoff": {
+    title: "Dentiste à Yoff, Dakar : soins et urgences dentaires | DABIA",
+    description:
+      "Dentiste proche de Yoff (Sicap Foire, Liberté 6) : urgences, détartrage, implants, orthodontie, facettes. Accès facile par la VDN, RDV en ligne ou par WhatsApp.",
+    h1: "Votre dentiste près de Yoff",
+    intro:
+      "Depuis Yoff, rejoignez la Clinique Dentaire DABIA à Sicap Foire (Liberté 6) en quelques minutes par la VDN : consultation, urgences dentaires, détartrage, implants, orthodontie et esthétique du sourire.",
+  },
+  "/cabinet-dentaire-ngor": {
+    title: "Dentiste à Ngor, Dakar : clinique dentaire proche | DABIA",
+    description:
+      "Soins dentaires proches de Ngor, des Almadies et d'Ouakam : consultation, urgences, détartrage, implants, orthodontie, esthétique. RDV rapide à la Clinique DABIA.",
+    h1: "Votre dentiste près de Ngor",
+    intro:
+      "La Clinique Dentaire DABIA reçoit les habitants de Ngor, des Almadies et d'Ouakam dans un cabinet équipé d'un plateau technique moderne : soins courants, urgences, implants, prothèses, orthodontie et esthétique.",
+  },
+  "/cabinet-dentaire-point-e": {
+    title: "Dentiste à Point E, Dakar : cabinet proche et RDV | DABIA",
+    description:
+      "Dentiste proche de Point E, Fann et du Plateau (Sicap Foire, Liberté 6) : consultation, urgences, implants, orthodontie, facettes. Devis clair, rendez-vous rapide.",
+    h1: "Votre dentiste près de Point E",
+    intro:
+      "La Clinique Dentaire DABIA reçoit les patients de Point E, de Fann et du Plateau à Sicap Foire (Liberté 6) : consultations, urgences dentaires, soins des caries, implants, orthodontie et esthétique.",
+  },
+  "/cabinet-dentaire-scat-urbam": {
+    title: "Dentiste à Scat Urbam, Dakar : cabinet et RDV rapide | DABIA",
+    description:
+      "Cabinet dentaire proche de Scat Urbam, Grand Yoff et Liberté 6 : consultation, urgences, détartrage, implants, orthodontie. Devis clair, RDV en ligne.",
+    h1: "Votre dentiste près de Scat Urbam",
+    intro:
+      "Les habitants de Scat Urbam, de Grand Yoff et de Liberté 6 sont accueillis à la Clinique Dentaire DABIA (Sicap Foire) pour l'ensemble des soins dentaires, des urgences à l'esthétique du sourire.",
+  },
+  "/cabinet-dentaire-patte-d-oie": {
+    title: "Dentiste à la Patte d'Oie, Dakar : RDV et urgences | DABIA",
+    description:
+      "Cabinet dentaire proche de la Patte d'Oie et de Grand Yoff : consultation, urgences, détartrage, implants, orthodontie. Devis clair, rendez-vous rapide.",
+    h1: "Votre dentiste près de la Patte d'Oie",
+    intro:
+      "Depuis la Patte d'Oie ou Grand Yoff, rejoignez la Clinique Dentaire DABIA à Sicap Foire (Liberté 6) : soins dentaires pour toute la famille, urgences, implants, orthodontie et esthétique.",
+  },
+  "/clinique-dentaire-parcelles-assainies": {
+    title: "Clinique dentaire à Parcelles Assainies, Dakar | DABIA",
+    description:
+      "Clinique dentaire proche des Parcelles Assainies : consultation, urgences, détartrage, caries, implants, orthodontie, esthétique. Devis clair, RDV rapide à Liberté 6.",
+    h1: "Clinique dentaire près des Parcelles Assainies",
+    intro:
+      "La Clinique Dentaire DABIA, à Sicap Foire (Liberté 6), accueille les patients des Parcelles Assainies : bilan, détartrage, soins des caries, extractions, implants, prothèses et orthodontie, avec un devis expliqué.",
+  },
+  "/infos/technologie": {
+    title: "Technologies dentaires à Dakar : CBCT, scanner 3D, laser | DABIA",
+    description:
+      "Le plateau technique de la Clinique Dentaire DABIA à Dakar : CBCT 3D, radiographie numérique, scanner intra-oral, AirFlow, laser et stérilisation classe B.",
+    h1: "Nos technologies dentaires à Dakar",
+    intro:
+      "Diagnostic 3D, empreintes numériques et stérilisation renforcée : découvrez les équipements qui servent vos soins à la Clinique Dentaire DABIA (Sicap Foire, Liberté 6).",
+  },
+  "/infos/enfants": {
+    title: "Dentiste pour enfants à Dakar : conseils et soins | DABIA",
+    description:
+      "Soins dentaires pour enfants à Dakar : première visite, prévention, scellement des sillons, caries du biberon. Conseils de la Clinique Dentaire DABIA.",
+    h1: "Dentiste pour enfants à Dakar",
+    intro:
+      "Première visite, prévention et soins des dents de lait : la Clinique Dentaire DABIA accompagne les enfants et conseille les parents à Dakar.",
+  },
+  "/personnel": {
+    title: "L'équipe de la Clinique Dentaire DABIA à Dakar",
+    description:
+      "Rencontrez l'équipe de la Clinique Dentaire DABIA à Dakar (Sicap Foire, Liberté 6) : chirurgiens-dentistes, assistantes et personnel d'accueil.",
+    h1: "L'équipe de la Clinique Dentaire DABIA",
+    intro:
+      "Des praticiens expérimentés et une équipe d'accueil attentionnée, au service de vos soins dentaires à Dakar.",
+  },
+  "/galerie": {
+    title: "Galerie photos : Clinique Dentaire DABIA à Dakar",
+    description:
+      "Découvrez en images la Clinique Dentaire DABIA à Dakar (Sicap Foire, Liberté 6) : salle de soins, plateau technique et équipe.",
+    h1: "Galerie de la Clinique Dentaire DABIA",
+    intro:
+      "Un aperçu du cadre dans lequel vous serez reçu à la Clinique Dentaire DABIA (Dakar).",
+  },
+  "/rejoindre": {
+    title: "Rejoindre la Clinique Dentaire DABIA à Dakar",
+    description:
+      "Candidatures et recrutement : rejoignez l'équipe de la Clinique Dentaire DABIA à Dakar (Sicap Foire, Liberté 6).",
+    h1: "Rejoindre la Clinique Dentaire DABIA",
+    intro:
+      "Vous souhaitez rejoindre notre équipe à Dakar ? Envoyez-nous votre candidature : la Clinique Dentaire DABIA étudie chaque profil.",
+  },
   "/tourisme-dentaire-dakar": {
     title:
       "Tourisme dentaire à Dakar : prix des soins au Sénégal et séjour | DABIA",
@@ -144,15 +274,15 @@ const STATIC_OVERRIDES = {
     ],
   },
   "/": {
-    title: "Dentiste à Dakar – RDV rapide, urgence et devis | Clinique DABIA",
+    title: "Dentiste à Dakar : clinique et cabinet dentaire, urgences | DABIA",
     description:
-      "Dentiste à Dakar, Liberté 6 : consultation, urgence, détartrage, implant, orthodontie et esthétique. Appelez ou prenez rendez-vous en ligne rapidement.",
+      "Dentiste à Dakar à Liberté 6 (Sicap Foire) : consultation, urgences, détartrage, implants, orthodontie, facettes. Devis clair, RDV en ligne ou WhatsApp.",
     h1: "Clinique Dentaire DABIA à Dakar",
     intro:
       "Votre dentiste à Dakar — soins modernes, équipe expérimentée et accompagnement personnalisé.",
   },
   "/cabinet-dentaire-vdn": {
-    title: "Clinique dentaire VDN Dakar – RDV rapide & urgences | DABIA",
+    title: "Clinique dentaire près de la VDN (Dakar) : RDV et urgences | DABIA",
     description:
       "Clinique dentaire à deux pas de la VDN (Voie de Dégagement Nord), Sicap Foire Liberté 6 : urgences, détartrage, implants, orthodontie, esthétique. Prise de rendez-vous rapide.",
     h1: "Clinique dentaire proche de la VDN (Dakar)",
@@ -174,7 +304,7 @@ const STATIC_OVERRIDES = {
     ],
   },
   "/cabinet-dentaire-mermoz": {
-    title: "Dentiste Mermoz Dakar – Urgences, Implants & Orthodontie | DABIA",
+    title: "Dentiste à Mermoz, Dakar : urgences, implants et RDV | DABIA",
     description:
       "Cabinet dentaire proche de Mermoz (Sicap Foire, Liberté 6) : urgences le jour même, détartrage, implants, orthodontie et facettes. Accès facile, RDV en ligne disponible.",
     h1: "Votre dentiste près de Mermoz",
@@ -196,7 +326,7 @@ const STATIC_OVERRIDES = {
     ],
   },
   "/cabinet-dentaire-fann": {
-    title: "Dentiste Fann Dakar – consultation, urgences et RDV | DABIA",
+    title: "Dentiste à Fann, Dakar : consultation, urgences et RDV | DABIA",
     description:
       "Dentiste proche de Fann, Point E et du Plateau (Sicap Foire, Liberté 6) : consultation, urgences, implants, orthodontie, facettes. Devis clair, rendez-vous rapide.",
     h1: "Votre dentiste près de Fann",
@@ -210,7 +340,7 @@ const STATIC_OVERRIDES = {
     ],
   },
   "/cabinet-dentaire-almadies": {
-    title: "Dentiste Almadies Dakar – Cabinet dentaire proche, RDV rapide | DABIA",
+    title: "Dentiste et clinique dentaire aux Almadies, Dakar | DABIA",
     description:
       "Dentiste proche des Almadies à Dakar (Liberté 6, Sicap Foire) : urgence, consultation, implants, orthodontie, blanchiment. Accès facile par la VDN. RDV en ligne ou au 77 703 93 93.",
     h1: "Votre dentiste près des Almadies",
@@ -232,7 +362,7 @@ const STATIC_OVERRIDES = {
     ],
   },
   "/cabinet-dentaire-plateau": {
-    title: "Dentiste Plateau Dakar – Consultation, Urgences & Implants | DABIA",
+    title: "Dentiste au Plateau, Dakar : consultation et urgences | DABIA",
     description:
       "Dentiste proche du Plateau de Dakar (Liberté 6, Sicap Foire) : consultation, urgence, implants, orthodontie, esthétique. Créneaux adaptés aux professionnels. RDV en ligne.",
     h1: "Votre dentiste près du Plateau",
@@ -284,7 +414,7 @@ const STATIC_OVERRIDES = {
     ],
   },
   "/blog": {
-    title: "Blog dentaire à Dakar – Conseils, urgences, prix",
+    title: "Blog dentaire à Dakar : prix, urgences et conseils | DABIA",
     description:
       "Articles clairs et fiables par la Clinique Dentaire DABIA : urgences dentaires à Dakar, blanchiment, implants, orthodontie, prévention, enfants.",
     h1: "Blog de la Clinique Dentaire DABIA",
@@ -292,7 +422,7 @@ const STATIC_OVERRIDES = {
       "Conseils pratiques, urgences, technologies et guides prix pour mieux prendre soin de votre sourire à Dakar.",
   },
   "/rendez-vous": {
-    title: "Prendre RDV dentiste à Dakar — Consultation en ligne rapide | DABIA",
+    title: "RDV dentiste à Dakar : réservez en ligne en 1 minute | DABIA",
     description:
       "Prenez rendez-vous chez le dentiste à Dakar en 1 minute. Consultation, urgence, détartrage, implant ou orthodontie. Formulaire en ligne, appel ou WhatsApp.",
     h1: "Prendre RDV chez le dentiste à Dakar — Consultation & Urgence",
@@ -308,7 +438,7 @@ const STATIC_OVERRIDES = {
       "À la recherche d'un dentiste près de chez vous à Dakar ? La Clinique DABIA (Liberté 6, Sicap Foire) est facilement accessible depuis la VDN, Mermoz, Yoff et les Almadies. Consultations, urgences et soins complets avec devis clair et prise de rendez-vous rapide.",
   },
   "/cabinet-dentaire-dakar": {
-    title: "Cabinet dentaire à Dakar : devis clair & RDV rapide | DABIA",
+    title: "Cabinet dentaire à Dakar : devis clair et RDV rapide | DABIA",
     description:
       "Cabinet dentaire à Dakar : prévention, esthétique, implants, orthodontie et urgences. Devis transparent + prise de rendez-vous rapide.",
     h1: "Cabinet dentaire à Dakar – Clinique DABIA",
@@ -316,25 +446,25 @@ const STATIC_OVERRIDES = {
       "Un cabinet dentaire moderne à Dakar pour vos soins, urgences et plans de traitement personnalisés.",
   },
   "/clinique-dentaire-dakar": {
-    title: "Clinique dentaire Dakar Liberté 6 : urgence, implants, devis | DABIA",
+    title: "Clinique et cabinet dentaire à Dakar (Liberté 6) : urgences, implants | DABIA",
     description:
-      "Clinique dentaire à Dakar Sicap Foire Liberté 6 : urgence dentaire 24h, implants, orthodontie, facettes, blanchiment. Consultation, devis clair, RDV rapide.",
+      "Clinique dentaire à Dakar (Sicap Foire, Liberté 6) : urgences, implants, orthodontie, facettes, blanchiment. Devis clair, RDV rapide.",
     h1: "Clinique dentaire à Dakar pour soins, urgences et devis clairs",
     intro:
       "Diagnostic, explication des options, devis détaillé et suivi pour vos soins dentaires à Dakar.",
   },
   "/urgence-dentaire-dakar": {
-    title: "SOS dentiste à Dakar : urgence, douleur, abcès | Clinique DABIA",
+    title: "SOS dentiste à Dakar : urgence dentaire, douleur, abcès | DABIA",
     description:
-      "SOS dentiste à Dakar : douleur, abcès, gonflement ou dent cassée. Appelez la Clinique DABIA, contactez-nous sur WhatsApp ou demandez un RDV urgent.",
+      "Douleur, abcès, gonflement ou dent cassée ? La Clinique Dentaire DABIA (Liberté 6) reçoit les urgences en priorité. Appelez, écrivez sur WhatsApp ou demandez un RDV urgent.",
     h1: "SOS dentiste à Dakar – urgence dentaire rapide",
     intro:
       "Rage de dent, abcès, gonflement ou dent cassée : contactez la clinique pour une orientation immédiate.",
   },
   "/infos/assurances": {
-    title: "Assurances & IPM à Dakar : prise en charge des soins dentaires | DABIA",
+    title: "Assurances, IPM et mutuelles dentaires à Dakar | DABIA",
     description:
-      "IPM, mutuelles et assurances santé au Sénégal : comment sont pris en charge vos soins dentaires à la Clinique DABIA (Dakar). Dossier, remboursement et devis.",
+      "IPM Sénélec, mutuelles et assurances santé au Sénégal : prise en charge de vos soins dentaires à la Clinique DABIA (Dakar). Dossier, remboursement et devis clair.",
     h1: "Assurances, IPM et mutuelles : prise en charge à la Clinique DABIA",
     intro:
       "Vous avez une IPM (Institution de Prévoyance Maladie), une mutuelle ou une assurance santé ? La Clinique Dentaire DABIA à Dakar vous aide à préparer votre dossier de prise en charge et vous remet un devis détaillé avant tout soin.",
@@ -805,6 +935,12 @@ async function readPostsSource(manifest) {
     // autour du slug pour capturer tags + faq (jusqu'à 60 KB après)
     const slugIdx = src.indexOf(`slug: "${slug}"`);
     const window = slugIdx !== -1 ? src.slice(slugIdx, slugIdx + 60000) : block;
+    // Title SEO distinct du H1 visible (convention `seoTitle` de posts.js) :
+    // sans cette capture, le shell SSG servait le H1 comme title SERP.
+    const seoTitleMatch = window.match(/seoTitle:\s*"((?:[^"\\]|\\.)*)"/);
+    const headingMatch = window.match(
+      /title:\s*\n?\s*"((?:[^"\\]|\\.)*)"/
+    );
     const tagsMatch = window.match(/tags:\s*\[([\s\S]*?)\]/);
     const tags = tagsMatch
       ? Array.from(tagsMatch[1].matchAll(/"([^"]+)"|'([^']+)'/g)).map(
@@ -842,6 +978,8 @@ async function readPostsSource(manifest) {
     posts.push({
       slug,
       title: m[2],
+      seoTitle: seoTitleMatch ? seoTitleMatch[1] : undefined,
+      heading: headingMatch ? headingMatch[1] : undefined,
       description: m[3],
       date: m[4],
       cover: covers.get(slug),
@@ -889,6 +1027,36 @@ const COMPETENCE_TITLE_OVERRIDES = {
     "Orthodontiste à Dakar : bagues, aligneurs et rendez-vous | Clinique Dentaire DABIA",
   "facettes-dentaires":
     "Facettes dentaires à Dakar : rendu naturel, pose et RDV | Clinique Dentaire DABIA",
+  "esthétique-dentaire":
+    "Esthétique dentaire à Dakar : blanchiment et facettes | DABIA",
+  parodontologie: "Parodontologie à Dakar : gencives qui saignent | DABIA",
+  implantologie: "Implant dentaire à Dakar : pose, prix et devis | DABIA",
+  endodontie: "Dévitalisation et traitement canalaire à Dakar | DABIA",
+  "greffe-osseuse": "Greffe osseuse dentaire à Dakar : avant l'implant | DABIA",
+  "blanchiment-dentaire": "Blanchiment dentaire à Dakar : prix et résultat | DABIA",
+  pedodontie: "Dentiste pour enfants à Dakar : pédodontie | DABIA",
+};
+
+// Descriptions SERP courtes (le paragraphe long de competences.js est tronqué par Google)
+const COMPETENCE_DESCRIPTION_OVERRIDES = {
+  "esthétique-dentaire":
+    "Esthétique dentaire à Dakar : blanchiment, facettes, aligneurs et harmonisation du sourire. Diagnostic, simulation et devis clair à la Clinique DABIA.",
+  parodontologie:
+    "Parodontologie à Dakar : gencives qui saignent, déchaussement, détartrage en profondeur et traitement de la parodontite à la Clinique Dentaire DABIA.",
+  implantologie:
+    "Implantologie à Dakar : implant dentaire, greffe osseuse, prothèse sur implant. Bilan 3D, plan de traitement expliqué et devis détaillé à la Clinique DABIA.",
+  endodontie:
+    "Endodontie à Dakar : dévitalisation et traitement canalaire sans douleur, sous contrôle radiologique, à la Clinique Dentaire DABIA (Liberté 6).",
+  "facettes-dentaires":
+    "Facettes dentaires à Dakar : rendu naturel, étapes de la pose, entretien et prix. Simulation du sourire et devis clair à la Clinique Dentaire DABIA.",
+  orthodontie:
+    "Orthodontiste à Dakar : bagues et aligneurs transparents pour adultes et enfants. Bilan orthodontique, durée du traitement et devis clair à la Clinique DABIA.",
+  "greffe-osseuse":
+    "Greffe osseuse dentaire à Dakar : reconstruction de l'os avant la pose d'un implant. Bilan 3D et plan de traitement expliqué à la Clinique Dentaire DABIA.",
+  "blanchiment-dentaire":
+    "Blanchiment dentaire à Dakar : éclaircissement professionnel sécurisé, résultat visible et sensibilité maîtrisée à la Clinique Dentaire DABIA.",
+  pedodontie:
+    "Pédodontie à Dakar : dentiste pour enfants, première visite, prévention, scellement des sillons et soins en douceur à la Clinique Dentaire DABIA.",
 };
 
 async function readTechnologies() {
@@ -1067,7 +1235,10 @@ function buildRouteCatalog({ posts, competences, technologies, tagSlugs }) {
     const bodyHtml = markdownToStaticHtml(post.content);
     routes.push({
       path: `/blog/${post.slug}`,
-      title: post.title || `Article de blog | Clinique Dentaire DABIA`,
+      title:
+        post.seoTitle ||
+        post.title ||
+        `Article de blog | Clinique Dentaire DABIA`,
       description:
         post.description ||
         "Article du blog de la Clinique Dentaire DABIA à Dakar.",
@@ -1093,7 +1264,9 @@ function buildRouteCatalog({ posts, competences, technologies, tagSlugs }) {
       title:
         COMPETENCE_TITLE_OVERRIDES[item.slug] ||
         `${item.title} à Dakar | Clinique Dentaire DABIA`,
-      description: `${item.title} à Dakar : indications, bénéfices et prise en charge à la Clinique Dentaire DABIA.`,
+      description:
+        COMPETENCE_DESCRIPTION_OVERRIDES[item.slug] ||
+        `${item.title} à Dakar : indications, bénéfices et prise en charge à la Clinique Dentaire DABIA.`,
       h1: item.title,
       intro:
         content.quickAnswer ||

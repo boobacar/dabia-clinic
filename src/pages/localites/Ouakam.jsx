@@ -6,5 +6,7 @@ const faq = [
 ];
 
 export default function LocaliteOuakam() {
-  return <LocalitePage quartier="Ouakam" slug="cabinet-dentaire-ouakam" areaServed={["Almadies", "Ngor", "Yoff"]} intro="Vous habitez Ouakam et cherchez un dentiste moderne à proximité ? La Clinique Dentaire DABIA vous reçoit à Sicap Foire (Liberté 6), à quelques minutes en voiture. Consultation, urgence, détartrage, implants, orthodontie et esthétique : toute la dentisterie générale et spécialisée dans un cadre équipé des dernières technologies." faq={faq} />;
+  return <LocalitePage quartier="Ouakam" slug="cabinet-dentaire-ouakam"
+      seoTitle="Dentiste à Ouakam, Dakar : cabinet proche et RDV rapide | DABIA"
+      seoDescription="Dentiste proche d'Ouakam, des Almadies et de Ngor : consultation, urgences, détartrage, implants, orthodontie, esthétique. Devis clair, RDV rapide à la Clinique DABIA." areaServed={["Almadies", "Ngor", "Yoff"]} intro="Vous habitez Ouakam et cherchez un dentiste moderne à proximité ? La Clinique Dentaire DABIA vous reçoit à Sicap Foire (Liberté 6), à quelques minutes en voiture. Consultation, urgence, détartrage, implants, orthodontie et esthétique : toute la dentisterie générale et spécialisée dans un cadre équipé des dernières technologies." faq={faq} />;
 }

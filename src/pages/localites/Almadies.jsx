@@ -25,7 +25,7 @@ export default function LocaliteAlmadies() {
       areaServed={["Ngor", "Ouakam", "Yoff", "VDN"]}
       intro="La Clinique Dentaire DABIA accueille les patients des Almadies, de Ngor et d'Ouakam à quelques minutes en voiture. Située à Sicap Foire (Liberté 6), facilement accessible par la VDN, notre équipe propose des soins dentaires complets : de la consultation de routine à l'implantologie avancée, en passant par l'orthodontie et l'esthétique du sourire. Plateau technique moderne avec CBCT 3D, scanner intra-oral et stérilisation de pointe."
       faq={faq}
-      seoTitle="Dentiste Almadies Dakar – Cabinet dentaire proche, RDV rapide | DABIA"
+      seoTitle="Dentiste et clinique dentaire aux Almadies, Dakar | DABIA"
       seoDescription="Dentiste proche des Almadies à Dakar (Liberté 6, Sicap Foire) : urgence, consultation, implants, orthodontie, blanchiment. Accès facile par la VDN. RDV en ligne ou au 77 703 93 93."
     />
   );

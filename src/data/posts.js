@@ -1534,8 +1534,9 @@ export const POSTS = [
   {
     slug: "dentiste-point-e-prix-consultation-soins-2026",
     title: "Dentiste à Point E (Dakar) : prix consultation, soins courants et prise de RDV rapide",
+      seoTitle: "Dentiste à Point E, Dakar : cabinet proche et RDV rapide | DABIA",
     description:
-      "Besoin d’un dentiste à Point E ? Découvrez les soins les plus demandés, les prix indicatifs à Dakar et comment obtenir un RDV rapidement.",
+      "Vous cherchez un dentiste à Point E (Dakar) ? Soins courants, urgences, prix indicatifs et prise de rendez-vous à la Clinique DABIA, à quelques minutes du Plateau.",
     date: "2026-02-27",
     category: "Conseils",
     tags: [
@@ -1954,8 +1955,9 @@ export const POSTS = [
     slug: "clinique-dentaire-dabia-dakar-expert-tarifs",
     title:
       "Clinique Dentaire DABIA : Votre Expert Dentiste à Dakar (Avis & Tarifs)",
+      seoTitle: "Cabinet dentaire à Dakar : avis patients, tarifs et RDV | DABIA",
     description:
-      "Pourquoi choisir la Clinique DABIA pour vos soins ? Expertise, technologies modernes et transparence des tarifs. Découvrez l'avis de nos patients.",
+      "Cabinet dentaire à Dakar (Sicap Foire, Liberté 6) : avis de nos patients, tarifs des soins, plateau technique et prise de rendez-vous rapide à la Clinique DABIA.",
     date: "2026-01-28",
     category: "Conseils",
     tags: [
@@ -2138,8 +2140,9 @@ export const POSTS = [
     slug: "dentiste-dakar-liberte-6-parcelles-sicap-foire",
     title:
       "Dentiste à Dakar (Liberté 6, Parcelles, Sicap Foire) : horaires, urgences, équipements",
+      seoTitle: "Dentiste à Liberté 6, Parcelles Assainies et Sicap Foire | DABIA",
     description:
-      "Trouver un cabinet dentaire à Liberté 6, Parcelles Assainies ou Sicap Foire : urgences, implants, blanchiment, orthodontie et pédiatrie à la Clinique DABIA.",
+      "Un dentiste proche de vous à Dakar : Liberté 6, Sicap Foire et Parcelles Assainies. Horaires, urgences, implants, orthodontie et devis clair chez DABIA.",
     date: "2026-01-18",
     category: "Conseils",
     tags: [
@@ -2680,9 +2683,9 @@ export const POSTS = [
   {
     slug: "prix-couronne-dentaire-dakar-materiaux-devis",
     title: "Prix d’une couronne dentaire à Dakar : matériaux, étapes et devis",
-    seoTitle: "Couronne dentaire à Dakar : prix, pose, matériaux et devis",
+    seoTitle: "Couronne dentaire à Dakar : prix, matériaux et délais | DABIA",
     description:
-      "Céramique, zircone, métal-céramique : ce qui influence le coût d’une couronne à Dakar, comment se déroule la pose et quand la préférer à un onlay.",
+      "Couronne dentaire à Dakar : prix selon le matériau (céramique, zircone, métal-céramique), étapes de la pose, durée de vie et devis détaillé chez DABIA.",
     date: "2025-08-21",
     category: "Conseils",
     tags: ["couronne dentaire", "prix", "prothèse dentaire", "dentiste dakar"],
@@ -2858,8 +2861,9 @@ export const POSTS = [
     slug: "guide-prix-dentiste-dakar-consultation-soins",
     title:
       "Combien coûte un dentiste à Dakar ? Le guide des prix (indications générales)",
+      seoTitle: "Prix d'une consultation chez le dentiste à Dakar | DABIA",
     description:
-      "De la consultation au détartrage, composite, extraction et soins esthétiques : à quoi s’attendre chez un dentiste à Dakar et ce qui fait varier les tarifs en clinique dentaire.",
+      "Consultation, détartrage, plombage, extraction : ce que comprend chaque tarif chez un dentiste à Dakar et comment lire votre devis sans mauvaise surprise.",
     date: "2025-07-28",
     category: "Conseils",
     tags: ["prix", "dentiste dakar", "clinique dentaire dakar"],
@@ -2900,8 +2904,9 @@ export const POSTS = [
   {
     slug: "detartrage-vs-airflow-difference-prophylaxie-dakar",
     title: "AirFlow dentaire : taches, plaque, tartre et détartrage",
+      seoTitle: "AirFlow dentaire à Dakar : prix, séance et détartrage | DABIA",
     description:
-      "AirFlow dentaire à Dakar : découvrez son action sur les taches et la plaque, ses différences avec le détartrage et quand associer les deux soins.",
+      "AirFlow dentaire à Dakar : déroulement de la séance, prix indicatif, différence avec le détartrage classique et quand associer les deux soins.",
     date: "2025-07-19",
     category: "Prévention",
     tags: ["détartrage", "hygiène", "prévention"],
@@ -3053,8 +3058,9 @@ export const POSTS = [
     slug: "invisalign-aligneurs-prix-duree-entretien-dakar",
     title:
       "Aligneurs transparents (type Invisalign) : prix, durée et entretien à Dakar",
+      seoTitle: "Gouttière dentaire et aligneurs transparents à Dakar : prix | DABIA",
     description:
-      "Qui est éligible ? Combien de temps ? Coût indicatif, hygiène, cas simples vs complexes et contention après traitement.",
+      "Gouttière dentaire (aligneurs transparents type Invisalign) à Dakar : indications, durée du traitement, entretien, contention et coût indicatif chez DABIA.",
     date: "2025-06-19",
     category: "Orthodontie",
     tags: ["Invisalign Dakar", "aligneurs transparents", "orthodontie adulte"],
@@ -3611,8 +3617,9 @@ export const POSTS = [
     slug: "prix-radio-dentaire-scanner-3d-dakar",
     title:
       "Prix radio dentaire et scanner 3D à Dakar : combien prévoir en 2026 ?",
+      seoTitle: "Prix radio, scanner et radiologie dentaire à Dakar (2026) | DABIA",
     description:
-      "Combien coûte une radio dentaire ou un scanner 3D (CBCT) à Dakar en 2026 ? Tarifs par type d'examen, remboursement et devis à la Clinique DABIA.",
+      "Tarifs d'une radio panoramique, d'un scanner 3D (CBCT) et d'une radiologie dentaire à Dakar : ce que comprend le prix, remboursement et RDV à la Clinique DABIA.",
     date: "2026-01-25",
     category: "Technologie",
     tags: [
@@ -3698,8 +3705,9 @@ export const POSTS = [
     slug: "prix-soins-dentaires-dakar-2026-guide",
     title:
       "Prix des soins dentaires à Dakar (2026) : Guide complet et transparence",
+      seoTitle: "Tarif dentiste Dakar 2026 : détartrage, carie, extraction | DABIA",
     description:
-      "Combien coûte un dentiste à Dakar ? Découvrez les tarifs moyens pour un détartrage, une dévitalisation ou une extraction et comment obtenir un devis clair.",
+      "Combien prévoir chez le dentiste à Dakar en 2026 : consultation, détartrage, soin de carie, extraction, couronne et implant. Fourchettes de prix et devis clair.",
     date: "2026-02-15",
     category: "Conseils",
     tags: [
@@ -3757,8 +3765,9 @@ export const POSTS = [
   {
     slug: "comment-choisir-meilleur-dentiste-dakar",
     title: "Meilleur dentiste à Dakar : comment choisir et prendre rendez-vous",
+      seoTitle: "Meilleur dentiste à Dakar : 5 critères pour bien choisir",
     description:
-      "Critères essentiels pour trouver un bon cabinet dentaire à Dakar : hygiène, écoute, équipements et localisation.",
+      "Comment reconnaître un bon dentiste ou cabinet dentaire à Dakar : hygiène, équipements, clarté du devis, avis patients et accès. La check-list avant votre RDV.",
     date: "2026-02-10",
     category: "Conseils",
     tags: [
@@ -3845,9 +3854,9 @@ export const POSTS = [
   {
     slug: "rage-de-dent-remede-grand-mere-dakar",
     title: "Rage de dent : Remèdes de grand-mère vs visite chez le dentiste",
-    seoTitle: "Rage de dent, abcès : remèdes de grand-mère ou dentiste ?",
+    seoTitle: "Comment soulager une rage de dent vite (à la maison) | Dakar",
     description:
-      "Rage de dent ou abcès : ce qui marche pour soulager, ce qui ne suffit pas, et pourquoi consulter un dentiste à Dakar rapidement.",
+      "Rage de dent la nuit ou en urgence : les gestes qui calment la douleur immédiatement, les remèdes de grand-mère et leurs limites, et quand consulter un dentiste à Dakar.",
     date: "2026-02-02",
     category: "Urgences",
     tags: [
@@ -4040,8 +4049,9 @@ export const POSTS = [
     slug: "brosser-dents-pendant-ramadan-autorise",
     title:
       "Peut-on se brosser les dents pendant le jeûne ? La réponse du dentiste",
+      seoTitle: "Peut-on se brosser les dents à jeun (Ramadan) ? Réponse dentiste",
     description:
-      "Dentifrice, Siwak ou brosse à sec ? Le point sur l'hygiène bucco-dentaire autorisée pendant les heures de jeûne.",
+      "Brossage des dents à jeun, dentifrice, siwak, bain de bouche : ce qui est autorisé pendant le jeûne du Ramadan, expliqué par un dentiste à Dakar.",
     date: "2026-02-13",
     category: "Prévention",
     tags: ["brossage dents", "ramadan", "hygiène bucco-dentaire"],
@@ -4391,8 +4401,9 @@ export const POSTS = [
     slug: "dentiste-mutuelle-ipm-dakar-prise-en-charge-2026",
     title:
       "Dentiste et mutuelle à Dakar : comment être bien remboursé avec l'IPM en 2026",
+      seoTitle: "IPM Sénélec et mutuelles dentaires : remboursement à Dakar",
     description:
-      "Vous avez une mutuelle ou une IPM ? Découvrez comment optimiser le remboursement de vos soins dentaires à Dakar : démarches, documents nécessaires, plafonds et astuces pratiques.",
+      "Soins dentaires remboursés avec l'IPM Sénélec, l'IPM, les mutuelles et assurances à Dakar : documents à fournir, plafonds, délais et démarches expliqués.",
     date: "2026-06-24",
     category: "Conseils",
     tags: [

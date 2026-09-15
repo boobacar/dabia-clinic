@@ -6,5 +6,7 @@ const faq = [
 ];
 
 export default function LocaliteHlmGrandYoff() {
-  return <LocalitePage quartier="HLM Grand Yoff" quartierPreposition="de" slug="cabinet-dentaire-hlm-grand-yoff" areaServed={["Grand Yoff", "Scat Urbam", "Parcelles Assainies"]} intro="La Clinique Dentaire DABIA accueille les patients de HLM Grand Yoff, Grand Yoff et des Parcelles Assainies dans un cabinet moderne à Sicap Foire (Liberté 6). Soins complets : consultation, urgence, détartrage, implants, orthodontie, facettes et blanchiment. Devis clair, créneaux adaptés." faq={faq} />;
+  return <LocalitePage quartier="HLM Grand Yoff" quartierPreposition="de" slug="cabinet-dentaire-hlm-grand-yoff"
+      seoTitle="Dentiste à Grand Yoff et HLM, Dakar : RDV rapide | DABIA"
+      seoDescription="Cabinet dentaire proche de HLM Grand Yoff et des Parcelles Assainies : consultation, urgences, détartrage, implants, orthodontie, esthétique. Devis clair, RDV en ligne." areaServed={["Grand Yoff", "Scat Urbam", "Parcelles Assainies"]} intro="La Clinique Dentaire DABIA accueille les patients de HLM Grand Yoff, Grand Yoff et des Parcelles Assainies dans un cabinet moderne à Sicap Foire (Liberté 6). Soins complets : consultation, urgence, détartrage, implants, orthodontie, facettes et blanchiment. Devis clair, créneaux adaptés." faq={faq} />;
 }

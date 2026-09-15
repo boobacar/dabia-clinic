@@ -14,7 +14,7 @@ export default function LocaliteFann() {
       areaServed={["Point E", "Plateau", "Médina"]}
       intro="La Clinique Dentaire DABIA accueille les patients de Fann, Point E et du Plateau à Sicap Foire (Liberté 6). Notre équipe propose des soins dentaires complets : de la consultation de routine aux traitements avancés (implants, orthodontie, facettes), avec un accompagnement personnalisé et un devis clair."
       faq={faq}
-      seoTitle="Dentiste Fann Dakar – consultation, urgences et RDV | DABIA"
+      seoTitle="Dentiste à Fann, Dakar : consultation, urgences et RDV | DABIA"
       seoDescription="Dentiste proche de Fann, Point E et du Plateau (Sicap Foire, Liberté 6) : consultation, urgences, implants, orthodontie, facettes. Devis clair, rendez-vous rapide."
     />
   );

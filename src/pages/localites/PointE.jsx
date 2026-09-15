@@ -6,5 +6,7 @@ const faq = [
 ];
 
 export default function LocalitePointE() {
-  return <LocalitePage quartier="Point E" quartierPreposition="du" slug="cabinet-dentaire-point-e" areaServed={["Mermoz", "Fann", "Plateau"]} intro="La Clinique Dentaire DABIA reçoit les patients de Point E, Fann et du Plateau dans un cadre moderne à Sicap Foire (Liberté 6). Notre équipe assure les soins dentaires complets : consultation, détartrage, traitement des caries, implants, orthodontie, facettes et blanchiment. Devis clair, RDV en ligne disponible." faq={faq} />;
+  return <LocalitePage quartier="Point E" quartierPreposition="du" slug="cabinet-dentaire-point-e"
+      seoTitle="Dentiste à Point E, Dakar : cabinet proche et RDV | DABIA"
+      seoDescription="Dentiste proche de Point E, Fann et du Plateau (Sicap Foire, Liberté 6) : consultation, urgences, implants, orthodontie, facettes. Devis clair, rendez-vous rapide." areaServed={["Mermoz", "Fann", "Plateau"]} intro="La Clinique Dentaire DABIA reçoit les patients de Point E, Fann et du Plateau dans un cadre moderne à Sicap Foire (Liberté 6). Notre équipe assure les soins dentaires complets : consultation, détartrage, traitement des caries, implants, orthodontie, facettes et blanchiment. Devis clair, RDV en ligne disponible." faq={faq} />;
 }

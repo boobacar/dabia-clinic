@@ -25,7 +25,7 @@ export default function LocalitePlateau() {
       areaServed={["Dakar Plateau", "Fann", "Point E", "Médina"]}
       intro="Vous travaillez au Plateau de Dakar et cherchez un dentiste à proximité ? La Clinique Dentaire DABIA, située à Sicap Foire (Liberté 6), est accessible en quelques minutes depuis le Plateau. Notre équipe prend en charge les consultations de routine, les urgences dentaires, l'implantologie, l'orthodontie, les facettes et le blanchiment. Nous comprenons les contraintes des professionnels et proposons des créneaux adaptés, avec un devis transparent remis après examen."
       faq={faq}
-      seoTitle="Dentiste Plateau Dakar – Consultation, Urgences & Implants | DABIA"
+      seoTitle="Dentiste au Plateau, Dakar : consultation et urgences | DABIA"
       seoDescription="Dentiste proche du Plateau de Dakar (Liberté 6, Sicap Foire) : consultation, urgence, implants, orthodontie, esthétique. Créneaux adaptés aux professionnels. RDV en ligne."
     />
   );

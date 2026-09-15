@@ -7,5 +7,7 @@ const faq = [
 ];
 
 export default function LocaliteYoff() {
-  return <LocalitePage quartier="Yoff" slug="cabinet-dentaire-yoff" areaServed={["Almadies", "Ngor", "Ouakam"]} intro="La Clinique Dentaire DABIA accueille les habitants de Yoff et des quartiers environnants à Sicap Foire (Liberté 6), facilement accessible via la VDN. Notre équipe propose des soins dentaires complets : consultation, urgence, détartrage, implants, orthodontie, facettes et blanchiment, avec un devis clair et un suivi personnalisé." faq={faq} />;
+  return <LocalitePage quartier="Yoff" slug="cabinet-dentaire-yoff"
+      seoTitle="Dentiste à Yoff, Dakar : soins et urgences dentaires | DABIA"
+      seoDescription="Dentiste proche de Yoff (Sicap Foire, Liberté 6) : urgences, détartrage, implants, orthodontie, facettes. Accès facile par la VDN, RDV en ligne ou par WhatsApp." areaServed={["Almadies", "Ngor", "Ouakam"]} intro="La Clinique Dentaire DABIA accueille les habitants de Yoff et des quartiers environnants à Sicap Foire (Liberté 6), facilement accessible via la VDN. Notre équipe propose des soins dentaires complets : consultation, urgence, détartrage, implants, orthodontie, facettes et blanchiment, avec un devis clair et un suivi personnalisé." faq={faq} />;
 }

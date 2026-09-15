@@ -56,8 +56,8 @@ export default function CabinetDentaireDakar() {
   return (
     <section className="page-shell px-4 max-w-7xl mx-auto">
       <Seo
-        title="Dentiste à Dakar | Urgences, Implants, Prothèses | DABIA"
-        description="Recherchez un dentiste à Dakar ? Cabinet DABIA : urgence dentaire, implants, prothèses. Devis transparent, RDV rapide. Appelez ou réservez en ligne !"
+        title="Cabinet dentaire à Dakar : devis clair et RDV rapide | DABIA"
+        description="Cabinet dentaire à Dakar (Sicap Foire, Liberté 6) : consultation, urgences, détartrage, implants, prothèses, orthodontie. Devis transparent, RDV rapide en ligne."
         canonical={canonical}
         url={canonical}
         jsonLd={[lbLD, faqLD]}

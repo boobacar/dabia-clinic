@@ -77,8 +77,8 @@ const Assurances = () => {
   return (
     <section className="page-shell px-4 max-w-6xl mx-auto">
       <Seo
-        title="Assurances dentaires partenaires à Dakar – Clinique DABIA"
-        description="Liste des assurances et mutuelles partenaires de la Clinique Dentaire DABIA à Dakar, avec conseils pratiques sur la prise en charge et les démarches patient."
+        title="Assurances, IPM et mutuelles dentaires à Dakar | DABIA"
+        description="IPM Sénélec, mutuelles et assurances santé au Sénégal : prise en charge de vos soins dentaires à la Clinique DABIA (Dakar). Dossier, remboursement et devis clair."
         canonical="https://www.cliniquedentairedabia.com/infos/assurances"
         url="https://www.cliniquedentairedabia.com/infos/assurances"
       />

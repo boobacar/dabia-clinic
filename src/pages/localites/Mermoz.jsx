@@ -25,7 +25,7 @@ export default function LocaliteMermoz() {
       areaServed={["Sicap Foire", "Point E", "Ouakam"]}
       intro="La Clinique Dentaire DABIA reçoit les habitants de Mermoz, Sicap Foire et des quartiers voisins dans un cadre moderne et apaisant. Notre équipe assure les soins du quotidien (détartrage, traitement des caries), les urgences dentaires, l'implantologie, l'orthodontie adulte et enfant, ainsi que l'esthétique du sourire (facettes, blanchiment). Chaque plan de traitement est expliqué avec transparence, du diagnostic au devis."
       faq={faq}
-      seoTitle="Dentiste Mermoz Dakar – Urgences, Implants & Orthodontie | DABIA"
+      seoTitle="Dentiste à Mermoz, Dakar : urgences, implants et RDV | DABIA"
       seoDescription="Cabinet dentaire proche de Mermoz (Sicap Foire, Liberté 6) : urgences le jour même, détartrage, implants, orthodontie et facettes. Accès facile, RDV en ligne disponible."
     />
   );

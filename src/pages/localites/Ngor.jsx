@@ -6,5 +6,7 @@ const faq = [
 ];
 
 export default function LocaliteNgor() {
-  return <LocalitePage quartier="Ngor" slug="cabinet-dentaire-ngor" areaServed={["Almadies", "Ouakam", "Yoff"]} intro="La Clinique Dentaire DABIA reçoit les habitants de Ngor, des Almadies et d'Ouakam dans un cabinet moderne à Sicap Foire (Liberté 6). Consultation, détartrage, soins conservateurs, implants, prothèses, orthodontie et esthétique : toute la dentisterie sous un même toit, avec devis transparent et suivi personnalisé." faq={faq} />;
+  return <LocalitePage quartier="Ngor" slug="cabinet-dentaire-ngor"
+      seoTitle="Dentiste à Ngor, Dakar : clinique dentaire proche | DABIA"
+      seoDescription="Soins dentaires proches de Ngor, des Almadies et d'Ouakam : consultation, urgences, détartrage, implants, orthodontie, esthétique. RDV rapide à la Clinique DABIA." areaServed={["Almadies", "Ouakam", "Yoff"]} intro="La Clinique Dentaire DABIA reçoit les habitants de Ngor, des Almadies et d'Ouakam dans un cabinet moderne à Sicap Foire (Liberté 6). Consultation, détartrage, soins conservateurs, implants, prothèses, orthodontie et esthétique : toute la dentisterie sous un même toit, avec devis transparent et suivi personnalisé." faq={faq} />;
 }

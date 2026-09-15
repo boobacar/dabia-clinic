@@ -39,9 +39,9 @@ const [
   read("scripts/generate-sitemap.mjs"),
 ]);
 
-const homeTitle = "Dentiste à Dakar – RDV rapide, urgence et devis | Clinique DABIA";
+const homeTitle = "Dentiste à Dakar : clinique et cabinet dentaire, urgences | DABIA";
 const homeDescription =
-  "Dentiste à Dakar, Liberté 6 : consultation, urgence, détartrage, implant, orthodontie et esthétique. Appelez ou prenez rendez-vous en ligne rapidement.";
+  "Dentiste à Dakar à Liberté 6 (Sicap Foire) : consultation, urgences, détartrage, implants, orthodontie, facettes. Devis clair, RDV en ligne ou WhatsApp.";
 for (const [label, source] of [
   ["Home.jsx", home],
   ["index.html", indexHtml],

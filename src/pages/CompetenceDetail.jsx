@@ -512,7 +512,7 @@ const CompetenceDetail = () => {
     >
       <Seo
         title={competence.seoTitle || `${competence.titre} à Dakar`}
-        description={description}
+        description={competence.seoDescription || description}
         canonical={url}
         url={url}
         image={imgAbs}

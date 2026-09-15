@@ -6,5 +6,7 @@ const faq = [
 ];
 
 export default function LocaliteSacreCoeur() {
-  return <LocalitePage quartier="Sacré-Cœur" quartierPreposition="du" slug="cabinet-dentaire-sacre-coeur" areaServed={["VDN", "Mermoz", "Liberté 6"]} intro="Située à Sicap Foire (Liberté 6), la Clinique Dentaire DABIA accueille les résidents de Sacré-Cœur et des quartiers VDN. Accès facile, stationnement disponible. Notre équipe propose une dentisterie complète : urgence, implants, orthodontie, facettes et blanchiment, avec un suivi personnalisé." faq={faq} />;
+  return <LocalitePage quartier="Sacré-Cœur" quartierPreposition="du" slug="cabinet-dentaire-sacre-coeur"
+      seoTitle="Dentiste à Sacré-Cœur, Dakar : clinique dentaire proche | DABIA"
+      seoDescription="Dentiste proche de Sacré-Cœur, de la VDN et de Mermoz : consultation, urgences, détartrage, implants, orthodontie, esthétique. Devis clair, RDV rapide chez DABIA." areaServed={["VDN", "Mermoz", "Liberté 6"]} intro="Située à Sicap Foire (Liberté 6), la Clinique Dentaire DABIA accueille les résidents de Sacré-Cœur et des quartiers VDN. Accès facile, stationnement disponible. Notre équipe propose une dentisterie complète : urgence, implants, orthodontie, facettes et blanchiment, avec un suivi personnalisé." faq={faq} />;
 }

@@ -59,8 +59,8 @@ export default function Competences() {
         .
       </p>
       <Seo
-        title="Soins dentaires Dakar : implants, orthodontie, esthétique, urgence | DABIA"
-        description="Découvrez tous nos soins dentaires à Dakar : implantologie, orthodontie adulte/enfant, facettes, blanchiment, détartrage, urgences. Devis clair à la Clinique DABIA."
+        title="Soins dentaires à Dakar : toutes nos compétences | DABIA"
+        description="Tous les soins dentaires de la Clinique DABIA à Dakar : consultation, détartrage, soins des caries, implants, orthodontie, facettes, blanchiment et urgences. Devis clair."
         canonical="https://www.cliniquedentairedabia.com/all-competences"
         url="https://www.cliniquedentairedabia.com/all-competences"
       />

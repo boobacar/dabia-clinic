@@ -218,7 +218,7 @@ const RendezVous = () => {
   return (
     <section className="page-shell appointment-page relative overflow-hidden">
       <Seo
-        title="Prendre RDV dentiste à Dakar — Consultation en ligne rapide | Clinique DABIA"
+        title="RDV dentiste à Dakar : réservez en ligne en 1 minute | DABIA"
         description="Prenez rendez-vous chez le dentiste à Dakar en 1 minute. Consultation, urgence, détartrage, implant ou orthodontie. Formulaire en ligne, appel (+221 77 703 93 93) ou WhatsApp. Confirmation rapide par l'équipe."
         canonical="https://www.cliniquedentairedabia.com/rendez-vous"
         url="https://www.cliniquedentairedabia.com/rendez-vous"

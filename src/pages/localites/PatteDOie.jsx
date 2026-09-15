@@ -6,5 +6,7 @@ const faq = [
 ];
 
 export default function LocalitePatteDOie() {
-  return <LocalitePage quartier="Patte d'Oie" quartierPreposition="de la" slug="cabinet-dentaire-patte-d-oie" areaServed={["Grand Yoff", "VDN", "Parcelles Assainies"]} intro="Vous cherchez un dentiste moderne près de la Patte d'Oie ? La Clinique Dentaire DABIA vous reçoit à Sicap Foire (Liberté 6), à quelques minutes en voiture. Notre équipe assure les soins dentaires pour toute la famille : consultation, urgence, détartrage, implants, orthodontie, facettes et blanchiment, avec un accompagnement personnalisé." faq={faq} />;
+  return <LocalitePage quartier="Patte d'Oie" quartierPreposition="de la" slug="cabinet-dentaire-patte-d-oie"
+      seoTitle="Dentiste à la Patte d'Oie, Dakar : RDV et urgences | DABIA"
+      seoDescription="Cabinet dentaire proche de la Patte d'Oie et de Grand Yoff : consultation, urgences, détartrage, implants, orthodontie. Devis clair, rendez-vous rapide." areaServed={["Grand Yoff", "VDN", "Parcelles Assainies"]} intro="Vous cherchez un dentiste moderne près de la Patte d'Oie ? La Clinique Dentaire DABIA vous reçoit à Sicap Foire (Liberté 6), à quelques minutes en voiture. Notre équipe assure les soins dentaires pour toute la famille : consultation, urgence, détartrage, implants, orthodontie, facettes et blanchiment, avec un accompagnement personnalisé." faq={faq} />;
 }

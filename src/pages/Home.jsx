@@ -40,7 +40,7 @@ const faqItems = [
 
 export default function Home() {
   return <main className="home-page">
-    <Seo title="Dentiste à Dakar – RDV rapide, urgence et devis | Clinique DABIA" description="Dentiste à Dakar, Liberté 6 : consultation, urgence, détartrage, implant, orthodontie et esthétique. Appelez ou prenez rendez-vous en ligne rapidement." canonical="https://www.cliniquedentairedabia.com/" url="https://www.cliniquedentairedabia.com/" jsonLd={[{ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqItems.map(item => ({ "@type": "Question", name: item.q, acceptedAnswer: { "@type": "Answer", text: item.a } })) }]} />
+    <Seo title="Dentiste à Dakar : clinique et cabinet dentaire, urgences | DABIA" description="Dentiste à Dakar à Liberté 6 (Sicap Foire) : consultation, urgences, détartrage, implants, orthodontie, facettes. Devis clair, RDV en ligne ou WhatsApp." canonical="https://www.cliniquedentairedabia.com/" url="https://www.cliniquedentairedabia.com/" jsonLd={[{ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqItems.map(item => ({ "@type": "Question", name: item.q, acceptedAnswer: { "@type": "Answer", text: item.a } })) }]} />
     <HeroSlideshow />
     <ClinicIntro />
     <Suspense fallback={null}><KeyMetrics /></Suspense>
