@@ -1,6 +1,7 @@
 // scripts/generate-sitemap.mjs
 import { readFile, writeFile, mkdir } from "node:fs/promises";
-import { existsSync } from "node:fs";
+import { existsSync, statSync } from "node:fs";
+import { execSync } from "node:child_process";
 import { join } from "node:path";
 import process from "node:process";
 import { getAllGeoPages, geoSeoForPath } from "../src/data/geoData.js";
@@ -97,6 +98,29 @@ const readFileSafe = async (p) => {
 };
 
 const iso = (d = new Date()) => new Date(d).toISOString().slice(0, 10);
+
+// lastmod ancré sur le CONTENU : date du dernier commit Git touchant le(s)
+// fichier(s) source de la famille d'URLs (repli : mtime du fichier).
+// Un lastmod identique (= date de build) pour 1191 URLs géo est un signal mort :
+// Google cesse de s'en servir pour prioriser le recrawl et une grappe neuve
+// (usine géo 16 → 34 pays) reste en « Discovered - currently not indexed ».
+function contentLastmod(relPath) {
+  try {
+    const out = execSync(`git log -1 --format=%cI -- "${relPath}"`, {
+      cwd: ROOT,
+      encoding: "utf8",
+      stdio: ["ignore", "pipe", "ignore"],
+    }).trim();
+    if (out) return out.slice(0, 10);
+  } catch {
+    // git indisponible (build hors dépôt) → repli sur le mtime
+  }
+  try {
+    return iso(statSync(join(ROOT, relPath)).mtime);
+  } catch {
+    return iso();
+  }
+}
 const abs = (p) =>
   encodeURI(`${SITE_URL}${p.startsWith("/") ? p : `/${p}`}`);
 
@@ -284,10 +308,11 @@ async function build() {
     (m) => m[1]
   );
   console.log(`🦷 Compétences ajoutées: ${compSlugs.length}`);
+  const compLastmod = contentLastmod("src/data/competences.js");
   const competencesXml = compSlugs.map((slug) =>
     urlNode({
       loc: abs(`/competences/${slug}`),
-      lastmod: today,
+      lastmod: compLastmod,
       changefreq: "monthly",
       priority: "0.8",
     })
@@ -309,10 +334,11 @@ async function build() {
   });
 
   // 4) Tags blog
+  const tagsLastmod = contentLastmod("src/data/posts.js");
   const tagsXml = tagSlugs.map((slug) =>
     urlNode({
       loc: abs(`/blog/tag/${slug}`),
-      lastmod: today,
+      lastmod: tagsLastmod,
       changefreq: "weekly",
       priority: PRIORITY_TAG_SLUGS.includes(slug) ? "0.6" : "0.4",
     })
@@ -327,22 +353,25 @@ async function build() {
     (m) => m[1]
   );
   console.log(`🛠️  Technologies ajoutées: ${techSlugs.length}`);
+  const techLastmod = contentLastmod("src/data/technologies.js");
   const techXml = techSlugs.map((slug) =>
     urlNode({
       loc: abs(`/infos/technologie/${slug}`),
-      lastmod: today,
+      lastmod: techLastmod,
       changefreq: "monthly",
       priority: "0.6",
     })
   );
 
   // 6) Pages géo (usine à pages : pays × compétences + pays × filières + hubs)
+  // lastmod = dernier commit réel de geoData.js, pas la date du build.
+  const geoLastmod = contentLastmod("src/data/geoData.js");
   const geoPages = getAllGeoPages();
   const geoXml = geoPages.map((p) => {
     const seo = geoSeoForPath(p.path) || {};
     return urlNode({
       loc: abs(p.path),
-      lastmod: today,
+      lastmod: geoLastmod,
       changefreq: seo.changefreq || "weekly",
       priority: seo.priority || "0.7",
     });
@@ -350,7 +379,7 @@ async function build() {
   // Index des hubs pays
   const geoIndexXml = urlNode({
     loc: abs("/pays"),
-    lastmod: today,
+    lastmod: geoLastmod,
     changefreq: "weekly",
     priority: "0.8",
   });

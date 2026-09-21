@@ -928,13 +928,24 @@ async function readPostsSource(manifest) {
     )
   );
   const posts = [];
+  // Bornes de chaque article : du `slug:` courant au `slug:` SUIVANT.
+  // Sans cette borne, la fenêtre de 60 KB débordait sur les articles suivants et
+  // le shell héritait de LEUR seoTitle/faq (146 articles servaient un title
+  // étranger, dont 48 celui de la page Point E — boucle GSC du 21/09/2026).
+  const slugPositions = Array.from(src.matchAll(/slug:\s*"([^"]+)"/g))
+    .map((m) => ({ slug: m[1], idx: m.index }))
+    .sort((a, b) => a.idx - b.idx);
+  const postBlocks = new Map();
+  for (let i = 0; i < slugPositions.length; i += 1) {
+    const end =
+      i + 1 < slugPositions.length ? slugPositions[i + 1].idx : src.length;
+    postBlocks.set(slugPositions[i].slug, src.slice(slugPositions[i].idx, end));
+  }
   for (const m of matches) {
     const block = m[0];
     const slug = m[1];
-    // Le regex principal s'arrête à `date:` — utilise une fenêtre élargie
-    // autour du slug pour capturer tags + faq (jusqu'à 60 KB après)
-    const slugIdx = src.indexOf(`slug: "${slug}"`);
-    const window = slugIdx !== -1 ? src.slice(slugIdx, slugIdx + 60000) : block;
+    // Fenêtre STRICTEMENT limitée à l'article courant (slug → slug suivant).
+    const window = postBlocks.get(slug) || block;
     // Title SEO distinct du H1 visible (convention `seoTitle` de posts.js) :
     // sans cette capture, le shell SSG servait le H1 comme title SERP.
     const seoTitleMatch = window.match(/seoTitle:\s*"((?:[^"\\]|\\.)*)"/);

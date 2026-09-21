@@ -1954,10 +1954,10 @@ export const POSTS = [
   {
     slug: "clinique-dentaire-dabia-dakar-expert-tarifs",
     title:
-      "Clinique Dentaire DABIA : Votre Expert Dentiste à Dakar (Avis & Tarifs)",
-      seoTitle: "Cabinet dentaire à Dakar : avis patients, tarifs et RDV | DABIA",
+      "Clinique Dentaire DABIA : votre expert dentiste à Dakar (Soins & Tarifs)",
+      seoTitle: "Cabinet dentaire à Dakar : soins, tarifs et prise de RDV | DABIA",
     description:
-      "Cabinet dentaire à Dakar (Sicap Foire, Liberté 6) : avis de nos patients, tarifs des soins, plateau technique et prise de rendez-vous rapide à la Clinique DABIA.",
+      "Cabinet dentaire à Dakar (Sicap Foire, Liberté 6) : tarifs des soins, plateau technique et prise de rendez-vous rapide à la Clinique DABIA.",
     date: "2026-01-28",
     category: "Conseils",
     tags: [
@@ -2904,7 +2904,7 @@ export const POSTS = [
   {
     slug: "detartrage-vs-airflow-difference-prophylaxie-dakar",
     title: "AirFlow dentaire : taches, plaque, tartre et détartrage",
-      seoTitle: "AirFlow dentaire à Dakar : prix, séance et détartrage | DABIA",
+      seoTitle: "AirFlow dentaire à Dakar : différence avec le détartrage, prix et RDV | DABIA",
     description:
       "AirFlow dentaire à Dakar : déroulement de la séance, prix indicatif, différence avec le détartrage classique et quand associer les deux soins.",
     date: "2025-07-19",
@@ -3058,7 +3058,7 @@ export const POSTS = [
     slug: "invisalign-aligneurs-prix-duree-entretien-dakar",
     title:
       "Aligneurs transparents (type Invisalign) : prix, durée et entretien à Dakar",
-      seoTitle: "Gouttière dentaire et aligneurs transparents à Dakar : prix | DABIA",
+      seoTitle: "Invisalign et gouttières dentaires à Dakar : prix, durée et RDV | DABIA",
     description:
       "Gouttière dentaire (aligneurs transparents type Invisalign) à Dakar : indications, durée du traitement, entretien, contention et coût indicatif chez DABIA.",
     date: "2025-06-19",
@@ -3098,7 +3098,7 @@ export const POSTS = [
   {
     slug: "cbct-radio-3d-dentaire-a-quoi-sert-dakar",
     title: "CBCT dentaire à Dakar : prix, indications et scanner 3D",
-    seoTitle: "CBCT dentaire : c'est quoi, prix et RDV scanner 3D à Dakar | DABIA",
+    seoTitle: "CBCT dentaire à Dakar : à quoi ça sert, prix et rendez-vous | DABIA",
     description:
       "CBCT dentaire à Dakar : indications, déroulement, sécurité et prix sur devis. Diagnostic 3D à la Clinique DABIA Liberté 6, rendez-vous rapide.",
     date: "2025-06-10",
