@@ -553,6 +553,7 @@ export const POSTS = [
   {
     slug: "urgence-dentaire-dakar-weekend-nuit-bons-reflexes-2026",
     title: "Urgence dentaire à Dakar le week-end ou la nuit : les bons réflexes",
+    seoTitle: "Urgence dentaire la nuit ou le week-end à Dakar : que faire ? | DABIA",
     description:
       "Douleur intense, dent cassée, abcès : que faire immédiatement à Dakar en cas d’urgence dentaire la nuit ou le week-end.",
     date: "2026-04-10",
@@ -1463,6 +1464,7 @@ export const POSTS = [
   {
     slug: "tarifs-dentaires-dakar-2026-detartrage-carie-extraction",
     title: "Tarifs dentaires à Dakar en 2026 : détartrage, carie, extraction",
+    seoTitle: "Prix d’un détartrage, d’une carie et d’une extraction à Dakar (2026) | DABIA",
     description:
       "Découvrez les prix indicatifs 2026 à Dakar pour un détartrage, un soin de carie et une extraction : fourchettes FCFA, facteurs de coût et conseils budget.",
     date: "2026-02-27",
@@ -3058,7 +3060,7 @@ export const POSTS = [
     slug: "invisalign-aligneurs-prix-duree-entretien-dakar",
     title:
       "Aligneurs transparents (type Invisalign) : prix, durée et entretien à Dakar",
-      seoTitle: "Invisalign et gouttières dentaires à Dakar : prix, durée et RDV | DABIA",
+      seoTitle: "Gouttière dentaire et aligneurs (Invisalign) à Dakar : prix et durée | DABIA",
     description:
       "Gouttière dentaire (aligneurs transparents type Invisalign) à Dakar : indications, durée du traitement, entretien, contention et coût indicatif chez DABIA.",
     date: "2025-06-19",
@@ -3098,7 +3100,7 @@ export const POSTS = [
   {
     slug: "cbct-radio-3d-dentaire-a-quoi-sert-dakar",
     title: "CBCT dentaire à Dakar : prix, indications et scanner 3D",
-    seoTitle: "CBCT dentaire à Dakar : à quoi ça sert, prix et rendez-vous | DABIA",
+    seoTitle: "CBCT dentaire : c’est quoi, à quoi ça sert et où le faire à Dakar | DABIA",
     description:
       "CBCT dentaire à Dakar : indications, déroulement, sécurité et prix sur devis. Diagnostic 3D à la Clinique DABIA Liberté 6, rendez-vous rapide.",
     date: "2025-06-10",
@@ -3705,7 +3707,7 @@ export const POSTS = [
     slug: "prix-soins-dentaires-dakar-2026-guide",
     title:
       "Prix des soins dentaires à Dakar (2026) : Guide complet et transparence",
-      seoTitle: "Tarif dentiste Dakar 2026 : détartrage, carie, extraction | DABIA",
+      seoTitle: "Budget soins dentaires à Dakar : combien prévoir en 2026 ? | DABIA",
     description:
       "Combien prévoir chez le dentiste à Dakar en 2026 : consultation, détartrage, soin de carie, extraction, couronne et implant. Fourchettes de prix et devis clair.",
     date: "2026-02-15",
