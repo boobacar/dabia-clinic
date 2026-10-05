@@ -54,7 +54,7 @@ for (const [label, source] of [
   );
 }
 
-const cbctTitle = "CBCT dentaire : c’est quoi, à quoi ça sert et où le faire à Dakar | DABIA";
+const cbctTitle = "CBCT dentaire à Dakar : c’est quoi, à quoi ça sert, prix et où le faire | DABIA";
 assert.ok(postsMeta.includes(cbctTitle), "posts.meta.json doit utiliser le title CBCT orienté rendez-vous");
 assert.ok(
   postsMeta.includes('"heading": "CBCT dentaire à Dakar : prix, indications et scanner 3D"'),

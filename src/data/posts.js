@@ -3074,6 +3074,7 @@ export const POSTS = [
   {
     slug: "bridge-ou-implant-que-choisir-dakar",
     title: "Bridge ou implant : que choisir pour remplacer une dent ?",
+    seoTitle: "Bridge ou implant dentaire à Dakar : que choisir, prix et durée | DABIA",
     description:
       "Comparatif clair : durée, coût, préservation de l’os et des dents voisines, entretien et indications.",
     date: "2025-06-16",
@@ -3100,7 +3101,7 @@ export const POSTS = [
   {
     slug: "cbct-radio-3d-dentaire-a-quoi-sert-dakar",
     title: "CBCT dentaire à Dakar : prix, indications et scanner 3D",
-    seoTitle: "CBCT dentaire : c’est quoi, à quoi ça sert et où le faire à Dakar | DABIA",
+    seoTitle: "CBCT dentaire à Dakar : c’est quoi, à quoi ça sert, prix et où le faire | DABIA",
     description:
       "CBCT dentaire à Dakar : indications, déroulement, sécurité et prix sur devis. Diagnostic 3D à la Clinique DABIA Liberté 6, rendez-vous rapide.",
     date: "2025-06-10",
