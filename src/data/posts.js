@@ -3708,7 +3708,8 @@ export const POSTS = [
     slug: "prix-soins-dentaires-dakar-2026-guide",
     title:
       "Prix des soins dentaires à Dakar (2026) : Guide complet et transparence",
-      seoTitle: "Budget soins dentaires à Dakar : combien prévoir en 2026 ? | DABIA",
+      seoTitle:
+        "Prix des soins dentaires à Dakar en 2026 : consultation, détartrage, couronne | DABIA",
     description:
       "Combien prévoir chez le dentiste à Dakar en 2026 : consultation, détartrage, soin de carie, extraction, couronne et implant. Fourchettes de prix et devis clair.",
     date: "2026-02-15",
@@ -3768,7 +3769,8 @@ export const POSTS = [
   {
     slug: "comment-choisir-meilleur-dentiste-dakar",
     title: "Meilleur dentiste à Dakar : comment choisir et prendre rendez-vous",
-      seoTitle: "Meilleur dentiste à Dakar : 5 critères pour bien choisir",
+      seoTitle:
+        "Meilleur dentiste à Dakar : 5 critères pour bien choisir (avis, prix, accès) | DABIA",
     description:
       "Comment reconnaître un bon dentiste ou cabinet dentaire à Dakar : hygiène, équipements, clarté du devis, avis patients et accès. La check-list avant votre RDV.",
     date: "2026-02-10",
