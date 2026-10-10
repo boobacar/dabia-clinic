@@ -546,7 +546,7 @@ const RendezVous = () => {
                   <a href="/blog/prix-consultation-dentiste-dakar-combien-prevoir-2026" className="underline text-[#bb2988]">Prix consultation dentiste à Dakar</a>
                   <a href="/blog/detartrage-dentaire-frequence-dakar-prevention" className="underline text-[#bb2988]">Détartrage à Dakar : fréquence recommandée</a>
                   <a href="/blog/dentiste-pendant-ramadan-dakar-soins-faq-2026" className="underline text-[#bb2988]">Ramadan et dentiste à Dakar</a>
-                  <a href="/blog/urgence-dentaire-nuit-weekend-dakar" className="underline text-[#bb2988]">Urgence la nuit ou le week-end : que faire</a>
+                  <a href="/blog/urgence-dentiste-dakar-24-24-nuit-weekend" className="underline text-[#bb2988]">Urgence la nuit ou le week-end : que faire</a>
                 </div>
               </div>
 
@@ -603,7 +603,7 @@ const RendezVous = () => {
               <Link to="/blog/premiere-consultation-dentiste-dakar-deroulement-2026" className="text-[#bb2988] underline hover:text-[#9b2170]">
                 → Première consultation : à quoi s'attendre
               </Link>
-              <Link to="/blog/urgence-dentaire-nuit-weekend-dakar" className="text-[#bb2988] underline hover:text-[#9b2170]">
+              <Link to="/blog/urgence-dentiste-dakar-24-24-nuit-weekend" className="text-[#bb2988] underline hover:text-[#9b2170]">
                 → Urgence dentaire : que faire
               </Link>
               <Link to="/dentiste-dakar" className="text-[#bb2988] underline hover:text-[#9b2170]">

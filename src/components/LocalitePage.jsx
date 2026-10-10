@@ -28,13 +28,19 @@ export default function LocalitePage({
   faq = [],
   seoTitle,
   seoDescription,
+  quartierPreposition = "de",
 }) {
+  // Le préfixe est identique dans les shells SSG (`STATIC_OVERRIDES`) : garder les
+  // deux sources alignées, sinon le HTML servi à Google et le rendu client divergent.
+  const presQ = `près ${quartierPreposition}${
+    quartierPreposition.endsWith("'") ? "" : " "
+  }${quartier}`;
   const url = `https://www.cliniquedentairedabia.com/${slug}`;
 
-  const title = seoTitle || `Dentiste près de ${quartier}, Dakar – Accès & soins | DABIA`;
+  const title = seoTitle || `Dentiste ${presQ}, Dakar – Accès & soins | DABIA`;
   const description =
     seoDescription ||
-    `Vous cherchez un dentiste près de ${quartier} ? La Clinique DABIA vous reçoit à Sicap Foire, Liberté 6, pour consultation, urgence et soins dentaires. Appelez le 77 703 93 93.`;
+    `Vous cherchez un dentiste ${presQ} ? La Clinique DABIA vous reçoit à Sicap Foire, Liberté 6, pour consultation, urgence et soins dentaires. Appelez le 77 703 93 93.`;
 
   const jsonLd = [
     {
@@ -97,7 +103,7 @@ export default function LocalitePage({
       <Breadcrumbs
         items={[
           { label: "Accueil", href: "/" },
-          { label: `Dentiste près de ${quartier}` },
+          { label: `Dentiste ${presQ}` },
         ]}
       />
       <motion.h1
@@ -106,7 +112,7 @@ export default function LocalitePage({
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
       >
-        Votre dentiste près de {quartier}
+        Votre dentiste {presQ}
       </motion.h1>
       <motion.p
         className="mt-3 text-gray-700 max-w-3xl"
@@ -189,7 +195,7 @@ export default function LocalitePage({
           </Link>
           <span className="text-gray-300">•</span>
           <Link
-            to="/blog/urgence-dentaire-nuit-weekend-dakar"
+            to="/blog/urgence-dentiste-dakar-24-24-nuit-weekend"
             className="text-[#bb2988] underline hover:text-[#9b2170]"
           >
             Urgence la nuit ou le week-end : les gestes utiles
@@ -203,7 +209,7 @@ export default function LocalitePage({
           </Link>
           <span className="text-gray-300">•</span>
           <Link
-            to="/blog/prix-appareil-dentaire-dakar-senegal"
+            to="/blog/appareil-dentaire-prix-dakar-guide-complet"
             className="text-[#bb2988] underline hover:text-[#9b2170]"
           >
             Prix appareil dentaire
@@ -219,7 +225,7 @@ export default function LocalitePage({
       {faq.length > 0 && (
         <section className="mt-8">
           <h2 className="text-2xl font-bold text-[#ad9d64] mb-4">
-            Questions fréquentes — Dentiste près de {quartier}
+            Questions fréquentes — Dentiste {presQ}
           </h2>
           <div className="space-y-3">
             {faq.map((f, i) => (

@@ -108,7 +108,7 @@ export default function LocaliteVdn() {
       <div className="mt-8 p-4 border rounded-lg bg-yellow-50 text-yellow-800 text-sm">
         Besoin d’une prise en charge rapide ? Consultez notre guide
         <Link
-          to="/blog/urgence-dentaire-dakar-que-faire"
+          to="/blog/urgence-dentiste-dakar-24-24-nuit-weekend"
           className="ml-1 underline text-[#bb2988]"
         >
           Urgence dentaire à Dakar

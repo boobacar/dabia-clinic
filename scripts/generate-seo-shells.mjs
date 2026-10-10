@@ -62,6 +62,18 @@ const STATIC_PATHS = [
   "/cabinet-dentaire-fann",
   "/cabinet-dentaire-plateau",
   "/cabinet-dentaire-vdn",
+  "/cabinet-dentaire-sicap-foire",
+  "/cabinet-dentaire-medina",
+  "/cabinet-dentaire-petersen",
+  "/cabinet-dentaire-ouest-foire",
+  "/cabinet-dentaire-dieuppeul",
+  "/cabinet-dentaire-keur-massar",
+  "/cabinet-dentaire-pikine",
+  "/cabinet-dentaire-guediawaye",
+  "/cabinet-dentaire-mbao",
+  "/cabinet-dentaire-yeumbeul",
+  "/cabinet-dentaire-thiaroye",
+  "/cabinet-dentaire-rufisque",
   "/en/dental-clinic-dakar",
   "/tourisme-dentaire-dakar",
   "/galerie",
@@ -505,6 +517,102 @@ const STATIC_OVERRIDES = {
         },
       },
     ],
+  },
+  "/cabinet-dentaire-sicap-foire": {
+    title: "Dentiste à Sicap Foire (Dakar) : clinique dentaire à Liberté 6 | DABIA",
+    description:
+      "Clinique dentaire à Sicap Foire (Liberté 6, Dakar) : consultations, urgences, détartrage, implants et orthodontie. Devis clair, RDV en ligne ou par téléphone.",
+    h1: "Votre dentiste près de Sicap Foire",
+    intro:
+      "La Clinique Dentaire DABIA est installée au cœur de Sicap Foire, sur les 2 voies de Liberté 6 (à 150 m du Uno). Les habitants du quartier y accèdent à pied ou en quelques minutes : consultation, détartrage, soins des caries, urgences dentaires, implants, orthodontie et esthétique du sourire. Un devis détaillé est remis et expliqué avant chaque soin.",
+  },
+  "/cabinet-dentaire-medina": {
+    title: "Dentiste près de la Médina, Dakar : soins et urgences | DABIA",
+    description:
+      "Dentiste proche de la Médina à Dakar (Sicap Foire, Liberté 6) : consultation, détartrage, urgences, prothèses, implants et orthodontie. Devis clair avant soin.",
+    h1: "Votre dentiste près de la Médina",
+    intro:
+      "Les patients de la Médina rejoignent la Clinique Dentaire DABIA par l'avenue Cheikh Anta Diop puis le secteur de Liberté 6. La clinique prend en charge les soins courants (consultation, détartrage, caries), les urgences dentaires, les prothèses, les implants, l'orthodontie et l'esthétique du sourire, avec un devis écrit avant tout traitement.",
+  },
+  "/cabinet-dentaire-petersen": {
+    title: "Dentiste près de Petersen, Dakar : RDV et urgences | DABIA",
+    description:
+      "Dentiste proche de Petersen (Dakar) : consultation, détartrage, urgences, implants, orthodontie et esthétique du sourire à la Clinique DABIA, Liberté 6. RDV rapide.",
+    h1: "Votre dentiste près de Petersen",
+    intro:
+      "Depuis Petersen, Fann et Point E, la Clinique Dentaire DABIA est rapidement accessible par la Corniche puis la VDN ou les voies de Liberté 6. L'équipe assure les consultations, le détartrage, les soins de caries, les urgences dentaires, les couronnes, les implants, l'orthodontie et les soins esthétiques du sourire.",
+  },
+  "/cabinet-dentaire-ouest-foire": {
+    title: "Dentiste à Ouest-Foire (Dakar) : cabinet dentaire et RDV | DABIA",
+    description:
+      "Dentiste proche d'Ouest-Foire et de la Foire (Dakar) : consultation, urgences, détartrage, implants, orthodontie, esthétique. Clinique DABIA, Liberté 6.",
+    h1: "Votre dentiste près d'Ouest-Foire",
+    intro:
+      "Les habitants d'Ouest-Foire, de la Foire et de la Cité Keur Gorgui rejoignent la Clinique Dentaire DABIA par la VDN puis les voies de Liberté 6. La clinique propose l'ensemble des soins dentaires : prévention, détartrage, traitement des caries, prothèses, implants, orthodontie, chirurgie buccale simple et esthétique du sourire.",
+  },
+  "/cabinet-dentaire-dieuppeul": {
+    title: "Dentiste près de Dieuppeul, Dakar : soins et RDV | DABIA",
+    description:
+      "Dentiste proche de Dieuppeul, Derklé et Castors à Dakar : consultations, urgences, détartrage, implants et orthodontie à la Clinique DABIA, Liberté 6.",
+    h1: "Votre dentiste près de Dieuppeul",
+    intro:
+      "Dieuppeul, Derklé et Castors sont limitrophes du secteur de Liberté 6 : la Clinique Dentaire DABIA est donc tout proche. L'équipe y réalise consultations et bilans, détartrage, soins des caries, extractions, couronnes et prothèses, implants, orthodontie et esthétique du sourire, avec un devis remis avant chaque traitement.",
+  },
+  "/cabinet-dentaire-keur-massar": {
+    title: "Dentiste pour Keur Massar, Yeumbeul et Malika (Dakar) | DABIA",
+    description:
+      "Vous cherchez un dentiste pour Keur Massar, Yeumbeul ou Malika ? La Clinique Dentaire DABIA (Liberté 6, Dakar) reçoit consultations, urgences, prothèses et implants.",
+    h1: "Votre dentiste près de Keur Massar",
+    intro:
+      "Les patients de Keur Massar, Yeumbeul et Malika rejoignent la Clinique Dentaire DABIA par la route nationale 1 en direction de Dakar, puis le secteur de Liberté 6. La clinique dispose d'un plateau technique complet (imagerie, stérilisation) et traite les soins courants comme les cas plus lourds : prothèses, implants, orthodontie, chirurgie simple.",
+  },
+  "/cabinet-dentaire-pikine": {
+    title: "Dentiste pour Pikine et Thiaroye (Dakar) : RDV rapide | DABIA",
+    description:
+      "Dentiste pour les patients de Pikine, Thiaroye et Guédiawaye : consultation, détartrage, urgences, prothèses et implants à la Clinique DABIA (Liberté 6, Dakar).",
+    h1: "Votre dentiste près de Pikine",
+    intro:
+      "Depuis Pikine, Guédiawaye et Thiaroye, la Clinique Dentaire DABIA se rejoint par la route nationale 1 puis le secteur de Liberté 6. La clinique traite l'ensemble des soins dentaires : prévention, caries, gencives, extractions, prothèses, implants, orthodontie et esthétique, avec un devis écrit et expliqué avant chaque intervention.",
+  },
+  "/cabinet-dentaire-guediawaye": {
+    title: "Dentiste pour Guédiawaye (Dakar) : soins et urgences | DABIA",
+    description:
+      "Patients de Guédiawaye : consultations, détartrage, urgences, prothèses, implants et orthodontie à la Clinique Dentaire DABIA, Sicap Foire (Liberté 6), Dakar.",
+    h1: "Votre dentiste près de Guédiawaye",
+    intro:
+      "Les patients de Guédiawaye accèdent à la Clinique Dentaire DABIA par la route nationale 1 puis le secteur de Liberté 6, à Dakar. La clinique assure le diagnostic, les soins courants (détartrage, caries, gencives), les extractions, les prothèses, les implants et l'orthodontie, avec un plateau technique moderne et un devis remis avant traitement.",
+  },
+  "/cabinet-dentaire-mbao": {
+    title: "Dentiste pour Mbao et Rufisque (Dakar) : RDV et urgences | DABIA",
+    description:
+      "Patients de Mbao (Petit Mbao, Grand Mbao, ZAC Mbao) et Rufisque : consultations, urgences, prothèses et implants à la Clinique Dentaire DABIA, Liberté 6, Dakar.",
+    h1: "Votre dentiste près de Mbao",
+    intro:
+      "Depuis Mbao (Petit Mbao, Grand Mbao, ZAC Mbao) et les communes voisines, la Clinique Dentaire DABIA se rejoint par la route nationale 1 en direction de Dakar puis le secteur de Liberté 6. La clinique traite prévention, caries, gencives, extractions, prothèses, implants, orthodontie et esthétique du sourire, devis écrit avant chaque soin.",
+  },
+  "/cabinet-dentaire-yeumbeul": {
+    title: "Dentiste pour Yeumbeul et Malika (Dakar) : soins, prix | DABIA",
+    description:
+      "Dentiste pour Yeumbeul et Malika : consultations, détartrage, urgences, prothèses, implants et orthodontie à la Clinique Dentaire DABIA, Sicap Foire, Dakar.",
+    h1: "Votre dentiste près de Yeumbeul",
+    intro:
+      "Les patients de Yeumbeul et de Malika rejoignent la Clinique Dentaire DABIA par la route nationale 1 puis le secteur de Liberté 6, à Dakar. La clinique regroupe sur un même lieu le diagnostic, l'imagerie, les soins courants, les prothèses, les implants et l'orthodontie, ce qui évite de multiplier les déplacements et les interlocuteurs.",
+  },
+  "/cabinet-dentaire-thiaroye": {
+    title: "Dentiste pour Thiaroye (Dakar) : consultation et urgences | DABIA",
+    description:
+      "Patients de Thiaroye : consultations, détartrage, urgences dentaires, prothèses et implants à la Clinique Dentaire DABIA, Sicap Foire (Liberté 6), Dakar.",
+    h1: "Votre dentiste près de Thiaroye",
+    intro:
+      "Depuis Thiaroye, la Clinique Dentaire DABIA se rejoint par la route nationale 1 en direction de Dakar puis le secteur de Liberté 6. La clinique prend en charge les urgences dentaires (douleur, abcès, dent cassée), les soins courants, les prothèses, les implants et l'orthodontie, avec un devis détaillé remis avant chaque traitement.",
+  },
+  "/cabinet-dentaire-rufisque": {
+    title: "Dentiste pour Rufisque, Bargny et Diamniadio (Dakar) | DABIA",
+    description:
+      "Dentiste pour les patients de Rufisque, Bargny et Diamniadio : implants, prothèses, orthodontie et urgences à la Clinique Dentaire DABIA (Dakar), plateau technique complet.",
+    h1: "Votre dentiste près de Rufisque",
+    intro:
+      "Depuis Rufisque, Bargny et Diamniadio, la Clinique Dentaire DABIA se rejoint par l'autoroute ou la route nationale 1 puis le secteur de Liberté 6, à Dakar. La clinique dispose d'un plateau technique complet (CBCT 3D, scanner intra-oral, stérilisation) pour les soins courants comme pour l'implantologie, l'orthodontie et la prothèse.",
   },
 };
 

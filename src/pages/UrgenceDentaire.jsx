@@ -253,7 +253,7 @@ export default function UrgenceDentaire() {
           Prendre rendez‑vous
         </Link>
         <Link
-          to="/blog/urgence-dentaire-dakar-que-faire"
+          to="/blog/urgence-dentiste-dakar-24-24-nuit-weekend"
           className="inline-flex items-center gap-2 btn-cta"
         >
           Lire notre guide →
@@ -270,7 +270,7 @@ export default function UrgenceDentaire() {
           Lire aussi (urgence + Ramadan)
         </h2>
         <div className="mt-3 grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
-          <Link className="underline text-[#bb2988]" to="/blog/urgence-dentaire-nuit-weekend-dakar">
+          <Link className="underline text-[#bb2988]" to="/blog/urgence-dentiste-dakar-24-24-nuit-weekend">
             Urgence dentaire la nuit ou le week-end : que faire
           </Link>
           <Link className="underline text-[#bb2988]" to="/blog/urgence-dentaire-rompre-jeune-ramadan">

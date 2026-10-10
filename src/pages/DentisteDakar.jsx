@@ -705,7 +705,7 @@ export default function DentisteDakar() {
           <Link className="underline text-[#bb2988]" to="/infos/technologie/cone-beam-ct-cbct">
             CBCT dentaire 3D à Dakar
           </Link>
-          <Link className="underline text-[#bb2988]" to="/blog/urgence-dentaire-nuit-weekend-dakar">
+          <Link className="underline text-[#bb2988]" to="/blog/urgence-dentiste-dakar-24-24-nuit-weekend">
             Urgence dentaire la nuit ou le week-end : que faire
           </Link>
           <Link className="underline text-[#bb2988]" to="/blog/soins-dentaires-pendant-ramadan-jeune">

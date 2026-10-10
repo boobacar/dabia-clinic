@@ -71,6 +71,18 @@ const STATIC_ROUTES = [
   "/cabinet-dentaire-fann",
   "/cabinet-dentaire-plateau",
   "/cabinet-dentaire-vdn",
+  "/cabinet-dentaire-sicap-foire",
+  "/cabinet-dentaire-medina",
+  "/cabinet-dentaire-petersen",
+  "/cabinet-dentaire-ouest-foire",
+  "/cabinet-dentaire-dieuppeul",
+  "/cabinet-dentaire-keur-massar",
+  "/cabinet-dentaire-pikine",
+  "/cabinet-dentaire-guediawaye",
+  "/cabinet-dentaire-mbao",
+  "/cabinet-dentaire-yeumbeul",
+  "/cabinet-dentaire-thiaroye",
+  "/cabinet-dentaire-rufisque",
   "/galerie",
 ];
 

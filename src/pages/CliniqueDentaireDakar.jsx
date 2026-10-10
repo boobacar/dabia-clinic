@@ -253,7 +253,7 @@ export default function CliniqueDentaireDakar() {
           <Link className="underline text-[#bb2988]" to="/blog/guide-prix-dentiste-dakar-consultation-soins">
             Guide des prix dentaires à Dakar
           </Link>
-          <Link className="underline text-[#bb2988]" to="/blog/prix-appareil-dentaire-orthodontie-dakar-enfant-adulte">
+          <Link className="underline text-[#bb2988]" to="/blog/appareil-dentaire-prix-dakar-guide-complet">
             Prix appareil dentaire
           </Link>
           <Link className="underline text-[#bb2988]" to="/blog/tarif-implant-dentaire-dakar-deroulement">

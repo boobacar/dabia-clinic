@@ -44,6 +44,18 @@ const LocalitePatteDOie = lazy(() => import("../pages/localites/PatteDOie"));
 const LocaliteFann = lazy(() => import("../pages/localites/Fann"));
 const LocalitePlateau = lazy(() => import("../pages/localites/Plateau"));
 const LocaliteVdn = lazy(() => import("../pages/LocaliteVdn"));
+const LocaliteSicapFoire = lazy(() => import("../pages/localites/SicapFoire"));
+const LocaliteMedina = lazy(() => import("../pages/localites/Medina"));
+const LocalitePetersen = lazy(() => import("../pages/localites/Petersen"));
+const LocaliteOuestFoire = lazy(() => import("../pages/localites/OuestFoire"));
+const LocaliteDieuppeul = lazy(() => import("../pages/localites/Dieuppeul"));
+const LocaliteKeurMassar = lazy(() => import("../pages/localites/KeurMassar"));
+const LocalitePikine = lazy(() => import("../pages/localites/Pikine"));
+const LocaliteGuediawaye = lazy(() => import("../pages/localites/Guediawaye"));
+const LocaliteMbao = lazy(() => import("../pages/localites/Mbao"));
+const LocaliteYeumbeul = lazy(() => import("../pages/localites/Yeumbeul"));
+const LocaliteThiaroye = lazy(() => import("../pages/localites/Thiaroye"));
+const LocaliteRufisque = lazy(() => import("../pages/localites/Rufisque"));
 const Galerie = lazy(() => import("../pages/Galerie"));
 const BlogTag = lazy(() => import("../pages/BlogTag"));
 const GeoPage = lazy(() => import("../pages/GeoPage"));
@@ -133,6 +145,18 @@ export default function RoutesWithTransitions() {
       <Route path="/cabinet-dentaire-fann" element={<LocaliteFann />} />
       <Route path="/cabinet-dentaire-plateau" element={<LocalitePlateau />} />
       <Route path="/cabinet-dentaire-vdn" element={<LocaliteVdn />} />
+      <Route path="/cabinet-dentaire-sicap-foire" element={<LocaliteSicapFoire />} />
+      <Route path="/cabinet-dentaire-medina" element={<LocaliteMedina />} />
+      <Route path="/cabinet-dentaire-petersen" element={<LocalitePetersen />} />
+      <Route path="/cabinet-dentaire-ouest-foire" element={<LocaliteOuestFoire />} />
+      <Route path="/cabinet-dentaire-dieuppeul" element={<LocaliteDieuppeul />} />
+      <Route path="/cabinet-dentaire-keur-massar" element={<LocaliteKeurMassar />} />
+      <Route path="/cabinet-dentaire-pikine" element={<LocalitePikine />} />
+      <Route path="/cabinet-dentaire-guediawaye" element={<LocaliteGuediawaye />} />
+      <Route path="/cabinet-dentaire-mbao" element={<LocaliteMbao />} />
+      <Route path="/cabinet-dentaire-yeumbeul" element={<LocaliteYeumbeul />} />
+      <Route path="/cabinet-dentaire-thiaroye" element={<LocaliteThiaroye />} />
+      <Route path="/cabinet-dentaire-rufisque" element={<LocaliteRufisque />} />
       <Route path="/galerie" element={<Galerie />} />
       <Route path="/pays" element={<GeoPage />} />
       <Route path="/pays/:countrySlug" element={<GeoPage />} />
