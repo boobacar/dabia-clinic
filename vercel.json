@@ -6,7 +6,12 @@
   "redirects": [
     {
       "source": "/:path*",
-      "missing": [{ "type": "host", "value": "www.cliniquedentairedabia.com" }],
+      "missing": [
+        {
+          "type": "host",
+          "value": "www.cliniquedentairedabia.com"
+        }
+      ],
       "destination": "https://www.cliniquedentairedabia.com/:path*",
       "permanent": true
     },
@@ -42,7 +47,7 @@
     },
     {
       "source": "/blog/gingivite-causes-symptomes-traitement",
-      "destination": "/blog/gencives-qui-saignent-gingivite-dakar",
+      "destination": "/blog/detartrage-profondeur-gingivite-saignement-conseils",
       "permanent": true
     },
     {
@@ -57,7 +62,7 @@
     },
     {
       "source": "/blog/orthodontie-adulte-dakar-quel-appareil-choisir",
-      "destination": "/blog/orthodontie-adulte-invisible-dakar-aligneurs",
+      "destination": "/blog/invisalign-aligneurs-prix-duree-entretien-dakar",
       "permanent": true
     },
     {
@@ -263,6 +268,101 @@
     {
       "source": "/blog/couronne-ou-onlay-difference-prix-dakar",
       "destination": "/blog/prix-couronne-dentaire-dakar-materiaux-devis",
+      "permanent": true
+    },
+    {
+      "source": "/blog/detartrage-dentaire-dakar-prix-frequence-airflow",
+      "destination": "/blog/detartrage-dentaire-dakar-prix-frequence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/detartrage-preventif-dakar-investissement",
+      "destination": "/blog/detartrage-dentaire-dakar-prix-frequence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/detartrage-dentaire-dakar-prix-frequence-et-qui-en-a-vraiment-besoin-2026",
+      "destination": "/blog/detartrage-dentaire-dakar-prix-frequence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/detartrage-dentaire-frequence-dakar-prevention",
+      "destination": "/blog/detartrage-dentaire-dakar-prix-frequence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/detartrage-dakar-frequence-senegal-dents-saines-2026",
+      "destination": "/blog/detartrage-dentaire-dakar-prix-frequence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/detartrage-dakar-frequence-gencives-senegal-2026",
+      "destination": "/blog/detartrage-dentaire-dakar-prix-frequence",
+      "permanent": true
+    },
+    {
+      "source": "/blog/urgence-dentaire-dakar-weekend-nuit-bons-reflexes-2026",
+      "destination": "/blog/urgence-dentiste-dakar-24-24-nuit-weekend",
+      "permanent": true
+    },
+    {
+      "source": "/blog/dentiste-urgence-nuit-weekend-dakar-2026",
+      "destination": "/blog/urgence-dentiste-dakar-24-24-nuit-weekend",
+      "permanent": true
+    },
+    {
+      "source": "/blog/saignement-gencives-dakar-causes-traitements-2026",
+      "destination": "/blog/detartrage-profondeur-gingivite-saignement-conseils",
+      "permanent": true
+    },
+    {
+      "source": "/blog/gencives-qui-saignent-gingivite-dakar",
+      "destination": "/blog/detartrage-profondeur-gingivite-saignement-conseils",
+      "permanent": true
+    },
+    {
+      "source": "/blog/saignement-gencives-brossage-dakar-causes-plan-action-2026",
+      "destination": "/blog/detartrage-profondeur-gingivite-saignement-conseils",
+      "permanent": true
+    },
+    {
+      "source": "/blog/parodontite-dakar-signes-alerte-traitement-precoce",
+      "destination": "/blog/parodontite-dakar-surfacage-plan-traitement",
+      "permanent": true
+    },
+    {
+      "source": "/blog/parodontite-dakar-symptomes-traitement-prevention",
+      "destination": "/blog/parodontite-dakar-surfacage-plan-traitement",
+      "permanent": true
+    },
+    {
+      "source": "/blog/traitement-canalaire-devitalisation-etapes-douleur-dakar",
+      "destination": "/blog/devitalisation-traitement-canalaire-prix-dakar",
+      "permanent": true
+    },
+    {
+      "source": "/blog/prix-devitalisation-dakar-traitement-canalaire-guide",
+      "destination": "/blog/devitalisation-traitement-canalaire-prix-dakar",
+      "permanent": true
+    },
+    {
+      "source": "/blog/devitaliser-dent-dakar-traitement-canal",
+      "destination": "/blog/devitalisation-traitement-canalaire-prix-dakar",
+      "permanent": true
+    },
+    {
+      "source": "/blog/dentiste-enfant-dakar-premiere-visite-conseils-2026",
+      "destination": "/blog/dentiste-enfants-senegal-premiere-visite-prevention",
+      "permanent": true
+    },
+    {
+      "source": "/blog/preparer-enfant-premiere-visite-dentiste-dakar",
+      "destination": "/blog/dentiste-enfants-senegal-premiere-visite-prevention",
+      "permanent": true
+    },
+    {
+      "source": "/blog/carie-enfant-dakar-signes-prevention-parents-2026",
+      "destination": "/blog/dentiste-enfant-dakar-quand-consulter-et-comment-eviter-les-caries-2026",
       "permanent": true
     }
   ],
