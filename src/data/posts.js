@@ -133,6 +133,120 @@ export const TAGS = [
 ];
 
 export const POSTS = [
+
+  {
+    slug: "soins-dentaires-cmu-senegal-couverture-2026",
+    title:
+      "Soins dentaires et CMU au Sénégal : ce qui est couvert, ce qui reste à votre charge",
+    seoTitle: "Soins dentaires et CMU au Sénégal : ce qui est couvert en 2026 | DABIA",
+    description:
+      "CMU, mutuelle de santé, IPM : ce qui est réellement pris en charge pour vos soins dentaires au Sénégal, la cotisation, les taux et ce qui reste à votre charge.",
+    date: "2026-10-10",
+    category: "Conseils",
+    tags: ["cmu dentaire", "mutuelle dentaire senegal", "assurance dentaire senegal", "couverture maladie universelle", "prix", "devis dentaire"],
+    author: AUTHORS.sao,
+    cover: devisDentaireCover,
+    readingMinutes: 6,
+    content: `""`,
+    faq: [
+      {
+        q: "La CMU couvre-t-elle les soins dentaires au Sénégal ?",
+        a:
+          "La Couverture Maladie Universelle s'appuie sur les mutuelles de santé communales : chaque commune du Sénégal en compte au moins une. Le panier des mutuelles de santé inclut les soins dentaires, avec une prise en charge d'environ 80 % sur les prestations réalisées dans les structures publiques de santé et les médicaments génériques, et d'environ 50 % en pharmacie privée. Comme pour toute couverture, une liste d'actes et de fournitures non pris en charge est fixée par arrêté : faites confirmer votre situation auprès de votre mutuelle avant le soin.",
+      },
+      {
+        q: "Combien coûte l'adhésion à une mutuelle de santé (CMU) ?",
+        a:
+          "La cotisation de référence est de 7 000 FCFA par personne et par an. L'État en subventionne la moitié pour les personnes qui ont la capacité de cotiser, soit 3 500 FCFA à votre charge. Pour les personnes indigentes enregistrées, la cotisation est gratuite avec une prise en charge totale.",
+      },
+      {
+        q: "Que se passe-t-il si je ne paie pas mes cotisations ?",
+        a:
+          "Le versement des cotisations conditionne l'accès aux prestations : le non-paiement entraîne la suspension de l'adhérent et des personnes à sa charge jusqu'à régularisation. C'est la première cause de perte de droits d'une année sur l'autre.",
+      },
+      {
+        q: "Une clinique privée comme DABIA est-elle concernée par la CMU ?",
+        a:
+          "La CMU intervient dans les structures publiques de santé et chez les prestataires conventionnés. Pour les soins réalisés dans une clinique privée, ce sont les IPM (Institutions de Prévoyance Maladie), les mutuelles et les assurances santé qui interviennent. À la Clinique Dentaire DABIA, nous préparons votre dossier et vous remettons un devis détaillé avec les codes des actes, afin que votre organisme puisse instruire la prise en charge.",
+      },
+    ],
+  },
+
+  {
+    slug: "protheses-dentaires-remboursement-ipm-mutuelle-dakar",
+    title:
+      "Prothèses dentaires et remboursement à Dakar : IPM, mutuelle et assurance",
+    seoTitle: "Prothèses dentaires : remboursement IPM et mutuelle à Dakar | DABIA",
+    description:
+      "Couronne, bridge, prothèse amovible : ce que les IPM, mutuelles et assurances prennent en charge à Dakar, les documents à fournir et les pièges à éviter.",
+    date: "2026-10-10",
+    category: "Conseils",
+    tags: ["prothèse dentaire", "prothèse fixe", "devis dentaire", "assurance dentaire senegal", "couronne dentaire", "prix prothese dentaire dakar"],
+    author: AUTHORS.sao,
+    cover: protheseCover,
+    readingMinutes: 6,
+    content: `""`,
+    faq: [
+      {
+        q: "Les prothèses dentaires sont-elles remboursées par l'IPM au Sénégal ?",
+        a:
+          "Les IPM couvrent les soins dentaires dans leur paquet de prestations, dans une fourchette de prise en charge généralement comprise entre 50 et 80 % selon l'institution et le type d'acte. Attention : les prothèses dentaires et les appareils orthodontiques font partie des prestations prises en charge de façon facultative. Concrètement, votre IPM peut les couvrir — ou non — selon sa réglementation et sa situation financière. Demandez la liste des actes couverts avant de commencer le traitement.",
+      },
+      {
+        q: "Faut-il un devis avant de poser une couronne ou un bridge ?",
+        a:
+          "Oui. Pour tout acte prothétique, le devis préalable est la pièce maîtresse du dossier : il permet à l'IPM ou à la mutuelle de valider la prise en charge avant le traitement. Un devis détaillé acte par acte, avec les codes correspondants, évite la plupart des refus.",
+      },
+      {
+        q: "Combien de temps faut-il cotiser avant d'être couvert ?",
+        a:
+          "Le droit aux prestations d'une IPM est en général subordonné à un délai de stage de 2 mois de cotisations. Vérifiez votre situation : une cotisation interrompue peut rouvrir un délai de carence.",
+      },
+      {
+        q: "Que faire si ma prothèse n'est pas prise en charge ?",
+        a:
+          "Demandez le détail écrit de la décision, puis comparez avec votre formule : plafond annuel, actes exclus, conditions d'accord préalable. Dans certains cas, un changement d'option à la prochaine échéance, ou une assurance complémentaire, réduit sensiblement le reste à charge.",
+      },
+    ],
+  },
+
+  {
+    slug: "extraction-dentaire-diabete-precautions-dakar",
+    title:
+      "Diabète et extraction dentaire : les précautions avant, pendant et après",
+    seoTitle: "Extraction dentaire et diabète : précautions avant l'acte | DABIA",
+    description:
+      "Diabète et soins dentaires : glycémie et HbA1c à vérifier, quand reporter une extraction, précautions du jour J et surveillance de la cicatrisation.",
+    date: "2026-10-10",
+    category: "Conseils",
+    tags: ["dent de sagesse", "abcès dentaire", "prévention", "douleur dentaire"],
+    author: AUTHORS.sao,
+    cover: diabeteCover,
+    readingMinutes: 6,
+    content: `""`,
+    faq: [
+      {
+        q: "Peut-on extraire une dent quand on est diabétique ?",
+        a:
+          "Oui, dans la très grande majorité des cas — à condition que le diabète soit équilibré et que l'acte soit préparé. Un diabète mal équilibré retarde la cicatrisation et augmente le risque d'infection. Les recommandations internationales situent le seuil de confort autour d'une HbA1c inférieure à 7 % pour un acte chirurgical programmé ; au-delà de 7,5 %, les actes non urgents sont généralement différés le temps d'améliorer l'équilibre glycémique.",
+      },
+      {
+        q: "Faut-il un antibiotique avant une extraction quand on est diabétique ?",
+        a:
+          "Pas systématiquement. L'antibioprophylaxie est discutée selon l'équilibre glycémique (HbA1c élevée), l'étendue de l'acte, les antécédents d'infection post-opératoire et l'état immunitaire. Pour un patient bien équilibré et une extraction simple, elle n'est pas justifiée. La décision revient au praticien, en lien avec votre médecin.",
+      },
+      {
+        q: "Que faire si j'ai un abcès dentaire et que mon diabète est déséquilibré ?",
+        a:
+          "Un abcès ne peut pas attendre : l'infection va déstabiliser davantage la glycémie. En urgence (abcès, cellulite, douleur aiguë), le traitement est réalisé quel que soit le niveau d'HbA1c, sous couverture antibiotique et avec un contrôle glycémique rapproché.",
+      },
+      {
+        q: "Faut-il arrêter son traitement antidiabétique avant l'extraction ?",
+        a:
+          "Non, jamais de votre propre initiative. Vous prenez vos médicaments ou votre insuline comme d'habitude, et vous ne venez pas à jeun. Prenez un rendez-vous le matin, après un repas normal, et signalez à votre dentiste les traitements en cours ainsi que le nom de votre médecin traitant.",
+      },
+    ],
+  },
   {
     slug: "dentiste-dakar-pres-de-moi-comment-choisir-2026",
     title:
