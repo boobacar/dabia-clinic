@@ -544,7 +544,7 @@ const RendezVous = () => {
                   <a href="/urgence-dentaire-dakar" className="underline text-[#bb2988]">Urgence dentaire à Dakar</a>
                   <a href="/cabinet-dentaire-dakar" className="underline text-[#bb2988]">Cabinet dentaire à Dakar</a>
                   <a href="/blog/prix-consultation-dentiste-dakar-combien-prevoir-2026" className="underline text-[#bb2988]">Prix consultation dentiste à Dakar</a>
-                  <a href="/blog/detartrage-dentaire-frequence-dakar-prevention" className="underline text-[#bb2988]">Détartrage à Dakar : fréquence recommandée</a>
+                  <a href="/blog/detartrage-dentaire-dakar-prix-frequence" className="underline text-[#bb2988]">Détartrage à Dakar : fréquence recommandée</a>
                   <a href="/blog/dentiste-pendant-ramadan-dakar-soins-faq-2026" className="underline text-[#bb2988]">Ramadan et dentiste à Dakar</a>
                   <a href="/blog/urgence-dentiste-dakar-24-24-nuit-weekend" className="underline text-[#bb2988]">Urgence la nuit ou le week-end : que faire</a>
                 </div>

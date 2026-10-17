@@ -3020,7 +3020,7 @@ export const POSTS = [
   {
     slug: "detartrage-vs-airflow-difference-prophylaxie-dakar",
     title: "AirFlow dentaire : taches, plaque, tartre et détartrage",
-      seoTitle: "AirFlow dentaire à Dakar : différence avec le détartrage, prix et RDV | DABIA",
+      seoTitle: "AirFlow dentaire à Dakar : taches, plaque, tartre et prix | DABIA",
     description:
       "AirFlow dentaire à Dakar : déroulement de la séance, prix indicatif, différence avec le détartrage classique et quand associer les deux soins.",
     date: "2025-07-19",
@@ -3256,6 +3256,7 @@ export const POSTS = [
   {
     slug: "diabete-et-sante-buccale-risques-prevention-dakar",
     title: "Diabète et soins dentaires : extraction, anesthésie et prévention des risques",
+    seoTitle: "Diabète et soins dentaires à Dakar : extraction et risques | DABIA",
     description:
       "Diabète et dents : risques d'infection, anesthésie, extraction et cicatrisation. Protocole de prévention et de suivi de la Clinique DABIA à Dakar.",
     date: "2025-06-04",
@@ -4520,9 +4521,9 @@ export const POSTS = [
     slug: "dentiste-mutuelle-ipm-dakar-prise-en-charge-2026",
     title:
       "Dentiste et mutuelle à Dakar : comment être bien remboursé avec l'IPM en 2026",
-      seoTitle: "IPM Sénélec et mutuelles dentaires : remboursement à Dakar",
+      seoTitle: "IPM Sénélec à Dakar : quel dentiste accepte votre IPM ? | DABIA",
     description:
-      "Soins dentaires remboursés avec l'IPM Sénélec, l'IPM, les mutuelles et assurances à Dakar : documents à fournir, plafonds, délais et démarches expliqués.",
+      "Vous cherchez un dentiste qui accepte votre IPM Sénélec à Dakar ? Prise en charge des soins, documents à fournir, délais de remboursement et devis expliqués.",
     date: "2026-06-24",
     category: "Conseils",
     tags: [

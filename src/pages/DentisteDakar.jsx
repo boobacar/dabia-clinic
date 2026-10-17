@@ -696,7 +696,7 @@ export default function DentisteDakar() {
           <Link className="underline text-[#bb2988]" to="/blog/comment-choisir-meilleur-dentiste-dakar">
             Comment choisir une clinique dentaire à Dakar
           </Link>
-          <Link className="underline text-[#bb2988]" to="/blog/detartrage-dentaire-frequence-dakar-prevention">
+          <Link className="underline text-[#bb2988]" to="/blog/detartrage-dentaire-dakar-prix-frequence">
             Détartrage à Dakar : fréquence et santé des gencives
           </Link>
           <Link className="underline text-[#bb2988]" to="/infos/technologie/airflow-dentaire-prophylaxie">
