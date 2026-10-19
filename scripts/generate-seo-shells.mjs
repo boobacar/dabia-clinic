@@ -294,9 +294,9 @@ const STATIC_OVERRIDES = {
       "Votre dentiste à Dakar — soins modernes, équipe expérimentée et accompagnement personnalisé.",
   },
   "/cabinet-dentaire-vdn": {
-    title: "Clinique dentaire à la VDN (Dakar) : soins, urgences et RDV rapide | DABIA",
+    title: "Clinique dentaire La VDN Dakar : urgences et RDV | DABIA",
     description:
-      "Clinique dentaire à deux pas de la VDN (Voie de Dégagement Nord), Sicap Foire Liberté 6 : urgences, détartrage, implants, orthodontie, esthétique. Prise de rendez-vous rapide.",
+      "Cabinet et clinique dentaire proche de la VDN à Dakar (Sicap Foire, Liberté 6) : urgences, détartrage, implants, orthodontie. Devis clair, RDV rapide.",
     h1: "Clinique dentaire proche de la VDN (Dakar)",
     intro:
       "La Clinique Dentaire DABIA accueille les patient·es de la VDN, Mermoz, Yoff et Sicap Foire pour tous les soins dentaires. Située à deux pas de la Voie de Dégagement Nord, elle reçoit les urgences et propose détartrage, implants, orthodontie et esthétique avec un devis clair.",

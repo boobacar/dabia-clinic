@@ -42,8 +42,8 @@ export default function LocaliteVdn() {
   return (
     <section className="py-20 px-4 max-w-5xl mx-auto mt-20">
       <Seo
-        title="Clinique dentaire à la VDN (Dakar) : soins, urgences et RDV rapide | DABIA"
-        description="Clinique dentaire à deux pas de la VDN (Voie de Dégagement Nord), Sicap Foire Liberté 6 : urgences, détartrage, implants, orthodontie, esthétique. Prise de rendez-vous rapide."
+        title="Clinique dentaire La VDN Dakar : urgences et RDV | DABIA"
+        description="Cabinet et clinique dentaire proche de la VDN à Dakar (Sicap Foire, Liberté 6) : urgences, détartrage, implants, orthodontie. Devis clair, RDV rapide."
         url={url}
         canonical={url}
         type="website"

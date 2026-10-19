@@ -840,7 +840,7 @@ export const POSTS = [
   },
   {
     slug: "radio-panoramique-dentaire-dakar-pourquoi-quand-2026",
-    title: "Radio panoramique dentaire à Dakar : pourquoi elle change le diagnostic",
+    title: "Radio panoramique dentaire à Dakar : quand la faire | DABIA",
     description:
       "À quoi sert une radio panoramique dentaire, quand la faire et quel est son intérêt avant extraction, implant ou traitement orthodontique à Dakar.",
     date: "2026-03-19",
@@ -3824,7 +3824,7 @@ export const POSTS = [
     title:
       "Prix des soins dentaires à Dakar (2026) : Guide complet et transparence",
       seoTitle:
-        "Prix des soins dentaires à Dakar en 2026 : consultation, détartrage, couronne | DABIA",
+        "Tarif dentiste Dakar 2026 : consultation, détartrage | DABIA",
     description:
       "Combien prévoir chez le dentiste à Dakar en 2026 : consultation, détartrage, soin de carie, extraction, couronne et implant. Fourchettes de prix et devis clair.",
     date: "2026-02-15",
