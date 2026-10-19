@@ -458,9 +458,9 @@ const STATIC_OVERRIDES = {
       "Un cabinet dentaire moderne à Dakar pour vos soins, urgences et plans de traitement personnalisés.",
   },
   "/clinique-dentaire-dakar": {
-    title: "Clinique dentaire à Dakar : soins, urgences et plateau technique | DABIA",
+    title: "Cabinet et clinique dentaire à Dakar : dentiste, soins et urgences | DABIA",
     description:
-      "Clinique dentaire à Dakar (Sicap Foire, Liberté 6) : spécialistes, CBCT 3D, urgences, implants, orthodontie et esthétique. Devis expliqué avant soin.",
+      "Cabinet et clinique dentaire à Dakar (Sicap Foire, Liberté 6) : dentiste, urgences, implants, orthodontie et esthétique. Devis expliqué avant chaque soin.",
     h1: "Clinique dentaire à Dakar pour soins, urgences et devis clairs",
     intro:
       "Diagnostic, explication des options, devis détaillé et suivi pour vos soins dentaires à Dakar.",

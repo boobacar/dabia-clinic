@@ -2071,9 +2071,9 @@ export const POSTS = [
     slug: "clinique-dentaire-dabia-dakar-expert-tarifs",
     title:
       "Clinique Dentaire DABIA : votre expert dentiste à Dakar (Soins & Tarifs)",
-      seoTitle: "Cabinet dentaire à Dakar : soins, tarifs et prise de RDV | DABIA",
+      seoTitle: "Clinique DABIA à Dakar : soins, tarifs et prise de rendez-vous",
     description:
-      "Cabinet dentaire à Dakar (Sicap Foire, Liberté 6) : tarifs des soins, plateau technique et prise de rendez-vous rapide à la Clinique DABIA.",
+      "Clinique DABIA à Dakar (Sicap Foire, Liberté 6) : tarifs des soins, équipements et prise de rendez-vous rapide. Devis détaillé remis avant chaque soin.",
     date: "2026-01-28",
     category: "Conseils",
     tags: [
@@ -3885,7 +3885,7 @@ export const POSTS = [
     slug: "comment-choisir-meilleur-dentiste-dakar",
     title: "Meilleur dentiste à Dakar : comment choisir et prendre rendez-vous",
       seoTitle:
-        "Meilleur dentiste à Dakar : 5 critères pour bien choisir (avis, prix, accès) | DABIA",
+        "Meilleur dentiste à Dakar : comment choisir son cabinet (avis, prix) | DABIA",
     description:
       "Comment reconnaître un bon dentiste ou cabinet dentaire à Dakar : hygiène, équipements, clarté du devis, avis patients et accès. La check-list avant votre RDV.",
     date: "2026-02-10",
