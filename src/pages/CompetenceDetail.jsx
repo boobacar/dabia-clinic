@@ -47,7 +47,7 @@ const competencesData = {
   "facettes-dentaires": {
     titre: "Facettes dentaires",
     seoTitle:
-      "Facettes dentaires à Dakar : rendu naturel, pose et RDV | Clinique Dentaire DABIA",
+      "Facettes dentaires à Dakar : prix, pose et RDV | DABIA",
     description:
       "Fines pellicules en céramique ou composite collées sur la face visible des dents pour corriger couleur, forme, petits défauts d’alignement. Résultat naturel et rapide.",
     image: facette,
@@ -55,7 +55,7 @@ const competencesData = {
   orthodontie: {
     titre: "Orthodontie",
     seoTitle:
-      "Orthodontiste à Dakar : bagues, aligneurs et rendez-vous | Clinique Dentaire DABIA",
+      "Orthodontiste à Dakar : bagues et aligneurs | DABIA",
     description:
       "Correction des malpositions dentaires et des mâchoires (aligneurs transparents, brackets) pour une bonne occlusion, une meilleure hygiène et un sourire aligné.",
     image: orthodontie,

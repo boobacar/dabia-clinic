@@ -1143,9 +1143,9 @@ async function readCompetences() {
 // Réécritures de titres par compétence (boucle GSC hebdo) — mêmes valeurs que seoTitle dans competences.js
 const COMPETENCE_TITLE_OVERRIDES = {
   orthodontie:
-    "Orthodontiste à Dakar : bagues, aligneurs et rendez-vous | Clinique Dentaire DABIA",
+    "Orthodontiste à Dakar : bagues et aligneurs | DABIA",
   "facettes-dentaires":
-    "Facettes dentaires à Dakar : rendu naturel, pose et RDV | Clinique Dentaire DABIA",
+    "Facettes dentaires à Dakar : prix, pose et RDV | DABIA",
   "esthétique-dentaire":
     "Esthétique dentaire à Dakar : blanchiment et facettes | DABIA",
   parodontologie: "Parodontologie à Dakar : gencives qui saignent | DABIA",

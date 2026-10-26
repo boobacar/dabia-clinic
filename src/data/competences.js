@@ -49,7 +49,7 @@ const competences = [
     titre: "Facettes dentaires",
     description:
       "Les facettes dentaires sont de fines pellicules en céramique ou en composite collées sur la face visible des dents. Elles permettent de corriger la forme, la couleur ou l’alignement des dents de façon rapide et esthétique. C’est une solution idéale pour embellir le sourire tout en préservant la structure dentaire. Le résultat est naturel, durable et personnalisé à chaque patient.",
-    seoTitle: "Facettes dentaires à Dakar : rendu naturel, pose et RDV | Clinique Dentaire DABIA",
+    seoTitle: "Facettes dentaires à Dakar : prix, pose et RDV | DABIA",
     seoDescription: "Facettes dentaires à Dakar : rendu naturel, étapes de la pose, entretien et prix. Simulation du sourire et devis clair à la Clinique Dentaire DABIA.",
     image: facette,
     slug: "facettes-dentaires",
@@ -57,7 +57,7 @@ const competences = [
   {
     titre: "Orthodontie",
     seoTitle:
-      "Orthodontiste à Dakar : bagues, aligneurs et rendez-vous | Clinique Dentaire DABIA",
+      "Orthodontiste à Dakar : bagues et aligneurs | DABIA",
     description:
       "L’orthodontie est la spécialité qui corrige les malpositions des dents et des mâchoires pour améliorer la fonction et l’esthétique du sourire. Elle utilise des appareils fixes (comme les bagues) ou amovibles (comme les aligneurs transparents - Invisalign). Ces traitements favorisent une bonne occlusion et facilitent l’hygiène bucco-dentaire. L’orthodontie s’adresse aussi bien aux enfants qu’aux adultes.",
     seoDescription: "Orthodontiste à Dakar : bagues et aligneurs transparents pour adultes et enfants. Bilan orthodontique, durée du traitement et devis clair à la Clinique DABIA.",
