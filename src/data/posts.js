@@ -2010,8 +2010,9 @@ export const POSTS = [
   {
     slug: "prothese-dentaire-fixe-prix-senegal-amovible",
     title: "Prothèse Dentaire Fixe vs Amovible au Sénégal : Prix et Solutions",
+    seoTitle: "Prothèse dentaire à Dakar : prix du bridge et du dentier | DABIA",
     description:
-      "Comprendre la différence entre couronne, bridge et dentier. Quel budget prévoir au Sénégal ? Avantages et inconvénients pour remplacer vos dents manquantes.",
+      "Bridge, couronne ou dentier : prix au Sénégal, avantages et inconvénients pour remplacer vos dents manquantes, et déroulement du devis chez DABIA.",
     date: "2026-01-30",
     category: "Conseils",
     tags: [
@@ -2040,8 +2041,9 @@ export const POSTS = [
   {
     slug: "appareil-dentaire-prix-dakar-guide-complet",
     title: "Appareil Dentaire Prix Dakar : Le Guide Complet (2026)",
+    seoTitle: "Appareil dentaire à Dakar : prix des bagues et aligneurs | DABIA",
     description:
-      "Quel est le prix d'un appareil dentaire à Dakar ? Bagues, aligneurs ou dentiers : tout savoir sur les tarifs et les options d'orthodontie et de prothèse.",
+      "Bagues, aligneurs ou dentier : les prix pratiqués à Dakar en 2026, la durée du traitement et comment choisir la solution adaptée à votre cas.",
     date: "2026-01-29",
     category: "Orthodontie",
     tags: [
@@ -2164,8 +2166,9 @@ export const POSTS = [
   {
     slug: "tarif-implant-dentaire-dakar-deroulement",
     title: "Implants Dentaires à Dakar : Coût, Déroulement et Avantages",
+    seoTitle: "Implant dentaire à Dakar : prix, étapes et durée de vie | DABIA",
     description:
-      "Tout sur l'implantologie à Dakar : tarif moyen d'un implant dentaire complet, étapes de la pose et pourquoi c'est la meilleure solution pour remplacer une dent.",
+      "Prix d'un implant dentaire à Dakar (implant, pilier, couronne), étapes de la pose et durée de vie : ce qu'il faut prévoir pour remplacer une dent.",
     date: "2026-01-20",
     category: "Implantologie",
     tags: [
@@ -3174,7 +3177,7 @@ export const POSTS = [
     slug: "invisalign-aligneurs-prix-duree-entretien-dakar",
     title:
       "Aligneurs transparents (type Invisalign) : prix, durée et entretien à Dakar",
-      seoTitle: "Gouttière dentaire et aligneurs (Invisalign) à Dakar : prix et durée | DABIA",
+      seoTitle: "Gouttière dentaire et aligneurs à Dakar : prix et durée | DABIA",
     description:
       "Gouttière dentaire (aligneurs transparents type Invisalign) à Dakar : indications, durée du traitement, entretien, contention et coût indicatif chez DABIA.",
     date: "2025-06-19",
@@ -3735,7 +3738,7 @@ export const POSTS = [
     slug: "prix-radio-dentaire-scanner-3d-dakar",
     title:
       "Prix radio dentaire et scanner 3D à Dakar : combien prévoir en 2026 ?",
-      seoTitle: "Prix radio, scanner et radiologie dentaire à Dakar (2026) | DABIA",
+      seoTitle: "Prix radiographie, radio et scanner dentaire à Dakar | DABIA",
     description:
       "Tarifs d'une radio panoramique, d'un scanner 3D (CBCT) et d'une radiologie dentaire à Dakar : ce que comprend le prix, remboursement et RDV à la Clinique DABIA.",
     date: "2026-01-25",
