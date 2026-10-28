@@ -3025,7 +3025,7 @@ export const POSTS = [
     title: "AirFlow dentaire : taches, plaque, tartre et détartrage",
       seoTitle: "AirFlow dentaire à Dakar : taches, plaque, tartre et prix | DABIA",
     description:
-      "AirFlow dentaire à Dakar : déroulement de la séance, prix indicatif, différence avec le détartrage classique et quand associer les deux soins.",
+      "AirFlow dentaire à Dakar : déroulement de la séance, devis après examen, différence avec le détartrage classique et quand associer les deux soins.",
     date: "2025-07-19",
     category: "Prévention",
     tags: ["détartrage", "hygiène", "prévention"],
@@ -3033,6 +3033,38 @@ export const POSTS = [
     cover: airflowCover,
     readingMinutes: 12,
     content: `""`,
+    faq: [
+      {
+        q: "Quelle est la différence entre AirFlow et un détartrage classique ?",
+        a:
+          "Le détartrage ultrasonique casse le tartre au-dessus et sous la gencive, et permet le surfaçage quand des poches parodontales existent. L'AirFlow projette un jet de poudre et d'eau qui élimine le biofilm et les taches (café, thé, tabac) ; il est moins abrasif sur l'émail quand il est bien utilisé. Les deux gestes sont complémentaires : l'un traite le tartre, l'autre la surface et les colorations.",
+      },
+      {
+        q: "L'AirFlow remplace-t-il le détartrage ?",
+        a:
+          "Non. L'AirFlow complète le détartrage : il nettoie la surface dentaire et les colorations entre deux détartrages, mais il ne détache pas le tartre fixé comme le fait l'ultrason. C'est pourquoi la séance associe souvent les deux, dans un ordre choisi après le bilan.",
+      },
+      {
+        q: "L'AirFlow est-il abrasif pour l'émail ?",
+        a:
+          "Il est moins abrasif que beaucoup d'instruments rotatifs quand il est correctement utilisé. Le praticien règle la pression, la poudre et la distance selon la zone traitée et l'état de l'émail et des gencives.",
+      },
+      {
+        q: "Comment se déroule une séance d'AirFlow à la Clinique DABIA ?",
+        a:
+          "La séance commence par un bilan parodontal avec relevé des indices et sondage. Le praticien applique ensuite une séquence personnalisée : AirFlow, puis ultrason ou hand-scaler selon le besoin. Elle se termine par un polissage et des consignes d'hygiène, avec un contrôle périodique conseillé tous les 6 à 12 mois.",
+      },
+      {
+        q: "Peut-on faire un AirFlow après des bagues ou des aligneurs ?",
+        a:
+          "Oui, c'est même l'un des cas où il est le plus utile : le jet atteint les zones difficiles autour des attaches et des gouttières, là où la brosse passe mal. Signalez votre traitement orthodontique lors du bilan.",
+      },
+      {
+        q: "Combien coûte un AirFlow à Dakar ?",
+        a:
+          "Le tarif est confirmé après l'examen clinique, car il dépend de la zone à traiter et du protocole retenu. La clinique remet un devis écrit avant la séance, sans montant annoncé à l'avance.",
+      },
+    ],
   },
   {
     slug: "halitose-mauvaise-haleine-causes-bilan-traitements-dakar",
