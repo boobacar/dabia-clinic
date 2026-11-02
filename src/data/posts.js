@@ -3740,6 +3740,7 @@ export const POSTS = [
     slug: "prix-prothese-dentaire-dakar-dentier-stellite",
     title:
       "Prix prothèse dentaire à Dakar : dentier complet, partiel et stellite",
+    seoTitle: "Prix prothèse dentaire à Dakar : dentier et stellite | DABIA",
     description:
       "Appareil complet, résine ou stellite ? Comprendre les différents types de prothèses amovibles et leurs tarifs à Dakar.",
     date: "2026-01-22",
@@ -3920,7 +3921,7 @@ export const POSTS = [
     slug: "comment-choisir-meilleur-dentiste-dakar",
     title: "Meilleur dentiste à Dakar : comment choisir et prendre rendez-vous",
       seoTitle:
-        "Meilleur dentiste à Dakar : comment choisir son cabinet (avis, prix) | DABIA",
+        "Meilleur dentiste à Dakar : comment choisir son cabinet | DABIA",
     description:
       "Comment reconnaître un bon dentiste ou cabinet dentaire à Dakar : hygiène, équipements, clarté du devis, avis patients et accès. La check-list avant votre RDV.",
     date: "2026-02-10",
