@@ -48,8 +48,8 @@ export default function LocaliteParcelles() {
   return (
     <section className="page-shell px-4 max-w-5xl mx-auto">
       <Seo
-        title="Dentiste Parcelles Assainies (proche) – Clinique DABIA Dakar"
-        description="Vous cherchez un dentiste près des Parcelles Assainies ? Clinique DABIA (Sicap Foire) : urgences, détartrage, implants, orthodontie et esthétique."
+        title="Dentiste près des Parcelles Assainies, Dakar : RDV rapide | DABIA"
+        description="Dentiste près des Parcelles Assainies : la Clinique DABIA (Sicap Foire, Liberté 6) reçoit urgences, détartrage, caries, implants, orthodontie. Devis clair."
         url={url}
         canonical={url}
         type="website"
