@@ -166,7 +166,7 @@ const STATIC_OVERRIDES = {
     title: "Dentiste près des Parcelles Assainies, Dakar : RDV rapide | DABIA",
     description:
       "Dentiste près des Parcelles Assainies : la Clinique DABIA (Sicap Foire, Liberté 6) reçoit urgences, détartrage, caries, implants, orthodontie. Devis clair.",
-    h1: "Dentiste près des Parcelles Assainies : soins, urgences et devis",
+    h1: "Dentiste proche des Parcelles Assainies (Dakar)",
     intro:
       "La Clinique Dentaire DABIA, à Sicap Foire (Liberté 6), accueille les patients des Parcelles Assainies : bilan, détartrage, soins des caries, extractions, implants, prothèses et orthodontie, avec un devis expliqué.",
   },

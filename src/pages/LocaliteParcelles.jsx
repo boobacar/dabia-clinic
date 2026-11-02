@@ -64,7 +64,7 @@ export default function LocaliteParcelles() {
       />
 
       <h1 className="text-3xl md:text-4xl font-bold text-[#ad9d64]">
-        Clinique dentaire proche des Parcelles Assainies (Dakar)
+        Dentiste proche des Parcelles Assainies (Dakar)
       </h1>
       <ReactMarkdown
         components={{
