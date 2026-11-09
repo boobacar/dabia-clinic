@@ -442,7 +442,7 @@ const STATIC_OVERRIDES = {
       "Formulaire rapide pour réserver votre consultation, urgence ou soin à la Clinique DABIA. Confirmation rapide par l'équipe.",
   },
   "/dentiste-dakar": {
-    title: "Dentiste Dakar : urgence, consultation et RDV rapide | Clinique DABIA",
+    title: "Dentiste à Dakar : urgence, consultation et RDV rapide | DABIA",
     description:
       "Dentiste Dakar à Liberté 6 : consultation, urgence dentaire, implants, orthodontie et esthétique. Devis clair + rendez-vous rapide par appel, WhatsApp ou formulaire.",
     h1: "Dentiste Dakar – Clinique Dentaire DABIA",
@@ -458,7 +458,7 @@ const STATIC_OVERRIDES = {
       "Un cabinet dentaire moderne à Dakar pour vos soins, urgences et plans de traitement personnalisés.",
   },
   "/clinique-dentaire-dakar": {
-    title: "Cabinet et clinique dentaire à Dakar : dentiste, soins et urgences | DABIA",
+    title: "Clinique et cabinet dentaire à Dakar : soins et urgences | DABIA",
     description:
       "Cabinet et clinique dentaire à Dakar (Sicap Foire, Liberté 6) : dentiste, urgences, implants, orthodontie et esthétique. Devis expliqué avant chaque soin.",
     h1: "Clinique dentaire à Dakar pour soins, urgences et devis clairs",

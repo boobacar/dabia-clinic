@@ -189,7 +189,7 @@ export default function DentisteDakar() {
   return (
     <main className="page-shell px-4 max-w-7xl mx-auto">
       <Seo
-        title="Dentiste Dakar : Consultation, Urgence & RDV Rapide - Clinique DABIA"
+        title="Dentiste à Dakar : urgence, consultation et RDV rapide | DABIA"
         description="Dentiste Dakar à Liberté 6 : votre clinique dentaire pour des soins de qualité. Urgences, implants, orthodontie. Devis transparent et rendez-vous rapide. Prenez RDV en ligne !"
         canonical={canonical}
         url={canonical}

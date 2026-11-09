@@ -2724,7 +2724,7 @@ export const POSTS = [
   {
     slug: "tarif-implant-dentaire-dakar-facteurs-devis",
     title:
-      "Tarif implant dentaire à Dakar : facteurs, étapes et devis personnalisé",
+      "Tarif implant dentaire à Dakar : facteurs, prix et devis | DABIA",
     description:
       "Ce qui fait varier le coût d’un implant à Dakar : imagerie 3D, greffe éventuelle, marque, couronne. Parcours type et demandes de devis.",
     date: "2025-09-08",
@@ -3250,7 +3250,7 @@ export const POSTS = [
   {
     slug: "cbct-radio-3d-dentaire-a-quoi-sert-dakar",
     title: "CBCT dentaire à Dakar : prix, indications et scanner 3D",
-    seoTitle: "CBCT dentaire à Dakar : c’est quoi, à quoi ça sert, prix et où le faire | DABIA",
+    seoTitle: "CBCT dentaire à Dakar : c’est quoi, prix et où le faire | DABIA",
     description:
       "CBCT dentaire à Dakar : indications, déroulement, sécurité et prix sur devis. Diagnostic 3D à la Clinique DABIA Liberté 6, rendez-vous rapide.",
     date: "2025-06-10",
