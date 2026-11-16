@@ -138,7 +138,7 @@ export const POSTS = [
     slug: "soins-dentaires-cmu-senegal-couverture-2026",
     title:
       "Soins dentaires et CMU au Sénégal : ce qui est couvert, ce qui reste à votre charge",
-    seoTitle: "Soins dentaires et CMU au Sénégal : ce qui est couvert en 2026 | DABIA",
+    seoTitle: "Soins dentaires et CMU au Sénégal : ce qui est couvert | DABIA",
     description:
       "CMU, mutuelle de santé, IPM : ce qui est réellement pris en charge pour vos soins dentaires au Sénégal, la cotisation, les taux et ce qui reste à votre charge.",
     date: "2026-10-10",
@@ -841,6 +841,7 @@ export const POSTS = [
   {
     slug: "radio-panoramique-dentaire-dakar-pourquoi-quand-2026",
     title: "Radio panoramique dentaire à Dakar : quand la faire | DABIA",
+    heading: "Radio panoramique dentaire : à quoi ça sert et quand la faire",
     description:
       "À quoi sert une radio panoramique dentaire, quand la faire et quel est son intérêt avant extraction, implant ou traitement orthodontique à Dakar.",
     date: "2026-03-19",
@@ -1268,6 +1269,7 @@ export const POSTS = [
   {
     slug: "ipm-mutuelle-soins-dentaires-dakar-comment-etre-rembourse",
     title: "IPM / mutuelle et soins dentaires à Dakar : comment bien se faire rembourser",
+    seoTitle: "Soins dentaires et IPM à Dakar : se faire rembourser | DABIA",
     description:
       "Consultation, radio, prothèse : comprendre la prise en charge IPM/mutuelle à Dakar, les documents utiles et les erreurs qui bloquent le remboursement.",
     date: "2026-03-15",
@@ -1578,7 +1580,7 @@ export const POSTS = [
   {
     slug: "tarifs-dentaires-dakar-2026-detartrage-carie-extraction",
     title: "Tarifs dentaires à Dakar en 2026 : détartrage, carie, extraction",
-    seoTitle: "Prix d’un détartrage, d’une carie et d’une extraction à Dakar (2026) | DABIA",
+    seoTitle: "Prix détartrage, carie et extraction à Dakar (2026) | DABIA",
     description:
       "Découvrez les prix indicatifs 2026 à Dakar pour un détartrage, un soin de carie et une extraction : fourchettes FCFA, facteurs de coût et conseils budget.",
     date: "2026-02-27",
@@ -1686,6 +1688,7 @@ export const POSTS = [
   {
     slug: "dentiste-parcelles-assainies-prix-consultation-soins-2026",
     title: "Dentiste aux Parcelles Assainies (Dakar) : prix consultation, soins fréquents et prise de RDV rapide",
+    seoTitle: "Dentiste aux Parcelles Assainies (Dakar) : RDV et tarifs | DABIA",
     description:
       "Vous cherchez un dentiste aux Parcelles Assainies ? Découvrez les soins les plus demandés, les tarifs indicatifs à Dakar et comment prendre un RDV rapidement.",
     date: "2026-02-27",
@@ -2105,6 +2108,7 @@ export const POSTS = [
     slug: "guide-tarifs-dentiste-dakar-2025",
     title:
       "Guide Complet des Tarifs Dentaires à Dakar (2026) – Prix Mis à Jour et Conseils",
+    seoTitle: "Tarifs dentaires à Dakar (2026) : prix pratiqués | DABIA",
     description:
       "Découvrez les tarifs réels pour un détartrage, une extraction ou une consultation à Dakar. Notre guide mis à jour vous aide à planifier votre budget santé et à économiser.",
     date: "2026-01-21",
