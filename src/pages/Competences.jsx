@@ -59,7 +59,7 @@ export default function Competences() {
         .
       </p>
       <Seo
-        title="Soins dentaires à Dakar : toutes nos compétences | DABIA"
+        title="Clinique Dentaire DABIA à Dakar : tous nos soins dentaires"
         description="Tous les soins dentaires de la Clinique DABIA à Dakar : consultation, détartrage, soins des caries, implants, orthodontie, facettes, blanchiment et urgences. Devis clair."
         canonical="https://www.cliniquedentairedabia.com/all-competences"
         url="https://www.cliniquedentairedabia.com/all-competences"

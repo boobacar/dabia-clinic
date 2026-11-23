@@ -44,7 +44,7 @@ export const technologies = [
   {
     slug: "cone-beam-ct-cbct",
     titre: "Cone Beam CT (CBCT)",
-    seoTitle: "CBCT dentaire à Dakar : radio 3D pour implants",
+    seoTitle: "CBCT dentaire à Dakar : radio 3D pour implants | DABIA",
     seoDescription:
       "CBCT dentaire à Dakar : radio 3D pour implants, chirurgie guidée, dents incluses et diagnostics complexes à la Clinique Dentaire DABIA.",
     description:
@@ -62,7 +62,7 @@ Dans quels cas l’utilisons-nous ?
   {
     slug: "airflow-dentaire-prophylaxie",
     titre: "AirFlow dentaire",
-    seoTitle: "AirFlow dentaire à Dakar : nettoyage des taches",
+    seoTitle: "AirFlow dentaire : c'est quoi et comment ça se passe | DABIA",
     seoDescription:
       "AirFlow dentaire à Dakar : nettoyage doux des taches, plaque et colorations avant détartrage, blanchiment ou suivi parodontal.",
     description:

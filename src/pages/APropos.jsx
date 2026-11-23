@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import sao from "../assets/sao.webp";
 
 export default function APropos() {
-  const title = "À propos – Clinique Dentaire DABIA (Dakar)";
+  const title = "Clinique Dentaire DABIA à Dakar : qui sommes-nous";
   const description =
     "Découvrez l’histoire, les valeurs, l’équipe et les engagements qualité de la Clinique Dentaire DABIA à Dakar (Liberté 6).";
 

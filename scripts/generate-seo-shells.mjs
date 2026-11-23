@@ -83,7 +83,7 @@ const STATIC_OVERRIDES = {
   // --- Réécritures GSC (sept. 2026) : ces routes servaient un shell générique
   //     (« All Competences | Clinique Dentaire DABIA ») → 0,6-2 % de CTR.
   "/all-competences": {
-    title: "Soins dentaires à Dakar : toutes nos compétences | DABIA",
+    title: "Clinique Dentaire DABIA à Dakar : tous nos soins dentaires",
     description:
       "Tous les soins dentaires de la Clinique DABIA à Dakar : consultation, détartrage, soins des caries, implants, orthodontie, facettes, blanchiment et urgences. Devis clair.",
     h1: "Tous nos soins dentaires à Dakar",
@@ -496,7 +496,7 @@ const STATIC_OVERRIDES = {
     ],
   },
   "/apropos": {
-    title: "À propos – Clinique Dentaire DABIA (Dakar)",
+    title: "Clinique Dentaire DABIA à Dakar : qui sommes-nous",
     description:
       "Découvrez l’histoire, les valeurs, l’équipe et les engagements qualité de la Clinique Dentaire DABIA à Dakar (Liberté 6).",
     h1: "À propos de la Clinique Dentaire DABIA",
@@ -506,7 +506,7 @@ const STATIC_OVERRIDES = {
       {
         "@context": "https://schema.org",
         "@type": "AboutPage",
-        name: "À propos – Clinique Dentaire DABIA (Dakar)",
+        name: "Clinique Dentaire DABIA à Dakar : qui sommes-nous",
         description:
           "Découvrez l’histoire, les valeurs, l’équipe et les engagements qualité de la Clinique Dentaire DABIA à Dakar (Liberté 6).",
         url: "https://www.cliniquedentairedabia.com/apropos",
@@ -1180,9 +1180,26 @@ const COMPETENCE_DESCRIPTION_OVERRIDES = {
 
 async function readTechnologies() {
   const src = await readFileSafe(TECHNOLOGIES_PATH);
-  return Array.from(src.matchAll(/slug:\s*"([^"]+)"[\s\S]*?titre:\s*"([^"]+)"/g)).map(
-    (m) => ({ slug: m[1], title: m[2] })
-  );
+  // Bloc par technologie : du `{` d'ouverture jusqu'au suivant. Sans cette
+  // borne, la capture de seoTitle pouvait lire celui de la technologie
+  // voisine (même classe de bug que la fenêtre 60 KB des articles).
+  return src
+    .split(/\n\s{2}\{\n/)
+    .slice(1)
+    .map((block) => {
+      const slug = block.match(/slug:\s*"([^"]+)"/);
+      const titre = block.match(/titre:\s*"([^"]+)"/);
+      if (!slug || !titre) return null;
+      const seoTitle = block.match(/seoTitle:\s*"((?:[^"\\]|\\.)*)"/);
+      const seoDescription = block.match(/seoDescription:\s*"((?:[^"\\]|\\.)*)"/);
+      return {
+        slug: slug[1],
+        title: titre[1],
+        seoTitle: seoTitle ? seoTitle[1] : undefined,
+        seoDescription: seoDescription ? seoDescription[1] : undefined,
+      };
+    })
+    .filter(Boolean);
 }
 
 function mergePosts(metaPosts, sourcePosts) {
@@ -1401,8 +1418,14 @@ function buildRouteCatalog({ posts, competences, technologies, tagSlugs }) {
   for (const item of technologies) {
     routes.push({
       path: `/infos/technologie/${item.slug}`,
-      title: `${item.title} – Technologies dentaires à Dakar`,
-      description: `${item.title} à la Clinique Dentaire DABIA : précision, sécurité et confort pour vos soins dentaires à Dakar.`,
+      // Le shell SSG lisait `${item.title} – Technologies dentaires à Dakar`
+      // alors que la page rendue sert `item.seoTitle` : Google recevait un
+      // titre générique (« AirFlow dentaire – Technologies dentaires… ») et
+      // le seoTitle soigné n'était jamais indexé.
+      title: item.seoTitle || `${item.title} – Technologies dentaires à Dakar`,
+      description:
+        item.seoDescription ||
+        `${item.title} à la Clinique Dentaire DABIA : précision, sécurité et confort pour vos soins dentaires à Dakar.`,
       h1: item.title,
       intro: `Technologie utilisée à la Clinique Dentaire DABIA pour améliorer votre prise en charge.`,
       type: "article",
