@@ -3775,7 +3775,7 @@ export const POSTS = [
     slug: "prix-radio-dentaire-scanner-3d-dakar",
     title:
       "Prix radio dentaire et scanner 3D à Dakar : combien prévoir en 2026 ?",
-      seoTitle: "Prix radiographie, radio et scanner dentaire à Dakar | DABIA",
+      seoTitle: "Prix radiologie, radio et scanner dentaire à Dakar | DABIA",
     description:
       "Tarifs d'une radio panoramique, d'un scanner 3D (CBCT) et d'une radiologie dentaire à Dakar : ce que comprend le prix, remboursement et RDV à la Clinique DABIA.",
     date: "2026-01-25",
