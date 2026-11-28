@@ -3,6 +3,7 @@ import { join, dirname } from "node:path";
 import { markSeoShellHead } from "./seo-shell-head.mjs";
 import { competenceContent } from "../src/data/competenceContent.js";
 import { getAllGeoPages } from "../src/data/geoData.js";
+import { TAG_META } from "../src/data/tagMeta.js";
 
 const ROOT = process.cwd();
 const DIST = join(ROOT, "dist");
@@ -920,6 +921,11 @@ function renderForRoute(baseHtml, route) {
   );
   html = upsertTag(
     html,
+    /<meta[^>]*name=["']robots["'][^>]*>/i,
+    `<meta data-seo-shell="true" name="robots" content="${route.robots || "index, follow"}" />`,
+  );
+  html = upsertTag(
+    html,
     /<link[^>]*rel=["']canonical["'][^>]*>/i,
     `<link rel="canonical" href="${url}" />`,
   );
@@ -1434,13 +1440,21 @@ function buildRouteCatalog({ posts, competences, technologies, tagSlugs }) {
 
   for (const slug of tagSlugs) {
     const label = toTitleCase(slug.replaceAll("-", " "));
+    // Tags éditorialisés : le shell doit servir EXACTEMENT le title/description
+    // du runtime (TAG_META), sinon Google lit un titre générique de listing.
+    // Les autres tags sont de simples archives de navigation (0,09 clic/page sur
+    // 214 pages en 90 j, cf. audit du 28/11/2026) : noindex,follow.
+    const meta = TAG_META[slug] || null;
     routes.push({
       path: `/blog/tag/${slug}`,
-      title: `${label} – Articles & conseils | Clinique Dentaire DABIA`,
-      description: `Articles du blog de la Clinique Dentaire DABIA à Dakar sur le thème « ${label} ».`,
+      title: meta?.title || `${label} – Articles & conseils | Clinique Dentaire DABIA`,
+      description:
+        meta?.description ||
+        `Articles du blog de la Clinique Dentaire DABIA à Dakar sur le thème « ${label} ».`,
       h1: label,
       intro: `Retrouvez nos articles et conseils pratiques sur ${label.toLowerCase()} à Dakar.`,
       type: "website",
+      robots: meta ? "index, follow" : "noindex, follow",
     });
   }
 

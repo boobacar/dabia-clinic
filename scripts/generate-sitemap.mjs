@@ -5,6 +5,7 @@ import { execSync } from "node:child_process";
 import { join } from "node:path";
 import process from "node:process";
 import { getAllGeoPages, geoSeoForPath } from "../src/data/geoData.js";
+import { TAG_META } from "../src/data/tagMeta.js";
 
 const SITE_URL =
   process.env.SITE_URL?.replace(/\/+$/, "") ||
@@ -293,7 +294,15 @@ async function build() {
   const allTagSlugs = await readTagSlugs();
   const redirectedPostSlugs = await readRedirectedPostSlugs();
   const redirectedTagSlugs = await readRedirectedTagSlugs();
-  const tagSlugs = allTagSlugs.filter((slug) => !redirectedTagSlugs.has(slug));
+  // Seuls les tags éditorialisés (TAG_META) restent indexables : les autres
+  // archives (/blog/tag/*) passent en noindex,follow dans BlogTag.jsx et les
+  // shells SSG. Les lister dans le sitemap produirait des « Exclue par la
+  // balise noindex » côté Search Console. Mesure du 28/11/2026 : 214 pages de
+  // tags = 2 883 impressions / 20 clics / 90 j (0,09 clic/page) contre
+  // 20,1 clic/page pour les articles.
+  const tagSlugs = allTagSlugs.filter(
+    (slug) => TAG_META[slug] && !redirectedTagSlugs.has(slug)
+  );
   const posts = mergePosts(metaPosts, sourcePosts).filter(
     (post) => !redirectedPostSlugs.has(post.slug)
   );

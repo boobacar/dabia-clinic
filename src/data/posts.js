@@ -2770,6 +2770,24 @@ export const POSTS = [
     cover: blanchimentCover,
     readingMinutes: 12,
     content: `""`,
+    faq: [
+      {
+        q: "Le blanchiment abîme-t-il l'émail ?",
+        a: "Non, si le protocole est médical et les doses contrôlées. Un examen préalable vérifie l'absence de caries actives et de lésions cervicales avant toute séance.",
+      },
+      {
+        q: "Les couronnes et les composites blanchissent-ils ?",
+        a: "Non : seule la dent naturelle change de teinte. Les couronnes et les composites gardent leur teinte d'origine, un écart de teinte qu'il faut anticiper avant le traitement.",
+      },
+      {
+        q: "J'ai une soirée ce week-end : est-ce faisable ?",
+        a: "Une séance unique en cabinet, de 45 à 60 minutes, donne un rendu plus rapide qu'un protocole à domicile par gouttières, qui s'étale sur 10 à 14 jours.",
+      },
+      {
+        q: "Combien coûte un blanchiment dentaire à Dakar ?",
+        a: "Le tarif dépend de la méthode (cabinet ou gouttières à domicile), de la sensibilité dentaire et des objectifs esthétiques. Un devis personnalisé est remis après l'examen.",
+      },
+    ],
   },
 
   {
@@ -3223,6 +3241,32 @@ export const POSTS = [
     cover: invisalignCover,
     readingMinutes: 16,
     content: `""`,
+    faq: [
+      {
+        q: "Gouttière dentaire ou aligneur : quelle différence ?",
+        a: "Une gouttière dentaire est une plaque transparente fabriquée sur mesure. Quand elle sert à déplacer les dents, on parle d'aligneur (type Invisalign) : une série de gouttières portées 20 à 22 heures par jour et changées toutes les 1 à 2 semaines.",
+      },
+      {
+        q: "Est-ce douloureux ?",
+        a: "Une gêne temporaire de 2 à 3 jours après chaque changement de gouttière, sans douleur continue. Le port régulier réduit cette gêne.",
+      },
+      {
+        q: "Puis-je manger avec mes gouttières ?",
+        a: "Non, il faut les retirer pour manger et pour le brossage, ce qui facilite aussi l'hygiène dentaire au quotidien.",
+      },
+      {
+        q: "Combien de temps dure un traitement par aligneurs ?",
+        a: "En moyenne 6 à 18 mois selon la complexité du cas, avec un suivi toutes les 6 à 8 semaines.",
+      },
+      {
+        q: "Les résultats sont-ils durables ?",
+        a: "Oui, à condition de porter la contention finale : fil collé ou gouttière de nuit, obligatoire en fin de traitement.",
+      },
+      {
+        q: "Combien coûte un traitement par aligneurs à Dakar ?",
+        a: "Le tarif dépend du nombre de gouttières et de la complexité du cas. Un devis personnalisé est remis après le scanner 3D et la planification du mouvement dentaire.",
+      },
+    ],
   },
   {
     slug: "bridge-ou-implant-que-choisir-dakar",
